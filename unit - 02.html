@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 02 — FULL | التعريف بالنفس · الأرقام · heißen · kommen · wohnen | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#fb923c;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'02';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+/* VIDEO */
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* GRIDS */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}.gc-orange{color:var(--orange)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:170px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+/* VERB TABLE */
+.verb-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.verb-t th,.verb-t td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.verb-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.verb-t tbody tr{transition:background .15s}
+.verb-t tbody tr:hover{background:var(--gray)}
+.vt-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.vt-v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--gold)}
+.vt-v2{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--blue)}
+.vt-v3{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--green)}
+.vt-m{font-size:.8rem;color:var(--dim)}
+.vt-e{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}
+/* SATZ BOX */
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-prep{border-color:var(--orange);color:var(--orange);background:rgba(251,146,60,.06)}
+/* VOCAB */
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+/* NUMBERS */
+.num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.num-card{background:var(--black);padding:.9rem 1rem;text-align:center;transition:background .2s}
+.num-card:hover{background:var(--gray)}
+.num-n{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);line-height:1}
+.num-de{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--white);margin-top:.2rem;font-weight:700}
+.num-ar{font-size:.65rem;color:var(--dim);margin-top:.1rem}
+/* COUNTRY GRID */
+.country-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.country-card{background:var(--gray);padding:1.2rem 1.4rem}
+.cc-flag{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.cc-country{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.cc-nat-m{font-size:.75rem;color:var(--gold);margin-bottom:.1rem}
+.cc-nat-f{font-size:.75rem;color:var(--blue);margin-bottom:.1rem}
+.cc-adj{font-size:.7rem;color:var(--green)}
+.cc-ar{font-size:.7rem;color:var(--dim);margin-top:.2rem}
+/* CULTURE */
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cu-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cu-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cu-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+/* MISTAKES */
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+/* NOTES */
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code,.note-green code,.note-red code,.note-blue code{font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-gold code{color:var(--gold);background:rgba(255,206,0,.08)}
+.note-green code{color:var(--green);background:rgba(34,197,94,.08)}
+.note-red code{color:#ff6b6b;background:rgba(204,0,0,.08)}
+.note-blue code{color:var(--blue);background:rgba(96,165,250,.08)}
+/* DIALOGUES */
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+/* EXERCISES */
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:80px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+/* WRITING */
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+/* RESOURCES */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+/* DAYS */
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.75rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.68rem;color:var(--dim);padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.62rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+/* SCORE */
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+/* PHONE BOX */
+.phone-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.4rem;margin-bottom:1rem;font-family:'JetBrains Mono',monospace}
+.ph-title{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:.8rem}
+.ph-num{font-size:1.4rem;color:var(--gold);letter-spacing:.15em;margin-bottom:.3rem}
+.ph-de{font-size:.78rem;color:var(--white);margin-bottom:.2rem}
+.ph-ar{font-size:.72rem;color:var(--dim)}
+/* ANIMATIONS */
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+  .greet-grid,.intro-grid{grid-template-columns:1fr}
+  .days-grid{grid-template-columns:repeat(2,1fr)}
+  .mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}
+  .nav-links{display:none}
+  .hero-meta{gap:1.5rem}
+}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 02 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#intro">sich vorstellen</a></li>
+    <li><a href="#verbs">الأفعال</a></li>
+    <li><a href="#numbers">الأرقام</a></li>
+    <li><a href="#countries">الدول</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🟢 مبتدئ · Unit 02 · 5 أيام دراسة</div>
+  <h1 class="hero-title">
+    <span class="g">التعريف</span>
+    <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span>
+    <span class="r">الأرقام</span>
+  </h1>
+  <p class="hero-sub">6 فيديوهات YouTube · sich vorstellen كاملاً · heißen · kommen · wohnen · الأرقام 0–100 · 15+ دولة وجنسية · بنية الجملة مع الأفعال الجديدة · 80+ مفردة · ثقافة ألمانية · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">80+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">حوارات</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — لا تشوف بدون مهمة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ كيف تستخدم الفيديوهات بشكل صحيح</div><p>نفس قاعدة Unit 01: لكل فيديو <strong style="color:var(--white)">مهمة استماع محددة</strong> — شيء تبحث عنه أثناء المشاهدة. أضف هذه القاعدة: بعد كل فيديو — اقلب الكاميرا على نفسك وقدّم نفسك بالألمانية 60 ثانية. هذا يضاعف الاستفادة تضعيفاً هائلاً.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/RElBVZ1Wke0" title="Learn German Original sich vorstellen A1 Lesson 6" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 6</div><div class="video-title">sich vorstellen — التعريف بالنفس</div><div class="video-desc">درس كامل للتعريف بالنفس: الاسم، البلد، اللغة، العمر، المهنة. يغطي heißen وkommen وwohnen مع أمثلة واضحة.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل جملة تعريف تسمعها — هدفك 8 جمل على الأقل بالألمانية.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/KDkQOXcEr4o" title="Learn German Original jemanden kennenlernen A1 Lesson 7" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 7</div><div class="video-title">jemanden kennenlernen — التعرف على شخص</div><div class="video-desc">درس الأسئلة اللي تسألها عن شخص جديد: Woher? Wo? Wie alt? — بصيغة رسمية وعادية.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل سؤال W-Frage يظهر في الفيديو — كم سؤالاً مختلفاً؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/d54ioeKA-jc" title="Learn German Original Numbers 0-20 A1 Lesson 3" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">🔢 Learn German Original · A1 Lesson 3</div><div class="video-title">Zahlen 0–20 — الأرقام من صفر لعشرين</div><div class="video-desc">تعلّم الأرقام من 0 إلى 20 مع تقنية حفظ مبتكرة. ركّز على الأرقام الصعبة: elf، zwölf، dreizehn.</div><div class="video-task"><strong>مهمة الاستماع:</strong> أغلق الفيديو بعد كل رقم وكرره بصوت عالٍ 3 مرات — لا تشوف بالصمت.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/IaerX0Y6wmE" title="Learn German Original Numbers 21-100 A1 Lesson 4" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">🔢 Learn German Original · A1 Lesson 4</div><div class="video-title">Zahlen 21–100 — الأرقام حتى المئة</div><div class="video-desc">النمط الذهبي: [ones]und[tens] — einundzwanzig! شاهد هذا بعد حفظ 1–20، والقاعدة ستصبح بديهية.</div><div class="video-task"><strong>مهمة الاستماع:</strong> قل كل رقم بصوت عالٍ مع الفيديو — ثم احسب من 20 إلى 100 بخطوات 10 بدون نظر.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/FoYSUfsLcjA" title="Nicos Weg A1 Folge 5 Ich heisse Emma DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · الحلقة 5</div><div class="video-title">Ich heiße Emma — نيكو يتعرف على جيرانه</div><div class="video-desc">نيكو يقابل جيرانه ويتعرف عليهم. ستسمع heißen وkommen وwohnen في سياق يومي حقيقي وطبيعي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> كيف يقدم كل شخص نفسه؟ اكتب اسمه وبلده وما يفعله.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/c7LTbMCKVNo" title="Nicos Weg A1 Folge 16 Zahlen bitte DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · الحلقة 16</div><div class="video-title">Zahlen, bitte! — الأرقام في الحياة اليومية</div><div class="video-desc">نيكو في مطعم مع الأرقام والأسعار. ممتاز لاليوم الرابع — ستسمع الأرقام في سياق واقعي.</div><div class="video-task"><strong>لليوم الرابع:</strong> اكتب كل رقم تسمعه في الحلقة — ثم اقرأ الفاتورة بالألمانية بصوت عالٍ.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SICH VORSTELLEN -->
+<section class="section" id="intro">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">sich vorstellen — التعريف بالنفس</div><div class="sec-d">الأسئلة الستة الأساسية + الردود الرسمية والعادية + حوارات</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الفرق عن Unit 01</div><p>في Unit 01 تعلمت التحيات. الآن تعلم <strong style="color:var(--white)">المحتوى</strong> — ماذا تقول بعد "Hallo!" . الستة أسئلة الأساسية في ألمانيا: الاسم، البلد، المدينة، العمر، المهنة، اللغة. إتقان الإجابة عليها = قادر على أول محادثة حقيقية بعد Unit 02.</p></div>
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">رسمي — FORMELL (Sie)</div>
+      <div class="gi"><div class="gi-de">Wie heißen Sie?</div><div><div class="gi-ar">ما اسمك؟ (رسمي)</div><div class="gi-note">heißen = يُدعى — السؤال الأول دائماً</div></div></div>
+      <div class="gi"><div class="gi-de">Woher kommen Sie?</div><div><div class="gi-ar">من أين أنت؟ (رسمي)</div><div class="gi-note">woher = من أين — تجيب بـ aus + البلد</div></div></div>
+      <div class="gi"><div class="gi-de">Wo wohnen Sie?</div><div><div class="gi-ar">أين تسكن؟ (رسمي)</div><div class="gi-note">wo = أين — تجيب بـ in + المدينة</div></div></div>
+      <div class="gi"><div class="gi-de">Wie alt sind Sie?</div><div><div class="gi-ar">كم عمرك؟ (رسمي)</div><div class="gi-note">sein من Unit 01 — Ich bin 25 Jahre alt.</div></div></div>
+      <div class="gi"><div class="gi-de">Was machen Sie beruflich?</div><div><div class="gi-ar">ماذا تعمل؟ (رسمي)</div><div class="gi-note">beruflich = مهنياً — Ich bin Arzt/Ingenieur</div></div></div>
+      <div class="gi"><div class="gi-de">Welche Sprache sprechen Sie?</div><div><div class="gi-ar">ما اللغة التي تتكلمها؟</div><div class="gi-note">welche = أي/أيّ — sprechen = يتكلم</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">عادي — INFORMELL (du)</div>
+      <div class="gi"><div class="gi-de">Wie heißt du?</div><div><div class="gi-ar">ما اسمك؟ (عادي)</div><div class="gi-note">heißt — تصريف du</div></div></div>
+      <div class="gi"><div class="gi-de">Woher kommst du?</div><div><div class="gi-ar">من أين أنت؟ (عادي)</div><div class="gi-note">kommst — تصريف du</div></div></div>
+      <div class="gi"><div class="gi-de">Wo wohnst du?</div><div><div class="gi-ar">أين تسكن؟ (عادي)</div><div class="gi-note">wohnst — تصريف du</div></div></div>
+      <div class="gi"><div class="gi-de">Wie alt bist du?</div><div><div class="gi-ar">كم عمرك؟ (عادي)</div><div class="gi-note">bist — من Unit 01</div></div></div>
+      <div class="gi"><div class="gi-de">Was machst du?</div><div><div class="gi-ar">ماذا تعمل؟ (عادي)</div><div class="gi-note">machst = تفعل/تعمل</div></div></div>
+      <div class="gi"><div class="gi-de">Welche Sprachen sprichst du?</div><div><div class="gi-ar">ما اللغات التي تتكلمها؟</div><div class="gi-note">sprichst — تصريف du لـ sprechen</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-green">الردود — ANTWORTEN</div>
+      <div class="gi"><div class="gi-de">Ich heiße Ahmed.</div><div><div class="gi-ar">اسمي أحمد.</div><div class="gi-note">أو: Mein Name ist Ahmed.</div></div></div>
+      <div class="gi"><div class="gi-de">Ich komme aus Syrien.</div><div><div class="gi-ar">أنا من سوريا.</div><div class="gi-note">aus = من (بلد أو مدينة)</div></div></div>
+      <div class="gi"><div class="gi-de">Ich wohne in Berlin.</div><div><div class="gi-ar">أسكن في برلين.</div><div class="gi-note">in = في (للمدن والدول)</div></div></div>
+      <div class="gi"><div class="gi-de">Ich bin 28 Jahre alt.</div><div><div class="gi-ar">عمري 28 سنة.</div><div class="gi-note">Jahre alt = سنة من العمر — لا تنسَ alt</div></div></div>
+      <div class="gi"><div class="gi-de">Ich bin Ingenieur.</div><div><div class="gi-ar">أنا مهندس.</div><div class="gi-note">بدون ein/eine! — قاعدة المهن مع sein</div></div></div>
+      <div class="gi"><div class="gi-de">Ich spreche Arabisch und Deutsch.</div><div><div class="gi-ar">أتكلم العربية والألمانية.</div><div class="gi-note">اللغات = بدون أداة تعريف</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-purple">تعابير إضافية — MEHR</div>
+      <div class="gi"><div class="gi-de">Mein Name ist …</div><div><div class="gi-ar">اسمي …</div><div class="gi-note">mein = اسم مذكر (der Name)</div></div></div>
+      <div class="gi"><div class="gi-de">Ich bin verheiratet.</div><div><div class="gi-ar">أنا متزوج.</div><div class="gi-note">verheiratet = متزوج</div></div></div>
+      <div class="gi"><div class="gi-de">Ich bin ledig.</div><div><div class="gi-ar">أنا أعزب.</div><div class="gi-note">ledig = أعزب/عزباء</div></div></div>
+      <div class="gi"><div class="gi-de">Ich habe zwei Kinder.</div><div><div class="gi-de" style="font-size:.75rem;color:var(--dim);min-width:0">أنا عندي ولدان.</div><div class="gi-note">haben = يملك/عنده — سنتعلمه لاحقاً</div></div></div>
+      <div class="gi"><div class="gi-de">Angenehm!</div><div><div class="gi-ar">تشرفنا / يسعدني!</div><div class="gi-note">عند التعارف الرسمي</div></div></div>
+      <div class="gi"><div class="gi-de">Freut mich!</div><div><div class="gi-ar">يسرّني! / سعيد بمعرفتك!</div><div class="gi-note">أكثر دفئاً من Angenehm</div></div></div>
+    </div>
+  </div>
+
+  <p class="vst reveal">حوارات نموذجية — 5 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في مكتب التسجيل (Anmeldung) — رسمي جداً</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Tag! Wie heißen Sie, bitte?</div><div class="dl-ar">يوم سعيد! ما اسمك من فضلك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Guten Tag! Ich heiße Ahmed Al-Rashid.</div><div class="dl-ar">يوم سعيد! اسمي أحمد الراشد.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Woher kommen Sie?</div><div class="dl-ar">من أين أنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich komme aus Syrien. Ich wohne jetzt in Berlin.</div><div class="dl-ar">أنا من سوريا. أسكن الآن في برلين.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Wie alt sind Sie?</div><div class="dl-ar">كم عمرك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich bin 30 Jahre alt.</div><div class="dl-ar">عمري 30 سنة.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Danke sehr! Auf Wiedersehen!</div><div class="dl-ar">شكراً جزيلاً! مع السلامة!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — في دورة اللغة (مع زملاء جدد) — عادي</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hallo! Ich heiße Emma. Wie heißt du?</div><div class="dl-ar">أهلاً! اسمي إيما. ما اسمك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Hi! Ich bin Nico. Woher kommst du?</div><div class="dl-ar">هاي! أنا نيكو. من أين أنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich komme aus Deutschland — aus München. Und du?</div><div class="dl-ar">أنا من ألمانيا — من ميونيخ. وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ich komme aus Spanien, aber ich wohne jetzt in Berlin.</div><div class="dl-ar">أنا من إسبانيا، لكن أسكن الآن في برلين.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Cool! Freut mich, Nico!</div><div class="dl-ar">رائع! يسرّني أن أعرفك، نيكو!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — في الشركة (أول يوم عمل) — رسمي</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Morgen! Sie sind Herr Al-Rashid?</div><div class="dl-ar">صباح الخير! أنت السيد الراشد؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ja, genau. Ich heiße Ahmed Al-Rashid. Ich bin Ingenieur.</div><div class="dl-ar">نعم، بالضبط. اسمي أحمد الراشد. أنا مهندس.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Willkommen! Ich heiße Müller. Woher kommen Sie?</div><div class="dl-ar">أهلاً وسهلاً! اسمي مولر. من أين أنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich komme aus Jordanien, aber ich wohne seit drei Jahren in Hamburg.</div><div class="dl-ar">أنا من الأردن، لكن أسكن منذ ثلاث سنوات في هامبورغ.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Sehr gut! Angenehm, Herr Al-Rashid!</div><div class="dl-ar">ممتاز! تشرفنا، سيد الراشد!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — في الهاتف (ألماني خاص جداً)</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Müller!</div><div class="dl-ar">مولر! (يرد بالاسم الأخير — عادة جداً في ألمانيا)</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Guten Tag! Hier ist Ahmed Al-Rashid. Ich komme aus Syrien.</div><div class="dl-ar">يوم سعيد! هذا أحمد الراشد. أنا من سوريا.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ah, Herr Al-Rashid! Wie ist Ihre Telefonnummer, bitte?</div><div class="dl-ar">آه، سيد الراشد! ما رقم هاتفك من فضلك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Meine Nummer ist: null-eins-sieben-fünf, drei-zwei-vier-acht-neun.</div><div class="dl-ar">رقمي: 0175، 32489</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 5 — التعريف المكتوب (نموذج تعريف)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hallo! Ich heiße Fatima. Ich bin 22 Jahre alt.</div><div class="dl-ar">أهلاً! اسمي فاطمة. عمري 22 سنة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich komme aus Ägypten, aus Kairo. Ich wohne jetzt in Frankfurt.</div><div class="dl-ar">أنا من مصر، من القاهرة. أسكن الآن في فرانكفورت.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich bin Studentin. Ich spreche Arabisch, Englisch und ein bisschen Deutsch.</div><div class="dl-ar">أنا طالبة. أتكلم العربية والإنجليزية وقليلاً من الألمانية.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Meine Telefonnummer ist: null-eins-sieben-sieben, neun-null-drei-zwei-eins.</div><div class="dl-ar">رقمي: 0177، 90321</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VERBS -->
+<section class="section" id="verbs">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الأفعال الثلاثة — heißen · kommen · wohnen</div><div class="sec-d">تصريف كامل + النمط العام للأفعال المنتظمة + النفي + الأسئلة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ خبر رائع — الأفعال المنتظمة!</div><p>هذه الأفعال الثلاثة <strong style="color:var(--white)">منتظمة</strong> — تتبع نمطاً واضحاً مقارنة بـ sein الشاذ. النمط هو: الجذر + النهاية. بمجرد تعلم النمط، تستطيع تصريف مئات الأفعال الألمانية! <code>heißen</code> استثناء بسيط في du/er (ß بدل ss).</p></div>
+  <div style="overflow-x:auto;margin-bottom:2rem;" class="reveal">
+    <table class="verb-t">
+      <thead><tr><th>الضمير</th><th style="color:var(--gold)">heißen</th><th style="color:var(--blue)">kommen</th><th style="color:var(--green)">wohnen</th><th>المعنى</th><th>مثال</th></tr></thead>
+      <tbody>
+        <tr><td class="vt-p">ich</td><td class="vt-v">heiße</td><td class="vt-v2">komme</td><td class="vt-v3">wohne</td><td class="vt-m">أنا</td><td class="vt-e">Ich heiße Nico. / Ich komme aus Spanien. / Ich wohne in Berlin.</td></tr>
+        <tr><td class="vt-p">du</td><td class="vt-v">heißt</td><td class="vt-v2">kommst</td><td class="vt-v3">wohnst</td><td class="vt-m">أنت</td><td class="vt-e">Du heißt Emma? / Du kommst aus Deutschland? / Du wohnst hier?</td></tr>
+        <tr><td class="vt-p">er / sie / es</td><td class="vt-v">heißt</td><td class="vt-v2">kommt</td><td class="vt-v3">wohnt</td><td class="vt-m">هو/هي</td><td class="vt-e">Er heißt Thomas. / Sie kommt aus Frankreich. / Es wohnt da.</td></tr>
+        <tr><td class="vt-p">wir</td><td class="vt-v">heißen</td><td class="vt-v2">kommen</td><td class="vt-v3">wohnen</td><td class="vt-m">نحن</td><td class="vt-e">Wir heißen Müller. / Wir kommen aus der Türkei. / Wir wohnen zusammen.</td></tr>
+        <tr><td class="vt-p">ihr</td><td class="vt-v">heißt</td><td class="vt-v2">kommt</td><td class="vt-v3">wohnt</td><td class="vt-m">أنتم</td><td class="vt-e">Ihr heißt Max und Moritz? / Woher kommt ihr? / Wo wohnt ihr?</td></tr>
+        <tr><td class="vt-p">sie / Sie</td><td class="vt-v">heißen</td><td class="vt-v2">kommen</td><td class="vt-v3">wohnen</td><td class="vt-m">هم/حضرتك</td><td class="vt-e">Sie heißen Schmidt. / Sie kommen aus Berlin. / Sie wohnen in München.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🧠 النمط الذهبي للأفعال المنتظمة</div><p>الجذر = الفعل بدون -en: <code>komm-</code> · <code>wohn-</code>. ثم تضيف: <code>-e</code> لـ ich · <code>-st</code> لـ du · <code>-t</code> لـ er/sie/es · <code>-en</code> لـ wir/sie/Sie · <code>-t</code> لـ ihr. <code>heißen</code> خاص لأن الجذر ينتهي بـ ß، فـ du/er يصبح <code>heißt</code> (ليس heißest).</p></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 النفي — أضف nicht في النهاية عادةً</div><p><code>Ich komme nicht aus Deutschland.</code> لست من ألمانيا. · <code>Er wohnt nicht in Berlin.</code> هو لا يسكن في برلين. · <code>Ich heiße nicht Peter.</code> اسمي ليس بيتر.</p></div>
+  <p class="vst reveal">بنية الجملة — V2 مع الأفعال الجديدة</p>
+  <div class="satz-box reveal"><div class="satz-title">الجملة العادية — الفعل في الموضع الثاني دائماً (V2)</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">komme</span><span class="sbox sbox-prep">aus</span><span class="sbox sbox-rest">Syrien.</span><span class="sbox-ar">أنا من سوريا.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Emma</span><span class="sbox sbox-verb">wohnt</span><span class="sbox sbox-prep">in</span><span class="sbox sbox-rest">München.</span><span class="sbox-ar">إيما تسكن في ميونيخ.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">heißen</span><span class="sbox sbox-rest">Müller.</span><span class="sbox-ar">اسمنا مولر.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">سؤال مغلق — الفعل أولاً</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Heißt</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">Emma?</span><span class="sbox-ar">هل اسمك إيما؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Kommt</span><span class="sbox sbox-subj">er</span><span class="sbox sbox-prep">aus</span><span class="sbox sbox-rest">Deutschland?</span><span class="sbox-ar">هل هو من ألمانيا؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Wohnen</span><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-prep">in</span><span class="sbox sbox-rest">Berlin?</span><span class="sbox-ar">هل تسكن في برلين؟</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">سؤال مفتوح W-Fragen — كلمة السؤال + الفعل + الفاعل</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie</span><span class="sbox sbox-verb">heißen</span><span class="sbox sbox-subj">Sie?</span><span class="sbox-ar">ما اسمك؟ (رسمي)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Woher</span><span class="sbox sbox-verb">kommst</span><span class="sbox sbox-subj">du?</span><span class="sbox-ar">من أين أنت؟ (عادي)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">wohnt</span><span class="sbox sbox-subj">er?</span><span class="sbox-ar">أين يسكن هو؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie alt</span><span class="sbox sbox-verb">sind</span><span class="sbox sbox-subj">Sie?</span><span class="sbox-ar">كم عمرك؟ (رسمي)</span></div>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">📌 aus مقابل in — متى أستخدم أيهما؟</div><p><code>aus</code> = من (جنسية/أصل): Ich komme <code>aus</code> Syrien. Ich komme <code>aus</code> Damaskus. — <code>in</code> = في (موقع حالي): Ich wohne <code>in</code> Berlin. Ich wohne <code>in</code> Deutschland. القاعدة: <strong style="color:var(--white)">kommen → aus | wohnen → in</strong></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- NUMBERS -->
+<section class="section" id="numbers">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">الأرقام — Zahlen 0–100</div><div class="sec-d">حفظ المجموعات + النمط الذهبي للمركبة + الهاتف والعمر</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🎯 استراتيجية الحفظ</div><p>لا تحفظ 1 إلى 100 بالترتيب — هذا بطيء ومُمل. الاستراتيجية: (1) احفظ 1–12 (كلها فريدة) · (2) قاعدة 13–19 (رقم + zehn) · (3) قاعدة العشرات (3 كلمات خاصة فقط: dreißig، فقط 3 بدل 30!) · (4) النمط المركب: [ones]und[tens]. هذا يغطي كل شيء.</p></div>
+  <p class="vst reveal">الأرقام 1–20 — احفظها كاملاً</p>
+  <div class="num-grid reveal">
+    <div class="num-card"><div class="num-n">0</div><div class="num-de">null</div><div class="num-ar">صفر</div></div>
+    <div class="num-card"><div class="num-n">1</div><div class="num-de">eins</div><div class="num-ar">واحد</div></div>
+    <div class="num-card"><div class="num-n">2</div><div class="num-de">zwei</div><div class="num-ar">اثنان</div></div>
+    <div class="num-card"><div class="num-n">3</div><div class="num-de">drei</div><div class="num-ar">ثلاثة</div></div>
+    <div class="num-card"><div class="num-n">4</div><div class="num-de">vier</div><div class="num-ar">أربعة</div></div>
+    <div class="num-card"><div class="num-n">5</div><div class="num-de">fünf</div><div class="num-ar">خمسة</div></div>
+    <div class="num-card"><div class="num-n">6</div><div class="num-de">sechs</div><div class="num-ar">ستة</div></div>
+    <div class="num-card"><div class="num-n">7</div><div class="num-de">sieben</div><div class="num-ar">سبعة</div></div>
+    <div class="num-card"><div class="num-n">8</div><div class="num-de">acht</div><div class="num-ar">ثمانية</div></div>
+    <div class="num-card"><div class="num-n">9</div><div class="num-de">neun</div><div class="num-ar">تسعة</div></div>
+    <div class="num-card"><div class="num-n">10</div><div class="num-de">zehn</div><div class="num-ar">عشرة</div></div>
+    <div class="num-card"><div class="num-n">11</div><div class="num-de">elf</div><div class="num-ar">أحد عشر</div></div>
+    <div class="num-card"><div class="num-n">12</div><div class="num-de">zwölf</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ فريدة!</div></div>
+    <div class="num-card"><div class="num-n">13</div><div class="num-de">dreizehn</div><div class="num-ar">drei+zehn</div></div>
+    <div class="num-card"><div class="num-n">14</div><div class="num-de">vierzehn</div><div class="num-ar">vier+zehn</div></div>
+    <div class="num-card"><div class="num-n">15</div><div class="num-de">fünfzehn</div><div class="num-ar">fünf+zehn</div></div>
+    <div class="num-card"><div class="num-n">16</div><div class="num-de">sechzehn</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ sechs→sech</div></div>
+    <div class="num-card"><div class="num-n">17</div><div class="num-de">siebzehn</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ sieben→sieb</div></div>
+    <div class="num-card"><div class="num-n">18</div><div class="num-de">achtzehn</div><div class="num-ar">acht+zehn</div></div>
+    <div class="num-card"><div class="num-n">19</div><div class="num-de">neunzehn</div><div class="num-ar">neun+zehn</div></div>
+    <div class="num-card"><div class="num-n">20</div><div class="num-de">zwanzig</div><div class="num-ar">عشرون</div></div>
+  </div>
+  <p class="vst reveal">العشرات 30–100 — 3 كلمات فريدة فقط!</p>
+  <div class="num-grid reveal" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+    <div class="num-card"><div class="num-n">30</div><div class="num-de">dreißig</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ dreißig ليست dreizehn!</div></div>
+    <div class="num-card"><div class="num-n">40</div><div class="num-de">vierzig</div><div class="num-ar">vier+zig</div></div>
+    <div class="num-card"><div class="num-n">50</div><div class="num-de">fünfzig</div><div class="num-ar">fünf+zig</div></div>
+    <div class="num-card"><div class="num-n">60</div><div class="num-de">sechzig</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ sechs→sech</div></div>
+    <div class="num-card"><div class="num-n">70</div><div class="num-de">siebzig</div><div class="num-de" style="color:var(--red);font-size:.62rem">⚠️ sieben→sieb</div></div>
+    <div class="num-card"><div class="num-n">80</div><div class="num-de">achtzig</div><div class="num-ar">acht+zig</div></div>
+    <div class="num-card"><div class="num-n">90</div><div class="num-de">neunzig</div><div class="num-ar">neun+zig</div></div>
+    <div class="num-card"><div class="num-n">100</div><div class="num-de">hundert</div><div class="num-ar">مئة — احفظها!</div></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">🔑 النمط الذهبي للأرقام المركبة (21–99)</div><p><strong style="color:var(--white)">[ones]und[tens]</strong> — الآحاد ثم und ثم العشرات:<br>21 = <code>einundzwanzig</code> (واحد وعشرون) · 35 = <code>fünfunddreißig</code> · 47 = <code>siebenundvierzig</code> · 99 = <code>neunundneunzig</code><br>⚠️ كلمة واحدة موصولة — ليست كلمتين منفصلتين!</p></div>
+  <p class="vst reveal">الأرقام في الحياة اليومية</p>
+  <div class="phone-box reveal">
+    <div class="ph-title">📱 رقم الهاتف — Telefonnummer</div>
+    <div class="ph-num">+49 0176 − 34 89 21</div>
+    <div class="ph-de">null-eins-sieben-sechs — vierundreißig-neunundachtzig-einundzwanzig</div>
+    <div class="ph-ar">القاعدة: اقرأ الأرقام منفردة أو ثنائية — لا تجمعها كلها</div>
+  </div>
+  <div class="phone-box reveal">
+    <div class="ph-title">🎂 العمر — Alter</div>
+    <div class="ph-num">Wie alt bist du?</div>
+    <div class="ph-de">Ich bin dreiundzwanzig Jahre alt. (23)</div>
+    <div class="ph-ar">⚠️ لا تنسَ "Jahre alt" — لا تقل فقط "Ich bin 23"</div>
+  </div>
+  <div class="phone-box reveal">
+    <div class="ph-title">🏠 رقم البيت والشارع</div>
+    <div class="ph-num">Adalbertstraße 12</div>
+    <div class="ph-de">Adalbertstraße zwölf</div>
+    <div class="ph-ar">ارقام الشوارع تُقرأ كما هي — واحد واثنان لا "إثنا عشر"</div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- COUNTRIES -->
+<section class="section" id="countries">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">الدول والجنسيات — Länder & Nationalitäten</div><div class="sec-d">15+ دولة + المذكر والمؤنث + صفة الجنسية + قاعدة مهمة جداً</div></div></div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ قاعدة أساسية: الجنسية بدون أداة تعريف!</div><p>بعد فعل sein: لا ein/eine! <code>Ich bin Syrer.</code> ✅ — <code>Ich bin ein Syrer.</code> ❌. نفس قاعدة المهن من Unit 01: <code>Er ist Arzt.</code> هو طبيب. بدون ein! الجنسية مثلها تماماً.</p></div>
+  <div class="country-grid reveal">
+    <div class="country-card"><span class="cc-flag">🇩🇪</span><div class="cc-country">Deutschland</div><div class="cc-nat-m">♂ Deutscher</div><div class="cc-nat-f">♀ Deutsche</div><div class="cc-adj">Adj: deutsch</div><div class="cc-ar">ألمانيا — الألماني/الألمانية</div></div>
+    <div class="country-card"><span class="cc-flag">🇸🇾</span><div class="cc-country">Syrien</div><div class="cc-nat-m">♂ Syrer</div><div class="cc-nat-f">♀ Syrerin</div><div class="cc-adj">Adj: syrisch</div><div class="cc-ar">سوريا — السوري/السورية</div></div>
+    <div class="country-card"><span class="cc-flag">🇯🇴</span><div class="cc-country">Jordanien</div><div class="cc-nat-m">♂ Jordanier</div><div class="cc-nat-f">♀ Jordanierin</div><div class="cc-adj">Adj: jordanisch</div><div class="cc-ar">الأردن</div></div>
+    <div class="country-card"><span class="cc-flag">🇪🇬</span><div class="cc-country">Ägypten</div><div class="cc-nat-m">♂ Ägypter</div><div class="cc-nat-f">♀ Ägypterin</div><div class="cc-adj">Adj: ägyptisch</div><div class="cc-ar">مصر</div></div>
+    <div class="country-card"><span class="cc-flag">🇸🇦</span><div class="cc-country">Saudi-Arabien</div><div class="cc-nat-m">♂ Saudi-Araber</div><div class="cc-nat-f">♀ Saudi-Araberin</div><div class="cc-adj">Adj: saudi-arabisch</div><div class="cc-ar">السعودية</div></div>
+    <div class="country-card"><span class="cc-flag">🇲🇦</span><div class="cc-country">Marokko</div><div class="cc-nat-m">♂ Marokkaner</div><div class="cc-nat-f">♀ Marokkanerin</div><div class="cc-adj">Adj: marokkanisch</div><div class="cc-ar">المغرب</div></div>
+    <div class="country-card"><span class="cc-flag">🇹🇷</span><div class="cc-country">die Türkei</div><div class="cc-nat-m">♂ Türke</div><div class="cc-nat-f">♀ Türkin</div><div class="cc-adj">Adj: türkisch</div><div class="cc-ar">تركيا — ⚠️ مؤنث (die)</div></div>
+    <div class="country-card"><span class="cc-flag">🇮🇷</span><div class="cc-country">der Iran</div><div class="cc-nat-m">♂ Iraner</div><div class="cc-nat-f">♀ Iranerin</div><div class="cc-adj">Adj: iranisch</div><div class="cc-ar">إيران — ⚠️ مذكر (der)</div></div>
+    <div class="country-card"><span class="cc-flag">🇪🇸</span><div class="cc-country">Spanien</div><div class="cc-nat-m">♂ Spanier</div><div class="cc-nat-f">♀ Spanierin</div><div class="cc-adj">Adj: spanisch</div><div class="cc-ar">إسبانيا</div></div>
+    <div class="country-card"><span class="cc-flag">🇫🇷</span><div class="cc-country">Frankreich</div><div class="cc-nat-m">♂ Franzose</div><div class="cc-nat-f">♀ Französin</div><div class="cc-adj">Adj: französisch</div><div class="cc-ar">فرنسا — ⚠️ استثناء!</div></div>
+    <div class="country-card"><span class="cc-flag">🇬🇧</span><div class="cc-country">Großbritannien</div><div class="cc-nat-m">♂ Brite</div><div class="cc-nat-f">♀ Britin</div><div class="cc-adj">Adj: britisch</div><div class="cc-ar">بريطانيا العظمى</div></div>
+    <div class="country-card"><span class="cc-flag">🇺🇸</span><div class="cc-country">die USA</div><div class="cc-nat-m">♂ Amerikaner</div><div class="cc-nat-f">♀ Amerikanerin</div><div class="cc-adj">Adj: amerikanisch</div><div class="cc-ar">أمريكا — die (جمع)</div></div>
+    <div class="country-card"><span class="cc-flag">🇦🇹</span><div class="cc-country">Österreich</div><div class="cc-nat-m">♂ Österreicher</div><div class="cc-nat-f">♀ Österreicherin</div><div class="cc-adj">Adj: österreichisch</div><div class="cc-ar">النمسا</div></div>
+    <div class="country-card"><span class="cc-flag">🇨🇭</span><div class="cc-country">die Schweiz</div><div class="cc-nat-m">♂ Schweizer</div><div class="cc-nat-f">♀ Schweizerin</div><div class="cc-adj">Adj: schweizerisch</div><div class="cc-ar">سويسرا — ⚠️ مؤنث (die)</div></div>
+    <div class="country-card"><span class="cc-flag">🇮🇹</span><div class="cc-country">Italien</div><div class="cc-nat-m">♂ Italiener</div><div class="cc-nat-f">♀ Italienerin</div><div class="cc-adj">Adj: italienisch</div><div class="cc-ar">إيطاليا</div></div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 الدول الخاصة — die + الاسم</div><p>معظم الدول بلا أداة تعريف: Syrien، Deutschland، Frankreich. لكن 3 دول خاصة تأخذ أداة: <code>die Türkei</code> (المؤنثة)، <code>die Schweiz</code> (المؤنثة)، <code>die USA</code> (الجمع)، <code>der Iran</code> (المذكر). مهم لأنك ستقول: Ich komme aus <code>der</code> Türkei — ليس aus Türkei!</p></div>
+  <div class="note-blue reveal"><div class="note-title nt-b">📌 اللغات — Sprachen</div><p>اللغات في الألمانية تأخذ نفس شكل صفة الجنسية لكن بحرف كبير: Arabisch · Deutsch · Türkisch · Englisch · Französisch · Spanisch · Persisch. الجملة: <code>Ich spreche Arabisch und ein bisschen Deutsch.</code> بدون أداة تعريف!</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCAB -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات — 80+ كلمة أساسية</div><div class="sec-d">مقسمة بالموضوع — احفظها مع الأمثلة لا بشكل منفرد</div></div></div>
+  <p class="vst reveal">أفعال التعريف</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">heißen</div><div class="vi-ar">يُدعى / اسمه</div><div class="vi-note">غير منتظم عند ß</div></div>
+    <div class="vi"><div class="vi-de">kommen</div><div class="vi-ar">يأتي / من أين</div><div class="vi-note">kommen aus = من أصله</div></div>
+    <div class="vi"><div class="vi-de">wohnen</div><div class="vi-ar">يسكن / يعيش</div><div class="vi-note">wohnen in = في مكان</div></div>
+    <div class="vi"><div class="vi-de">sprechen</div><div class="vi-ar">يتكلم</div><div class="vi-note">غير منتظم — du sprichst</div></div>
+    <div class="vi"><div class="vi-de">machen</div><div class="vi-ar">يفعل / يعمل</div><div class="vi-note">Was machst du?</div></div>
+    <div class="vi"><div class="vi-de">buchstabieren</div><div class="vi-ar">يتهجأ</div><div class="vi-note">Können Sie buchstabieren?</div></div>
+    <div class="vi"><div class="vi-de">wiederholen</div><div class="vi-ar">يعيد / يكرر</div><div class="vi-note">Können Sie das wiederholen?</div></div>
+    <div class="vi"><div class="vi-de">verstehen</div><div class="vi-ar">يفهم</div><div class="vi-note">Ich verstehe nicht.</div></div>
+  </div>
+  <p class="vst reveal">معلومات شخصية</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Name</div><div class="vi-ar">الاسم (مذكر)</div><div class="vi-note">mein Name — ليس meine!</div></div>
+    <div class="vi"><div class="vi-de">der Vorname</div><div class="vi-ar">الاسم الأول</div><div class="vi-note">vor = قبل</div></div>
+    <div class="vi"><div class="vi-de">der Nachname</div><div class="vi-ar">الاسم الأخير</div><div class="vi-note">Familienname أيضاً</div></div>
+    <div class="vi"><div class="vi-de">das Alter</div><div class="vi-ar">العمر (محايد)</div><div class="vi-note">Wie alt = كم عمرك</div></div>
+    <div class="vi"><div class="vi-de">das Geburtsdatum</div><div class="vi-ar">تاريخ الميلاد</div><div class="vi-note">في الأوراق الرسمية</div></div>
+    <div class="vi"><div class="vi-de">die Adresse</div><div class="vi-ar">العنوان</div><div class="vi-note">Wo wohnen Sie? — الأدرس</div></div>
+    <div class="vi"><div class="vi-de">die Telefonnummer</div><div class="vi-ar">رقم الهاتف</div><div class="vi-note">Handy = موبايل</div></div>
+    <div class="vi"><div class="vi-de">die E-Mail-Adresse</div><div class="vi-ar">البريد الإلكتروني</div><div class="vi-note">das-Zeichen = @</div></div>
+    <div class="vi"><div class="vi-de">der Beruf</div><div class="vi-ar">المهنة</div><div class="vi-note">Was ist Ihr Beruf?</div></div>
+    <div class="vi"><div class="vi-de">die Sprache</div><div class="vi-ar">اللغة</div><div class="vi-note">Sprachen = لغات (جمع)</div></div>
+    <div class="vi"><div class="vi-de">die Nationalität</div><div class="vi-ar">الجنسية</div><div class="vi-note">Was ist Ihre Nationalität?</div></div>
+    <div class="vi"><div class="vi-de">das Formular</div><div class="vi-ar">الاستمارة/النموذج</div><div class="vi-note">فيلله النموذج / اسنتمارة</div></div>
+  </div>
+  <p class="vst reveal">المهن الشائعة — Berufe</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Arzt / die Ärztin</div><div class="vi-ar">الطبيب/الطبيبة</div></div>
+    <div class="vi"><div class="vi-de">der Ingenieur / -in</div><div class="vi-ar">المهندس/ة</div></div>
+    <div class="vi"><div class="vi-de">der Lehrer / die Lehrerin</div><div class="vi-ar">المعلم/المعلمة</div></div>
+    <div class="vi"><div class="vi-de">der Student / die Studentin</div><div class="vi-ar">الطالب/الطالبة</div></div>
+    <div class="vi"><div class="vi-de">der Schüler / die Schülerin</div><div class="vi-ar">التلميذ/التلميذة</div></div>
+    <div class="vi"><div class="vi-de">der Kaufmann / -frau</div><div class="vi-ar">التاجر/التاجرة</div></div>
+    <div class="vi"><div class="vi-de">der Koch / die Köchin</div><div class="vi-ar">الطاهي/الطاهية</div></div>
+    <div class="vi"><div class="vi-de">der Anwalt / die Anwältin</div><div class="vi-ar">المحامي/المحامية</div></div>
+  </div>
+  <p class="vst reveal">كلمات مساعدة أساسية</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">jetzt</div><div class="vi-ar">الآن</div><div class="vi-note">Ich wohne jetzt in Berlin.</div></div>
+    <div class="vi"><div class="vi-de">auch</div><div class="vi-ar">أيضاً</div><div class="vi-note">Ich komme auch aus Syrien.</div></div>
+    <div class="vi"><div class="vi-de">nur</div><div class="vi-ar">فقط</div><div class="vi-note">nur ein bisschen = قليلاً فقط</div></div>
+    <div class="vi"><div class="vi-de">ein bisschen</div><div class="vi-ar">قليلاً / بعض الشيء</div><div class="vi-note">ein bisschen Deutsch sprechen</div></div>
+    <div class="vi"><div class="vi-de">aber</div><div class="vi-ar">لكن</div><div class="vi-note">aber لا تغير ترتيب الجملة</div></div>
+    <div class="vi"><div class="vi-de">und</div><div class="vi-ar">و</div><div class="vi-note">Arabisch und Englisch</div></div>
+    <div class="vi"><div class="vi-de">oder</div><div class="vi-ar">أو</div><div class="vi-note">Tee oder Kaffee?</div></div>
+    <div class="vi"><div class="vi-de">noch</div><div class="vi-ar">بعد / لا يزال / أيضاً</div><div class="vi-note">noch nicht = لم بعد</div></div>
+    <div class="vi"><div class="vi-de">schon</div><div class="vi-ar">بالفعل / الآن</div><div class="vi-note">Ich bin schon hier. أنا هنا.</div></div>
+    <div class="vi"><div class="vi-de">leider</div><div class="vi-ar">للأسف</div><div class="vi-note">Leider spreche ich kein Deutsch.</div></div>
+    <div class="vi"><div class="vi-de">natürlich</div><div class="vi-ar">بالطبع</div><div class="vi-note">Natürlich! طبعاً!</div></div>
+    <div class="vi"><div class="vi-de">genau</div><div class="vi-ar">بالضبط</div><div class="vi-note">Ja, genau! نعم، بالضبط!</div></div>
+    <div class="vi"><div class="vi-de">bitte</div><div class="vi-ar">من فضلك / تفضل</div><div class="vi-note">Wie bitte? = ماذا؟ (لم أسمع)</div></div>
+    <div class="vi"><div class="vi-de">zusammen</div><div class="vi-ar">معاً / سوياً</div><div class="vi-note">Wir wohnen zusammen.</div></div>
+    <div class="vi"><div class="vi-de">seit</div><div class="vi-ar">منذ</div><div class="vi-note">seit drei Jahren = منذ 3 سنوات</div></div>
+    <div class="vi"><div class="vi-de">hier</div><div class="vi-ar">هنا</div><div class="vi-note">Ich wohne hier. أسكن هنا.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">الثقافة الألمانية — Kultur</div><div class="sec-d">تعارف الألمان · الهاتف · الأسماء · ما يسألونه وما لا يسألونه</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cu-icon">📞</span><div class="cu-title">الرد على الهاتف — الأسلوب الألماني</div><div class="cu-text">الألمان يردون على الهاتف باسمهم الأخير فقط: "Müller!" أو "Schmidt, guten Tag!" — وليس "Hallo" أو "Ja?". إذا اتصلت بشخص يجب أن تعرّف عن نفسك فوراً: "Hier ist Ahmed Al-Rashid."</div></div>
+    <div class="culture-card"><span class="cu-icon">🤝</span><div class="cu-title">الأسماء الأولى — Vornamen</div><div class="cu-text">في ألمانيا لا تستخدم اسم الشخص الأول إلا إذا عرضه عليك. في المواقف الرسمية: "Herr Müller" أو "Frau Schmidt" دائماً. هذا عكس العرب الذين يستخدمون الاسم الأول بسرعة.</div></div>
+    <div class="culture-card"><span class="cu-icon">🔒</span><div class="cu-title">الخصوصية — Privatsphäre</div><div class="cu-text">الألمان حساسون جداً للخصوصية. السؤال عن الراتب أو الإيجار أو الدين في أول لقاء = غير مناسب جداً. لا تسأل "Wie viel verdienst du?" (كم راتبك) إلا مع صديق قريب جداً.</div></div>
+    <div class="culture-card"><span class="cu-icon">🎂</span><div class="cu-title">العمر — الألمان والعمر</div><div class="cu-text">السؤال عن العمر في سياق التعارف مقبول، لكن مع النساء قد يكون حساساً بعد سن معين. في النماذج الرسمية يُكتب دائماً. القاعدة: Ich bin ... Jahre alt ولا تنسَ "alt".</div></div>
+    <div class="culture-card"><span class="cu-icon">🌍</span><div class="cu-title">التعدد الثقافي في ألمانيا</div><div class="cu-text">ألمانيا دولة متعددة الثقافات: ~4 مليون تركي، ~750,000 عربي، وملايين من خلفيات مختلفة. قول "Ich komme aus Syrien" طبيعي جداً ومعتاد.</div></div>
+    <div class="culture-card"><span class="cu-icon">📝</span><div class="cu-title">نماذج التسجيل — Formulare</div><div class="cu-text">في ألمانيا ستملأ الكثير من النماذج: Anmeldung (تسجيل العنوان)، Krankenversicherung (تأمين صحي)، Bankkonto (حساب بنكي). كلها تسأل عن: Name, Vorname, Geburtsdatum, Adresse, Nationalität.</div></div>
+  </div>
+
+  <p class="vst reveal">الأخطاء الشائعة — Typische Fehler</p>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich heiße mich Ahmed.</div><div class="mi-explain">heiße لا تحتاج mich — heißen لا تأخذ مفعولاً انعكاسياً</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich heiße Ahmed.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Meine Name ist Ahmed.</div><div class="mi-explain">Name مذكر (der Name) → mein وليس meine</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Mein Name ist Ahmed.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich bin kommen aus Syrien.</div><div class="mi-explain">kommen فعل مضارع عادي — ليس مركباً</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich komme aus Syrien.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich bin ein Syrer.</div><div class="mi-explain">الجنسية بعد sein بدون ein/eine — مثل المهن</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich bin Syrer.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich bin 28.</div><div class="mi-explain">يجب تحديد السياق — بدون "Jahre alt" غير واضح</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich bin 28 Jahre alt.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich komme in Berlin.</div><div class="mi-explain">kommen → aus وليس in — aus للأصل، in للموقع الحالي</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich komme aus Berlin.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">dreißig = 13</div><div class="mi-explain">dreizehn = 13 · dreißig = 30 — لا تخلط!</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">dreizehn = 13 · dreißig = 30</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">التمارين التفاعلية — 32 سؤال</div><div class="sec-d">تصريف · أرقام · دول · حوار · ثقافة — مع تغذية راجعة فورية</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">🎯 تعليمات</div><p>حل كل تمرين بعد دراسة قسمه. الهدف: 28+/32. أقل من 24 = أعد الوحدة من البداية قبل الانتقال لـ Unit 03.</p></div>
+
+  <!-- EX 1 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — تصريف heißen (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Ich ___ Ahmed."</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="1" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="1" data-a="heißen" onclick="check(this)">heißen</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Wie ___ du?"</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="2" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="2" data-a="heißen" onclick="check(this)">heißen</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Er ___ Thomas."</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="3" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="3" data-a="heißen" onclick="check(this)">heißen</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Wir ___ Müller."</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="heißen" onclick="check(this)">heißen</button><button class="ex-btn" data-q="4" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="4" data-a="heiße" onclick="check(this)">heiße</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Wie ___ ihr?"</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="5" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="5" data-a="heißen" onclick="check(this)">heißen</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Sie (هي) ___ Emma."</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="6" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="6" data-a="heißen" onclick="check(this)">heißen</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+
+  <!-- EX 2 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — تصريف kommen و wohnen (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Ich ___ aus Syrien."</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="komme" onclick="check(this)">komme</button><button class="ex-btn" data-q="7" data-a="kommst" onclick="check(this)">kommst</button><button class="ex-btn" data-q="7" data-a="kommt" onclick="check(this)">kommt</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Woher ___ du?"</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="kommst" onclick="check(this)">kommst</button><button class="ex-btn" data-q="8" data-a="komme" onclick="check(this)">komme</button><button class="ex-btn" data-q="8" data-a="kommen" onclick="check(this)">kommen</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Er ___ nicht aus Deutschland."</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="kommt" onclick="check(this)">kommt</button><button class="ex-btn" data-q="9" data-a="komme" onclick="check(this)">komme</button><button class="ex-btn" data-q="9" data-a="kommen" onclick="check(this)">kommen</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Ich ___ in Berlin."</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="wohne" onclick="check(this)">wohne</button><button class="ex-btn" data-q="10" data-a="wohnst" onclick="check(this)">wohnst</button><button class="ex-btn" data-q="10" data-a="wohnt" onclick="check(this)">wohnt</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Wo ___ du?"</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="wohnst" onclick="check(this)">wohnst</button><button class="ex-btn" data-q="11" data-a="wohne" onclick="check(this)">wohne</button><button class="ex-btn" data-q="11" data-a="wohnt" onclick="check(this)">wohnt</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Wir ___ zusammen in München."</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="wohnen" onclick="check(this)">wohnen</button><button class="ex-btn" data-q="12" data-a="wohnst" onclick="check(this)">wohnst</button><button class="ex-btn" data-q="12" data-a="wohnt" onclick="check(this)">wohnt</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <!-- EX 3 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — الأرقام (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما هو الرقم 7 بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="sieben" onclick="check(this)">sieben</button><button class="ex-btn" data-q="13" data-a="sechs" onclick="check(this)">sechs</button><button class="ex-btn" data-q="13" data-a="acht" onclick="check(this)">acht</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هو الرقم 15 بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="fünfzehn" onclick="check(this)">fünfzehn</button><button class="ex-btn" data-q="14" data-a="fünfzig" onclick="check(this)">fünfzig</button><button class="ex-btn" data-q="14" data-a="vierzehn" onclick="check(this)">vierzehn</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هو الرقم 30 بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="dreißig" onclick="check(this)">dreißig</button><button class="ex-btn" data-q="15" data-a="dreizehn" onclick="check(this)">dreizehn</button><button class="ex-btn" data-q="15" data-a="dreizig" onclick="check(this)">dreizig ❌</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هو الرقم 21 بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="einundzwanzig" onclick="check(this)">einundzwanzig</button><button class="ex-btn" data-q="16" data-a="zwanzigeins" onclick="check(this)">zwanzigeins ❌</button><button class="ex-btn" data-q="16" data-a="zwanzig-eins" onclick="check(this)">zwanzig-eins ❌</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هو رقم dreiundfünfzig؟</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="53" onclick="check(this)">53</button><button class="ex-btn" data-q="17" data-a="35" onclick="check(this)">35</button><button class="ex-btn" data-q="17" data-a="43" onclick="check(this)">43</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول عمرك بالألمانية؟ (أنت 28 سنة)</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="Ich bin 28 Jahre alt." onclick="check(this)">Ich bin 28 Jahre alt.</button><button class="ex-btn" data-q="18" data-a="Ich bin 28." onclick="check(this)">Ich bin 28.</button><button class="ex-btn" data-q="18" data-a="Ich habe 28 Jahre." onclick="check(this)">Ich habe 28 Jahre.</button></div><div class="ex-fb" id="f18"></div></div>
+  </div>
+
+  <!-- EX 4 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — الدول والجنسيات (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Ich komme ___ Syrien."</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="aus" onclick="check(this)">aus</button><button class="ex-btn" data-q="19" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="19" data-a="nach" onclick="check(this)">nach</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "أنا سوري" بالألمانية؟ (مذكر)</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="Ich bin Syrer." onclick="check(this)">Ich bin Syrer.</button><button class="ex-btn" data-q="20" data-a="Ich bin ein Syrer." onclick="check(this)">Ich bin ein Syrer.</button><button class="ex-btn" data-q="20" data-a="Ich bin Syrien." onclick="check(this)">Ich bin Syrien.</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">امرأة من مصر = تقول؟</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="Ägypterin" onclick="check(this)">Ägypterin</button><button class="ex-btn" data-q="21" data-a="Ägypter" onclick="check(this)">Ägypter</button><button class="ex-btn" data-q="21" data-a="Ägyptisch" onclick="check(this)">Ägyptisch</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما عاصمة ألمانيا؟</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="Berlin" onclick="check(this)">Berlin</button><button class="ex-btn" data-q="22" data-a="München" onclick="check(this)">München</button><button class="ex-btn" data-q="22" data-a="Frankfurt" onclick="check(this)">Frankfurt</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ترجم: "Ich wohne ___ Berlin." (في بيرلين)</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="23" data-a="aus" onclick="check(this)">aus</button><button class="ex-btn" data-q="23" data-a="nach" onclick="check(this)">nach</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أي من هذه الدول تأخذ "die"؟</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="die Türkei" onclick="check(this)">die Türkei ✓</button><button class="ex-btn" data-q="24" data-a="Syrien" onclick="check(this)">Syrien (بدون)</button><button class="ex-btn" data-q="24" data-a="Jordanien" onclick="check(this)">Jordanien (بدون)</button></div><div class="ex-fb" id="f24"></div></div>
+  </div>
+
+  <!-- EX 5 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — أكمل الحوار (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wie ___ Sie, bitte?" — B: "Ich heiße Müller."</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="heißen" onclick="check(this)">heißen</button><button class="ex-btn" data-q="25" data-a="heißt" onclick="check(this)">heißt</button><button class="ex-btn" data-q="25" data-a="heiße" onclick="check(this)">heiße</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Woher kommen Sie?" — B: "Ich ___ aus Berlin."</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="komme" onclick="check(this)">komme</button><button class="ex-btn" data-q="26" data-a="kommen" onclick="check(this)">kommen</button><button class="ex-btn" data-q="26" data-a="kommt" onclick="check(this)">kommt</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wo wohnen Sie?" — B: "Ich ___ in Frankfurt."</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="wohne" onclick="check(this)">wohne</button><button class="ex-btn" data-q="27" data-a="wohnst" onclick="check(this)">wohnst</button><button class="ex-btn" data-q="27" data-a="komme" onclick="check(this)">komme</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wie alt sind Sie?" — B: "Ich ___ 35 Jahre alt."</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="bin" onclick="check(this)">bin</button><button class="ex-btn" data-q="28" data-a="heiße" onclick="check(this)">heiße</button><button class="ex-btn" data-q="28" data-a="komme" onclick="check(this)">komme</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Freut mich!" — B: ماذا يقول الرد المناسب؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="Mich auch!" onclick="check(this)">Mich auch!</button><button class="ex-btn" data-q="29" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button><button class="ex-btn" data-q="29" data-a="Ich bin Syrer." onclick="check(this)">Ich bin Syrer.</button></div><div class="ex-fb" id="f29"></div></div>
+  </div>
+
+  <!-- EX 6 -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — ثقافة وأخطاء (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أي جملة صحيحة؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="Ich heiße Ahmed." onclick="check(this)">Ich heiße Ahmed. ✅</button><button class="ex-btn" data-q="30" data-a="Ich heiße mich Ahmed." onclick="check(this)">Ich heiße mich Ahmed. ❌</button><button class="ex-btn" data-q="30" data-a="Meine Name ist Ahmed." onclick="check(this)">Meine Name ist Ahmed. ❌</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف يرد الألماني عادةً على الهاتف؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="باسمه الأخير" onclick="check(this)">باسمه الأخير</button><button class="ex-btn" data-q="31" data-a="Hallo!" onclick="check(this)">Hallo!</button><button class="ex-btn" data-q="31" data-a="Ja, bitte?" onclick="check(this)">Ja, bitte?</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Wie bitte?"</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="ماذا؟ لم أسمع / أعد من فضلك" onclick="check(this)">ماذا؟ لم أسمع</button><button class="ex-btn" data-q="32" data-a="كيف حالك؟" onclick="check(this)">كيف حالك؟</button><button class="ex-btn" data-q="32" data-a="من فضلك" onclick="check(this)">من فضلك فقط</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 القاعدة الذهبية للكتابة</div><p>لا تكتب وأمامك الجداول مفتوحة. اكتب من الذاكرة، ثم تحقق وصحّح. الكتابة بدون نظر تضاعف الاستفادة × 3 مقارنة بالكتابة مع نظر. الأخطاء = تعلم — لا تخف منها.</p></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 1 — عرّف عن نفسك بالكامل (8–10 جمل)</div><div class="wt-text">اكتب تعريفاً كاملاً بنفسك بالألمانية باستخدام كل ما تعلمته:</div><ul class="wt-list"><li>اسمك (heißen + مein Name)</li><li>من أين أنت (kommen aus)</li><li>أين تسكن الآن (wohnen in)</li><li>عمرك (Jahre alt)</li><li>مهنتك أو دراستك</li><li>اللغات التي تتكلمها</li><li>حالتك الاجتماعية (اختياري)</li></ul><textarea class="wt-input" style="min-height:150px;" placeholder="Hallo! Ich heiße ...&#10;Ich komme aus ...&#10;Ich wohne jetzt in ...&#10;Ich bin ... Jahre alt.&#10;Ich bin ...&#10;Ich spreche ..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 2 — اكتب 3 حوارات تعارف</div><div class="wt-text">اكتب حواراً لكل موقف (4–6 أسطر) — ركّز على الأسئلة والردود:</div><ul class="wt-list"><li>حوار مع مسؤول في مكتب تسجيل (رسمي جداً)</li><li>حوار مع زميل في دورة اللغة (عادي)</li><li>حوار عبر الهاتف (مع ذكر رقم الهاتف)</li></ul><textarea class="wt-input" style="min-height:180px;" placeholder="حوار 1 (رسمي — Anmeldung):&#10;B: Wie heißen Sie, bitte?&#10;A: ...&#10;&#10;حوار 2 (عادي — Sprachkurs):&#10;...&#10;&#10;حوار 3 (هاتف):&#10;..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 3 — جدول الأفعال الثلاثة من الذاكرة</div><div class="wt-text">أغلق الملف واكتب تصريف heißen وkommen وwohnen كاملاً مع مثال لكل شكل.</div><textarea class="wt-input" style="min-height:200px;" placeholder="heißen:&#10;ich → ___ · مثال: ___&#10;du → ___ · مثال: ___&#10;er/sie/es → ___ · مثال: ___&#10;wir → ___ · مثال: ___&#10;ihr → ___ · مثال: ___&#10;sie/Sie → ___ · مثال: ___&#10;&#10;kommen:&#10;ich → ___ ...&#10;&#10;wohnen:&#10;ich → ___ ..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 4 (إضافية) — النمط الذهبي للأرقام</div><div class="wt-text">اكتب هذه الأرقام بالألمانية بدون نظر: 17 · 30 · 45 · 62 · 78 · 93. ثم اكتب رقم هاتفك بالألمانية.</div><textarea class="wt-input" placeholder="17 = ___&#10;30 = ___&#10;45 = ___&#10;62 = ___&#10;78 = ___&#10;93 = ___&#10;&#10;رقم هاتفي: ___"></textarea></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">نفس مصادر Unit 01 + إضافات خاصة بـ Unit 02</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — Deck الأرقام</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">ابحث عن "German numbers 1-100 deck" — تكرار الأرقام 5 دقائق يومياً يثبتها في أسبوع. أضف بطاقات لجنسيتك وبلدك.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW — Nicos Weg كامل</div><div class="res-type">موقع مجاني</div><div class="res-desc">Einheit 1: "Kennenlernen" — هذا مباشرة Unit 02 بتفاصيل أكثر! فيه تمارين تفاعلية وقاموس وقواعد.</div><a class="res-link" href="https://learngerman.dw.com/en/overview" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German Original</div><div class="res-type">قناة YouTube</div><div class="res-desc">Lessons 6 و7 و3 و4 هي قلب Unit 02. بعد إنهاء الوحدة شاهد Lesson 18 (jemanden vorstellen = تعريف شخص آخر).</div></div>
+    <div class="res-card"><span class="res-icon">🔢</span><div class="res-name">تطبيق حساب بالألمانية</div><div class="res-type">تمرين شخصي</div><div class="res-desc">كل يوم اعمل عمليات حسابية بسيطة بالألمانية: fünf plus drei = acht. هذا يثبت الأرقام بشكل طبيعي جداً.</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1.1 — Kapitel 2</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الفصل الثاني من Menschen يغطي "sich vorstellen" بالتفصيل مع صور وتمارين. هو المرجع الرسمي لهذه الوحدة.</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki — أول محادثة!</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">بعد Unit 02 أنت قادر على أول محادثة حقيقية! ابحث عن community tutor وقدّم نفسك بالألمانية. ستكون مفاجأة جميلة.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">🏫</span><div class="res-name">Goethe Institut</div><div class="res-type">موقع رسمي</div><div class="res-desc">نماذج اختبار A1 تبدأ بـ sich vorstellen في قسم Sprechen. شاهد نماذج المحادثة لمعرفة المستوى المطلوب منذ الآن.</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">10 دقائق يومياً كمراجعة — لا أكثر. درس "People" و"Travel" فيه مفردات تتطابق مع Unit 02. تكميلي فقط.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">sich vorstellen + الأفعال</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Lesson 6 — sich vorstellen)</li><li class="vl">شاهد الفيديو 2 (Lesson 7 — kennenlernen)</li><li>ادرس جدولي الأسئلة رسمي/عادي</li><li>احفظ 6 ردود التعريف كاملاً</li><li>ادرس جدول heißen كاملاً مع الأمثلة</li><li>اقرأ الحوارات 1 و2 بصوت عالٍ 3 مرات</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">kommen + wohnen + بنية الجملة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 5 (Nicos Weg Ep.5)</li><li>احفظ جدول kommen وwohnen مع الأمثلة</li><li>ادرس aus vs in القاعدة والاستثناءات</li><li>ادرس بنية الجملة V2 مع الأفعال الجديدة</li><li>اقرأ الحوارات 3 و4 و5 بصوت عالٍ</li><li class="wl">مهمة الكتابة 1 — عرّف عن نفسك</li><li>حل تمرين 1 و2</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">الأرقام 0–100 + الدول</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 3 (Numbers 0–20)</li><li class="vl">شاهد الفيديو 4 (Numbers 21–100)</li><li>احفظ 0–20 كاملاً</li><li>ادرس النمط الذهبي للأرقام المركبة</li><li>ادرس جدول الدول والجنسيات (15+)</li><li>تمرن على رقم هاتفك وعمرك بالألمانية</li><li>حل تمرين 3 و4</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">مفردات + ثقافة + كتابة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 6 (Nicos Weg Ep.16)</li><li>ادرس المفردات 80+ مقسمة بالموضوع</li><li>ادرس قسم الثقافة والأخطاء الشائعة</li><li class="wl">مهمة الكتابة 2 (3 حوارات)</li><li class="wl">مهمة الكتابة 3 (جداول الأفعال من ذاكرة)</li><li>حل تمرين 5 و6</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">مراجعة شاملة + اختبار</div><ul class="day-tasks"><li>صرّف heißen/kommen/wohnen شفهياً بدون نظر</li><li>احسب 1 إلى 100 بخطوات 7 بالألمانية</li><li>قدّم نفسك بالألمانية كاملاً (60 ثانية)</li><li>أعد حل جميع التمارين الـ 32 — هدف 29+</li><li class="wl">مهمة الكتابة 4 (الأرقام من ذاكرة)</li><li>✅ انتقل لـ Unit 03 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 03</div><p>انتقل لـ Unit 03 فقط إذا: ✅ تستطيع تصريف heißen/kommen/wohnen بدون نظر · ✅ حصلت 28+/32 في التمارين · ✅ قدّمت نفسك بالألمانية 60 ثانية بطلاقة · ✅ تعرف الأرقام 1–100 وتستطيع قراءة رقم هاتف. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 02</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">sich vorstellen · heißen · kommen · wohnen · الأرقام 0–100 · 15+ دولة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · الخطوة الثانية · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 03 ← الأيام والوقت · Es ist halb acht · Viertel nach fünf · أيام الأسبوع · الأشهر</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+
+const answers={
+  1:'heiße',2:'heißt',3:'heißt',4:'heißen',5:'heißt',6:'heißt',
+  7:'komme',8:'kommst',9:'kommt',10:'wohne',11:'wohnst',12:'wohnen',
+  13:'sieben',14:'fünfzehn',15:'dreißig',16:'einundzwanzig',17:'53',18:'Ich bin 28 Jahre alt.',
+  19:'aus',20:'Ich bin Syrer.',21:'Ägypterin',22:'Berlin',23:'in',24:'die Türkei',
+  25:'heißen',26:'komme',27:'wohne',28:'bin',29:'Mich auch!',
+  30:'Ich heiße Ahmed.',31:'باسمه الأخير',32:'ماذا؟ لم أسمع / أعد من فضلك'
+};
+
+const fb={
+  1:{ok:'✅ صح! ich → heiße',no:'❌ ich → heiße (النهاية -e)'},
+  2:{ok:'✅ ممتاز! du → heißt',no:'❌ du → heißt (النهاية -st لكن ß تبقى)'},
+  3:{ok:'✅ صح! er → heißt (مثل du!)',no:'❌ er/sie/es → heißt'},
+  4:{ok:'✅ ممتاز! wir → heißen (مثل المصدر)',no:'❌ wir → heißen'},
+  5:{ok:'✅ صح! ihr → heißt',no:'❌ ihr → heißt (النهاية -t)'},
+  6:{ok:'✅ صح! sie (هي) → heißt',no:'❌ sie مفرد → heißt مثل er'},
+  7:{ok:'✅ صح! ich → komme',no:'❌ ich → komme (النهاية -e)'},
+  8:{ok:'✅ ممتاز! du → kommst',no:'❌ du → kommst (النهاية -st)'},
+  9:{ok:'✅ صح! er → kommt',no:'❌ er → kommt (النهاية -t)'},
+  10:{ok:'✅ صح! ich → wohne',no:'❌ ich → wohne (النهاية -e)'},
+  11:{ok:'✅ ممتاز! du → wohnst',no:'❌ du → wohnst'},
+  12:{ok:'✅ صح! wir → wohnen',no:'❌ wir → wohnen (مثل المصدر)'},
+  13:{ok:'✅ صح! 7 = sieben',no:'❌ 7 = sieben — sechs=6، acht=8'},
+  14:{ok:'✅ ممتاز! 15 = fünfzehn',no:'❌ 15 = fünfzehn — fünfzig = 50!'},
+  15:{ok:'✅ صح! 30 = dreißig (بالـ ß!)',no:'❌ 30 = dreißig — dreizehn=13 وdreizig ❌'},
+  16:{ok:'✅ ممتاز! 21 = einundzwanzig — كلمة واحدة!',no:'❌ 21 = einundzwanzig — النمط: [ones]und[tens]'},
+  17:{ok:'✅ صح! dreiundfünfzig = 53 (drei=3 + fünfzig=50)',no:'❌ dreiundfünfzig = 53: drei=3، fünfzig=50'},
+  18:{ok:'✅ الجملة الكاملة: Ich bin X Jahre alt — لا تنسَ alt!',no:'❌ يجب: Ich bin 28 Jahre alt — لا تحذف alt!'},
+  19:{ok:'✅ صح! kommen → aus — kommen aus Syrien',no:'❌ kommen → aus — ليس in أو nach'},
+  20:{ok:'✅ صح! بدون ein — Ich bin Syrer مثل Ich bin Arzt',no:'❌ الجنسية بعد sein بدون ein/eine!'},
+  21:{ok:'✅ ممتاز! المؤنث → -in — Ägypterin',no:'❌ المؤنث = Ägypterin (Ägypter + in)'},
+  22:{ok:'✅ صح! عاصمة ألمانيا = Berlin',no:'❌ عاصمة ألمانيا = Berlin (ليس Munich أو Frankfurt)'},
+  23:{ok:'✅ صح! wohnen → in — wohnen in Berlin',no:'❌ wohnen → in (الموقع الحالي) — aus للأصل'},
+  24:{ok:'✅ صح! die Türkei تأخذ die — وكذلك die Schweiz',no:'❌ die Türkei خاصة — Syrien وJordanien بلا أداة'},
+  25:{ok:'✅ صح! Sie (رسمي) → heißen',no:'❌ مع Sie رسمي: Wie heißen Sie?'},
+  26:{ok:'✅ صح! ich → komme',no:'❌ ich → komme (النهاية -e)'},
+  27:{ok:'✅ صح! ich → wohne',no:'❌ ich → wohne — الفعل المطلوب wohnen'},
+  28:{ok:'✅ صح! Wie alt sind Sie? → Ich bin ... Jahre alt (sein من Unit 01)',no:'❌ للعمر: Ich bin X Jahre alt'},
+  29:{ok:'✅ الرد المثالي: Mich auch! (أنا أيضاً) — أو Freut mich auch',no:'❌ الرد الطبيعي: Mich auch! أو Freut mich auch!'},
+  30:{ok:'✅ Ich heiße Ahmed — بدون mich وبدون مeine Name',no:'❌ heiße لا تأخذ mich — وName مذكر: mein Name'},
+  31:{ok:'✅ الألمان يردون باسمهم الأخير: "Müller!"',no:'❌ الألمان يردون بالاسم الأخير — ليس Hallo'},
+  32:{ok:'✅ "Wie bitte?" = لم أسمع — أعد من فضلك',no:'❌ Wie bitte? = عذراً؟ / لم أسمع — ليس "كيف حالك"'}
+};
+
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز! أتقنت Unit 02 كاملاً. انتقل لـ Unit 03 بثقة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع الأقسام الضعيفة وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع تصريف الأفعال والأرقام وحل مرة ثانية.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+</script>
+</body>
+</html>

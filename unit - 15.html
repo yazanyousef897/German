@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 15 — FULL | مراجعة شاملة + Goethe A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'15';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(204,0,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:#ff6b6b}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* CASES TABLE */
+.cases-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.cases-table th{padding:.75rem 1rem;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;background:var(--gray2);text-align:center;font-family:'Cairo',sans-serif}
+.cases-table td{padding:.8rem 1rem;text-align:center;border:1px solid var(--gray2);font-family:'JetBrains Mono',monospace;font-size:.88rem}
+.cases-table tbody tr:hover{background:var(--gray)}
+.ct-nom{color:var(--green);font-weight:700}.ct-akk{color:var(--blue);font-weight:700}.ct-dat{color:var(--purple);font-weight:700}
+.ct-label{font-size:.72rem;color:var(--dim);font-family:'Cairo',sans-serif;font-weight:600}
+.case-legend{display:flex;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.cl-item{display:flex;align-items:center;gap:.5rem;font-size:.8rem}
+.cl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.prep-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.prep-col{background:var(--black);padding:1.5rem}
+.prep-col-h{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.prep-tag{display:inline-block;padding:.15rem .6rem;font-family:'JetBrains Mono',monospace;font-size:.78rem;font-weight:700;margin:.25rem;border:1px solid}
+.prep-tag.akk{color:var(--blue);border-color:rgba(96,165,250,.3)}
+.prep-tag.dat{color:var(--purple);border-color:rgba(167,139,250,.3)}
+.prep-tag.two{color:var(--gold);border-color:rgba(255,206,0,.3)}
+/* MODAL TABLE */
+.modal-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.modal-table th{padding:.7rem .9rem;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;background:var(--gray2);text-align:center;white-space:nowrap;font-family:'Cairo',sans-serif}
+.modal-table td{padding:.75rem .9rem;text-align:center;border:1px solid var(--gray2);font-family:'JetBrains Mono',monospace;font-size:.82rem;white-space:nowrap}
+.modal-table tbody tr:hover{background:rgba(255,206,0,.04)}
+.pronoun-col{color:var(--dim);font-size:.78rem;text-align:right!important;font-family:'Cairo',sans-serif!important;font-weight:700}
+.highlight{color:var(--red);font-weight:700}
+.modal-meaning{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.mm-card{background:var(--gray);padding:1.2rem}
+.mm-verb{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold);margin-bottom:.15rem}
+.mm-ar{font-size:.78rem;color:var(--white);font-weight:700;margin-bottom:.3rem}
+.mm-ex{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--dim);line-height:1.7}
+/* SENTENCE BOXES */
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-end{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.06)}
+/* SEPARABLE VERBS */
+.sep-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.sep-card{background:var(--black);padding:1rem 1.2rem;transition:background .2s}
+.sep-card:hover{background:var(--gray)}
+.sep-inf{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.sep-ex{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--gold);margin:.2rem 0}
+.sep-ar{font-size:.72rem;color:var(--dim)}
+/* PERFEKT */
+.perf-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.6rem;margin-bottom:1.2rem}
+.perf-row{display:flex;gap:1rem;margin-bottom:.9rem;align-items:flex-start}
+.perf-row:last-child{margin-bottom:0}
+.perf-icon{font-size:1.3rem;flex-shrink:0;line-height:1;margin-top:.15rem}
+.perf-text{font-size:.82rem;color:rgba(245,245,240,.75);line-height:1.8}
+.perf-text code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.05rem .3rem;font-size:.78rem}
+/* VOCAB MEGA */
+.vocab-mega{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vm-topic{background:var(--black);padding:1.4rem}
+.vm-head{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.vm-word{display:flex;justify-content:space-between;align-items:center;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.02);font-size:.75rem;gap:.5rem}
+.vm-de{font-family:'JetBrains Mono',monospace;color:var(--white);flex-shrink:0}
+.vm-ar{color:var(--dim);text-align:left}
+.vm-word:last-child{border-bottom:none}
+/* GOETHE EXAM */
+.exam-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.exam-part{background:var(--gray);padding:1.8rem}
+.ep-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:rgba(255,206,0,.1);line-height:1;margin-bottom:.3rem}
+.ep-name{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.ep-sub{font-size:.72rem;color:var(--gold);letter-spacing:.08em;margin-bottom:1rem}
+.ep-detail{font-size:.76rem;color:var(--dim);line-height:1.9}
+.ep-detail strong{color:var(--white)}
+.ep-tip{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.5rem .7rem;margin-top:.9rem;font-size:.73rem;color:rgba(245,245,240,.6)}
+.ep-tip strong{color:var(--gold)}
+.exam-score{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.es-box{background:var(--black);padding:1.2rem;text-align:center}
+.es-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--gold);line-height:1;display:block}
+.es-label{font-size:.6rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem}
+/* SPRECHEN */
+.sprechen-card{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.sp-head{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:#ff6b6b;font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.sp-task{background:rgba(204,0,0,.06);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:.8rem 1rem;margin-bottom:1rem;font-size:.82rem;color:rgba(245,245,240,.8);line-height:1.7}
+.sp-model{font-size:.78rem;color:var(--dim);line-height:1.9;margin-top:.8rem}
+.sp-model code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.05rem .3rem}
+/* NOTES */
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}
+.note-gold p,.note-green p,.note-red p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+/* MISTAKES */
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem;text-align:center}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--green)}
+.mi-explain{font-size:.68rem;color:var(--dim);margin-top:.25rem}
+/* EXERCISES */
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white);line-height:1.7}
+.blank{display:inline-block;min-width:90px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700;transition:border-color .3s}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer;transition:all .2s;font-weight:600;font-family:'Cairo',sans-serif}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+/* WRITING */
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:120px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+/* RESOURCES */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+/* DAY CARDS */
+.days-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+/* SCORE */
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.85rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+  .exam-grid,.prep-grid{grid-template-columns:1fr}
+  .modal-meaning{grid-template-columns:1fr 1fr}
+  .days-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+  .hero-meta{gap:1.5rem;flex-wrap:wrap;justify-content:center}
+  .mi-arrow{display:none}
+  .mistake-item{grid-template-columns:1fr;gap:.3rem}
+  .cases-table{font-size:.75rem}
+  .modal-table{font-size:.72rem}
+}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 15 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#cases">الحالات</a></li>
+    <li><a href="#modal">ناقصة</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#goethe">Goethe</a></li>
+    <li><a href="#sprechen">Sprechen</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🔴 اختبار · Unit 15 · 6 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">مراجعة شاملة</span> <span style="font-size:.5em;color:rgba(245,245,240,.08)">+</span> <span class="r">Goethe A1</span></h1>
+  <p class="hero-sub">مراجعة كاملة لكل قواعد A1 — Akkusativ · Dativ · الأفعال الناقصة · Perfekt · الجمل المركبة — التحضير لاختبار Goethe-Zertifikat A1</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">أيام دراسة</span></div>
+    <div class="hm-item"><span class="hm-num">36</span><span class="hm-label">تمرين تفاعلي</span></div>
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">14</span><span class="hm-label">وحدة مراجعة</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ VIDEOS ══════════════════════════════ -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">الفيديوهات — Lernvideos</div><div class="sec-d">6 فيديوهات مختارة للمراجعة + اختبار Goethe — موزعة على الـ 6 أيام</div></div></div>
+  <div class="videos-grid reveal">
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · A1 كامل</div><div class="video-title">Nicos Weg — كل A1 في فيلم واحد</div><div class="video-desc">مراجعة شاملة بالسياق الطبيعي. ليوم 1: استمع وحاول تمييز كل قاعدة درستها في الـ 14 وحدة.</div><div class="video-task"><strong>مهمة اليوم 1:</strong> اكتب كل جملة تسمع فيها Akkusativ أو Dativ أو فعل ناقص.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/dS_5YhABNfA" title="Master German Cases Nominativ Akkusativ Dativ" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📐 Grammar · حالات الاسم</div><div class="video-title">Nominativ · Akkusativ · Dativ — مراجعة شاملة</div><div class="video-desc">مراجعة الحالات الثلاث مع الجداول والأمثلة. باللغة الإنجليزية — تفسيره واضح جداً للمبتدئين.</div><div class="video-task"><strong>مهمة اليوم 2:</strong> بعد الفيديو — أكمل جداول الحالات من الذاكرة بدون نظر.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/Xw6baKoERn8" title="German Modal Verbs können müssen wollen" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · الأفعال الناقصة</div><div class="video-title">können · müssen · wollen — Crash Course</div><div class="video-desc">شرح الأفعال الناقصة الثلاثة الأساسية مع الأمثلة اليومية — ابدأ اليوم الثالث بهذا الفيديو.</div><div class="video-task"><strong>مهمة اليوم 3:</strong> صرّف الأفعال الستة مع كل الضمائر الستة شفهياً بدون نظر.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/YOkBT_uE0IE" title="Perfekt mit haben und sein Partizip 2" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Perfekt</div><div class="video-title">Perfekt mit haben & sein — Partizip II</div><div class="video-desc">كيف تتحدث عن الماضي بالألمانية؟ قاعدة haben مقابل sein + تكوين Partizip II المنتظم والشاذ.</div><div class="video-task"><strong>مهمة اليوم 4:</strong> اكتب 5 جمل Perfekt عن أمس — ماذا فعلت فعلاً.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/rn16k9g8dIw" title="dass weil wenn subordinate clauses German" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📐 Grammar · الجمل المركبة</div><div class="video-title">dass · weil · obwohl — Dependent Clauses</div><div class="video-desc">الجمل المركبة والفعل في نهاية الجملة الفرعية. القاعدة الأهم في Units 13-14 قبل الاختبار.</div><div class="video-task"><strong>مهمة اليوم 4:</strong> اكتب 3 جمل بـ weil، 3 بـ dass، 3 بـ wenn — من حياتك الحقيقية.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/uBPJ6WJye88" title="Goethe A1 Complete Exam Practice 2026" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t5">🎯 Goethe A1 · اختبار كامل 2026</div><div class="video-title">Goethe-Zertifikat A1 — نموذج اختبار كامل</div><div class="video-desc">اختبار Goethe A1 حقيقي مع الحلول. استخدمه في اليوم 5 كاختبار محاكاة — وقّت نفسك بدقة.</div><div class="video-task"><strong>مهمة اليوم 5-6:</strong> افعل الاختبار بجدية كاملة — 65 دقيقة بدون توقف. صحّح بعدها.</div></div>
+    </div>
+
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ CASES ══════════════════════════════ -->
+<section class="section" id="cases">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">حالات الاسم — Nominativ · Akkusativ · Dativ</div><div class="sec-d">الجدول الذهبي الشامل — الأداة المحددة والنكرة والملكية + حروف الجر</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">🗝️ القاعدة الذهبية — من يفعل؟ ماذا؟ لمن؟</div><p><code>Nominativ</code> = الفاعل — من يقوم بالفعل؟ · <code>Akkusativ</code> = المفعول به المباشر — ماذا / من يتأثر؟ · <code>Dativ</code> = المفعول به غير المباشر — لمن / مع من / عند من؟ · تذكّر: الأداة المحددة تتغير في الذكور Maskulin فقط بين Nom و Akk (der→den). أما Feminin وNeutrum فلا تتغير بين الاثنين.</p></div>
+
+  <div class="case-legend reveal">
+    <div class="cl-item"><div class="cl-dot" style="background:var(--green)"></div><span style="color:var(--green);font-weight:700">Nominativ</span> — الفاعل</div>
+    <div class="cl-item"><div class="cl-dot" style="background:var(--blue)"></div><span style="color:var(--blue);font-weight:700">Akkusativ</span> — المفعول به المباشر</div>
+    <div class="cl-item"><div class="cl-dot" style="background:var(--purple)"></div><span style="color:var(--purple);font-weight:700">Dativ</span> — المفعول به غير المباشر</div>
+  </div>
+
+  <p class="vst reveal">الأداة المحددة — Bestimmter Artikel (der / die / das)</p>
+  <table class="cases-table reveal">
+    <thead>
+      <tr>
+        <th>الجنس</th>
+        <th class="ct-nom">Nominativ 🟢</th>
+        <th class="ct-akk">Akkusativ 🔵</th>
+        <th class="ct-dat">Dativ 🟣</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="ct-label">Maskulin ♂ — مذكر</td><td class="ct-nom">der</td><td class="ct-akk">den ⚡</td><td class="ct-dat">dem</td></tr>
+      <tr><td class="ct-label">Feminin ♀ — مؤنث</td><td class="ct-nom">die</td><td class="ct-akk">die</td><td class="ct-dat">der ⚡</td></tr>
+      <tr><td class="ct-label">Neutrum ⚪ — محايد</td><td class="ct-nom">das</td><td class="ct-akk">das</td><td class="ct-dat">dem</td></tr>
+      <tr><td class="ct-label">Plural — جمع</td><td class="ct-nom">die</td><td class="ct-akk">die</td><td class="ct-dat">den (+n) ⚡</td></tr>
+    </tbody>
+  </table>
+
+  <p class="vst reveal">النكرة — Unbestimmter Artikel (ein / eine) + Negation (kein)</p>
+  <table class="cases-table reveal">
+    <thead>
+      <tr>
+        <th>الجنس</th>
+        <th class="ct-nom">Nominativ 🟢</th>
+        <th class="ct-akk">Akkusativ 🔵</th>
+        <th class="ct-dat">Dativ 🟣</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="ct-label">Maskulin ♂</td><td class="ct-nom">ein</td><td class="ct-akk">einen ⚡</td><td class="ct-dat">einem</td></tr>
+      <tr><td class="ct-label">Feminin ♀</td><td class="ct-nom">eine</td><td class="ct-akk">eine</td><td class="ct-dat">einer ⚡</td></tr>
+      <tr><td class="ct-label">Neutrum ⚪</td><td class="ct-nom">ein</td><td class="ct-akk">ein</td><td class="ct-dat">einem</td></tr>
+      <tr><td class="ct-label">Plural</td><td class="ct-nom">—</td><td class="ct-akk">—</td><td class="ct-dat">—</td></tr>
+    </tbody>
+  </table>
+
+  <p class="vst reveal">الملكية — Possessivartikel (مثال: mein / meine)</p>
+  <table class="cases-table reveal">
+    <thead>
+      <tr>
+        <th>الجنس</th>
+        <th class="ct-nom">Nominativ 🟢</th>
+        <th class="ct-akk">Akkusativ 🔵</th>
+        <th class="ct-dat">Dativ 🟣</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="ct-label">Maskulin ♂</td><td class="ct-nom">mein</td><td class="ct-akk">meinen ⚡</td><td class="ct-dat">meinem</td></tr>
+      <tr><td class="ct-label">Feminin ♀</td><td class="ct-nom">meine</td><td class="ct-akk">meine</td><td class="ct-dat">meiner ⚡</td></tr>
+      <tr><td class="ct-label">Neutrum ⚪</td><td class="ct-nom">mein</td><td class="ct-akk">mein</td><td class="ct-dat">meinem</td></tr>
+      <tr><td class="ct-label">Plural</td><td class="ct-nom">meine</td><td class="ct-akk">meine</td><td class="ct-dat">meinen ⚡</td></tr>
+    </tbody>
+  </table>
+  <p class="vst reveal" style="margin-top:0">⚡ = هذا هو المكان الذي تتغير فيه الأداة — احفظ هذه النقاط جيداً</p>
+
+  <div class="prep-grid reveal">
+    <div class="prep-col">
+      <div class="prep-col-h" style="color:var(--blue)">حروف جر + Akkusativ دائماً</div>
+      <div style="margin-bottom:.8rem">
+        <span class="prep-tag akk">durch</span><span class="prep-tag akk">für</span><span class="prep-tag akk">gegen</span><span class="prep-tag akk">ohne</span><span class="prep-tag akk">um</span><span class="prep-tag akk">bis</span>
+      </div>
+      <p style="font-size:.72rem;color:var(--dim);line-height:1.8">Ich kaufe das <strong style="color:var(--blue)">für</strong> meinen Vater.<br>Er kommt <strong style="color:var(--blue)">ohne</strong> seinen Bruder.<br>Wir gehen <strong style="color:var(--blue)">durch</strong> den Park.</p>
+    </div>
+    <div class="prep-col">
+      <div class="prep-col-h" style="color:var(--purple)">حروف جر + Dativ دائماً</div>
+      <div style="margin-bottom:.8rem">
+        <span class="prep-tag dat">mit</span><span class="prep-tag dat">bei</span><span class="prep-tag dat">von</span><span class="prep-tag dat">zu</span><span class="prep-tag dat">aus</span><span class="prep-tag dat">nach</span><span class="prep-tag dat">seit</span><span class="prep-tag dat">gegenüber</span>
+      </div>
+      <p style="font-size:.72rem;color:var(--dim);line-height:1.8">Ich fahre <strong style="color:var(--purple)">mit</strong> dem Bus.<br>Sie wohnt <strong style="color:var(--purple)">bei</strong> ihrer Freundin.<br>Ich komme <strong style="color:var(--purple)">aus</strong> Syrien.</p>
+    </div>
+    <div class="prep-col">
+      <div class="prep-col-h" style="color:var(--gold)">حروف جر مزدوجة — Wo? vs Wohin?</div>
+      <div style="margin-bottom:.8rem">
+        <span class="prep-tag two">an</span><span class="prep-tag two">auf</span><span class="prep-tag two">in</span><span class="prep-tag two">über</span><span class="prep-tag two">unter</span><span class="prep-tag two">vor</span><span class="prep-tag two">hinter</span><span class="prep-tag two">neben</span><span class="prep-tag two">zwischen</span>
+      </div>
+      <p style="font-size:.72rem;color:var(--dim);line-height:1.8"><strong style="color:var(--purple)">Wo? موقع ثابت → Dativ</strong><br>"Das Buch liegt <strong>auf dem</strong> Tisch."<br><strong style="color:var(--blue)">Wohin? حركة → Akkusativ</strong><br>"Ich lege das Buch <strong>auf den</strong> Tisch."</p>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ MODAL VERBS ══════════════════════════════ -->
+<section class="section" id="modal">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الأفعال الناقصة — Modalverben</div><div class="sec-d">الأفعال الستة + التصريف الكامل 6×6 + المعنى + الأمثلة</div></div></div>
+
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ القاعدة الأساسية — الفعل الناقص ثانياً + المصدر آخراً</div><p>في الجملة مع فعل ناقص: <code>الفعل الناقص في موضع V2</code> + <code>المصدر في نهاية الجملة بدون تصريف</code>.<br>مثال: "Ich <strong>kann</strong> gut Deutsch <strong>sprechen</strong>." — كانّ تُصرَّف، sprechen لا تتغير أبداً.</p></div>
+
+  <div class="modal-meaning reveal">
+    <div class="mm-card"><div class="mm-verb">können</div><div class="mm-ar">يستطيع / يقدر</div><div class="mm-ex">Ich kann schwimmen.<br>Kannst du mir helfen?</div></div>
+    <div class="mm-card"><div class="mm-verb">müssen</div><div class="mm-ar">يجب / لازم</div><div class="mm-ex">Ich muss arbeiten.<br>Du musst das essen.</div></div>
+    <div class="mm-card"><div class="mm-verb">dürfen</div><div class="mm-ar">مسموح له</div><div class="mm-ex">Hier darf man nicht rauchen.<br>Darfst du das?</div></div>
+    <div class="mm-card"><div class="mm-verb">wollen</div><div class="mm-ar">يريد (إرادة قوية)</div><div class="mm-ex">Ich will Arzt werden.<br>Was willst du trinken?</div></div>
+    <div class="mm-card"><div class="mm-verb">sollen</div><div class="mm-ar">يُفترض / طُلب منه</div><div class="mm-ex">Du sollst pünktlich kommen.<br>Er soll krank sein.</div></div>
+    <div class="mm-card"><div class="mm-verb">möchten</div><div class="mm-ar">يودّ / يرغب (مؤدب)</div><div class="mm-ex">Ich möchte einen Kaffee.<br>Möchtest du mitkommen?</div></div>
+  </div>
+
+  <p class="vst reveal">جدول التصريف الكامل — 6 أفعال × 6 ضمائر</p>
+  <div class="reveal" style="overflow-x:auto">
+  <table class="modal-table">
+    <thead>
+      <tr>
+        <th style="text-align:right">الضمير</th>
+        <th style="color:var(--green)">können</th>
+        <th style="color:var(--blue)">müssen</th>
+        <th style="color:var(--gold)">dürfen</th>
+        <th style="color:var(--purple)">wollen</th>
+        <th style="color:#ff6b6b">sollen</th>
+        <th style="color:var(--white)">möchten</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="pronoun-col">ich</td><td class="highlight">kann</td><td class="highlight">muss</td><td class="highlight">darf</td><td class="highlight">will</td><td>soll</td><td class="highlight">möchte</td></tr>
+      <tr><td class="pronoun-col">du</td><td>kannst</td><td>musst</td><td>darfst</td><td>willst</td><td>sollst</td><td>möchtest</td></tr>
+      <tr><td class="pronoun-col">er/sie/es</td><td class="highlight">kann</td><td class="highlight">muss</td><td class="highlight">darf</td><td class="highlight">will</td><td>soll</td><td class="highlight">möchte</td></tr>
+      <tr><td class="pronoun-col">wir</td><td>können</td><td>müssen</td><td>dürfen</td><td>wollen</td><td>sollen</td><td>möchten</td></tr>
+      <tr><td class="pronoun-col">ihr</td><td>könnt</td><td>müsst</td><td>dürft</td><td>wollt</td><td>sollt</td><td>möchtet</td></tr>
+      <tr><td class="pronoun-col">sie/Sie</td><td>können</td><td>müssen</td><td>dürfen</td><td>wollen</td><td>sollen</td><td>möchten</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note-gold reveal" style="margin-top:1.5rem"><div class="note-title nt-g">💡 الاستثناء الذهبي!</div><p>صيغتا <code>ich</code> و <code>er/sie/es</code> متطابقتان في معظم الأفعال الناقصة (kann، muss، darf، will، möchte). هذا ليس خطأً — هو قاعدة استثنائية مهمة جداً في A1.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ SENTENCE STRUCTURE ══════════════════════════════ -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">بنية الجملة — Satzbau</div><div class="sec-d">قاعدة V2 · الأفعال المنفصلة · weil/dass/wenn · Perfekt</div></div></div>
+
+  <p class="vst reveal">قاعدة V2 — الفعل دائماً في الموضع الثاني</p>
+  <div class="satz-box reveal">
+    <div class="satz-title">الفعل ثانياً بغض النظر عما يأتي أولاً</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-rest">jeden Tag Deutsch.</span><span class="sbox-ar">أنا أتعلم الألمانية كل يوم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Jeden Tag</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">Deutsch.</span><span class="sbox-ar">كل يوم أتعلم الألمانية. (الفاعل انتقل!)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Warum</span><span class="sbox sbox-verb">lernst</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">Deutsch?</span><span class="sbox-ar">لماذا تتعلم الألمانية؟</span></div>
+  </div>
+
+  <p class="vst reveal">الأفعال المنفصلة — Trennbare Verben (12 فعل أساسي)</p>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 القاعدة الثابتة</div><p>البادئة المنفصلة تذهب إلى <strong>نهاية الجملة</strong> دائماً. مثال: <code>aufstehen</code> → "Ich <strong>stehe</strong> um 7 Uhr <strong>auf</strong>."</p></div>
+  <div class="sep-grid reveal">
+    <div class="sep-card"><div class="sep-inf">aufstehen</div><div class="sep-ex">Er steht um 6 Uhr auf.</div><div class="sep-ar">يستيقظ / يقوم</div></div>
+    <div class="sep-card"><div class="sep-inf">einkaufen</div><div class="sep-ex">Wir kaufen heute ein.</div><div class="sep-ar">يتسوق</div></div>
+    <div class="sep-card"><div class="sep-inf">anrufen</div><div class="sep-ex">Rufst du mich an?</div><div class="sep-ar">يتصل هاتفياً</div></div>
+    <div class="sep-card"><div class="sep-inf">aufmachen</div><div class="sep-ex">Mach das Fenster auf!</div><div class="sep-ar">يفتح</div></div>
+    <div class="sep-card"><div class="sep-inf">zumachen</div><div class="sep-ex">Mach die Tür zu!</div><div class="sep-ar">يغلق</div></div>
+    <div class="sep-card"><div class="sep-inf">abfahren</div><div class="sep-ex">Der Zug fährt um 9 ab.</div><div class="sep-ar">يغادر / يقلع</div></div>
+    <div class="sep-card"><div class="sep-inf">ankommen</div><div class="sep-ex">Er kommt um 10 an.</div><div class="sep-ar">يصل</div></div>
+    <div class="sep-card"><div class="sep-inf">aufräumen</div><div class="sep-ex">Räum dein Zimmer auf!</div><div class="sep-ar">يرتب الغرفة</div></div>
+    <div class="sep-card"><div class="sep-inf">fernsehen</div><div class="sep-ex">Ich sehe abends fern.</div><div class="sep-ar">يشاهد التلفاز</div></div>
+    <div class="sep-card"><div class="sep-inf">mitkommen</div><div class="sep-ex">Kommst du mit?</div><div class="sep-ar">يأتي معك</div></div>
+    <div class="sep-card"><div class="sep-inf">ausgehen</div><div class="sep-ex">Wir gehen heute aus.</div><div class="sep-ar">يخرج / يسهر</div></div>
+    <div class="sep-card"><div class="sep-inf">aufschreiben</div><div class="sep-ex">Schreib das auf!</div><div class="sep-ar">يدوّن / يكتب</div></div>
+  </div>
+
+  <p class="vst reveal">الجمل المركبة — weil · dass · wenn</p>
+  <div class="satz-box reveal">
+    <div class="satz-title">الفعل يذهب إلى نهاية الجملة الفرعية دائماً!</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-rest">Deutsch,</span><span class="sbox sbox-wh">weil</span><span class="sbox sbox-rest">ich in Deutschland</span><span class="sbox sbox-end">studieren möchte.</span><span class="sbox-ar">لأني أريد الدراسة في ألمانيا.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">sagt,</span><span class="sbox sbox-wh">dass</span><span class="sbox sbox-rest">er morgen</span><span class="sbox sbox-end">kommt.</span><span class="sbox-ar">يقول أنه سيأتي غداً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wenn</span><span class="sbox sbox-rest">du Zeit</span><span class="sbox sbox-end">hast,</span><span class="sbox sbox-verb">können</span><span class="sbox sbox-subj">wir</span><span class="sbox sbox-rest">ins Kino gehen.</span><span class="sbox-ar">إذا كان عندك وقت، نذهب للسينما.</span></div>
+  </div>
+
+  <p class="vst reveal">Perfekt — ماضي الألمانية</p>
+  <div class="perf-box reveal">
+    <div class="perf-row"><div class="perf-icon">📐</div><div class="perf-text"><strong style="color:var(--gold)">القاعدة:</strong> الفاعل + <code>haben/sein (V2)</code> + باقي الجملة + <code>Partizip II (آخراً)</code><br>"Ich <code>habe</code> gestern viel Deutsch <code>gelernt</code>."</div></div>
+    <div class="perf-row"><div class="perf-icon">🔵</div><div class="perf-text"><strong style="color:var(--blue)">haben + Partizip II</strong> — للأفعال المتعدية وأغلب الأفعال: spielen → <code>gespielt</code> · kaufen → <code>gekauft</code> · arbeiten → <code>gearbeitet</code> · essen → <code>gegessen</code></div></div>
+    <div class="perf-row"><div class="perf-icon">🟢</div><div class="perf-text"><strong style="color:var(--green)">sein + Partizip II</strong> — للحركة والتغيير في الحالة: fahren → <code>ist gefahren</code> · kommen → <code>ist gekommen</code> · gehen → <code>ist gegangen</code> · aufstehen → <code>ist aufgestanden</code></div></div>
+    <div class="perf-row"><div class="perf-icon">⚙️</div><div class="perf-text"><strong style="color:var(--gold)">Partizip II المنتظم:</strong> <code>ge + Stamm + t</code> → machen → <code>ge·mach·t</code> · kaufen → <code>ge·kauf·t</code><br><strong style="color:var(--red)">Partizip II الشاذ:</strong> <code>ge + Stamm(متغير) + en</code> → fahren → <code>ge·fahr·en</code> · schlafen → <code>ge·schlaf·en</code></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ VOCABULARY MEGA ══════════════════════════════ -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">مفردات A1 الشاملة — Wortschatz</div><div class="sec-d">أهم 5 مفردات من كل وحدة من الـ 14 وحدة — مراجعة سريعة</div></div></div>
+  <div class="vocab-mega reveal">
+    <div class="vm-topic"><div class="vm-head">U01 · التحيات والأساسيات</div>
+      <div class="vm-word"><span class="vm-de">Guten Morgen/Tag/Abend</span><span class="vm-ar">صباح/يوم/مساء الخير</span></div>
+      <div class="vm-word"><span class="vm-de">Auf Wiedersehen</span><span class="vm-ar">مع السلامة (رسمي)</span></div>
+      <div class="vm-word"><span class="vm-de">Wie geht es Ihnen?</span><span class="vm-ar">كيف حالك؟ (رسمي)</span></div>
+      <div class="vm-word"><span class="vm-de">Danke schön / Bitte</span><span class="vm-ar">شكراً / عفواً</span></div>
+      <div class="vm-word"><span class="vm-de">Entschuldigung</span><span class="vm-ar">عذراً / اعتذار</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U02 · التعريف بالنفس</div>
+      <div class="vm-word"><span class="vm-de">heißen</span><span class="vm-ar">يُدعى / اسمه</span></div>
+      <div class="vm-word"><span class="vm-de">kommen aus</span><span class="vm-ar">يأتي من / أصله من</span></div>
+      <div class="vm-word"><span class="vm-de">wohnen in</span><span class="vm-ar">يسكن في</span></div>
+      <div class="vm-word"><span class="vm-de">die Nationalität</span><span class="vm-ar">الجنسية</span></div>
+      <div class="vm-word"><span class="vm-de">arbeiten als</span><span class="vm-ar">يعمل كـ...</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U03 · الوقت والأيام</div>
+      <div class="vm-word"><span class="vm-de">heute / morgen / gestern</span><span class="vm-ar">اليوم / غداً / أمس</span></div>
+      <div class="vm-word"><span class="vm-de">Wie viel Uhr ist es?</span><span class="vm-ar">كم الساعة؟</span></div>
+      <div class="vm-word"><span class="vm-de">Es ist halb acht.</span><span class="vm-ar">الساعة السابعة والنصف</span></div>
+      <div class="vm-word"><span class="vm-de">Viertel nach/vor</span><span class="vm-ar">والربع / إلا ربع</span></div>
+      <div class="vm-word"><span class="vm-de">montags / dienstags...</div><span class="vm-ar">أيام الأسبوع</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U04 · العائلة والملكية</div>
+      <div class="vm-word"><span class="vm-de">der Vater / die Mutter</span><span class="vm-ar">الأب / الأم</span></div>
+      <div class="vm-word"><span class="vm-de">der Bruder / die Schwester</span><span class="vm-ar">الأخ / الأخت</span></div>
+      <div class="vm-word"><span class="vm-de">verheiratet / ledig</span><span class="vm-ar">متزوج / أعزب</span></div>
+      <div class="vm-word"><span class="vm-de">mein/meine · dein/deine</span><span class="vm-ar">بتاعي · بتاعك</span></div>
+      <div class="vm-word"><span class="vm-de">kein/keine</span><span class="vm-ar">لا يوجد / ليس</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U05 · الطعام والشراب</div>
+      <div class="vm-word"><span class="vm-de">das Brot / der Käse</span><span class="vm-ar">الخبز / الجبن</span></div>
+      <div class="vm-word"><span class="vm-de">der Kaffee / der Tee</span><span class="vm-ar">القهوة / الشاي</span></div>
+      <div class="vm-word"><span class="vm-de">die Speisekarte</span><span class="vm-ar">قائمة الطعام</span></div>
+      <div class="vm-word"><span class="vm-de">möchten / mögen</span><span class="vm-ar">يرغب / يحب</span></div>
+      <div class="vm-word"><span class="vm-de">Was kostet das?</span><span class="vm-ar">كم يكلف هذا؟</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U06 · الروتين اليومي</div>
+      <div class="vm-word"><span class="vm-de">aufstehen</span><span class="vm-ar">يستيقظ / يقوم</span></div>
+      <div class="vm-word"><span class="vm-de">frühstücken</span><span class="vm-ar">يتناول الفطور</span></div>
+      <div class="vm-word"><span class="vm-de">zuerst · dann · danach</span><span class="vm-ar">أولاً · ثم · بعدها</span></div>
+      <div class="vm-word"><span class="vm-de">schlafen gehen</span><span class="vm-ar">يذهب للنوم</span></div>
+      <div class="vm-word"><span class="vm-de">um ... Uhr anfangen</span><span class="vm-ar">يبدأ الساعة...</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U07 · المدينة والاتجاهات</div>
+      <div class="vm-word"><span class="vm-de">der Bahnhof</span><span class="vm-ar">محطة القطار</span></div>
+      <div class="vm-word"><span class="vm-de">die Apotheke</span><span class="vm-ar">الصيدلية</span></div>
+      <div class="vm-word"><span class="vm-de">links / rechts / geradeaus</span><span class="vm-ar">يساراً / يميناً / مباشرة</span></div>
+      <div class="vm-word"><span class="vm-de">in der Nähe von</span><span class="vm-ar">بالقرب من</span></div>
+      <div class="vm-word"><span class="vm-de">Wie komme ich zu...?</span><span class="vm-ar">كيف أصل إلى...؟</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U08 · التسوق والملابس</div>
+      <div class="vm-word"><span class="vm-de">das Hemd / die Jacke</span><span class="vm-ar">القميص / الجاكيت</span></div>
+      <div class="vm-word"><span class="vm-de">die Schuhe (Pl.)</span><span class="vm-ar">الأحذية</span></div>
+      <div class="vm-word"><span class="vm-de">zu groß / zu klein</span><span class="vm-ar">كبير جداً / صغير جداً</span></div>
+      <div class="vm-word"><span class="vm-de">die Farbe</span><span class="vm-ar">اللون</span></div>
+      <div class="vm-word"><span class="vm-de">Ich nehme das.</span><span class="vm-ar">سآخذ هذا.</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U09 · المواصلات والسفر</div>
+      <div class="vm-word"><span class="vm-de">der Zug / der Bus</span><span class="vm-ar">القطار / الباص</span></div>
+      <div class="vm-word"><span class="vm-de">die Fahrkarte</span><span class="vm-ar">التذكرة</span></div>
+      <div class="vm-word"><span class="vm-de">die Verspätung</span><span class="vm-ar">التأخير</span></div>
+      <div class="vm-word"><span class="vm-de">abfahren / ankommen</span><span class="vm-ar">يغادر / يصل</span></div>
+      <div class="vm-word"><span class="vm-de">Wann fährt der Zug ab?</span><span class="vm-ar">متى يغادر القطار؟</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U10 · الطقس والفصول</div>
+      <div class="vm-word"><span class="vm-de">es regnet / schneit</span><span class="vm-ar">يمطر / يثلج</span></div>
+      <div class="vm-word"><span class="vm-de">die Sonne scheint</span><span class="vm-ar">الشمس تسطع</span></div>
+      <div class="vm-word"><span class="vm-de">warm / kalt / windig</span><span class="vm-ar">دافئ / بارد / عاصف</span></div>
+      <div class="vm-word"><span class="vm-de">der Frühling / Sommer</span><span class="vm-ar">الربيع / الصيف</span></div>
+      <div class="vm-word"><span class="vm-de">der Herbst / Winter</span><span class="vm-ar">الخريف / الشتاء</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U11 · البيت والغرف</div>
+      <div class="vm-word"><span class="vm-de">das Wohnzimmer</span><span class="vm-ar">غرفة المعيشة</span></div>
+      <div class="vm-word"><span class="vm-de">die Küche / das Bad</span><span class="vm-ar">المطبخ / الحمام</span></div>
+      <div class="vm-word"><span class="vm-de">die Miete</span><span class="vm-ar">الإيجار</span></div>
+      <div class="vm-word"><span class="vm-de">die Möbel (Pl.)</span><span class="vm-ar">الأثاث</span></div>
+      <div class="vm-word"><span class="vm-de">auf dem / in dem Tisch</span><span class="vm-ar">على / في الطاولة</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U12 · الجسم والصحة</div>
+      <div class="vm-word"><span class="vm-de">der Arzt / die Ärztin</span><span class="vm-ar">الطبيب / الطبيبة</span></div>
+      <div class="vm-word"><span class="vm-de">das Fieber / die Erkältung</span><span class="vm-ar">الحمى / الزكام</span></div>
+      <div class="vm-word"><span class="vm-de">Ich habe Kopfschmerzen.</span><span class="vm-ar">عندي صداع.</span></div>
+      <div class="vm-word"><span class="vm-de">weh tun</span><span class="vm-ar">يؤلم / يوجع</span></div>
+      <div class="vm-word"><span class="vm-de">das Medikament</span><span class="vm-ar">الدواء</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U13 · الهوايات والفراغ</div>
+      <div class="vm-word"><span class="vm-de">gern / lieber / am liebsten</span><span class="vm-ar">بفضل / يفضّل / يفضّل أكثر</span></div>
+      <div class="vm-word"><span class="vm-de">Sport treiben</span><span class="vm-ar">يمارس الرياضة</span></div>
+      <div class="vm-word"><span class="vm-de">lesen / kochen / reisen</span><span class="vm-ar">يقرأ / يطبخ / يسافر</span></div>
+      <div class="vm-word"><span class="vm-de">der Verein</span><span class="vm-ar">النادي</span></div>
+      <div class="vm-word"><span class="vm-de">...weil ich das mag.</span><span class="vm-ar">...لأني أحبه.</span></div>
+    </div>
+    <div class="vm-topic"><div class="vm-head">U14 · العمل والمهن</div>
+      <div class="vm-word"><span class="vm-de">der Ingenieur / die Ärztin</span><span class="vm-ar">المهندس / الطبيبة</span></div>
+      <div class="vm-word"><span class="vm-de">das Gehalt</span><span class="vm-ar">الراتب</span></div>
+      <div class="vm-word"><span class="vm-de">der Urlaub</span><span class="vm-ar">الإجازة / الأجازة</span></div>
+      <div class="vm-word"><span class="vm-de">Was sind Sie von Beruf?</span><span class="vm-ar">ما مهنتك؟</span></div>
+      <div class="vm-word"><span class="vm-de">Ich habe Deutsch gelernt.</span><span class="vm-ar">تعلمت الألمانية. (Perfekt)</span></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ GOETHE EXAM ══════════════════════════════ -->
+<section class="section" id="goethe">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">Goethe-Zertifikat A1 — بنية الاختبار</div><div class="sec-d">4 أجزاء · ~75 دقيقة · الحد الأدنى 60/100 للنجاح</div></div></div>
+
+  <div class="exam-score reveal">
+    <div class="es-box"><span class="es-num">4</span><span class="es-label">أجزاء الاختبار</span></div>
+    <div class="es-box"><span class="es-num">75</span><span class="es-label">دقيقة إجمالي</span></div>
+    <div class="es-box"><span class="es-num">60</span><span class="es-label">نقطة للنجاح / 100</span></div>
+    <div class="es-box"><span class="es-num">15</span><span class="es-label">نقطة لكل جزء</span></div>
+  </div>
+
+  <div class="exam-grid reveal">
+    <div class="exam-part">
+      <div class="ep-num">01</div>
+      <div class="ep-name">🎧 Hören — الاستماع</div>
+      <div class="ep-sub">~20 دقيقة · 15 نقطة · 4 أجزاء فرعية</div>
+      <div class="ep-detail">
+        <strong>Teil 1:</strong> استمع لمحادثات قصيرة — صح أم خطأ؟<br>
+        <strong>Teil 2:</strong> استمع لإعلانات — اختر الصحيح (a/b/c)<br>
+        <strong>Teil 3:</strong> رسائل هاتفية — أكمل المعلومات الناقصة<br>
+        <strong>Teil 4:</strong> محادثة — من يقول ماذا؟ (A أو B)
+      </div>
+      <div class="ep-tip"><strong>💡 النصيحة:</strong> اقرأ الأسئلة أولاً قبل تشغيل التسجيل — اعرف ماذا تبحث عنه.</div>
+    </div>
+    <div class="exam-part">
+      <div class="ep-num">02</div>
+      <div class="ep-name">📖 Lesen — القراءة</div>
+      <div class="ep-sub">~25 دقيقة · 15 نقطة · 4 أجزاء فرعية</div>
+      <div class="ep-detail">
+        <strong>Teil 1:</strong> اقرأ 5 إعلانات — صح أم خطأ؟<br>
+        <strong>Teil 2:</strong> اقرأ رسالة — أجب بـ a/b/c<br>
+        <strong>Teil 3:</strong> لافتات وعلامات — ما الذي تعنيه؟<br>
+        <strong>Teil 4:</strong> نموذج بسيط — ما الصحيح؟
+      </div>
+      <div class="ep-tip"><strong>💡 النصيحة:</strong> لا تقرأ كل كلمة — ابحث عن الكلمات المفتاحية التي تجيب على السؤال فقط.</div>
+    </div>
+    <div class="exam-part">
+      <div class="ep-num">03</div>
+      <div class="ep-name">✍️ Schreiben — الكتابة</div>
+      <div class="ep-sub">~20 دقيقة · 15 نقطة · مهمة واحدة</div>
+      <div class="ep-detail">
+        <strong>المهمة:</strong> اكتب رسالة / بريد إلكتروني قصير (30-40 كلمة)<br>
+        <strong>يُطلب منك:</strong> الإجابة على 3 نقاط محددة في التعليمات<br>
+        <strong>مثال:</strong> "اكتب لصديقك عن لقاء — متى؟ أين؟ لماذا؟"
+      </div>
+      <div class="ep-tip"><strong>💡 النصيحة:</strong> أجب على النقاط الثلاث بوضوح. راجع القواعد الأساسية قبل التسليم.</div>
+    </div>
+    <div class="exam-part">
+      <div class="ep-num">04</div>
+      <div class="ep-name">🗣️ Sprechen — المحادثة</div>
+      <div class="ep-sub">~15 دقيقة · 15 نقطة · 3 أجزاء</div>
+      <div class="ep-detail">
+        <strong>Teil 1:</strong> عرّف عن نفسك — الاسم · البلد · العمل · الهوايات<br>
+        <strong>Teil 2:</strong> اسأل عن معلومات من بطاقة (Wann? Wo? Wie viel?)<br>
+        <strong>Teil 3:</strong> قُل شيئاً + ردّ على طلب أو اقتراح
+      </div>
+      <div class="ep-tip"><strong>💡 النصيحة:</strong> لا تصمت طويلاً — إذا لم تعرف كلمة، استخدم كلمة أبسط. الطلاقة أهم من الكمال.</div>
+    </div>
+  </div>
+
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ قاعدة النجاح الذهبية</div><p>تحتاج <code>60 نقطة من 100</code> للنجاح الإجمالي، <strong>لكن</strong> يجب ألا تحصل على أقل من <code>30%</code> في أي جزء منفرد. الاستراتيجية: <strong>لا تترك أي سؤال فارغاً أبداً</strong> — في Goethe لا يُخصم على الإجابة الخاطئة. خمّن دائماً!</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ SPRECHEN ══════════════════════════════ -->
+<section class="section" id="sprechen">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">Sprechen — تدريب المحادثة</div><div class="sec-d">3 مهام نموذجية مع نماذج الإجابة الكاملة</div></div></div>
+
+  <div class="sprechen-card reveal">
+    <div class="sp-head">🎤 مهمة Sprechen — Teil 1 · التعريف بالنفسك</div>
+    <div class="sp-task">المُحكّم يطلب منك أن تعرّف عن نفسك. احضّر كلاماً يشمل: الاسم · البلد · المدينة · العمل/الدراسة · الهوايات · لماذا تتعلم الألمانية</div>
+    <div class="sp-model">
+      <strong style="color:var(--white)">نموذج إجابة:</strong><br>
+      <code>Hallo!</code> Mein Name ist Ahmed Al-Rashid.<br>
+      Ich komme aus <code>Syrien,</code> aber ich wohne jetzt in <code>Berlin.</code><br>
+      Ich bin <code>Ingenieur.</code> Ich arbeite bei einer Baufirma.<br>
+      Meine Hobbys sind <code>Lesen und Sport.</code> Ich spiele gern Fußball.<br>
+      Ich lerne Deutsch, <code>weil ich in Deutschland arbeiten möchte.</code><br>
+      Ich spreche <code>Arabisch, Englisch und ein bisschen Deutsch.</code><br>
+      <span style="color:var(--gold);font-size:.72rem;margin-top:.5rem;display:block">⏱️ الهدف: 45-60 ثانية بدون صمت طويل. حضّرها واحفظها جيداً.</span>
+    </div>
+  </div>
+
+  <div class="sprechen-card reveal">
+    <div class="sp-head">🎤 مهمة Sprechen — Teil 2 · الاستفسار عن معلومات</div>
+    <div class="sp-task">تحصل على بطاقة (مثل: "Deutschkurs · Montag–Freitag · 18:00–20:00 · VHS München · 120 €"). اسأل شريكك عن المعلومات الناقصة في بطاقتك.</div>
+    <div class="sp-model">
+      <strong style="color:var(--white)">الأسئلة التي يجب حفظها:</strong><br>
+      <code>Wann beginnt der Kurs?</code> — متى يبدأ؟<br>
+      <code>Wo findet das statt?</code> — أين يُعقد؟<br>
+      <code>Wie viel kostet das?</code> — كم يكلف؟<br>
+      <code>Wie lange dauert das?</code> — كم مدته؟<br>
+      <code>An welchen Tagen?</code> — أي أيام؟<br>
+      <span style="color:var(--gold);font-size:.72rem;margin-top:.5rem;display:block">💡 هذه الأسئلة صالحة لأي بطاقة في الاختبار — احفظها كلها.</span>
+    </div>
+  </div>
+
+  <div class="sprechen-card reveal">
+    <div class="sp-head">🎤 مهمة Sprechen — Teil 3 · طلب / اقتراح + رد</div>
+    <div class="sp-task">بطاقتك تقول "Bitte um ein Glas Wasser" أو "Schlagen Sie vor, morgen ins Kino zu gehen". قم بالطلب أو الاقتراح وردّ على شريكك.</div>
+    <div class="sp-model">
+      <strong style="color:var(--white)">عبارات مفيدة:</strong><br>
+      <code>Entschuldigung, könnte ich bitte ein Glas Wasser haben?</code><br>
+      <code>Ich möchte gern ... bitte.</code><br>
+      <code>Möchtest du morgen ins Kino gehen?</code><br>
+      <code>Das ist eine gute Idee! Ja, gerne!</code><br>
+      <code>Leider kann ich nicht, weil ich arbeiten muss.</code><br>
+      <span style="color:var(--gold);font-size:.72rem;margin-top:.5rem;display:block">💡 الكلمات السحرية: bitte · Entschuldigung · Ich möchte · Könnte ich...? · Gerne!</span>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ COMMON MISTAKES ══════════════════════════════ -->
+<section class="section" id="mistakes-exam">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">أخطاء شائعة في الاختبار</div><div class="sec-d">تجنّبها = نقاط إضافية مجانية</div></div></div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">...weil ich bin müde.</div><div class="mi-explain">بعد weil و dass و wenn: الفعل في نهاية الجملة</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">...weil ich müde bin.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich bin ein Arzt.</div><div class="mi-explain">بعد sein: المهنة بدون أداة تعريف!</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich bin Arzt.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Er hat nach Berlin gefahren.</div><div class="mi-explain">fahren = حركة → يأخذ sein لا haben</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Er ist nach Berlin gefahren.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich kann Deutsch spreche.</div><div class="mi-explain">مع الفعل الناقص: المصدر بدون تصريف في النهاية</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich kann Deutsch sprechen.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich fahre mit der Bus.</div><div class="mi-explain">mit + Dativ: der Bus → dem Bus</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich fahre mit dem Bus.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Sie kauft eine roten Pullover.</div><div class="mi-explain">Akkusativ Maskulin: ein → einen</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Sie kauft einen roten Pullover.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">ترك أسئلة في الاختبار فارغة</div><div class="mi-explain">لا يُخصم على الإجابة الخاطئة في Goethe A1</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">خمّن دائماً — لا تترك سؤالاً فارغاً أبداً</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">نسيان نقل الإجابات لورقة الإجابة الرسمية</div><div class="mi-explain">ما في ورقة الأسئلة لا يُحسب — فقط ورقة الإجابة</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">نقل كل الإجابات قبل انتهاء الوقت</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ EXERCISES ══════════════════════════════ -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين التفاعلية</div><div class="sec-d">36 سؤالاً يغطي كل قواعد A1 — الهدف للانتقال: 30+/36</div></div></div>
+
+  <!-- Block A -->
+  <div class="ex-block reveal">
+    <div class="ex-title">🟣 الجزء A — حالات الاسم: Nom · Akk · Dat (8 أسئلة)</div>
+    <div class="ex-q">
+      <div class="ex-q-text">1. "Ich sehe <span class="blank" id="b1">___</span> Mann." — Akkusativ Maskulin (indefinite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="1" data-a="ein" onclick="check(this)">ein</button>
+        <button class="ex-btn" data-q="1" data-a="einen" onclick="check(this)">einen</button>
+        <button class="ex-btn" data-q="1" data-a="dem" onclick="check(this)">dem</button>
+      </div>
+      <div class="ex-fb" id="f1"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">2. "<span class="blank" id="b2">___</span> Frau ist sehr nett." — Nominativ Feminin (definite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="2" data-a="Die" onclick="check(this)">Die</button>
+        <button class="ex-btn" data-q="2" data-a="Den" onclick="check(this)">Den</button>
+        <button class="ex-btn" data-q="2" data-a="Einer" onclick="check(this)">Einer</button>
+      </div>
+      <div class="ex-fb" id="f2"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">3. "Er gibt <span class="blank" id="b3">___</span> Kind ein Buch." — Dativ Neutrum (definite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="3" data-a="das" onclick="check(this)">das</button>
+        <button class="ex-btn" data-q="3" data-a="den" onclick="check(this)">den</button>
+        <button class="ex-btn" data-q="3" data-a="dem" onclick="check(this)">dem</button>
+      </div>
+      <div class="ex-fb" id="f3"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">4. "Ich fahre mit <span class="blank" id="b4">___</span> Bus." — mit + Dativ Maskulin</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="4" data-a="der" onclick="check(this)">der</button>
+        <button class="ex-btn" data-q="4" data-a="den" onclick="check(this)">den</button>
+        <button class="ex-btn" data-q="4" data-a="dem" onclick="check(this)">dem</button>
+      </div>
+      <div class="ex-fb" id="f4"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">5. "Sie kauft <span class="blank" id="b5">___</span> Jacke." — Akkusativ Feminin (indefinite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="5" data-a="ein" onclick="check(this)">ein</button>
+        <button class="ex-btn" data-q="5" data-a="eine" onclick="check(this)">eine</button>
+        <button class="ex-btn" data-q="5" data-a="einer" onclick="check(this)">einer</button>
+      </div>
+      <div class="ex-fb" id="f5"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">6. "Das Buch gehört <span class="blank" id="b6">___</span> Lehrerin." — Dativ Feminin (definite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="6" data-a="die" onclick="check(this)">die</button>
+        <button class="ex-btn" data-q="6" data-a="der" onclick="check(this)">der</button>
+        <button class="ex-btn" data-q="6" data-a="dem" onclick="check(this)">dem</button>
+      </div>
+      <div class="ex-fb" id="f6"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">7. "Ich wohne bei <span class="blank" id="b7">___</span> Eltern." — bei + Dativ Plural (Possessiv: mein)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="7" data-a="meine" onclick="check(this)">meine</button>
+        <button class="ex-btn" data-q="7" data-a="meinen" onclick="check(this)">meinen</button>
+        <button class="ex-btn" data-q="7" data-a="meinem" onclick="check(this)">meinem</button>
+      </div>
+      <div class="ex-fb" id="f7"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">8. "Er braucht <span class="blank" id="b8">___</span> neuen Stift." — Akkusativ Maskulin (indefinite)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="8" data-a="ein" onclick="check(this)">ein</button>
+        <button class="ex-btn" data-q="8" data-a="einen" onclick="check(this)">einen</button>
+        <button class="ex-btn" data-q="8" data-a="einem" onclick="check(this)">einem</button>
+      </div>
+      <div class="ex-fb" id="f8"></div>
+    </div>
+  </div>
+
+  <!-- Block B -->
+  <div class="ex-block reveal">
+    <div class="ex-title">🟢 الجزء B — الأفعال الناقصة — Modalverben (6 أسئلة)</div>
+    <div class="ex-q">
+      <div class="ex-q-text">9. "Du <span class="blank" id="b9">___</span> jetzt schlafen." — müssen + du</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="9" data-a="muss" onclick="check(this)">muss</button>
+        <button class="ex-btn" data-q="9" data-a="musst" onclick="check(this)">musst</button>
+        <button class="ex-btn" data-q="9" data-a="müsst" onclick="check(this)">müsst</button>
+      </div>
+      <div class="ex-fb" id="f9"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">10. "Hier <span class="blank" id="b10">___</span> man nicht rauchen." — dürfen + man (= er/sie/es)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="10" data-a="darf" onclick="check(this)">darf</button>
+        <button class="ex-btn" data-q="10" data-a="darfst" onclick="check(this)">darfst</button>
+        <button class="ex-btn" data-q="10" data-a="dürfen" onclick="check(this)">dürfen</button>
+      </div>
+      <div class="ex-fb" id="f10"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">11. "Wir <span class="blank" id="b11">___</span> morgen früh aufstehen." — müssen + wir</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="11" data-a="muss" onclick="check(this)">muss</button>
+        <button class="ex-btn" data-q="11" data-a="müsst" onclick="check(this)">müsst</button>
+        <button class="ex-btn" data-q="11" data-a="müssen" onclick="check(this)">müssen</button>
+      </div>
+      <div class="ex-fb" id="f11"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">12. "Er <span class="blank" id="b12">___</span> nach Berlin fahren." — wollen + er</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="12" data-a="wollen" onclick="check(this)">wollen</button>
+        <button class="ex-btn" data-q="12" data-a="will" onclick="check(this)">will</button>
+        <button class="ex-btn" data-q="12" data-a="wollt" onclick="check(this)">wollt</button>
+      </div>
+      <div class="ex-fb" id="f12"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">13. "Ich <span class="blank" id="b13">___</span> bitte einen Tee." — möchten + ich</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="13" data-a="möchte" onclick="check(this)">möchte</button>
+        <button class="ex-btn" data-q="13" data-a="möchtest" onclick="check(this)">möchtest</button>
+        <button class="ex-btn" data-q="13" data-a="möchten" onclick="check(this)">möchten</button>
+      </div>
+      <div class="ex-fb" id="f13"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">14. "Ihr <span class="blank" id="b14">___</span> das nicht vergessen." — sollen + ihr</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="14" data-a="soll" onclick="check(this)">soll</button>
+        <button class="ex-btn" data-q="14" data-a="sollen" onclick="check(this)">sollen</button>
+        <button class="ex-btn" data-q="14" data-a="sollt" onclick="check(this)">sollt</button>
+      </div>
+      <div class="ex-fb" id="f14"></div>
+    </div>
+  </div>
+
+  <!-- Block C -->
+  <div class="ex-block reveal">
+    <div class="ex-title">🔵 الجزء C — أفعال منفصلة + جمل مركبة (8 أسئلة)</div>
+    <div class="ex-q">
+      <div class="ex-q-text">15. "Er ___ um 6 Uhr ___." — (aufstehen) اختر الشكل الصحيح</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="15" data-a="aufsteht" onclick="check(this)">aufsteht (غلط)</button>
+        <button class="ex-btn" data-q="15" data-a="steht auf" onclick="check(this)">steht ... auf</button>
+        <button class="ex-btn" data-q="15" data-a="aufstehen" onclick="check(this)">aufstehen (مصدر)</button>
+      </div>
+      <div class="ex-fb" id="f15"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">16. "Wir ___ heute Abend ___." — (einkaufen)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="16" data-a="einkaufen" onclick="check(this)">einkaufen</button>
+        <button class="ex-btn" data-q="16" data-a="kaufen ein" onclick="check(this)">kaufen ... ein</button>
+        <button class="ex-btn" data-q="16" data-a="kaufen" onclick="check(this)">kaufen</button>
+      </div>
+      <div class="ex-fb" id="f16"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">17. "Sie ___ ihren Freund ___." — (anrufen)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="17" data-a="anruft" onclick="check(this)">anruft</button>
+        <button class="ex-btn" data-q="17" data-a="ruft an" onclick="check(this)">ruft ... an</button>
+        <button class="ex-btn" data-q="17" data-a="anruf" onclick="check(this)">anruf</button>
+      </div>
+      <div class="ex-fb" id="f17"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">18. أي جملة صحيحة مع الفعل المنفصل "zumachen"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="18" data-a="Das Geschäft macht um 20 Uhr zu." onclick="check(this)">Das Geschäft macht um 20 Uhr zu.</button>
+        <button class="ex-btn" data-q="18" data-a="Das Geschäft zumacht um 20 Uhr." onclick="check(this)">Das Geschäft zumacht um 20 Uhr.</button>
+      </div>
+      <div class="ex-fb" id="f18"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">19. "Ich lerne Deutsch, ___ ich in Deutschland studieren möchte."</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="19" data-a="weil" onclick="check(this)">weil</button>
+        <button class="ex-btn" data-q="19" data-a="wenn" onclick="check(this)">wenn</button>
+        <button class="ex-btn" data-q="19" data-a="dass" onclick="check(this)">dass</button>
+      </div>
+      <div class="ex-fb" id="f19"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">20. "Er sagt, ___ er morgen kommt."</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="20" data-a="weil" onclick="check(this)">weil</button>
+        <button class="ex-btn" data-q="20" data-a="dass" onclick="check(this)">dass</button>
+        <button class="ex-btn" data-q="20" data-a="wenn" onclick="check(this)">wenn</button>
+      </div>
+      <div class="ex-fb" id="f20"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">21. "___ du Zeit hast, können wir ins Kino gehen."</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="21" data-a="Wenn" onclick="check(this)">Wenn</button>
+        <button class="ex-btn" data-q="21" data-a="Weil" onclick="check(this)">Weil</button>
+        <button class="ex-btn" data-q="21" data-a="Dass" onclick="check(this)">Dass</button>
+      </div>
+      <div class="ex-fb" id="f21"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">22. أي جملة صحيحة مع "weil"؟ — الفعل في أي موضع؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="22" data-a="...weil ich müde bin." onclick="check(this)">...weil ich müde bin.</button>
+        <button class="ex-btn" data-q="22" data-a="...weil ich bin müde." onclick="check(this)">...weil ich bin müde.</button>
+        <button class="ex-btn" data-q="22" data-a="...weil müde bin ich." onclick="check(this)">...weil müde bin ich.</button>
+      </div>
+      <div class="ex-fb" id="f22"></div>
+    </div>
+  </div>
+
+  <!-- Block D -->
+  <div class="ex-block reveal">
+    <div class="ex-title">🟡 الجزء D — مفردات من الـ 14 وحدة (8 أسئلة)</div>
+    <div class="ex-q">
+      <div class="ex-q-text">23. ما معنى "Erkältung"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="23" data-a="حمى" onclick="check(this)">حمى</button>
+        <button class="ex-btn" data-q="23" data-a="زكام" onclick="check(this)">زكام</button>
+        <button class="ex-btn" data-q="23" data-a="كسر في العظم" onclick="check(this)">كسر في العظم</button>
+      </div>
+      <div class="ex-fb" id="f23"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">24. ما معنى "Fahrkarte"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="24" data-a="تذكرة" onclick="check(this)">تذكرة</button>
+        <button class="ex-btn" data-q="24" data-a="محطة" onclick="check(this)">محطة</button>
+        <button class="ex-btn" data-q="24" data-a="تأخير" onclick="check(this)">تأخير</button>
+      </div>
+      <div class="ex-fb" id="f24"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">25. ما معنى "Gehalt"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="25" data-a="العطلة" onclick="check(this)">العطلة</button>
+        <button class="ex-btn" data-q="25" data-a="الراتب" onclick="check(this)">الراتب</button>
+        <button class="ex-btn" data-q="25" data-a="المهنة" onclick="check(this)">المهنة</button>
+      </div>
+      <div class="ex-fb" id="f25"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">26. ما معنى "aufräumen"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="26" data-a="يطبخ" onclick="check(this)">يطبخ</button>
+        <button class="ex-btn" data-q="26" data-a="يرتب الغرفة" onclick="check(this)">يرتب الغرفة</button>
+        <button class="ex-btn" data-q="26" data-a="يفتح الباب" onclick="check(this)">يفتح الباب</button>
+      </div>
+      <div class="ex-fb" id="f26"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">27. "gern / lieber / am liebsten" — هذه أدوات...</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="27" data-a="التفضيل (Komparativ)" onclick="check(this)">التفضيل (Komparativ)</button>
+        <button class="ex-btn" data-q="27" data-a="الزمن" onclick="check(this)">الزمن</button>
+        <button class="ex-btn" data-q="27" data-a="النفي" onclick="check(this)">النفي</button>
+      </div>
+      <div class="ex-fb" id="f27"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">28. ما معنى "Verspätung"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="28" data-a="حجز" onclick="check(this)">حجز</button>
+        <button class="ex-btn" data-q="28" data-a="وصول" onclick="check(this)">وصول</button>
+        <button class="ex-btn" data-q="28" data-a="تأخير" onclick="check(this)">تأخير</button>
+      </div>
+      <div class="ex-fb" id="f28"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">29. كيف تقول "يسكن بالقرب من المحطة"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="29" data-a="Er wohnt in der Nähe vom Bahnhof." onclick="check(this)">Er wohnt in der Nähe vom Bahnhof.</button>
+        <button class="ex-btn" data-q="29" data-a="Er wohnt nahe den Bahnhof." onclick="check(this)">Er wohnt nahe den Bahnhof.</button>
+        <button class="ex-btn" data-q="29" data-a="Er wohnt bei Bahnhof." onclick="check(this)">Er wohnt bei Bahnhof.</button>
+      </div>
+      <div class="ex-fb" id="f29"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">30. ما الجملة الصحيحة لوصف الطقس؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="30" data-a="Es regnet heute." onclick="check(this)">Es regnet heute.</button>
+        <button class="ex-btn" data-q="30" data-a="Das Wetter regnet." onclick="check(this)">Das Wetter regnet.</button>
+        <button class="ex-btn" data-q="30" data-a="Heute ist regnen." onclick="check(this)">Heute ist regnen.</button>
+      </div>
+      <div class="ex-fb" id="f30"></div>
+    </div>
+  </div>
+
+  <!-- Block E -->
+  <div class="ex-block reveal">
+    <div class="ex-title">🔴 الجزء E — Perfekt + اختبار Goethe (6 أسئلة)</div>
+    <div class="ex-q">
+      <div class="ex-q-text">31. "Er ___ gestern nach Berlin ___." — (fahren · Perfekt)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="31" data-a="hat gefahren" onclick="check(this)">hat gefahren</button>
+        <button class="ex-btn" data-q="31" data-a="ist gefahren" onclick="check(this)">ist gefahren</button>
+        <button class="ex-btn" data-q="31" data-a="hat gefahrt" onclick="check(this)">hat gefahrt</button>
+      </div>
+      <div class="ex-fb" id="f31"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">32. "Wir ___ gestern Fußball ___." — (spielen · Perfekt)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="32" data-a="haben gespielt" onclick="check(this)">haben gespielt</button>
+        <button class="ex-btn" data-q="32" data-a="sind gespielt" onclick="check(this)">sind gespielt</button>
+        <button class="ex-btn" data-q="32" data-a="haben spielen" onclick="check(this)">haben spielen</button>
+      </div>
+      <div class="ex-fb" id="f32"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">33. "Sie ___ um 7 Uhr ___." — (aufstehen · Perfekt)</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="33" data-a="hat aufgestanden" onclick="check(this)">hat aufgestanden</button>
+        <button class="ex-btn" data-q="33" data-a="ist aufgestanden" onclick="check(this)">ist aufgestanden</button>
+        <button class="ex-btn" data-q="33" data-a="ist aufgestand" onclick="check(this)">ist aufgestand</button>
+      </div>
+      <div class="ex-fb" id="f33"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">34. ما هو Partizip II الصحيح للفعل "essen"؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="34" data-a="gegessen" onclick="check(this)">gegessen</button>
+        <button class="ex-btn" data-q="34" data-a="geessen" onclick="check(this)">geessen</button>
+        <button class="ex-btn" data-q="34" data-a="gessen" onclick="check(this)">gessen</button>
+      </div>
+      <div class="ex-fb" id="f34"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">35. كم عدد أجزاء اختبار Goethe-Zertifikat A1؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="35" data-a="3" onclick="check(this)">3</button>
+        <button class="ex-btn" data-q="35" data-a="4" onclick="check(this)">4</button>
+        <button class="ex-btn" data-q="35" data-a="5" onclick="check(this)">5</button>
+      </div>
+      <div class="ex-fb" id="f35"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">36. ما الحد الأدنى للنجاح في اختبار Goethe A1؟</div>
+      <div class="ex-opts">
+        <button class="ex-btn" data-q="36" data-a="50%" onclick="check(this)">50%</button>
+        <button class="ex-btn" data-q="36" data-a="60%" onclick="check(this)">60%</button>
+        <button class="ex-btn" data-q="36" data-a="70%" onclick="check(this)">70%</button>
+      </div>
+      <div class="ex-fb" id="f36"></div>
+    </div>
+  </div>
+
+  <button class="check-btn reveal" onclick="showScore()">عرض النتيجة الإجمالية — Ergebnis anzeigen</button>
+  <div class="score-box" id="scoreBox">
+    <div class="score-num" id="scoreNum"></div>
+    <div class="score-sub">من 36 سؤال</div>
+    <div class="score-msg" id="scoreMsg"></div>
+  </div>
+  <button class="reset-btn" onclick="resetAll()">↺ إعادة التمارين من البداية</button>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ WRITING ══════════════════════════════ -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">تمارين الكتابة — محاكاة Goethe Schreiben</div><div class="sec-d">3 مهام بتنسيق الاختبار الحقيقي — اكتب وراجع قبل الاختبار</div></div></div>
+
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة الكتابة 1 — رد على دعوة (نمط Goethe Schreiben)</div>
+    <div class="wt-text">كتب لك صديقك Thomas: "Ich mache am Samstag eine Party. Kommst du?" — اكتب له رداً قصيراً (~35 كلمة). يجب أن يتضمن ردك:</div>
+    <ul class="wt-list">
+      <li>هل ستذهب أم لا؟</li>
+      <li>السبب (weil...)</li>
+      <li>سؤال واحد إضافي (Wann? Wo? Wie viele Leute?)</li>
+    </ul>
+    <textarea class="wt-input" placeholder="اكتب ردك هنا... (حوالي 30-40 كلمة بالألمانية)&#10;ابدأ بـ: Lieber Thomas, vielen Dank für die Einladung!..."></textarea>
+  </div>
+
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة الكتابة 2 — تعريف شامل (Sprechen Teil 1 كتابياً)</div>
+    <div class="wt-text">اكتب تعريفاً كاملاً عن نفسك يمكنك حفظه ثم استخدامه في Sprechen Teil 1:</div>
+    <ul class="wt-list">
+      <li>الاسم · العمر · البلد · المدينة</li>
+      <li>العمل أو الدراسة</li>
+      <li>الهوايات (weil...)</li>
+      <li>لماذا تتعلم الألمانية</li>
+    </ul>
+    <textarea class="wt-input" placeholder="اكتب تعريفك الكامل هنا... (~70 كلمة)&#10;ابدأ: Hallo! Mein Name ist..."></textarea>
+  </div>
+
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة الكتابة 3 — يومي بالأمس (Perfekt كاملاً)</div>
+    <div class="wt-text">اكتب عن أمس — ماذا فعلت فعلاً؟ كل جملة يجب أن تكون بـ Perfekt:</div>
+    <ul class="wt-list">
+      <li>متى استيقظت؟ (aufstehen)</li>
+      <li>ماذا أكلت للفطور؟ (essen)</li>
+      <li>أين ذهبت؟ (gehen / fahren)</li>
+      <li>ماذا فعلت بالمساء؟ (machen)</li>
+      <li>متى نمت؟ (schlafen gehen)</li>
+    </ul>
+    <textarea class="wt-input" placeholder="اكتب عن يومك بالأمس...&#10;مثال: Gestern bin ich um 7 Uhr aufgestanden. Ich habe Brot gegessen..."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ RESOURCES ══════════════════════════════ -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">المصادر الإضافية</div><div class="sec-d">للمراجعة النهائية وما بعد A1</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">Goethe-Institut Übungen</div><div class="res-type">موقع رسمي</div><div class="res-desc">الموقع الرسمي لمعهد Goethe يحتوي على اختبارات A1 حقيقية مجانية مع الحلول. goethe.de</div></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">DW Learn German</div><div class="res-type">موقع + يوتيوب</div><div class="res-desc">learngerman.dw.com — كل النحو والمفردات بالترتيب + Nicos Weg الكامل للاستماع المكثف.</div></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki Flashcards</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أنشئ بطاقات لكل مفردة جديدة. نظام التكرار الذكي SRS يثبّت المفردات في الذاكرة طويلة المدى.</div></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">10 دقائق يومياً للمراجعة السريعة. لا يكفي وحده لكن ممتاز كمعزز يومي إضافي للدراسة الأساسية.</div></div>
+    <div class="res-card"><span class="res-icon">🎙️</span><div class="res-name">Tandem / HelloTalk</div><div class="res-type">تطبيق محادثة</div><div class="res-desc">تحدث مع ألمان حقيقيين عبر الإنترنت. الممارسة الحقيقية تختلف عن الكتب — ابدأ الآن ولا تنتظر.</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Schritte Plus A1/A2</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الأكثر استخداماً في دورات A1 في ألمانيا — بنيته مشابهة لاختبار Goethe مباشرة.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════ 6-DAY PLAN ══════════════════════════════ -->
+<section class="section" id="plan">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الـ 6 أيام المفصّلة</div><div class="sec-d">من المراجعة الشاملة إلى الاختبار — يوماً بيوم</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">استماع شامل + حالات الاسم</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 1 (Nicos Weg Full) — أول ساعة</li>
+        <li class="vl">شاهد الفيديو 2 (Nominativ/Akkusativ/Dativ)</li>
+        <li>ادرس الجداول الثلاثة: معرَّف + نكرة + ملكية</li>
+        <li>احفظ حروف جر Akkusativ (6) + Dativ (8)</li>
+        <li>حل تمارين الجزء A (أسئلة 1-8)</li>
+      </ul>
+      <div class="day-time">⏱️ 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">الأفعال الناقصة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 3 (Modal Verbs Crash Course)</li>
+        <li>احفظ جدول الأفعال الستة × الضمائر الستة</li>
+        <li>لاحظ: ich = er/sie/es في معظمها</li>
+        <li>حل تمارين الجزء B (أسئلة 9-14)</li>
+        <li>صرّف الأفعال الستة شفهياً من الذاكرة</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">بنية الجملة + Perfekt</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 4 (Perfekt haben/sein)</li>
+        <li class="vl">شاهد الفيديو 5 (weil/dass/wenn)</li>
+        <li>ادرس الأفعال المنفصلة الـ 12</li>
+        <li>ادرس قسم Perfekt (haben vs sein)</li>
+        <li>حل تمارين الجزء C + D (أسئلة 15-30)</li>
+        <li class="wl">مهمة الكتابة 3 (يوم بالأمس — Perfekt)</li>
+      </ul>
+      <div class="day-time">⏱️ 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">مفردات + Sprechen</div>
+      <ul class="day-tasks">
+        <li>راجع مفردات الـ 14 وحدة (القسم 04)</li>
+        <li>حل تمارين الجزء E (أسئلة 31-36)</li>
+        <li>تدرّب Sprechen Teil 1 بصوت عالٍ — 5 مرات</li>
+        <li>تدرّب Sprechen Teil 2 (أسئلة المعلومات)</li>
+        <li class="wl">مهمة الكتابة 2 (تعريف كامل)</li>
+        <li>راجع قائمة الأخطاء الشائعة (القسم 07)</li>
+      </ul>
+      <div class="day-time">⏱️ 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">05</div>
+      <div class="day-title">محاكاة اختبار Goethe</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 6 (Goethe A1 Full Test)</li>
+        <li>افعل الاختبار مع التوقيت الحقيقي</li>
+        <li>Hören: 20 دقيقة — Lesen: 25 دقيقة</li>
+        <li>Schreiben: 20 دقيقة — صحّح بعدها</li>
+        <li class="wl">مهمة الكتابة 1 (رد على دعوة)</li>
+        <li>حدد نقاط الضعف من النتيجة</li>
+      </ul>
+      <div class="day-time">⏱️ 3-4 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">06</div>
+      <div class="day-title">مراجعة أخيرة + تحضير</div>
+      <ul class="day-tasks">
+        <li>غطّ الجداول — اختبر نفسك شفهياً</li>
+        <li>أعد حل التمارين الخاطئة فقط</li>
+        <li>تدرّب Sprechen Teil 1 حتى تصبح طبيعية</li>
+        <li>راجع قاعدة weil + ترتيب الكلمات</li>
+        <li>✅ إذا حصلت 30+/36 — أنت جاهز!</li>
+        <li>نم مبكراً — الراحة جزء من التحضير</li>
+      </ul>
+      <div class="day-time">⏱️ 2 ساعات فقط</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem"><div class="note-title nt-gr">🏆 أنت جاهز للاختبار إذا...</div><p>✅ تستطيع تصريف الأفعال الناقصة الستة بدون نظر · ✅ تفهم الفرق بين Akkusativ و Dativ وتطبّقه · ✅ تستطيع التكلم عن نفسك لمدة دقيقة بدون توقف طويل · ✅ تعرف كيف تكتب رسالة قصيرة بالألمانية · ✅ حصلت 30+/36 في التمارين · ✅ فعلت اختباراً تجريبياً كاملاً. <strong>إذا حققت هذا كله — الاختبار بانتظارك. Viel Erfolg! 🍀</strong></p></div>
+</section>
+
+<div class="stripe"><div></div><div></div><div></div></div>
+<footer>
+  <span class="ft-de">UNIT 15</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">مراجعة شاملة · Akkusativ · Dativ · الأفعال الناقصة · Perfekt · Goethe A1 · 36 تمرين · 6 فيديوهات</p>
+  <p>A1 · الخطوة الأخيرة · 6 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">🎯 بعد Goethe A1 → A2 في انتظارك!</p>
+</footer>
+
+<script>
+const answers={
+  1:'einen',2:'Die',3:'dem',4:'dem',5:'eine',6:'der',7:'meinen',8:'einen',
+  9:'musst',10:'darf',11:'müssen',12:'will',13:'möchte',14:'sollt',
+  15:'steht auf',16:'kaufen ein',17:'ruft an',18:'Das Geschäft macht um 20 Uhr zu.',
+  19:'weil',20:'dass',21:'Wenn',22:'...weil ich müde bin.',
+  23:'زكام',24:'تذكرة',25:'الراتب',26:'يرتب الغرفة',27:'التفضيل (Komparativ)',28:'تأخير',
+  29:'Er wohnt in der Nähe vom Bahnhof.',30:'Es regnet heute.',
+  31:'ist gefahren',32:'haben gespielt',33:'ist aufgestanden',34:'gegessen',35:'4',36:'60%'
+};
+const fb={
+  1:{ok:'✅ Akkusativ Maskulin! النكرة ein → einen عندما يصبح الاسم مفعولاً به مباشراً',no:'❌ Akkusativ Maskulin: ein → einen — هذا هو التغيير الوحيد في Maskulin'},
+  2:{ok:'✅ Nominativ Feminin! الفاعل المؤنث = die دائماً',no:'❌ Nominativ Feminin: الفاعل المؤنث = die'},
+  3:{ok:'✅ Dativ Neutrum! بعد "geben": الشخص الذي يأخذ = Dativ → das → dem',no:'❌ Dativ Neutrum: das Kind → dem Kind (بعد geben الشخص = Dativ)'},
+  4:{ok:'✅ mit + Dativ دائماً! der Bus → dem Bus',no:'❌ mit يأخذ Dativ دائماً: der → dem'},
+  5:{ok:'✅ Akkusativ Feminin! المؤنث لا يتغير بين Nom و Akk: eine',no:'❌ Akkusativ Feminin: eine (المؤنث لا يتغير!)'},
+  6:{ok:'✅ Dativ Feminin! gehören + Dativ: die Lehrerin → der Lehrerin — انتبه: في Dativ المؤنث تأخذ der!',no:'❌ Dativ Feminin: die → der (في Dativ الأنثى تأخذ der!)'},
+  7:{ok:'✅ bei + Dativ Plural! meine Eltern → bei meinen Eltern (Plural Dativ: +n)',no:'❌ bei + Dativ Plural: meine → meinen في Dativ الجمع'},
+  8:{ok:'✅ Akkusativ Maskulin النكرة: ein → einen',no:'❌ Akkusativ Maskulin النكرة: ein → einen'},
+  9:{ok:'✅ du + müssen = musst — لا يوجد Umlaut في صيغة du للأفعال الناقصة',no:'❌ du + müssen = musst'},
+  10:{ok:'✅ man = er/sie/es في التصريف → darf',no:'❌ man يُصرَّف كـ er/sie/es → darf'},
+  11:{ok:'✅ wir + müssen = müssen — نفس المصدر!',no:'❌ wir + müssen = müssen'},
+  12:{ok:'✅ er + wollen = will — لا توجد نهاية في صيغة ich/er مع الأفعال الناقصة',no:'❌ er + wollen = will (بدون نهاية)'},
+  13:{ok:'✅ ich + möchten = möchte — الأكثر أدباً واستخداماً في المطعم والمحل',no:'❌ ich + möchten = möchte'},
+  14:{ok:'✅ ihr + sollen = sollt',no:'❌ ihr + sollen = sollt'},
+  15:{ok:'✅ الفعل المنفصل: "steht" في V2 + "auf" في نهاية الجملة',no:'❌ الفعل المنفصل: الجذر في V2 + البادئة في النهاية: steht...auf'},
+  16:{ok:'✅ einkaufen منفصل: "kaufen" في V2 + "ein" في النهاية',no:'❌ einkaufen: kaufen (V2) + ein (النهاية)'},
+  17:{ok:'✅ anrufen منفصل: "ruft" في V2 + "an" في النهاية',no:'❌ anrufen: ruft (V2) + an (النهاية)'},
+  18:{ok:'✅ zumachen: macht (V2) + zu (النهاية) — الفعل ثانياً والبادئة أخيراً',no:'❌ الفعل المنفصل لا يبقى متصلاً في الجملة العادية'},
+  19:{ok:'✅ weil = لأن — يُعطي السبب + الفعل في نهاية الجملة الفرعية',no:'❌ weil = لأن (السبب) — dass = أن — wenn = إذا/عندما'},
+  20:{ok:'✅ dass = أن — يُستخدم بعد أفعال الكلام: sagen, glauben, wissen...',no:'❌ dass = أن — بعد "يقول": dass'},
+  21:{ok:'✅ wenn = إذا/عندما — الجملة الرئيسية بعده تبدأ بالفعل',no:'❌ wenn = إذا/عندما (شرط أو وقت)'},
+  22:{ok:'✅ مع weil: الفعل يذهب إلى نهاية الجملة الفرعية دائماً',no:'❌ مع weil الفعل في النهاية دائماً: "weil ich müde bin"'},
+  23:{ok:'✅ Erkältung = زكام/نزلة برد — من Unit 12 الصحة',no:'❌ Erkältung = زكام/نزلة برد (Fieber = حمى)'},
+  24:{ok:'✅ Fahrkarte = تذكرة — Fahrt (رحلة) + Karte (بطاقة) — Unit 9',no:'❌ Fahrkarte = تذكرة المواصلات'},
+  25:{ok:'✅ Gehalt = الراتب — Unit 14 العمل والمهن',no:'❌ Gehalt = الراتب (Urlaub = العطلة / Beruf = المهنة)'},
+  26:{ok:'✅ aufräumen = يرتب/ينظف الغرفة — فعل منفصل أساسي من Unit 6',no:'❌ aufräumen = يرتب الغرفة (auf + räumen)'},
+  27:{ok:'✅ gern/lieber/am liebsten = درجات التفضيل في ثلاث مراحل — Unit 13',no:'❌ gern/lieber/am liebsten = Komparativ — درجات التفضيل'},
+  28:{ok:'✅ Verspätung = تأخير — ضرورية في قسم المواصلات والاختبار',no:'❌ Verspätung = تأخير (sich verspäten = يتأخر)'},
+  29:{ok:'✅ in der Nähe von + Dativ = بالقرب من — vom = von + dem',no:'❌ الصحيح: in der Nähe vom Bahnhof (von + dem = vom)'},
+  30:{ok:'✅ es regnet = تعبير الطقس غير الشخصي — es الفاعل دائماً في الطقس',no:'❌ الطقس بالألمانية: es + فعل الطقس — es regnet / es schneit'},
+  31:{ok:'✅ fahren = حركة → sein! ist gefahren — Partizip II شاذ: gefahren',no:'❌ fahren = حركة → sein (وليس haben): ist gefahren'},
+  32:{ok:'✅ spielen = فعل عادي → haben! Partizip II منتظم: gespielt',no:'❌ spielen → haben (لأنه لا يدل على حركة): haben gespielt'},
+  33:{ok:'✅ aufstehen = قيام (تغيير وضع) → sein! ist aufgestanden',no:'❌ aufstehen = تغيير وضع → sein: ist aufgestanden'},
+  34:{ok:'✅ essen شاذ → gegessen (ge + ess→ess + en)',no:'❌ essen شاذ → gegessen (لا تضيف ge ثم تكرر e)'},
+  35:{ok:'✅ Goethe A1 = 4 أجزاء: Hören · Lesen · Schreiben · Sprechen',no:'❌ الاختبار 4 أجزاء: Hören · Lesen · Schreiben · Sprechen'},
+  36:{ok:'✅ الحد الأدنى للنجاح = 60% (60 نقطة من 100) — لكن لا أقل من 30% في أي جزء',no:'❌ الحد الأدنى = 60% (ليس 50% ولا 70%)'}
+};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  const pct=correct/total;
+  let msg='';
+  if(pct===1) msg='🏆 ممتاز مطلق! أتقنت A1 كاملاً — الاختبار بانتظارك. Viel Erfolg! 🍀';
+  else if(pct>=0.9) msg='✅ ممتاز! أنت جاهز للاختبار. راجع الأسئلة الخاطئة فقط ثم اذهب.';
+  else if(pct>=0.83) msg='✅ جيد جداً! أنت جاهز تقريباً — يوم إضافي للمراجعة ثم اذهب.';
+  else if(pct>=0.7) msg='👍 جيد! راجع الأجزاء الضعيفة وحل مرة ثانية قبل الاختبار.';
+  else if(pct>=0.6) msg='⚠️ تحتاج مراجعة أكثر — ركز على حالات الاسم والأفعال الناقصة.';
+  else msg='🔄 راجع الملف من البداية — لا تذهب للاختبار قبل أن تحصل 25+/36.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>

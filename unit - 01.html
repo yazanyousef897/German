@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 01 — FULL | التحيات · sein · الضمائر | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'01';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:160px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.rg-card{background:var(--gray);padding:1.3rem;text-align:center}
+.rg-flag{font-size:1.6rem;margin-bottom:.4rem;display:block}
+.rg-region{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:.4rem}
+.rg-de{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;color:var(--gold);margin-bottom:.25rem}
+.rg-ar{font-size:.75rem;color:var(--dim)}
+.time-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.tc{background:var(--gray);padding:1.2rem 1rem;text-align:center}
+.tc-icon{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.tc-label{font-size:.6rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.3rem}
+.tc-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--gold)}
+.tc-ar{font-size:.72rem;color:var(--dim);margin-top:.15rem}
+.pron-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pron-card{background:var(--black);padding:1.1rem;transition:background .2s}
+.pron-card:hover{background:var(--gray)}
+.pron-de{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.pron-ipa{font-size:.75rem;color:var(--gold);margin-bottom:.2rem;font-family:'JetBrains Mono',monospace}
+.pron-ar{font-size:.75rem;color:var(--dim)}
+.pron-tip{font-size:.68rem;color:rgba(255,206,0,.5);margin-top:.3rem}
+.pronoun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pronoun-card{background:var(--black);padding:1.4rem;position:relative;overflow:hidden;transition:background .2s}
+.pronoun-card:hover{background:var(--gray)}
+.pronoun-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.pronoun-card:hover::before{height:100%}
+.pd{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1;margin-bottom:.2rem}
+.pa{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.pt{font-size:.68rem;color:var(--dim);letter-spacing:.08em}
+.pe{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(255,206,0,.5);margin-top:.4rem}
+.sein-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.sein-t th,.sein-t td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.sein-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.sein-t tbody tr{transition:background .15s}
+.sein-t tbody tr:hover{background:var(--gray)}
+.st-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.st-v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--gold)}
+.st-m{font-size:.8rem;color:var(--dim)}
+.st-e{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}
+.note-gold p,.note-green p,.note-red p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.shadow-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.4rem;margin-bottom:1rem}
+.sh-step{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.75rem}
+.sh-step:last-child{margin-bottom:0}
+.sh-num{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold);flex-shrink:0;line-height:1;min-width:22px}
+.sh-text{font-size:.8rem;color:rgba(245,245,240,.7);line-height:1.7}
+.sh-text code{font-family:'JetBrains Mono',monospace;color:var(--white);background:var(--gray3);padding:.1rem .35rem}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.greet-grid{grid-template-columns:1fr}.pronoun-grid,.days-grid{grid-template-columns:repeat(2,1fr)}.region-grid,.time-strip{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 01 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#greet">التحيات</a></li>
+    <li><a href="#pron">النطق</a></li>
+    <li><a href="#pronouns">الضمائر</a></li>
+    <li><a href="#sein">sein</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-badge">🟢 مبتدئ · Unit 01 · 4 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">التحيات</span> <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span> <span class="r">sein</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube · التحيات الرسمية والعادية والإقليمية · النطق · الضمائر الـ6 · فعل sein كاملاً · بنية الجملة · 80+ مفردة · ثقافة ألمانية · أخطاء شائعة · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">80+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">حوارات</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — لا تشوف بدون مهمة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ كيف تستخدم الفيديوهات بشكل صحيح</div><p>لا تشوف الفيديو وتكمل — هذا مضيعة وقت. لكل فيديو <strong style="color:var(--white)">مهمة استماع محددة</strong>: شيء تبحث عنه أثناء المشاهدة. بعد كل فيديو اكتب 3 جمل سمعتها في دفترك. هذا يضاعف الاستفادة من الفيديو.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/RuGmc662HDg" title="A1 Lesson 1 Greetings" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 1</div><div class="video-title">Begrüßungen — التحيات</div><div class="video-desc">الدرس الأول الرسمي لتعلم الألمانية. يغطي التحيات الرسمية والعادية مع نطق واضح وأمثلة.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل تحية تسمعها — هدفك 8 تحيات على الأقل.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/iWyOKwIf_94" title="A1 Lesson 8 Wie gehts" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 8</div><div class="video-title">Wie geht's? — كيف حالك؟</div><div class="video-desc">درس كامل مخصص لـ "كيف حالك" وردوده المختلفة. رسمي وعادي مع حوارات.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل ردود "Wie geht's?" — كم ردًا مختلفًا؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/dC6ZGLzdaTs" title="Nicos Weg Folge 1 Hallo" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · الحلقة 1</div><div class="video-title">Hallo! — قصة نيكو الإسباني في ألمانيا</div><div class="video-desc">أفضل مسلسل لتعلم الألمانية من Deutsche Welle — ستسمع تحيات حقيقية في سياق يومي طبيعي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> ما التحيات التي يقولها نيكو؟ وما الفرق عن الفيديو الأول؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/kQagde_YRUE" title="German sein verb beginners" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · فعل sein</div><div class="video-title">تصريف sein — الكامل للمبتدئين</div><div class="video-desc">درس مخصص لتصريف فعل sein مع الأمثلة. شاهده بعد دراسة الجدول في هذا الملف.</div><div class="video-task"><strong>مهمة الاستماع:</strong> صرّف sein مع الفيديو بصوت عالٍ — كرر كل شكل مباشرة.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/WU1k76Osf90" title="sein heißen pronouns Lingo Guru" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Lingo Guru</div><div class="video-title">sein + heißen + الضمائر الشخصية</div><div class="video-desc">يجمع الضمائر مع تصريف sein و heißen — ممتاز كمراجعة شاملة لليوم الثاني.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب جدول sein من الذاكرة بعد الفيديو بدون نظر.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · الفيلم الكامل A1</div><div class="video-title">Nicos Weg — A1 كاملاً في فيلم واحد</div><div class="video-desc">ساعات من الألمانية الطبيعية. احفظه لليوم الرابع أو بعد إنهاء جميع وحدات A1.</div><div class="video-task"><strong>لليوم الرابع:</strong> شاهد أول 15 دقيقة — اكتب كل جملة تفهمها من Unit 01.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- GREETINGS -->
+<section class="section" id="greet">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">التحيات — Grüße</div><div class="sec-d">رسمي · عادي · وداع · ردود · إقليمي · حوارات</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الفرق الأساسي عن العربية</div><p>في العربية "مرحبا" تشتغل في أي وقت مع أي شخص. في الألمانية عندك ثلاثة محاور: <code>الوقت</code> (صباح/نهار/مساء) · <code>الرسمية</code> (du مقابل Sie) · <code>المنطقة</code> (شمال/جنوب/سويسرا). إتقان الثلاثة = كلامك يبدو طبيعياً.</p></div>
+  <div class="time-strip reveal">
+    <div class="tc"><span class="tc-icon">🌅</span><div class="tc-label">06:00 – 12:00</div><div class="tc-de">Guten Morgen</div><div class="tc-ar">صباح الخير</div></div>
+    <div class="tc"><span class="tc-icon">☀️</span><div class="tc-label">12:00 – 17:00</div><div class="tc-de">Guten Tag</div><div class="tc-ar">يوم سعيد / نهارك سعيد</div></div>
+    <div class="tc"><span class="tc-icon">🌆</span><div class="tc-label">17:00 – 22:00</div><div class="tc-de">Guten Abend</div><div class="tc-ar">مساء الخير</div></div>
+    <div class="tc"><span class="tc-icon">🌙</span><div class="tc-label">وقت النوم فقط</div><div class="tc-de">Gute Nacht</div><div class="tc-ar">تصبح على خير — مش وداع!</div></div>
+  </div>
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">رسمي — FORMELL (Sie)</div>
+      <div class="gi"><div class="gi-de">Guten Morgen!</div><div><div class="gi-ar">صباح الخير</div><div class="gi-note">مع المدير / الغريب / المتجر</div></div></div>
+      <div class="gi"><div class="gi-de">Guten Tag!</div><div><div class="gi-ar">يوم سعيد / مرحباً رسمي</div><div class="gi-note">التحية الرسمية الأكثر استخداماً</div></div></div>
+      <div class="gi"><div class="gi-de">Guten Abend!</div><div><div class="gi-ar">مساء الخير</div><div class="gi-note">من الساعة 5 مساءً تقريباً</div></div></div>
+      <div class="gi"><div class="gi-de">Wie geht es Ihnen?</div><div><div class="gi-ar">كيف حالك؟ (رسمي)</div><div class="gi-note">Ihnen = Sie رسمي — I كبيرة دائماً</div></div></div>
+      <div class="gi"><div class="gi-de">Danke, und Ihnen?</div><div><div class="gi-ar">شكراً، وحضرتك؟</div><div class="gi-note">رد رسمي عند السؤال عنك</div></div></div>
+      <div class="gi"><div class="gi-de">Auf Wiedersehen!</div><div><div class="gi-ar">مع السلامة (رسمي)</div><div class="gi-note">حرفياً: "حتى نلتقي مجدداً"</div></div></div>
+      <div class="gi"><div class="gi-de">Auf Wiederhören!</div><div><div class="gi-ar">مع السلامة في الهاتف فقط</div><div class="gi-note">hören = يسمع — للمكالمات فقط</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">عادي — INFORMELL (du)</div>
+      <div class="gi"><div class="gi-de">Hallo!</div><div><div class="gi-ar">أهلاً / مرحباً</div><div class="gi-note">الأكثر استخداماً في ألمانيا يومياً</div></div></div>
+      <div class="gi"><div class="gi-de">Hi!</div><div><div class="gi-ar">هاي</div><div class="gi-note">بين الأصدقاء والشباب</div></div></div>
+      <div class="gi"><div class="gi-de">Hey!</div><div><div class="gi-ar">هيي</div><div class="gi-note">غير رسمي جداً، مع المقربين</div></div></div>
+      <div class="gi"><div class="gi-de">Wie geht's?</div><div><div class="gi-ar">كيف حالك؟ (عادي)</div><div class="gi-note">اختصار "Wie geht es dir?" — شائع</div></div></div>
+      <div class="gi"><div class="gi-de">Danke, und dir?</div><div><div class="gi-ar">شكراً، وأنت؟</div><div class="gi-note">dir = لك (عادي) — مقابل Ihnen</div></div></div>
+      <div class="gi"><div class="gi-de">Tschüss!</div><div><div class="gi-ar">مع السلامة (عادي)</div><div class="gi-note">الوداع الأكثر استخداماً بشكل مطلق</div></div></div>
+      <div class="gi"><div class="gi-de">Tschau!</div><div><div class="gi-ar">باي (من الإيطالية Ciao)</div><div class="gi-note">مع الأصدقاء</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-green">ردود — ANTWORTEN</div>
+      <div class="gi"><div class="gi-de">Gut, danke!</div><div><div class="gi-ar">بخير، شكراً!</div><div class="gi-note">الرد الأكثر شيوعاً والأسلم</div></div></div>
+      <div class="gi"><div class="gi-de">Sehr gut!</div><div><div class="gi-ar">ممتاز / بخير جداً</div><div class="gi-note">sehr = جداً</div></div></div>
+      <div class="gi"><div class="gi-de">Super! / Prima!</div><div><div class="gi-ar">رائع / عظيم</div><div class="gi-note">Prima أكثر شيوعاً عند كبار السن</div></div></div>
+      <div class="gi"><div class="gi-de">Es geht.</div><div><div class="gi-ar">ماشي / متوسط</div><div class="gi-note">الرد الألماني الواقعي الصادق 😄</div></div></div>
+      <div class="gi"><div class="gi-de">Nicht so gut.</div><div><div class="gi-ar">مش بخير كثيراً</div><div class="gi-note">nicht = لا/غير</div></div></div>
+      <div class="gi"><div class="gi-de">Auch gut!</div><div><div class="gi-ar">أنا أيضاً بخير</div><div class="gi-note">auch = أيضاً — رد سريع وطبيعي</div></div></div>
+      <div class="gi"><div class="gi-de">Danke, Ihnen/dir auch!</div><div><div class="gi-ar">شكراً، وأنت/حضرتك أيضاً!</div><div class="gi-note">الرد على Schönen Tag وما شابهه</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-purple">وداع إضافي + تعابير</div>
+      <div class="gi"><div class="gi-de">Bis später!</div><div><div class="gi-ar">أراك لاحقاً</div><div class="gi-note">bis = حتى · später = لاحقاً</div></div></div>
+      <div class="gi"><div class="gi-de">Bis morgen!</div><div><div class="gi-ar">أراك غداً</div><div class="gi-note">morgen = غداً</div></div></div>
+      <div class="gi"><div class="gi-de">Bis bald!</div><div><div class="gi-ar">أراك قريباً</div><div class="gi-note">bald = قريباً</div></div></div>
+      <div class="gi"><div class="gi-de">Schönen Tag!</div><div><div class="gi-ar">يوم جميل!</div><div class="gi-note">يُقال في المتاجر والمكاتب</div></div></div>
+      <div class="gi"><div class="gi-de">Schönes Wochenende!</div><div><div class="gi-ar">نهاية أسبوع جميلة</div><div class="gi-note">Wochenende = نهاية الأسبوع</div></div></div>
+      <div class="gi"><div class="gi-de">Willkommen!</div><div><div class="gi-ar">أهلاً وسهلاً — ترحيب</div><div class="gi-note">للترحيب بشخص في مكان ما</div></div></div>
+      <div class="gi"><div class="gi-de">Gute Reise!</div><div><div class="gi-ar">سفر سعيد</div><div class="gi-note">Reise = رحلة</div></div></div>
+    </div>
+  </div>
+  <p class="vst reveal">التحيات الإقليمية — Regionale Grüße</p>
+  <div class="region-grid reveal">
+    <div class="rg-card"><span class="rg-flag">🏙️</span><div class="rg-region">شمال ألمانيا — هامبورغ، بريمن</div><div class="rg-de">Moin! / Moin Moin!</div><div class="rg-ar">أهلاً (في أي وقت اليوم)</div></div>
+    <div class="rg-card"><span class="rg-flag">⛪</span><div class="rg-region">جنوب ألمانيا — بافاريا</div><div class="rg-de">Grüß Gott!</div><div class="rg-ar">مرحباً — حرفياً: سلام الله</div></div>
+    <div class="rg-card"><span class="rg-flag">🏔️</span><div class="rg-region">بافاريا + النمسا</div><div class="rg-de">Servus!</div><div class="rg-ar">مرحبا أو وداع — نفس الكلمة!</div></div>
+    <div class="rg-card"><span class="rg-flag">🇨🇭</span><div class="rg-region">سويسرا ألمانية — رسمي</div><div class="rg-de">Grüezi!</div><div class="rg-ar">مرحباً (رسمي سويسري)</div></div>
+    <div class="rg-card"><span class="rg-flag">🇨🇭</span><div class="rg-region">سويسرا ألمانية — عادي</div><div class="rg-de">Sali! / Hoi!</div><div class="rg-ar">هاي / أهلاً</div></div>
+    <div class="rg-card"><span class="rg-flag">🎉</span><div class="rg-region">في كل مكان — خاص</div><div class="rg-de">Herzlich willkommen!</div><div class="rg-ar">أهلاً وسهلاً وعشلاً — حار</div></div>
+  </div>
+  <p class="vst reveal">حوارات نموذجية — 3 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في المكتب (رسمي جداً)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Guten Morgen, Herr Schmidt!</div><div class="dl-ar">صباح الخير يا سيد شميت!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Morgen! Wie geht es Ihnen?</div><div class="dl-ar">صباح الخير! كيف حالك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Sehr gut, danke. Und Ihnen?</div><div class="dl-ar">بخير جداً، شكراً. وحضرتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Auch gut! Auf Wiedersehen!</div><div class="dl-ar">أنا أيضاً بخير! مع السلامة!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Auf Wiedersehen! Schönen Tag!</div><div class="dl-ar">مع السلامة! يوم جميل!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — مع صديق (عادي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hey! Wie geht's?</div><div class="dl-ar">هيي! كيف حالك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Hi! Super! Und dir?</div><div class="dl-ar">هاي! رائع! وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Nicht so gut... ich bin sehr müde.</div><div class="dl-ar">مش بخير كثيراً... أنا متعب جداً.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Oh! Das ist nicht gut! Tschüss, bis bald!</div><div class="dl-ar">أوه! هذا مش كويس! مع السلامة، أراك قريباً!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — في المتجر</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Tag!</div><div class="dl-ar">يوم سعيد! (الموظف)</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Guten Tag! Wie geht es Ihnen?</div><div class="dl-ar">يوم سعيد! كيف حالك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gut, danke! Bitte schön!</div><div class="dl-ar">بخير شكراً! تفضل!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Danke schön! Auf Wiedersehen!</div><div class="dl-ar">شكراً جزيلاً! مع السلامة!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Auf Wiedersehen! Schönen Tag noch!</div><div class="dl-ar">مع السلامة! يوم جميل!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- PRONUNCIATION -->
+<section class="section" id="pron">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">النطق — Aussprache</div><div class="sec-d">أصوات مختلفة عن العربية + أحرف خاصة + تمرين المحاكاة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ خبر جيد للناطقين بالعربية</div><p>العربية والألمانية يشتركان في أصوات كثيرة: <code>ch</code> مثل "خ"، و<code>r</code> حلقي، و<code>gh</code> مثل "غ". أصعب الأصوات عليك ستكون: <code>ü</code>، و<code>ö</code>، وبعض التركيبات. لكن عموماً الناطق بالعربية ينطق الألمانية أفضل من الإنجليزي!</p></div>
+  <div class="pron-grid reveal">
+    <div class="pron-card"><div class="pron-de">Hallo</div><div class="pron-ipa">/ˈhalo/</div><div class="pron-ar">هالو — بسيطة</div><div class="pron-tip">H تُنطق — مش صامتة كالفرنسية</div></div>
+    <div class="pron-card"><div class="pron-de">Guten Tag</div><div class="pron-ipa">/ˈɡuːtən taːɡ/</div><div class="pron-ar">جوتن تاغ</div><div class="pron-tip">g في النهاية = خ/ك خفيفة</div></div>
+    <div class="pron-card"><div class="pron-de">Guten Morgen</div><div class="pron-ipa">/ˈɡuːtən ˈmɔʁɡən/</div><div class="pron-ar">جوتن مورغن</div><div class="pron-tip">r حلقية مثل العربية تقريباً</div></div>
+    <div class="pron-card"><div class="pron-de">Auf Wiedersehen</div><div class="pron-ipa">/auf ˈviːdɐzeːən/</div><div class="pron-ar">أوف فيدرزيين</div><div class="pron-tip">W الألمانية = F / V مش W إنجليزية</div></div>
+    <div class="pron-card"><div class="pron-de">Tschüss</div><div class="pron-ipa">/tʃʏs/</div><div class="pron-ar">تشيوس / تشوس</div><div class="pron-tip">ü = نطق "إ" مع شفاه مستديرة</div></div>
+    <div class="pron-card"><div class="pron-de">Entschuldigung</div><div class="pron-ipa">/ɛntˈʃʊldɪɡʊŋ/</div><div class="pron-ar">إنتشولديغونغ</div><div class="pron-tip">ng في النهاية = صوت أنفي</div></div>
+    <div class="pron-card"><div class="pron-de">Danke schön</div><div class="pron-ipa">/ˈdaŋkə ʃøːn/</div><div class="pron-ar">دانكه شون</div><div class="pron-tip">sch = "ش" دائماً في الألمانية</div></div>
+    <div class="pron-card"><div class="pron-de">Wie geht's?</div><div class="pron-ipa">/viː ɡeːts/</div><div class="pron-ar">في غيتس</div><div class="pron-tip">W = في · ie = ي طويلة</div></div>
+  </div>
+  <div class="greet-grid reveal" style="grid-template-columns:1fr 1fr;margin-bottom:1.5rem;">
+    <div class="greet-col"><div class="greet-col-h gc-gold">قواعد النطق الأساسية</div>
+      <div class="gi"><div class="gi-de">W → V/F</div><div><div class="gi-ar">Wasser = فاسر (ماء)</div><div class="gi-note">مش W الإنجليزية — W الألمانية = فاو</div></div></div>
+      <div class="gi"><div class="gi-de">Z → تس</div><div><div class="gi-ar">zehn = تسين (10)</div><div class="gi-note">دائماً "تس" وليس Z الإنجليزية</div></div></div>
+      <div class="gi"><div class="gi-de">sch → ش</div><div><div class="gi-ar">schön = شون (جميل)</div><div class="gi-note">أسهل صوت للعرب!</div></div></div>
+      <div class="gi"><div class="gi-de">ch → خ أو ش</div><div><div class="gi-ar">ich = إش · auch = أوخ</div><div class="gi-note">بعد a/o/u → خ · بعد e/i → ش</div></div></div>
+      <div class="gi"><div class="gi-de">ie → ي طويلة</div><div><div class="gi-ar">Wie = في · Sie = زي</div><div class="gi-note">ie دائماً = صوت "ي" طويل</div></div></div>
+      <div class="gi"><div class="gi-de">ei → اي</div><div><div class="gi-ar">mein = ماين (بتاعي)</div><div class="gi-note">مثل "أي" العربية</div></div></div>
+    </div>
+    <div class="greet-col"><div class="greet-col-h gc-blue">الأحرف الخاصة — Umlaute</div>
+      <div class="gi"><div class="gi-de">ä → إي مفتوحة</div><div><div class="gi-ar">مثل E في "bed" الإنجليزية</div><div class="gi-note">Männer = مينر (رجال)</div></div></div>
+      <div class="gi"><div class="gi-de">ö → إي + شفاه مستديرة</div><div><div class="gi-ar">لا يوجد في العربية</div><div class="gi-note">قل "إي" واجعل شفتيك مستديرتين</div></div></div>
+      <div class="gi"><div class="gi-de">ü → إ + شفاه مستديرة</div><div><div class="gi-ar">لا يوجد في العربية</div><div class="gi-note">قل "إ" واجعل شفتيك مستديرتين</div></div></div>
+      <div class="gi"><div class="gi-de">ß → SS</div><div><div class="gi-ar">مثل S مطولة</div><div class="gi-note">Straße = شتراسه (شارع)</div></div></div>
+      <div class="gi"><div class="gi-de">eu / äu → أوي</div><div><div class="gi-ar">heute = هوتيه (اليوم)</div><div class="gi-note">مثل oy في boy الإنجليزية</div></div></div>
+      <div class="gi"><div class="gi-de">sp / st → شب / شت</div><div><div class="gi-ar">sprechen = شبريشن</div><div class="gi-note">في بداية الكلمة فقط</div></div></div>
+    </div>
+  </div>
+  <p class="vst reveal">تمرين المحاكاة — Shadowing Exercise</p>
+  <div class="shadow-box reveal">
+    <div class="sh-step"><div class="sh-num">1</div><div class="sh-text">شغّل الفيديو 1 (Learn German Original — Lesson 1 Greetings)</div></div>
+    <div class="sh-step"><div class="sh-num">2</div><div class="sh-text">استمع للجملة كاملة أولاً بدون أن تقول شيئاً</div></div>
+    <div class="sh-step"><div class="sh-num">3</div><div class="sh-text">أعد تشغيل الجملة وقلها معه بصوت عالٍ في نفس الوقت — <code>لا تنتظر يخلص</code></div></div>
+    <div class="sh-step"><div class="sh-num">4</div><div class="sh-text">كرر كل جملة 3 مرات: مع الفيديو، بدونه ببطء، بنفس السرعة</div></div>
+    <div class="sh-step"><div class="sh-num">5</div><div class="sh-text">افعل مع: <code>Guten Morgen!</code> · <code>Guten Tag!</code> · <code>Wie geht es Ihnen?</code> · <code>Auf Wiedersehen!</code> · <code>Tschüss!</code></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- PRONOUNS -->
+<section class="section" id="pronouns">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">الضمائر الشخصية — Personalpronomen</div><div class="sec-d">6 ضمائر أساسية + Sie الرسمي</div></div></div>
+  <div class="pronoun-grid reveal">
+    <div class="pronoun-card"><div class="pd">ich</div><div class="pa">أنا</div><div class="pt">1. Person Singular</div><div class="pe">Ich bin Ahmed.</div></div>
+    <div class="pronoun-card"><div class="pd">du</div><div class="pa">أنت (عادي)</div><div class="pt">2. Person Singular</div><div class="pe">Du bist nett.</div></div>
+    <div class="pronoun-card"><div class="pd" style="font-size:1.8rem;line-height:1.3">er / sie / es</div><div class="pa">هو / هي / هو (محايد)</div><div class="pt">3. Person Singular</div><div class="pe">er=مذكر · sie=مؤنث · es=محايد</div></div>
+    <div class="pronoun-card"><div class="pd">wir</div><div class="pa">نحن</div><div class="pt">1. Person Plural</div><div class="pe">Wir sind Freunde.</div></div>
+    <div class="pronoun-card"><div class="pd">ihr</div><div class="pa">أنتم (عادي)</div><div class="pt">2. Person Plural</div><div class="pe">Ihr seid willkommen!</div></div>
+    <div class="pronoun-card"><div class="pd" style="color:var(--blue)">sie</div><div class="pa">هم / هن</div><div class="pt">3. Person Plural</div><div class="pe">Sie sind Studenten.</div></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ Sie الرسمي — الأهم والأصعب</div><p><code>Sie</code> بحرف S كبير = أنت/أنتِ رسمي. يُستخدم مع الغرباء والمديرين وكبار السن وفي الرسائل الرسمية. تصريف sein معه = <code>Sie sind</code> مثل الجمع تماماً. القاعدة الذهبية: <strong style="color:var(--white)">في أول لقاء → Sie دائماً</strong> حتى يقول لك الآخر "Wir können du sagen".</p></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🧠 er / sie / es — متى أستخدم أيهما؟</div><p>كل اسم في الألمانية له جنس لغوي: مذكر (der)، مؤنث (die)، محايد (das). <code>er</code> يحل محل الأسماء المذكرة · <code>sie</code> يحل محل المؤنثة · <code>es</code> يحل محل المحايدة. هذا سنتعلمه بتفصيل في Units 5–7. الآن يكفيك: <code>er</code> للرجل، <code>sie</code> للمرأة.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SEIN -->
+<section class="section" id="sein">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">فعل sein — يكون / هو</div><div class="sec-d">التصريف الكامل + النفي + الأسئلة + حوار</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 لماذا sein أول فعل نتعلمه؟</div><p><code>sein</code> = "to be". يُستخدم للهوية (Ich bin Ahmed) · المهنة (Er ist Arzt) · الجنسية (Wir sind Syrer) · الحالة (Du bist müde) · المكان (Sie ist in Berlin). هو فعل <strong style="color:var(--white)">غير منتظم تماماً</strong> — احفظه عن ظهر قلب. الحيلة: <strong style="color:var(--gold)">bin · bist · ist · sind · seid · sind</strong></p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>الضمير</th><th>sein</th><th>المعنى</th><th>مثال كامل</th><th></th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">ich</td><td class="st-v">bin</td><td class="st-m">أنا</td><td class="st-e">Ich bin Ahmed. أنا أحمد.</td><td><span class="badge bs">مفرد</span></td></tr>
+        <tr><td class="st-p">du</td><td class="st-v">bist</td><td class="st-m">أنت</td><td class="st-e">Du bist sehr nett. أنت لطيف جداً.</td><td><span class="badge bs">مفرد</span></td></tr>
+        <tr><td class="st-p">er / sie / es</td><td class="st-v">ist</td><td class="st-m">هو / هي / هو</td><td class="st-e">Er ist Arzt. هو طبيب.</td><td><span class="badge bs">مفرد</span></td></tr>
+        <tr><td class="st-p">wir</td><td class="st-v">sind</td><td class="st-m">نحن</td><td class="st-e">Wir sind Freunde. نحن أصدقاء.</td><td><span class="badge bp">جمع</span></td></tr>
+        <tr><td class="st-p">ihr</td><td class="st-v">seid</td><td class="st-m">أنتم</td><td class="st-e">Ihr seid willkommen. أنتم أهلاً.</td><td><span class="badge bp">جمع</span></td></tr>
+        <tr><td class="st-p">sie / Sie</td><td class="st-v">sind</td><td class="st-m">هم / حضرتك</td><td class="st-e">Sie sind Lehrerin. هي/هم مدرّسة.</td><td><span class="badge bp">جمع/رسمي</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 النفي — أضف nicht في نهاية الجملة</div><p><code>Ich bin müde.</code> → <code>Ich bin nicht müde.</code> (لست متعباً) · <code>Er ist Student.</code> → <code>Er ist nicht Student.</code> · <code>Wir sind Freunde.</code> → <code>Wir sind nicht Freunde.</code></p></div>
+  <div class="satz-box reveal"><div class="satz-title">سؤال مغلق (نعم/لا) — الفعل أولاً</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Bist</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">müde?</span><span class="sbox-ar">هل أنت متعب؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Sind</span><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-rest">Herr Müller?</span><span class="sbox-ar">هل أنت السيد مولر؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Ist</span><span class="sbox sbox-subj">er</span><span class="sbox sbox-rest">Arzt?</span><span class="sbox-ar">هل هو طبيب؟</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">سؤال مفتوح (W-Fragen) — كلمة السؤال + الفعل</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wer</span><span class="sbox sbox-verb">bist</span><span class="sbox sbox-subj">du?</span><span class="sbox-ar">من أنت؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">er?</span><span class="sbox-ar">كيف هو؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">sie?</span><span class="sbox-ar">أين هي؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Was</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">das?</span><span class="sbox-ar">ما هذا؟</span></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — حوار مع sein في المدرسة</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hallo! Bist du neu hier?</div><div class="dl-ar">أهلاً! هل أنت جديد هنا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, ich bin neu. Ich bin Ahmed. Und du?</div><div class="dl-ar">نعم، أنا جديد. أنا أحمد. وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich bin Maria. Bist du Student?</div><div class="dl-ar">أنا ماريا. هل أنت طالب؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja! Und er ist auch Student — das ist mein Freund.</div><div class="dl-ar">نعم! وهو أيضاً طالب — هذا صديقي.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Super! Wir sind jetzt Freunde! Tschüss!</div><div class="dl-ar">رائع! نحن الآن أصدقاء! مع السلامة!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SENTENCE STRUCTURE -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">بنية الجملة — Satzstruktur</div><div class="sec-d">قاعدة V2 — الفعل دائماً في المكان الثاني</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 أهم قاعدة في الألمانية</div><p>في الجملة الخبرية: الفعل يأتي <strong style="color:var(--white)">دائماً في المكان الثاني</strong> بغض النظر عما يأتي أولاً. تُسمى "V2 Rule".</p></div>
+  <div class="satz-box reveal"><div class="satz-title">ترتيب عادي: فاعل + فعل + باقي الجملة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">bin</span><span class="sbox sbox-rest">müde.</span><span class="sbox-ar">أنا متعب.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ahmed</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">Student.</span><span class="sbox-ar">أحمد طالب.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">ترتيب مقلوب: شيء آخر أولاً — الفعل لا يزال ثانياً!</div>
+    <div class="satz-row"><span class="sbox sbox-rest">Heute</span><span class="sbox sbox-verb">bin</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">müde.</span><span class="sbox-ar">اليوم أنا متعب.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Leider</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">er</span><span class="sbox sbox-rest">krank.</span><span class="sbox-ar">للأسف هو مريض.</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لا تقلق الآن</div><p>في Unit 01 ستكتب جملاً بسيطة: <code>Ich bin...</code> و <code>Du bist...</code>. قاعدة V2 ستصبح طبيعية مع الممارسة في Units 3–6.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">المفردات — Vokabeln</div><div class="sec-d">80+ كلمة مقسمة بالموضوع</div></div></div>
+  <p class="vst reveal">التعابير المهذبة الأساسية — Höflichkeitsformeln</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">bitte</div><div class="vi-ar">من فضلك / تفضل / عفواً</div><div class="vi-note">الأكثر استخداماً — متعددة المعاني</div></div>
+    <div class="vi"><div class="vi-de">danke</div><div class="vi-ar">شكراً</div></div>
+    <div class="vi"><div class="vi-de">danke schön</div><div class="vi-ar">شكراً جزيلاً</div><div class="vi-note">أقوى من danke</div></div>
+    <div class="vi"><div class="vi-de">vielen Dank</div><div class="vi-ar">شكراً جزيلاً جداً</div><div class="vi-note">vielen = كثيراً</div></div>
+    <div class="vi"><div class="vi-de">bitte schön</div><div class="vi-ar">عفواً / تفضل</div><div class="vi-note">الرد على danke</div></div>
+    <div class="vi"><div class="vi-de">gerne</div><div class="vi-ar">بكل سرور</div><div class="vi-note">رد على danke — أجمل وأدفأ</div></div>
+    <div class="vi"><div class="vi-de">Entschuldigung</div><div class="vi-ar">عذراً / آسف</div><div class="vi-note">للاعتذار وجذب الانتباه</div></div>
+    <div class="vi"><div class="vi-de">Es tut mir leid.</div><div class="vi-ar">آسف جداً</div><div class="vi-note">أقوى من Entschuldigung</div></div>
+    <div class="vi"><div class="vi-de">kein Problem</div><div class="vi-ar">لا مشكلة</div><div class="vi-note">رد على اعتذار</div></div>
+    <div class="vi"><div class="vi-de">natürlich</div><div class="vi-ar">بالطبع / طبعاً</div></div>
+    <div class="vi"><div class="vi-de">genau</div><div class="vi-ar">بالضبط / صح</div><div class="vi-note">شائعة جداً في الحديث</div></div>
+    <div class="vi"><div class="vi-de">klar</div><div class="vi-ar">واضح / طبعاً</div><div class="vi-note">عادي وغير رسمي</div></div>
+  </div>
+  <p class="vst reveal">نعم / لا + موافقة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">ja</div><div class="vi-ar">نعم</div></div>
+    <div class="vi"><div class="vi-de">nein</div><div class="vi-ar">لا</div></div>
+    <div class="vi"><div class="vi-de">doch</div><div class="vi-ar">بلى! (نفي للنفي)</div><div class="vi-note">لما يقول "أنت مش بخير؟" وتقول "بلى بخير!"</div></div>
+    <div class="vi"><div class="vi-de">okay / OK</div><div class="vi-ar">أوكي</div></div>
+    <div class="vi"><div class="vi-de">richtig</div><div class="vi-ar">صحيح</div></div>
+    <div class="vi"><div class="vi-de">falsch</div><div class="vi-ar">خطأ / غلط</div></div>
+  </div>
+  <p class="vst reveal">ألقاب اجتماعية</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">Herr</div><div class="vi-ar">السيد</div><div class="vi-note">Herr + اسم العائلة</div></div>
+    <div class="vi"><div class="vi-de">Frau</div><div class="vi-ar">السيدة / الآنسة</div><div class="vi-note">للمتزوجة وغير المتزوجة</div></div>
+    <div class="vi"><div class="vi-de">Professor / Professorin</div><div class="vi-ar">أستاذ / أستاذة</div></div>
+    <div class="vi"><div class="vi-de">Doktor / Doktorin</div><div class="vi-ar">دكتور / دكتورة</div></div>
+  </div>
+  <p class="vst reveal">25 صفة مفيدة مع sein</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">müde</div><div class="vi-ar">متعب/ة</div></div>
+    <div class="vi"><div class="vi-de">fit</div><div class="vi-ar">بصحة جيدة / نشيط</div></div>
+    <div class="vi"><div class="vi-de">nett</div><div class="vi-ar">لطيف/ة</div></div>
+    <div class="vi"><div class="vi-de">freundlich</div><div class="vi-ar">ودود/ة</div></div>
+    <div class="vi"><div class="vi-de">höflich</div><div class="vi-ar">مؤدب/ة</div></div>
+    <div class="vi"><div class="vi-de">glücklich</div><div class="vi-ar">سعيد/ة</div></div>
+    <div class="vi"><div class="vi-de">traurig</div><div class="vi-ar">حزين/ة</div></div>
+    <div class="vi"><div class="vi-de">krank</div><div class="vi-ar">مريض/ة</div></div>
+    <div class="vi"><div class="vi-de">gesund</div><div class="vi-ar">بصحة جيدة</div></div>
+    <div class="vi"><div class="vi-de">jung</div><div class="vi-ar">شاب/شابة</div></div>
+    <div class="vi"><div class="vi-de">alt</div><div class="vi-ar">كبير السن / قديم</div></div>
+    <div class="vi"><div class="vi-de">groß / klein</div><div class="vi-ar">كبير / صغير</div></div>
+    <div class="vi"><div class="vi-de">neu</div><div class="vi-ar">جديد/ة</div></div>
+    <div class="vi"><div class="vi-de">verheiratet</div><div class="vi-ar">متزوج/ة</div></div>
+    <div class="vi"><div class="vi-de">ledig</div><div class="vi-ar">أعزب / غير متزوج</div></div>
+    <div class="vi"><div class="vi-de">berühmt</div><div class="vi-ar">مشهور/ة</div></div>
+    <div class="vi"><div class="vi-de">interessant</div><div class="vi-ar">مثير للاهتمام</div></div>
+    <div class="vi"><div class="vi-de">langweilig</div><div class="vi-ar">ممل/ة</div></div>
+    <div class="vi"><div class="vi-de">schwierig</div><div class="vi-ar">صعب/ة</div></div>
+    <div class="vi"><div class="vi-de">einfach</div><div class="vi-ar">سهل/ة / بسيط</div></div>
+    <div class="vi"><div class="vi-de">toll / super</div><div class="vi-ar">رائع/ة / ممتاز</div></div>
+    <div class="vi"><div class="vi-de">schön</div><div class="vi-ar">جميل/ة</div></div>
+    <div class="vi"><div class="vi-de">wichtig</div><div class="vi-ar">مهم/ة</div></div>
+    <div class="vi"><div class="vi-de">richtig / falsch</div><div class="vi-ar">صحيح / خطأ</div></div>
+    <div class="vi"><div class="vi-de">neu / alt</div><div class="vi-ar">جديد / قديم</div></div>
+  </div>
+  <p class="vst reveal">مهن مفيدة مع sein</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">Student / Studentin</div><div class="vi-ar">طالب جامعي / طالبة</div></div>
+    <div class="vi"><div class="vi-de">Schüler / Schülerin</div><div class="vi-ar">طالب مدرسة / طالبة</div></div>
+    <div class="vi"><div class="vi-de">Arzt / Ärztin</div><div class="vi-ar">طبيب / طبيبة</div></div>
+    <div class="vi"><div class="vi-de">Lehrer / Lehrerin</div><div class="vi-ar">مدرّس / مدرّسة</div></div>
+    <div class="vi"><div class="vi-de">Ingenieur / Ingenieurin</div><div class="vi-ar">مهندس / مهندسة</div></div>
+    <div class="vi"><div class="vi-de">Journalist / Journalistin</div><div class="vi-ar">صحفي / صحفية</div></div>
+    <div class="vi"><div class="vi-de">Kellner / Kellnerin</div><div class="vi-ar">نادل / نادلة</div></div>
+    <div class="vi"><div class="vi-de">Verkäufer / Verkäuferin</div><div class="vi-ar">بائع / بائعة</div></div>
+  </div>
+  <p class="vst reveal">كلمات رابطة مهمة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">auch</div><div class="vi-ar">أيضاً / كذلك</div><div class="vi-note">Ich bin auch müde.</div></div>
+    <div class="vi"><div class="vi-de">sehr</div><div class="vi-ar">جداً</div><div class="vi-note">sehr gut = بخير جداً</div></div>
+    <div class="vi"><div class="vi-de">nicht</div><div class="vi-ar">لا / غير</div><div class="vi-note">للنفي</div></div>
+    <div class="vi"><div class="vi-de">jetzt</div><div class="vi-ar">الآن</div></div>
+    <div class="vi"><div class="vi-de">heute</div><div class="vi-ar">اليوم</div></div>
+    <div class="vi"><div class="vi-de">hier / da</div><div class="vi-ar">هنا / هناك</div></div>
+    <div class="vi"><div class="vi-de">leider</div><div class="vi-ar">للأسف</div><div class="vi-note">Leider bin ich krank.</div></div>
+    <div class="vi"><div class="vi-de">wirklich</div><div class="vi-ar">حقاً / فعلاً</div></div>
+    <div class="vi"><div class="vi-de">schon</div><div class="vi-ar">بالفعل</div></div>
+    <div class="vi"><div class="vi-de">noch</div><div class="vi-ar">لا يزال / بعد</div></div>
+    <div class="vi"><div class="vi-de">nur</div><div class="vi-ar">فقط</div></div>
+    <div class="vi"><div class="vi-de">aber</div><div class="vi-ar">لكن / ولكن</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE + MISTAKES -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الثقافة + الأخطاء الشائعة</div><div class="sec-d">ما لا يعلمك إياه الكتاب</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🤝</span><div class="cc-title">du مقابل Sie — متى تتحول؟</div><div class="cc-text">ابدأ دائماً بـ Sie مع الغرباء. التحول لـ du يحدث لما يقول لك أحدهم "Wir können du sagen". هذه لحظة اجتماعية مهمة في ألمانيا.</div></div>
+    <div class="culture-card"><span class="cc-icon">⏰</span><div class="cc-title">الألمان والوقت</div><div class="cc-text">التأخير في ألمانيا مسيء اجتماعياً. إذا تأخرت ابدأ بـ "Entschuldigung, ich bin spät" (آسف، أنا متأخر). الدقة قيمة أساسية.</div></div>
+    <div class="culture-card"><span class="cc-icon">😐</span><div class="cc-title">الصراحة الألمانية</div><div class="cc-text">لو سألت ألمانياً "Wie geht's?" وقال "Es geht" — هذا جواب طبيعي وليس شكوى. الألمان مباشرون ولا يقولون "gut" للمجاملة فقط.</div></div>
+    <div class="culture-card"><span class="cc-icon">📞</span><div class="cc-title">الرد على الهاتف</div><div class="cc-text">الألمان يردون على الهاتف باسمهم: "Müller!" أو "Schmidt, guten Tag!" وليس "Hallo?" فقط.</div></div>
+    <div class="culture-card"><span class="cc-icon">🚪</span><div class="cc-title">Feierabend — نهاية العمل</div><div class="cc-text">Feierabend = نهاية يوم العمل — لها قدسية في ألمانيا. بعدها لا يجيبون على رسائل العمل. "Schönen Feierabend!" = وقت راحة جميل!</div></div>
+    <div class="culture-card"><span class="cc-icon">🍺</span><div class="cc-title">Prost! و Zum Wohl!</div><div class="cc-text">عند الشرب: Prost! = مبروك / في صحتك. القاعدة الألمانية: يجب تلاقي عيون الشخص أثناء Prost — وإلا سبع سنين سوء حظ!</div></div>
+  </div>
+  <p class="vst reveal">أخطاء شائعة يرتكبها الناطقون بالعربية</p>
+  <div class="reveal">
+    <div class="mistake-item"><div><div class="mi-wrong">Ich bin ein Student.</div><div class="mi-explain">مع المهن بعد sein: لا ein/eine</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich bin Student.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich Bin / ich bin (I كبيرة)</div><div class="mi-explain">ich دائماً حرف صغير في الألمانية</div></div><div class="mi-arrow">→</div><div><div class="mi-right">ich bin</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Auf wiedersehen</div><div class="mi-explain">Wiedersehen اسم — كل الأسماء بحرف كبير</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Auf Wiedersehen</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Wie geht du? / Wie geht er?</div><div class="mi-explain">الفاعل هنا es — الفعل geht مع es فقط</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Wie geht es dir? / Wie geht's?</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Gute Nacht! (وداع مسائي)</div><div class="mi-explain">Gute Nacht للنوم فقط — للوداع: Tschüss</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Tschüss! / Auf Wiedersehen!</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Wie geht es Sie? (رسمي)</div><div class="mi-explain">Sie → Ihnen في هذه الجملة</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Wie geht es Ihnen?</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich bin Student. (للمرأة)</div><div class="mi-explain">المؤنث يحتاج Studentin</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich bin Studentin.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين — Übungen</div><div class="sec-d">32 سؤال تفاعلي في 6 أجزاء</div></div></div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — صرّف فعل sein (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich <span class="blank" id="b1">___</span> Student.</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="bin" onclick="check(this)">bin</button><button class="ex-btn" data-q="1" data-a="bist" onclick="check(this)">bist</button><button class="ex-btn" data-q="1" data-a="ist" onclick="check(this)">ist</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Du <span class="blank" id="b2">___</span> sehr freundlich.</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="bin" onclick="check(this)">bin</button><button class="ex-btn" data-q="2" data-a="bist" onclick="check(this)">bist</button><button class="ex-btn" data-q="2" data-a="sind" onclick="check(this)">sind</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Sie (هي) <span class="blank" id="b3">___</span> Lehrerin.</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="ist" onclick="check(this)">ist</button><button class="ex-btn" data-q="3" data-a="bist" onclick="check(this)">bist</button><button class="ex-btn" data-q="3" data-a="seid" onclick="check(this)">seid</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir <span class="blank" id="b4">___</span> glücklich.</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="sind" onclick="check(this)">sind</button><button class="ex-btn" data-q="4" data-a="seid" onclick="check(this)">seid</button><button class="ex-btn" data-q="4" data-a="ist" onclick="check(this)">ist</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ihr <span class="blank" id="b5">___</span> willkommen!</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="seid" onclick="check(this)">seid</button><button class="ex-btn" data-q="5" data-a="sind" onclick="check(this)">sind</button><button class="ex-btn" data-q="5" data-a="bist" onclick="check(this)">bist</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">sie (هم) <span class="blank" id="b6">___</span> Freunde.</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="sind" onclick="check(this)">sind</button><button class="ex-btn" data-q="6" data-a="seid" onclick="check(this)">seid</button><button class="ex-btn" data-q="6" data-a="bin" onclick="check(this)">bin</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — اختر التحية المناسبة للموقف (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">الساعة 9 صباحاً، تدخل مكتب مديرك.</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="Guten Morgen!" onclick="check(this)">Guten Morgen!</button><button class="ex-btn" data-q="7" data-a="Guten Abend!" onclick="check(this)">Guten Abend!</button><button class="ex-btn" data-q="7" data-a="Tschüss!" onclick="check(this)">Tschüss!</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">صديقك يسأل "Wie geht's?" وأنت بخير جداً.</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="Sehr gut!" onclick="check(this)">Sehr gut!</button><button class="ex-btn" data-q="8" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button><button class="ex-btn" data-q="8" data-a="Guten Tag!" onclick="check(this)">Guten Tag!</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">تودع مديرك رسمياً.</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button><button class="ex-btn" data-q="9" data-a="Tschüss!" onclick="check(this)">Tschüss!</button><button class="ex-btn" data-q="9" data-a="Hi!" onclick="check(this)">Hi!</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">في الهاتف مع موظف بنك — كيف توده؟</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="Auf Wiederhören!" onclick="check(this)">Auf Wiederhören!</button><button class="ex-btn" data-q="10" data-a="Tschau!" onclick="check(this)">Tschau!</button><button class="ex-btn" data-q="10" data-a="Bis bald!" onclick="check(this)">Bis bald!</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أنت في هامبورغ — شخص يقول "Moin!" ماذا يعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="مرحباً (تحية شمال ألمانيا في أي وقت)" onclick="check(this)">مرحباً — شمال ألمانيا</button><button class="ex-btn" data-q="11" data-a="صباح الخير فقط" onclick="check(this)">صباح الخير فقط</button><button class="ex-btn" data-q="11" data-a="مع السلامة" onclick="check(this)">مع السلامة</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">موظف متجر قال لك "Schönen Tag!" — كيف ترد؟</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="Danke, Ihnen auch!" onclick="check(this)">Danke, Ihnen auch!</button><button class="ex-btn" data-q="12" data-a="Guten Morgen!" onclick="check(this)">Guten Morgen!</button><button class="ex-btn" data-q="12" data-a="Entschuldigung!" onclick="check(this)">Entschuldigung!</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — ترجمة من العربية للألمانية (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أنا طبيبة.</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="Ich bin Ärztin." onclick="check(this)">Ich bin Ärztin.</button><button class="ex-btn" data-q="13" data-a="Ich bin Arzt." onclick="check(this)">Ich bin Arzt.</button><button class="ex-btn" data-q="13" data-a="Ich bin eine Ärztin." onclick="check(this)">Ich bin eine Ärztin.</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل أنت متعب؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="Bist du müde?" onclick="check(this)">Bist du müde?</button><button class="ex-btn" data-q="14" data-a="Du bist müde?" onclick="check(this)">Du bist müde?</button><button class="ex-btn" data-q="14" data-a="Ist du müde?" onclick="check(this)">Ist du müde?</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">للأسف، أنا لست بخير.</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="Leider bin ich nicht gut." onclick="check(this)">Leider bin ich nicht gut.</button><button class="ex-btn" data-q="15" data-a="Ich nicht bin gut leider." onclick="check(this)">Ich nicht bin gut leider.</button><button class="ex-btn" data-q="15" data-a="Ich bin leider gut nicht." onclick="check(this)">Ich bin leider gut nicht.</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هي مدرّسة وهو طالب.</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="Sie ist Lehrerin und er ist Student." onclick="check(this)">Sie ist Lehrerin und er ist Student.</button><button class="ex-btn" data-q="16" data-a="Sie sind Lehrerin und er sind Student." onclick="check(this)">Sie sind Lehrerin und er sind Student.</button><button class="ex-btn" data-q="16" data-a="Sie bist Lehrerin und er bist Student." onclick="check(this)">Sie bist / er bist</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">شكراً جزيلاً! أنتم لطيفون جداً.</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="Danke schön! Ihr seid sehr nett." onclick="check(this)">Danke schön! Ihr seid sehr nett.</button><button class="ex-btn" data-q="17" data-a="Danke schön! Sie sind sehr nett." onclick="check(this)">Danke schön! Sie sind sehr nett.</button><button class="ex-btn" data-q="17" data-a="Danke! Ihr sind sehr nett." onclick="check(this)">Danke! Ihr sind sehr nett.</button></div><div class="ex-fb" id="f17"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — صح أم خطأ؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ich bin ein Student."</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="خطأ — لا نستخدم ein مع المهن بعد sein" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="18" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة للوداع المسائي؟ — "Gute Nacht!"</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="خطأ — Gute Nacht للنوم فقط وليس للوداع المساء" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="19" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Wie geht es Ihnen?" (للمدير)</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="20" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ihr bist willkommen!"</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="خطأ — ihr → seid وليس bist" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="21" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ich bin nicht müde."</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="22" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f22"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — أكمل الحوار (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">A: "Guten Tag!" — B: ماذا يقول؟</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="Guten Tag!" onclick="check(this)">Guten Tag!</button><button class="ex-btn" data-q="23" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button><button class="ex-btn" data-q="23" data-a="Gute Nacht!" onclick="check(this)">Gute Nacht!</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wie geht es Ihnen?" — B: "Gut, danke. Und ___?"</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="Ihnen" onclick="check(this)">Ihnen</button><button class="ex-btn" data-q="24" data-a="dir" onclick="check(this)">dir</button><button class="ex-btn" data-q="24" data-a="du" onclick="check(this)">du</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Danke schön!" — B: ماذا يقول؟</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="Bitte schön!" onclick="check(this)">Bitte schön!</button><button class="ex-btn" data-q="25" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button><button class="ex-btn" data-q="25" data-a="Hallo!" onclick="check(this)">Hallo!</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Bist du neu hier?" — B: "Ja, ich ___ neu."</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="bin" onclick="check(this)">bin</button><button class="ex-btn" data-q="26" data-a="bist" onclick="check(this)">bist</button><button class="ex-btn" data-q="26" data-a="ist" onclick="check(this)">ist</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Wie heißen Sie?" — ما معنى هذا السؤال؟</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="ما اسمك؟ (رسمي)" onclick="check(this)">ما اسمك؟ (رسمي)</button><button class="ex-btn" data-q="27" data-a="كيف حالك؟" onclick="check(this)">كيف حالك؟</button><button class="ex-btn" data-q="27" data-a="من أين أنت؟" onclick="check(this)">من أين أنت؟</button></div><div class="ex-fb" id="f27"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — مفردات وثقافة (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Es geht." كرد على "Wie geht's?"</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="ماشي / متوسط — لا جيد ولا سيء" onclick="check(this)">ماشي / متوسط</button><button class="ex-btn" data-q="28" data-a="بخير جداً" onclick="check(this)">بخير جداً</button><button class="ex-btn" data-q="28" data-a="أنا مريض" onclick="check(this)">أنا مريض</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"gerne" كرد على "danke" — ما معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="بكل سرور — أجمل وأدفأ من bitte schön" onclick="check(this)">بكل سرور</button><button class="ex-btn" data-q="29" data-a="نفس معنى bitte تماماً" onclick="check(this)">نفس bitte تماماً</button><button class="ex-btn" data-q="29" data-a="عفواً / آسف" onclick="check(this)">عفواً / آسف</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Grüß Gott!" — في أي منطقة تُستخدم؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="جنوب ألمانيا — بافاريا والنمسا" onclick="check(this)">جنوب ألمانيا — بافاريا</button><button class="ex-btn" data-q="30" data-a="شمال ألمانيا — هامبورغ" onclick="check(this)">شمال ألمانيا</button><button class="ex-btn" data-q="30" data-a="سويسرا فقط" onclick="check(this)">سويسرا فقط</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">W في الألمانية كيف تُنطق؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="مثل F أو V الإنجليزية" onclick="check(this)">مثل F / V</button><button class="ex-btn" data-q="31" data-a="مثل W الإنجليزية" onclick="check(this)">مثل W الإنجليزية</button><button class="ex-btn" data-q="31" data-a="صامتة لا تُنطق" onclick="check(this)">صامتة</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"du bist" مع المدير في أول لقاء — هل هذا صحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="خطأ — مع المدير: Sie sind دائماً في أول لقاء" onclick="check(this)">خطأ — استخدم Sie sind</button><button class="ex-btn" data-q="32" data-a="صحيح دائماً" onclick="check(this)">صحيح دائماً</button><button class="ex-btn" data-q="32" data-a="صحيح لو عرفته جيداً" onclick="check(this)">صحيح لو عرفته</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مهمة؟</div><p>الكتابة تُجبر دماغك على استرجاع المعلومة بدل استقبالها فقط. دراسات تُثبت أن من يكتب ما تعلمه يتذكر <strong style="color:var(--white)">70% أكثر</strong> ممن يقرأ فقط.</p></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 1 — عرّف عن نفسك بالألمانية (5–8 جمل)</div><div class="wt-text">اكتب جملاً عن نفسك باستخدام فعل sein والمفردات التي تعلمتها:</div><ul class="wt-list"><li>اسمك</li><li>مهنتك أو دراستك</li><li>جنسيتك (Ich bin Syrer/Jordanier...)</li><li>صفتان عنك</li><li>وصف لشخص تعرفه</li></ul><textarea class="wt-input" placeholder="Ich bin... Ich bin... Er/Sie ist... Wir sind..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 2 — اكتب 3 حوارات قصيرة</div><div class="wt-text">اكتب حوار لكل موقف (3–5 أسطر):</div><ul class="wt-list"><li>حوار مع مدير جديد في العمل (رسمي)</li><li>حوار مع صديق جديد (عادي)</li><li>حوار في متجر</li></ul><textarea class="wt-input" style="min-height:160px;" placeholder="حوار 1 (رسمي):&#10;A: ...&#10;B: ...&#10;&#10;حوار 2 (عادي):&#10;..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 3 — جدول sein من الذاكرة</div><div class="wt-text">أغلق الملف واكتب جدول sein كاملاً. ثم افتح وتحقق.</div><textarea class="wt-input" placeholder="ich → ___ → مثال: ___&#10;du → ___ → مثال: ___&#10;er/sie/es → ___ → مثال: ___&#10;wir → ___ → مثال: ___&#10;ihr → ___ → مثال: ___&#10;sie/Sie → ___ → مثال: ___"></textarea></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · كتب · محادثة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أفضل تطبيق لحفظ المفردات بنظام التكرار المتباعد. ابحث عن "German A1 Deck" بعد التثبيت.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German</div><div class="res-type">موقع مجاني</div><div class="res-desc">موقع Deutsche Welle — Nicos Weg كاملاً مع تمارين وقواعد ونصوص مجانية.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German Original</div><div class="res-type">قناة YouTube</div><div class="res-desc">65+ درس A1 منظمة بشكل ممتاز. شاهد Lesson 1–8 لهذه الوحدة.</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي للمستوى A1 — يُستخدم في معاهد Goethe. Unit 01 = الفصل 1–2.</div></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German</div><div class="res-type">بودكاست</div><div class="res-desc">بودكاست ألمانية بطيئة مع نصوص. بعد Unit 3 ستستطيع فهم الحلقات الأولى.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com ←</a></div>
+    <div class="res-card"><span class="res-icon">🏫</span><div class="res-name">Goethe Institut</div><div class="res-type">موقع رسمي</div><div class="res-desc">نماذج اختبار A1 الرسمية والمجانية. مهم جداً قبل Unit 15.</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">ابحث عن community tutor ألماني. بعد Unit 2 ستكون قادراً على أول محادثة بسيطة.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">لا يكفي وحده لكن ممتاز كمراجعة يومية سريعة. 10 دقائق يومياً كإضافة للدراسة الأساسية.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الـ 4 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">التحيات + النطق</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Greetings) مع مهمة الاستماع</li><li class="vl">شاهد الفيديو 2 (Wie geht's) مع مهمة الاستماع</li><li>ادرس جداول التحيات الرسمية والعادية والوداع</li><li>ادرس قسم النطق — الأصوات</li><li>نفّذ تمرين المحاكاة بصوت عالٍ</li><li>احفظ التحيات الإقليمية الـ 6</li><li>اقرأ الحوارات 1 و 2 و 3 بصوت عالٍ 3 مرات</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">الضمائر + sein + الجملة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 3 (Nicos Weg Ep.1)</li><li class="vl">شاهد الفيديو 4 (sein verb) — صرّف بصوت عالٍ</li><li>ادرس جدول الضمائر الـ 6 + Sie الرسمي</li><li>احفظ جدول sein كاملاً مع الأمثلة</li><li>ادرس النفي (nicht) والأسئلة</li><li>ادرس بنية الجملة — قاعدة V2</li><li class="wl">مهمة الكتابة 3 (جدول sein من الذاكرة)</li><li>حل تمرين 1 و 3</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">المفردات + الثقافة + كتابة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 5 (sein + pronouns)</li><li>ادرس المفردات 80+ مقسمة بالموضوع</li><li>ادرس قسم الثقافة والأخطاء الشائعة</li><li>اقرأ الحوار 4 و 5 بصوت عالٍ</li><li class="wl">مهمة الكتابة 1 (عرّف عن نفسك)</li><li class="wl">مهمة الكتابة 2 (3 حوارات)</li><li>حل تمرين 2 و 4 و 5</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">مراجعة شاملة + اختبار</div><ul class="day-tasks"><li class="vl">شاهد أول 15 دقيقة من فيديو 6 (Nicos Weg Full)</li><li>غطّ العمود العربي — اختبر نفسك</li><li>صرّف sein شفهياً بدون نظر</li><li>أعد حل كل التمارين الـ 32 — هدف 29+</li><li>اقرأ كل الحوارات بصوت عالٍ</li><li>راجع الأخطاء الشائعة</li><li>✅ انتقل لـ Unit 02 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال للوحدة التالية</div><p>انتقل لـ Unit 02 فقط إذا: ✅ تستطيع صرف sein بدون نظر · ✅ حصلت 28+/32 في التمارين · ✅ كتبت حوار واحد بنفسك · ✅ تستطيع إجراء محادثة تحية بسيطة. إذا لم تحقق هذا — يوم خامس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<footer>
+  <span class="ft-de">UNIT 01</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">التحيات · sein · الضمائر · النطق · الثقافة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · الخطوة الأولى · 4 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 02 ← التعريف بالنفس · الأرقام · heißen · kommen · wohnen</p>
+</footer>
+<script>
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+const answers={1:'bin',2:'bist',3:'ist',4:'sind',5:'seid',6:'sind',7:'Guten Morgen!',8:'Sehr gut!',9:'Auf Wiedersehen!',10:'Auf Wiederhören!',11:'مرحباً (تحية شمال ألمانيا في أي وقت)',12:'Danke, Ihnen auch!',13:'Ich bin Ärztin.',14:'Bist du müde?',15:'Leider bin ich nicht gut.',16:'Sie ist Lehrerin und er ist Student.',17:'Danke schön! Ihr seid sehr nett.',18:'خطأ — لا نستخدم ein مع المهن بعد sein',19:'خطأ — Gute Nacht للنوم فقط وليس للوداع المساء',20:'صحيح',21:'خطأ — ihr → seid وليس bist',22:'صحيح',23:'Guten Tag!',24:'Ihnen',25:'Bitte schön!',26:'bin',27:'ما اسمك؟ (رسمي)',28:'ماشي / متوسط — لا جيد ولا سيء',29:'بكل سرور — أجمل وأدفأ من bitte schön',30:'جنوب ألمانيا — بافاريا والنمسا',31:'مثل F أو V الإنجليزية',32:'خطأ — مع المدير: Sie sind دائماً في أول لقاء'};
+const fb={1:{ok:'✅ صح! ich → bin دائماً',no:'❌ ich → bin'},2:{ok:'✅ ممتاز! du → bist',no:'❌ du → bist'},3:{ok:'✅ صح! هي → ist',no:'❌ er/sie/es → ist'},4:{ok:'✅ صح! wir → sind',no:'❌ wir → sind وليس seid'},5:{ok:'✅ ممتاز! ihr → seid — الوحيد الخاص بـ ihr',no:'❌ ihr → seid وليس sind أو bist'},6:{ok:'✅ صح! sie الجمع → sind',no:'❌ sie الجمع → sind'},7:{ok:'✅ صح! الساعة 9 صباحاً = Guten Morgen',no:'❌ الوقت 9 صباحاً = Guten Morgen'},8:{ok:'✅ بخير جداً = Sehr gut!',no:'❌ بخير جداً = Sehr gut!'},9:{ok:'✅ الوداع الرسمي = Auf Wiedersehen',no:'❌ مع المدير: Auf Wiedersehen (رسمي)'},10:{ok:'✅ في الهاتف = Auf Wiederhören',no:'❌ في الهاتف: Auf Wiederhören (hören = يسمع)'},11:{ok:'✅ صح! Moin = تحية شمالية في أي وقت',no:'❌ Moin تحية شمال ألمانيا في أي وقت اليوم'},12:{ok:'✅ الرد المثالي: Danke, Ihnen auch!',no:'❌ الرد الصحيح: Danke, Ihnen auch!'},13:{ok:'✅ للمؤنث: Ärztin — بدون ein!',no:'❌ المؤنث = Ärztin وبدون ein'},14:{ok:'✅ سؤال مغلق: الفعل أولاً!',no:'❌ في السؤال: الفعل أولاً → Bist du?'},15:{ok:'✅ الفعل ثانياً بعد leider!',no:'❌ الفعل دائماً ثانياً: Leider bin ich...'},16:{ok:'✅ ممتاز! ist للمفرد',no:'❌ هي = Sie ist / هو = er ist (مفرد)'},17:{ok:'✅ صح! أنتم = ihr seid',no:'❌ أنتم = ihr seid وليس sind'},18:{ok:'✅ خطأ فعلاً! بعد sein لا نستخدم ein مع المهن',no:'❌ الجملة خاطئة — لا ein مع المهن بعد sein'},19:{ok:'✅ صح! Gute Nacht للنوم فقط',no:'❌ Gute Nacht للنوم — للوداع: Tschüss'},20:{ok:'✅ صحيحة! Wie geht es Ihnen رسمية ممتازة',no:'❌ الجملة صحيحة!'},21:{ok:'✅ صح! ihr → seid وليس bist',no:'❌ خطأ فعلاً — ihr → seid'},22:{ok:'✅ الجملة صحيحة تماماً!',no:'❌ الجملة صحيحة — nicht في النهاية صح'},23:{ok:'✅ الرد على Guten Tag = Guten Tag',no:'❌ الرد = Guten Tag مرة ثانية'},24:{ok:'✅ الرسمي = Ihnen وليس dir',no:'❌ في السياق الرسمي: Und Ihnen?'},25:{ok:'✅ Bitte schön الرد الكلاسيكي',no:'❌ الرد على danke = Bitte schön أو Gerne'},26:{ok:'✅ أنا = ich → bin',no:'❌ أنا = ich bin'},27:{ok:'✅ heißen = يُدعى — Wie heißen Sie = ما اسمك؟ رسمي',no:'❌ heißen = يُدعى / ما اسمه'},28:{ok:'✅ Es geht = ماشي/متوسط — الرد الألماني الصادق',no:'❌ Es geht = متوسط/ماشي'},29:{ok:'✅ gerne = بكل سرور — أدفأ من bitte schön',no:'❌ gerne = بكل سرور، مختلف عن bitte'},30:{ok:'✅ Grüß Gott = جنوب ألمانيا وبافاريا والنمسا',no:'❌ Grüß Gott = جنوب ألمانيا وبافاريا'},31:{ok:'✅ W الألمانية = F/V وليس W الإنجليزية',no:'❌ W الألمانية = F أو V'},32:{ok:'✅ مع المدير في أول لقاء: Sie sind دائماً',no:'❌ مع المدير: Sie sind — du bist غير مناسب'}};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز! أتقنت Unit 01 كاملاً. انتقل لـ Unit 02 بثقة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع الأقسام الضعيفة وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع فعل sein والتحيات وحل مرة ثانية.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+</script>
+</body>
+</html>

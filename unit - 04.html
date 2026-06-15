@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 04 — FULL | العائلة · mein/meine · kein/keine | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'04';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* Family grid - 3 columns */
+.family-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.fam-col{background:var(--black);padding:1.8rem}
+.fam-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.fc-gold{color:var(--gold)}.fc-blue{color:var(--blue)}.fc-green{color:var(--green)}.fc-purple{color:var(--purple)}
+.fi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.fi:last-child{border-bottom:none}
+.fi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:165px;flex-shrink:0}
+.fi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.fi-note{font-size:.7rem;color:var(--dim)}
+/* Possessive table */
+.poss-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.poss-t th,.poss-t td{padding:.8rem 1rem;text-align:center;border-bottom:1px solid var(--gray2);border-right:1px solid var(--gray2)}
+.poss-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.poss-t th:first-child,.poss-t td:first-child{text-align:right;padding-right:1.2rem}
+.poss-t tbody tr{transition:background .15s}
+.poss-t tbody tr:hover{background:var(--gray)}
+.pt-pron{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.pt-ar{font-size:.7rem;color:var(--dim);display:block}
+.pt-m{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.95rem;color:var(--blue)}
+.pt-f{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.95rem;color:var(--gold)}
+.pt-n{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.95rem;color:var(--purple)}
+.pt-pl{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.95rem;color:var(--green)}
+.poss-note{font-size:.7rem;color:var(--dim);margin-top:.2rem;display:block}
+.kein-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.kein-t th,.kein-t td{padding:.8rem 1.2rem;text-align:center;border-bottom:1px solid var(--gray2)}
+.kein-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.kein-t th:first-child,.kein-t td:first-child{text-align:right}
+.kein-t tbody tr:hover{background:var(--gray)}
+.kt-art{font-family:'JetBrains Mono',monospace;color:var(--dim);font-size:.9rem}
+.kt-neg{font-family:'JetBrains Mono',monospace;color:#ff6b6b;font-weight:700;font-size:.95rem}
+.kt-ex{font-size:.78rem;color:var(--dim)}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-poss{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-noun{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-blue code{font-family:'JetBrains Mono',monospace;color:var(--blue);background:rgba(96,165,250,.08);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* Legend for possessive table */
+.poss-legend{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;font-size:.72rem}
+.pl-item{display:flex;align-items:center;gap:.4rem}
+.pl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}
+@media(max-width:768px){.family-grid{grid-template-columns:1fr}.days-grid{grid-template-columns:repeat(2,1fr)}.poss-t{font-size:.75rem}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 04 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#family">العائلة</a></li>
+    <li><a href="#poss">الملكية</a></li>
+    <li><a href="#kein">kein</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🟢 مبتدئ · Unit 04 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">العائلة</span> <span style="font-size:.45em;color:rgba(245,245,240,.1)">+</span> <span class="r">mein</span></h1>
+  <p class="hero-sub">أفراد العائلة + أداة الملكية كاملة + النفي بـ kein/keine + 5 حوارات حقيقية</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام دراسة</span></div>
+    <div class="hm-item"><span class="hm-num">80+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">الفيديوهات — Videos</div><div class="sec-d">6 فيديوهات مختارة · شاهدها بالترتيب حسب خطة الأيام</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📺 كيف تشاهد الفيديوهات بفعالية</div><p>لا تشاهد الفيديو وتنتهي. <strong style="color:var(--white)">افتح دفترك</strong> بجانبك. اكتب كل كلمة جديدة. توقف عند كل جملة لا تفهمها وأعد. بعد الفيديو: غطِّ الملاحظات واختبر نفسك. الفيديو الواحد = 30 دقيقة مشاهدة نشطة.</p></div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ ملاحظة على الفيديوهات</div><p>إذا لم يعمل أي فيديو، ابحث على YouTube بالعنوان المذكور. جميع المحتوى متاح مجاناً. الفيديوهات من قنوات: <code>Learn German Original</code> · <code>DW Deutsch</code> · <code>Lingoni German</code> · <code>Herr Antrim</code></p></div>
+  <div class="videos-grid reveal">
+    <!-- Video 1: Family Vocabulary -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/iXZJoFqo6zE" title="German Family Members Vocabulary A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📚 VOCAB · أفراد العائلة</div><div class="video-title">Family Members — مفردات العائلة الكاملة</div><div class="video-desc">يغطي جميع أفراد العائلة من الأسرة النواة إلى الممتدة مع النطق الصحيح.</div><div class="video-task"><strong>مهمة:</strong> اكتب كل فرد عائلة تسمعه — الألمانية والعربية. هدف: 15+ كلمة.</div></div>
+    </div>
+    <!-- Video 2: Nicos Weg Family Episode -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/GIvA8YNFB4k" title="Nicos Weg Familie Episode DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎥 DW · Nicos Weg · Episode</div><div class="video-title">Nicos Weg — Nico يتحدث عن عائلته</div><div class="video-desc">مسلسل DW التعليمي — Nico يلتقي عائلة جديدة ويستخدم مفردات Unit 04 في السياق الطبيعي.</div><div class="video-task"><strong>مهمة:</strong> اكتب 5 جمل سمعتها عن العائلة — ترجمها ثم قارن.</div></div>
+    </div>
+    <!-- Video 3: Possessive pronouns mein/meine -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/wE3KFOF5K8c" title="German Possessive Pronouns mein dein sein" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Possessivartikel</div><div class="video-title">mein · dein · sein — أدوات الملكية</div><div class="video-desc">شرح كامل لأدوات الملكية مع جدول تصريفها حسب جنس الاسم. الأهم في هذه الوحدة.</div><div class="video-task"><strong>مهمة:</strong> صرّف مع الفيديو بصوت عالٍ: "mein Vater · meine Mutter · mein Kind" لكل ضمير.</div></div>
+    </div>
+    <!-- Video 4: kein/keine -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/N2Nv3SDGPFU" title="kein keine kein German Negation A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · النفي</div><div class="video-title">kein / keine / kein — النفي بدون nicht</div><div class="video-desc">متى نستخدم kein بدل nicht؟ الفرق مع الأمثلة الواضحة. درس قصير وأساسي.</div><div class="video-task"><strong>مهمة:</strong> بعد الفيديو — اكتب 5 جمل نفي عن عائلتك: "Ich habe keine..."</div></div>
+    </div>
+    <!-- Video 5: Family conversation practice -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/FMoO3GDKX6U" title="German Family Conversation Practice A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">💬 Practice · محادثة</div><div class="video-title">تحدث عن عائلتك بالألمانية — جمل كاملة</div><div class="video-desc">جمل كاملة لوصف العائلة بالألمانية — أسلوب حديث. استمع وكرر كل جملة مباشرة.</div><div class="video-task"><strong>مهمة:</strong> خصص عائلتك الحقيقية: غيّر الأسماء بأسماء عائلتك وقل الجمل بصوت عالٍ.</div></div>
+    </div>
+    <!-- Video 6: Nicos Weg Full A1 -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · الفيلم الكامل</div><div class="video-title">Nicos Weg — A1 الفيلم الكامل (للمراجعة)</div><div class="video-desc">احفظه لليوم الخامس. بحلول Unit 04 ستفهم الكثير من المواقف العائلية في الفيلم.</div><div class="video-task"><strong>اليوم الخامس:</strong> شاهد 20 دقيقة — اكتب كل جملة تتعلق بالعائلة أو الملكية.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- FAMILY MEMBERS -->
+<section class="section" id="family">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">أفراد العائلة — die Familie</div><div class="sec-d">الأسرة النواة · الممتدة · الزواج · الحالة الاجتماعية · حوارات</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 ملاحظة مهمة قبل البدء</div><p>في الألمانية لكل اسم جنس لغوي: <code>der</code> (مذكر) · <code>die</code> (مؤنث) · <code>das</code> (محايد). وهذا الجنس هو ما يحدد كيف تغير أداة الملكية. مثال: <code>der Vater</code> → <code>mein Vater</code> · <code>die Mutter</code> → <code>meine Mutter</code>. احفظ الجنس مع كل كلمة جديدة — دائماً!</p></div>
+  <div class="family-grid reveal">
+    <div class="fam-col">
+      <div class="fam-col-h fc-gold">الأسرة النواة — KERNFAMILIE</div>
+      <div class="fi"><div class="fi-de">der Vater / Väter</div><div><div class="fi-ar">الأب</div><div class="fi-note">der = مذكر · Väter الجمع مع Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">die Mutter / Mütter</div><div><div class="fi-ar">الأم</div><div class="fi-note">die = مؤنث · Mütter الجمع مع Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">der Bruder / Brüder</div><div><div class="fi-ar">الأخ</div><div class="fi-note">Brüder بالجمع مع Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">die Schwester / Schwestern</div><div><div class="fi-ar">الأخت</div><div class="fi-note">Schwestern بالجمع بإضافة -n</div></div></div>
+      <div class="fi"><div class="fi-de">der Sohn / Söhne</div><div><div class="fi-ar">الابن</div><div class="fi-note">Söhne بالجمع مع Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">die Tochter / Töchter</div><div><div class="fi-ar">البنت / الابنة</div><div class="fi-note">Töchter بالجمع مع Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">das Kind / Kinder</div><div><div class="fi-ar">الطفل</div><div class="fi-note">das = محايد · Kinder بدون Umlaut</div></div></div>
+      <div class="fi"><div class="fi-de">das Baby / Babys</div><div><div class="fi-ar">الرضيع / الطفل الصغير</div><div class="fi-note">Babys جمع بـ -s كالإنجليزية</div></div></div>
+      <div class="fi"><div class="fi-de">die Eltern (pl)</div><div><div class="fi-ar">الوالدان</div><div class="fi-note">⚠️ جمع فقط — لا يوجد مفرد!</div></div></div>
+      <div class="fi"><div class="fi-de">die Geschwister (pl)</div><div><div class="fi-ar">الإخوة والأخوات</div><div class="fi-note">⚠️ جمع فقط — لا يوجد مفرد!</div></div></div>
+    </div>
+    <div class="fam-col">
+      <div class="fam-col-h fc-blue">العائلة الممتدة — ERWEITERTE FAMILIE</div>
+      <div class="fi"><div class="fi-de">der Großvater / Opa</div><div><div class="fi-ar">الجد</div><div class="fi-note">Opa عائلي · Großvater رسمي</div></div></div>
+      <div class="fi"><div class="fi-de">die Großmutter / Oma</div><div><div class="fi-ar">الجدة</div><div class="fi-note">Oma عائلي · Großmutter رسمي</div></div></div>
+      <div class="fi"><div class="fi-de">die Großeltern (pl)</div><div><div class="fi-ar">الأجداد</div><div class="fi-note">جمع فقط — الجدان معاً</div></div></div>
+      <div class="fi"><div class="fi-de">der Onkel</div><div><div class="fi-ar">العم / الخال</div><div class="fi-note">للعم والخال نفس الكلمة</div></div></div>
+      <div class="fi"><div class="fi-de">die Tante</div><div><div class="fi-ar">العمة / الخالة</div><div class="fi-note">للعمة والخالة نفس الكلمة</div></div></div>
+      <div class="fi"><div class="fi-de">der Cousin</div><div><div class="fi-ar">ابن العم / الخال</div><div class="fi-note">مقتبسة من الفرنسية</div></div></div>
+      <div class="fi"><div class="fi-de">die Cousine</div><div><div class="fi-ar">بنت العم / الخالة</div><div class="fi-note">مؤنث Cousin</div></div></div>
+      <div class="fi"><div class="fi-de">der Neffe</div><div><div class="fi-ar">ابن الأخ أو الأخت</div><div class="fi-note">عكس القرابة الألمانية والعربية سواء</div></div></div>
+      <div class="fi"><div class="fi-de">die Nichte</div><div><div class="fi-ar">بنت الأخ أو الأخت</div><div class="fi-note">مؤنث Neffe</div></div></div>
+      <div class="fi"><div class="fi-de">der Enkel / die Enkelin</div><div><div class="fi-ar">الحفيد / الحفيدة</div><div class="fi-note">Enkelkind = حفيد/ة (محايد)</div></div></div>
+    </div>
+    <div class="fam-col">
+      <div class="fam-col-h fc-green">الزواج والحالة — EHE & STATUS</div>
+      <div class="fi"><div class="fi-de">der Mann / die Frau</div><div><div class="fi-ar">الزوج / الزوجة (أو رجل/امرأة)</div><div class="fi-note">⚠️ السياق يحدد المعنى!</div></div></div>
+      <div class="fi"><div class="fi-de">der Ehemann</div><div><div class="fi-ar">الزوج (رسمي)</div><div class="fi-note">Ehe = الزواج · Mann = رجل</div></div></div>
+      <div class="fi"><div class="fi-de">die Ehefrau</div><div><div class="fi-ar">الزوجة (رسمي)</div><div class="fi-note">في الوثائق الرسمية</div></div></div>
+      <div class="fi"><div class="fi-de">der Schwiegervater</div><div><div class="fi-ar">الحماه — أبو الزوج/ة</div><div class="fi-note">Schwieger- = صهر</div></div></div>
+      <div class="fi"><div class="fi-de">die Schwiegermutter</div><div><div class="fi-ar">الحماة — أم الزوج/ة</div><div class="fi-note">المشهورة في الطرف الألماني 😄</div></div></div>
+      <div class="fi"><div class="fi-de">ledig</div><div><div class="fi-ar">أعزب / عزباء</div><div class="fi-note">في الأوراق الرسمية</div></div></div>
+      <div class="fi"><div class="fi-de">verheiratet</div><div><div class="fi-ar">متزوج / متزوجة</div><div class="fi-note">heiraten = يتزوج</div></div></div>
+      <div class="fi"><div class="fi-de">geschieden</div><div><div class="fi-ar">مطلق / مطلقة</div><div class="fi-note">die Scheidung = الطلاق</div></div></div>
+      <div class="fi"><div class="fi-de">verwitwet</div><div><div class="fi-ar">أرمل / أرملة</div><div class="fi-note">die Witwe = الأرملة</div></div></div>
+      <div class="fi"><div class="fi-de">das Einzelkind</div><div><div class="fi-ar">ابن أو بنت وحيدة</div><div class="fi-note">einzig = وحيد · Kind = طفل</div></div></div>
+    </div>
+  </div>
+  <p class="vst reveal">حوارات نموذجية — 5 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في العمل: التعريف بالعائلة (رسمي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Herr Hassan, haben Sie Familie hier in Deutschland?</div><div class="dl-ar">السيد حسن، هل لديك عائلة هنا في ألمانيا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, ich bin verheiratet. Meine Frau heißt Sara.</div><div class="dl-ar">نعم، أنا متزوج. زوجتي اسمها سارة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Haben Sie Kinder?</div><div class="dl-ar">هل لديكم أطفال؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, wir haben zwei Kinder. Einen Sohn und eine Tochter.</div><div class="dl-ar">نعم، لدينا طفلان. ابن وبنت.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wie alt sind sie?</div><div class="dl-ar">كم عمرهم؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Mein Sohn ist fünf Jahre alt und meine Tochter ist drei.</div><div class="dl-ar">ابني عمره خمس سنوات وبنتي ثلاث.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — مع صديق: عائلتي الكبيرة (عادي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hast du Geschwister?</div><div class="dl-ar">هل لديك إخوة أو أخوات؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja! Ich habe zwei Brüder und eine Schwester. Wir sind eine große Familie!</div><div class="dl-ar">نعم! لدي أخان وأخت. نحن عائلة كبيرة!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und deine Eltern? Wo wohnen sie?</div><div class="dl-ar">وأهلك؟ أين يسكنون؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Meine Eltern wohnen in Syrien. Mein Vater ist Arzt und meine Mutter ist Lehrerin.</div><div class="dl-ar">أهلي يسكنون في سوريا. أبي طبيب وأمي مدرّسة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Das ist schön! Und ich bin Einzelkind — ich habe keine Geschwister.</div><div class="dl-ar">هذا جميل! وأنا ابن وحيد — لا يوجد لدي إخوة.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — في حفلة: التعريف بالعائلة</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wer ist das? Dein Bruder?</div><div class="dl-ar">من هذا؟ أخوك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Nein, das ist kein Bruder. Das ist mein Cousin — der Sohn meines Onkels.</div><div class="dl-ar">لا، هذا ليس أخي. هذا ابن عمي — ابن عمي.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und die Frau da? Ist das deine Mutter?</div><div class="dl-ar">والمرأة هناك؟ هل هذه أمك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Nein! Das ist keine Mutter — das ist meine ältere Schwester! Sie ist 30 Jahre alt.</div><div class="dl-ar">لا! هذه ليست أمي — هذه أختي الكبيرة! عمرها 30 سنة.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — مع الجد والجدة</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hast du noch Großeltern?</div><div class="dl-ar">هل لا يزال لديك أجداد؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja! Mein Opa ist 80 Jahre alt und meine Oma ist 77. Sie wohnen zusammen.</div><div class="dl-ar">نعم! جدي عمره 80 سنة وجدتي 77. يعيشان معاً.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Das ist wunderbar! Meine Großeltern sind leider nicht mehr da.</div><div class="dl-ar">هذا رائع! أجدادي للأسف لم يعودوا معنا.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Das tut mir leid. Aber deine Erinnerungen bleiben immer.</div><div class="dl-ar">أنا آسف. لكن ذكرياتك تبقى دائماً.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 5 — الطفل يعرّف عائلته (بسيط)</div>
+    <div class="dl"><span class="sp sp-a">L</span><div><div class="dl-de">Wer ist das auf dem Foto?</div><div class="dl-ar">من هذا في الصورة؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Das ist mein Vater. Er heißt Karim. Und das ist meine Mutter. Sie heißt Layla.</div><div class="dl-ar">هذا أبي. اسمه كريم. وهذه أمي. اسمها ليلى.</div></div></div>
+    <div class="dl"><span class="sp sp-a">L</span><div><div class="dl-de">Und wer sind diese Kinder?</div><div class="dl-ar">ومن هؤلاء الأطفال؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Das sind mein Bruder Adam und meine Schwester Nour. Wir sind drei Kinder!</div><div class="dl-ar">هذان أخي آدم وأختي نور. نحن ثلاثة أطفال!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- POSSESSIVE ARTICLES -->
+<section class="section" id="poss">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">أداة الملكية — Possessivartikel</div><div class="sec-d">mein · dein · sein · ihr · unser · euer · ihr/Ihr — كاملة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 القاعدة الذهبية لأداة الملكية</div><p>أداة الملكية تتغير حسب <strong style="color:var(--white)">جنس الاسم الذي بعدها</strong> وليس حسب الشخص الذي يتكلم. القاعدة: <code>مذكر (der) = بدون -e</code> · <code>مؤنث (die) = + e</code> · <code>محايد (das) = بدون -e مثل المذكر</code> · <code>جمع = + e دائماً</code>. الحيلة: <strong style="color:var(--gold)">مؤنث وجمع يضيفان -e فقط!</strong></p></div>
+  <div class="poss-legend reveal">
+    <div class="pl-item"><div class="pl-dot" style="background:var(--blue)"></div><span style="color:var(--blue);font-size:.72rem">مذكر (der)</span></div>
+    <div class="pl-item"><div class="pl-dot" style="background:var(--gold)"></div><span style="color:var(--gold);font-size:.72rem">مؤنث (die)</span></div>
+    <div class="pl-item"><div class="pl-dot" style="background:var(--purple)"></div><span style="color:var(--purple);font-size:.72rem">محايد (das)</span></div>
+    <div class="pl-item"><div class="pl-dot" style="background:var(--green)"></div><span style="color:var(--green);font-size:.72rem">جمع (die)</span></div>
+  </div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="poss-t">
+      <thead>
+        <tr>
+          <th>الضمير</th>
+          <th style="color:var(--blue)">مذكر<br><span style="opacity:.5;font-size:.7em">der Vater</span></th>
+          <th style="color:var(--purple)">محايد<br><span style="opacity:.5;font-size:.7em">das Kind</span></th>
+          <th style="color:var(--gold)">مؤنث<br><span style="opacity:.5;font-size:.7em">die Mutter</span></th>
+          <th style="color:var(--green)">جمع<br><span style="opacity:.5;font-size:.7em">die Kinder</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="pt-pron">ich</span><span class="pt-ar">أنا</span></td>
+          <td><span class="pt-m">mein</span><br><span class="poss-note">mein Vater</span></td>
+          <td><span class="pt-n">mein</span><br><span class="poss-note">mein Kind</span></td>
+          <td><span class="pt-f">meine</span><br><span class="poss-note">meine Mutter</span></td>
+          <td><span class="pt-pl">meine</span><br><span class="poss-note">meine Kinder</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">du</span><span class="pt-ar">أنت</span></td>
+          <td><span class="pt-m">dein</span><br><span class="poss-note">dein Vater</span></td>
+          <td><span class="pt-n">dein</span><br><span class="poss-note">dein Kind</span></td>
+          <td><span class="pt-f">deine</span><br><span class="poss-note">deine Mutter</span></td>
+          <td><span class="pt-pl">deine</span><br><span class="poss-note">deine Kinder</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">er / es</span><span class="pt-ar">هو / هو (م)</span></td>
+          <td><span class="pt-m">sein</span><br><span class="poss-note">sein Bruder</span></td>
+          <td><span class="pt-n">sein</span><br><span class="poss-note">sein Kind</span></td>
+          <td><span class="pt-f">seine</span><br><span class="poss-note">seine Mutter</span></td>
+          <td><span class="pt-pl">seine</span><br><span class="poss-note">seine Geschwister</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">sie</span><span class="pt-ar">هي</span></td>
+          <td><span class="pt-m">ihr</span><br><span class="poss-note">ihr Vater</span></td>
+          <td><span class="pt-n">ihr</span><br><span class="poss-note">ihr Kind</span></td>
+          <td><span class="pt-f">ihre</span><br><span class="poss-note">ihre Mutter</span></td>
+          <td><span class="pt-pl">ihre</span><br><span class="poss-note">ihre Kinder</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">wir</span><span class="pt-ar">نحن</span></td>
+          <td><span class="pt-m">unser</span><br><span class="poss-note">unser Vater</span></td>
+          <td><span class="pt-n">unser</span><br><span class="poss-note">unser Kind</span></td>
+          <td><span class="pt-f">unsere</span><br><span class="poss-note">unsere Mutter</span></td>
+          <td><span class="pt-pl">unsere</span><br><span class="poss-note">unsere Kinder</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">ihr</span><span class="pt-ar">أنتم</span></td>
+          <td><span class="pt-m">euer</span><br><span class="poss-note">euer Vater</span></td>
+          <td><span class="pt-n">euer</span><br><span class="poss-note">euer Kind</span></td>
+          <td><span class="pt-f">eure</span><br><span class="poss-note">eure Mutter</span></td>
+          <td><span class="pt-pl">eure</span><br><span class="poss-note">eure Kinder</span></td>
+        </tr>
+        <tr>
+          <td><span class="pt-pron">sie / Sie</span><span class="pt-ar">هم / حضرتك</span></td>
+          <td><span class="pt-m">ihr / Ihr</span><br><span class="poss-note">ihr/Ihr Vater</span></td>
+          <td><span class="pt-n">ihr / Ihr</span><br><span class="poss-note">ihr/Ihr Kind</span></td>
+          <td><span class="pt-f">ihre / Ihre</span><br><span class="poss-note">ihre/Ihre Mutter</span></td>
+          <td><span class="pt-pl">ihre / Ihre</span><br><span class="poss-note">ihre/Ihre Kinder</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ euer/eure — الاستثناء!</div><p><code>euer</code> يفقد الـ e الداخلية عند إضافة النهاية: <code>euer Vater</code> (م) لكن <code>eure Mutter</code> (مؤنث) — لاحظ: ليس euere! هذا استثناء واحد فقط احفظه.</p></div>
+  <div class="note-blue reveal"><div class="note-title nt-b">💡 sein (هو) vs. sein (يكون)</div><p>كلمة <code>sein</code> في الألمانية لها معنيان: الفعل <code>sein = يكون</code> (تعلمناه في Unit 01) والأداة <code>sein = بتاعه / له</code> (هذه الوحدة). السياق يحدد: <code>Er ist müde</code> = sein هنا فعل · <code>Das ist sein Bruder</code> = sein هنا ملكية.</p></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 ihr — أربعة معاني!</div><p><code>ihr</code> يمكن أن تعني: <strong style="color:var(--white)">1</strong>) ضمير أنتم (ihr seid) · <strong style="color:var(--white)">2</strong>) ملكية هي (ihr Vater = أبوها) · <strong style="color:var(--white)">3</strong>) ملكية هم (ihr Vater = أبوهم) · <strong style="color:var(--white)">4</strong>) <code>Ihr</code> بحرف كبير = ملكية حضرتك رسمي. <strong style="color:var(--gold)">السياق دائماً يوضح!</strong></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- KEIN/KEINE -->
+<section class="section" id="kein">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">النفي — kein / keine / kein</div><div class="sec-d">كيف ننفي الاسم؟ — الفرق بين nicht و kein</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 متى kein ومتى nicht؟</div><p>القاعدة بسيطة: <code>kein</code> تنفي الاسم الذي يأتي بعد أداة <strong style="color:var(--white)">ein / eine / ein</strong> أو بدون أداة. <code>nicht</code> تنفي صفة أو فعل أو جملة كاملة. مثال: <code>Er ist nicht müde</code> (نفي صفة) · <code>Er hat keine Schwester</code> (نفي اسم بـ kein).</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="kein-t">
+      <thead>
+        <tr><th>الجنس</th><th>أداة التعريف</th><th>إيجابي</th><th>نفي بـ kein</th><th>مثال</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="color:var(--blue)">مذكر (der)</td><td class="kt-art">ein</td><td style="font-family:'JetBrains Mono',monospace;color:var(--green)">ein Bruder</td><td class="kt-neg">kein Bruder</td><td class="kt-ex">Das ist kein Bruder, das ist mein Cousin!</td></tr>
+        <tr><td style="color:var(--gold)">مؤنث (die)</td><td class="kt-art">eine</td><td style="font-family:'JetBrains Mono',monospace;color:var(--green)">eine Schwester</td><td class="kt-neg">keine Schwester</td><td class="kt-ex">Ich habe keine Schwester.</td></tr>
+        <tr><td style="color:var(--purple)">محايد (das)</td><td class="kt-art">ein</td><td style="font-family:'JetBrains Mono',monospace;color:var(--green)">ein Kind</td><td class="kt-neg">kein Kind</td><td class="kt-ex">Das ist kein Kind, das ist ein Teenager!</td></tr>
+        <tr><td style="color:var(--green)">جمع (die)</td><td class="kt-art">—</td><td style="font-family:'JetBrains Mono',monospace;color:var(--green)">Geschwister</td><td class="kt-neg">keine Geschwister</td><td class="kt-ex">Er hat keine Geschwister — Einzelkind!</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ مع فعل haben — تذكر هذا!</div><p>مع فعل <code>haben</code> (لديه)، المذكر يصبح <code>keinen</code> في المفعول به: <code>Ich habe keinen Bruder.</code> (ليس لدي أخ — مذكر Akkusativ). هذا لأن haben يستخدم صيغة Akkusativ. <strong style="color:var(--gold)">ستتعلم هذا بالتفصيل في Unit 07 — لكن اعرفه الآن!</strong> المؤنث والمحايد والجمع تبقى نفسها: <code>keine Schwester / kein Kind / keine Kinder</code>.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">مقارنة — إيجابي مقابل نفي</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox sbox-noun">eine Schwester</span><span class="sbox-ar">لدي أخت ✅</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox" style="border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)">keine Schwester</span><span class="sbox-ar">ليس لدي أخت ❌</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Das</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-noun">ein Bruder</span><span class="sbox-ar">هذا أخ ✅</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Das</span><span class="sbox sbox-verb">ist</span><span class="sbox" style="border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)">kein Bruder</span><span class="sbox-ar">هذا ليس أخاً ❌</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SENTENCE STRUCTURE -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">بنية الجملة مع الملكية</div><div class="sec-d">كيف تبني جملة عن العائلة — قاعدة V2 + أداة الملكية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 الملكية في الجملة</div><p>أداة الملكية تأتي قبل الاسم مباشرةً وتحل محل أداة التعريف. مثال: <code>der Bruder</code> → <code>mein Bruder</code> / <code>die Schwester</code> → <code>meine Schwester</code>. والجملة تتبع قاعدة V2 المعتادة: الفعل دائماً في المكان الثاني.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">جمل وصفية — بنية عادية</div>
+    <div class="satz-row"><span class="sbox sbox-poss">Mein</span><span class="sbox sbox-noun">Vater</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">Arzt.</span><span class="sbox-ar">أبي طبيب.</span></div>
+    <div class="satz-row"><span class="sbox sbox-poss">Meine</span><span class="sbox sbox-noun">Mutter</span><span class="sbox sbox-verb">wohnt</span><span class="sbox sbox-rest">in Berlin.</span><span class="sbox-ar">أمي تسكن في برلين.</span></div>
+    <div class="satz-row"><span class="sbox sbox-poss">Sein</span><span class="sbox sbox-noun">Bruder</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">sehr nett.</span><span class="sbox-ar">أخوه لطيف جداً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-poss">Unsere</span><span class="sbox sbox-noun">Familie</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">groß.</span><span class="sbox-ar">عائلتنا كبيرة.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">جمل سؤال — الفعل أولاً أو كلمة W</div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)">Hast</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-poss">eine</span><span class="sbox sbox-noun">Schwester?</span><span class="sbox-ar">هل لديك أخت؟</span></div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)">Wie</span><span class="sbox sbox-verb">heißt</span><span class="sbox sbox-poss">dein</span><span class="sbox sbox-noun">Vater?</span><span class="sbox-ar">ما اسم أبيك؟</span></div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)">Wo</span><span class="sbox sbox-verb">wohnen</span><span class="sbox sbox-poss">deine</span><span class="sbox sbox-noun">Eltern?</span><span class="sbox-ar">أين يسكن أهلك؟</span></div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)">Wie</span><span class="sbox sbox-verb">alt</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-poss">deine</span><span class="sbox sbox-noun">Schwester?</span><span class="sbox-ar">كم عمر أختك؟</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">جمل نفي مع kein</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox" style="border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)">keine</span><span class="sbox sbox-noun">Geschwister.</span><span class="sbox-ar">لا يوجد لدي إخوة. (أنا Einzelkind)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Das</span><span class="sbox sbox-verb">ist</span><span class="sbox" style="border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)">kein</span><span class="sbox sbox-noun">Cousin.</span><span class="sbox-ar">هذا ليس ابن عمي.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">hat</span><span class="sbox" style="border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)">keine</span><span class="sbox sbox-noun">Kinder.</span><span class="sbox-ar">ليس لها أطفال.</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 حيلة سريعة لاختيار الأداة</div><p>قبل كل اسم، اسأل نفسك: ما جنس الاسم؟ <code>der → مين/داين/زاين/...</code> · <code>die → ماينه/داينه/زاينه/...</code> · <code>das → مين/داين/زاين/...</code> — محايد = مثل مذكر بالضبط! الجمع = مثل مؤنث دائماً. بعد أسبوع من التطبيق ستصبح طبيعية.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات — Vokabeln</div><div class="sec-d">80+ كلمة مقسمة بالموضوع — احفظ الجنس مع كل كلمة</div></div></div>
+  <p class="vst reveal">الأسرة النواة وكلمات الجمع</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Vater / Väter</div><div class="vi-ar">الأب / الآباء</div><div class="vi-note">der = مذكر ← mein Vater</div></div>
+    <div class="vi"><div class="vi-de">die Mutter / Mütter</div><div class="vi-ar">الأم / الأمهات</div><div class="vi-note">die = مؤنث ← meine Mutter</div></div>
+    <div class="vi"><div class="vi-de">der Bruder / Brüder</div><div class="vi-ar">الأخ / الإخوة</div></div>
+    <div class="vi"><div class="vi-de">die Schwester / Schwestern</div><div class="vi-ar">الأخت / الأخوات</div></div>
+    <div class="vi"><div class="vi-de">der Sohn / Söhne</div><div class="vi-ar">الابن / الأبناء</div></div>
+    <div class="vi"><div class="vi-de">die Tochter / Töchter</div><div class="vi-ar">البنت / البنات</div></div>
+    <div class="vi"><div class="vi-de">das Kind / Kinder</div><div class="vi-ar">الطفل / الأطفال</div><div class="vi-note">das = محايد ← mein Kind</div></div>
+    <div class="vi"><div class="vi-de">das Baby / Babys</div><div class="vi-ar">الرضيع</div></div>
+    <div class="vi"><div class="vi-de">der Junge / Jungen</div><div class="vi-ar">الولد</div></div>
+    <div class="vi"><div class="vi-de">das Mädchen</div><div class="vi-ar">البنت (طفلة)</div><div class="vi-note">das — رغم المعنى المؤنث!</div></div>
+    <div class="vi"><div class="vi-de">die Eltern (pl)</div><div class="vi-ar">الوالدان</div><div class="vi-note">جمع فقط — لا مفرد</div></div>
+    <div class="vi"><div class="vi-de">die Geschwister (pl)</div><div class="vi-ar">الإخوة والأخوات</div><div class="vi-note">جمع فقط</div></div>
+  </div>
+  <p class="vst reveal">العائلة الممتدة والأجداد</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Großvater</div><div class="vi-ar">الجد (رسمي)</div></div>
+    <div class="vi"><div class="vi-de">die Großmutter</div><div class="vi-ar">الجدة (رسمي)</div></div>
+    <div class="vi"><div class="vi-de">der Opa</div><div class="vi-ar">الجد (عائلي)</div><div class="vi-note">اختصار Großvater</div></div>
+    <div class="vi"><div class="vi-de">die Oma</div><div class="vi-ar">الجدة (عائلي)</div><div class="vi-note">اختصار Großmutter</div></div>
+    <div class="vi"><div class="vi-de">die Großeltern</div><div class="vi-ar">الأجداد (جمع)</div></div>
+    <div class="vi"><div class="vi-de">der Onkel</div><div class="vi-ar">العم / الخال</div></div>
+    <div class="vi"><div class="vi-de">die Tante</div><div class="vi-ar">العمة / الخالة</div></div>
+    <div class="vi"><div class="vi-de">der Cousin</div><div class="vi-ar">ابن العم/الخال</div></div>
+    <div class="vi"><div class="vi-de">die Cousine</div><div class="vi-ar">بنت العم/الخالة</div></div>
+    <div class="vi"><div class="vi-de">der Neffe</div><div class="vi-ar">ابن الأخ/الأخت</div></div>
+    <div class="vi"><div class="vi-de">die Nichte</div><div class="vi-ar">بنت الأخ/الأخت</div></div>
+    <div class="vi"><div class="vi-de">der Enkel</div><div class="vi-ar">الحفيد</div></div>
+    <div class="vi"><div class="vi-de">die Enkelin</div><div class="vi-ar">الحفيدة</div></div>
+    <div class="vi"><div class="vi-de">die Verwandten</div><div class="vi-ar">الأقارب</div><div class="vi-note">der Verwandte مفرد</div></div>
+  </div>
+  <p class="vst reveal">الزواج والحالة الاجتماعية</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Mann</div><div class="vi-ar">الزوج / الرجل</div><div class="vi-note">⚠️ السياق مهم</div></div>
+    <div class="vi"><div class="vi-de">die Frau</div><div class="vi-ar">الزوجة / المرأة</div><div class="vi-note">⚠️ السياق مهم</div></div>
+    <div class="vi"><div class="vi-de">der Ehemann</div><div class="vi-ar">الزوج (رسمي)</div></div>
+    <div class="vi"><div class="vi-de">die Ehefrau</div><div class="vi-ar">الزوجة (رسمي)</div></div>
+    <div class="vi"><div class="vi-de">das Ehepaar</div><div class="vi-ar">الزوجان</div></div>
+    <div class="vi"><div class="vi-de">die Ehe</div><div class="vi-ar">الزواج (institution)</div></div>
+    <div class="vi"><div class="vi-de">der Schwiegervater</div><div class="vi-ar">الحماه (أبو الزوج/ة)</div></div>
+    <div class="vi"><div class="vi-de">die Schwiegermutter</div><div class="vi-ar">الحماة</div></div>
+    <div class="vi"><div class="vi-de">ledig</div><div class="vi-ar">أعزب / عزباء</div></div>
+    <div class="vi"><div class="vi-de">verheiratet</div><div class="vi-ar">متزوج / متزوجة</div></div>
+    <div class="vi"><div class="vi-de">geschieden</div><div class="vi-ar">مطلق / مطلقة</div></div>
+    <div class="vi"><div class="vi-de">verwitwet</div><div class="vi-ar">أرمل / أرملة</div></div>
+    <div class="vi"><div class="vi-de">das Einzelkind</div><div class="vi-ar">ابن/بنت وحيدة</div></div>
+    <div class="vi"><div class="vi-de">heiraten</div><div class="vi-ar">يتزوج</div></div>
+  </div>
+  <p class="vst reveal">أفعال مهمة للعائلة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">haben</div><div class="vi-ar">يملك / لديه</div><div class="vi-note">ich habe · du hast · er hat</div></div>
+    <div class="vi"><div class="vi-de">wohnen</div><div class="vi-ar">يسكن / يقيم</div><div class="vi-note">Wo wohnst du?</div></div>
+    <div class="vi"><div class="vi-de">heißen</div><div class="vi-ar">يُدعى / اسمه</div><div class="vi-note">Wie heißt dein Vater?</div></div>
+    <div class="vi"><div class="vi-de">kommen aus</div><div class="vi-ar">يأتي من / من أصل</div><div class="vi-note">Woher kommst du?</div></div>
+    <div class="vi"><div class="vi-de">leben</div><div class="vi-ar">يعيش</div><div class="vi-note">Sie leben in Hamburg.</div></div>
+    <div class="vi"><div class="vi-de">kennen</div><div class="vi-ar">يعرف (شخصاً)</div><div class="vi-note">Kennst du meine Schwester?</div></div>
+    <div class="vi"><div class="vi-de">lieben</div><div class="vi-ar">يحب</div><div class="vi-note">Ich liebe meine Familie.</div></div>
+    <div class="vi"><div class="vi-de">besuchen</div><div class="vi-ar">يزور</div><div class="vi-note">Wir besuchen die Oma.</div></div>
+    <div class="vi"><div class="vi-de">arbeiten</div><div class="vi-ar">يعمل</div><div class="vi-note">Mein Vater arbeitet hier.</div></div>
+    <div class="vi"><div class="vi-de">studieren</div><div class="vi-ar">يدرس (جامعة)</div></div>
+    <div class="vi"><div class="vi-de">sein</div><div class="vi-ar">يكون / هو</div><div class="vi-note">Unit 01! — مراجعة</div></div>
+  </div>
+  <p class="vst reveal">صفات وتعابير مهمة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">groß</div><div class="vi-ar">كبير / طويل</div><div class="vi-note">eine große Familie</div></div>
+    <div class="vi"><div class="vi-de">klein</div><div class="vi-ar">صغير / قصير</div></div>
+    <div class="vi"><div class="vi-de">jung</div><div class="vi-ar">صغير السن / شاب</div></div>
+    <div class="vi"><div class="vi-de">alt</div><div class="vi-ar">كبير السن / قديم</div><div class="vi-note">Wie alt bist du?</div></div>
+    <div class="vi"><div class="vi-de">nett</div><div class="vi-ar">لطيف</div></div>
+    <div class="vi"><div class="vi-de">lieb</div><div class="vi-ar">عزيز / محبوب</div><div class="vi-note">Meine Oma ist so lieb!</div></div>
+    <div class="vi"><div class="vi-de">zusammen</div><div class="vi-ar">معاً</div><div class="vi-note">Wir leben zusammen.</div></div>
+    <div class="vi"><div class="vi-de">allein</div><div class="vi-ar">وحيد</div></div>
+    <div class="vi"><div class="vi-de">glücklich</div><div class="vi-ar">سعيد</div></div>
+    <div class="vi"><div class="vi-de">noch</div><div class="vi-ar">لا يزال / بعد</div><div class="vi-note">Hast du noch Großeltern?</div></div>
+    <div class="vi"><div class="vi-de">leider</div><div class="vi-ar">للأسف</div></div>
+    <div class="vi"><div class="vi-de">wunderbar</div><div class="vi-ar">رائع / بديع</div></div>
+    <div class="vi"><div class="vi-de">Wie groß ist...?</div><div class="vi-ar">كم عدد...؟</div><div class="vi-note">كم عدد أفراد العائلة؟</div></div>
+    <div class="vi"><div class="vi-de">Wie viele...?</div><div class="vi-ar">كم عدد؟ (للجمع)</div></div>
+    <div class="vi"><div class="vi-de">Wie alt ist...?</div><div class="vi-ar">كم عمر...؟</div></div>
+    <div class="vi"><div class="vi-de">... Jahre alt</div><div class="vi-ar">... سنة (عمر)</div><div class="vi-note">Er ist 30 Jahre alt.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">الثقافة الألمانية — Kultur</div><div class="sec-d">العائلة الألمانية — عادات · قيم · فروق عن العالم العربي</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">👨‍👩‍👦</span><div class="cc-title">الأسرة الألمانية الحديثة</div><div class="cc-text">متوسط الأطفال في ألمانيا 1.5 طفل للأسرة — من أدنى المعدلات في أوروبا. كثير من الأسر لديها طفل واحد أو لا أطفال. مفهوم Einzelkind (ابن وحيد) شائع جداً.</div></div>
+    <div class="culture-card"><span class="cc-icon">👫</span><div class="cc-title">du مع العائلة</div><div class="cc-text">في الألمانية، تستخدم du مع جميع أفراد العائلة بدون استثناء — حتى مع الأجداد والعمات. Sie الرسمي مع الغرباء فقط. هذا عكس ما قد تتوقع من الثقافة العربية.</div></div>
+    <div class="culture-card"><span class="cc-icon">🏠</span><div class="cc-title">الاستقلالية في السن الصغير</div><div class="cc-text">الشباب الألماني يغادر بيت الأهل في سن 18-20 عادةً. العيش مع الأهل بعد 25 غير معتاد. يُعتبر الاستقلال الشخصي من أهم القيم في الثقافة الألمانية.</div></div>
+    <div class="culture-card"><span class="cc-icon">👶</span><div class="cc-title">إجازة الوالدين — Elternzeit</div><div class="cc-text">ألمانيا لديها نظام Elternzeit (إجازة الوالدين) — يمكن للأم والأب أخذ إجازة مدفوعة الأجر حتى 14 شهراً. الآباء يأخذون الإجازة بشكل متزايد — ظاهرة حديثة.</div></div>
+    <div class="culture-card"><span class="cc-icon">🎄</span><div class="cc-title">الأعياد العائلية</div><div class="cc-text">أهم الأعياد العائلية في ألمانيا: Weihnachten (الميلاد - 24 ديسمبر) وOstern (عيد الفصح). الأسرة تجتمع معاً في هذه المناسبات حتى لو كانوا في مدن مختلفة.</div></div>
+    <div class="culture-card"><span class="cc-icon">📛</span><div class="cc-title">الاسم الألماني</div><div class="cc-text">الاسم الكامل: Vorname (الاسم الأول) + Familienname/Nachname (اسم العائلة). الترتيب: الأول ثم العائلة. في العناوين الرسمية: "Herr Müller" = السيد مولر (اسم العائلة).</div></div>
+    <div class="culture-card"><span class="cc-icon">👴</span><div class="cc-title">Oma و Opa — الجدان المحبوبان</div><div class="cc-text">الجدان في ألمانيا دور مهم في تربية الأحفاد، خاصة عند عمل الأبوين. Oma و Opa كلمات عاطفية محببة — استخدامها يُشعر بالدفء والألفة.</div></div>
+    <div class="culture-card"><span class="cc-icon">⚖️</span><div class="cc-title">الأسرة والقانون</div><div class="cc-text">في الوثائق الرسمية الألمانية، الحالة الاجتماعية مهمة: ledig / verheiratet / geschieden / verwitwet. للتأشيرة والإقامة، تحتاج غالباً إثبات وضع Familienstand (الحالة الأسرية).</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — Häufige Fehler</p>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Das ist meine Bruder.</div><div class="mi-explain">Bruder مذكر (der) → لا تضيف -e</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Das ist mein Bruder.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Das ist sein Schwester.</div><div class="mi-explain">Schwester مؤنث (die) → يجب -e</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Das ist seine Schwester.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Das ist kein Kinder.</div><div class="mi-explain">الجمع يستخدم keine دائماً</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Das sind keine Kinder.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Das ist eine Kind.</div><div class="mi-explain">Kind محايد (das) → ein لا eine</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Das ist ein Kind.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Mein Mutter ist nett.</div><div class="mi-explain">Mutter مؤنث → meine وليس mein</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Meine Mutter ist nett.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich habe nicht Bruder.</div><div class="mi-explain">مع اسم منكّر → kein وليس nicht</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich habe keinen Bruder.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">euere Mutter</div><div class="mi-explain">euer يحذف e الداخلية قبل النهاية</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">eure Mutter</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">das Mädchen — meine Mädchen</div><div class="mi-explain">Mädchen = das (محايد!) رغم أنها بنت</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">mein Mädchen (محايد → mein)</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">التمارين — Übungen</div><div class="sec-d">32 سؤال · 6 مجموعات · اجتز 29+ للانتقال لـ Unit 05</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 تعليمات التمارين</div><p>اختر الإجابة الصحيحة. الإجابة الخضراء = صح · الحمراء = خطأ. بعد كل سؤال ستجد شرحاً مختصراً. هدفك <strong style="color:var(--white)">29/32</strong> على الأقل للانتقال لـ Unit 05. إذا أخطأت 5+ أسئلة في نفس الموضوع — راجع ذلك القسم أولاً.</p></div>
+
+  <!-- Block 1: Family Vocab -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — مفردات العائلة (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "die Schwester"؟</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="الأخت" onclick="check(this)">الأخت</button><button class="ex-btn" data-q="1" data-a="الأم" onclick="check(this)">الأم</button><button class="ex-btn" data-q="1" data-a="البنت" onclick="check(this)">البنت</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "der Großvater"؟</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="الجد" onclick="check(this)">الجد</button><button class="ex-btn" data-q="2" data-a="العم" onclick="check(this)">العم</button><button class="ex-btn" data-q="2" data-a="الأب" onclick="check(this)">الأب</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">جمع "das Kind" هو ___؟</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="die Kinder" onclick="check(this)">die Kinder</button><button class="ex-btn" data-q="3" data-a="die Kinds" onclick="check(this)">die Kinds</button><button class="ex-btn" data-q="3" data-a="die Kindern" onclick="check(this)">die Kindern</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "die Eltern"؟</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="الوالدان (جمع)" onclick="check(this)">الوالدان</button><button class="ex-btn" data-q="4" data-a="الأجداد" onclick="check(this)">الأجداد</button><button class="ex-btn" data-q="4" data-a="الأبناء" onclick="check(this)">الأبناء</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما المؤنث من "der Onkel"؟</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="die Tante" onclick="check(this)">die Tante</button><button class="ex-btn" data-q="5" data-a="die Nichte" onclick="check(this)">die Nichte</button><button class="ex-btn" data-q="5" data-a="die Frau" onclick="check(this)">die Frau</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "ledig"؟</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="أعزب" onclick="check(this)">أعزب</button><button class="ex-btn" data-q="6" data-a="متزوج" onclick="check(this)">متزوج</button><button class="ex-btn" data-q="6" data-a="مطلق" onclick="check(this)">مطلق</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+
+  <!-- Block 2: mein/meine with ich/du/er -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — mein/meine مع مذكر · مؤنث · محايد (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b7">___</span> Vater. (ich)</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="mein" onclick="check(this)">mein</button><button class="ex-btn" data-q="7" data-a="meine" onclick="check(this)">meine</button><button class="ex-btn" data-q="7" data-a="meinen" onclick="check(this)">meinen</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b8">___</span> Mutter. (ich)</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="meine" onclick="check(this)">meine</button><button class="ex-btn" data-q="8" data-a="mein" onclick="check(this)">mein</button><button class="ex-btn" data-q="8" data-a="mein" onclick="check(this)">meiner</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b9">___</span> Kind. (ich)</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="mein" onclick="check(this)">mein</button><button class="ex-btn" data-q="9" data-a="meine" onclick="check(this)">meine</button><button class="ex-btn" data-q="9" data-a="meines" onclick="check(this)">meines</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b10">___</span> Bruder. (du)</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="dein" onclick="check(this)">dein</button><button class="ex-btn" data-q="10" data-a="deine" onclick="check(this)">deine</button><button class="ex-btn" data-q="10" data-a="mein" onclick="check(this)">mein</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b11">___</span> Schwester. (du)</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="deine" onclick="check(this)">deine</button><button class="ex-btn" data-q="11" data-a="dein" onclick="check(this)">dein</button><button class="ex-btn" data-q="11" data-a="seine" onclick="check(this)">seine</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b12">___</span> Sohn. (er)</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="sein" onclick="check(this)">sein</button><button class="ex-btn" data-q="12" data-a="seine" onclick="check(this)">seine</button><button class="ex-btn" data-q="12" data-a="ihr" onclick="check(this)">ihr</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <!-- Block 3: wir/ihr/sie/Sie -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — unser · euer · ihr/Ihr (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b13">___</span> Familie. (wir)</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="unsere" onclick="check(this)">unsere</button><button class="ex-btn" data-q="13" data-a="unser" onclick="check(this)">unser</button><button class="ex-btn" data-q="13" data-a="ihre" onclick="check(this)">ihre</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b14">___</span> Vater. (wir)</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="unser" onclick="check(this)">unser</button><button class="ex-btn" data-q="14" data-a="unsere" onclick="check(this)">unsere</button><button class="ex-btn" data-q="14" data-a="euer" onclick="check(this)">euer</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b15">___</span> Tochter. (ihr)</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="eure" onclick="check(this)">eure</button><button class="ex-btn" data-q="15" data-a="euer" onclick="check(this)">euer</button><button class="ex-btn" data-q="15" data-a="euere" onclick="check(this)">euere</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b16">___</span> Kind. (ihr — أنتم)</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="euer" onclick="check(this)">euer</button><button class="ex-btn" data-q="16" data-a="eure" onclick="check(this)">eure</button><button class="ex-btn" data-q="16" data-a="ihrer" onclick="check(this)">ihrer</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b17">___</span> Tochter. (sie — هي)</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="ihre" onclick="check(this)">ihre</button><button class="ex-btn" data-q="17" data-a="ihr" onclick="check(this)">ihr</button><button class="ex-btn" data-q="17" data-a="seine" onclick="check(this)">seine</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b18">___</span> Sohn, Herr Müller? (Sie — رسمي)</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="Ihr" onclick="check(this)">Ihr</button><button class="ex-btn" data-q="18" data-a="ihr" onclick="check(this)">ihr</button><button class="ex-btn" data-q="18" data-a="Ihre" onclick="check(this)">Ihre</button></div><div class="ex-fb" id="f18"></div></div>
+  </div>
+
+  <!-- Block 4: kein/keine -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — النفي بـ kein / keine (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b19">___</span> Bruder, das ist mein Cousin! (مذكر)</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="kein" onclick="check(this)">kein</button><button class="ex-btn" data-q="19" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="19" data-a="nicht" onclick="check(this)">nicht</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b20">___</span> Mutter, das ist meine Tante! (مؤنث)</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="20" data-a="kein" onclick="check(this)">kein</button><button class="ex-btn" data-q="20" data-a="nicht" onclick="check(this)">nicht</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist <span class="blank" id="b21">___</span> Kind, das ist ein Teenager! (محايد)</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="kein" onclick="check(this)">kein</button><button class="ex-btn" data-q="21" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="21" data-a="keinen" onclick="check(this)">keinen</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er hat <span class="blank" id="b22">___</span> Geschwister — er ist Einzelkind. (جمع)</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="22" data-a="kein" onclick="check(this)">kein</button><button class="ex-btn" data-q="22" data-a="keinen" onclick="check(this)">keinen</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich habe <span class="blank" id="b23">___</span> Schwester. (مؤنث)</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="23" data-a="kein" onclick="check(this)">kein</button><button class="ex-btn" data-q="23" data-a="nicht" onclick="check(this)">nicht</button></div><div class="ex-fb" id="f23"></div></div>
+  </div>
+
+  <!-- Block 5: Sentences -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — جمل وترجمة (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "هذا أبي" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="Das ist mein Vater." onclick="check(this)">Das ist mein Vater.</button><button class="ex-btn" data-q="24" data-a="Das ist meine Vater." onclick="check(this)">Das ist meine Vater.</button><button class="ex-btn" data-q="24" data-a="Das ist der Vater mein." onclick="check(this)">Das ist der Vater mein.</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تسأل "هل هذه بنتك؟" (du)</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="Ist das deine Tochter?" onclick="check(this)">Ist das deine Tochter?</button><button class="ex-btn" data-q="25" data-a="Das ist deine Tochter?" onclick="check(this)">Das ist deine Tochter?</button><button class="ex-btn" data-q="25" data-a="Ist das dein Tochter?" onclick="check(this)">Ist das dein Tochter?</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Meine Familie ist groß." — ما معنى هذه الجملة؟</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="عائلتي كبيرة" onclick="check(this)">عائلتي كبيرة</button><button class="ex-btn" data-q="26" data-a="أسرتنا قديمة" onclick="check(this)">أسرتنا قديمة</button><button class="ex-btn" data-q="26" data-a="عائلتي مشهورة" onclick="check(this)">عائلتي مشهورة</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Das ist sein Schwester."</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="خطأ — مؤنث: seine Schwester" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="27" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Wir haben kein Kinder."</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="خطأ — الجمع: keine Kinder" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="28" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f28"></div></div>
+  </div>
+
+  <!-- Block 6: Culture -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — ثقافة ومفردات متقدمة (4 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Einzelkind"؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="ابن أو بنت وحيدة" onclick="check(this)">ابن أو بنت وحيدة</button><button class="ex-btn" data-q="29" data-a="الابن الأكبر" onclick="check(this)">الابن الأكبر</button><button class="ex-btn" data-q="29" data-a="الطفل الأصغر" onclick="check(this)">الطفل الأصغر</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Oma" هي الاسم العائلي لـ ___</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="Großmutter" onclick="check(this)">Großmutter</button><button class="ex-btn" data-q="30" data-a="Großvater" onclick="check(this)">Großvater</button><button class="ex-btn" data-q="30" data-a="Schwiegermutter" onclick="check(this)">Schwiegermutter</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"die Frau" في الألمانية يمكن أن تعني ___</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="امرأة أو زوجة حسب السياق" onclick="check(this)">امرأة أو زوجة</button><button class="ex-btn" data-q="31" data-a="أنثى فقط" onclick="check(this)">أنثى فقط</button><button class="ex-btn" data-q="31" data-a="زوجة فقط" onclick="check(this)">زوجة فقط</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">في الوثائق الرسمية الألمانية، اسم العائلة يُسمى ___</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="Familienname / Nachname" onclick="check(this)">Familienname / Nachname</button><button class="ex-btn" data-q="32" data-a="Vorname" onclick="check(this)">Vorname</button><button class="ex-btn" data-q="32" data-a="Spitzname" onclick="check(this)">Spitzname</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">الكتابة تثبّت اللغة — افعلها بدون نظر ثم تحقق</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة أهم من القراءة؟</div><p>عندما تقرأ، دماغك يتعرف. عندما تكتب، دماغك يسترجع. الاسترجاع هو ما يثبّت اللغة في الذاكرة طويلة الأمد. <strong style="color:var(--white)">اكتب بدون نظر أولاً</strong> ثم افتح الملف وتحقق من الأخطاء.</p></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 1 — عرّف عائلتك بالألمانية (8-12 جملة)</div><div class="wt-text">اكتب عن عائلتك الحقيقية باستخدام أدوات الملكية التي تعلمتها. استخدم جمل كاملة:</div><ul class="wt-list"><li>كم عدد أفراد عائلتك؟</li><li>أسماء أبيك وأمك ومهنتهما</li><li>هل لديك إخوة وأخوات؟ كم عددهم؟</li><li>هل تزوجت؟ هل لديك أطفال؟</li><li>أين يسكن أجدادك؟</li><li>أحد أفراد العائلة تحبه كثيراً — لماذا؟</li></ul><textarea class="wt-input" style="min-height:180px;" placeholder="Meine Familie ist... / Mein Vater heißt... und er ist... / Ich habe... Geschwister... / Meine Mutter wohnt in..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 2 — الجدول الكامل من الذاكرة</div><div class="wt-text">أغلق الملف وأكمل الجدول من الذاكرة — ثم افتح وتحقق من كل خانة.</div><textarea class="wt-input" style="min-height:220px;" placeholder="ich:   ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;du:    ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;er:    ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;sie:   ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;wir:   ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;ihr:   ___ Vater / ___ Mutter / ___ Kind / ___ Kinder&#10;sie/Sie: ___ Vater / ___ Mutter / ___ Kind / ___ Kinder"></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 3 — اكتب 3 حوارات قصيرة</div><div class="wt-text">اكتب حوار لكل موقف (4-5 أسطر) — استخدم أدوات الملكية وkein/keine:</div><ul class="wt-list"><li>حوار مع مدير جديد: "Haben Sie Familie hier?" (رسمي)</li><li>حوار مع صديق: "Wie groß ist deine Familie?" (عادي)</li><li>شرح لشخص لا تعرفه: "Das ist kein Bruder, das ist..." (نفي + تصحيح)</li></ul><textarea class="wt-input" style="min-height:200px;" placeholder="حوار 1 (رسمي):&#10;A: Haben Sie Familie hier in Deutschland?&#10;B: ...&#10;&#10;حوار 2 (عادي):&#10;A: Wie groß ist deine Familie?&#10;B: ...&#10;&#10;حوار 3 (نفي):&#10;A: Ist das dein Bruder?&#10;B: Nein, das ist kein Bruder..."></textarea></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">مصادر خاصة بموضوع العائلة والملكية</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German</div><div class="res-type">موقع + فيديو</div><div class="res-desc">Nicos Weg كاملاً مع تمارين — الحلقات 7-12 تتناول العائلة بشكل مباشر. افتح الحلقة في الموقع وافعل التمارين.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — Family Deck</div><div class="res-type">تطبيق تكرار</div><div class="res-desc">ابحث عن "German A1 Family Vocabulary" أو أنشئ deck خاص بك من مفردات Unit 04 — 80 كلمة في Anki = تثبيت مضمون.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Lingoni German</div><div class="res-type">قناة YouTube</div><div class="res-desc">قناة "Lingoni German" (سابقاً Learn German with Anja) — لديها فيديوهات ممتازة عن العائلة وأدوات الملكية. A1 Playlist متوفرة.</div></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Herr Antrim</div><div class="res-type">قناة YouTube</div><div class="res-desc">شرح مميز للقواعد بالإنجليزية — فيديو Possessivartikel واضح جداً. ابحث "Herr Antrim possessive pronouns A1".</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1 — Kapitel 4</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي لمعاهد Goethe — الفصل 4 يتناول العائلة والملكية بالتفصيل مع تمارين إضافية ومحادثات.</div></div>
+    <div class="res-card"><span class="res-icon">🎮</span><div class="res-name">Quizlet</div><div class="res-type">بطاقات تعليمية</div><div class="res-desc">ابحث عن "German Family Vocabulary A1" في Quizlet — ستجد عشرات المجموعات الجاهزة. ممتاز للمراجعة السريعة.</div><a class="res-link" href="https://quizlet.com" target="_blank">quizlet.com ←</a></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">بعد Unit 04 أنت جاهز لأول محادثة حقيقية عن العائلة! ابحث عن community tutor وابدأ: "Ich heiße... Meine Familie ist..."</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">10 دقائق يومياً كمراجعة خفيفة. مفيد بشكل خاص لمفردات العائلة لأن Duolingo يكررها كثيراً في مستوى A1.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بالساعات والفيديوهات</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">العائلة + المفردات</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Family Members) مع مهمة الاستماع</li><li class="vl">شاهد الفيديو 2 (Nicos Weg) مع مهمة الجمل</li><li>ادرس جداول أفراد العائلة — الأسرة النواة والممتدة</li><li>احفظ جنس كل اسم (der/die/das) مع الاسم</li><li>ادرس قسم المفردات الكاملة 80+</li><li>اقرأ الحوارات 1 و 2 بصوت عالٍ 3 مرات</li></ul><div class="day-time">⏱️ 2.5–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">أداة الملكية mein/meine</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 3 (Possessivartikel) — صرّف بصوت عالٍ</li><li>ادرس جدول الملكية الكامل — احفظ النمط</li><li>ادرس قسم الجملة مع الملكية + أمثلة</li><li>اقرأ الحوارات 3 و 4 بصوت عالٍ</li><li class="wl">مهمة الكتابة 2 (الجدول من الذاكرة)</li><li>حل تمارين 1 و 2 و 3</li></ul><div class="day-time">⏱️ 2.5–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">kein/keine + الثقافة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 4 (kein/keine) مع مهمة الكتابة</li><li>ادرس قسم النفي بـ kein — الجدول والأمثلة</li><li>ادرس قسم الثقافة + الأخطاء الشائعة</li><li>اقرأ الحوار 5 بصوت عالٍ</li><li class="wl">مهمة الكتابة 3 (3 حوارات)</li><li>حل تمارين 4 و 5 و 6</li></ul><div class="day-time">⏱️ 2.5–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">المحادثة + الكتابة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 5 (محادثة عائلية) وكرر كل جملة</li><li class="wl">مهمة الكتابة 1 (عرّف عائلتك — 12 جملة)</li><li>قُل كل جمل الكتابة بصوت عالٍ بعد كتابتها</li><li>ادرس الأخطاء الشائعة — تأكد لا تكررها</li><li>راجع الجدول الكامل — غطّه واختبر نفسك</li><li>أعد حل التمارين التي أخطأت فيها</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">مراجعة شاملة + اختبار</div><ul class="day-tasks"><li class="vl">شاهد 20 دقيقة من الفيديو 6 (Nicos Weg Full)</li><li>غطّ الجدول — صرّف أداة الملكية بدون نظر</li><li>أعد حل كل التمارين الـ 32 — هدف 29+</li><li>اقرأ جميع الحوارات بصوت عالٍ مع الترجمة</li><li>اختبر نفسك: قل 10 جمل عن عائلتك بدون نظر</li><li>✅ انتقل لـ Unit 05 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 05</div><p>انتقل لـ Unit 05 فقط إذا: ✅ تستطيع صرف أداة الملكية بدون نظر (مذكر/مؤنث/محايد/جمع) · ✅ تستطيع تسمية 15+ فرد عائلة بدون نظر · ✅ حصلت 29+/32 في التمارين · ✅ كتبت 8+ جمل عن عائلتك · ✅ تعرف متى kein ومتى nicht. إذا لم تحقق هذا — يوم سادس للمراجعة، وهذا طبيعي تماماً في وحدة بهذا المحتوى.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 04</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">العائلة · mein/meine · kein/keine · الملكية كاملة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · الخطوة الرابعة · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 05 ← الطعام والشراب · ein/eine · mögen · möchten · في المطعم</p>
+</footer>
+
+<script>
+const answers={1:'الأخت',2:'الجد',3:'die Kinder',4:'الوالدان (جمع)',5:'die Tante',6:'أعزب',7:'mein',8:'meine',9:'mein',10:'dein',11:'deine',12:'sein',13:'unsere',14:'unser',15:'eure',16:'euer',17:'ihre',18:'Ihr',19:'kein',20:'keine',21:'kein',22:'keine',23:'keine',24:'Das ist mein Vater.',25:'Ist das deine Tochter?',26:'عائلتي كبيرة',27:'خطأ — مؤنث: seine Schwester',28:'خطأ — الجمع: keine Kinder',29:'ابن أو بنت وحيدة',30:'Großmutter',31:'امرأة أو زوجة حسب السياق',32:'Familienname / Nachname'};
+const fb={1:{ok:'✅ die Schwester = الأخت',no:'❌ die Schwester = الأخت · die Mutter = الأم · die Tochter = البنت'},2:{ok:'✅ der Großvater = الجد',no:'❌ der Großvater = الجد · der Onkel = العم · der Vater = الأب'},3:{ok:'✅ جمع Kind = Kinder — بدون Umlaut',no:'❌ الجمع الصحيح = die Kinder (ليس Kinds أو Kindern)'},4:{ok:'✅ die Eltern = الوالدان — جمع فقط!',no:'❌ die Eltern = الوالدان (جمع لا مفرد — لا يوجد der Elter!)'},5:{ok:'✅ die Tante = العمة أو الخالة',no:'❌ مؤنث Onkel = die Tante · die Nichte = بنت الأخ'},6:{ok:'✅ ledig = أعزب',no:'❌ ledig = أعزب · verheiratet = متزوج · geschieden = مطلق'},7:{ok:'✅ Vater مذكر (der) → mein Vater — بدون e',no:'❌ الخطأ: Vater مذكر (der) → mein بدون e (مش meine)'},8:{ok:'✅ Mutter مؤنث (die) → meine Mutter — مع e',no:'❌ الخطأ: Mutter مؤنث (die) → meine مع e وليس mein'},9:{ok:'✅ Kind محايد (das) → mein Kind — مثل المذكر!',no:'❌ الخطأ: Kind محايد (das) → mein بدون e (مثل المذكر تماماً)'},10:{ok:'✅ du + مذكر → dein Bruder',no:'❌ du + مذكر (der Bruder) → dein بدون e'},11:{ok:'✅ du + مؤنث → deine Schwester — مع e',no:'❌ du + مؤنث (die Schwester) → deine مع e'},12:{ok:'✅ er + مذكر → sein Sohn',no:'❌ er + مذكر → sein (بدون e) · مؤنث → seine (مع e)'},13:{ok:'✅ wir + مؤنث → unsere Familie — مع e',no:'❌ wir + مؤنث (die Familie) → unsere مع e'},14:{ok:'✅ wir + مذكر → unser Vater — بدون e',no:'❌ wir + مذكر (der Vater) → unser بدون e'},15:{ok:'✅ ihr + مؤنث → eure Tochter — احذر: ليس euere!',no:'❌ ihr + مؤنث → eure (euer + e، يحذف الـ e الداخلية) — ليس euere!'},16:{ok:'✅ ihr + محايد → euer Kind — بدون e',no:'❌ ihr + محايد (das Kind) → euer بدون e (مثل المذكر)'},17:{ok:'✅ sie (هي) + مؤنث → ihre Tochter — مع e',no:'❌ sie (هي) + مؤنث → ihre مع e'},18:{ok:'✅ Sie رسمي → Ihr (I كبيرة دائماً!) + مذكر = Ihr',no:'❌ Sie رسمي → Ihr (I كبيرة) للمذكر · Ihre للمؤنث والجمع'},19:{ok:'✅ مذكر (der Bruder) → kein Bruder',no:'❌ مذكر (der) → kein بدون e · مؤنث (die) → keine مع e'},20:{ok:'✅ مؤنث (die Mutter) → keine Mutter — مع e',no:'❌ مؤنث (die Mutter) → keine مع e · مذكر → kein بدون e'},21:{ok:'✅ محايد (das Kind) → kein Kind — مثل المذكر',no:'❌ محايد (das Kind) → kein بدون e (مثل المذكر تماماً)'},22:{ok:'✅ الجمع دائماً → keine Geschwister',no:'❌ الجمع دائماً → keine مع e (مثل المؤنث)'},23:{ok:'✅ مؤنث (die Schwester) → keine',no:'❌ مؤنث → keine · لا تستخدم nicht لنفي الاسم!'},24:{ok:'✅ أبي = mein Vater — Vater مذكر → mein',no:'❌ Vater مذكر (der) → mein بدون e. الترتيب: أداة الملكية + الاسم'},25:{ok:'✅ Ist das deine Tochter? — السؤال: الفعل أولاً!',no:'❌ في السؤال: الفعل يأتي أولاً. Tochter مؤنث → deine مع e'},26:{ok:'✅ meine Familie ist groß = عائلتي كبيرة',no:'❌ Familie = عائلة · groß = كبير/كبيرة'},27:{ok:'✅ صحيح! خطأ — Schwester مؤنث → seine وليس sein',no:'❌ الجملة خاطئة — Schwester مؤنث (die) → يجب seine مع e'},28:{ok:'✅ صحيح! خطأ — الجمع → keine Kinder وليس kein',no:'❌ الجملة خاطئة — الجمع يستخدم دائماً keine مع e'},29:{ok:'✅ Einzelkind = einzig (وحيد) + Kind (طفل) = ابن/بنت وحيدة',no:'❌ Einzel = واحد فقط · Kind = طفل — ليس ابناً أكبر أو أصغر'},30:{ok:'✅ Oma الاسم العائلي لـ Großmutter الجدة',no:'❌ Oma = الجدة (Großmutter) · Opa = الجد (Großvater)'},31:{ok:'✅ die Frau متعددة المعاني: امرأة + زوجة — السياق يحدد',no:'❌ die Frau = امرأة أو زوجة حسب السياق — كلاهما صحيح'},32:{ok:'✅ الاسم العائلي = Familienname أو Nachname',no:'❌ Vorname = الاسم الأول · Familienname/Nachname = اسم العائلة · Spitzname = لقب'}};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q])return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct)b.classList.add('correct');
+    else if(b===btn&&!ok)b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1)msg='🏆 ممتاز مطلق! أتقنت Unit 04 كاملاً. انتقل لـ Unit 05 بثقة عالية!';
+  else if(pct>=0.9)msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل لـ Unit 05.';
+  else if(pct>=0.75)msg='👍 جيد جداً! راجع أقسام الملكية أو kein الضعيفة وأعد التمرين.';
+  else if(pct>=0.6)msg='⚠️ راجع جدول الملكية مع التركيز على مذكر/مؤنث/محايد وأعد.';
+  else msg='🔄 راجع الوحدة من البداية — ركز على الجدول والحوارات. لا تنتقل قبل 29+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>

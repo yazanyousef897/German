@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 05 — FULL | الطعام والشراب · mögen · ein/eine · der/die/das | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'05';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:540px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* article cards */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.art-card{background:var(--black);padding:1.5rem;text-align:center}
+.art-card.masc{border-top:3px solid var(--blue)}
+.art-card.fem{border-top:3px solid var(--red)}
+.art-card.neut{border-top:3px solid var(--green)}
+.art-gender{font-family:'Bebas Neue',sans-serif;font-size:3rem;line-height:1;margin-bottom:.3rem}
+.art-card.masc .art-gender{color:var(--blue)}
+.art-card.fem .art-gender{color:#ff6b6b}
+.art-card.neut .art-gender{color:var(--green)}
+.art-label{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.art-word{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.2rem;margin-top:.6rem}
+.art-ar{font-size:.72rem;color:var(--dim)}
+/* mögen/möchten columns */
+.mog-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.mog-col{background:var(--black);padding:1.8rem}
+.mog-verb{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;line-height:1;margin-bottom:.4rem}
+.mog-def{font-size:.82rem;color:var(--dim);line-height:1.7;margin-bottom:.8rem}
+/* conjugation table */
+.conj-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.conj-t th,.conj-t td{padding:.8rem 1.1rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.conj-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.conj-t tbody tr{transition:background .15s}
+.conj-t tbody tr:hover{background:var(--gray)}
+.ct-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.ct-v1{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.05rem;color:var(--green)}
+.ct-v2{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.05rem;color:var(--gold)}
+.ct-m{font-size:.8rem;color:var(--dim)}
+/* food grid */
+.food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.fi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.fi:hover{background:var(--gray)}
+.fi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.fi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.fi-art{font-size:.62rem;font-weight:700;margin-top:.1rem;letter-spacing:.06em}
+.fi-art.m{color:var(--blue)}.fi-art.f{color:#ff6b6b}.fi-art.n{color:var(--green)}.fi-art.pl{color:var(--purple)}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+/* dialogues */
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+/* restaurant phrase grid */
+.phrase-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.phrase-col{background:var(--black);padding:1.8rem}
+.ph-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.ph-item{padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.ph-item:last-child{border-bottom:none}
+.ph-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.ph-ar{font-size:.76rem;color:var(--dim)}
+.ph-note{font-size:.67rem;color:rgba(255,206,0,.5);margin-top:.1rem}
+/* satz boxes */
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-m{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-f{border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)}
+.sbox-n{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)}
+.sbox-neg{border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.06)}
+/* notes */
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+/* price table */
+.price-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.price-t th,.price-t td{padding:.8rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2);font-size:.85rem}
+.price-t thead th{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);background:var(--gray)}
+.price-t .pd{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--gold)}
+.price-t .pa{color:var(--dim)}
+/* patterns grid */
+.pattern-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pattern-col{background:var(--black);padding:1.6rem}
+.pat-h{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.pat-row{display:flex;gap:.8rem;align-items:flex-start;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.pat-row:last-child{border-bottom:none}
+.pat-key{font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:700;min-width:90px;flex-shrink:0}
+.pat-val{font-size:.76rem;color:var(--dim)}
+/* culture */
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+/* mistakes */
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+/* exercises */
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+/* writing */
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+/* resources */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+/* days */
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.phrase-grid,.mog-grid,.pattern-grid{grid-template-columns:1fr}.art-grid{grid-template-columns:1fr}.days-grid{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 05 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#food">الطعام</a></li>
+    <li><a href="#drinks">الشراب</a></li>
+    <li><a href="#artikel">المقالات</a></li>
+    <li><a href="#ein">ein/eine</a></li>
+    <li><a href="#moegen">mögen</a></li>
+    <li><a href="#restaurant">المطعم</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#kultur">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🟢 مبتدئ · Unit 05 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الطعام</span><span class="r" style="font-size:.6em;display:block;margin-top:.2rem">والشراب</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube · der/die/das كاملاً مع الطعام · ein/eine/kein في Akkusativ · mögen مقابل möchten · في المطعم والسوبر ماركت · الأسعار · 90+ مفردة · ثقافة ألمانية · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">90+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">4</span><span class="hm-label">حوارات</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — لا تشوف بدون مهمة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ كيف تستخدم الفيديوهات + ملاحظة مهمة</div><p>لا تشوف الفيديو وتكمل — هذا مضيعة وقت. لكل فيديو <strong style="color:var(--white)">مهمة استماع محددة</strong>. اكتب 3 كلمات طعام أو شراب سمعتها بعد كل فيديو. <strong style="color:var(--white)">إذا لم يعمل فيديو</strong> — ابحث في YouTube عن العنوان المذكور تحته بالضبط وستجده بسهولة.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/SfBxk_jx-Y8" title="Essen und Trinken A1 Deutsch Learn German" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German · A1 · Essen und Trinken</div><div class="video-title">مفردات الطعام والشراب — A1</div><div class="video-desc">درس A1 يغطي مفردات الطعام والشراب الأساسية مع النطق الصحيح. ابدأ به في اليوم الأول.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل كلمة طعام تسمعها — هدفك 15 كلمة على الأقل مع مقالها.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/lkDExzPgFSE" title="Nicos Weg im Supermarkt DW Learn German" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · im Supermarkt</div><div class="video-title">نيكو في السوبر ماركت</div><div class="video-desc">نيكو يتسوق في سوبر ماركت ألماني. ستسمع أسماء الطعام في سياق يومي طبيعي مع حوار حقيقي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> ما المنتجات التي يشتريها نيكو؟ اكتبها مع المقال (der/die/das).</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/7_jUkj3pGS8" title="mögen möchten German grammar A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · mögen vs möchten</div><div class="video-title">mögen مقابل möchten — الفرق الأساسي</div><div class="video-desc">درس قواعد مخصص لأهم فرق في هذه الوحدة. شاهده في اليوم الثاني بعد دراسة جدول التصريف.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب جملة بـ mögen وجملة بـ möchten من الفيديو.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/Kz-pCIfTijM" title="der die das German articles food A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · der/die/das Artikel</div><div class="video-title">المقالات der/die/das — دليلك الكامل</div><div class="video-desc">أصعب موضوع في الألمانية للعرب. الفيديو يشرح طريقة حفظ الجنس اللغوي مع أمثلة على الطعام.</div><div class="video-task"><strong>مهمة الاستماع:</strong> ما الحيلة التي يعطيها الفيديو لتذكر الجنس؟ اكتبها.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/q-7HoFMPV2s" title="Im Restaurant Deutsch A1 bestellen" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German · Im Restaurant</div><div class="video-title">في المطعم — طلب الطعام بالألمانية</div><div class="video-desc">درس كامل عن طلب الطعام والتعامل مع النادل. شاهده مع قسم المطعم في هذا الملف يوم 3.</div><div class="video-task"><strong>مهمة الاستماع:</strong> ما الجمل التي يقولها النادل؟ وما الجمل التي يقولها الزبون؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · الفيلم الكامل A1</div><div class="video-title">Nicos Weg — A1 كاملاً في فيلم واحد</div><div class="video-desc">ساعات من الألمانية الطبيعية. في اليوم الخامس: ابحث تحديداً عن مشاهد المطعم والتسوق.</div><div class="video-task"><strong>لليوم الخامس:</strong> ابحث عن مشاهد الأكل — اكتب كل جملة تفهمها من Unit 05.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- FOOD -->
+<section class="section" id="food">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الطعام — Essen</div><div class="sec-d">الفاكهة · الخضروات · الخبز والألبان · اللحوم · مواد أساسية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 القاعدة الذهبية — احفظ مع المقال دائماً</div><p>في الألمانية لا تحفظ كلمة بدون مقالها. ليس <code>Apfel</code> فقط — بل <code>der Apfel</code>. هذا سيوفر عليك وقتاً هائلاً لاحقاً. اللون يساعدك: <strong style="color:var(--blue)">أزرق = der مذكر</strong> · <strong style="color:#ff6b6b">أحمر = die مؤنث</strong> · <strong style="color:var(--green)">أخضر = das محايد</strong></p></div>
+  <p class="vst reveal">🍎 الفاكهة — Obst</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">der Apfel</div><div class="fi-ar">التفاحة</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Banane</div><div class="fi-ar">الموزة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Orange</div><div class="fi-ar">البرتقالة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Erdbeere</div><div class="fi-ar">حبة الفراولة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Kirsche</div><div class="fi-ar">حبة الكرز</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Birne</div><div class="fi-ar">الكمثرى</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Traube</div><div class="fi-ar">حبة العنب</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Mango</div><div class="fi-ar">المانجا</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Obst</div><div class="fi-ar">الفاكهة (مجمل)</div><div class="fi-art n">● محايد — das</div></div>
+  </div>
+  <p class="vst reveal">🥦 الخضروات — Gemüse</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">die Tomate</div><div class="fi-ar">الطماطمة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Kartoffel</div><div class="fi-ar">حبة البطاطا</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Zwiebel</div><div class="fi-ar">البصلة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Karotte</div><div class="fi-ar">الجزرة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">der Knoblauch</div><div class="fi-ar">الثوم</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Salat</div><div class="fi-ar">السلطة / الخس</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Paprika</div><div class="fi-ar">الفلفل الرومي</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">der Pilz</div><div class="fi-ar">الفطر</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">das Gemüse</div><div class="fi-ar">الخضروات (مجمل)</div><div class="fi-art n">● محايد — das</div></div>
+  </div>
+  <p class="vst reveal">🧀 خبز وألبان — Brot & Milchprodukte</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">das Brot</div><div class="fi-ar">الخبز</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Brötchen</div><div class="fi-ar">الخبزة الصغيرة</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Käse</div><div class="fi-ar">الجبن</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Butter</div><div class="fi-ar">الزبدة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Ei</div><div class="fi-ar">البيضة</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">die Eier (جمع)</div><div class="fi-ar">البيض</div><div class="fi-art pl">● جمع → die دائماً</div></div>
+    <div class="fi"><div class="fi-de">der Joghurt</div><div class="fi-ar">الزبادي / اللبن</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Sahne</div><div class="fi-ar">القشدة / الكريمة</div><div class="fi-art f">● مؤنث — die</div></div>
+  </div>
+  <p class="vst reveal">🥩 لحوم وأسماك — Fleisch & Fisch</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">das Fleisch</div><div class="fi-ar">اللحم</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Fisch</div><div class="fi-ar">السمك</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">das Hähnchen</div><div class="fi-ar">الدجاج</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">die Wurst</div><div class="fi-ar">النقانق / السجق</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Schnitzel</div><div class="fi-ar">الشنيتزل</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Aufschnitt</div><div class="fi-ar">اللحم البارد المقطع</div><div class="fi-art m">● مذكر — der</div></div>
+  </div>
+  <p class="vst reveal">🍝 مواد غذائية أساسية</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">der Reis</div><div class="fi-ar">الأرز</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Nudeln</div><div class="fi-ar">المكرونة</div><div class="fi-art pl">● جمع — die</div></div>
+    <div class="fi"><div class="fi-de">das Öl</div><div class="fi-ar">الزيت</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Salz</div><div class="fi-ar">الملح</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Zucker</div><div class="fi-ar">السكر</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Pfeffer</div><div class="fi-ar">الفلفل (بهار)</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Pizza</div><div class="fi-ar">البيتزا</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Eis</div><div class="fi-ar">الآيس كريم / الثلج</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Kuchen</div><div class="fi-ar">الكيك / الفطيرة</div><div class="fi-art m">● مذكر — der</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- DRINKS -->
+<section class="section" id="drinks">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الشراب — Getränke</div><div class="sec-d">ماء · قهوة · شاي · عصائر · مشروبات ألمانية خاصة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">☕ ثقافة المشروبات في ألمانيا</div><p>ألمانيا من الأولى في استهلاك <code>Kaffee</code> في أوروبا. <code>Mineralwasser</code> (بفقاعات) هو المياه الأكثر شيوعاً — قل <code>still bitte</code> إذا أردت بدون فقاعات. <code>Apfelschorle</code> (عصير تفاح مع مياه فوارة) = المشروب الشبابي الألماني المفضل.</p></div>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">das Wasser</div><div class="fi-ar">الماء</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Mineralwasser</div><div class="fi-ar">مياه معدنية (بفقاعات)</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Kaffee</div><div class="fi-ar">القهوة</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Tee</div><div class="fi-ar">الشاي</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Kakao</div><div class="fi-ar">الكاكاو / الشوكولاتة الساخنة</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Milch</div><div class="fi-ar">الحليب</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">der Saft</div><div class="fi-ar">العصير</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Orangensaft</div><div class="fi-ar">عصير البرتقال</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Apfelsaft</div><div class="fi-ar">عصير التفاح</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Apfelschorle</div><div class="fi-ar">عصير تفاح + مياه فوارة</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Limonade</div><div class="fi-ar">الليمونضة / غازي</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">die Cola</div><div class="fi-ar">الكولا</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Bier</div><div class="fi-ar">البيرة</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Wein</div><div class="fi-ar">النبيذ</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Espresso</div><div class="fi-ar">الإسبريسو</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">der Cappuccino</div><div class="fi-ar">الكابتشينو</div><div class="fi-art m">● مذكر — der</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ARTICLES -->
+<section class="section" id="artikel">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">المقالات — der · die · das</div><div class="sec-d">الجنس اللغوي + الأنماط التي تساعدك + لون لكل جنس</div></div></div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الحقيقة الصعبة</div><p>لا توجد قاعدة واحدة تحدد الجنس في الألمانية — يجب <strong style="color:var(--white)">حفظ كل كلمة مع مقالها</strong>. لكن توجد <strong style="color:var(--white)">أنماط تساعدك 70%</strong> من الوقت. الحل: تعلم الأنماط + احفظ الاستثناءات. والأهم: لا تيأس — حتى الألمان أنفسهم يخطئون أحياناً!</p></div>
+  <div class="art-grid reveal">
+    <div class="art-card masc">
+      <div class="art-gender">der</div>
+      <div class="art-label">مذكر — Maskulin</div>
+      <div class="art-word">der Kaffee</div><div class="art-ar">القهوة</div>
+      <div class="art-word">der Apfel</div><div class="art-ar">التفاح</div>
+      <div class="art-word">der Fisch</div><div class="art-ar">السمك</div>
+      <div class="art-word">der Reis</div><div class="art-ar">الأرز</div>
+      <div class="art-word">der Saft</div><div class="art-ar">العصير</div>
+    </div>
+    <div class="art-card fem">
+      <div class="art-gender">die</div>
+      <div class="art-label">مؤنث — Feminin</div>
+      <div class="art-word">die Milch</div><div class="art-ar">الحليب</div>
+      <div class="art-word">die Pizza</div><div class="art-ar">البيتزا</div>
+      <div class="art-word">die Tomate</div><div class="art-ar">الطماطم</div>
+      <div class="art-word">die Wurst</div><div class="art-ar">النقانق</div>
+      <div class="art-word">die Cola</div><div class="art-ar">الكولا</div>
+    </div>
+    <div class="art-card neut">
+      <div class="art-gender">das</div>
+      <div class="art-label">محايد — Neutrum</div>
+      <div class="art-word">das Brot</div><div class="art-ar">الخبز</div>
+      <div class="art-word">das Wasser</div><div class="art-ar">الماء</div>
+      <div class="art-word">das Fleisch</div><div class="art-ar">اللحم</div>
+      <div class="art-word">das Ei</div><div class="art-ar">البيضة</div>
+      <div class="art-word">das Bier</div><div class="art-ar">البيرة</div>
+    </div>
+  </div>
+  <p class="vst reveal">أنماط تساعدك — Muster (ليست قواعد مطلقة!)</p>
+  <div class="pattern-grid reveal">
+    <div class="pattern-col">
+      <div class="pat-h" style="color:var(--blue)">عادةً مذكر — der</div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--blue)">-er النهاية</span><span class="pat-val">der Apfelsaft · der Computer</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--blue)">الأيام + الأشهر</span><span class="pat-val">der Montag · der Januar · der Winter</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--blue)">معظم مشروبات</span><span class="pat-val">der Kaffee · der Tee · der Saft · der Wein</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--blue)">-ig · -ling</span><span class="pat-val">der Essig · der Frühling</span></div>
+    </div>
+    <div class="pattern-col">
+      <div class="pat-h" style="color:#ff6b6b">عادةً مؤنث — die</div>
+      <div class="pat-row"><span class="pat-key" style="color:#ff6b6b">ينتهي بـ -e</span><span class="pat-val">die Tomate · die Banane · die Limonade</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:#ff6b6b">-ung · -heit</span><span class="pat-val">die Bestellung · die Gesundheit</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:#ff6b6b">-schaft · -keit</span><span class="pat-val">die Wirtschaft · die Möglichkeit</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:#ff6b6b">الجمع → die</span><span class="pat-val">die Äpfel · die Brötchen · die Eier</span></div>
+    </div>
+  </div>
+  <div style="background:var(--black);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.5rem;" class="reveal">
+    <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--green);margin-bottom:1rem;">عادةً محايد — das</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem">
+      <div class="pat-row"><span class="pat-key" style="color:var(--green)">-chen · -lein</span><span class="pat-val">das Brötchen · das Fräulein</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--green)">-ment · -um</span><span class="pat-val">das Restaurant · das Datum</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--green)">أسماء المصادر</span><span class="pat-val">das Essen · das Trinken · das Leben</span></div>
+      <div class="pat-row"><span class="pat-key" style="color:var(--green)">الألوان + اللغات</span><span class="pat-val">das Blau · das Arabisch</span></div>
+    </div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🧠 نصيحة الذاكرة</div><p>اربط لوناً بكل جنس عند الحفظ: تخيل الكلمة بلونها. <strong style="color:var(--blue)">der = أزرق</strong> · <strong style="color:#ff6b6b">die = أحمر</strong> · <strong style="color:var(--green)">das = أخضر</strong>. في Anki استخدم بطاقات ملوّنة. هذه الطريقة تضاعف سرعة الحفظ. والخبر الجيد: <strong style="color:var(--white)">الألمان يفهمونك حتى لو أخطأت في الجنس</strong> — لا تتوقف عن الكلام بسببه.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EIN/EINE -->
+<section class="section" id="ein">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">ein · eine · kein — النكرة والنفي</div><div class="sec-d">بعد möchten يأتي Akkusativ — المذكر فقط يتغير!</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 القاعدة الذهبية</div><p>بعد <code>möchten</code> يأتي المفعول به في <strong style="color:var(--white)">Akkusativ</strong>. التغيير الوحيد: <strong style="color:var(--blue)">ein مذكر ← يتحول إلى einen</strong>. المؤنث <code>eine</code> والمحايد <code>ein</code> لا يتغيران أبداً في Akkusativ.</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="conj-t">
+      <thead><tr><th>الجنس</th><th>المقال المعرفة</th><th>نكرة Nominativ</th><th>نكرة Akkusativ — بعد möchten</th><th>نفي Akkusativ</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--blue);font-weight:700">مذكر</td><td style="font-family:JetBrains Mono,monospace;color:var(--blue)">der</td><td style="font-family:JetBrains Mono,monospace;color:var(--white)">ein</td><td style="font-family:JetBrains Mono,monospace;font-weight:700;color:var(--gold)">einen ⚠️ يتغير!</td><td style="font-family:JetBrains Mono,monospace;color:#ff6b6b">keinen</td></tr>
+        <tr><td style="color:#ff6b6b;font-weight:700">مؤنث</td><td style="font-family:JetBrains Mono,monospace;color:#ff6b6b">die</td><td style="font-family:JetBrains Mono,monospace;color:var(--white)">eine</td><td style="font-family:JetBrains Mono,monospace;font-weight:700;color:var(--green)">eine ✓ لا يتغير</td><td style="font-family:JetBrains Mono,monospace;color:#ff6b6b">keine</td></tr>
+        <tr><td style="color:var(--green);font-weight:700">محايد</td><td style="font-family:JetBrains Mono,monospace;color:var(--green)">das</td><td style="font-family:JetBrains Mono,monospace;color:var(--white)">ein</td><td style="font-family:JetBrains Mono,monospace;font-weight:700;color:var(--green)">ein ✓ لا يتغير</td><td style="font-family:JetBrains Mono,monospace;color:#ff6b6b">kein</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">أمثلة — مذكر (einen) · الأكثر أهمية!</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">möchte</span><span class="sbox sbox-m">einen</span><span class="sbox sbox-rest">Kaffee.</span><span class="sbox-ar">أريد قهوة. (Kaffee مذكر → einen)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">möchte</span><span class="sbox sbox-m">einen</span><span class="sbox sbox-rest">Tee.</span><span class="sbox-ar">هو يريد شاياً. (Tee مذكر → einen)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">mag</span><span class="sbox sbox-neg">keinen</span><span class="sbox sbox-rest">Fisch.</span><span class="sbox-ar">لا أحب السمك. (Fisch مذكر → keinen)</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">أمثلة — مؤنث ومحايد (لا يتغيران)</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">möchte</span><span class="sbox sbox-f">eine</span><span class="sbox sbox-rest">Pizza.</span><span class="sbox-ar">أريد بيتزا. (Pizza مؤنث → eine)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">möchte</span><span class="sbox sbox-n">ein</span><span class="sbox sbox-rest">Wasser.</span><span class="sbox-ar">أريد ماء. (Wasser محايد → ein)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">mag</span><span class="sbox sbox-neg">keine</span><span class="sbox sbox-rest">Milch.</span><span class="sbox-ar">هي لا تحب الحليب. (Milch مؤنث → keine)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">mag</span><span class="sbox sbox-neg">kein</span><span class="sbox sbox-rest">Fleisch.</span><span class="sbox-ar">لا أحب اللحم. (Fleisch محايد → kein)</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الخطأ الأكثر شيوعاً في هذه الوحدة</div><p>الطلاب يكتبون: <code>Ich möchte ein Kaffee</code> ❌ — الصحيح: <code>Ich möchte einen Kaffee</code> ✅ لأن Kaffee مذكر والمفعول به بعد möchten = Akkusativ. <strong style="color:var(--white)">تذكر: المذكر فقط هو الذي يتغير!</strong></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- MÖGEN/MÖCHTEN -->
+<section class="section" id="moegen">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">mögen · möchten — أحب / أريد</div><div class="sec-d">الفرق الأساسي + التصريف الكامل + الاستخدام الصحيح</div></div></div>
+  <div class="mog-grid reveal">
+    <div class="mog-col">
+      <div style="font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--green);margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2);">mögen — للتفضيل العام</div>
+      <div class="mog-verb" style="color:var(--green)">MÖGEN</div>
+      <div class="mog-def">للتعبير عن <strong style="color:var(--white)">التفضيل العام</strong> — شيء تحبه بشكل دائم وليس طلباً الآن.<br><br>مثال: أنا أحب القهوة بشكل عام →<br><strong style="color:var(--green)">Ich mag Kaffee.</strong><br><br>هل تحب البيتزا؟ →<br><strong style="color:var(--green)">Magst du Pizza?</strong></div>
+    </div>
+    <div class="mog-col">
+      <div style="font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2);">möchten — للطلب المهذب</div>
+      <div class="mog-verb" style="color:var(--gold)">MÖCHTEN</div>
+      <div class="mog-def">للتعبير عن <strong style="color:var(--white)">طلب مهذب الآن</strong> — أريد هذا الشيء في هذه اللحظة.<br><br>مثال: أريد قهوة الآن من فضلك →<br><strong style="color:var(--gold)">Ich möchte einen Kaffee.</strong><br><br>هل تريد كيكاً؟ →<br><strong style="color:var(--gold)">Möchtest du einen Kuchen?</strong></div>
+    </div>
+  </div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="conj-t">
+      <thead><tr><th>الضمير</th><th style="color:var(--green)">mögen (أحب)</th><th style="color:var(--gold)">möchten (أريد)</th><th>المعنى</th></tr></thead>
+      <tbody>
+        <tr><td class="ct-p">ich</td><td class="ct-v1">mag</td><td class="ct-v2">möchte</td><td class="ct-m">أنا</td></tr>
+        <tr><td class="ct-p">du</td><td class="ct-v1">magst</td><td class="ct-v2">möchtest</td><td class="ct-m">أنت</td></tr>
+        <tr><td class="ct-p">er / sie / es</td><td class="ct-v1">mag</td><td class="ct-v2">möchte</td><td class="ct-m">هو / هي / هو</td></tr>
+        <tr><td class="ct-p">wir</td><td class="ct-v1">mögen</td><td class="ct-v2">möchten</td><td class="ct-m">نحن</td></tr>
+        <tr><td class="ct-p">ihr</td><td class="ct-v1">mögt</td><td class="ct-v2">möchtet</td><td class="ct-m">أنتم</td></tr>
+        <tr><td class="ct-p">sie / Sie</td><td class="ct-v1">mögen</td><td class="ct-v2">möchten</td><td class="ct-m">هم / حضرتك</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">المقارنة في جمل حقيقية</div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)">Ich mag</span><span class="sbox sbox-rest">Kaffee.</span><span class="sbox-ar">أنا أحب القهوة. ← عام وثابت</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Ich möchte</span><span class="sbox sbox-m">einen</span><span class="sbox sbox-rest">Kaffee.</span><span class="sbox-ar">أريد قهوة الآن. ← طلب الآن</span></div>
+    <div class="satz-row"><span class="sbox" style="border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)">Magst du</span><span class="sbox sbox-rest">Pizza?</span><span class="sbox-ar">هل تحب البيتزا بشكل عام؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Möchtest du</span><span class="sbox sbox-f">eine</span><span class="sbox sbox-rest">Pizza?</span><span class="sbox-ar">هل تريد بيتزا الآن؟</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ Ich will مقابل Ich möchte</div><p><code>Ich will Kaffee</code> = صحيح نحوياً لكنه مباشر جداً وقد يبدو فظاً في المطعم أو مع الغرباء. في المواقف الرسمية والمطاعم: <strong style="color:var(--white)">Ich möchte دائماً</strong>. "Ich will" مناسب مع الأصدقاء المقربين جداً أو العائلة.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESTAURANT -->
+<section class="section" id="restaurant">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">في المطعم — Im Restaurant</div><div class="sec-d">عبارات النادل والزبون · الأسعار · 4 حوارات كاملة</div></div></div>
+  <div class="phrase-grid reveal">
+    <div class="phrase-col">
+      <div class="ph-h" style="color:var(--gold)">النادل يقول — Kellner / Kellnerin</div>
+      <div class="ph-item"><div class="ph-de">Guten Abend! Haben Sie reserviert?</div><div class="ph-ar">مساء الخير! هل عندكم حجز؟</div></div>
+      <div class="ph-item"><div class="ph-de">Was darf es sein?</div><div class="ph-ar">بكيفك / ماذا تأخذ؟</div><div class="ph-note">الجملة الأكثر شيوعاً من النادل</div></div>
+      <div class="ph-item"><div class="ph-de">Möchten Sie die Speisekarte?</div><div class="ph-ar">هل تريد قائمة الطعام؟</div></div>
+      <div class="ph-item"><div class="ph-de">Haben Sie schon gewählt?</div><div class="ph-ar">هل اخترتم بعد؟</div></div>
+      <div class="ph-item"><div class="ph-de">Zusammen oder getrennt?</div><div class="ph-ar">مع بعض أو كل يدفع حسابه؟</div></div>
+      <div class="ph-item"><div class="ph-de">Guten Appetit!</div><div class="ph-ar">بالعافية / صحتين!</div></div>
+      <div class="ph-item"><div class="ph-de">Hat es geschmeckt?</div><div class="ph-ar">كان الطعام لذيذاً؟</div></div>
+    </div>
+    <div class="phrase-col">
+      <div class="ph-h" style="color:var(--blue)">الزبون يقول — Gast</div>
+      <div class="ph-item"><div class="ph-de">Die Speisekarte bitte!</div><div class="ph-ar">القائمة من فضلك!</div></div>
+      <div class="ph-item"><div class="ph-de">Ich möchte gern...</div><div class="ph-ar">أريد بكل سرور...</div><div class="ph-note">gern يجعلها أكثر أدباً وطبيعية</div></div>
+      <div class="ph-item"><div class="ph-de">Für mich bitte einen Kaffee.</div><div class="ph-ar">لي من فضلك قهوة.</div></div>
+      <div class="ph-item"><div class="ph-de">Was empfehlen Sie?</div><div class="ph-ar">ماذا تنصحني؟</div></div>
+      <div class="ph-item"><div class="ph-de">Das schmeckt sehr gut!</div><div class="ph-ar">هذا لذيذ جداً!</div></div>
+      <div class="ph-item"><div class="ph-de">Die Rechnung bitte!</div><div class="ph-ar">الحساب من فضلك!</div></div>
+      <div class="ph-item"><div class="ph-de">Kann ich mit Karte zahlen?</div><div class="ph-ar">هل أستطيع الدفع ببطاقة؟</div></div>
+    </div>
+  </div>
+  <p class="vst reveal">الأسعار — Preise</p>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="price-t">
+      <thead><tr><th>الجملة الألمانية</th><th>المعنى</th><th>مثال</th></tr></thead>
+      <tbody>
+        <tr><td class="pd">Das kostet...</td><td class="pa">هذا يكلف...</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Das kostet zwei Euro.</td></tr>
+        <tr><td class="pd">Wie viel kostet...?</td><td class="pa">كم يكلف...؟</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Wie viel kostet der Kaffee?</td></tr>
+        <tr><td class="pd">Das macht ... Euro.</td><td class="pa">المجموع ... يورو.</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Das macht 8,50 Euro.</td></tr>
+        <tr><td class="pd">teuer / günstig / billig</td><td class="pa">غالي / مناسب / رخيص</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Das ist zu teuer!</td></tr>
+        <tr><td class="pd">umsonst / gratis</td><td class="pa">مجاناً</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Das Wasser ist gratis.</td></tr>
+        <tr><td class="pd">zurück</td><td class="pa">باقي (من المبلغ)</td><td style="font-family:JetBrains Mono,monospace;font-size:.82rem;color:var(--dim)">Hier sind 3 Euro zurück.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="vst reveal">حوارات نموذجية — 4 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في مقهى (Café) — طلب بسيط</div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Guten Morgen! Was darf es sein?</div><div class="dl-ar">صباح الخير! ماذا تأخذ؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Guten Morgen! Ich möchte gern einen Kaffee und ein Brötchen bitte.</div><div class="dl-ar">صباح الخير! أريد قهوة وخبزة صغيرة من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Gerne! Mit Milch oder ohne?</div><div class="dl-ar">بكل سرور! مع حليب أو بدون؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Mit Milch bitte. Wie viel kostet das?</div><div class="dl-ar">مع حليب من فضلك. كم يكلف هذا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Das macht 3,50 Euro bitte.</div><div class="dl-ar">المجموع 3.50 يورو من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Danke schön!</div><div class="dl-ar">شكراً جزيلاً!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — في مطعم — عشاء كامل</div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Guten Abend! Haben Sie reserviert?</div><div class="dl-ar">مساء الخير! هل عندكم حجز؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Ja, für zwei Personen. Auf den Namen Schmidt.</div><div class="dl-ar">نعم، لشخصين. باسم شميت.</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Bitte hier entlang! Möchten Sie die Speisekarte?</div><div class="dl-ar">تفضل من هنا! هل تريد القائمة؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Ja bitte. Was empfehlen Sie heute?</div><div class="dl-ar">نعم من فضلك. ماذا تنصحني اليوم؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Das Schnitzel mit Kartoffeln ist heute sehr gut!</div><div class="dl-ar">الشنيتزل مع البطاطا اليوم ممتاز!</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Gut! Ich möchte das Schnitzel und ein Mineralwasser bitte.</div><div class="dl-ar">تمام! أريد الشنيتزل ومياه معدنية من فضلك.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — طلب الحساب والدفع</div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Entschuldigung! Die Rechnung bitte!</div><div class="dl-ar">عذراً! الحساب من فضلك!</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Natürlich! Das macht 22 Euro. Zusammen oder getrennt?</div><div class="dl-ar">بالطبع! المجموع 22 يورو. مع بعض أو منفصلين؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Zusammen bitte. Hier sind 25 Euro.</div><div class="dl-ar">مع بعض من فضلك. هذه 25 يورو.</div></div></div>
+    <div class="dl"><span class="sp sp-b">K</span><div><div class="dl-de">Danke schön! Hier sind 3 Euro zurück.</div><div class="dl-ar">شكراً جزيلاً! هذه 3 يورو باقي.</div></div></div>
+    <div class="dl"><span class="sp sp-a">G</span><div><div class="dl-de">Danke! Das Essen war sehr gut!</div><div class="dl-ar">شكراً! الأكل كان لذيذاً جداً!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — في السوبر ماركت</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Entschuldigung! Wo ist die Milch bitte?</div><div class="dl-ar">عذراً! أين الحليب من فضلك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Die Milch ist im Gang 3, links.</div><div class="dl-ar">الحليب في الممر 3، يسار.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Danke! Und wo ist das Brot?</div><div class="dl-ar">شكراً! وأين الخبز؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Das Brot ist dort hinten, neben der Kasse.</div><div class="dl-ar">الخبز هناك في الخلف، بجانب الكاشير.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wie viel kostet dieser Käse?</div><div class="dl-ar">كم يكلف هذا الجبن؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Das kostet 2,99 Euro das Stück.</div><div class="dl-ar">يكلف 2.99 يورو القطعة.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">مفردات إضافية — Zusatzwortschatz</div><div class="sec-d">أفعال + صفات + مفردات المطعم + الوجبات</div></div></div>
+  <p class="vst reveal">أفعال الأكل والشراب والتسوق</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">essen (er isst)</div><div class="fi-ar">يأكل</div><div class="fi-art" style="color:var(--purple)">⚠️ غير منتظم!</div></div>
+    <div class="fi"><div class="fi-de">trinken</div><div class="fi-ar">يشرب</div></div>
+    <div class="fi"><div class="fi-de">kochen</div><div class="fi-ar">يطبخ</div></div>
+    <div class="fi"><div class="fi-de">bestellen</div><div class="fi-ar">يطلب (في مطعم)</div></div>
+    <div class="fi"><div class="fi-de">bezahlen</div><div class="fi-ar">يدفع</div></div>
+    <div class="fi"><div class="fi-de">schmecken</div><div class="fi-ar">له مذاق / يطعم</div></div>
+    <div class="fi"><div class="fi-de">probieren</div><div class="fi-ar">يجرب / يتذوق</div></div>
+    <div class="fi"><div class="fi-de">kaufen</div><div class="fi-ar">يشتري</div></div>
+    <div class="fi"><div class="fi-de">einkaufen</div><div class="fi-ar">يتسوق (فعل يفصل)</div></div>
+    <div class="fi"><div class="fi-de">empfehlen</div><div class="fi-ar">ينصح / يوصي</div></div>
+  </div>
+  <p class="vst reveal">صفات وصف الطعام</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">lecker</div><div class="fi-ar">لذيذ / شهي</div></div>
+    <div class="fi"><div class="fi-de">süß</div><div class="fi-ar">حلو</div></div>
+    <div class="fi"><div class="fi-de">salzig</div><div class="fi-ar">مالح</div></div>
+    <div class="fi"><div class="fi-de">sauer</div><div class="fi-ar">حامض</div></div>
+    <div class="fi"><div class="fi-de">bitter</div><div class="fi-ar">مر</div></div>
+    <div class="fi"><div class="fi-de">scharf</div><div class="fi-ar">حار</div></div>
+    <div class="fi"><div class="fi-de">frisch</div><div class="fi-ar">طازج</div></div>
+    <div class="fi"><div class="fi-de">heiß / kalt</div><div class="fi-ar">ساخن / بارد</div></div>
+    <div class="fi"><div class="fi-de">warm</div><div class="fi-ar">دافئ</div></div>
+    <div class="fi"><div class="fi-de">vegetarisch</div><div class="fi-ar">نباتي</div></div>
+    <div class="fi"><div class="fi-de">vegan</div><div class="fi-ar">نباتي كامل</div></div>
+    <div class="fi"><div class="fi-de">ohne Alkohol</div><div class="fi-ar">بدون كحول</div></div>
+  </div>
+  <p class="vst reveal">مفردات المطعم والسوبر ماركت</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">die Speisekarte</div><div class="fi-ar">قائمة الطعام</div><div class="fi-art f">● مؤنث</div></div>
+    <div class="fi"><div class="fi-de">die Rechnung</div><div class="fi-ar">الحساب / الفاتورة</div><div class="fi-art f">● مؤنث</div></div>
+    <div class="fi"><div class="fi-de">das Trinkgeld</div><div class="fi-ar">البقشيش</div><div class="fi-art n">● محايد</div></div>
+    <div class="fi"><div class="fi-de">der Kellner / die Kellnerin</div><div class="fi-ar">النادل / النادلة</div><div class="fi-art m">● مذكر/مؤنث</div></div>
+    <div class="fi"><div class="fi-de">das Restaurant</div><div class="fi-ar">المطعم</div><div class="fi-art n">● محايد</div></div>
+    <div class="fi"><div class="fi-de">das Café</div><div class="fi-ar">المقهى</div><div class="fi-art n">● محايد</div></div>
+    <div class="fi"><div class="fi-de">die Bäckerei</div><div class="fi-ar">المخبز</div><div class="fi-art f">● مؤنث</div></div>
+    <div class="fi"><div class="fi-de">der Supermarkt</div><div class="fi-ar">السوبر ماركت</div><div class="fi-art m">● مذكر</div></div>
+    <div class="fi"><div class="fi-de">die Kasse</div><div class="fi-ar">الكاشير / الصندوق</div><div class="fi-art f">● مؤنث</div></div>
+    <div class="fi"><div class="fi-de">der Preis</div><div class="fi-ar">السعر</div><div class="fi-art m">● مذكر</div></div>
+    <div class="fi"><div class="fi-de">das Stück</div><div class="fi-ar">القطعة</div><div class="fi-art n">● محايد</div></div>
+    <div class="fi"><div class="fi-de">das Kilo / das Gramm</div><div class="fi-ar">الكيلو / الغرام</div><div class="fi-art n">● محايد</div></div>
+  </div>
+  <p class="vst reveal">الوجبات اليومية — Mahlzeiten</p>
+  <div class="food-grid reveal">
+    <div class="fi"><div class="fi-de">das Frühstück</div><div class="fi-ar">الفطور</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Mittagessen</div><div class="fi-ar">الغداء</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Abendessen</div><div class="fi-ar">العشاء</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">das Abendbrot</div><div class="fi-ar">عشاء خفيف (خبز)</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">der Nachtisch</div><div class="fi-ar">الديسير / الحلويات</div><div class="fi-art m">● مذكر — der</div></div>
+    <div class="fi"><div class="fi-de">die Vorspeise</div><div class="fi-ar">المقبلات / الفاتح</div><div class="fi-art f">● مؤنث — die</div></div>
+    <div class="fi"><div class="fi-de">das Hauptgericht</div><div class="fi-ar">الطبق الرئيسي</div><div class="fi-art n">● محايد — das</div></div>
+    <div class="fi"><div class="fi-de">die Beilage</div><div class="fi-ar">الطبق الجانبي</div><div class="fi-art f">● مؤنث — die</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE -->
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">ثقافة الطعام — Esskultur</div><div class="sec-d">عادات ألمانية + أشياء تُفاجئك + أخطاء شائعة</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">☕</span><div class="cc-title">Kaffee und Kuchen</div><div class="cc-text">تقليد ألماني أسبوعي راسخ: حوالي الساعة 3 مساءً يجتمع الناس لشرب القهوة مع الكيك — خاصة أيام الأحد. مثل "وقت الشاي" الإنجليزي لكن بكيك منزلي!</div></div>
+    <div class="culture-card"><span class="cc-icon">🍞</span><div class="cc-title">das Frühstück الألماني</div><div class="cc-text">الفطور الألماني مختلف تماماً: خبز (Brot أو Brötchen) مع جبن (Käse) أو نقانق (Wurst) أو مربى (Marmelade) وبيض. ليس حلواً كالفطور الأمريكي.</div></div>
+    <div class="culture-card"><span class="cc-icon">💰</span><div class="cc-title">Trinkgeld — البقشيش</div><div class="cc-text">في ألمانيا البقشيش 5–10% وليس 20% كأمريكا. الطريقة الشائعة: أخبر النادل بالمبلغ المراد دفعه — "25 bitte" إذا كان الحساب 22 يورو وتريد إعطاء 3 يورو بقشيش.</div></div>
+    <div class="culture-card"><span class="cc-icon">🍺</span><div class="cc-title">Prost! و Guten Appetit!</div><div class="cc-text">"Prost!" عند رفع الكأس — انظر في عيون الشخص الآخر! حسب الاعتقاد الشعبي من لا ينظر يكون عنده سبع سنين سوء حظ. "Guten Appetit!" قبل البدء بالأكل.</div></div>
+    <div class="culture-card"><span class="cc-icon">💳</span><div class="cc-title">Barzahlung — الدفع نقداً</div><div class="cc-text">كثير من المطاعم والمتاجر الصغيرة في ألمانيا لا تقبل البطاقات — خاصة خارج المدن الكبرى. دائماً اسأل "Kann ich mit Karte zahlen?" أو احتفظ بنقود (Bargeld) معك.</div></div>
+    <div class="culture-card"><span class="cc-icon">🥨</span><div class="cc-title">Bier und Brezel — بافاريا</div><div class="cc-text">جنوب ألمانيا (Bayern) شهير بـ Brezel (الكعكة المعقودة) وWeißwurst (النقانق البيضاء تؤكل صباحاً فقط!) وHefeweiß (بيرة القمح). الأكل البافاري مختلف عن باقي ألمانيا.</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — Häufige Fehler</p>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich möchte ein Kaffee.</div><div class="mi-explain">Kaffee مذكر + Akkusativ = einen وليس ein</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich möchte einen Kaffee.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich will Wasser bitte.</div><div class="mi-explain">Ich will مباشر وقد يبدو فظاً مع الغرباء</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich möchte ein Wasser bitte.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Das Kellner kommt.</div><div class="mi-explain">Kellner مذكر — der وليس das</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Der Kellner kommt.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich mag einen Kaffee. (طلب في مطعم)</div><div class="mi-explain">mag = أحب (عام) · للطلب الآن: möchte</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich möchte einen Kaffee.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Das ist billig! (إطراء للسعر)</div><div class="mi-explain">billig = رخيص وقد يبدو إهانة للجودة</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Das ist günstig! (مناسب السعر — إيجابي)</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Der Pizza ist lecker.</div><div class="mi-explain">Pizza مؤنث — die Pizza وليس der</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Die Pizza ist lecker.</div></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">التمارين — Übungen</div><div class="sec-d">32 سؤال في 6 كتل — هدفك 28+ للانتقال لـ Unit 06</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ تعليمات التمارين</div><p>حل التمارين بدون النظر للملف. اقرأ كل سؤال وفكّر قبل الاختيار. ستظهر تغذية راجعة فورية بعد كل إجابة. هدفك <strong style="color:var(--white)">28 من 32</strong> قبل الانتقال لـ Unit 06.</p></div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — المقالات der/die/das (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">___ Kaffee — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="1" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="1" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">___ Milch — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="2" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="2" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">___ Brot — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="3" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="3" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">___ Apfel — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="4" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="4" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">___ Pizza — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="5" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="5" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">___ Wasser — ما المقال الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="6" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="6" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — ein/eine/einen/kein (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich möchte ___ Kaffee. (Kaffee = مذكر، بعد möchten = Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="7" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="7" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich möchte ___ Pizza. (Pizza = مؤنث)</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="8" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="8" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich möchte ___ Bier. (Bier = محايد)</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="9" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="9" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich mag ___ Fisch. (Fisch = مذكر، نفي)</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="keinen" onclick="check(this)">keinen</button><button class="ex-btn" data-q="10" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="10" data-a="kein" onclick="check(this)">kein</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich mag ___ Milch. (Milch = مؤنث، نفي)</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="keinen" onclick="check(this)">keinen</button><button class="ex-btn" data-q="11" data-a="keine" onclick="check(this)">keine</button><button class="ex-btn" data-q="11" data-a="kein" onclick="check(this)">kein</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich möchte ___ Wasser. (Wasser = محايد)</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="12" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="12" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — mögen مقابل möchten (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"أنا أحب القهوة بشكل عام" — أي فعل تستخدم؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="mögen" onclick="check(this)">mögen</button><button class="ex-btn" data-q="13" data-a="möchten" onclick="check(this)">möchten</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"أريد قهوة من فضلك" في المقهى — أي فعل تستخدم؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="mögen" onclick="check(this)">mögen</button><button class="ex-btn" data-q="14" data-a="möchten" onclick="check(this)">möchten</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ich ___ Kaffee. (mögen، أنا)</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="mag" onclick="check(this)">mag</button><button class="ex-btn" data-q="15" data-a="magst" onclick="check(this)">magst</button><button class="ex-btn" data-q="15" data-a="mögen" onclick="check(this)">mögen</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">du ___ Milch? (mögen، أنت)</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="mag" onclick="check(this)">mag</button><button class="ex-btn" data-q="16" data-a="magst" onclick="check(this)">magst</button><button class="ex-btn" data-q="16" data-a="mögen" onclick="check(this)">mögen</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">er ___ einen Tee. (möchten، هو)</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="möchte" onclick="check(this)">möchte</button><button class="ex-btn" data-q="17" data-a="möchtest" onclick="check(this)">möchtest</button><button class="ex-btn" data-q="17" data-a="möchten" onclick="check(this)">möchten</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">wir ___ Pizza. (mögen، نحن)</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="mag" onclick="check(this)">mag</button><button class="ex-btn" data-q="18" data-a="mögen" onclick="check(this)">mögen</button><button class="ex-btn" data-q="18" data-a="mögt" onclick="check(this)">mögt</button></div><div class="ex-fb" id="f18"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — في المطعم (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "قائمة الطعام" في الألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="die Speisekarte" onclick="check(this)">die Speisekarte</button><button class="ex-btn" data-q="19" data-a="das Menü" onclick="check(this)">das Menü</button><button class="ex-btn" data-q="19" data-a="die Liste" onclick="check(this)">die Liste</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تطلب الحساب بطريقة صحيحة؟</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="Die Rechnung bitte!" onclick="check(this)">Die Rechnung bitte!</button><button class="ex-btn" data-q="20" data-a="Das Geld bitte!" onclick="check(this)">Das Geld bitte!</button><button class="ex-btn" data-q="20" data-a="Ich zahle jetzt!" onclick="check(this)">Ich zahle jetzt!</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Guten Appetit!"؟</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="بالعافية!" onclick="check(this)">بالعافية!</button><button class="ex-btn" data-q="21" data-a="الطعام جاهز!" onclick="check(this)">الطعام جاهز!</button><button class="ex-btn" data-q="21" data-a="أهلاً وسهلاً!" onclick="check(this)">أهلاً وسهلاً!</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Zusammen oder getrennt?"؟</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="مع بعض أو منفصلين؟" onclick="check(this)">مع بعض أو منفصلين؟</button><button class="ex-btn" data-q="22" data-a="حار أو بارد؟" onclick="check(this)">حار أو بارد؟</button><button class="ex-btn" data-q="22" data-a="هنا أو للخارج؟" onclick="check(this)">هنا أو للخارج؟</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Das schmeckt sehr gut!"؟</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="هذا لذيذ جداً!" onclick="check(this)">هذا لذيذ جداً!</button><button class="ex-btn" data-q="23" data-a="هذا كثير جداً!" onclick="check(this)">هذا كثير جداً!</button><button class="ex-btn" data-q="23" data-a="هذا غالي جداً!" onclick="check(this)">هذا غالي جداً!</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Was darf es sein?" يقولها النادل؟</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="بكيفك / ماذا تأخذ؟" onclick="check(this)">بكيفك / ماذا تأخذ؟</button><button class="ex-btn" data-q="24" data-a="هل أنت بخير؟" onclick="check(this)">هل أنت بخير؟</button><button class="ex-btn" data-q="24" data-a="كم يكلف؟" onclick="check(this)">كم يكلف؟</button></div><div class="ex-fb" id="f24"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — صواب أو خطأ (4 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Ich mag Kaffee" = أريد قهوة الآن — صحيح أو خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="خطأ — Ich mag = أحب / Ich möchte = أريد" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="25" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"das Bier" — هل المقال صحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="26" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">بعد möchten يأتي المفعول به في Akkusativ — صحيح أو خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="27" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Ich will Kaffee" أكثر أدباً من "Ich möchte Kaffee" — صواب أو خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="خطأ — möchten أكثر أدباً" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="28" data-a="صواب" onclick="check(this)">صواب</button></div><div class="ex-fb" id="f28"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — ثقافة ومفردات (4 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Trinkgeld"؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="البقشيش / الإكرامية" onclick="check(this)">البقشيش / الإكرامية</button><button class="ex-btn" data-q="29" data-a="الشرب مجاناً" onclick="check(this)">الشرب مجاناً</button><button class="ex-btn" data-q="29" data-a="ثمن المشروب" onclick="check(this)">ثمن المشروب</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Prost!" — متى تقولها؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="عند الشرب / cheers" onclick="check(this)">عند الشرب / cheers</button><button class="ex-btn" data-q="30" data-a="قبل الأكل" onclick="check(this)">قبل الأكل</button><button class="ex-btn" data-q="30" data-a="عند الوداع" onclick="check(this)">عند الوداع</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما الوجبة الرئيسية التقليدية في ألمانيا؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="Mittagessen — الغداء" onclick="check(this)">Mittagessen — الغداء</button><button class="ex-btn" data-q="31" data-a="Frühstück — الفطور" onclick="check(this)">Frühstück — الفطور</button><button class="ex-btn" data-q="31" data-a="Abendessen — العشاء" onclick="check(this)">Abendessen — العشاء</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Kaffee und Kuchen" — تقليد ألماني يحدث متى؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="بعد الظهر حوالي 3–4" onclick="check(this)">بعد الظهر حوالي 3–4</button><button class="ex-btn" data-q="32" data-a="الصباح الباكر" onclick="check(this)">الصباح الباكر</button><button class="ex-btn" data-q="32" data-a="بعد العشاء" onclick="check(this)">بعد العشاء</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين من الصفر</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة أكثر من أي شيء آخر</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة؟</div><p>بعد Unit 05 تستطيع التعبير عمّا تحب وما لا تحب، وطلب الطعام، والتعامل مع المطعم. <strong style="color:var(--white)">الكتابة تُجبر دماغك</strong> على استرجاع كل هذا معاً في جملة واحدة متكاملة — بدل الاستقبال السلبي فقط.</p></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 1 — عرّف عن ذوقك في الطعام (6–10 جمل)</div><div class="wt-text">اكتب جملاً عن ما تحب وما لا تحب من الطعام والشراب:</div><ul class="wt-list"><li>شيئان تحبهما (Ich mag...)</li><li>شيئان لا تحبهما (Ich mag kein/keine/keinen...)</li><li>ما تحب تناوله في الفطور (Zum Frühstück esse ich...)</li><li>مشروبك المفضل</li><li>هل أنت vegetarisch؟</li></ul><textarea class="wt-input" placeholder="Ich mag Kaffee und Pizza sehr gern. Ich mag keinen Fisch...&#10;Zum Frühstück esse ich...&#10;Ich trinke gern...&#10;Ich bin (nicht) vegetarisch..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 2 — اكتب حوار مطعم كامل</div><div class="wt-text">اكتب حوار بينك وبين نادل في مطعم ألماني (8–12 سطر). استخدم العبارات من القسم 06.</div><ul class="wt-list"><li>النادل يرحب بك</li><li>تطلب طعاماً وشراباً بـ möchten</li><li>تسأل عن السعر</li><li>تطلب الحساب وتدفع</li></ul><textarea class="wt-input" style="min-height:200px;" placeholder="K (Kellner): Guten Abend! Was darf es sein?&#10;G (Gast): Guten Abend! Ich möchte gern...&#10;K: Möchten Sie auch etwas trinken?&#10;G: Ja, ich möchte...&#10;...&#10;G: Entschuldigung, die Rechnung bitte!&#10;K: Das macht..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 3 — جدول mögen و möchten من الذاكرة</div><div class="wt-text">أغلق الملف واكتب التصريف الكامل لكلا الفعلين. ثم افتح وتحقق من نفسك.</div><textarea class="wt-input" placeholder="       mögen    |   möchten&#10;ich    → ___    |   ___&#10;du     → ___    |   ___&#10;er/sie → ___    |   ___&#10;wir    → ___    |   ___&#10;ihr    → ___    |   ___&#10;sie    → ___    |   ___"></textarea></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · قنوات مخصصة لهذه الوحدة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — Essen und Trinken</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">ابحث في Anki عن "German A1 food Essen Trinken" — ستجد بطاقات جاهزة مع الصور والمقالات der/die/das. ضروري لحفظ مفردات الطعام.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Nicos Weg</div><div class="res-type">موقع مجاني</div><div class="res-desc">في learngerman.dw.com ابحث عن الحلقات المتعلقة بـ "Essen" و"Supermarkt" — فيها تمارين تفاعلية ممتازة ونصوص كاملة مجانية.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Lingoni German</div><div class="res-type">قناة YouTube</div><div class="res-desc">قناة ممتازة لقواعد A1 بالإنجليزي. ابحث عن "Lingoni mögen möchten" و"Lingoni German articles" لفيديوهات قواعد مخصصة ومشروحة بوضوح.</div></div>
+    <div class="res-card"><span class="res-icon">🎮</span><div class="res-name">Quizlet — German Food</div><div class="res-type">موقع مجاني</div><div class="res-desc">ابحث في Quizlet عن "Essen Trinken A1 Deutsch" — ستجد مجموعات مفردات مع ألعاب تفاعلية للحفظ السريع. ممتاز لمراجعة المفردات اليومية.</div><a class="res-link" href="https://quizlet.com" target="_blank">quizlet.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1 — الفصل 5</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي لـ Goethe Institut — الفصل 5 يغطي تحديداً الطعام والشراب مع تمارين نحوية على mögen وmöchten. إضافة ممتازة.</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki — Im Restaurant</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">بعد Unit 05 أنت جاهز لأول جلسة محادثة حقيقية! اطلب من المدرس يأخذك في دور العب "Im Restaurant" — هو الأكثر فائدة في هذا المستوى.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German</div><div class="res-type">بودكاست</div><div class="res-desc">ابحث عن حلقة "Deutsches Frühstück" بألمانية بطيئة وواضحة. بعد Unit 05 ستفهم معظمها — ممتاز للاستماع التدريبي.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">لا يكفي وحده لكن ممتاز كمراجعة يومية سريعة. 10 دقائق يومياً مع "Food" section بعد دراسة هذا الملف تثبّت المفردات جيداً.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات والتمارين</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">الطعام + الشراب + المقالات</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Essen und Trinken) مع مهمة الاستماع</li><li class="vl">شاهد الفيديو 4 (der/die/das)</li><li>ادرس قسم الطعام كاملاً مع الألوان</li><li>ادرس قسم الشراب</li><li>ادرس الأنماط: ما ينتهي بـ -e → die مثلاً</li><li>اكتب 20 كلمة مع مقالها من الذاكرة</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">ein/eine + mögen/möchten</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 3 (mögen vs möchten)</li><li>ادرس جدول ein/eine/einen/kein في Akkusativ</li><li>احفظ تصريف mögen كاملاً</li><li>احفظ تصريف möchten كاملاً</li><li>ادرس الفرق بينهما مع الأمثلة</li><li>حل تمرين 1 و 2 و 3</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">المطعم + الحوارات + الثقافة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 2 (Nicos Weg Supermarkt)</li><li class="vl">شاهد الفيديو 5 (Im Restaurant)</li><li>ادرس عبارات المطعم كاملاً</li><li>اقرأ الحوارات الـ 4 بصوت عالٍ مرتين</li><li>ادرس الثقافة + الأخطاء الشائعة</li><li>حل تمرين 4 و 5</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">الكتابة + المفردات الكاملة</div><ul class="day-tasks"><li>ادرس مفردات القسم 7 كاملاً (أفعال + صفات + مطعم)</li><li>ادرس الوجبات اليومية</li><li class="wl">مهمة الكتابة 1 (ذوقك في الطعام)</li><li class="wl">مهمة الكتابة 2 (حوار المطعم كاملاً)</li><li class="wl">مهمة الكتابة 3 (جدول mögen/möchten)</li><li>حل تمرين 6</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">مراجعة شاملة + اختبار نهائي</div><ul class="day-tasks"><li class="vl">شاهد مشاهد الطعام في فيديو 6 (Nicos Weg)</li><li>غطّ المقالات — اختبر نفسك: der/die/das لـ30 كلمة</li><li>صرّف mögen وmöchten شفهياً بدون نظر</li><li>أعد حل جميع التمارين الـ32 — هدف 28+</li><li>اقرأ الحوارات الـ4 بدون نظر بصوت عالٍ</li><li>✅ انتقل لـ Unit 06 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال للوحدة التالية</div><p>انتقل لـ Unit 06 فقط إذا: ✅ تستطيع تصريف mögen وmöchten بدون نظر · ✅ حصلت 28+/32 في التمارين · ✅ تعرف المقال (der/die/das) لـ 25+ كلمة طعام وشراب · ✅ تستطيع طلب الطعام والشراب في مطعم بثقة. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<footer>
+  <span class="ft-de">UNIT 05</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">الطعام · الشراب · der/die/das · ein/eine/kein · mögen · möchten · المطعم · 90+ مفردة · 32 تمرين</p>
+  <p>A1 · الخطوة الخامسة · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 06 ← الروتين اليومي · الأفعال القابلة للفصل · aufstehen · einkaufen · anrufen · zuerst · dann · danach</p>
+</footer>
+
+<script>
+const answers={
+  1:'der',2:'die',3:'das',4:'der',5:'die',6:'das',
+  7:'einen',8:'eine',9:'ein',10:'keinen',11:'keine',12:'ein',
+  13:'mögen',14:'möchten',15:'mag',16:'magst',17:'möchte',18:'mögen',
+  19:'die Speisekarte',20:'Die Rechnung bitte!',21:'بالعافية!',
+  22:'مع بعض أو منفصلين؟',23:'هذا لذيذ جداً!',24:'بكيفك / ماذا تأخذ؟',
+  25:'خطأ — Ich mag = أحب / Ich möchte = أريد',26:'صحيح',27:'صحيح',
+  28:'خطأ — möchten أكثر أدباً',
+  29:'البقشيش / الإكرامية',30:'عند الشرب / cheers',
+  31:'Mittagessen — الغداء',32:'بعد الظهر حوالي 3–4'
+};
+const fb={
+  1:{ok:'✅ صح! Kaffee مذكر → der Kaffee — وكذلك der Tee و der Saft',no:'❌ Kaffee مذكر → der Kaffee'},
+  2:{ok:'✅ ممتاز! Milch مؤنث → die Milch',no:'❌ Milch مؤنث → die Milch'},
+  3:{ok:'✅ صح! Brot محايد → das Brot — وكذلك das Wasser و das Fleisch',no:'❌ Brot محايد → das Brot'},
+  4:{ok:'✅ صح! Apfel مذكر → der Apfel',no:'❌ Apfel مذكر → der Apfel'},
+  5:{ok:'✅ ممتاز! Pizza مؤنث → die Pizza — الكلمات على -a عادة مؤنث',no:'❌ Pizza مؤنث → die Pizza'},
+  6:{ok:'✅ صح! Wasser محايد → das Wasser',no:'❌ Wasser محايد → das Wasser'},
+  7:{ok:'✅ صح! Kaffee مذكر + Akkusativ → einen — المذكر فقط يتغير!',no:'❌ مذكر في Akkusativ → einen وليس ein'},
+  8:{ok:'✅ ممتاز! مؤنث → eine — لا يتغير في Akkusativ',no:'❌ مؤنث → eine (لا يتغير في Akkusativ)'},
+  9:{ok:'✅ صح! محايد → ein — لا يتغير في Akkusativ',no:'❌ محايد → ein'},
+  10:{ok:'✅ ممتاز! مذكر + نفي + Akkusativ → keinen',no:'❌ مذكر + نفي + Akkusativ → keinen'},
+  11:{ok:'✅ صح! مؤنث + نفي → keine',no:'❌ مؤنث + نفي → keine'},
+  12:{ok:'✅ صح! محايد → ein',no:'❌ محايد → ein'},
+  13:{ok:'✅ صح! التفضيل العام = mögen — Ich mag Kaffee (دائماً، ليس الآن فقط)',no:'❌ للتفضيل العام → mögen'},
+  14:{ok:'✅ ممتاز! الطلب المهذب الآن = möchten — Ich möchte einen Kaffee.',no:'❌ للطلب المهذب → möchten'},
+  15:{ok:'✅ صح! ich + mögen → mag (بدون نهاية)',no:'❌ ich + mögen → mag'},
+  16:{ok:'✅ صح! du + mögen → magst',no:'❌ du + mögen → magst'},
+  17:{ok:'✅ ممتاز! er/sie/es + möchten → möchte (نفس ich)',no:'❌ er/sie/es + möchten → möchte'},
+  18:{ok:'✅ صح! wir + mögen → mögen (نفس الشكل الأصلي)',no:'❌ wir + mögen → mögen'},
+  19:{ok:'✅ صح! القائمة = die Speisekarte — الأشيع في ألمانيا',no:'❌ القائمة = die Speisekarte'},
+  20:{ok:'✅ ممتاز! الحساب = Die Rechnung bitte!',no:'❌ الحساب = Die Rechnung bitte!'},
+  21:{ok:'✅ صح! Guten Appetit = بالعافية / صحتين',no:'❌ Guten Appetit = بالعافية'},
+  22:{ok:'✅ صح! zusammen = معاً · getrennt = منفصل — كل يدفع وحده',no:'❌ Zusammen oder getrennt? = مع بعض أو منفصلين؟'},
+  23:{ok:'✅ ممتاز! schmecken = له مذاق · Das schmeckt gut = هذا لذيذ',no:'❌ Das schmeckt gut = هذا لذيذ'},
+  24:{ok:'✅ صح! النادل يقول هذا عند استقبالك — darf es sein = تفضل',no:'❌ Was darf es sein? = بكيفك — يقولها النادل'},
+  25:{ok:'✅ صح! Ich mag = أحب (بشكل عام) · Ich möchte = أريد (الآن)',no:'❌ Ich mag = أحب بشكل عام — ليس طلباً للآن'},
+  26:{ok:'✅ Bier محايد → das Bier — صحيح تماماً!',no:'❌ Bier محايد → das Bier (صحيح)'},
+  27:{ok:'✅ ممتاز! بعد möchten يأتي Akkusativ — المذكر يتغير إلى einen',no:'❌ صحيح — بعد möchten يأتي Akkusativ'},
+  28:{ok:'✅ صح! Ich will مباشر وقد يبدو فظاً — Ich möchte أكثر أدباً دائماً',no:'❌ Ich will أقل أدباً من Ich möchte'},
+  29:{ok:'✅ صح! Trinkgeld = البقشيش · في ألمانيا 5–10% كافية',no:'❌ Trinkgeld = البقشيش / الإكرامية'},
+  30:{ok:'✅ صح! Prost! = cheers — انظر في عيون الشخص الآخر!',no:'❌ Prost! = cheers عند رفع الكأس'},
+  31:{ok:'✅ صح! تقليدياً الغداء = الوجبة الرئيسية في ألمانيا',no:'❌ تقليدياً الوجبة الرئيسية = Mittagessen'},
+  32:{ok:'✅ ممتاز! Kaffee und Kuchen — تقليد بعد الظهر 3–4 مساءً خاصة أيام الأحد',no:'❌ Kaffee und Kuchen يحدث بعد الظهر 3–4 مساءً'}
+};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز! أتقنت Unit 05 كاملاً. انتقل لـ Unit 06 بثقة تامة!';
+  else if(pct>=0.9) msg='✅ ممتاز جداً! راجع الأسئلة الخاطئة فقط ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد! راجع der/die/das وein/eine وmögen/möchten وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع قسم المقالات وقسم mögen/möchten ثم حل مرة ثانية.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>

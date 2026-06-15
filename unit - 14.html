@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 14 — FULL | العمل · المهن · W-Fragen · Perfekt | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#f97316;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'14';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:var(--orange)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}.gc-red{color:#ff6b6b}.gc-orange{color:var(--orange)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.84rem;font-weight:700;color:var(--white);min-width:170px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+.beruf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.beruf-card{background:var(--black);padding:1.2rem 1.4rem;transition:background .2s;position:relative;overflow:hidden}
+.beruf-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.beruf-card:hover::before{height:100%}
+.beruf-card:hover{background:var(--gray)}
+.beruf-icon{font-size:1.4rem;margin-bottom:.35rem;display:block}
+.beruf-m{font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--gold)}
+.beruf-f{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--blue);margin-top:.12rem}
+.beruf-ar{font-size:.8rem;color:var(--dim);margin-top:.18rem}
+.beruf-note{font-size:.64rem;color:rgba(255,206,0,.35);margin-top:.1rem}
+.wf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.wf-card{background:var(--black);padding:1.2rem;transition:background .2s}
+.wf-card:hover{background:var(--gray)}
+.wf-de{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);line-height:1;margin-bottom:.25rem}
+.wf-ar{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.wf-ex{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:rgba(255,206,0,.4);margin-top:.3rem}
+.wf-ans{font-size:.67rem;color:var(--dim)}
+.sein-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.sein-t th,.sein-t td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.sein-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.sein-t tbody tr{transition:background .15s}
+.sein-t tbody tr:hover{background:var(--gray)}
+.st-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.st-v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--gold)}
+.st-v2{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;color:var(--green)}
+.st-m{font-size:.8rem;color:var(--dim)}
+.st-e{font-size:.74rem;color:rgba(245,245,240,.45);font-style:italic}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}.bg{background:rgba(34,197,94,.1);color:var(--green)}.bb{background:rgba(96,165,250,.1);color:var(--blue)}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-wenn{border-color:var(--orange);color:var(--orange);background:rgba(249,115,22,.06)}
+.sbox-end{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.06)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.66rem;color:rgba(255,206,0,.4);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem;text-align:center}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-blue code{font-family:'JetBrains Mono',monospace;color:var(--blue);background:rgba(96,165,250,.08);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.days-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.greet-grid{grid-template-columns:1fr}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}.beruf-grid{grid-template-columns:repeat(2,1fr)}.wf-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 14 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#berufe">المهن</a></li>
+    <li><a href="#wfragen">W-Fragen</a></li>
+    <li><a href="#perfekt">Perfekt</a></li>
+    <li><a href="#wenn">wenn</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#kultur">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🔴 متقدم A1 · Unit 14 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">العمل</span> <span style="font-size:.5em;color:rgba(245,245,240,.08)">+</span> <span class="r">المهن</span></h1>
+  <p class="hero-sub">أدوات الاستفهام الكاملة · مقدمة Perfekt · جمل wenn · 90+ مفردة من بيئة العمل الألمانية</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">90+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام دراسة</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     VIDEOS
+════════════════════════════════════════════ -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">فيديوهات الوحدة — Videos</div><div class="sec-d">حضّرها قبل الجلسة · مهمة لكل فيديو</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📋 ترتيب المشاهدة</div><p>شاهد الفيديو 1 (Berufe) في بداية اليوم الأول قبل أي قراءة. الفيديو 2 (W-Fragen) في نهاية اليوم الأول بعد الدراسة. الفيديو 3 (Perfekt) يوم ثاني. الفيديو 4 (wenn) يوم ثالث. الفيديو 5 (Nicos Weg) لليوم الأخير. إذا لم يعمل أي فيديو، ابحث عنه بالعبارة الموجودة في الوصف.</p></div>
+  <div class="videos-grid reveal">
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/5_1yWKFKkxw" title="German Professions Berufe A1 Vocabulary" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info">
+        <div class="video-tag t1">🎯 Vocabulary · Berufe</div>
+        <div class="video-title">المهن بالألمانية — Berufe auf Deutsch</div>
+        <div class="video-desc">مفردات المهن مع المذكر والمؤنث وأمثلة. إذا لم يعمل: ابحث على YouTube عن <strong style="color:var(--white)">"Berufe auf Deutsch A1 German vocabulary jobs"</strong></div>
+        <div class="video-task"><strong>مهمة اليوم 1:</strong> اكتب كل مهنة تسمعها مع صيغتي المذكر والمؤنث (der/die). لا تنظر في الملف خلال المشاهدة.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1sTBR11KQME" title="German W-Fragen Question Words A1 Grammar" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info">
+        <div class="video-tag t2">📐 Grammar · W-Fragen</div>
+        <div class="video-title">أدوات الاستفهام الكاملة — W-Fragen</div>
+        <div class="video-desc">شرح الـ 12 أداة استفهام مع أمثلة. إذا لم يعمل: ابحث عن <strong style="color:var(--white)">"German question words W-Fragen A1 Wer Was Wo Wann Warum"</strong></div>
+        <div class="video-task"><strong>مهمة اليوم 1:</strong> اكتب جملة سؤال واحدة من حياتك العملية لكل أداة استفهام. 12 سؤال.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/m_pSfBzqz-Y" title="German Perfekt tense haben sein A1 A2 beginners" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info">
+        <div class="video-tag t3">📐 Grammar · Perfekt</div>
+        <div class="video-title">مقدمة Perfekt — الماضي الألماني</div>
+        <div class="video-desc">haben/sein + Partizip II للمبتدئين بالكامل. إذا لم يعمل: ابحث عن <strong style="color:var(--white)">"German Perfekt tense A1 haben sein Partizip II beginners"</strong></div>
+        <div class="video-task"><strong>مهمة اليوم 2:</strong> بعد الفيديو، كوّن 5 جمل Perfekt عن يوم عملك أو دراستك اليوم.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/r42UIKKNOP0" title="German wenn clause Nebensatz A1 A2 grammar" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info">
+        <div class="video-tag t2">📐 Grammar · wenn</div>
+        <div class="video-title">جملة wenn — الشرط والوقت</div>
+        <div class="video-desc">قاعدة الفعل في نهاية جملة wenn مع أمثلة كثيرة. إذا لم يعمل: ابحث عن <strong style="color:var(--white)">"German wenn subordinate clause A1 A2 Nebensatz verb end"</strong></div>
+        <div class="video-task"><strong>مهمة اليوم 3:</strong> اكتب 3 جمل wenn عن أهدافك المهنية. استخدم wenn في البداية وفي المنتصف.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW Learn German" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info">
+        <div class="video-tag t4">🎥 DW · Nicos Weg · A1 كامل</div>
+        <div class="video-title">Nicos Weg — مشاهد العمل والمهن</div>
+        <div class="video-desc">Nicos يعمل في Café Susann ويتعامل مع زملاء ومديرة. ركّز على مشاهد بيئة العمل. على DW: learngerman.dw.com — الحلقات 15-20 عن العمل.</div>
+        <div class="video-task"><strong>لليوم الخامس:</strong> اكتب كل جملة تفهمها من مشاهد العمل. ابحث عن: Beruf, Feierabend, Chef, Kollege.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     BERUFE
+════════════════════════════════════════════ -->
+<section class="section" id="berufe">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">المهن والعمل — Berufe & Arbeit</div><div class="sec-d">المذكر والمؤنث · السؤال عن المهنة · حوارات العمل</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 القاعدة الذهبية — sein + Beruf</div><p>في الإنجليزية تقول "I am <strong>a</strong> doctor". في الألمانية <strong style="color:var(--white)">لا تستخدم ein/eine مع المهن بعد sein أبداً.</strong> <code>Ich bin Arzt.</code> ✅ · <code>Ich bin ein Arzt.</code> ❌ · والمؤنث: تضيف <code>-in</code> للمذكر → Lehrerin · Ingenieurin · Ärztin.</p></div>
+
+  <p class="vst reveal">المهن الأساسية — 16 مهنة بشكليها</p>
+  <div class="beruf-grid reveal">
+    <div class="beruf-card"><span class="beruf-icon">🏥</span><div class="beruf-m">der Arzt</div><div class="beruf-f">die Ärztin</div><div class="beruf-ar">طبيب / طبيبة</div><div class="beruf-note">Zahnarzt = طبيب أسنان</div></div>
+    <div class="beruf-card"><span class="beruf-icon">⚙️</span><div class="beruf-m">der Ingenieur</div><div class="beruf-f">die Ingenieurin</div><div class="beruf-ar">مهندس / مهندسة</div><div class="beruf-note">Bauingenieur = مدني · Software = برمجي</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🍎</span><div class="beruf-m">der Lehrer</div><div class="beruf-f">die Lehrerin</div><div class="beruf-ar">مدرس / مدرسة</div><div class="beruf-note">Deutschlehrer = مدرس ألمانية</div></div>
+    <div class="beruf-card"><span class="beruf-icon">⚖️</span><div class="beruf-m">der Anwalt</div><div class="beruf-f">die Anwältin</div><div class="beruf-ar">محامي / محامية</div><div class="beruf-note">Jurist = رجل قانون عام</div></div>
+    <div class="beruf-card"><span class="beruf-icon">💻</span><div class="beruf-m">der Programmierer</div><div class="beruf-f">die Programmiererin</div><div class="beruf-ar">مبرمج / مبرمجة</div><div class="beruf-note">Informatiker = متخصص معلومات</div></div>
+    <div class="beruf-card"><span class="beruf-icon">📰</span><div class="beruf-m">der Journalist</div><div class="beruf-f">die Journalistin</div><div class="beruf-ar">صحفي / صحفية</div><div class="beruf-note">Reporter = مراسل ميداني</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🍳</span><div class="beruf-m">der Koch</div><div class="beruf-f">die Köchin</div><div class="beruf-ar">طباخ / طباخة</div><div class="beruf-note">Chefkoch = رئيس طهاة</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🚗</span><div class="beruf-m">der Mechaniker</div><div class="beruf-f">die Mechanikerin</div><div class="beruf-ar">ميكانيكي / ميكانيكية</div><div class="beruf-note">Kfz = سيارات</div></div>
+    <div class="beruf-card"><span class="beruf-icon">👮</span><div class="beruf-m">der Polizist</div><div class="beruf-f">die Polizistin</div><div class="beruf-ar">شرطي / شرطية</div><div class="beruf-note">Beamter = موظف حكومي</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🏗️</span><div class="beruf-m">der Architekt</div><div class="beruf-f">die Architektin</div><div class="beruf-ar">مهندس معماري / معمارية</div><div class="beruf-note">من الأصعب نطقاً!</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🧾</span><div class="beruf-m">der Buchhalter</div><div class="beruf-f">die Buchhalterin</div><div class="beruf-ar">محاسب / محاسبة</div><div class="beruf-note">Buch=كتاب · halten=يمسك</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🚑</span><div class="beruf-m">der Krankenpfleger</div><div class="beruf-f">die Krankenschwester</div><div class="beruf-ar">ممرض / ممرضة</div><div class="beruf-note">Schwester=أخت → ممرضة</div></div>
+    <div class="beruf-card"><span class="beruf-icon">✂️</span><div class="beruf-m">der Friseur</div><div class="beruf-f">die Friseurin</div><div class="beruf-ar">حلاق / حلاقة</div><div class="beruf-note">من اللغة الفرنسية</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🍞</span><div class="beruf-m">der Bäcker</div><div class="beruf-f">die Bäckerin</div><div class="beruf-ar">خباز / خبازة</div><div class="beruf-note">Bäckerei = المخبز</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🛒</span><div class="beruf-m">der Verkäufer</div><div class="beruf-f">die Verkäuferin</div><div class="beruf-ar">بائع / بائعة</div><div class="beruf-note">verkaufen = يبيع</div></div>
+    <div class="beruf-card"><span class="beruf-icon">🎓</span><div class="beruf-m">der Student</div><div class="beruf-f">die Studentin</div><div class="beruf-ar">طالب جامعي / طالبة</div><div class="beruf-note">Schüler = طالب المدرسة</div></div>
+  </div>
+
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ sein + Beruf — بدون ein/eine أبداً!</div><p>من أكثر الأخطاء شيوعاً في A1. ❌ <code>Ich bin ein Arzt.</code> · ❌ <code>Er ist ein Lehrer.</code> · ✅ <code>Ich bin Arzt.</code> · ✅ <code>Er ist Lehrer.</code> · ✅ <code>Sie ist Ärztin.</code> — نفس القاعدة للمؤنث.</p></div>
+
+  <p class="vst reveal">السؤال عن المهنة — رسمي وعادي</p>
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">رسمي — Sie (مقابلة / غريب)</div>
+      <div class="gi"><div class="gi-de">Was machen Sie beruflich?</div><div><div class="gi-ar">ما مهنتك؟ (رسمي)</div><div class="gi-note">beruflich = مهنياً — الأكثر استخداماً</div></div></div>
+      <div class="gi"><div class="gi-de">Was sind Sie von Beruf?</div><div><div class="gi-ar">ما تخصصك المهني؟</div><div class="gi-note">von Beruf = من حيث المهنة</div></div></div>
+      <div class="gi"><div class="gi-de">Wo arbeiten Sie?</div><div><div class="gi-ar">أين تعمل؟ (رسمي)</div><div class="gi-note">في المقابلات والاجتماعات</div></div></div>
+      <div class="gi"><div class="gi-de">Seit wann arbeiten Sie dort?</div><div><div class="gi-ar">منذ متى تعمل هناك؟</div><div class="gi-note">seit = منذ</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">عادي — du (صديق / زميل)</div>
+      <div class="gi"><div class="gi-de">Was machst du beruflich?</div><div><div class="gi-ar">ما مهنتك؟ (عادي)</div><div class="gi-note">الأكثر استخداماً بين المعارف</div></div></div>
+      <div class="gi"><div class="gi-de">Was bist du von Beruf?</div><div><div class="gi-ar">ما تخصصك؟</div><div class="gi-note">عادي لكن رسمي قليلاً</div></div></div>
+      <div class="gi"><div class="gi-de">Wo arbeitest du?</div><div><div class="gi-ar">أين تشتغل؟</div><div class="gi-note">في المحادثة اليومية</div></div></div>
+      <div class="gi"><div class="gi-de">Magst du deinen Job?</div><div><div class="gi-ar">تحب شغلتك؟</div><div class="gi-note">deinen = بتاعك (Akkusativ)</div></div></div>
+    </div>
+  </div>
+
+  <p class="vst reveal">حوارات نموذجية — 3 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في حفلة مع معارف جدد</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hey! Was machst du beruflich?</div><div class="dl-ar">هيي! ما مهنتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ich bin Ingenieur. Und du?</div><div class="dl-ar">أنا مهندس. وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich bin Lehrerin. Ich arbeite in einer Schule in Berlin.</div><div class="dl-ar">أنا مدرسة. أعمل في مدرسة في برلين.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Interessant! Magst du deinen Job?</div><div class="dl-ar">مثير للاهتمام! تحبي شغلتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ja, sehr! Aber der Feierabend ist auch wichtig! 😄</div><div class="dl-ar">نعم جداً! لكن نهاية يوم العمل مهمة كمان!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — مقابلة عمل رسمية (Vorstellungsgespräch)</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Morgen! Was machen Sie beruflich?</div><div class="dl-ar">صباح الخير! ما مهنتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich bin Programmierer und arbeite seit drei Jahren bei einer IT-Firma.</div><div class="dl-ar">أنا مبرمج وأعمل منذ 3 سنوات في شركة تقنية.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Sehr gut! Warum möchten Sie hier arbeiten?</div><div class="dl-ar">ممتاز! لماذا تريد العمل هنا؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Weil Ihre Firma sehr bekannt ist und das Team international arbeitet.</div><div class="dl-ar">لأن شركتكم معروفة جداً والفريق يعمل بشكل دولي.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — في المكتب مع الزملاء</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hast du das Projekt heute fertig gemacht?</div><div class="dl-ar">هل أنجزت المشروع اليوم؟ (Perfekt!)</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja! Ich habe bis 18 Uhr gearbeitet. Jetzt ist Feierabend!</div><div class="dl-ar">نعم! اشتغلت حتى الساعة 6. الآن نهاية يوم العمل!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Super! Die Chefin ist sehr zufrieden!</div><div class="dl-ar">رائع! المديرة راضية جداً!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Schönen Feierabend an alle! Bis morgen!</div><div class="dl-ar">نهاية يوم سعيدة للجميع! أراكم غداً!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     W-FRAGEN
+════════════════════════════════════════════ -->
+<section class="section" id="wfragen">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">أدوات الاستفهام الكاملة — W-Fragen</div><div class="sec-d">12 أداة + أمثلة من بيئة العمل + بنية الجملة</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 قاعدة W-Fragen — الفعل ثانياً دائماً</div><p>كل أسئلة الألمانية تتبع نفس القاعدة: <code>W-Wort + Verb + Subjekt + Rest</code>. الفعل يكون دائماً في المرتبة الثانية — تماماً كالجملة الخبرية. لا استثناءات.</p></div>
+
+  <div class="wf-grid reveal">
+    <div class="wf-card"><div class="wf-de">Wer?</div><div class="wf-ar">من؟ (أشخاص)</div><div class="wf-ex">Wer ist der Chef?</div><div class="wf-ans">من هو المدير؟</div></div>
+    <div class="wf-card"><div class="wf-de">Was?</div><div class="wf-ar">ماذا / ما؟</div><div class="wf-ex">Was machst du beruflich?</div><div class="wf-ans">ما مهنتك؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wo?</div><div class="wf-ar">أين؟ (موقع)</div><div class="wf-ex">Wo arbeitest du?</div><div class="wf-ans">أين تعمل؟</div></div>
+    <div class="wf-card"><div class="wf-de">Woher?</div><div class="wf-ar">من أين؟ (أصل)</div><div class="wf-ex">Woher kommt die Kollegin?</div><div class="wf-ans">من أين الزميلة؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wohin?</div><div class="wf-ar">إلى أين؟ (وجهة)</div><div class="wf-ex">Wohin fährst du nach der Arbeit?</div><div class="wf-ans">إلى أين ستذهب؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wann?</div><div class="wf-ar">متى؟ (وقت)</div><div class="wf-ex">Wann beginnt die Besprechung?</div><div class="wf-ans">متى يبدأ الاجتماع؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wie?</div><div class="wf-ar">كيف؟ (حال)</div><div class="wf-ex">Wie ist dein neuer Job?</div><div class="wf-ans">كيف وظيفتك الجديدة؟</div></div>
+    <div class="wf-card"><div class="wf-de">Warum?</div><div class="wf-ar">لماذا؟</div><div class="wf-ex">Warum lernst du Deutsch?</div><div class="wf-ans">لماذا تتعلم الألمانية؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wie viel?</div><div class="wf-ar">كم؟ (كمية)</div><div class="wf-ex">Wie viel verdienst du?</div><div class="wf-ans">كم تكسب؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wie viele?</div><div class="wf-ar">كم عدد؟</div><div class="wf-ex">Wie viele Kollegen hast du?</div><div class="wf-ans">كم عدد زملائك؟</div></div>
+    <div class="wf-card"><div class="wf-de">Welch-?</div><div class="wf-ar">أيّ؟ (محدد)</div><div class="wf-ex">Welchen Beruf magst du?</div><div class="wf-ans">أي مهنة تحب؟</div></div>
+    <div class="wf-card"><div class="wf-de">Wessen?</div><div class="wf-ar">لمن؟ ملك من؟</div><div class="wf-ex">Wessen Büro ist das?</div><div class="wf-ans">مكتب من هذا؟</div></div>
+  </div>
+
+  <div class="note-blue reveal"><div class="note-title nt-b">🔵 Wie viel مقابل Wie viele</div><p><code>Wie viel</code> للكميات غير المعدودة والأرقام المفردة: Wie viel Gehalt? · Wie viel kostet das?<br><code>Wie viele</code> للأشياء المعدودة: Wie viele Kollegen? · Wie viele Stunden arbeitest du?</p></div>
+
+  <p class="vst reveal">بنية السؤال — الفعل ثانياً دائماً</p>
+  <div class="satz-box reveal"><div class="satz-title">أمثلة بنية W-Fragen — من بيئة العمل</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Was</span><span class="sbox sbox-verb">machst</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">beruflich?</span><span class="sbox-ar">ما مهنتك؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">arbeitet</span><span class="sbox sbox-subj">sie?</span><span class="sbox-ar">أين تعمل هي؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wann</span><span class="sbox sbox-verb">beginnt</span><span class="sbox sbox-subj">die Besprechung?</span><span class="sbox-ar">متى يبدأ الاجتماع؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie viel</span><span class="sbox sbox-verb">verdient</span><span class="sbox sbox-subj">ein Arzt?</span><span class="sbox-ar">كم يكسب طبيب؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Warum</span><span class="sbox sbox-verb">lernst</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">Deutsch?</span><span class="sbox-ar">لماذا تتعلم الألمانية؟</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     PERFEKT
+════════════════════════════════════════════ -->
+<section class="section" id="perfekt">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">مقدمة Perfekt — الماضي الألماني</div><div class="sec-d">haben / sein + Partizip II · منتظم وغير منتظم</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 لماذا Perfekt؟ وليس Präteritum؟</div><p>الألمانية عندها زمنان للماضي. <code>Perfekt</code> = المحادثة اليومية. <code>Präteritum</code> = الكتابة والروايات. الألمان في حياتهم اليومية <strong style="color:var(--white)">يستخدمون Perfekt دائماً</strong> حتى مع sein وhaben. Präteritum للكتابة = B1 ما بعد.</p></div>
+
+  <div class="satz-box reveal"><div class="satz-title">🔑 الصيغة الأساسية — المساعد ثانياً + Partizip في النهاية</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox sbox-rest">heute viel</span><span class="sbox sbox-end">gearbeitet.</span><span class="sbox-ar">اشتغلت اليوم كثيراً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">nach Berlin</span><span class="sbox sbox-end">gefahren.</span><span class="sbox-ar">هو سافر إلى برلين.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">haben</span><span class="sbox sbox-rest">das Projekt</span><span class="sbox sbox-end">erledigt.</span><span class="sbox-ar">أنجزنا المشروع.</span></div>
+  </div>
+
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ قاعدة Partizip II — الأفعال المنتظمة</div><p>الأفعال المنتظمة: <code>ge-</code> + جذر الفعل + <code>-t</code>. مثال: lernen → <code>ge</code>lern<code>t</code>. إذا انتهى الجذر بـ <strong>-t</strong> أو <strong>-d</strong>، نضيف <code>-et</code>: arbeiten → <code>ge</code>arbeit<code>et</code> (وليس gearbeit فقط).</p></div>
+
+  <p class="vst reveal">جدول Partizip II — منتظم وغير منتظم</p>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>Infinitiv</th><th>Partizip II</th><th>مثال كامل</th><th>المعنى</th><th>مع</th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">lernen</td><td class="st-v2">gelernt</td><td class="st-e">Ich habe Deutsch gelernt.</td><td class="st-m">تعلّم</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">arbeiten</td><td class="st-v2">gearbeitet</td><td class="st-e">Er hat viel gearbeitet.</td><td class="st-m">عمل</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">machen</td><td class="st-v2">gemacht</td><td class="st-e">Wir haben das gemacht.</td><td class="st-m">فعل</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">kaufen</td><td class="st-v2">gekauft</td><td class="st-e">Sie hat ein Buch gekauft.</td><td class="st-m">اشترى</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">wohnen</td><td class="st-v2">gewohnt</td><td class="st-e">Ich habe in Berlin gewohnt.</td><td class="st-m">سكن</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">spielen</td><td class="st-v2">gespielt</td><td class="st-e">Du hast gut gespielt.</td><td class="st-m">لعب</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">essen</td><td class="st-v2">gegessen</td><td class="st-e">Wir haben Pizza gegessen.</td><td class="st-m">أكل (غير منتظم)</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">schlafen</td><td class="st-v2">geschlafen</td><td class="st-e">Ich habe gut geschlafen.</td><td class="st-m">نام (غير منتظم)</td><td><span class="badge bg">haben</span></td></tr>
+        <tr><td class="st-p">gehen</td><td class="st-v2">gegangen</td><td class="st-e">Er ist nach Hause gegangen.</td><td class="st-m">ذهب (غير منتظم)</td><td><span class="badge bb">sein</span></td></tr>
+        <tr><td class="st-p">fahren</td><td class="st-v2">gefahren</td><td class="st-e">Wir sind nach Berlin gefahren.</td><td class="st-m">سافر / قاد (غير منتظم)</td><td><span class="badge bb">sein</span></td></tr>
+        <tr><td class="st-p">kommen</td><td class="st-v2">gekommen</td><td class="st-e">Sie ist um 9 Uhr gekommen.</td><td class="st-m">جاء (غير منتظم)</td><td><span class="badge bb">sein</span></td></tr>
+        <tr><td class="st-p">werden</td><td class="st-v2">geworden</td><td class="st-e">Er ist Arzt geworden.</td><td class="st-m">أصبح — تغيير حال</td><td><span class="badge bb">sein</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-green">haben — كل شيء تقريباً ✅</div>
+      <div class="gi"><div class="gi-de">arbeiten → gearbeitet</div><div><div class="gi-ar">عمل — فعل عادي</div><div class="gi-note">Ich habe heute gearbeitet.</div></div></div>
+      <div class="gi"><div class="gi-de">lernen → gelernt</div><div><div class="gi-ar">تعلّم</div><div class="gi-note">Er hat Deutsch gelernt.</div></div></div>
+      <div class="gi"><div class="gi-de">essen → gegessen</div><div><div class="gi-ar">أكل — غير منتظم</div><div class="gi-note">Wir haben Pizza gegessen.</div></div></div>
+      <div class="gi"><div class="gi-de">schlafen → geschlafen</div><div><div class="gi-ar">نام — غير منتظم</div><div class="gi-note">Du hast gut geschlafen.</div></div></div>
+      <div class="gi"><div class="gi-de">kaufen → gekauft</div><div><div class="gi-ar">اشترى</div><div class="gi-note">Sie hat ein Auto gekauft.</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">sein — الحركة وتغيير الحال 🔵</div>
+      <div class="gi"><div class="gi-de">gehen → gegangen</div><div><div class="gi-ar">ذهب — حركة</div><div class="gi-note">Ich bin nach Hause gegangen.</div></div></div>
+      <div class="gi"><div class="gi-de">fahren → gefahren</div><div><div class="gi-ar">سافر / قاد — حركة</div><div class="gi-note">Er ist nach Berlin gefahren.</div></div></div>
+      <div class="gi"><div class="gi-de">kommen → gekommen</div><div><div class="gi-ar">جاء — حركة</div><div class="gi-note">Sie ist um 9 Uhr gekommen.</div></div></div>
+      <div class="gi"><div class="gi-de">fliegen → geflogen</div><div><div class="gi-ar">طار — حركة</div><div class="gi-note">Wir sind nach Dubai geflogen.</div></div></div>
+      <div class="gi"><div class="gi-de">werden → geworden</div><div><div class="gi-ar">أصبح — تغيير حال</div><div class="gi-note">Er ist Arzt geworden.</div></div></div>
+    </div>
+  </div>
+
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ موقع Partizip II في الجملة</div><p>في Perfekt: المساعد (haben/sein) في المرتبة الثانية دائماً، و<code>Partizip II في النهاية دائماً</code> — حتى لو الجملة طويلة جداً.<br>✅ <code>Ich habe heute morgen drei Stunden im Büro gearbeitet.</code><br>❌ <code>Ich habe gearbeitet heute im Büro.</code></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     WENN
+════════════════════════════════════════════ -->
+<section class="section" id="wenn">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">جملة wenn — الشرط والوقت</div><div class="sec-d">الفعل في النهاية دائماً + الجملة الرئيسية بعدها</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 ما هي wenn؟</div><p><code>wenn</code> تعني "عندما" و"إذا" معاً في الألمانية. القاعدة الأهم: في جملة wenn، <strong style="color:var(--white)">الفعل يذهب إلى النهاية تماماً</strong>. وإذا بدأت الجملة الكاملة بـ wenn، فإن الجملة الرئيسية تبدأ بالفعل مباشرة.</p></div>
+
+  <p class="vst reveal">نوعا جملة wenn</p>
+  <div class="satz-box reveal"><div class="satz-title">النوع 1 — wenn في المنتصف (الأكثر شيوعاً)</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-rest">Deutsch,</span><span class="sbox sbox-wenn">wenn</span><span class="sbox sbox-rest">ich Zeit</span><span class="sbox sbox-end">habe.</span></div>
+    <div class="satz-row"><span class="sbox-ar">أتعلم الألمانية، عندما يكون عندي وقت.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">النوع 2 — wenn في البداية → الجملة الرئيسية تبدأ بالفعل</div>
+    <div class="satz-row"><span class="sbox sbox-wenn">Wenn</span><span class="sbox sbox-rest">ich Zeit</span><span class="sbox sbox-end">habe,</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">Deutsch.</span></div>
+    <div class="satz-row"><span class="sbox-ar">عندما يكون عندي وقت، أتعلم الألمانية. — نفس المعنى بالضبط!</span></div>
+  </div>
+
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">wenn + شرط (إذا)</div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn ich Arzt bin, verdiene ich gut.</div><div><div class="gi-ar">إذا كنت طبيباً، سأكسب جيداً.</div><div class="gi-note">bin في النهاية ✅</div></div></div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn er mehr Urlaub bekommt, ist er glücklich.</div><div><div class="gi-ar">إذا حصل على إجازة أكثر، سيكون سعيداً.</div><div class="gi-note">bekommt في النهاية ✅</div></div></div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn wir das Projekt fertig machen, feiern wir.</div><div><div class="gi-ar">إذا أنجزنا المشروع، سنحتفل.</div><div class="gi-note">machen في النهاية ✅</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">wenn + وقت (عندما)</div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn ich nach Hause komme, esse ich.</div><div><div class="gi-ar">عندما أرجع للبيت، آكل.</div><div class="gi-note">komme في النهاية ✅</div></div></div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn er Feierabend hat, geht er Sport machen.</div><div><div class="gi-ar">عندما ينتهي يوم عمله، يذهب يرياض.</div><div class="gi-note">hat في النهاية ✅</div></div></div>
+      <div class="gi"><div class="gi-de" style="font-size:.78rem;min-width:auto">Wenn sie müde ist, schläft sie früh.</div><div><div class="gi-ar">عندما تكون متعبة، تنام مبكراً.</div><div class="gi-note">ist في النهاية ✅</div></div></div>
+    </div>
+  </div>
+
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الخطأ الأكثر شيوعاً في wenn</div><p>الفعل في المرتبة الثانية داخل wenn = خطأ شائع جداً!<br>❌ <code>Wenn ich habe Zeit, lerne ich Deutsch.</code><br>✅ <code>Wenn ich Zeit habe, lerne ich Deutsch.</code><br>الفعل يجب أن يكون في <strong style="color:var(--white)">النهاية تماماً</strong> داخل الجملة الفرعية.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     VOCABULARY
+════════════════════════════════════════════ -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات — Wortschatz</div><div class="sec-d">90+ كلمة من بيئة العمل — مقسمة بالموضوع</div></div></div>
+
+  <p class="vst reveal">مكان العمل — Der Arbeitsplatz</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">das Büro</div><div class="vi-ar">المكتب</div></div>
+    <div class="vi"><div class="vi-de">die Firma</div><div class="vi-ar">الشركة</div><div class="vi-note">= das Unternehmen</div></div>
+    <div class="vi"><div class="vi-de">die Fabrik</div><div class="vi-ar">المصنع</div></div>
+    <div class="vi"><div class="vi-de">das Krankenhaus</div><div class="vi-ar">المستشفى</div><div class="vi-note">krank=مريض · Haus=بيت</div></div>
+    <div class="vi"><div class="vi-de">die Schule</div><div class="vi-ar">المدرسة</div></div>
+    <div class="vi"><div class="vi-de">die Werkstatt</div><div class="vi-ar">الورشة</div></div>
+    <div class="vi"><div class="vi-de">das Labor</div><div class="vi-ar">المختبر</div></div>
+    <div class="vi"><div class="vi-de">die Baustelle</div><div class="vi-ar">موقع البناء</div></div>
+    <div class="vi"><div class="vi-de">das Gericht</div><div class="vi-ar">المحكمة / الطبق</div><div class="vi-note">السياق يحدد المعنى</div></div>
+    <div class="vi"><div class="vi-de">die Apotheke</div><div class="vi-ar">الصيدلية</div></div>
+    <div class="vi"><div class="vi-de">das Geschäft</div><div class="vi-ar">المتجر / الصفقة</div></div>
+    <div class="vi"><div class="vi-de">die Bank</div><div class="vi-ar">البنك / المقعد</div><div class="vi-note">السياق يحدد المعنى</div></div>
+  </div>
+
+  <p class="vst reveal">مفردات العمل الأساسية — Arbeitswortschatz</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">die Arbeit</div><div class="vi-ar">العمل</div></div>
+    <div class="vi"><div class="vi-de">der Beruf</div><div class="vi-ar">المهنة (رسمية)</div><div class="vi-note">متخصصة ومتعلّمة</div></div>
+    <div class="vi"><div class="vi-de">der Job</div><div class="vi-ar">الوظيفة (غير رسمي)</div><div class="vi-note">أي عمل</div></div>
+    <div class="vi"><div class="vi-de">das Gehalt</div><div class="vi-ar">الراتب الشهري</div><div class="vi-note">للموظفين</div></div>
+    <div class="vi"><div class="vi-de">der Lohn</div><div class="vi-ar">الأجر اليومي/الساعي</div><div class="vi-note">للعمال اليدويين</div></div>
+    <div class="vi"><div class="vi-de">der Urlaub</div><div class="vi-ar">الإجازة السنوية</div><div class="vi-note">مدفوعة في ألمانيا</div></div>
+    <div class="vi"><div class="vi-de">der Feierabend</div><div class="vi-ar">نهاية يوم العمل</div><div class="vi-note">⚠️ مقدسة ثقافياً!</div></div>
+    <div class="vi"><div class="vi-de">die Arbeitszeit</div><div class="vi-ar">ساعات العمل</div></div>
+    <div class="vi"><div class="vi-de">die Vollzeit</div><div class="vi-ar">دوام كامل</div></div>
+    <div class="vi"><div class="vi-de">die Teilzeit</div><div class="vi-ar">دوام جزئي</div></div>
+    <div class="vi"><div class="vi-de">der Chef / die Chefin</div><div class="vi-ar">المدير / المديرة</div></div>
+    <div class="vi"><div class="vi-de">der Kollege / die Kollegin</div><div class="vi-ar">الزميل / الزميلة</div></div>
+    <div class="vi"><div class="vi-de">die Besprechung</div><div class="vi-ar">الاجتماع</div><div class="vi-note">= das Meeting</div></div>
+    <div class="vi"><div class="vi-de">der Vertrag</div><div class="vi-ar">العقد</div></div>
+    <div class="vi"><div class="vi-de">die Stelle</div><div class="vi-ar">الوظيفة (رسمي)</div></div>
+    <div class="vi"><div class="vi-de">das Vorstellungsgespräch</div><div class="vi-ar">مقابلة العمل</div><div class="vi-note">vorstellen = يعرّف نفسه</div></div>
+    <div class="vi"><div class="vi-de">die Bewerbung</div><div class="vi-ar">طلب التوظيف</div><div class="vi-note">sich bewerben = يتقدم</div></div>
+    <div class="vi"><div class="vi-de">die Kündigung</div><div class="vi-ar">إشعار إنهاء العقد</div><div class="vi-note">استقالة أو فصل</div></div>
+    <div class="vi"><div class="vi-de">die Ausbildung</div><div class="vi-ar">التدريب المهني</div><div class="vi-note">نظام ألماني فريد</div></div>
+    <div class="vi"><div class="vi-de">das Praktikum</div><div class="vi-ar">التدريب الميداني</div></div>
+    <div class="vi"><div class="vi-de">die Karriere</div><div class="vi-ar">المسيرة المهنية</div></div>
+    <div class="vi"><div class="vi-de">die Pause</div><div class="vi-ar">الاستراحة</div></div>
+    <div class="vi"><div class="vi-de">der Betrieb</div><div class="vi-ar">المنشأة</div></div>
+    <div class="vi"><div class="vi-de">das Projekt</div><div class="vi-ar">المشروع</div></div>
+  </div>
+
+  <p class="vst reveal">أفعال العمل — Berufsverben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">arbeiten</div><div class="vi-ar">يعمل</div><div class="vi-note">→ gearbeitet (haben)</div></div>
+    <div class="vi"><div class="vi-de">verdienen</div><div class="vi-ar">يكسب</div><div class="vi-note">→ verdient (haben)</div></div>
+    <div class="vi"><div class="vi-de">bekommen</div><div class="vi-ar">يحصل على</div><div class="vi-note">→ bekommen (haben)</div></div>
+    <div class="vi"><div class="vi-de">kündigen</div><div class="vi-ar">يستقيل / يفصل</div><div class="vi-note">→ gekündigt (haben)</div></div>
+    <div class="vi"><div class="vi-de">sich bewerben</div><div class="vi-ar">يتقدم للوظيفة</div><div class="vi-note">→ beworben (haben)</div></div>
+    <div class="vi"><div class="vi-de">leiten</div><div class="vi-ar">يدير / يقود</div><div class="vi-note">→ geleitet (haben)</div></div>
+    <div class="vi"><div class="vi-de">telefonieren</div><div class="vi-ar">يتصل بالهاتف</div><div class="vi-note">→ telefoniert (haben)</div></div>
+    <div class="vi"><div class="vi-de">erledigen</div><div class="vi-ar">ينجز / يُنهي</div><div class="vi-note">→ erledigt (haben)</div></div>
+    <div class="vi"><div class="vi-de">anfangen</div><div class="vi-ar">يبدأ</div><div class="vi-note">→ angefangen (haben)</div></div>
+    <div class="vi"><div class="vi-de">aufhören</div><div class="vi-ar">يتوقف / ينهي</div><div class="vi-note">→ aufgehört (haben)</div></div>
+    <div class="vi"><div class="vi-de">schreiben</div><div class="vi-ar">يكتب</div><div class="vi-note">→ geschrieben (haben)</div></div>
+    <div class="vi"><div class="vi-de">präsentieren</div><div class="vi-ar">يقدم عرضاً</div><div class="vi-note">→ präsentiert (haben)</div></div>
+  </div>
+
+  <p class="vst reveal">صفات وظروف مهمة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">beruflich</div><div class="vi-ar">مهنياً</div></div>
+    <div class="vi"><div class="vi-de">pünktlich</div><div class="vi-ar">دقيق في المواعيد</div><div class="vi-note">⚠️ ضروري في ألمانيا</div></div>
+    <div class="vi"><div class="vi-de">zufrieden</div><div class="vi-ar">راضٍ / مرتاح</div></div>
+    <div class="vi"><div class="vi-de">gestresst</div><div class="vi-ar">مضغوط / متوتر</div></div>
+    <div class="vi"><div class="vi-de">fleißig</div><div class="vi-ar">مجتهد</div></div>
+    <div class="vi"><div class="vi-de">selbstständig</div><div class="vi-ar">مستقل / حر</div></div>
+    <div class="vi"><div class="vi-de">erfahren</div><div class="vi-ar">ذو خبرة</div></div>
+    <div class="vi"><div class="vi-de">qualifiziert</div><div class="vi-ar">مؤهل</div></div>
+    <div class="vi"><div class="vi-de">fest / befristet</div><div class="vi-ar">دائم / مؤقت</div></div>
+    <div class="vi"><div class="vi-de">hauptberuflich</div><div class="vi-ar">كعمل رئيسي</div></div>
+    <div class="vi"><div class="vi-de">nebenberuflich</div><div class="vi-ar">كعمل ثانوي</div></div>
+    <div class="vi"><div class="vi-de">seit + دات</div><div class="vi-ar">منذ (مستمر للحاضر)</div><div class="vi-note">seit drei Jahren = منذ 3 سنوات</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     KULTUR
+════════════════════════════════════════════ -->
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">ثقافة العمل الألمانية — Arbeitskultur</div><div class="sec-d">ما لا يعلّمه أي كتاب — 9 حقائق جوهرية</div></div></div>
+
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🕔</span><div class="cc-title">Feierabend — مقدس لا يُمس</div><div class="cc-text">في الساعة 5 أو 6 مساءً، الألماني يضع الكمبيوتر ويخرج. لا ردود على رسائل العمل بعد الدوام. "Schönen Feierabend!" = وداع نهاية يوم العمل، يقوله الجميع.</div></div>
+    <div class="culture-card"><span class="cc-icon">🏖️</span><div class="cc-title">Urlaub — حق لا تنازل عنه</div><div class="cc-text">القانون الألماني يكفل 20 يوم إجازة سنوية كحد أدنى. عملياً 25-30 يوم في معظم الشركات. الإجازة تُؤخذ وليست "تكرماً من المدير".</div></div>
+    <div class="culture-card"><span class="cc-icon">⏰</span><div class="cc-title">Pünktlichkeit — الدقة شرف</div><div class="cc-text">التأخر 5 دقائق في مقابلة عمل = رسالة سلبية جداً. وصول مبكر 5 دقائق = احترام. "Ich komme zu spät" مع اتصال مسبق = مقبول نادراً.</div></div>
+    <div class="culture-card"><span class="cc-icon">📚</span><div class="cc-title">Ausbildung — نظام فريد</div><div class="cc-text">2-3 سنوات تعليم مهني + عمل فعلي في الشركة في نفس الوقت. ينتج مهنيين ممتازين. حوالي 60% من الألمان يختارونه كبديل ناجح عن الجامعة.</div></div>
+    <div class="culture-card"><span class="cc-icon">🤝</span><div class="cc-title">du / Sie في العمل</div><div class="cc-text">الشركات الحديثة (Tech في Berlin): du للجميع حتى مع المدير. الشركات التقليدية: Sie رسمي في البداية. انتظر حتى يقول لك الآخر "Wir können du sagen".</div></div>
+    <div class="culture-card"><span class="cc-icon">💬</span><div class="cc-title">الصراحة المهنية</div><div class="cc-text">الألماني يقول "Das ist falsch" (هذا خطأ) بدون تلطيف. هذه ليست عدوانية — هي ملاحظة مهنية مباشرة. الثناء نادر لأن "الأداء الجيد = طبيعي".</div></div>
+    <div class="culture-card"><span class="cc-icon">🏭</span><div class="cc-title">Betriebsrat — مجلس العمال</div><div class="cc-text">في كل شركة كبيرة، مجلس عمال منتخب يملك صلاحية رفض قرارات الإدارة. الموظف شريك في الشركة لا مجرد أداة.</div></div>
+    <div class="culture-card"><span class="cc-icon">📋</span><div class="cc-title">Lebenslauf — السيرة الذاتية</div><div class="cc-text">مختلفة عن السيرة العربية: تشمل صورة شخصية احترافية وتاريخ الميلاد. تُكتب بترتيب زمني عكسي. الدقة والوضوح أهم من الإبداع البصري.</div></div>
+    <div class="culture-card"><span class="cc-icon">🌍</span><div class="cc-title">اللغة وسوق العمل</div><div class="cc-text">معظم الوظائف تشترط B1-B2. للتقنية في Berlin يكفي إنجليزي أحياناً. A1 يكفيك للتعامل اليومي — B2 = دخول سوق العمل الكامل. أنت في المسار الصحيح!</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     MISTAKES
+════════════════════════════════════════════ -->
+<section class="section" id="mistakes">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الأخطاء الشائعة — Häufige Fehler</div><div class="sec-d">8 أخطاء يقع فيها المتعلمون دائماً في هذه الوحدة</div></div></div>
+
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich bin ein Arzt.</div><div class="mi-explain">ein/eine مع المهنة بعد sein = خطأ دائماً</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich bin Arzt.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Er hat nach Berlin gegangen.</div><div class="mi-explain">gehen = حركة → sein وليس haben</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Er ist nach Berlin gegangen.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Wenn ich habe Zeit, lerne ich.</div><div class="mi-explain">في wenn: الفعل في النهاية دائماً</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Wenn ich Zeit habe, lerne ich.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich arbeite in Büro.</div><div class="mi-explain">Büro محايد (das) → in + dem = im</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich arbeite im Büro.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Was ist dein Beruf? (مع مدير جديد)</div><div class="mi-explain">du مع مدير في أول لقاء = غير مناسب</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Was machen Sie beruflich?</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich habe gearbeitet heute.</div><div class="mi-explain">Partizip II دائماً في نهاية الجملة</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich habe heute gearbeitet.</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Wo kommen Sie? (أصلك من أين؟)</div><div class="mi-explain">Wo=أين (موقع) · Woher=من أين (أصل)</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Woher kommen Sie?</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Er ist Arzterin.</div><div class="mi-explain">er = مذكر → Arzt وليس Ärztin</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Er ist Arzt. / Sie ist Ärztin.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     EXERCISES
+════════════════════════════════════════════ -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين التفاعلية — Übungen</div><div class="sec-d">32 سؤال · 6 أقسام · اختبر نفسك الآن</div></div></div>
+
+  <!-- EX 1: Berufe Q1–8 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 1 / 6 — المهن والعمل (8 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q1: "Er ist ___." — هو طبيب. ما الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="Arzt" onclick="check(this)">Arzt</button><button class="ex-btn" data-q="1" data-a="Ärztin" onclick="check(this)">Ärztin</button><button class="ex-btn" data-q="1" data-a="ein Arzt" onclick="check(this)">ein Arzt</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q2: ما المؤنث من "der Lehrer"؟</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="Lehrerin" onclick="check(this)">Lehrerin</button><button class="ex-btn" data-q="2" data-a="Lehrere" onclick="check(this)">Lehrere</button><button class="ex-btn" data-q="2" data-a="Lehrerinnen" onclick="check(this)">Lehrerinnen</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q3: ما المؤنث من "der Ingenieur"؟</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="Ingenieurin" onclick="check(this)">Ingenieurin</button><button class="ex-btn" data-q="3" data-a="Ingenieure" onclick="check(this)">Ingenieure</button><button class="ex-btn" data-q="3" data-a="Ingenieurinn" onclick="check(this)">Ingenieurinn</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q4: "Ich arbeite im ___." — في المكتب. ما الكلمة؟</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="Büro" onclick="check(this)">Büro</button><button class="ex-btn" data-q="4" data-a="Haus" onclick="check(this)">Haus</button><button class="ex-btn" data-q="4" data-a="Bahnhof" onclick="check(this)">Bahnhof</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q5: الراتب الشهري للموظف = ___</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="Gehalt" onclick="check(this)">Gehalt</button><button class="ex-btn" data-q="5" data-a="Urlaub" onclick="check(this)">Urlaub</button><button class="ex-btn" data-q="5" data-a="Feierabend" onclick="check(this)">Feierabend</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q6: "Der ___ beginnt um 17 Uhr." — نهاية يوم العمل</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="Feierabend" onclick="check(this)">Feierabend</button><button class="ex-btn" data-q="6" data-a="Urlaub" onclick="check(this)">Urlaub</button><button class="ex-btn" data-q="6" data-a="Beruf" onclick="check(this)">Beruf</button></div><div class="ex-fb" id="f6"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q7: ما الفرق بين "Beruf" و"Job"؟</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="Beruf=مهنة متخصصة · Job=عمل غير رسمي" onclick="check(this)">Beruf=متخصص · Job=غير رسمي</button><button class="ex-btn" data-q="7" data-a="لا فرق" onclick="check(this)">لا فرق بينهما</button><button class="ex-btn" data-q="7" data-a="Job=الراتب" onclick="check(this)">Job = الراتب</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q8: "Sie ist ___." — هي مدرسة. الشكل الصحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="Lehrerin" onclick="check(this)">Lehrerin</button><button class="ex-btn" data-q="8" data-a="Lehrer" onclick="check(this)">Lehrer</button><button class="ex-btn" data-q="8" data-a="eine Lehrerin" onclick="check(this)">eine Lehrerin</button></div><div class="ex-fb" id="f8"></div></div>
+  </div>
+
+  <!-- EX 2: W-Fragen Q9–15 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 2 / 6 — أدوات الاستفهام (7 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q9: "___ bist du?" — من أنت؟</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="Wer" onclick="check(this)">Wer</button><button class="ex-btn" data-q="9" data-a="Was" onclick="check(this)">Was</button><button class="ex-btn" data-q="9" data-a="Wie" onclick="check(this)">Wie</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q10: "___ arbeitest du?" — أين تعمل؟</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="Wo" onclick="check(this)">Wo</button><button class="ex-btn" data-q="10" data-a="Woher" onclick="check(this)">Woher</button><button class="ex-btn" data-q="10" data-a="Wohin" onclick="check(this)">Wohin</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q11: "___ kommst du?" — من أين أنت؟</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="Woher" onclick="check(this)">Woher</button><button class="ex-btn" data-q="11" data-a="Wohin" onclick="check(this)">Wohin</button><button class="ex-btn" data-q="11" data-a="Wo" onclick="check(this)">Wo</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q12: "___ fährst du nach der Arbeit?" — إلى أين؟</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="Wohin" onclick="check(this)">Wohin</button><button class="ex-btn" data-q="12" data-a="Wo" onclick="check(this)">Wo</button><button class="ex-btn" data-q="12" data-a="Woher" onclick="check(this)">Woher</button></div><div class="ex-fb" id="f12"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q13: "___ verdient ein Arzt?" — كم يكسب؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="Wie viel" onclick="check(this)">Wie viel</button><button class="ex-btn" data-q="13" data-a="Wie viele" onclick="check(this)">Wie viele</button><button class="ex-btn" data-q="13" data-a="Wann" onclick="check(this)">Wann</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q14: "___ beginnt die Besprechung?" — متى؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="Wann" onclick="check(this)">Wann</button><button class="ex-btn" data-q="14" data-a="Warum" onclick="check(this)">Warum</button><button class="ex-btn" data-q="14" data-a="Wie" onclick="check(this)">Wie</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q15: "___ lernst du Deutsch?" — لماذا؟</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="Warum" onclick="check(this)">Warum</button><button class="ex-btn" data-q="15" data-a="Wie" onclick="check(this)">Wie</button><button class="ex-btn" data-q="15" data-a="Wo" onclick="check(this)">Wo</button></div><div class="ex-fb" id="f15"></div></div>
+  </div>
+
+  <!-- EX 3: Partizip II Q16–20 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 3 / 6 — Partizip II (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q16: Partizip II of "lernen" →</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="gelernt" onclick="check(this)">gelernt</button><button class="ex-btn" data-q="16" data-a="gelernet" onclick="check(this)">gelernet</button><button class="ex-btn" data-q="16" data-a="lernend" onclick="check(this)">lernend</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q17: Partizip II of "arbeiten" → (الجذر ينتهي بـ t!)</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="gearbeitet" onclick="check(this)">gearbeitet</button><button class="ex-btn" data-q="17" data-a="gearbeit" onclick="check(this)">gearbeit</button><button class="ex-btn" data-q="17" data-a="gearbeitend" onclick="check(this)">gearbeitend</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q18: Partizip II of "machen" →</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="gemacht" onclick="check(this)">gemacht</button><button class="ex-btn" data-q="18" data-a="gemachtet" onclick="check(this)">gemachtet</button><button class="ex-btn" data-q="18" data-a="gemach" onclick="check(this)">gemach</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q19: Partizip II of "wohnen" →</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="gewohnt" onclick="check(this)">gewohnt</button><button class="ex-btn" data-q="19" data-a="gewhont" onclick="check(this)">gewhont</button><button class="ex-btn" data-q="19" data-a="wohnend" onclick="check(this)">wohnend</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q20: Partizip II of "kaufen" →</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="gekauft" onclick="check(this)">gekauft</button><button class="ex-btn" data-q="20" data-a="gekaüft" onclick="check(this)">gekaüft</button><button class="ex-btn" data-q="20" data-a="kaufend" onclick="check(this)">kaufend</button></div><div class="ex-fb" id="f20"></div></div>
+  </div>
+
+  <!-- EX 4: haben / sein Q21–25 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 4 / 6 — haben أم sein مع Perfekt؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q21: "Ich ___ heute viel gearbeitet." — arbeiten = ليس حركة</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="habe" onclick="check(this)">habe</button><button class="ex-btn" data-q="21" data-a="bin" onclick="check(this)">bin</button><button class="ex-btn" data-q="21" data-a="hat" onclick="check(this)">hat</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q22: "Er ___ nach Berlin gefahren." — fahren = حركة!</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="ist" onclick="check(this)">ist</button><button class="ex-btn" data-q="22" data-a="hat" onclick="check(this)">hat</button><button class="ex-btn" data-q="22" data-a="bin" onclick="check(this)">bin</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q23: "Wir ___ Deutsch gelernt." — lernen = ليس حركة</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="haben" onclick="check(this)">haben</button><button class="ex-btn" data-q="23" data-a="sind" onclick="check(this)">sind</button><button class="ex-btn" data-q="23" data-a="seid" onclick="check(this)">seid</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q24: "Sie ___ um 9 Uhr ins Büro gekommen." — kommen = حركة!</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="ist" onclick="check(this)">ist</button><button class="ex-btn" data-q="24" data-a="hat" onclick="check(this)">hat</button><button class="ex-btn" data-q="24" data-a="sind" onclick="check(this)">sind</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q25: "Du ___ gut geschlafen." — schlafen = ليس حركة</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="hast" onclick="check(this)">hast</button><button class="ex-btn" data-q="25" data-a="bist" onclick="check(this)">bist</button><button class="ex-btn" data-q="25" data-a="hat" onclick="check(this)">hat</button></div><div class="ex-fb" id="f25"></div></div>
+  </div>
+
+  <!-- EX 5: wenn Q26–29 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 5 / 6 — جمل wenn (4 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q26: "Wenn ich Zeit ___, lerne ich Deutsch." (ich + haben)</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="habe" onclick="check(this)">habe</button><button class="ex-btn" data-q="26" data-a="haben" onclick="check(this)">haben</button><button class="ex-btn" data-q="26" data-a="hat" onclick="check(this)">hat</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q27: هل هذه الجملة صحيحة؟ → "Wenn ich habe Zeit, lerne ich."</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="خطأ — الفعل في النهاية: Wenn ich Zeit habe" onclick="check(this)">خطأ — الفعل في النهاية</button><button class="ex-btn" data-q="27" data-a="صحيح تماماً" onclick="check(this)">صحيح تماماً</button><button class="ex-btn" data-q="27" data-a="خطأ — احذف wenn" onclick="check(this)">خطأ — احذف wenn</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q28: "Wenn er mehr Gehalt ___, kauft er ein Auto." (er + bekommen)</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="bekommt" onclick="check(this)">bekommt</button><button class="ex-btn" data-q="28" data-a="bekomme" onclick="check(this)">bekomme</button><button class="ex-btn" data-q="28" data-a="bekommen" onclick="check(this)">bekommen</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q29: "Wenn wir Urlaub ___, fahren wir ans Meer." (wir + haben)</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="haben" onclick="check(this)">haben</button><button class="ex-btn" data-q="29" data-a="habe" onclick="check(this)">habe</button><button class="ex-btn" data-q="29" data-a="hat" onclick="check(this)">hat</button></div><div class="ex-fb" id="f29"></div></div>
+  </div>
+
+  <!-- EX 6: Kultur Q30–32 -->
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 6 / 6 — ثقافة وتجميع (3 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Q30: ما معنى "Feierabend" في بيئة العمل الألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="نهاية يوم العمل — مقدسة في ألمانيا" onclick="check(this)">نهاية يوم العمل — مقدسة</button><button class="ex-btn" data-q="30" data-a="بداية يوم العمل" onclick="check(this)">بداية يوم العمل</button><button class="ex-btn" data-q="30" data-a="الإجازة السنوية" onclick="check(this)">الإجازة السنوية</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q31: ما الحد الأدنى القانوني للإجازة السنوية في ألمانيا؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="4 أسابيع (20 يوم) كحد أدنى" onclick="check(this)">4 أسابيع (20 يوم)</button><button class="ex-btn" data-q="31" data-a="أسبوع واحد فقط" onclick="check(this)">أسبوع واحد فقط</button><button class="ex-btn" data-q="31" data-a="لا يوجد إجازة مدفوعة" onclick="check(this)">لا إجازة مدفوعة</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Q32: لماذا "Ich bin eine Ärztin." خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="ein/eine لا تُستخدم مع المهن بعد sein" onclick="check(this)">ein/eine لا تُستخدم مع المهن بعد sein</button><button class="ex-btn" data-q="32" data-a="Ärztin خطأ — الصحيح Arzt" onclick="check(this)">Ärztin خطأ</button><button class="ex-btn" data-q="32" data-a="الجملة صحيحة تماماً" onclick="check(this)">الجملة صحيحة</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">↺ إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox">
+    <div class="score-num" id="scoreNum">0</div>
+    <div class="score-sub">إجابة صحيحة من 32</div>
+    <div class="score-msg" id="scoreMsg"></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     WRITING
+════════════════════════════════════════════ -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">الكتابة تجمع القواعد الثلاث معاً</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مضاعفة في Unit 14؟</div><p>هذه الوحدة تجمع ثلاث قواعد جديدة: <strong style="color:var(--white)">W-Fragen + Perfekt + wenn</strong>. الكتابة تجبرك على استخدام الثلاثة معاً في سياق واحد — وهذا أفضل مراجعة ممكنة وتثبيت للذاكرة.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — تعريف مهني كامل (6–10 جمل)</div>
+    <div class="wt-text">اكتب تعريفاً بنفسك مهنياً. يجب أن تتضمن:</div>
+    <ul class="wt-list">
+      <li>مهنتك الحالية أو المستقبلية (بدون ein/eine)</li>
+      <li>أين تعمل أو تدرس الآن</li>
+      <li>جملة Perfekt: ماذا فعلت اليوم في العمل أو الدراسة؟</li>
+      <li>جملة wenn: إذا/عندما تنجح في هدفك المهني — ماذا ستفعل؟</li>
+      <li>سؤال W-Frage لزميل وهمي</li>
+    </ul>
+    <textarea class="wt-input" placeholder="Ich bin ... (بدون ein) · Ich arbeite / studiere in ... · Heute habe ich ... gemacht. · Wenn ich ..., ... · Was machst du beruflich?"></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — مقابلة عمل خيالية (8–12 سطر حوار)</div>
+    <div class="wt-text">اكتب حوار مقابلة عمل كاملة. استخدم Sie رسمي وأجب على هذه الأسئلة في الحوار:</div>
+    <ul class="wt-list">
+      <li>Was machen Sie beruflich? — ما مهنتك؟</li>
+      <li>Wo haben Sie vorher gearbeitet? (استخدم Perfekt)</li>
+      <li>Warum möchten Sie hier arbeiten? (W-Frage + wenn)</li>
+      <li>Wenn Sie bei uns arbeiten, was möchten Sie lernen? (wenn)</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:180px;" placeholder="Chef: Guten Morgen! Was machen Sie beruflich?&#10;Ich: Ich bin ... · Ich arbeite seit ... bei ...&#10;Chef: Wo haben Sie vorher gearbeitet?&#10;Ich: Ich habe ... bei ... gearbeitet.&#10;Chef: Warum möchten Sie hier arbeiten?&#10;Ich: Weil ... / Wenn ich hier arbeite, ...&#10;Chef: ..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — Partizip II من الذاكرة</div>
+    <div class="wt-text">أغلق الملف واكتب Partizip II لهذه الأفعال مع تحديد: haben أم sein؟ ثم افتح وتحقق.</div>
+    <textarea class="wt-input" placeholder="lernen → ___ | haben / sein&#10;arbeiten → ___ | haben / sein&#10;machen → ___ | haben / sein&#10;kaufen → ___ | haben / sein&#10;gehen → ___ | haben / sein&#10;fahren → ___ | haben / sein&#10;kommen → ___ | haben / sein&#10;schlafen → ___ | haben / sein"></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     RESOURCES
+════════════════════════════════════════════ -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تعمّق بعد إنهاء الوحدة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — Berufe Deck</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">ابحث عن "German A1 Berufe" في Anki Web. حمّل deck مخصص للمهن. نظام التكرار المتباعد يثبّت مفردات المذكر والمؤنث.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW — Nicos Weg</div><div class="res-type">موقع مجاني</div><div class="res-desc">learngerman.dw.com — Nicos Weg مع تمارين مكتوبة. الحلقات 15-20 فيها مشاهد العمل والمهن والـ Café. مجاني كاملاً.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Easy German — Beruf</div><div class="res-type">قناة YouTube</div><div class="res-desc">ابحث "Easy German Beruf" على YouTube — حلقات فيها ألمان يتحدثون عن مهنهم بشكل طبيعي مع ترجمة ألمانية وإنجليزية.</div></div>
+    <div class="res-card"><span class="res-icon">🏫</span><div class="res-name">Goethe Institut — A1 نماذج</div><div class="res-type">موقع رسمي</div><div class="res-desc">نماذج اختبار Goethe A1 مجانية. موضوع المهن والعمل يظهر دائماً في الاختبار. جرّب نماذج الكتابة والاستماع.</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1.2</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي المستخدم في معاهد Goethe. Lektion 13-16 في Menschen A1.2 تقابل هذه الوحدة تقريباً. مفيد جداً للتعمق.</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki — محادثة مهنية</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">بعد Unit 14 يمكنك إجراء محادثة تعريف مهني كاملة. اطلب Community Tutor وتحدث عن مهنتك بالألمانية 30 دقيقة.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📖</span><div class="res-name">dict.cc</div><div class="res-type">قاموس ألماني-إنجليزي</div><div class="res-desc">أفضل قاموس للمهن — يعطيك المذكر والمؤنث والجمع تلقائياً. ابحث عن أي مهنة وستجد كل الصيغ.</div><a class="res-link" href="https://www.dict.cc/" target="_blank">dict.cc ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">مراجعة يومية</div><div class="res-desc">10 دقائق يومياً كمراجعة بعد Unit 14. أكمل "Work & Career" و"Household" في Duolingo German.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ══════════════════════════════════════════
+     STUDY PLAN
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">المهن + W-Fragen</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 1 (Berufe) — اكتب المهن</li>
+        <li class="vl">شاهد الفيديو 2 (W-Fragen) — اكتب مثالاً لكل</li>
+        <li>ادرس جدول 16 مهنة — مذكر ومؤنث</li>
+        <li>ادرس قسم W-Fragen الكامل مع الجدول</li>
+        <li>ادرس الحوار 1 و2 بصوت عالٍ</li>
+        <li>احفظ قاعدة sein + Beruf بدون ein</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 – 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">Perfekt — الماضي</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 3 (Perfekt) — صرّف مع الفيديو</li>
+        <li>ادرس جدول Partizip II كاملاً</li>
+        <li>ادرس قاعدة haben مقابل sein</li>
+        <li>كوّن 8 جمل Perfekt شفهياً بدون نظر</li>
+        <li class="wl">مهمة 3 (Partizip II من الذاكرة)</li>
+        <li>حل تمرين 3 و4 كاملاً</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 – 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">wenn + المفردات</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 4 (wenn) واكتب 3 جمل</li>
+        <li>ادرس قسم wenn كاملاً مع الأمثلة</li>
+        <li>ادرس المفردات 90+ (4 أقسام)</li>
+        <li>ادرس قسم الثقافة — 9 حقائق</li>
+        <li>اقرأ الحوار 3 بصوت عالٍ 3 مرات</li>
+        <li>حل تمرين 5 (wenn) + راجع الأخطاء</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 – 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">الكتابة + التمارين</div>
+      <ul class="day-tasks">
+        <li class="wl">مهمة 1 (تعريف مهني كامل)</li>
+        <li class="wl">مهمة 2 (مقابلة عمل حوار)</li>
+        <li>حل تمرين 1 و2 (مهن + W-Fragen)</li>
+        <li>حل تمرين 6 (ثقافة)</li>
+        <li>ادرس الأخطاء الشائعة الـ 8</li>
+        <li>راجع كل ما درسته شفهياً بدون نظر</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 – 3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">05</div>
+      <div class="day-title">مراجعة + اختبار</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 5 (Nicos Weg) — مشاهد العمل</li>
+        <li>صرّف Perfekt بدون نظر — 10 أفعال</li>
+        <li>كوّن 5 جمل wenn بدون نظر</li>
+        <li>أجب على 12 W-Frage بدون نظر</li>
+        <li>أعد حل كل التمارين الـ 32 — هدف 27+</li>
+        <li>✅ انتقل لـ Unit 15 إذا حصلت 27+/32</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5 – 3 ساعات</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 15 — المراجعة الشاملة + Goethe A1</div><p>انتقل لـ Unit 15 فقط إذا: ✅ تستخدم 12 أداة استفهام بشكل صحيح ✅ تكوّن Perfekt صحيح مع haben وsein ✅ تكتب جمل wenn مع الفعل في النهاية ✅ تعرف 50+ كلمة عمل ✅ حصلت 27+/32 في التمارين. Unit 15 = مراجعة شاملة لكل A1 + Goethe-Zertifikat — الوحدة الأهم في الخطة كلها.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 14</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">العمل · المهن · W-Fragen الكاملة · مقدمة Perfekt · جمل wenn · 90+ مفردة · 32 تمرين</p>
+  <p>A1 المتقدم · الخطوة قبل الأخيرة · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.12)">Unit 15 ← مراجعة شاملة + Goethe-Zertifikat A1 — النهاية القوية</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+
+const answers={
+  1:'Arzt',2:'Lehrerin',3:'Ingenieurin',4:'Büro',5:'Gehalt',6:'Feierabend',
+  7:'Beruf=مهنة متخصصة · Job=عمل غير رسمي',8:'Lehrerin',
+  9:'Wer',10:'Wo',11:'Woher',12:'Wohin',13:'Wie viel',14:'Wann',15:'Warum',
+  16:'gelernt',17:'gearbeitet',18:'gemacht',19:'gewohnt',20:'gekauft',
+  21:'habe',22:'ist',23:'haben',24:'ist',25:'hast',
+  26:'habe',27:'خطأ — الفعل في النهاية: Wenn ich Zeit habe',28:'bekommt',29:'haben',
+  30:'نهاية يوم العمل — مقدسة في ألمانيا',
+  31:'4 أسابيع (20 يوم) كحد أدنى',
+  32:'ein/eine لا تُستخدم مع المهن بعد sein'
+};
+
+const fb={
+  1:{ok:'✅ صح! Er ist Arzt — بدون ein أبداً مع المهن بعد sein',no:'❌ بعد sein + مهنة = لا نستخدم ein أبداً → Er ist Arzt ✅'},
+  2:{ok:'✅ ممتاز! der Lehrer → die Lehrerin — نضيف -in للمؤنث',no:'❌ der Lehrer → die Lehrerin — نضيف -in للمؤنث فقط'},
+  3:{ok:'✅ صح! der Ingenieur → die Ingenieurin',no:'❌ der Ingenieur → die Ingenieurin — نضيف -in'},
+  4:{ok:'✅ im Büro! im = in+dem. das Büro محايد → dem Büro → im Büro',no:'❌ المكتب = das Büro → im Büro (in+dem=im). كل ما هو محايد = im'},
+  5:{ok:'✅ das Gehalt = الراتب الشهري للموظف',no:'❌ das Gehalt=الراتب · der Urlaub=الإجازة · der Feierabend=نهاية يوم العمل'},
+  6:{ok:'✅ ممتاز! der Feierabend = نهاية يوم العمل — شبه مقدسة في الثقافة الألمانية',no:'❌ der Feierabend = نهاية يوم العمل (Feier=احتفال · Abend=مساء)'},
+  7:{ok:'✅ صح! Beruf=مهنة متخصصة تحتاج تعليماً · Job=عمل عادي غير رسمي',no:'❌ الفرق حقيقي: Beruf=مهنة متخصصة (Arzt · Ingenieur) · Job=أي عمل'},
+  8:{ok:'✅ Sie ist Lehrerin — بدون eine أبداً!',no:'❌ eine Lehrerin خطأ بعد sein → Sie ist Lehrerin بدون eine'},
+  9:{ok:'✅ Wer = من؟ للأشخاص دائماً',no:'❌ من؟ = Wer · Was=ماذا · Wie=كيف'},
+  10:{ok:'✅ Wo = أين؟ للموقع والمكان',no:'❌ أين؟ = Wo · Woher=من أين · Wohin=إلى أين'},
+  11:{ok:'✅ Woher = من أين؟ للأصل والمصدر',no:'❌ من أين؟ = Woher · Wo=أين (موقع) · Wohin=إلى أين (وجهة)'},
+  12:{ok:'✅ Wohin = إلى أين؟ للوجهة والاتجاه',no:'❌ إلى أين؟ = Wohin · Wo=أين (موقع) · Woher=من أين'},
+  13:{ok:'✅ Wie viel = كم؟ للكميات والأسعار والرواتب',no:'❌ للراتب (كمية/مبلغ): Wie viel · Wie viele=لعدد الأشخاص والأشياء'},
+  14:{ok:'✅ Wann = متى؟ للوقت والمواعيد دائماً',no:'❌ متى؟ = Wann · Warum=لماذا · Wie=كيف'},
+  15:{ok:'✅ Warum = لماذا؟ Wieso يعني نفس الشيء',no:'❌ لماذا؟ = Warum (أو Wieso) · Wie=كيف · Wo=أين'},
+  16:{ok:'✅ gelernt! lernen: ge + lern + t — قاعدة منتظمة',no:'❌ lernen → gelernt (ge + lern + t). القاعدة: ge + جذر + t'},
+  17:{ok:'✅ gearbeitet! الجذر "arbeit" ينتهي بـ t → نضيف et لا t فقط',no:'❌ arbeiten → gearbeitet (ge+arbeit+et). الجذر ينتهي بـ t → نضيف -et'},
+  18:{ok:'✅ gemacht! machen: ge + mach + t',no:'❌ machen → gemacht (ge + mach + t)'},
+  19:{ok:'✅ gewohnt! wohnen: ge + wohn + t',no:'❌ wohnen → gewohnt (ge + wohn + t)'},
+  20:{ok:'✅ gekauft! kaufen: ge + kauf + t',no:'❌ kaufen → gekauft (ge + kauf + t)'},
+  21:{ok:'✅ habe! arbeiten ليس فعل حركة → haben → Ich habe gearbeitet',no:'❌ arbeiten=ليس حركة → haben. الحركة تستخدم sein → Ich habe gearbeitet'},
+  22:{ok:'✅ ist! fahren = حركة من مكان لمكان → sein دائماً',no:'❌ fahren = حركة! → sein → Er ist nach Berlin gefahren ✅'},
+  23:{ok:'✅ haben! lernen = ليس حركة → haben → Wir haben Deutsch gelernt',no:'❌ lernen = ليس حركة → haben → Wir haben Deutsch gelernt ✅'},
+  24:{ok:'✅ ist! kommen = حركة (وصول) → sein → Sie ist um 9 Uhr gekommen',no:'❌ kommen = حركة/وصول → sein → Sie ist um 9 Uhr gekommen ✅'},
+  25:{ok:'✅ hast! schlafen = ليس حركة → haben → Du hast gut geschlafen',no:'❌ schlafen = ليس حركة → haben → Du hast gut geschlafen ✅'},
+  26:{ok:'✅ habe! في wenn: الفعل في النهاية — ich + haben → habe',no:'❌ في wenn الفعل في النهاية. ich + haben → habe. Wenn ich Zeit habe ✅'},
+  27:{ok:'✅ خطأ فعلاً! الفعل في wenn يجب أن يكون في النهاية: Wenn ich Zeit habe',no:'❌ الجملة خاطئة — الفعل في wenn يذهب للنهاية: Wenn ich Zeit habe, lerne ich. ✅'},
+  28:{ok:'✅ bekommt! er + bekommen → bekommt. في wenn الفعل في النهاية',no:'❌ er + bekommen → bekommt (مفرد غائب). في wenn: الفعل في النهاية'},
+  29:{ok:'✅ haben! wir + haben → haben. في wenn الفعل في النهاية',no:'❌ wir + haben → haben (ليس habe أو hat). في wenn: الفعل في النهاية'},
+  30:{ok:'✅ Feierabend = نهاية يوم العمل — مقدسة جداً في الثقافة الألمانية!',no:'❌ Feierabend = نهاية يوم العمل. Feier=احتفال · Abend=مساء. مقدسة!'},
+  31:{ok:'✅ 20 يوم (4 أسابيع) كحد أدنى قانوني. عملياً 25-30 يوم في معظم الشركات',no:'❌ القانون الألماني يكفل 20 يوم (4 أسابيع) سنوياً كحد أدنى'},
+  32:{ok:'✅ صح! eine Ärztin بعد sein = خطأ. الصحيح: Ich bin Ärztin بدون ein/eine',no:'❌ الخطأ هو "eine" — بعد sein لا نستخدم ein/eine مع المهن: Ich bin Ärztin ✅'}
+};
+
+const answered={};
+
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 مثالي! أتقنت Unit 14 كاملاً. أنت جاهز لـ Unit 15 والاختبار النهائي!';
+  else if(pct>=0.9) msg='✅ ممتاز جداً! راجع الأسئلة الخاطئة وانتقل لـ Unit 15.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع Perfekt وwenn وحل التمارين مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع أقسام W-Fragen وPerfekt وwenn قبل الانتقال.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل لـ Unit 15 حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.getElementById('scoreBox').style.display='none';
+}
+</script>
+</body>
+</html>

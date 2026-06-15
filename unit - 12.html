@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 12 — FULL | الجسم والصحة · weh tun · Imperativ · dürfen/sollen | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'12';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:#f97316}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.body-section{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.body-col{background:var(--black);padding:1.8rem}
+.body-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.bc-gold{color:var(--gold)}.bc-blue{color:var(--blue)}.bc-green{color:var(--green)}.bc-purple{color:var(--purple)}
+.bi{display:flex;align-items:flex-start;gap:.8rem;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.bi:last-child{border-bottom:none}
+.bi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);min-width:155px;flex-shrink:0}
+.bi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.bi-note{font-size:.68rem;color:var(--dim)}
+.wt-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.wt-table th,.wt-table td{padding:.8rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.wt-table thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.wt-table tbody tr{transition:background .15s}
+.wt-table tbody tr:hover{background:var(--gray)}
+.wt-dat{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--blue);font-size:.88rem}
+.wt-verb{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--gold)}
+.wt-ex{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic;font-family:'JetBrains Mono',monospace}
+.imp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.imp-card{background:var(--black);padding:1.4rem}
+.imp-card-h{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.4rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.imp-sub{font-size:.7rem;color:var(--dim);margin-bottom:.9rem;line-height:1.5}
+.imp-list{list-style:none}
+.imp-list li{margin-bottom:.45rem;padding-bottom:.45rem;border-bottom:1px solid rgba(255,255,255,.03)}
+.imp-list li:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.imp-de{font-family:'JetBrains Mono',monospace;font-size:.84rem;font-weight:700}
+.imp-ar{font-family:'Cairo',sans-serif;font-size:.72rem;color:var(--dim);display:block;margin-top:.1rem}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-inf{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)}
+.modal-compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.mc-col{background:var(--black);padding:1.6rem}
+.mc-col-h{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.mc-conj{width:100%;font-size:.82rem;margin-bottom:1.1rem;border-collapse:collapse}
+.mc-conj td{padding:.28rem 0}
+.mc-conj td:first-child{color:var(--dim)}
+.mc-conj td:last-child{font-family:'JetBrains Mono',monospace;font-weight:700}
+.mc-row{padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.mc-row:last-child{border-bottom:none}
+.mc-de{font-family:'JetBrains Mono',monospace;font-size:.84rem;color:var(--white);font-weight:700}
+.mc-ar{font-size:.74rem;color:var(--dim);margin-top:.12rem}
+.mc-note{font-size:.66rem;color:rgba(255,206,0,.45);margin-top:.08rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:start}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem;padding-top:.2rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--green)}
+.mi-explain{font-size:.69rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{color:var(--gold)}.note-green code{color:var(--green)}.note-red code{color:#ff6b6b}.note-blue code{color:var(--blue)}
+.note-gold code,.note-green code,.note-red code,.note-blue code{font-family:'JetBrains Mono',monospace;background:rgba(255,255,255,.05);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}.sp-c{color:var(--green)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.7rem;color:var(--dim);padding:.26rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.64rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.body-section{grid-template-columns:1fr}.imp-grid{grid-template-columns:1fr}.days-grid{grid-template-columns:repeat(2,1fr)}.modal-compare{grid-template-columns:1fr}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 12 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#koerper">الجسم</a></li>
+    <li><a href="#wehtun">weh tun</a></li>
+    <li><a href="#imperativ">Imperativ</a></li>
+    <li><a href="#modal">dürfen/sollen</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#dialogues">حوارات</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🔴 متقدم A1 · Unit 12 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الجسم</span> <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span> <span class="r">الصحة</span></h1>
+  <p class="hero-sub">weh tun · Imperativ · dürfen · sollen<br>عند الطبيب · في الصيدلية · 90+ مفردة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام دراسة</span></div>
+    <div class="hm-item"><span class="hm-num">90</span><span class="hm-label">مفردة جديدة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين تفاعلي</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">حوار طبي</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">الفيديوهات — 6 مصادر مختارة</div><div class="sec-d">ابدأ بالفيديو المناسب لكل يوم — الترتيب مهم · إذا لم يعمل الرابط ابحث بالعنوان</div></div></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/hJFBqWYAhiY" title="German Body Parts Körperteile A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">🦴 مفردات · Körperteile</div><div class="video-title">أعضاء الجسم بالألمانية — Körperteile</div><div class="video-desc">مفردات الجسم A1 مع النطق الصحيح. إذا لم يعمل ابحث يوتيوب: <em>"German Body Parts Körperteile A1 vocabulary"</em></div><div class="video-task"><strong>مهمة اليوم 1:</strong> أوقف بعد كل عضو وكرره بصوت عالٍ 3 مرات — ركز على المقالة der/die/das.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/5BJKsIy9-EU" title="Beim Arzt Deutsch A1 Gespräch" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🏥 حوار · Beim Arzt</div><div class="video-title">عند الطبيب بالألمانية — Beim Arzt</div><div class="video-desc">حوار طبيب / مريض مع مفردات الأعراض. ابحث: <em>"Beim Arzt Deutsch A1 Gespräch Vokabular"</em></div><div class="video-task"><strong>مهمة اليوم 1:</strong> اكتب كل جملة يقولها المريض — لاحظ كيف يصف الألم بـ weh tun.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/_3j7xA_pMRE" title="weh tun Deutsch Schmerzen ausdrücken" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · weh tun</div><div class="video-title">كيف تعبر عن الألم — weh tun</div><div class="video-desc">الفرق بين tut و tun + الداتيف + أمثلة. ابحث: <em>"weh tun Deutsch A1 Schmerzen Dativ"</em></div><div class="video-task"><strong>مهمة اليوم 2:</strong> بعد الفيديو أكتب 6 جمل ألم بأعضاء مختلفة من الذاكرة.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/mWx8EF6VFZQ" title="Imperativ Deutsch A1 du ihr Sie" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Imperativ</div><div class="video-title">صيغة الأمر الألمانية — Imperativ</div><div class="video-desc">الثلاث صيغ du/ihr/Sie + الأفعال الشاذة. ابحث: <em>"Imperativ Deutsch A1 du ihr Sie Konjugation"</em></div><div class="video-task"><strong>مهمة اليوم 2:</strong> صرّف: trinken · nehmen · schlafen · kommen للصيغ الثلاث بصوت عالٍ.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/OW1_bLzSfvc" title="dürfen sollen Modalverben Deutsch A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">📐 Grammar · dürfen · sollen</div><div class="video-title">dürfen و sollen — الأفعال الناقصة الطبية</div><div class="video-desc">dürfen = إذن/حظر · sollen = واجب خارجي. ابحث: <em>"dürfen sollen Modalverben Deutsch A1 Unterschied"</em></div><div class="video-task"><strong>مهمة اليوم 3:</strong> اكتب 3 جمل بـ dürfen و3 بـ sollen من سياق الطبيب.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · A1</div><div class="video-title">Nicos Weg — A1 كاملاً (Deutsche Welle)</div><div class="video-desc">الفيلم الكامل من DW. ركز في Unit 12 على مشاهد الصحة والطبيب والصيدلية.</div><div class="video-task"><strong>مهمة اليوم 5:</strong> ابحث عن مشاهد الطبيب والمرض — اكتب كل جملة تخص الصحة في الفيلم.</div></div>
+    </div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📋 قائمة البحث على يوتيوب — إذا لم تعمل الروابط</div><p>🔍 <code>German Body Parts Körperteile A1</code> · 🔍 <code>Beim Arzt Deutsch A1 Gespräch</code> · 🔍 <code>weh tun Deutsch Dativ Schmerzen</code> · 🔍 <code>Imperativ Deutsch A1 du ihr Sie</code> · 🔍 <code>dürfen sollen Modalverben A1</code> · 🔍 <code>Nicos Weg DW A1 complete</code></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- BODY PARTS -->
+<section class="section" id="koerper">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">أعضاء الجسم — Körperteile</div><div class="sec-d">الرأس · الجذع · الأطراف · الأعضاء الداخلية + المقالة الضرورية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 قاعدة المقالة مع أعضاء الجسم</div><p>لا توجد قاعدة مختصرة — احفظ المقالة مع كل عضو: <code>der Kopf</code> · <code>die Nase</code> · <code>das Knie</code>. الجمع أيضاً مهم لأن <code>weh tun</code> يتغير: مفرد = <code>tut</code> · جمع = <code>tun</code>. الاختصار: احفظ كل كلمة مع مثال مثل <code>Mir tut der Kopf weh</code>.</p></div>
+  <div class="body-section reveal">
+    <div class="body-col">
+      <div class="body-col-h bc-gold">🧠 الرأس والوجه — Kopf &amp; Gesicht</div>
+      <div class="bi"><div class="bi-de">der Kopf</div><div><div class="bi-ar">الرأس</div><div class="bi-note">Kopfschmerzen = ألم الرأس</div></div></div>
+      <div class="bi"><div class="bi-de">das Gesicht</div><div><div class="bi-ar">الوجه</div></div></div>
+      <div class="bi"><div class="bi-de">das Auge (-n)</div><div><div class="bi-ar">العين</div><div class="bi-note">جمع: die Augen</div></div></div>
+      <div class="bi"><div class="bi-de">das Ohr (-en)</div><div><div class="bi-ar">الأذن</div><div class="bi-note">جمع: die Ohren</div></div></div>
+      <div class="bi"><div class="bi-de">die Nase</div><div><div class="bi-ar">الأنف</div></div></div>
+      <div class="bi"><div class="bi-de">der Mund</div><div><div class="bi-ar">الفم</div><div class="bi-note">Öffnen Sie den Mund!</div></div></div>
+      <div class="bi"><div class="bi-de">die Lippe (-n)</div><div><div class="bi-ar">الشفة</div><div class="bi-note">جمع: die Lippen</div></div></div>
+      <div class="bi"><div class="bi-de">der Zahn (ä-e)</div><div><div class="bi-ar">السن</div><div class="bi-note">جمع: die Zähne</div></div></div>
+      <div class="bi"><div class="bi-de">die Zunge</div><div><div class="bi-ar">اللسان</div></div></div>
+      <div class="bi"><div class="bi-de">der Hals</div><div><div class="bi-ar">الحلق / الرقبة</div><div class="bi-note">Halsschmerzen = ألم الحلق</div></div></div>
+      <div class="bi"><div class="bi-de">die Stirn</div><div><div class="bi-ar">الجبهة</div></div></div>
+      <div class="bi"><div class="bi-de">die Wange (-n)</div><div><div class="bi-ar">الخد</div></div></div>
+      <div class="bi"><div class="bi-de">das Haar (-e)</div><div><div class="bi-ar">الشعر</div><div class="bi-note">جمع: die Haare</div></div></div>
+    </div>
+    <div class="body-col">
+      <div class="body-col-h bc-blue">💪 الجذع والأطراف العلوية</div>
+      <div class="bi"><div class="bi-de">die Schulter (-n)</div><div><div class="bi-ar">الكتف</div></div></div>
+      <div class="bi"><div class="bi-de">der Arm (-e)</div><div><div class="bi-ar">الذراع</div></div></div>
+      <div class="bi"><div class="bi-de">der Ellenbogen</div><div><div class="bi-ar">الكوع</div></div></div>
+      <div class="bi"><div class="bi-de">das Handgelenk</div><div><div class="bi-ar">الرسغ</div></div></div>
+      <div class="bi"><div class="bi-de">die Hand (ä-e)</div><div><div class="bi-ar">اليد</div><div class="bi-note">جمع: die Hände</div></div></div>
+      <div class="bi"><div class="bi-de">der Finger</div><div><div class="bi-ar">الإصبع</div></div></div>
+      <div class="bi"><div class="bi-de">die Brust</div><div><div class="bi-ar">الصدر</div></div></div>
+      <div class="bi"><div class="bi-de">der Rücken</div><div><div class="bi-ar">الظهر</div><div class="bi-note">Rückenschmerzen = ألم الظهر</div></div></div>
+      <div class="bi"><div class="bi-de">der Bauch</div><div><div class="bi-ar">البطن</div><div class="bi-note">Bauchschmerzen = ألم البطن</div></div></div>
+      <div class="bi"><div class="bi-de">der Magen</div><div><div class="bi-ar">المعدة</div></div></div>
+    </div>
+    <div class="body-col">
+      <div class="body-col-h bc-green">🦵 الأطراف السفلية</div>
+      <div class="bi"><div class="bi-de">die Hüfte (-n)</div><div><div class="bi-ar">الورك / الخصر</div></div></div>
+      <div class="bi"><div class="bi-de">das Bein (-e)</div><div><div class="bi-ar">الساق</div><div class="bi-note">جمع: die Beine</div></div></div>
+      <div class="bi"><div class="bi-de">das Knie</div><div><div class="bi-ar">الركبة</div><div class="bi-note">جمع: die Knie</div></div></div>
+      <div class="bi"><div class="bi-de">der Fuß (ü-e)</div><div><div class="bi-ar">القدم</div><div class="bi-note">جمع: die Füße</div></div></div>
+      <div class="bi"><div class="bi-de">die Zehe (-n)</div><div><div class="bi-ar">إصبع القدم</div></div></div>
+      <div class="bi"><div class="bi-de">die Ferse (-n)</div><div><div class="bi-ar">الكعب</div></div></div>
+    </div>
+    <div class="body-col">
+      <div class="body-col-h bc-purple">❤️ الأعضاء الداخلية</div>
+      <div class="bi"><div class="bi-de">das Herz</div><div><div class="bi-ar">القلب</div></div></div>
+      <div class="bi"><div class="bi-de">die Lunge (-n)</div><div><div class="bi-ar">الرئة</div></div></div>
+      <div class="bi"><div class="bi-de">die Leber</div><div><div class="bi-ar">الكبد</div></div></div>
+      <div class="bi"><div class="bi-de">die Niere (-n)</div><div><div class="bi-ar">الكلية</div></div></div>
+      <div class="bi"><div class="bi-de">das Blut</div><div><div class="bi-ar">الدم</div></div></div>
+      <div class="bi"><div class="bi-de">der Knochen</div><div><div class="bi-ar">العظم</div></div></div>
+      <div class="bi"><div class="bi-de">der Muskel (-n)</div><div><div class="bi-ar">العضلة</div></div></div>
+      <div class="bi"><div class="bi-de">die Haut</div><div><div class="bi-ar">الجلد</div></div></div>
+    </div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ قاعدة ذهبية — المركّبات الطبية</div><p>اسم العضو + <code>schmerzen</code> = ألم ذلك العضو: <code>Kopfschmerzen</code> ألم رأس · <code>Zahnschmerzen</code> ألم أسنان · <code>Bauchschmerzen</code> ألم بطن · <code>Rückenschmerzen</code> ألم ظهر · <code>Halsschmerzen</code> ألم حلق · <code>Ohrenschmerzen</code> ألم أذن. هذه المركّبات الاسمية تُستخدم مع <code>Ich habe...</code></p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WEH TUN -->
+<section class="section" id="wehtun">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">weh tun — التعبير عن الألم</div><div class="sec-d">الداتيف + مفرد tut / جمع tun + طرق متعددة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 المنطق الأساسي</div><p>المريض يقع في <code>Dativ</code> (mir/dir/ihm...) — العضو هو الفاعل. قارن: عربي "يؤلمني رأسي" ← ألماني "Mir tut der Kopf weh". <code>tut</code> للعضو المفرد، <code>tun</code> للعضو الجمع. القاعدة: انظر للعضو — مفرد → <code>tut</code>، جمع → <code>tun</code>.</p></div>
+  <table class="wt-table reveal">
+    <thead><tr><th>الضمير</th><th>Dativ</th><th>مثال — مفرد (tut)</th><th>مثال — جمع (tun)</th></tr></thead>
+    <tbody>
+      <tr><td><span class="wt-dat">ich</span></td><td><span class="wt-verb">mir</span></td><td class="wt-ex">Mir tut der Kopf weh.</td><td class="wt-ex">Mir tun die Augen weh.</td></tr>
+      <tr><td><span class="wt-dat">du</span></td><td><span class="wt-verb">dir</span></td><td class="wt-ex">Dir tut der Bauch weh.</td><td class="wt-ex">Dir tun die Beine weh.</td></tr>
+      <tr><td><span class="wt-dat">er</span></td><td><span class="wt-verb">ihm</span></td><td class="wt-ex">Ihm tut der Rücken weh.</td><td class="wt-ex">Ihm tun die Zähne weh.</td></tr>
+      <tr><td><span class="wt-dat">sie</span></td><td><span class="wt-verb">ihr</span></td><td class="wt-ex">Ihr tut die Schulter weh.</td><td class="wt-ex">Ihr tun die Füße weh.</td></tr>
+      <tr><td><span class="wt-dat">wir</span></td><td><span class="wt-verb">uns</span></td><td class="wt-ex">Uns tut der Hals weh.</td><td class="wt-ex">Uns tun die Ohren weh.</td></tr>
+      <tr><td><span class="wt-dat">Sie رسمي</span></td><td><span class="wt-verb">Ihnen</span></td><td class="wt-ex">Ihnen tut die Brust weh.</td><td class="wt-ex">Ihnen tun die Knie weh.</td></tr>
+    </tbody>
+  </table>
+  <p class="vst reveal">الصيغ المختلفة لنفس المعنى</p>
+  <div class="satz-box reveal">
+    <div class="satz-title">ثلاث طرق للتعبير عن الألم — كلها صحيحة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Mir</span><span class="sbox sbox-verb">tut</span><span class="sbox sbox-rest">der Kopf</span><span class="sbox sbox-rest">weh.</span><span class="sbox-ar">= رأسي يؤلمني — الأكثر شيوعاً</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox sbox-rest">Kopfschmerzen.</span><span class="sbox-ar">= عندي ألم رأس — شكل مُجمَّع</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Mir</span><span class="sbox sbox-verb">tun</span><span class="sbox sbox-rest">die Beine</span><span class="sbox sbox-rest">weh.</span><span class="sbox-ar">= رجلاي تؤلمانني — جمع → tun!</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">tut</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-subj">Ihnen</span><span class="sbox sbox-rest">weh?</span><span class="sbox-ar">= أين يؤلمك؟ (رسمي — طبيب)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Was</span><span class="sbox sbox-verb">tut</span><span class="sbox sbox-subj">dir</span><span class="sbox sbox-rest">weh?</span><span class="sbox-ar">= ما الذي يؤلمك؟ (لصديق)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox sbox-rest">Fieber / Husten / Schnupfen.</span><span class="sbox-ar">= عندي حرارة / سعال / رشح</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ أخطاء تصريف weh tun</div><p>❌ <code>Mir tut die Beine weh</code> — die Beine جمع → يجب <code>tun</code> وليس <code>tut</code>. ❌ <code>Mich tut der Kopf weh</code> — لا تستخدم Akkusativ — يجب <code>Mir</code> (Dativ). ❌ <code>Ich tue weh</code> — لا معنى لهذا — العضو هو الفاعل وليس الشخص.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- IMPERATIV -->
+<section class="section" id="imperativ">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">صيغة الأمر — Imperativ</div><div class="sec-d">du · ihr · Sie — المنتظمة والشاذة + الطبي</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 متى نستخدم الأمر طبياً؟</div><p>الطبيب للمريض: <code>Nehmen Sie die Tabletten!</code> · الممرضة: <code>Öffnen Sie den Mund!</code> · أنت لصديق مريض: <code>Ruh dich aus! Trink viel Wasser!</code> · ثلاث صيغ بالألمانية: <code>du</code> غير رسمي · <code>ihr</code> جمع · <code>Sie</code> رسمي. في الطب دائماً Sie مع الطبيب.</p></div>
+  <div class="imp-grid reveal">
+    <div class="imp-card">
+      <div class="imp-card-h" style="color:var(--gold)">du-Form — غير رسمي</div>
+      <div class="imp-sub">الجذع بدون -en وبدون -st وبدون ضمير</div>
+      <ul class="imp-list">
+        <li><span class="imp-de" style="color:var(--gold)">Trink!</span><span class="imp-ar">اشرب! ← trinken</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Nimm!</span><span class="imp-ar">خذ! ← nehmen (شاذ: du nimmst)</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Schlaf!</span><span class="imp-ar">نَم! ← schlafen (بدون ä)</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Geh!</span><span class="imp-ar">اذهب! ← gehen</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Komm!</span><span class="imp-ar">تعال! ← kommen</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Bleib!</span><span class="imp-ar">ابقَ! ← bleiben</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Iss!</span><span class="imp-ar">كل! ← essen (شاذ: du isst)</span></li>
+        <li><span class="imp-de" style="color:var(--gold)">Ruh dich aus!</span><span class="imp-ar">استرح! ← sich ausruhen</span></li>
+      </ul>
+    </div>
+    <div class="imp-card">
+      <div class="imp-card-h" style="color:var(--blue)">ihr-Form — جمع</div>
+      <div class="imp-sub">نفس تصريف ihr الحاضر بدون الضمير</div>
+      <ul class="imp-list">
+        <li><span class="imp-de" style="color:var(--blue)">Trinkt!</span><span class="imp-ar">اشربوا! ← ihr trinkt</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Nehmt!</span><span class="imp-ar">خذوا! ← ihr nehmt</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Schlaft!</span><span class="imp-ar">ناموا! ← ihr schlaft</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Geht!</span><span class="imp-ar">اذهبوا! ← ihr geht</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Kommt!</span><span class="imp-ar">تعالوا! ← ihr kommt</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Bleibt!</span><span class="imp-ar">ابقوا! ← ihr bleibt</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Esst!</span><span class="imp-ar">كلوا! ← ihr esst</span></li>
+        <li><span class="imp-de" style="color:var(--blue)">Ruht euch aus!</span><span class="imp-ar">استريحوا!</span></li>
+      </ul>
+    </div>
+    <div class="imp-card">
+      <div class="imp-card-h" style="color:var(--green)">Sie-Form — رسمي</div>
+      <div class="imp-sub">المصدر (Infinitiv) + Sie — دائماً منتظم</div>
+      <ul class="imp-list">
+        <li><span class="imp-de" style="color:var(--green)">Trinken Sie!</span><span class="imp-ar">اشرب! (للطبيب/المدير)</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Nehmen Sie!</span><span class="imp-ar">تناوَل!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Schlafen Sie!</span><span class="imp-ar">نَم!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Gehen Sie!</span><span class="imp-ar">اذهب!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Kommen Sie!</span><span class="imp-ar">تعال!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Bleiben Sie!</span><span class="imp-ar">ابقَ!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Essen Sie!</span><span class="imp-ar">كل!</span></li>
+        <li><span class="imp-de" style="color:var(--green)">Ruhen Sie sich aus!</span><span class="imp-ar">استرح!</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الأفعال الشاذة في du-Imperativ</div><p>الأفعال التي تغيّر الجذر e→i في المضارع تحتفظ بالتغيير في الأمر: <code>nehmen → du nimmst → Nimm!</code> · <code>essen → du isst → Iss!</code> · <code>lesen → du liest → Lies!</code> · <code>geben → du gibst → Gib!</code>. لكن الأفعال a→ä <strong>لا</strong> تأخذ Umlaut في الأمر: <code>schlafen → Schlaf!</code> وليس Schläf!</p></div>
+  <p class="vst reveal">الأمر في السياق الطبي — الطبيب يتكلم</p>
+  <div class="satz-box reveal">
+    <div class="satz-title">أوامر طبية شائعة — Sie-Form</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Nehmen Sie</span><span class="sbox sbox-rest">die Tabletten</span><span class="sbox sbox-rest">dreimal täglich!</span><span class="sbox-ar">= تناوَل الأقراص 3 مرات يومياً!</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Trinken Sie</span><span class="sbox sbox-rest">viel Wasser!</span><span class="sbox-ar">= اشرب ماءً كثيراً!</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Ruhen Sie sich</span><span class="sbox sbox-rest">aus!</span><span class="sbox-ar">= استرح!</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Öffnen Sie</span><span class="sbox sbox-rest">den Mund!</span><span class="sbox-ar">= افتح فمك!</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Bleiben Sie</span><span class="sbox sbox-rest">drei Tage im Bett!</span><span class="sbox-ar">= ابقَ ثلاثة أيام في السرير!</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Kommen Sie</span><span class="sbox sbox-rest">morgen wieder!</span><span class="sbox-ar">= تعال غداً مجدداً!</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- DÜRFEN + SOLLEN -->
+<section class="section" id="modal">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">dürfen و sollen — الأفعال الناقصة الطبية</div><div class="sec-d">الإذن والحظر · الواجب الخارجي · الفرق عن müssen</div></div></div>
+  <div class="modal-compare reveal">
+    <div class="mc-col">
+      <div class="mc-col-h" style="color:var(--blue)">dürfen — إذن / حظر / مسموح</div>
+      <div style="font-size:.72rem;color:var(--dim);margin-bottom:.9rem;line-height:1.6">المعنى: مسموح أو ممنوع — يأتي من قانون / طبيب / مكان. إيجابي = مسموح · مع nicht = ممنوع.</div>
+      <table class="mc-conj">
+        <tr><td>ich</td><td style="color:var(--blue)">darf</td></tr>
+        <tr><td>du</td><td style="color:var(--blue)">darfst</td></tr>
+        <tr><td>er/sie/es</td><td style="color:var(--blue)">darf</td></tr>
+        <tr><td>wir</td><td style="color:var(--blue)">dürfen</td></tr>
+        <tr><td>ihr</td><td style="color:var(--blue)">dürft</td></tr>
+        <tr><td>sie/Sie</td><td style="color:var(--blue)">dürfen</td></tr>
+      </table>
+      <div class="mc-row"><div class="mc-de">Sie dürfen nicht rauchen.</div><div class="mc-ar">ممنوع التدخين.</div></div>
+      <div class="mc-row"><div class="mc-de">Darf ich aufstehen?</div><div class="mc-ar">هل يمكنني النهوض؟</div><div class="mc-note">طلب إذن من الطبيب</div></div>
+      <div class="mc-row"><div class="mc-de">Du darfst keinen Alkohol trinken.</div><div class="mc-ar">لا يجوز لك شرب الكحول.</div></div>
+      <div class="mc-row"><div class="mc-de">Hier darf man nicht parken.</div><div class="mc-ar">لا يُسمح بالوقوف هنا.</div><div class="mc-note">man = أحد (عام)</div></div>
+    </div>
+    <div class="mc-col">
+      <div class="mc-col-h" style="color:var(--gold)">sollen — واجب خارجي</div>
+      <div style="font-size:.72rem;color:var(--dim);margin-bottom:.9rem;line-height:1.6">المعنى: يجب — لأن شخصاً آخر قال (الطبيب / الأهل / المدير). الطلب من الخارج وليس قرارك.</div>
+      <table class="mc-conj">
+        <tr><td>ich</td><td style="color:var(--gold)">soll</td></tr>
+        <tr><td>du</td><td style="color:var(--gold)">sollst</td></tr>
+        <tr><td>er/sie/es</td><td style="color:var(--gold)">soll</td></tr>
+        <tr><td>wir</td><td style="color:var(--gold)">sollen</td></tr>
+        <tr><td>ihr</td><td style="color:var(--gold)">sollt</td></tr>
+        <tr><td>sie/Sie</td><td style="color:var(--gold)">sollen</td></tr>
+      </table>
+      <div class="mc-row"><div class="mc-de">Du sollst viel Wasser trinken.</div><div class="mc-ar">يجب عليك شرب الماء (الطبيب قال).</div></div>
+      <div class="mc-row"><div class="mc-de">Er soll im Bett bleiben.</div><div class="mc-ar">يجب عليه البقاء في السرير.</div><div class="mc-note">الطبيب أمره</div></div>
+      <div class="mc-row"><div class="mc-de">Sie sollen morgen wiederkommen.</div><div class="mc-ar">يجب عليك العودة غداً.</div></div>
+      <div class="mc-row"><div class="mc-de">Ich soll keine Milch trinken.</div><div class="mc-ar">يجب ألا أشرب الحليب.</div><div class="mc-note">الطبيب نصح بذلك</div></div>
+    </div>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">🔑 الفرق الجوهري: sollen vs müssen</div><p><code>sollen</code> = شخص آخر قال لك (الطبيب طلب، الأهل قالوا) — الواجب من الخارج. <code>müssen</code> = ضرورة ذاتية أو حقيقة منطقية — لا مفر. مثال: <code>Ich soll schlafen</code> (الطبيب أوصى بذلك) مقابل <code>Ich muss schlafen</code> (أنا متعب جداً — قرار داخلي). الفرق مهم في سياق الطبيب!</p></div>
+  <div class="satz-box reveal">
+    <div class="satz-title">بنية الجملة — الفعل الناقص ثانياً + المصدر في النهاية</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">soll</span><span class="sbox sbox-rest">viel Wasser</span><span class="sbox sbox-inf">trinken.</span><span class="sbox-ar">الفعل الرئيسي دائماً في النهاية</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Du</span><span class="sbox sbox-verb">darfst</span><span class="sbox sbox-rest">nicht</span><span class="sbox sbox-inf">rauchen.</span><span class="sbox-ar">nicht قبل الفعل الأخير</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Was</span><span class="sbox sbox-verb">soll</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-inf">nehmen?</span><span class="sbox-ar">سؤال: الفعل الناقص أولاً</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Darf</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">nach Hause</span><span class="sbox sbox-inf">gehen?</span><span class="sbox-ar">هل يمكنني الذهاب للبيت؟</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات الكاملة — 90+ كلمة</div><div class="sec-d">أعراض · عند الطبيب · الصيدلية · أفعال مفيدة</div></div></div>
+  <p class="vst reveal">الأعراض — Symptome</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Schmerz (-en)</div><div class="vi-ar">الألم</div><div class="vi-note">Schmerzen (جمع) أكثر استخداماً</div></div>
+    <div class="vi"><div class="vi-de">das Fieber</div><div class="vi-ar">الحمى / الحرارة</div><div class="vi-note">ab 38°C = Fieber</div></div>
+    <div class="vi"><div class="vi-de">die Erkältung</div><div class="vi-ar">نزلة البرد</div><div class="vi-note">common cold</div></div>
+    <div class="vi"><div class="vi-de">die Grippe</div><div class="vi-ar">الإنفلونزا</div><div class="vi-note">أشد من الزكام</div></div>
+    <div class="vi"><div class="vi-de">der Husten</div><div class="vi-ar">السعال</div><div class="vi-note">husten = يسعل (فعل)</div></div>
+    <div class="vi"><div class="vi-de">der Schnupfen</div><div class="vi-ar">سيلان الأنف</div></div>
+    <div class="vi"><div class="vi-de">die Übelkeit</div><div class="vi-ar">الغثيان</div><div class="vi-note">mir ist übel = أشعر بغثيان</div></div>
+    <div class="vi"><div class="vi-de">der Durchfall</div><div class="vi-ar">الإسهال</div></div>
+    <div class="vi"><div class="vi-de">der Schwindel</div><div class="vi-ar">الدوار / الدوخة</div><div class="vi-note">mir ist schwindlig</div></div>
+    <div class="vi"><div class="vi-de">die Allergie (-n)</div><div class="vi-ar">الحساسية</div><div class="vi-note">allergisch gegen = حساس من</div></div>
+    <div class="vi"><div class="vi-de">die Verletzung (-en)</div><div class="vi-ar">الإصابة</div></div>
+    <div class="vi"><div class="vi-de">die Wunde (-n)</div><div class="vi-ar">الجرح</div></div>
+    <div class="vi"><div class="vi-de">die Entzündung</div><div class="vi-ar">الالتهاب</div><div class="vi-note">Halsentzündung = التهاب حلق</div></div>
+    <div class="vi"><div class="vi-de">der Ausschlag</div><div class="vi-ar">طفح جلدي</div></div>
+    <div class="vi"><div class="vi-de">der Blutdruck</div><div class="vi-ar">ضغط الدم</div><div class="vi-note">hoch/niedrig = عالي/منخفض</div></div>
+    <div class="vi"><div class="vi-de">die Verstopfung</div><div class="vi-ar">الإمساك</div></div>
+  </div>
+  <p class="vst reveal">عند الطبيب — Beim Arzt</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Arzt / die Ärztin</div><div class="vi-ar">الطبيب / الطبيبة</div></div>
+    <div class="vi"><div class="vi-de">der Hausarzt</div><div class="vi-ar">طبيب الأسرة (العام)</div><div class="vi-note">أول مكان تذهب إليه</div></div>
+    <div class="vi"><div class="vi-de">der Zahnarzt</div><div class="vi-ar">طبيب الأسنان</div></div>
+    <div class="vi"><div class="vi-de">der Facharzt</div><div class="vi-ar">الطبيب المتخصص</div><div class="vi-note">يحتاج Überweisung</div></div>
+    <div class="vi"><div class="vi-de">das Krankenhaus</div><div class="vi-ar">المستشفى</div></div>
+    <div class="vi"><div class="vi-de">die Notaufnahme</div><div class="vi-ar">الطوارئ</div></div>
+    <div class="vi"><div class="vi-de">der Termin (-e)</div><div class="vi-ar">الموعد</div><div class="vi-note">Termin machen = يحجز موعداً</div></div>
+    <div class="vi"><div class="vi-de">das Wartezimmer</div><div class="vi-ar">غرفة الانتظار</div></div>
+    <div class="vi"><div class="vi-de">die Krankenkarte</div><div class="vi-ar">بطاقة التأمين الصحي</div><div class="vi-note">تبرزها عند كل زيارة</div></div>
+    <div class="vi"><div class="vi-de">die Überweisung</div><div class="vi-ar">التحويل الطبي</div><div class="vi-note">للطبيب المتخصص</div></div>
+    <div class="vi"><div class="vi-de">das Rezept (-e)</div><div class="vi-ar">الوصفة الطبية</div><div class="vi-note">لازم لبعض الأدوية</div></div>
+    <div class="vi"><div class="vi-de">die Untersuchung</div><div class="vi-ar">الفحص الطبي</div></div>
+    <div class="vi"><div class="vi-de">das Röntgen</div><div class="vi-ar">الأشعة السينية</div></div>
+    <div class="vi"><div class="vi-de">die Blutprobe</div><div class="vi-ar">فحص الدم</div></div>
+    <div class="vi"><div class="vi-de">die Krankmeldung</div><div class="vi-ar">إشعار المرض للعمل</div><div class="vi-note">مهم جداً في ألمانيا!</div></div>
+    <div class="vi"><div class="vi-de">Was fehlt Ihnen?</div><div class="vi-ar">ما الذي يؤلمك؟</div><div class="vi-note">الطبيب يسأل هكذا</div></div>
+  </div>
+  <p class="vst reveal">الصيدلية والأدوية — Apotheke &amp; Medikamente</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">die Apotheke (-n)</div><div class="vi-ar">الصيدلية</div><div class="vi-note">صيادلة متخصصون</div></div>
+    <div class="vi"><div class="vi-de">das Medikament (-e)</div><div class="vi-ar">الدواء</div></div>
+    <div class="vi"><div class="vi-de">die Tablette (-n)</div><div class="vi-ar">القرص / الحبة</div></div>
+    <div class="vi"><div class="vi-de">der Sirup</div><div class="vi-ar">الشراب</div></div>
+    <div class="vi"><div class="vi-de">die Salbe (-n)</div><div class="vi-ar">المرهم</div></div>
+    <div class="vi"><div class="vi-de">das Pflaster</div><div class="vi-ar">لصقة الجرح (Band-Aid)</div></div>
+    <div class="vi"><div class="vi-de">der Verband</div><div class="vi-ar">الضمادة</div></div>
+    <div class="vi"><div class="vi-de">die Spritze (-n)</div><div class="vi-ar">الحقنة</div></div>
+    <div class="vi"><div class="vi-de">das Schmerzmittel</div><div class="vi-ar">مسكّن الألم</div><div class="vi-note">z.B. Ibuprofen, Paracetamol</div></div>
+    <div class="vi"><div class="vi-de">das Antibiotikum</div><div class="vi-ar">المضاد الحيوي</div></div>
+    <div class="vi"><div class="vi-de">dreimal täglich</div><div class="vi-ar">ثلاث مرات يومياً</div></div>
+    <div class="vi"><div class="vi-de">vor/nach dem Essen</div><div class="vi-ar">قبل/بعد الأكل</div></div>
+    <div class="vi"><div class="vi-de">rezeptfrei</div><div class="vi-ar">بدون وصفة طبية</div></div>
+    <div class="vi"><div class="vi-de">rezeptpflichtig</div><div class="vi-ar">يستلزم وصفة طبية</div></div>
+  </div>
+  <p class="vst reveal">أفعال مهمة — nützliche Verben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">krank sein</div><div class="vi-ar">يكون مريضاً</div></div>
+    <div class="vi"><div class="vi-de">gesund werden</div><div class="vi-ar">يتعافى / يشفى</div></div>
+    <div class="vi"><div class="vi-de">sich erkälten</div><div class="vi-ar">يصاب بنزلة برد</div></div>
+    <div class="vi"><div class="vi-de">sich verletzen</div><div class="vi-ar">يصاب / يجرح نفسه</div></div>
+    <div class="vi"><div class="vi-de">sich fühlen</div><div class="vi-ar">يشعر</div><div class="vi-note">Ich fühle mich schlecht.</div></div>
+    <div class="vi"><div class="vi-de">sich ausruhen</div><div class="vi-ar">يستريح</div></div>
+    <div class="vi"><div class="vi-de">einen Termin machen</div><div class="vi-ar">يحجز موعداً</div></div>
+    <div class="vi"><div class="vi-de">zum Arzt gehen</div><div class="vi-ar">يذهب للطبيب</div></div>
+    <div class="vi"><div class="vi-de">Tabletten nehmen</div><div class="vi-ar">يتناول أقراصاً</div></div>
+    <div class="vi"><div class="vi-de">Fieber messen</div><div class="vi-ar">يقيس الحرارة</div></div>
+    <div class="vi"><div class="vi-de">im Bett bleiben</div><div class="vi-ar">يبقى في السرير</div></div>
+    <div class="vi"><div class="vi-de">sich besser fühlen</div><div class="vi-ar">يشعر بتحسن</div></div>
+    <div class="vi"><div class="vi-de">Gute Besserung!</div><div class="vi-ar">سلامتك! / شفاءً عاجلاً!</div></div>
+    <div class="vi"><div class="vi-de">seit ... Tagen/Wochen</div><div class="vi-ar">منذ ... أيام/أسابيع</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE + MISTAKES -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">الثقافة الصحية + الأخطاء الشائعة</div><div class="sec-d">نظام الصحة في ألمانيا + 5 أخطاء يقعها المبتدئون</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🏥</span><div class="cc-title">Hausarzt — ابدأ هنا دائماً</div><div class="cc-text">في ألمانيا دائماً تبدأ بـ Hausarzt (طبيب الأسرة). إن احتجت متخصصاً يعطيك Überweisung (تحويل). الذهاب مباشرة للمتخصص بدون تحويل قد لا يُقبل وقد تدفع من جيبك.</div></div>
+    <div class="culture-card"><span class="cc-icon">💳</span><div class="cc-title">Krankenkasse — التأمين إلزامي</div><div class="cc-text">التأمين الصحي إلزامي في ألمانيا. التأمين العام (GKV) مثل AOK وTK يغطي معظم التكاليف. عندك Krankenkarte (بطاقة التأمين) — أبرزها في كل زيارة طبية قبل الدخول.</div></div>
+    <div class="culture-card"><span class="cc-icon">💊</span><div class="cc-title">Apotheke ≠ Drogerie</div><div class="cc-text">Apotheke (صيدلية) = بها صيادلة متخصصون وتبيع الأدوية بوصفة وبدون وصفة. Drogerie مثل dm وRossmann = للعناية الشخصية — لا تبيع أدوية قوية ولا تستبدل الصيدلية.</div></div>
+    <div class="culture-card"><span class="cc-icon">📋</span><div class="cc-title">Krankmeldung — إشعار العمل</div><div class="cc-text">إذا مرضت وعندك عمل، أبلغ صاحب العمل فوراً في اليوم الأول. إذا استمر المرض أكثر من 3 أيام، تحتاج Krankschreibung (شهادة مرضية) من الطبيب — هذا قانوني وحقك.</div></div>
+    <div class="culture-card"><span class="cc-icon">🚑</span><div class="cc-title">أرقام الطوارئ في ألمانيا</div><div class="cc-text">🚑 <strong>112</strong> = الإسعاف والحرائق (pan-European — يشتغل في كل أوروبا). 🚔 <strong>110</strong> = الشرطة فقط. 📞 <strong>116 117</strong> = ärztlicher Bereitschaftsdienst — طبيب خارج ساعات العمل.</div></div>
+    <div class="culture-card"><span class="cc-icon">⏰</span><div class="cc-title">Sprechstunden — مواعيد العيادة</div><div class="cc-text">معظم العيادات مفتوحة صباحاً وبعد الظهر. كثير منها مغلق يوم الأربعاء بعد الظهر وطوال نهاية الأسبوع. ابحث عن Öffnungszeiten للعيادة مسبقاً، وخذ موعداً (Termin) قبل الذهاب.</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — Häufige Fehler</p>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Mich tut der Kopf weh.</div><div class="mi-explain">Akkusativ — خطأ</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Mir tut der Kopf weh.</div><div class="mi-explain">Dativ: ich → mir وليس mich</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Mir tut die Beine weh.</div><div class="mi-explain">die Beine جمع → tun</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Mir tun die Beine weh.</div><div class="mi-explain">جمع → tun وليس tut</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Gehst! / Du geh!</div><div class="mi-explain">-st أو الضمير في الأمر — خطأ</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Geh! / Gehen Sie!</div><div class="mi-explain">du-Imperativ: بدون -st وبدون ضمير</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Ich soll schlafen. (قراري الخاص)</div><div class="mi-explain">sollen = طلب خارجي — خطأ هنا</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Ich muss schlafen.</div><div class="mi-explain">قرارك الخاص = müssen</div></div>
+  </div>
+  <div class="mistake-item reveal">
+    <div><div class="mi-wrong">Du kannst hier nicht rauchen. (حظر)</div><div class="mi-explain">können = قدرة — خطأ للحظر</div></div>
+    <div class="mi-arrow">→</div>
+    <div><div class="mi-right">Du darfst hier nicht rauchen.</div><div class="mi-explain">الحظر والإذن = dürfen</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- DIALOGUES -->
+<section class="section" id="dialogues">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الحوارات — 5 سيناريوهات طبية</div><div class="sec-d">الطبيب · الصيدلية · مع صديق · حجز موعد هاتفي · طوارئ</div></div></div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — عند الطبيب (Beim Arzt)</div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Guten Morgen! Was fehlt Ihnen?</div><div class="dl-ar">صباح الخير! ما الذي يؤلمك؟ / ما شكواك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Guten Morgen. Mir tut der Hals sehr weh und ich habe Fieber.</div><div class="dl-ar">صباح الخير. حلقي يؤلمني جداً وعندي حرارة.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Seit wann haben Sie diese Beschwerden?</div><div class="dl-ar">منذ متى وعندك هذه الأعراض؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Seit drei Tagen. Ich fühle mich sehr schlecht.</div><div class="dl-ar">منذ ثلاثة أيام. أشعر بأنني سيء جداً.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Öffnen Sie den Mund bitte! ... Ich sehe, der Hals ist entzündet. Sie sollen viel trinken und diese Tabletten dreimal täglich nehmen.</div><div class="dl-ar">افتح فمك من فضلك! ... أرى أن الحلق ملتهب. يجب عليك الشرب الكثير وتناول هذه الأقراص ثلاث مرات يومياً.</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Darf ich arbeiten gehen?</div><div class="dl-ar">هل يمكنني الذهاب للعمل؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Nein, Sie dürfen nicht arbeiten. Bleiben Sie drei Tage im Bett!</div><div class="dl-ar">لا، لا يمكنك العمل. ابقَ ثلاثة أيام في السرير!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — في الصيدلية (In der Apotheke)</div>
+    <div class="dl"><span class="sp sp-b">Apo.</span><div><div class="dl-de">Guten Tag! Wie kann ich Ihnen helfen?</div><div class="dl-ar">يوم سعيد! كيف يمكنني مساعدتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Kd.</span><div><div class="dl-de">Ich brauche etwas gegen Kopfschmerzen.</div><div class="dl-ar">أحتاج شيئاً ضد ألم الرأس.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Apo.</span><div><div class="dl-de">Haben Sie ein Rezept oder möchten Sie ein rezeptfreies Mittel?</div><div class="dl-ar">هل عندك وصفة طبية أم تريد دواءً بدون وصفة؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Kd.</span><div><div class="dl-de">Kein Rezept, bitte etwas ohne Rezept.</div><div class="dl-ar">لا وصفة، شيئاً بدون وصفة من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Apo.</span><div><div class="dl-de">Ich empfehle Ibuprofen 400mg. Nehmen Sie nicht mehr als dreimal täglich!</div><div class="dl-ar">أنصح بـ Ibuprofen 400mg. لا تأخذ أكثر من ثلاث مرات يومياً!</div></div></div>
+    <div class="dl"><span class="sp sp-a">Kd.</span><div><div class="dl-de">Danke schön! Was kostet das bitte?</div><div class="dl-ar">شكراً جزيلاً! كم يكلف من فضلك؟</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — حجز موعد بالهاتف</div>
+    <div class="dl"><span class="sp sp-b">Prax.</span><div><div class="dl-de">Praxis Dr. Müller, guten Tag!</div><div class="dl-ar">عيادة د. مولر، يوم سعيد!</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Guten Tag, ich möchte gerne einen Termin machen.</div><div class="dl-ar">يوم سعيد، أريد حجز موعد من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Prax.</span><div><div class="dl-de">Was haben Sie für Beschwerden?</div><div class="dl-ar">ما هي أعراضك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Mir tut der Rücken weh, schon seit einer Woche.</div><div class="dl-ar">ظهري يؤلمني، منذ أسبوع بالفعل.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Prax.</span><div><div class="dl-de">Können Sie am Donnerstag um 10 Uhr kommen?</div><div class="dl-ar">هل يمكنك المجيء يوم الخميس الساعة العاشرة؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Ja, das passt gut. Vielen Dank!</div><div class="dl-ar">نعم، يناسبني تماماً. شكراً جزيلاً!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — مع صديق (أنت مريض)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hey! Wie geht's dir? Du siehst nicht gut aus!</div><div class="dl-ar">هيي! كيف حالك؟ أنت لا تبدو بخير!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gar nicht gut. Mir tun die Ohren weh und ich habe Husten.</div><div class="dl-ar">سيء جداً. أذناي تؤلمانني وعندي سعال.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Das klingt nach einer Erkältung! Ruh dich aus und trink viel Tee!</div><div class="dl-ar">هذا يبدو كنزلة برد! استرح واشرب شاياً كثيراً!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, der Arzt sagt, ich soll zu Hause bleiben.</div><div class="dl-ar">نعم، الطبيب قال يجب عليّ البقاء في البيت.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Gute Besserung! Ich wünsche dir schnelle Genesung!</div><div class="dl-ar">سلامتك! أتمنى لك شفاءً سريعاً!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 5 — في الطوارئ (Notaufnahme)</div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Was ist passiert? Wie kann ich Ihnen helfen?</div><div class="dl-ar">ماذا حدث؟ كيف يمكنني مساعدتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Ich habe mich verletzt. Mein Arm tut sehr weh, ich kann ihn nicht bewegen!</div><div class="dl-ar">تعرضت لإصابة. ذراعي يؤلمني جداً، لا أستطيع تحريكه!</div></div></div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Wann ist das passiert? Sind Sie gegen Medikamente allergisch?</div><div class="dl-ar">متى حدث ذلك؟ هل عندك حساسية من أي أدوية؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">Pat.</span><div><div class="dl-de">Vor einer Stunde. Nein, ich bin gegen nichts allergisch.</div><div class="dl-ar">قبل ساعة. لا، لا أعاني من أي حساسية.</div></div></div>
+    <div class="dl"><span class="sp sp-b">Arzt</span><div><div class="dl-de">Wir machen ein Röntgenbild. Dürfen Sie bitte den Arm so halten?</div><div class="dl-ar">سنأخذ صورة أشعة. هل تستطيع من فضلك إمساك ذراعك هكذا؟</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين التفاعلية — 32 سؤال</div><div class="sec-d">weh tun · Imperativ · dürfen/sollen · صح/خطأ · حوار · ثقافة</div></div></div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 1 / 6 — weh tun: مفرد أم جمع؟ + الداتيف (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">1. "Mir ___ der Kopf weh." — der Kopf مفرد</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="tut" onclick="check(this)">tut</button><button class="ex-btn" data-q="1" data-a="tun" onclick="check(this)">tun</button><button class="ex-btn" data-q="1" data-a="tue" onclick="check(this)">tue</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">2. "Mir ___ die Beine weh." — die Beine جمع</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="tun" onclick="check(this)">tun</button><button class="ex-btn" data-q="2" data-a="tut" onclick="check(this)">tut</button><button class="ex-btn" data-q="2" data-a="tue" onclick="check(this)">tue</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">3. "Wo tut es ___ weh?" — الطبيب يسأل رسمياً (Sie)</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="Ihnen" onclick="check(this)">Ihnen</button><button class="ex-btn" data-q="3" data-a="dir" onclick="check(this)">dir</button><button class="ex-btn" data-q="3" data-a="euch" onclick="check(this)">euch</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">4. "Was tut ___ weh?" — تسأل صديقك (du-Form)</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="dir" onclick="check(this)">dir</button><button class="ex-btn" data-q="4" data-a="dich" onclick="check(this)">dich</button><button class="ex-btn" data-q="4" data-a="mir" onclick="check(this)">mir</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">5. "Die Zähne tun ___ weh." — أنا المريض</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="mir" onclick="check(this)">mir</button><button class="ex-btn" data-q="5" data-a="mich" onclick="check(this)">mich</button><button class="ex-btn" data-q="5" data-a="ich" onclick="check(this)">ich</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">6. كيف تقول "My throat hurts" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="Mir tut der Hals weh" onclick="check(this)">Mir tut der Hals weh</button><button class="ex-btn" data-q="6" data-a="Mir tut die Hals weh" onclick="check(this)">Mir tut die Hals weh</button><button class="ex-btn" data-q="6" data-a="Mich tut der Hals weh" onclick="check(this)">Mich tut der Hals weh</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 2 / 6 — Imperativ: اختر الصواب (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">7. Imperativ du من "trinken"</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="Trink!" onclick="check(this)">Trink!</button><button class="ex-btn" data-q="7" data-a="Trinkst!" onclick="check(this)">Trinkst!</button><button class="ex-btn" data-q="7" data-a="Trinken!" onclick="check(this)">Trinken!</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">8. Imperativ du من "nehmen" — شاذ: du nimmst</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="Nimm!" onclick="check(this)">Nimm!</button><button class="ex-btn" data-q="8" data-a="Nehm!" onclick="check(this)">Nehm!</button><button class="ex-btn" data-q="8" data-a="Nimmst!" onclick="check(this)">Nimmst!</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">9. Imperativ Sie من "kommen"</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="Kommen Sie!" onclick="check(this)">Kommen Sie!</button><button class="ex-btn" data-q="9" data-a="Komm Sie!" onclick="check(this)">Komm Sie!</button><button class="ex-btn" data-q="9" data-a="Kommen!" onclick="check(this)">Kommen!</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">10. Imperativ du من "schlafen" — لا Umlaut في du-Imperativ</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="Schlaf!" onclick="check(this)">Schlaf!</button><button class="ex-btn" data-q="10" data-a="Schläf!" onclick="check(this)">Schläf!</button><button class="ex-btn" data-q="10" data-a="Schlafen!" onclick="check(this)">Schlafen!</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">11. Imperativ ihr من "essen" — شاذ: du isst / ihr esst</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="Esst!" onclick="check(this)">Esst!</button><button class="ex-btn" data-q="11" data-a="Isst!" onclick="check(this)">Isst!</button><button class="ex-btn" data-q="11" data-a="Essen!" onclick="check(this)">Essen!</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">12. Imperativ du من "gehen"</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="Geh!" onclick="check(this)">Geh!</button><button class="ex-btn" data-q="12" data-a="Gehe du!" onclick="check(this)">Gehe du!</button><button class="ex-btn" data-q="12" data-a="Gehst!" onclick="check(this)">Gehst!</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 3 / 6 — dürfen و sollen (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">13. "Sie ___ nicht rauchen." — اللافتة تقول: ممنوع</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="dürfen" onclick="check(this)">dürfen</button><button class="ex-btn" data-q="13" data-a="sollen" onclick="check(this)">sollen</button><button class="ex-btn" data-q="13" data-a="müssen" onclick="check(this)">müssen</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">14. "Der Arzt sagt, du ___ viel trinken." — الطبيب أوصى</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="sollst" onclick="check(this)">sollst</button><button class="ex-btn" data-q="14" data-a="darfst" onclick="check(this)">darfst</button><button class="ex-btn" data-q="14" data-a="musst" onclick="check(this)">musst</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">15. "___ ich das Fenster aufmachen?" — طلب إذن</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="Darf" onclick="check(this)">Darf</button><button class="ex-btn" data-q="15" data-a="Soll" onclick="check(this)">Soll</button><button class="ex-btn" data-q="15" data-a="Muss" onclick="check(this)">Muss</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">16. "Er ___ im Bett bleiben." — الطبيب أخبره بذلك</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="soll" onclick="check(this)">soll</button><button class="ex-btn" data-q="16" data-a="darf" onclick="check(this)">darf</button><button class="ex-btn" data-q="16" data-a="muss" onclick="check(this)">muss</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">17. "Ihr ___ hier nicht spielen." — ممنوع للأطفال</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="dürft" onclick="check(this)">dürft</button><button class="ex-btn" data-q="17" data-a="sollt" onclick="check(this)">sollt</button><button class="ex-btn" data-q="17" data-a="müsst" onclick="check(this)">müsst</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">18. "Wir ___ morgen früh ins Krankenhaus kommen." — الطبيب طلب منا</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="sollen" onclick="check(this)">sollen</button><button class="ex-btn" data-q="18" data-a="dürfen" onclick="check(this)">dürfen</button><button class="ex-btn" data-q="18" data-a="können" onclick="check(this)">können</button></div><div class="ex-fb" id="f18"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 4 / 6 — صح أم خطأ؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">19. هل صحيح؟ — "Kopfschmerzen" = ألم في الرأس</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="19" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">20. هل صحيح؟ — "die Apotheke" = محل سوبرماركت للتسوق اليومي</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="خطأ — Apotheke = صيدلية وليست سوبرماركت" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="20" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">21. هل صحيح؟ — في ألمانيا تستطيع دائماً الذهاب للطبيب المتخصص مباشرة بدون تحويل</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="خطأ — عادةً تحتاج إحالة Überweisung من Hausarzt" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="21" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">22. هل صحيح؟ — "Ich habe Fieber" = عندي درجة حرارة مرتفعة</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="22" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">23. هل صحيح؟ — Imperativ du من "gehen" = "Gehst!"</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="خطأ — Imperativ من gehen = Geh! وليس Gehst!" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="23" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f23"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 5 / 6 — أكمل الحوار الطبي (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">24. الطبيب يسأل رسمياً: "Was fehlt ___?" (بدلاً من dir)</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="Ihnen" onclick="check(this)">Ihnen</button><button class="ex-btn" data-q="24" data-a="dir" onclick="check(this)">dir</button><button class="ex-btn" data-q="24" data-a="mir" onclick="check(this)">mir</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">25. "Ich habe seit ___ Tagen Kopfschmerzen." — ثلاثة أيام</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="drei" onclick="check(this)">drei</button><button class="ex-btn" data-q="25" data-a="dreimal" onclick="check(this)">dreimal</button><button class="ex-btn" data-q="25" data-a="dritte" onclick="check(this)">dritte</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">26. في الصيدلية: "Haben Sie ein ___?" — الوصفة الطبية</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="Rezept" onclick="check(this)">Rezept</button><button class="ex-btn" data-q="26" data-a="Termin" onclick="check(this)">Termin</button><button class="ex-btn" data-q="26" data-a="Ticket" onclick="check(this)">Ticket</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">27. "Nehmen Sie die Tabletten ___ täglich." — ثلاث مرات</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="dreimal" onclick="check(this)">dreimal</button><button class="ex-btn" data-q="27" data-a="drei" onclick="check(this)">drei</button><button class="ex-btn" data-q="27" data-a="dritte" onclick="check(this)">dritte</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">28. "Ich möchte einen ___ machen." — حجز موعد</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="Termin" onclick="check(this)">Termin</button><button class="ex-btn" data-q="28" data-a="Rezept" onclick="check(this)">Rezept</button><button class="ex-btn" data-q="28" data-a="Treffen" onclick="check(this)">Treffen</button></div><div class="ex-fb" id="f28"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 6 / 6 — مفردات وثقافة (4 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">29. "die Erkältung" = ?</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="نزلة برد" onclick="check(this)">نزلة برد</button><button class="ex-btn" data-q="29" data-a="حمى" onclick="check(this)">حمى</button><button class="ex-btn" data-q="29" data-a="صداع" onclick="check(this)">صداع</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">30. رقم الإسعاف في ألمانيا = ?</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="112" onclick="check(this)">112</button><button class="ex-btn" data-q="30" data-a="110" onclick="check(this)">110</button><button class="ex-btn" data-q="30" data-a="911" onclick="check(this)">911</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">31. "die Krankenkasse" = ?</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="التأمين الصحي" onclick="check(this)">التأمين الصحي</button><button class="ex-btn" data-q="31" data-a="المستشفى" onclick="check(this)">المستشفى</button><button class="ex-btn" data-q="31" data-a="الصيدلية" onclick="check(this)">الصيدلية</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">32. الفرق الجوهري بين sollen و müssen؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="sollen = طلب خارجي، müssen = ضرورة داخلية" onclick="check(this)">sollen = خارجي · müssen = داخلي</button><button class="ex-btn" data-q="32" data-a="هما نفس الشيء تماماً" onclick="check(this)">هما نفس الشيء</button><button class="ex-btn" data-q="32" data-a="sollen = إذن مثل dürfen" onclick="check(this)">sollen = إذن</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة أكثر من القراءة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مهمة؟</div><p>الكتابة تُجبر دماغك على استرجاع المعلومة بدل استقبالها فقط. دراسات تُثبت أن من يكتب ما تعلمه يتذكر <strong style="color:var(--white)">70% أكثر</strong> ممن يقرأ فقط. اكتب بالقلم أولاً ثم انقل هنا.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — صف أعراضك للطبيب (6–8 جمل)</div>
+    <div class="wt-text">تخيل أنك مريض — اكتب للطبيب بالألمانية تصف حالتك:</div>
+    <ul class="wt-list">
+      <li>ما الذي يؤلمك (استخدم weh tun مع Dativ صحيح)</li>
+      <li>منذ متى وأنت مريض (seit ... Tagen/Wochen)</li>
+      <li>أعراض أخرى (Ich habe Fieber / Husten...)</li>
+      <li>اسأل الطبيب: Was soll ich tun?</li>
+      <li>اسأل عن العمل: Darf ich arbeiten?</li>
+    </ul>
+    <textarea class="wt-input" placeholder="Mir tut... weh. Seit... Tagen habe ich... Ich fühle mich... Ich habe auch... Was soll ich tun? Darf ich...?"></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — اكتب تعليمات طبية بصيغة الأمر</div>
+    <div class="wt-text">أنت الطبيب — اعطِ مريضك 8 تعليمات (4 Sie-Form و4 du-Form):</div>
+    <ul class="wt-list">
+      <li>4 جمل Sie: Nehmen Sie... / Trinken Sie... / Ruhen Sie sich... / Bleiben Sie...</li>
+      <li>4 جمل du: Nimm... / Trink... / Schlaf... / Komm...</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:160px;" placeholder="Sie-Form (رسمي):&#10;Nehmen Sie die Tabletten dreimal täglich!&#10;Trinken Sie viel Wasser!&#10;...&#10;&#10;du-Form (لصديق):&#10;Nimm das Medikament!&#10;Trink viel Tee!&#10;..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — حوار في الصيدلية من الذاكرة</div>
+    <div class="wt-text">أغلق الملف وأكتب حواراً في الصيدلية (6–8 أسطر) — ثم افتح وتحقق من الدقة والقواعد.</div>
+    <textarea class="wt-input" placeholder="A (Apotheker): Guten Tag! Wie kann ich...?&#10;B (Kunde): Ich brauche etwas gegen...&#10;A: Haben Sie ein...?&#10;B: Nein/Ja, ich...&#10;A: Nehmen Sie...&#10;B: Danke! Was kostet...?"></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · كتب · محادثة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أنشئ بطاقات لـ Unit 12: أعضاء الجسم + الأعراض + الأدوية. الوجه الأمامي: العربية، الخلف: der/die/das + الألمانية.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German</div><div class="res-type">موقع مجاني</div><div class="res-desc">Nicos Weg — ابحث عن حلقات الصحة والطبيب في السلسلة. تمارين تفاعلية مجانية مع نصوص كاملة.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Easy German</div><div class="res-type">قناة YouTube</div><div class="res-desc">ابحث "Easy German health" و"Easy German beim Arzt" لمشاهدة مقابلات حقيقية مع ألمان عن الصحة والطبيب.</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1 — Lektion 12</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الفصل 12 من كتاب Menschen A1 يغطي تحديداً الجسم والصحة والطبيب — نفس المنهج المستخدم في Goethe Institut.</div></div>
+    <div class="res-card"><span class="res-icon">🏥</span><div class="res-name">Goethe Institut</div><div class="res-type">نماذج اختبار رسمية</div><div class="res-desc">الصحة تظهر دائماً في اختبار A1. حضّر نموذج "Beim Arzt" من الموقع الرسمي ونفّذه قبل Unit 15.</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">محادثة مع ناطقين</div><div class="res-desc">اطلب من المعلم تمثيل دور الطبيب والمريض (Rollenspiel) — roleplay طبي ممتاز لترسيخ مفردات وقواعد Unit 12.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📖</span><div class="res-name">dict.cc</div><div class="res-type">قاموس ألماني</div><div class="res-desc">أفضل قاموس للمفردات الطبية الألمانية. يعطيك الجمع والمقالة والأمثلة — ابحث عن كل كلمة جديدة هنا.</div><a class="res-link" href="https://www.dict.cc/" target="_blank">dict.cc ←</a></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German</div><div class="res-type">بودكاست</div><div class="res-desc">بعد Unit 12 استمع لحلقة "Erkältung" أو "Gesundheit". الأصوات بطيئة مع نص مكتوب — مثالي للاستماع.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com ←</a></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- 5-DAY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم بالضبط — بما فيه الفيديوهات والتمارين</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">الجسم + weh tun</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 1 (Körperteile) مع تكرار النطق</li>
+        <li class="vl">شاهد الفيديو 2 (Beim Arzt) — اكتب جمل المريض</li>
+        <li>ادرس الجداول الـ 4 لأعضاء الجسم</li>
+        <li>احفظ المقالة مع كل عضو (der/die/das)</li>
+        <li>احفظ المركّبات: ...schmerzen</li>
+        <li>ادرس جدول weh tun كاملاً</li>
+        <li>اقرأ الحوارين 1 و4 بصوت عالٍ 3 مرات</li>
+        <li>حل تمرين 1</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">Imperativ + البنية</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 3 (weh tun) — اكتب 6 جمل</li>
+        <li class="vl">شاهد الفيديو 4 (Imperativ) — صرّف بصوت عالٍ</li>
+        <li>ادرس الجدول الثلاثي للأمر (du/ihr/Sie)</li>
+        <li>احفظ الأفعال الشاذة: nehmen → Nimm / essen → Iss</li>
+        <li>ادرس الأمر في السياق الطبي</li>
+        <li>اقرأ الحوار 3 بصوت عالٍ</li>
+        <li class="wl">مهمة الكتابة 2 (8 جمل أمر)</li>
+        <li>حل تمرين 2</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">dürfen/sollen + مفردات</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 5 (dürfen/sollen)</li>
+        <li>ادرس جدول dürfen + sollen</li>
+        <li>ادرس الفرق الجوهري: sollen vs müssen</li>
+        <li>ادرس مفردات: الأعراض + الطبيب + الصيدلية</li>
+        <li>اقرأ الحوارين 2 و5 بصوت عالٍ</li>
+        <li class="wl">مهمة الكتابة 1 (وصف الأعراض)</li>
+        <li>حل تمرين 3 و4</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">ثقافة + حوارات + تمارين</div>
+      <ul class="day-tasks">
+        <li>ادرس قسم الثقافة الصحية الألمانية</li>
+        <li>ادرس الأخطاء الشائعة الـ 5</li>
+        <li>اقرأ كل الحوارات الـ 5 بصوت عالٍ</li>
+        <li class="wl">مهمة الكتابة 3 (حوار صيدلية)</li>
+        <li>حل تمرين 5 و6</li>
+        <li>أعد حل تمرين 1 من الذاكرة</li>
+        <li>أنشئ بطاقات Anki لـ 30 مفردة</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">05</div>
+      <div class="day-title">مراجعة شاملة + اختبار</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد الفيديو 6 (Nicos Weg) — مشاهد الصحة</li>
+        <li>غطّ الجداول — صرّف من الذاكرة</li>
+        <li>أعد حل كل التمارين الـ 32 — هدف 29+</li>
+        <li>صرّف dürfen / sollen شفهياً</li>
+        <li>اقرأ الحوارات مرة أخيرة</li>
+        <li>راجع الأخطاء الشائعة</li>
+        <li>✅ انتقل لـ Unit 13 إذا حصلت 28+/32</li>
+      </ul>
+      <div class="day-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 13 — الهوايات والفراغ</div><p>انتقل لـ Unit 13 فقط إذا: ✅ تستطيع وصف 5 أعراض مختلفة باستخدام weh tun بدون نظر · ✅ تعطي 4 أوامر طبية بصيغة Sie و4 بصيغة du · ✅ تفرق بين dürfen وsollen وmüssen بمثال لكل واحد · ✅ حصلت 28+/32 في التمارين · ✅ كتبت حوار طبي كامل بنفسك. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام!</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 12</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">الجسم · الصحة · weh tun · Imperativ · dürfen/sollen · 90+ مفردة · 5 حوارات طبية · 32 تمرين</p>
+  <p>A1 متقدم · المرحلة الرابعة · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 13 ← الهوايات والفراغ · gern/lieber/am liebsten · weil · Sport · lesen · kochen · Verein</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+
+const answers={
+  1:'tut',2:'tun',3:'Ihnen',4:'dir',5:'mir',6:'Mir tut der Hals weh',
+  7:'Trink!',8:'Nimm!',9:'Kommen Sie!',10:'Schlaf!',11:'Esst!',12:'Geh!',
+  13:'dürfen',14:'sollst',15:'Darf',16:'soll',17:'dürft',18:'sollen',
+  19:'صحيح',20:'خطأ — Apotheke = صيدلية وليست سوبرماركت',
+  21:'خطأ — عادةً تحتاج إحالة Überweisung من Hausarzt',22:'صحيح',
+  23:'خطأ — Imperativ من gehen = Geh! وليس Gehst!',
+  24:'Ihnen',25:'drei',26:'Rezept',27:'dreimal',28:'Termin',
+  29:'نزلة برد',30:'112',31:'التأمين الصحي',
+  32:'sollen = طلب خارجي، müssen = ضرورة داخلية'
+};
+
+const fb={
+  1:{ok:'✅ المفرد (der Kopf) → tut — الفعل يطابق العضو',no:'❌ المفرد → tut · الجمع → tun'},
+  2:{ok:'✅ الجمع (die Beine) → tun — ليس tut!',no:'❌ die Beine جمع → تحتاج tun وليس tut'},
+  3:{ok:'✅ Sie الرسمي في الداتيف = Ihnen (I كبيرة دائماً)',no:'❌ الطبيب يسأل رسمياً: Wo tut es Ihnen weh?'},
+  4:{ok:'✅ du في الداتيف = dir (وليس dich الذي Akkusativ)',no:'❌ du → dir في الداتيف: Was tut dir weh?'},
+  5:{ok:'✅ ich في الداتيف = mir (وليس mich)',no:'❌ ich → mir في الداتيف — الألم يقع على mir'},
+  6:{ok:'✅ der Hals مذكر → Mir tut der Hals weh',no:'❌ der Hals مذكر (وليس die) · والداتيف mir وليس mich'},
+  7:{ok:'✅ trinken → Trink! (بدون -en وبدون -st وبدون ضمير)',no:'❌ Imperativ du: احذف -st من du trinkst → Trink!'},
+  8:{ok:'✅ nehmen شاذ: du nimmst → Nimm! (يتغير الصوت e→i)',no:'❌ nehmen شاذ: du nimmst → Imperativ: Nimm!'},
+  9:{ok:'✅ Sie-Form: المصدر + Sie دائماً → Kommen Sie!',no:'❌ Sie-Form: Infinitiv + Sie → Kommen Sie! (ليس Komm Sie)'},
+  10:{ok:'✅ schlafen → Schlaf! — لا Umlaut في du-Imperativ للأفعال a→ä',no:'❌ schlafen → Schlaf! (ليس Schläf!) — القاعدة: لا umlaut هنا'},
+  11:{ok:'✅ ihr esst → Esst! (ihr-Form الحاضر بدون ضمير)',no:'❌ ihr esst → Esst! (وليس Isst الذي هو du isst)'},
+  12:{ok:'✅ gehen → Geh! — بدون ضمير وبدون -st',no:'❌ Imperativ du = Geh! فقط — لا ضمير ولا -st'},
+  13:{ok:'✅ dürfen = إذن/حظر — nicht + dürfen = ممنوع',no:'❌ للحظر والإذن: dürfen (وليس sollen أو müssen)'},
+  14:{ok:'✅ sollen = واجب خارجي — الطبيب أوصى — du sollst',no:'❌ الطبيب أوصى = sollen: du sollst (وليس musst)'},
+  15:{ok:'✅ Darf ich = هل يمكنني؟ — طلب إذن بـ dürfen',no:'❌ طلب الإذن = Darf ich...? (dürfen)'},
+  16:{ok:'✅ soll = يجب عليه — الطبيب قرر — er soll',no:'❌ الطبيب قرر = sollen: er soll'},
+  17:{ok:'✅ ihr dürft = أنتم ممنوعون — حظر لمجموعة',no:'❌ ihr + حظر = ihr dürft (nicht)'},
+  18:{ok:'✅ sollen = طلب خارجي — الطبيب طلب — wir sollen',no:'❌ طلب من الخارج = sollen: wir sollen'},
+  19:{ok:'✅ صحيح! Kopf + Schmerzen = Kopfschmerzen = ألم الرأس',no:'❌ Kopfschmerzen = ألم الرأس — صحيح!'},
+  20:{ok:'✅ خطأ فعلاً! Apotheke = صيدلية · Supermarkt = بقالة',no:'❌ Apotheke ≠ سوبرماركت — Apotheke صيدلية بصيادلة متخصصين'},
+  21:{ok:'✅ خطأ! عادةً تحتاج Überweisung (تحويل) من Hausarzt للمتخصص',no:'❌ خطأ — غالباً تحتاج إحالة Überweisung من Hausarzt أولاً'},
+  22:{ok:'✅ صحيح! Fieber = درجة حرارة > 38°C',no:'❌ Fieber = درجة حرارة مرتفعة (صحيحة)'},
+  23:{ok:'✅ خطأ! Imperativ du من gehen = Geh! (بدون -st)',no:'❌ خطأ — Geh! وليس Gehst! الأمر دائماً بدون -st'},
+  24:{ok:'✅ Ihnen = Sie الرسمي في الداتيف (I كبيرة)',no:'❌ الطبيب يسأل رسمياً: Was fehlt Ihnen?'},
+  25:{ok:'✅ drei = ثلاثة (عدد) — seit drei Tagen = منذ ثلاثة أيام',no:'❌ drei = ثلاثة (عدد) · dreimal = ثلاث مرات (تكرار)'},
+  26:{ok:'✅ Rezept = وصفة طبية — لازمة لبعض الأدوية',no:'❌ وصفة طبية = Rezept (وليس Termin الذي = موعد)'},
+  27:{ok:'✅ dreimal = ثلاث مرات — dreimal täglich = 3x يومياً',no:'❌ ثلاث مرات = dreimal · drei = عدد فقط'},
+  28:{ok:'✅ Termin = موعد — einen Termin machen = يحجز موعداً',no:'❌ موعد = Termin (وليس Rezept الذي = وصفة)'},
+  29:{ok:'✅ die Erkältung = نزلة البرد (common cold)',no:'❌ die Erkältung = نزلة البرد (وليس الحمى = Fieber)'},
+  30:{ok:'✅ 112 = الإسعاف في ألمانيا وكل أوروبا (110 = شرطة فقط)',no:'❌ الإسعاف في ألمانيا = 112 (وليس 110 الشرطة)'},
+  31:{ok:'✅ die Krankenkasse = صندوق التأمين الصحي العام (GKV)',no:'❌ die Krankenkasse = التأمين الصحي (وليس Krankenhaus = المستشفى)'},
+  32:{ok:'✅ سollen = شخص آخر طلب · müssen = ضرورة ذاتية — فرق مهم جداً!',no:'❌ sollen ≠ müssen: sollen = طلب خارجي (الطبيب قال) · müssen = ضرورة داخلية'}
+};
+
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز مطلق! أتقنت Unit 12 كاملاً. انتقل لـ Unit 13 بثقة تامة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل بثقة.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع weh tun والأمر وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع dürfen/sollen والإمبيراتيف وحل التمارين مجدداً.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32. أنت تقدر!';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.getElementById('scoreBox').style.display='none';
+}
+</script>
+</body>
+</html>

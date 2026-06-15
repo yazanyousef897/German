@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 13 — FULL | الهوايات · gern · weil | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#fb923c;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'13';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+/* PROGRESS BAR */
+.progress-bar-wrap{margin-top:2.5rem;opacity:0;animation:fade-up .8s .9s forwards;width:100%;max-width:400px}
+.progress-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem;text-align:center}
+.progress-track{height:4px;background:var(--gray2);position:relative}
+.progress-fill{height:4px;background:linear-gradient(to left,var(--gold),var(--red));width:86.7%}
+.progress-dots{display:flex;justify-content:space-between;margin-top:.4rem}
+.progress-dots span{font-size:.58rem;color:var(--dim);letter-spacing:.1em}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:var(--orange)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* HOBBY CATEGORIES */
+.hobby-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.hobby-cat{background:var(--black);padding:1.6rem}
+.hobby-cat-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.1rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.hc-gold{color:var(--gold)}.hc-blue{color:var(--blue)}.hc-green{color:var(--green)}.hc-purple{color:var(--purple)}.hc-orange{color:var(--orange)}.hc-red{color:#ff6b6b}
+.hobby-item{display:flex;align-items:flex-start;gap:.7rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.hobby-item:last-child{border-bottom:none}
+.hi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);min-width:170px;flex-shrink:0}
+.hi-ar{font-size:.79rem;color:var(--dim)}
+/* PREFERENCE SCALE */
+.pref-scale{background:var(--gray);border:1px solid var(--gray2);padding:2rem;margin-bottom:1.5rem}
+.pref-track{display:flex;align-items:stretch;gap:0;margin:1.5rem 0;height:auto}
+.pref-block{flex:1;padding:1.2rem .8rem;text-align:center;position:relative}
+.pref-block:nth-child(1){background:rgba(204,0,0,.08);border:1px solid rgba(204,0,0,.2)}
+.pref-block:nth-child(2){background:rgba(255,206,0,.06);border:1px solid rgba(255,206,0,.2)}
+.pref-block:nth-child(3){background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2)}
+.pref-block:nth-child(4){background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25)}
+.pref-label{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;display:block;margin-bottom:.3rem}
+.pref-block:nth-child(1) .pref-label{color:#ff6b6b}
+.pref-block:nth-child(2) .pref-label{color:var(--gold)}
+.pref-block:nth-child(3) .pref-label{color:var(--green)}
+.pref-block:nth-child(4) .pref-label{color:var(--blue)}
+.pref-ar{font-size:.72rem;color:var(--dim);line-height:1.5}
+.pref-ex{font-size:.68rem;color:rgba(255,255,255,.35);margin-top:.4rem;font-style:italic}
+.pref-arrow{text-align:center;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin:.5rem 0}
+/* WEIL DEMO */
+.weil-demo{margin-bottom:1.5rem}
+.weil-compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.2rem}
+.weil-col{background:var(--black);padding:1.5rem}
+.weil-col-hd{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.wc-main{color:var(--green)}.wc-sub{color:var(--red)}
+.weil-row{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem}
+.weil-row:last-child{margin-bottom:0}
+.wb{padding:.3rem .65rem;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:700;border:1px solid}
+.wb-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.wb-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.wb-verb-end{border-color:var(--red);color:#ff9999;background:rgba(204,0,0,.08);animation:pulse-red 2s ease-in-out infinite}
+.wb-obj{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.wb-conj{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.wb-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.76rem;border:none;background:none;padding:.3rem 0}
+@keyframes pulse-red{0%,100%{box-shadow:0 0 0 rgba(204,0,0,0)}50%{box-shadow:0 0 8px rgba(204,0,0,.4)}}
+.weil-rule{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.2);border-right:3px solid var(--red);padding:1.2rem;margin-bottom:1.2rem}
+.weil-rule-title{font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#ff6b6b;font-weight:700;margin-bottom:.6rem}
+.weil-rule p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.weil-rule code{font-family:'JetBrains Mono',monospace;color:#ff9999;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+/* VERB PATTERNS */
+.vp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vp-card{background:var(--gray);padding:1.4rem}
+.vp-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.9rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.vp-gold{color:var(--gold)}.vp-blue{color:var(--blue)}.vp-green{color:var(--green)}.vp-purple{color:var(--purple)}
+.vp-item{font-family:'JetBrains Mono',monospace;font-size:.83rem;color:var(--white);padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.vp-item:last-child{border-bottom:none}
+.vp-ar{font-family:'Cairo',sans-serif;font-size:.72rem;color:var(--dim);font-weight:400}
+/* VEREIN */
+.verein-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.verein-card{background:var(--black);padding:1.3rem}
+.vc-icon{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.vc-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.vc-ar{font-size:.75rem;color:var(--dim);margin-bottom:.15rem}
+.vc-note{font-size:.67rem;color:rgba(255,206,0,.45)}
+/* VOCABULARY */
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+/* CULTURE */
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+/* MISTAKES */
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:start}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem;padding-top:.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+/* NOTES */
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-blue code{font-family:'JetBrains Mono',monospace;color:var(--blue);background:rgba(96,165,250,.08);padding:.08rem .35rem;font-size:.8rem}
+/* DIALOGUES */
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+/* SATZ BOX */
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-gern{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-conj{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-end{border-color:var(--red);color:#ff9999;background:rgba(204,0,0,.06)}
+/* EXERCISES */
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:80px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+/* WRITING */
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+/* RESOURCES */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+/* STUDY PLAN */
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1.1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.7rem;color:var(--dim);padding:.26rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.63rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+/* QUICK REFERENCE */
+.qref-box{background:var(--gray2);border:1px solid var(--gray3);padding:2rem;margin-bottom:1.5rem}
+.qref-title{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold);letter-spacing:.1em;margin-bottom:1.5rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray3)}
+.qref-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.qref-col h4{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray3)}
+.qref-col h4.q-gold{color:var(--gold)}.qref-col h4.q-red{color:#ff6b6b}
+.qref-line{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:rgba(245,245,240,.75);margin-bottom:.5rem;line-height:1.6}
+.qref-line span{color:var(--gold)}
+.qref-note{font-family:'Cairo',sans-serif;font-size:.72rem;color:var(--dim);margin-right:.4rem}
+/* FOOTER */
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.weil-compare,.qref-grid{grid-template-columns:1fr}.days-grid{grid-template-columns:repeat(2,1fr)}.pref-track{flex-direction:column}.nav-links{display:none}.hero-meta{gap:1.5rem}.mistake-item{grid-template-columns:1fr;gap:.3rem}.mi-arrow{display:none}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 13 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#hobbies">الهوايات</a></li>
+    <li><a href="#gern">gern</a></li>
+    <li><a href="#weil">weil</a></li>
+    <li><a href="#verben">أفعال</a></li>
+    <li><a href="#verein">Verein</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🔴 متقدم A1 · Unit 13 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الهوايات</span> <span style="font-size:.5em;color:rgba(245,245,240,.08)">+</span> <span class="r">gern · weil</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube · أنشطة الفراغ بالكامل · gern · lieber · am liebsten · جملة weil (الفعل للنهاية) · أفعال الهوايات · الـ Verein الألماني · 80+ مفردة · ثقافة · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">80+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام</span></div>
+  </div>
+  <div class="progress-bar-wrap">
+    <div class="progress-label">تقدمك في A1 — أنت في Unit 13 من 15</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-dots"><span>Unit 1</span><span>← أنت هنا</span><span>Unit 15</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">فيديوهات اليوتيوب — 6 فيديوهات</div><div class="sec-d">ابدأ بهذه الفيديوهات قبل أو أثناء قراءة الملف</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📺 كيف تشاهد الفيديوهات بفاعلية</div><p>شاهد الفيديو 1 و 2 في اليوم الأول قبل دراسة المفردات · شاهد الفيديو 3 و 4 في اليوم الثالث بعد دراسة gern و weil · إذا لم يعمل فيديو، ابحث على يوتيوب باسم القناة + الموضوع المكتوب في الوصف.</p></div>
+  <div class="videos-grid reveal">
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/lBbLkxDVFUI" title="Learn German Hobbies A1 Anja" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">🗣️ Vocabulary · هوايات A1</div><div class="video-title">الهوايات والأنشطة — A1 Vocabulary</div><div class="video-desc">درس A1 شامل عن الهوايات والأنشطة اليومية مع أمثلة مباشرة. القناة: Learn German with Anja. ابحث عن "Hobbies German A1 Anja" إذا لم يعمل.</div><div class="video-task"><strong>مهمة:</strong> اكتب 10 هوايات تسمعها في الفيديو — ثم قارنها بقسم المفردات في هذا الملف.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/Mj3eGbWaMc4" title="DW Learn German Freizeit A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">🗣️ DW · Freizeit · حوار</div><div class="video-title">وقت الفراغ في ألمانيا — Freizeit</div><div class="video-desc">من سلسلة DW Learn German — حوارات طبيعية عن ماذا يفعل الألمان في وقت فراغهم. المستوى: A1–A2. ابحث عن "DW Learn German Freizeit" إذا لم يعمل.</div><div class="video-task"><strong>مهمة الاستماع:</strong> كتابة كل فعل هواية تسمعه — هل يأتي gern بعده مباشرة؟</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/0FiCCBFPT_o" title="Deutsch für Euch gern lieber am liebsten" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📐 Grammar · gern / lieber</div><div class="video-title">gern · lieber · am liebsten — كيف تعبر عن التفضيل</div><div class="video-desc">القناة: Deutsch für Euch (Katja). شرح مباشر وواضح للفرق بين gern وlieber وam liebsten مع أمثلة وافرة. ابحث عن "Deutsch für Euch gern lieber am liebsten".</div><div class="video-task"><strong>مهمة:</strong> اكتب 5 جمل عن نفسك بعد الفيديو: Ich ... gern · lieber · am liebsten.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/XcKX37HWtJk" title="weil Nebensatz German grammar A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📐 Grammar · weil · Nebensatz</div><div class="video-title">weil — الفعل يذهب للنهاية</div><div class="video-desc">شرح جملة weil مع قاعدة ترتيب الكلمات في الجمل الفرعية. أحد أهم قواعد اللغة الألمانية. ابحث عن "weil Nebensatz German A1 grammar" على يوتيوب.</div><div class="video-task"><strong>مهمة:</strong> بعد الفيديو اكتب 3 جمل weil عن نفسك. تحقق من موقع الفعل — هل في النهاية؟</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/9yzl5p84PQ4" title="Easy German free time hobbies" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t5">🎙️ Easy German · ألمانية طبيعية</div><div class="video-title">ماذا يفعل الألمان في وقت فراغهم؟</div><div class="video-desc">Easy German في الشارع يسألون الناس عن هواياتهم. ألمانية طبيعية مع ترجمة. ابحث عن "Easy German free time" أو "Easy German Hobbys". ممتاز للأذن.</div><div class="video-task"><strong>مهمة:</strong> شاهد بدون ترجمة أولاً — كم كلمة فهمت؟ ثم شاهد مع الترجمة.</div></div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · مراجعة</div><div class="video-title">Nicos Weg — A1 كاملاً · مراجعة شاملة</div><div class="video-desc">فيلم DW الكامل لـ A1. في هذه المرحلة (Unit 13) ستفهم 60–70% من الفيلم. ممتاز لقياس تقدمك وسماع gern ووweil في سياق طبيعي.</div><div class="video-task"><strong>لليوم الخامس:</strong> شاهد 20 دقيقة — اكتب كل جملة تحتوي gern أو weil تسمعها.</div></div>
+    </div>
+
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 01: HOBBIES -->
+<section class="section" id="hobbies">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الهوايات والأنشطة — Hobbys &amp; Freizeitaktivitäten</div><div class="sec-d">6 تصنيفات · أنشطة شائعة · كيف تقول ما تحبه</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الصيغة الأساسية لذكر الهواية</div><p>في الألمانية الهواية = الفعل مباشرة (مش اسم الهواية). نقول: <code>Ich spiele Fußball</code> وليس "Ich habe Fußball als Hobby". وبإضافة <code>gern</code> تُعبّر عن الاستمتاع: <code>Ich spiele gern Fußball.</code> = أنا أحب لعب كرة القدم.</p></div>
+  <div class="hobby-cats reveal">
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-gold">🏃 Sport &amp; Bewegung — رياضة وحركة</div>
+      <div class="hobby-item"><span class="hi-de">Fußball spielen</span><span class="hi-ar">يلعب كرة القدم</span></div>
+      <div class="hobby-item"><span class="hi-de">Tennis spielen</span><span class="hi-ar">يلعب تنس</span></div>
+      <div class="hobby-item"><span class="hi-de">schwimmen</span><span class="hi-ar">يسبح</span></div>
+      <div class="hobby-item"><span class="hi-de">joggen / laufen</span><span class="hi-ar">يركض / يجري</span></div>
+      <div class="hobby-item"><span class="hi-de">Rad fahren</span><span class="hi-ar">يركب الدراجة</span></div>
+      <div class="hobby-item"><span class="hi-de">Yoga machen</span><span class="hi-ar">يمارس اليوغا</span></div>
+    </div>
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-blue">🎨 Kreativität — إبداع وفن</div>
+      <div class="hobby-item"><span class="hi-de">malen</span><span class="hi-ar">يرسم / يلوّن</span></div>
+      <div class="hobby-item"><span class="hi-de">zeichnen</span><span class="hi-ar">يرسم (قلم ورصاص)</span></div>
+      <div class="hobby-item"><span class="hi-de">fotografieren</span><span class="hi-ar">يصوّر</span></div>
+      <div class="hobby-item"><span class="hi-de">Musik machen</span><span class="hi-ar">يعزف موسيقى</span></div>
+      <div class="hobby-item"><span class="hi-de">singen</span><span class="hi-ar">يغني</span></div>
+      <div class="hobby-item"><span class="hi-de">tanzen</span><span class="hi-ar">يرقص</span></div>
+    </div>
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-green">🏠 Zu Hause — في البيت</div>
+      <div class="hobby-item"><span class="hi-de">lesen</span><span class="hi-ar">يقرأ</span></div>
+      <div class="hobby-item"><span class="hi-de">kochen</span><span class="hi-ar">يطبخ</span></div>
+      <div class="hobby-item"><span class="hi-de">backen</span><span class="hi-ar">يخبز</span></div>
+      <div class="hobby-item"><span class="hi-de">fernsehen</span><span class="hi-ar">يشاهد التلفاز</span></div>
+      <div class="hobby-item"><span class="hi-de">Musik hören</span><span class="hi-ar">يستمع للموسيقى</span></div>
+      <div class="hobby-item"><span class="hi-de">Videospiele spielen</span><span class="hi-ar">يلعب ألعاب فيديو</span></div>
+    </div>
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-orange">🌳 Draußen — في الطبيعة</div>
+      <div class="hobby-item"><span class="hi-de">wandern</span><span class="hi-ar">يتنزه في الطبيعة</span></div>
+      <div class="hobby-item"><span class="hi-de">spazieren gehen</span><span class="hi-ar">يتمشى</span></div>
+      <div class="hobby-item"><span class="hi-de">Grillen</span><span class="hi-ar">يشوي (BBQ)</span></div>
+      <div class="hobby-item"><span class="hi-de">Gartenarbeit machen</span><span class="hi-ar">يعمل في الحديقة</span></div>
+      <div class="hobby-item"><span class="hi-de">Camping machen</span><span class="hi-ar">يخيّم</span></div>
+      <div class="hobby-item"><span class="hi-de">reisen</span><span class="hi-ar">يسافر</span></div>
+    </div>
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-purple">🎭 Unterhaltung — ترفيه</div>
+      <div class="hobby-item"><span class="hi-de">ins Kino gehen</span><span class="hi-ar">يذهب للسينما</span></div>
+      <div class="hobby-item"><span class="hi-de">ins Theater gehen</span><span class="hi-ar">يذهب للمسرح</span></div>
+      <div class="hobby-item"><span class="hi-de">ins Konzert gehen</span><span class="hi-ar">يذهب لحفلة موسيقية</span></div>
+      <div class="hobby-item"><span class="hi-de">im Internet surfen</span><span class="hi-ar">يتصفح الإنترنت</span></div>
+      <div class="hobby-item"><span class="hi-de">Serien schauen</span><span class="hi-ar">يشاهد مسلسلات</span></div>
+      <div class="hobby-item"><span class="hi-de">Podcasts hören</span><span class="hi-ar">يستمع للبودكاست</span></div>
+    </div>
+
+    <div class="hobby-cat">
+      <div class="hobby-cat-hd hc-red">👥 Soziales — اجتماعي</div>
+      <div class="hobby-item"><span class="hi-de">Freunde treffen</span><span class="hi-ar">يلتقي بالأصدقاء</span></div>
+      <div class="hobby-item"><span class="hi-de">ins Restaurant gehen</span><span class="hi-ar">يذهب للمطعم</span></div>
+      <div class="hobby-item"><span class="hi-de">einkaufen gehen</span><span class="hi-ar">يذهب للتسوق</span></div>
+      <div class="hobby-item"><span class="hi-de">im Verein sein</span><span class="hi-ar">في نادٍ / جمعية</span></div>
+      <div class="hobby-item"><span class="hi-de">ehrenamtlich arbeiten</span><span class="hi-ar">يتطوع</span></div>
+      <div class="hobby-item"><span class="hi-de">Sprachen lernen</span><span class="hi-ar">يتعلم لغات</span></div>
+    </div>
+
+  </div>
+
+  <p class="vst reveal">حوارات نموذجية — 2 سيناريوهات</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — ماذا تفعل في وقت فراغك؟</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Was machst du in deiner Freizeit?</div><div class="dl-ar">ماذا تفعل في وقت فراغك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ich spiele gern Fußball und lese viel. Und du?</div><div class="dl-ar">أنا أحب لعب كرة القدم وأقرأ كثيراً. وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich wandere am liebsten. Ich bin auch im Sportverein.</div><div class="dl-ar">أنا أحب التنزه في الطبيعة أكثر شيء. أنا أيضاً في نادٍ رياضي.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Cool! Ich koche auch gern — am Wochenende immer!</div><div class="dl-ar">رائع! أنا أيضاً أحب الطبخ — دائماً في عطلة الأسبوع!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — في العمل (رسمي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Haben Sie Hobbys, Herr Müller?</div><div class="dl-ar">هل لديك هوايات، سيد مولر؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, ich lese gern und mache Yoga. Sie auch?</div><div class="dl-ar">نعم، أحب القراءة وأمارس اليوغا. وحضرتك أيضاً؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich fotografiere gern — besonders in der Natur.</div><div class="dl-ar">أنا أحب التصوير — خاصةً في الطبيعة.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Interessant! Ich reise auch gern, weil ich neue Länder liebe.</div><div class="dl-ar">مثير للاهتمام! أنا أيضاً أحب السفر، لأنني أحب البلدان الجديدة.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 02: GERN / LIEBER / AM LIEBSTEN -->
+<section class="section" id="gern">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">gern · lieber · am liebsten — التفضيل</div><div class="sec-d">كيف تعبّر أنك تحب / تفضّل / تحب أكثر شيء</div></div></div>
+
+  <div class="note-gold reveal"><div class="note-title nt-g">🎯 القاعدة الأساسية — الموقع في الجملة</div><p><code>gern</code> يأتي دائماً بعد الفعل المصرّف: <code>Ich spiele gern</code> وليس "Ich gern spiele". يمكن وضعه قبل الاسم المفعول: Ich spiele gern <code>Fußball</code>. و<code>am liebsten</code> يمكن وضعه في بداية الجملة: <code>Am liebsten</code> reise ich nach Deutschland.</p></div>
+
+  <div class="pref-scale reveal">
+    <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem;font-weight:700">درجات التفضيل — von negativ bis superlativ</div>
+    <div class="pref-track">
+      <div class="pref-block">
+        <span class="pref-label">nicht gern</span>
+        <div class="pref-ar">لا أحب / لا أستمتع</div>
+        <div class="pref-ex">Ich spiele nicht gern Schach.</div>
+      </div>
+      <div class="pref-block">
+        <span class="pref-label">gern</span>
+        <div class="pref-ar">أحب / أستمتع بـ</div>
+        <div class="pref-ex">Ich lese gern Bücher.</div>
+      </div>
+      <div class="pref-block">
+        <span class="pref-label">lieber</span>
+        <div class="pref-ar">أفضّل / أحب أكثر</div>
+        <div class="pref-ex">Ich lese lieber als fernsehen.</div>
+      </div>
+      <div class="pref-block">
+        <span class="pref-label">am liebsten</span>
+        <div class="pref-ar">أحب أكثر شيء / المفضلة</div>
+        <div class="pref-ex">Am liebsten koche ich.</div>
+      </div>
+    </div>
+    <div class="pref-arrow">← أقوى · الترتيب من الأقل للأكثر · أضعف →</div>
+  </div>
+
+  <div class="satz-box reveal"><div class="satz-title">موقع gern في الجملة — Satzstruktur</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">spiele</span><span class="sbox sbox-gern">gern</span><span class="sbox sbox-rest">Fußball.</span><span class="sbox-ar">أنا أحب لعب كرة القدم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">kocht</span><span class="sbox sbox-gern">gern</span><span class="sbox sbox-rest">Pasta.</span><span class="sbox-ar">هو يحب طهي الباستا.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">wandern</span><span class="sbox sbox-gern">am liebsten</span><span class="sbox sbox-rest">am Wochenende.</span><span class="sbox-ar">نحن نحب التنزه أكثر شيء في عطلة الأسبوع.</span></div>
+    <div class="satz-row"><span class="sbox sbox-gern">Am liebsten</span><span class="sbox sbox-verb">reise</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">nach Deutschland.</span><span class="sbox-ar">أحب شيء: السفر لألمانيا (am liebsten في البداية → الفعل ثانياً)</span></div>
+  </div>
+
+  <div class="satz-box reveal"><div class="satz-title">lieber ... als ... — التفضيل بالمقارنة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lese</span><span class="sbox sbox-gern">lieber</span><span class="sbox sbox-rest">als</span><span class="sbox sbox-rest">fernsehen.</span><span class="sbox-ar">أنا أفضّل القراءة على التلفاز.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">spielt</span><span class="sbox sbox-gern">lieber</span><span class="sbox sbox-rest">Tennis als Fußball.</span><span class="sbox-ar">هي تفضّل التنس على كرة القدم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">kocht</span><span class="sbox sbox-gern">lieber</span><span class="sbox sbox-rest">als seine Frau.</span><span class="sbox-ar">هو يطبخ أكثر من زوجته (يفضل الطبخ).</span></div>
+  </div>
+
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ lieber...als... دائماً "als" — ليس "wie"!</div><p>خطأ شائع: "Ich lese lieber <code>wie</code> fernsehen" ❌ · الصحيح: "Ich lese lieber <code>als</code> fernsehen" ✅ · في الألمانية التفضيل يستخدم "als" دائماً. "wie" تعني "مثل" (similar to).</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 03: WEIL -->
+<section class="section" id="weil">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">weil — لأن (الفعل للنهاية!)</div><div class="sec-d">أهم قاعدة في A1 · الجملة الفرعية · Nebensatz</div></div></div>
+
+  <div class="weil-rule reveal">
+    <div class="weil-rule-title">⚡ القاعدة الذهبية — The Golden Rule</div>
+    <p>في جملة <code>weil</code>، الفعل المصرّف يذهب دائماً إلى <code>النهاية</code> — آخر كلمة في الجملة.<br><br>
+    ❌ Ich lerne Deutsch, weil es interessant <code>ist</code> mir. (خطأ)<br>
+    ✅ Ich lerne Deutsch, weil es interessant <code>ist</code>. (صحيح — ist في النهاية)<br><br>
+    ❌ weil ich <code>bin</code> müde → ✅ weil ich müde <code>bin</code></p>
+  </div>
+
+  <div class="weil-demo reveal">
+    <div class="weil-compare">
+      <div class="weil-col">
+        <div class="weil-col-hd wc-main">✅ الجملة الرئيسية — Hauptsatz (الفعل في المكان الثاني)</div>
+        <div class="weil-row"><span class="wb wb-subj">Ich</span><span class="wb wb-verb">lerne</span><span class="wb wb-obj">Deutsch.</span><span class="wb-ar">أنا أتعلم الألمانية.</span></div>
+        <div class="weil-row"><span class="wb wb-subj">Es</span><span class="wb wb-verb">ist</span><span class="wb wb-obj">interessant.</span><span class="wb-ar">إنها مثيرة للاهتمام.</span></div>
+        <div class="weil-row"><span class="wb wb-subj">Er</span><span class="wb wb-verb">kocht</span><span class="wb wb-obj">viel.</span><span class="wb-ar">هو يطبخ كثيراً.</span></div>
+        <div class="weil-row"><span class="wb wb-subj">Ich</span><span class="wb wb-verb">bin</span><span class="wb wb-obj">müde.</span><span class="wb-ar">أنا متعب.</span></div>
+      </div>
+      <div class="weil-col">
+        <div class="weil-col-hd wc-sub">الجملة بـ weil — Nebensatz (الفعل في النهاية 🔴)</div>
+        <div class="weil-row"><span class="wb wb-conj">weil</span><span class="wb wb-subj">es</span><span class="wb wb-obj">interessant</span><span class="wb wb-verb-end">ist</span><span class="wb-ar">لأنها مثيرة...</span></div>
+        <div class="weil-row"><span class="wb wb-conj">weil</span><span class="wb wb-subj">er</span><span class="wb wb-obj">Hunger</span><span class="wb wb-verb-end">hat</span><span class="wb-ar">لأنه جائع...</span></div>
+        <div class="weil-row"><span class="wb wb-conj">weil</span><span class="wb wb-subj">es</span><span class="wb wb-obj">Spaß</span><span class="wb wb-verb-end">macht</span><span class="wb-ar">لأنه ممتع...</span></div>
+        <div class="weil-row"><span class="wb wb-conj">weil</span><span class="wb wb-subj">ich</span><span class="wb wb-obj">müde</span><span class="wb wb-verb-end">bin</span><span class="wb-ar">لأنني متعب...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="vst reveal">أمثلة كاملة — weil في سياق الهوايات</p>
+  <div class="satz-box reveal"><div class="satz-title">جمل كاملة — الجملة الرئيسية + weil</div>
+    <div class="satz-row"><span class="sbox sbox-rest">Ich spiele gern Fußball,</span><span class="sbox sbox-conj">weil</span><span class="sbox sbox-rest">es</span><span class="sbox sbox-rest">Spaß</span><span class="sbox sbox-end">macht.</span><span class="sbox-ar">أنا أحب كرة القدم لأنها ممتعة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Er liest viel,</span><span class="sbox sbox-conj">weil</span><span class="sbox sbox-rest">er</span><span class="sbox sbox-rest">Bücher</span><span class="sbox sbox-end">liebt.</span><span class="sbox-ar">هو يقرأ كثيراً لأنه يحب الكتب.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Sie tanzt,</span><span class="sbox sbox-conj">weil</span><span class="sbox sbox-rest">es</span><span class="sbox sbox-rest">ihr Spaß</span><span class="sbox sbox-end">macht.</span><span class="sbox-ar">هي ترقص لأن ذلك يسعدها.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Wir wandern gern,</span><span class="sbox sbox-conj">weil</span><span class="sbox sbox-rest">die Natur</span><span class="sbox sbox-rest">schön</span><span class="sbox sbox-end">ist.</span><span class="sbox-ar">نحن نحب التنزه لأن الطبيعة جميلة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Ich koche,</span><span class="sbox sbox-conj">weil</span><span class="sbox sbox-rest">ich</span><span class="sbox sbox-rest">hungrig</span><span class="sbox sbox-end">bin.</span><span class="sbox-ar">أنا أطبخ لأنني جائع.</span></div>
+  </div>
+
+  <div class="note-blue reveal"><div class="note-title nt-b">📌 بونص — denn (لأن) في الجملة الرئيسية</div><p>يوجد أيضاً <code>denn</code> بمعنى "لأن" — لكنه لا يُغيّر ترتيب الجملة! مقارنة:<br>
+  ✅ Ich lerne Deutsch, <code>weil</code> es wichtig <code>ist</code>. (weil → فعل للنهاية)<br>
+  ✅ Ich lerne Deutsch, <code>denn</code> es <code>ist</code> wichtig. (denn → فعل يبقى في مكانه الثاني)<br>
+  في A1 الأهم هو weil — ستتعلم denn في A2.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 04: VERB PATTERNS -->
+<section class="section" id="verben">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">أفعال الهوايات — Hobby-Verben</div><div class="sec-d">4 أنماط أساسية لذكر الهوايات</div></div></div>
+  <div class="vp-grid reveal">
+    <div class="vp-card">
+      <div class="vp-title vp-gold">spielen + رياضة / لعبة</div>
+      <div class="vp-item">Fußball spielen <span class="vp-ar">— يلعب كرة القدم</span></div>
+      <div class="vp-item">Tennis spielen <span class="vp-ar">— يلعب تنس</span></div>
+      <div class="vp-item">Klavier spielen <span class="vp-ar">— يعزف البيانو</span></div>
+      <div class="vp-item">Gitarre spielen <span class="vp-ar">— يعزف الغيتار</span></div>
+      <div class="vp-item">Schach spielen <span class="vp-ar">— يلعب شطرنج</span></div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-title vp-blue">gehen + نشاط</div>
+      <div class="vp-item">schwimmen gehen <span class="vp-ar">— يذهب للسباحة</span></div>
+      <div class="vp-item">tanzen gehen <span class="vp-ar">— يذهب للرقص</span></div>
+      <div class="vp-item">einkaufen gehen <span class="vp-ar">— يذهب للتسوق</span></div>
+      <div class="vp-item">spazieren gehen <span class="vp-ar">— يذهب للتمشية</span></div>
+      <div class="vp-item">joggen gehen <span class="vp-ar">— يذهب للركض</span></div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-title vp-green">hören / lesen / sehen</div>
+      <div class="vp-item">Musik hören <span class="vp-ar">— يستمع للموسيقى</span></div>
+      <div class="vp-item">Radio hören <span class="vp-ar">— يستمع للراديو</span></div>
+      <div class="vp-item">Bücher lesen <span class="vp-ar">— يقرأ كتباً</span></div>
+      <div class="vp-item">Zeitung lesen <span class="vp-ar">— يقرأ جريدة</span></div>
+      <div class="vp-item">Filme sehen <span class="vp-ar">— يشاهد أفلاماً</span></div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-title vp-purple">machen + نشاط</div>
+      <div class="vp-item">Sport machen <span class="vp-ar">— يمارس رياضة</span></div>
+      <div class="vp-item">Yoga machen <span class="vp-ar">— يمارس يوغا</span></div>
+      <div class="vp-item">Fotos machen <span class="vp-ar">— يلتقط صوراً</span></div>
+      <div class="vp-item">Musik machen <span class="vp-ar">— يعزف موسيقى</span></div>
+      <div class="vp-item">Gartenarbeit machen <span class="vp-ar">— يعمل بالحديقة</span></div>
+    </div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 فعل fahren — Rad fahren وغيرها</div><p>Rad fahren = يركب الدراجة · Auto fahren = يقود سيارة · Ski fahren = يتزلج على الثلج. لاحظ: في الجملة يُصرّف fahren: <code>Ich fahre gern Rad.</code> · <code>Er fährt am Wochenende Ski.</code> (يُصرّف كفعل غير منتظم: ich fahre · du fährst · er fährt)</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 05: VEREIN -->
+<section class="section" id="verein">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">der Verein — النادي والجمعية</div><div class="sec-d">ظاهرة ثقافية ألمانية بامتياز · مفردات العضوية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🏆 ما هو الـ Verein؟</div><p>الـ <code>Verein</code> هو نادٍ أو جمعية تطوعية. ألمانيا فيها حوالي <strong style="color:var(--white)">90,000</strong> نادٍ مسجّل! 1 من كل 3 ألمان عضو في نادٍ واحد على الأقل. الـ Verein مركزي جداً في الحياة الاجتماعية الألمانية — ستسمع عنه كثيراً.</p></div>
+  <div class="verein-grid reveal">
+    <div class="verein-card"><span class="vc-icon">⚽</span><div class="vc-de">der Sportverein</div><div class="vc-ar">النادي الرياضي</div><div class="vc-note">الأكثر شيوعاً في ألمانيا</div></div>
+    <div class="verein-card"><span class="vc-icon">🎵</span><div class="vc-de">der Musikverein</div><div class="vc-ar">النادي الموسيقي</div><div class="vc-note">موسيقى · كورال · عزف</div></div>
+    <div class="verein-card"><span class="vc-icon">🎤</span><div class="vc-de">der Gesangverein</div><div class="vc-ar">نادي الغناء / الكورال</div><div class="vc-note">من أقدم أنواع الأندية</div></div>
+    <div class="verein-card"><span class="vc-icon">🎯</span><div class="vc-de">der Schützenverein</div><div class="vc-ar">نادي الرماية</div><div class="vc-note">تقليد ألماني قديم جداً</div></div>
+    <div class="verein-card"><span class="vc-icon">🌸</span><div class="vc-de">der Gartenverein</div><div class="vc-ar">نادي الحدائق</div><div class="vc-note">Kleingärten — حدائق صغيرة</div></div>
+    <div class="verein-card"><span class="vc-icon">🤝</span><div class="vc-de">der Ehrenamtsverein</div><div class="vc-ar">جمعية التطوع</div><div class="vc-note">Ehrenamt = العمل التطوعي</div></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">عبارات الـ Verein — كيف تتحدث عن النادي</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">bin</span><span class="sbox sbox-rest">im Sportverein.</span><span class="sbox-ar">أنا في النادي الرياضي.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-rest">Mitglied im Fußballverein.</span><span class="sbox-ar">هو عضو في نادي كرة القدم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">treffen uns</span><span class="sbox sbox-rest">jeden Dienstag im Verein.</span><span class="sbox-ar">نلتقي كل ثلاثاء في النادي.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">singt</span><span class="sbox sbox-rest">im Gesangverein.</span><span class="sbox-ar">هي تغني في نادي الكورال.</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 06: VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">المفردات الكاملة — 80+ مفردة</div><div class="sec-d">كل ما تحتاجه لتتحدث عن الهوايات والفراغ</div></div></div>
+
+  <p class="vst reveal">أفعال الهوايات الرئيسية — Hauptverben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">spielen</div><div class="vi-ar">يلعب / يعزف</div><div class="vi-note">+ رياضة أو آلة موسيقية</div></div>
+    <div class="vi"><div class="vi-de">lesen</div><div class="vi-ar">يقرأ</div><div class="vi-note">er liest (غير منتظم)</div></div>
+    <div class="vi"><div class="vi-de">kochen</div><div class="vi-ar">يطبخ</div></div>
+    <div class="vi"><div class="vi-de">backen</div><div class="vi-ar">يخبز</div><div class="vi-note">er bäckt (غير منتظم)</div></div>
+    <div class="vi"><div class="vi-de">malen</div><div class="vi-ar">يرسم / يلوّن</div><div class="vi-note">بالألوان</div></div>
+    <div class="vi"><div class="vi-de">zeichnen</div><div class="vi-ar">يرسم بالقلم</div></div>
+    <div class="vi"><div class="vi-de">singen</div><div class="vi-ar">يغني</div></div>
+    <div class="vi"><div class="vi-de">tanzen</div><div class="vi-ar">يرقص</div></div>
+    <div class="vi"><div class="vi-de">schwimmen</div><div class="vi-ar">يسبح</div></div>
+    <div class="vi"><div class="vi-de">wandern</div><div class="vi-ar">يتنزه في الطبيعة</div></div>
+    <div class="vi"><div class="vi-de">reisen</div><div class="vi-ar">يسافر</div></div>
+    <div class="vi"><div class="vi-de">fotografieren</div><div class="vi-ar">يصوّر</div></div>
+    <div class="vi"><div class="vi-de">fernsehen</div><div class="vi-ar">يشاهد التلفاز</div><div class="vi-note">فعل قابل للفصل</div></div>
+    <div class="vi"><div class="vi-de">schlafen</div><div class="vi-ar">ينام</div><div class="vi-note">er schläft (غير منتظم) 😄</div></div>
+    <div class="vi"><div class="vi-de">joggen / laufen</div><div class="vi-ar">يركض / يجري</div></div>
+    <div class="vi"><div class="vi-de">basteln</div><div class="vi-ar">يصنع أشياء يدوية</div></div>
+  </div>
+
+  <p class="vst reveal">الأسماء المهمة — Wichtige Nomen</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">das Hobby, -s</div><div class="vi-ar">الهواية</div><div class="vi-note">pl: Hobbys</div></div>
+    <div class="vi"><div class="vi-de">die Freizeit</div><div class="vi-ar">وقت الفراغ</div><div class="vi-note">لا جمع لها</div></div>
+    <div class="vi"><div class="vi-de">das Wochenende</div><div class="vi-ar">عطلة الأسبوع</div><div class="vi-note">am Wochenende</div></div>
+    <div class="vi"><div class="vi-de">der Sport (kein Pl.)</div><div class="vi-ar">الرياضة</div><div class="vi-note">Sport machen</div></div>
+    <div class="vi"><div class="vi-de">der Verein, -e</div><div class="vi-ar">النادي / الجمعية</div></div>
+    <div class="vi"><div class="vi-de">das Mitglied, -er</div><div class="vi-ar">العضو</div><div class="vi-note">Mitglied sein</div></div>
+    <div class="vi"><div class="vi-de">das Buch, ¨-er</div><div class="vi-ar">الكتاب</div></div>
+    <div class="vi"><div class="vi-de">der Film, -e</div><div class="vi-ar">الفيلم</div></div>
+    <div class="vi"><div class="vi-de">das Konzert, -e</div><div class="vi-ar">الحفلة الموسيقية</div></div>
+    <div class="vi"><div class="vi-de">das Schwimmbad, ¨-er</div><div class="vi-ar">حمام السباحة</div></div>
+    <div class="vi"><div class="vi-de">die Natur</div><div class="vi-ar">الطبيعة</div></div>
+    <div class="vi"><div class="vi-de">das Museum, Museen</div><div class="vi-ar">المتحف</div></div>
+    <div class="vi"><div class="vi-de">der Wald, ¨-er</div><div class="vi-ar">الغابة</div></div>
+    <div class="vi"><div class="vi-de">die Musik</div><div class="vi-ar">الموسيقى</div></div>
+    <div class="vi"><div class="vi-de">das Instrument, -e</div><div class="vi-ar">الآلة الموسيقية</div></div>
+    <div class="vi"><div class="vi-de">die Gitarre, -n</div><div class="vi-ar">الغيتار</div></div>
+  </div>
+
+  <p class="vst reveal">صفات وظروف مفيدة — Adjektive &amp; Adverbien</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">gern</div><div class="vi-ar">بكل سرور / يحب</div><div class="vi-note">بعد الفعل دائماً</div></div>
+    <div class="vi"><div class="vi-de">lieber</div><div class="vi-ar">يفضّل</div><div class="vi-note">lieber...als...</div></div>
+    <div class="vi"><div class="vi-de">am liebsten</div><div class="vi-ar">يحب أكثر شيء</div></div>
+    <div class="vi"><div class="vi-de">oft</div><div class="vi-ar">كثيراً / في أغلب الأحيان</div></div>
+    <div class="vi"><div class="vi-de">manchmal</div><div class="vi-ar">أحياناً</div></div>
+    <div class="vi"><div class="vi-de">selten</div><div class="vi-ar">نادراً</div></div>
+    <div class="vi"><div class="vi-de">nie</div><div class="vi-ar">أبداً</div></div>
+    <div class="vi"><div class="vi-de">immer</div><div class="vi-ar">دائماً</div></div>
+    <div class="vi"><div class="vi-de">jeden Tag</div><div class="vi-ar">كل يوم</div></div>
+    <div class="vi"><div class="vi-de">am Wochenende</div><div class="vi-ar">في عطلة الأسبوع</div></div>
+    <div class="vi"><div class="vi-de">abends</div><div class="vi-ar">مساءً</div></div>
+    <div class="vi"><div class="vi-de">interessant</div><div class="vi-ar">مثير للاهتمام</div></div>
+    <div class="vi"><div class="vi-de">langweilig</div><div class="vi-ar">ممل</div></div>
+    <div class="vi"><div class="vi-de">entspannend</div><div class="vi-ar">مريح</div></div>
+    <div class="vi"><div class="vi-de">aufregend</div><div class="vi-ar">مثير</div></div>
+    <div class="vi"><div class="vi-de">kreativ</div><div class="vi-ar">إبداعي</div></div>
+  </div>
+
+  <p class="vst reveal">تعابير مهمة — Wichtige Ausdrücke</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">Spaß machen</div><div class="vi-ar">يسبّب متعة / ممتع</div><div class="vi-note">Das macht Spaß!</div></div>
+    <div class="vi"><div class="vi-de">Spaß haben</div><div class="vi-ar">يستمتع</div><div class="vi-note">Hast du Spaß?</div></div>
+    <div class="vi"><div class="vi-de">Zeit haben</div><div class="vi-ar">عنده وقت</div><div class="vi-note">Ich habe keine Zeit.</div></div>
+    <div class="vi"><div class="vi-de">keine Lust haben</div><div class="vi-ar">لا يريد / ما عنده شهية</div></div>
+    <div class="vi"><div class="vi-de">Lust haben auf</div><div class="vi-ar">يشتهي / يريد</div><div class="vi-note">Ich habe Lust auf Kino.</div></div>
+    <div class="vi"><div class="vi-de">in seiner Freizeit</div><div class="vi-ar">في وقت فراغه</div></div>
+    <div class="vi"><div class="vi-de">besonders</div><div class="vi-ar">خاصةً / بشكل خاص</div></div>
+    <div class="vi"><div class="vi-de">am besten</div><div class="vi-ar">بشكل أفضل / الأفضل</div></div>
+    <div class="vi"><div class="vi-de">zum Spaß</div><div class="vi-ar">للمتعة / من باب التسلية</div></div>
+    <div class="vi"><div class="vi-de">Wie wäre es mit...?</div><div class="vi-ar">ماذا لو...؟ / كيف يبدو...؟</div><div class="vi-note">اقتراح</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 07: CULTURE -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الثقافة الألمانية — Freizeitkultur</div><div class="sec-d">ماذا يفعل الألمان في وقت فراغهم؟</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🏃</span><div class="cc-title">الرياضة — Sport</div><div class="cc-text">كرة القدم هي الرياضة الأولى (البوندسليغا!). لكن الجري والسباحة والدراجة شائعة جداً. حمامات السباحة (Schwimmbäder) موجودة في كل مدينة ألمانية.</div></div>
+    <div class="culture-card"><span class="cc-icon">🌲</span><div class="cc-title">التنزه — Wandern</div><div class="cc-text">Wandern هي "الرياضة الوطنية" الألمانية. ملايين الألمان يخرجون للطبيعة كل أسبوع. توجد شبكة ضخمة من مسارات التنزه (Wanderwege) في كل الغابات.</div></div>
+    <div class="culture-card"><span class="cc-icon">🔥</span><div class="cc-title">الشواء — Grillen</div><div class="cc-text">Grillen (الشواء في الهواء الطلق) نشاط صيفي أساسي! الألمان يتجمعون في الحدائق والبارقات. حتى أن مساحات Grillplatz مخصصة في المتنزهات العامة.</div></div>
+    <div class="culture-card"><span class="cc-icon">🤝</span><div class="cc-title">Vereinskultur — ثقافة الأندية</div><div class="cc-text">ألمانيا لديها أكبر كثافة أندية في العالم. ~90,000 نادٍ مسجّل. كثير من العلاقات الاجتماعية تنشأ في الـ Verein. الانضمام لنادٍ طريقة ممتازة للاندماج.</div></div>
+    <div class="culture-card"><span class="cc-icon">📚</span><div class="cc-title">القراءة — Lesen</div><div class="cc-text">ألمانيا من أعلى الدول في معدلات القراءة. Frankfurt يستضيف أكبر معرض كتب في العالم (Frankfurter Buchmesse) كل عام. المكتبات العامة (Bibliotheken) مجانية ومتاحة للجميع.</div></div>
+    <div class="culture-card"><span class="cc-icon">🌍</span><div class="cc-title">السفر — Reisen</div><div class="cc-text">الألمان من أكثر شعوب العالم سفراً. السفر في الإجازة السنوية (Urlaub) شيء مقدّس! أكثر الوجهات شعبية: إسبانيا، إيطاليا، اليونان، وتركيا.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 08: COMMON MISTAKES -->
+<section class="section" id="mistakes">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">الأخطاء الشائعة — Häufige Fehler</div><div class="sec-d">أكثر 8 أخطاء يرتكبها متعلمو العربية في هذه الوحدة</div></div></div>
+  <div class="reveal">
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich gern spiele Fußball.</div><div class="mi-explain">gern قبل الفعل ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich spiele gern Fußball.</div><div class="mi-explain">gern يأتي دائماً بعد الفعل المصرّف ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">weil ich bin müde</div><div class="mi-explain">الفعل في المكان الثاني ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">weil ich müde bin</div><div class="mi-explain">في جملة weil الفعل يذهب للنهاية ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich mag spielen Fußball.</div><div class="mi-explain">mag + Infinitiv للأشياء والناس فقط</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich spiele gern Fußball.</div><div class="mi-explain">للهوايات: Verb + gern (ليس mögen + Infinitiv) ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich lese lieber wie fernsehen.</div><div class="mi-explain">wie للمشابهة — ليس للمقارنة ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich lese lieber als fernsehen.</div><div class="mi-explain">التفضيل: lieber...als... دائماً ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">weil es macht Spaß</div><div class="mi-explain">الفعل (macht) في المنتصف ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">weil es Spaß macht</div><div class="mi-explain">الفعل في نهاية جملة weil دائماً ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Am liebsten ich reise nach Italien.</div><div class="mi-explain">بعد am liebsten الفعل ثم الضمير ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Am liebsten reise ich nach Italien.</div><div class="mi-explain">am liebsten في البداية → الفعل ثانياً (V2) ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich habe kein Hobbys.</div><div class="mi-explain">خطأ في نفي الجمع ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich habe keine Hobbys.</div><div class="mi-explain">مع الجمع: keine (ليس kein) ✅</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">In meiner Freizeit, ich spiele Fußball.</div><div class="mi-explain">فاصلة غير صحيحة والضمير في المكان الثالث ❌</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">In meiner Freizeit spiele ich Fußball.</div><div class="mi-explain">بعد الظرف الزماني: فعل ثم ضمير (V2) — بدون فاصلة ✅</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 09: EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">التمارين — 32 تمريناً تفاعلياً</div><div class="sec-d">gern · weil · مفردات · ثقافة · أخطاء</div></div></div>
+
+  <!-- Block A -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1/6 — gern · lieber · am liebsten (10 أسئلة)</div>
+
+    <div class="ex-q"><div class="ex-q-text">1. "Ich spiele ___ Fußball." (أنا أحب لعب كرة القدم)</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="1" data-a="gern" onclick="check(this)">gern</button><button class="ex-btn" data-q="1" data-a="lieber" onclick="check(this)">lieber</button><button class="ex-btn" data-q="1" data-a="am liebsten" onclick="check(this)">am liebsten</button></div><div class="ex-fb" id="f1"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">2. "Er liest ___ als fernsehen." (هو يفضّل القراءة)</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="2" data-a="gern" onclick="check(this)">gern</button><button class="ex-btn" data-q="2" data-a="lieber" onclick="check(this)">lieber</button><button class="ex-btn" data-q="2" data-a="am liebsten" onclick="check(this)">am liebsten</button></div><div class="ex-fb" id="f2"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">3. "Sie kocht ___." (الطبخ هو نشاطها المفضل على الإطلاق)</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="3" data-a="gern" onclick="check(this)">gern</button><button class="ex-btn" data-q="3" data-a="lieber" onclick="check(this)">lieber</button><button class="ex-btn" data-q="3" data-a="am liebsten" onclick="check(this)">am liebsten</button></div><div class="ex-fb" id="f3"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">4. "___ reise ich nach Deutschland." (في بداية الجملة — هوايتي المفضلة)</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="4" data-a="Gern" onclick="check(this)">Gern</button><button class="ex-btn" data-q="4" data-a="Lieber" onclick="check(this)">Lieber</button><button class="ex-btn" data-q="4" data-a="Am liebsten" onclick="check(this)">Am liebsten</button></div><div class="ex-fb" id="f4"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">5. "Ich wandere nicht ___." (لا أحب التنزه في الطبيعة)</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="5" data-a="gern" onclick="check(this)">gern</button><button class="ex-btn" data-q="5" data-a="lieber" onclick="check(this)">lieber</button><button class="ex-btn" data-q="5" data-a="am liebsten" onclick="check(this)">am liebsten</button></div><div class="ex-fb" id="f5"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">6. عند المقارنة: "Ich spiele lieber Tennis ___ Fußball."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="6" data-a="als" onclick="check(this)">als</button><button class="ex-btn" data-q="6" data-a="wie" onclick="check(this)">wie</button><button class="ex-btn" data-q="6" data-a="oder" onclick="check(this)">oder</button></div><div class="ex-fb" id="f6"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">7. ما معنى "Ich spiele gern Tennis"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="7" data-a="أنا أحب لعب التنس" onclick="check(this)">أنا أحب لعب التنس</button><button class="ex-btn" data-q="7" data-a="يجب أن ألعب التنس" onclick="check(this)">يجب أن ألعب التنس</button><button class="ex-btn" data-q="7" data-a="أستطيع لعب التنس" onclick="check(this)">أستطيع لعب التنس</button></div><div class="ex-fb" id="f7"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">8. ما الكلمة التي تأتي دائماً بعد "lieber" في المقارنة؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="8" data-a="als" onclick="check(this)">als (من / عن)</button><button class="ex-btn" data-q="8" data-a="wie" onclick="check(this)">wie (مثل)</button><button class="ex-btn" data-q="8" data-a="und" onclick="check(this)">und (و)</button></div><div class="ex-fb" id="f8"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">9. ما هو الشكل الأقوى من "gern" (السوبرلاتيف)؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="9" data-a="am liebsten" onclick="check(this)">am liebsten</button><button class="ex-btn" data-q="9" data-a="am gernsten" onclick="check(this)">am gernsten</button><button class="ex-btn" data-q="9" data-a="gernstens" onclick="check(this)">gernstens</button></div><div class="ex-fb" id="f9"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">10. صحيح أم خطأ: "Ich gern spiele Fußball" — هل الجملة صحيحة؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="10" data-a="خطأ" onclick="check(this)">خطأ (gern بعد الفعل)</button><button class="ex-btn" data-q="10" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f10"></div></div>
+  </div>
+
+  <!-- Block B -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2/6 — weil · ترتيب الكلمات (10 أسئلة)</div>
+
+    <div class="ex-q"><div class="ex-q-text">11. "Ich lerne Deutsch, weil es interessant ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="11" data-a="ist" onclick="check(this)">ist</button><button class="ex-btn" data-q="11" data-a="sein" onclick="check(this)">sein</button><button class="ex-btn" data-q="11" data-a="es" onclick="check(this)">es</button></div><div class="ex-fb" id="f11"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">12. "Er kocht viel, weil er Hunger ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="12" data-a="hat" onclick="check(this)">hat</button><button class="ex-btn" data-q="12" data-a="haben" onclick="check(this)">haben</button><button class="ex-btn" data-q="12" data-a="habe" onclick="check(this)">habe</button></div><div class="ex-fb" id="f12"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">13. "Sie wandert gern, weil es Spaß ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="13" data-a="macht" onclick="check(this)">macht</button><button class="ex-btn" data-q="13" data-a="machen" onclick="check(this)">machen</button><button class="ex-btn" data-q="13" data-a="machst" onclick="check(this)">machst</button></div><div class="ex-fb" id="f13"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">14. "Wir bleiben zu Hause, weil es draußen kalt ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="14" data-a="ist" onclick="check(this)">ist</button><button class="ex-btn" data-q="14" data-a="war" onclick="check(this)">war</button><button class="ex-btn" data-q="14" data-a="sein" onclick="check(this)">sein</button></div><div class="ex-fb" id="f14"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">15. أيّ جملة weil صحيحة؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="15" data-a="weil es Spaß macht" onclick="check(this)">weil es Spaß macht ✅</button><button class="ex-btn" data-q="15" data-a="weil es macht Spaß" onclick="check(this)">weil es macht Spaß ❌</button><button class="ex-btn" data-q="15" data-a="weil Spaß es macht" onclick="check(this)">weil Spaß es macht ❌</button></div><div class="ex-fb" id="f15"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">16. ماذا يحدث للفعل في جملة weil؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="16" data-a="يذهب للنهاية" onclick="check(this)">يذهب للنهاية</button><button class="ex-btn" data-q="16" data-a="يبقى في المكان الثاني" onclick="check(this)">يبقى في المكان الثاني</button><button class="ex-btn" data-q="16" data-a="يذهب للبداية" onclick="check(this)">يذهب للبداية</button></div><div class="ex-fb" id="f16"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">17. "Ich gehe ins Kino, weil ich Filme sehr ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="17" data-a="mag" onclick="check(this)">mag (ich)</button><button class="ex-btn" data-q="17" data-a="mögen" onclick="check(this)">mögen (Inf.)</button><button class="ex-btn" data-q="17" data-a="magst" onclick="check(this)">magst (du)</button></div><div class="ex-fb" id="f17"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">18. أين يوضع الفاصل قبل weil؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="18" data-a="قبل weil دائماً" onclick="check(this)">قبل weil دائماً ✅</button><button class="ex-btn" data-q="18" data-a="بعد weil" onclick="check(this)">بعد weil</button><button class="ex-btn" data-q="18" data-a="لا فاصل مع weil" onclick="check(this)">لا فاصل مع weil</button></div><div class="ex-fb" id="f18"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">19. صحيح أم خطأ: "weil ich bin müde" — هل هذا صحيح؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="19" data-a="خطأ" onclick="check(this)">خطأ (الصحيح: weil ich müde bin)</button><button class="ex-btn" data-q="19" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f19"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">20. "Sie singt im Chor, weil sie Musik sehr ___."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="20" data-a="liebt" onclick="check(this)">liebt (sie)</button><button class="ex-btn" data-q="20" data-a="lieben" onclick="check(this)">lieben (Inf.)</button><button class="ex-btn" data-q="20" data-a="liebst" onclick="check(this)">liebst (du)</button></div><div class="ex-fb" id="f20"></div></div>
+  </div>
+
+  <!-- Block C -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3/6 — المفردات — ما معنى هذه الكلمات؟ (8 أسئلة)</div>
+
+    <div class="ex-q"><div class="ex-q-text">21. ما معنى "schwimmen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="21" data-a="يسبح" onclick="check(this)">يسبح</button><button class="ex-btn" data-q="21" data-a="يجري" onclick="check(this)">يجري</button><button class="ex-btn" data-q="21" data-a="يرقص" onclick="check(this)">يرقص</button></div><div class="ex-fb" id="f21"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">22. ما معنى "lesen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="22" data-a="يقرأ" onclick="check(this)">يقرأ</button><button class="ex-btn" data-q="22" data-a="يكتب" onclick="check(this)">يكتب</button><button class="ex-btn" data-q="22" data-a="يشاهد" onclick="check(this)">يشاهد</button></div><div class="ex-fb" id="f22"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">23. ما معنى "tanzen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="23" data-a="يرقص" onclick="check(this)">يرقص</button><button class="ex-btn" data-q="23" data-a="يغني" onclick="check(this)">يغني</button><button class="ex-btn" data-q="23" data-a="يرسم" onclick="check(this)">يرسم</button></div><div class="ex-fb" id="f23"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">24. ما معنى "kochen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="24" data-a="يطبخ" onclick="check(this)">يطبخ</button><button class="ex-btn" data-q="24" data-a="يأكل" onclick="check(this)">يأكل</button><button class="ex-btn" data-q="24" data-a="يشرب" onclick="check(this)">يشرب</button></div><div class="ex-fb" id="f24"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">25. ما معنى "wandern"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="25" data-a="يتنزه في الطبيعة" onclick="check(this)">يتنزه في الطبيعة</button><button class="ex-btn" data-q="25" data-a="يسافر بالطيارة" onclick="check(this)">يسافر بالطيارة</button><button class="ex-btn" data-q="25" data-a="يسبح في النهر" onclick="check(this)">يسبح في النهر</button></div><div class="ex-fb" id="f25"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">26. ما معنى "der Verein"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="26" data-a="النادي / الجمعية" onclick="check(this)">النادي / الجمعية</button><button class="ex-btn" data-q="26" data-a="المنزل" onclick="check(this)">المنزل</button><button class="ex-btn" data-q="26" data-a="المدرسة" onclick="check(this)">المدرسة</button></div><div class="ex-fb" id="f26"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">27. ما معنى "malen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="27" data-a="يرسم / يلوّن" onclick="check(this)">يرسم / يلوّن (بالألوان)</button><button class="ex-btn" data-q="27" data-a="يغني" onclick="check(this)">يغني</button><button class="ex-btn" data-q="27" data-a="يرقص" onclick="check(this)">يرقص</button></div><div class="ex-fb" id="f27"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">28. ما معنى "singen"؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="28" data-a="يغني" onclick="check(this)">يغني</button><button class="ex-btn" data-q="28" data-a="يلعب" onclick="check(this)">يلعب</button><button class="ex-btn" data-q="28" data-a="يركض" onclick="check(this)">يركض</button></div><div class="ex-fb" id="f28"></div></div>
+  </div>
+
+  <!-- Block D -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4/6 — ثقافة وأخطاء شائعة (4 أسئلة)</div>
+
+    <div class="ex-q"><div class="ex-q-text">29. صحيح أم خطأ: في ألمانيا يوجد حوالي 90,000 نادٍ (Verein) مسجّل.</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="29" data-a="صحيح" onclick="check(this)">صحيح ✅</button><button class="ex-btn" data-q="29" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f29"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">30. "Grillen" في السياق الألماني يعني؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="30" data-a="شواء في الهواء الطلق" onclick="check(this)">شواء في الهواء الطلق (BBQ)</button><button class="ex-btn" data-q="30" data-a="يطبخ في المنزل" onclick="check(this)">يطبخ في المنزل</button><button class="ex-btn" data-q="30" data-a="يذهب للمطعم" onclick="check(this)">يذهب للمطعم</button></div><div class="ex-fb" id="f30"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">31. صحيح أم خطأ: "Ich spiele lieber wie Tennis" — هل هذا صحيح؟</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="31" data-a="خطأ" onclick="check(this)">خطأ (الصحيح: lieber...als...)</button><button class="ex-btn" data-q="31" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f31"></div></div>
+
+    <div class="ex-q"><div class="ex-q-text">32. أكمل الجملة: "Ich lerne Deutsch, ___ es wichtig ist."</div>
+    <div class="ex-opts"><button class="ex-btn" data-q="32" data-a="weil" onclick="check(this)">weil (لأن)</button><button class="ex-btn" data-q="32" data-a="dass" onclick="check(this)">dass (أن)</button><button class="ex-btn" data-q="32" data-a="wenn" onclick="check(this)">wenn (إذا / عندما)</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 10: WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — هذا ما يثبّت gern و weil في ذاكرتك</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 سر إتقان gern و weil</div><p>الكتابة الإنتاجية تُجبر دماغك على بناء الجملة من الصفر — وليس مجرد التعرّف عليها. دراسات تُثبت أن من يكتب ما تعلمه يتذكر <strong style="color:var(--white)">70% أكثر</strong>. اكتب عن نفسك حقاً — اللغة الشخصية تُحفظ أسرع.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — هواياتي بالألمانية (6–8 جمل)</div>
+    <div class="wt-text">اكتب عن هواياتك الحقيقية باستخدام gern · lieber · am liebsten · nicht gern:</div>
+    <ul class="wt-list">
+      <li>2 هوايات تحبها (gern)</li>
+      <li>1 هواية تفضّلها على أخرى (lieber...als...)</li>
+      <li>هوايتك المفضلة على الإطلاق (am liebsten)</li>
+      <li>شيء لا تحبه (nicht gern)</li>
+      <li>متى تمارس هواياتك (am Wochenende / abends / jeden Tag)</li>
+    </ul>
+    <textarea class="wt-input" placeholder="Ich ... gern...&#10;Ich ... lieber ... als ...&#10;Am liebsten ...&#10;Ich ... nicht gern ...&#10;Am Wochenende ..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — لماذا تحب هواياتك؟ (4–5 جمل بـ weil)</div>
+    <div class="wt-text">اشرح لماذا تحب أو لا تحب كل هواية — استخدم weil في كل جملة:</div>
+    <ul class="wt-list">
+      <li>Ich ... gern, weil ...</li>
+      <li>Ich ... nicht gern, weil ...</li>
+      <li>Ich ... am liebsten, weil ...</li>
+      <li>Ich bin im Verein / nicht im Verein, weil ...</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:140px;" placeholder="Ich lese gern, weil es interessant ist.&#10;Ich ... nicht gern, weil ...&#10;Am liebsten ..., weil ...&#10;Ich bin ... Verein, weil ..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — حوار عن وقت الفراغ (8–10 أسطر)</div>
+    <div class="wt-text">اكتب حواراً بين شخصين يتحدثان عن هواياتهما — استخدم gern و weil مرة واحدة على الأقل:</div>
+    <ul class="wt-list">
+      <li>اسأل: "Was machst du in deiner Freizeit?"</li>
+      <li>استخدم gern / lieber / am liebsten في الردود</li>
+      <li>استخدم weil في جملة واحدة على الأقل</li>
+      <li>اذكر Verein إذا ممكن</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:180px;" placeholder="A: Was machst du in deiner Freizeit?&#10;B: Ich ...&#10;A: Machst du gern ...?&#10;B: Ja / Nein, ich ...&#10;..."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 11: RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">ليستمر التعلم خارج هذا الملف</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Deutsch für Euch (Katja)</div><div class="res-type">قناة YouTube</div><div class="res-desc">شرح ممتاز لـ gern / lieber / am liebsten + weil بالإنجليزية مع أمثلة وافرة. ابحث عن: "Deutsch für Euch gern" و "Deutsch für Euch weil".</div></div>
+    <div class="res-card"><span class="res-icon">🎥</span><div class="res-name">Easy German</div><div class="res-type">YouTube — ألمانية حقيقية</div><div class="res-desc">مقابلات في الشوارع الألمانية. ابحث "Easy German Hobbys" أو "Easy German Freizeit" — مثالي لسماع gern في الاستخدام الحقيقي.</div><a class="res-link" href="https://www.youtube.com/@EasyGerman" target="_blank">@EasyGerman على YouTube ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German — Nicos Weg</div><div class="res-type">موقع تعليمي مجاني</div><div class="res-desc">تمارين عن الهوايات والأنشطة مع نصوص وصوت. الحلقات A1 كلها تحتوي gern بشكل طبيعي.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — Hobbies Deck</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">ابحث في Anki عن "German A1 Hobbies" أو "German Verbs A1" لتكرار المفردات يومياً. 10 دقائق يومياً كافية.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1 — Kapitel 13</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي A1 — فصل الهوايات يغطي gern بشكل موسّع مع تمارين إضافية وقصص مقروءة.</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki — محادثة عن الهوايات</div><div class="res-type">جلسة محادثة</div><div class="res-desc">بعد هذه الوحدة أنت جاهز لتتحدث عن نفسك وهواياتك. جرّب جلسة 30 دقيقة مع معلم Community Tutor.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German Podcast</div><div class="res-type">بودكاست بطيء</div><div class="res-desc">حلقات عن الثقافة الألمانية — في هذا المستوى (Unit 13) ستفهم 40–60% من الحلقات الأولى.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com ←</a></div>
+    <div class="res-card"><span class="res-icon">🏆</span><div class="res-name">Goethe Institut — A1 نماذج</div><div class="res-type">موقع رسمي</div><div class="res-desc">وحدة الهوايات تظهر في امتحان A1 الرسمي. راجع نماذج الاختبار — أنت في Unit 13 من 15، تقترب!</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+  </div>
+
+  <!-- QUICK REFERENCE -->
+  <div style="margin-top:3rem;" class="reveal">
+    <div class="qref-box">
+      <div class="qref-title">📋 Quick Reference — ورقة المراجعة السريعة</div>
+      <div class="qref-grid">
+        <div class="qref-col">
+          <h4 class="q-gold">gern · lieber · am liebsten</h4>
+          <div class="qref-line">Ich <span>spiele gern</span> Fußball. <span class="qref-note">— أحب</span></div>
+          <div class="qref-line">Ich <span>lese lieber</span> als fernsehen. <span class="qref-note">— أفضّل</span></div>
+          <div class="qref-line">Ich <span>koche am liebsten</span>. <span class="qref-note">— أحب أكثر شيء</span></div>
+          <div class="qref-line">Ich spiele <span>nicht gern</span> Schach. <span class="qref-note">— لا أحب</span></div>
+          <div class="qref-line"><span>Am liebsten</span> reise <span>ich</span> nach Berlin. <span class="qref-note">— أول الجملة</span></div>
+          <div class="qref-line">lieber... <span>als</span>... <span class="qref-note">— المقارنة (ليس wie!)</span></div>
+        </div>
+        <div class="qref-col">
+          <h4 class="q-red">weil — الفعل للنهاية 🔴</h4>
+          <div class="qref-line">Ich lerne Deutsch, <span>weil</span> es wichtig <span>ist</span>.</div>
+          <div class="qref-line">Er kocht, <span>weil</span> er Hunger <span>hat</span>.</div>
+          <div class="qref-line">Sie wandert, <span>weil</span> es Spaß <span>macht</span>.</div>
+          <div class="qref-line">Wir spielen, <span>weil</span> wir es <span>mögen</span>.</div>
+          <div class="qref-line">❌ weil es <span>macht</span> Spaß → خطأ</div>
+          <div class="qref-line">✅ weil es Spaß <span>macht</span> → صحيح</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN — 5 DAYS -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات والتمارين</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">الهوايات + الأفعال</div><ul class="day-tasks">
+      <li class="vl">شاهد الفيديو 1 (Hobbies Vocabulary) مع مهمة الاستماع</li>
+      <li class="vl">شاهد الفيديو 2 (Freizeit in Deutschland)</li>
+      <li>ادرس Section 01 — جداول الهوايات الـ6</li>
+      <li>ادرس Section 04 — أنماط الأفعال</li>
+      <li>احفظ 20 فعل هواية مع ترجمتها</li>
+      <li>اقرأ الحوارين بصوت عالٍ 3 مرات</li>
+      <li>ادرس Section 05 — der Verein</li>
+    </ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">gern · lieber · am liebsten</div><ul class="day-tasks">
+      <li class="vl">شاهد الفيديو 3 (Deutsch für Euch — gern/lieber)</li>
+      <li>ادرس Section 02 كاملاً — scale + جداول الجمل</li>
+      <li>حفّظ القاعدة: gern بعد الفعل دائماً</li>
+      <li>حفّظ: lieber...als... (ليس wie!)</li>
+      <li>حل تمارين Block A (Q1–10)</li>
+      <li class="wl">مهمة الكتابة 1 (6–8 جمل عن هواياتك)</li>
+      <li>راجع الأخطاء الشائعة قسم gern</li>
+    </ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">weil · الجملة الفرعية</div><ul class="day-tasks">
+      <li class="vl">شاهد الفيديو 4 (weil Nebensatz grammar)</li>
+      <li>ادرس Section 03 كاملاً — المقارنة البصرية</li>
+      <li>حفّظ القاعدة: weil → فعل للنهاية</li>
+      <li>حل تمارين Block B (Q11–20)</li>
+      <li class="wl">مهمة الكتابة 2 (4–5 جمل weil)</li>
+      <li>ادرس الأخطاء الشائعة Section 08</li>
+      <li>راجع Quick Reference في Section 11</li>
+    </ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">مفردات + ثقافة + تمارين</div><ul class="day-tasks">
+      <li class="vl">شاهد الفيديو 5 (Easy German — Freizeit)</li>
+      <li>ادرس Section 06 كاملاً — 80+ مفردة</li>
+      <li>ادرس Section 07 — الثقافة الألمانية</li>
+      <li>حل تمارين C + D (Q21–32)</li>
+      <li class="wl">مهمة الكتابة 3 (الحوار الكامل)</li>
+      <li>غطّ العربي وراجع المفردات</li>
+    </ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">مراجعة + اختبار النفس</div><ul class="day-tasks">
+      <li class="vl">شاهد 20 دقيقة من الفيديو 6 (Nicos Weg) — اكتب كل جملة gern و weil</li>
+      <li>أعد حل جميع التمارين الـ32 — هدف 28+</li>
+      <li>اختبر نفسك شفهياً: 5 جمل gern + 3 جمل weil بدون نظر</li>
+      <li>راجع Quick Reference بدون النظر في الملف</li>
+      <li>راجع الأخطاء الشائعة مرة ثانية</li>
+      <li>✅ انتقل لـ Unit 14 إذا حصلت 28+/32</li>
+    </ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 14</div><p>انتقل لـ Unit 14 (العمل والمهن) فقط إذا: ✅ تستطيع بناء 5 جمل gern/lieber/am liebsten بدون نظر · ✅ تستطيع بناء 3 جمل weil مع الفعل في النهاية دون تفكير طويل · ✅ حصلت 28+/32 في التمارين · ✅ كتبت مهمة الكتابة 1 و 2 بالكامل. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 13</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">الهوايات · gern · lieber · am liebsten · weil · Verein · 80+ مفردة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · متقدم · 5 أيام دراسة جادة · لم يتبقَ إلا وحدتان لنهاية A1!</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 14 ← العمل والمهن · أدوات الاستفهام الكاملة · مقدمة Perfekt · wenn</p>
+</footer>
+
+<script>
+const answers={1:'gern',2:'lieber',3:'am liebsten',4:'Am liebsten',5:'gern',6:'als',7:'أنا أحب لعب التنس',8:'als',9:'am liebsten',10:'خطأ',11:'ist',12:'hat',13:'macht',14:'ist',15:'weil es Spaß macht',16:'يذهب للنهاية',17:'mag',18:'قبل weil دائماً',19:'خطأ',20:'liebt',21:'يسبح',22:'يقرأ',23:'يرقص',24:'يطبخ',25:'يتنزه في الطبيعة',26:'النادي / الجمعية',27:'يرسم / يلوّن',28:'يغني',29:'صحيح',30:'شواء في الهواء الطلق',31:'خطأ',32:'weil'};
+
+const fb={
+  1:{ok:'✅ gern = أحب / أستمتع — يأتي بعد الفعل مباشرة',no:'❌ gern = like/enjoy · lieber = prefer · am liebsten = love most of all'},
+  2:{ok:'✅ lieber = يفضّل — للمقارنة بين نشاطين',no:'❌ lieber = prefer — يُستخدم للمقارنة مع als'},
+  3:{ok:'✅ am liebsten = النشاط المفضل على الإطلاق — سوبرلاتيف gern',no:'❌ am liebsten = الهواية المفضلة الكاملة — الأقوى من الثلاثة'},
+  4:{ok:'✅ Am liebsten في بداية الجملة: Am liebsten + Verb + Subjekt',no:'❌ في بداية الجملة نستخدم: Am liebsten reise ICH...'},
+  5:{ok:'✅ nicht gern = لا أحب — النفي يأتي قبل gern',no:'❌ nicht gern = don\'t like — "nicht" قبل gern'},
+  6:{ok:'✅ lieber...als... = prefer...to... — als للمقارنة دائماً',no:'❌ مع lieber نستخدم als وليس wie! wie = مثل/كـ'},
+  7:{ok:'✅ gern = يحب / يستمتع — مش يجب أو يستطيع',no:'❌ gern = like/enjoy — ليس müssen (يجب) أو können (يستطيع)'},
+  8:{ok:'✅ lieber...als... — als للمقارنة في التفضيل دائماً',no:'❌ مع lieber = als! ليس wie (wie = like/similar to)'},
+  9:{ok:'✅ gern → lieber → am liebsten — السوبرلاتيف هو am liebsten',no:'❌ لا يوجد "am gernsten" — السوبرلاتيف الصحيح هو am liebsten'},
+  10:{ok:'✅ خطأ! gern يأتي دائماً بعد الفعل: Ich SPIELE gern (ليس: Ich gern spiele)',no:'❌ الجملة خاطئة فعلاً! gern بعد الفعل: Ich spiele gern'},
+  11:{ok:'✅ ist في النهاية — قاعدة weil: الفعل دائماً آخر كلمة في الجملة',no:'❌ في جملة weil الفعل يذهب للنهاية: weil es interessant IST'},
+  12:{ok:'✅ hat في النهاية — er (3.Sg) → hat · الفعل آخر شيء',no:'❌ er → hat + في نهاية جملة weil'},
+  13:{ok:'✅ macht في النهاية — es Spaß macht ✓',no:'❌ Verb ans Ende! weil es Spaß MACHT'},
+  14:{ok:'✅ ist في النهاية — weil es draußen kalt IST',no:'❌ الفعل للنهاية: weil es draußen kalt IST'},
+  15:{ok:'✅ weil es Spaß macht — الفعل في النهاية!',no:'❌ في جملة weil: Verb ans Ende → weil es Spaß MACHT'},
+  16:{ok:'✅ في جملة weil الفعل يذهب دائماً للنهاية — هذه القاعدة الذهبية',no:'❌ قاعدة weil: الفعل يذهب للنهاية — ليس في المنتصف'},
+  17:{ok:'✅ mag — ich (1.Sg.) من mögen + يجب أن يكون في النهاية',no:'❌ ich → mag (1.Sg.) · ويجب أن يكون آخر كلمة في جملة weil'},
+  18:{ok:'✅ الفاصل يأتي دائماً قبل weil — هذا إلزامي في الألمانية',no:'❌ الفاصل يجب أن يكون قبل weil — دائماً!'},
+  19:{ok:'✅ خطأ! الصحيح: weil ich müde BIN — bin في النهاية',no:'❌ الجملة خاطئة فعلاً! weil ich müde BIN (Verb ans Ende)'},
+  20:{ok:'✅ liebt — sie (3.Sg.) من lieben + في نهاية جملة weil',no:'❌ sie → liebt (3.Sg.) + Verb ans Ende في weil'},
+  21:{ok:'✅ schwimmen = يسبح — im Schwimmbad أو im See أو im Fluss',no:'❌ schwimmen = يسبح — ليس يجري أو يرقص'},
+  22:{ok:'✅ lesen = يقرأ — er liest (غير منتظم!)',no:'❌ lesen = يقرأ — ليس يكتب (schreiben) أو يشاهد (sehen)'},
+  23:{ok:'✅ tanzen = يرقص — in der Disco oder im Tanzkurs',no:'❌ tanzen = يرقص — ليس يغني (singen) أو يرسم (malen)'},
+  24:{ok:'✅ kochen = يطبخ — in der Küche! er kocht',no:'❌ kochen = يطبخ — ليس يأكل (essen) أو يشرب (trinken)'},
+  25:{ok:'✅ wandern = يتنزه في الطبيعة — في الغابات والجبال',no:'❌ wandern = يتنزه في الطبيعة — ليس reisen (سفر بالطيارة)'},
+  26:{ok:'✅ der Verein = النادي / الجمعية — ~90,000 في ألمانيا!',no:'❌ Verein = النادي أو الجمعية — كلمة أساسية جداً في الثقافة الألمانية'},
+  27:{ok:'✅ malen = يرسم / يلوّن — mit Farben und Pinsel (بالألوان والفرشاة)',no:'❌ malen = يرسم بالألوان — ليس يغني أو يرقص'},
+  28:{ok:'✅ singen = يغني — im Chor أو in der Dusche 🎵',no:'❌ singen = يغني — ليس يلعب أو يركض'},
+  29:{ok:'✅ صحيح! ألمانيا لديها ~90,000 نادٍ مسجّل — الـ Vereinskultur ظاهرة فريدة',no:'❌ صحيح فعلاً! ~90,000 Vereine — ألمانيا من أعلى دول العالم بعدد الأندية'},
+  30:{ok:'✅ Grillen = شواء في الهواء الطلق — نشاط صيفي أساسي في ألمانيا!',no:'❌ Grillen = BBQ في الهواء الطلق — Grillplatz مخصصة في المتنزهات'},
+  31:{ok:'✅ خطأ! lieber...ALS... دائماً — ليس wie. Ich spiele lieber Tennis ALS Fußball',no:'❌ خطأ فعلاً! مع lieber نستخدم als وليس wie'},
+  32:{ok:'✅ weil = لأن + الفعل للنهاية: weil es wichtig IST',no:'❌ weil = because/لأن · dass = that/أن · wenn = if/when/إذا'}
+};
+
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 مثالي! أتقنت Unit 13 كاملاً. انتقل لـ Unit 14 بثقة — تبقّى وحدتان فقط!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل لـ Unit 14.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع gern أو weil — أيهما كان أضعف — وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع Section 02 (gern) و Section 03 (weil) وحل التمارين مرة أخرى.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32. gern و weil أساسيان جداً!';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>

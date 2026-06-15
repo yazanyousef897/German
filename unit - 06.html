@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 06 — FULL | الروتين اليومي · Trennbare Verben | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#fb923c;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'06';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,9vw,7rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}.hero-title .b{color:var(--blue)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2rem;opacity:0;animation:fade-up .8s .7s forwards;flex-wrap:wrap;justify-content:center}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-search{background:var(--gray2);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem;min-height:185px;gap:.6rem;text-align:center}
+.vs-play{font-size:2.8rem;color:rgba(255,255,255,.07);margin-bottom:.2rem}
+.vs-ch{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.vs-q{font-size:.75rem;color:var(--dim);line-height:1.5}
+.vs-btn{display:inline-block;padding:.45rem 1rem;background:var(--red);color:var(--white);text-decoration:none;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:.5rem;transition:background .2s}
+.vs-btn:hover{background:#aa0000}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:var(--orange)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.tplan{display:flex;flex-direction:column;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.tp-row{background:var(--black);display:grid;grid-template-columns:90px 40px 1fr;align-items:center;padding:.75rem 1.2rem;gap:1rem;transition:background .2s}
+.tp-row:hover{background:var(--gray)}
+.tp-time{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--gold)}
+.tp-icon{font-size:1.2rem;text-align:center}
+.tp-de{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--white);font-weight:600}
+.tp-ar{font-size:.7rem;color:var(--dim);margin-top:.1rem}
+.rule-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.rule-card{background:var(--black);padding:1.4rem;position:relative;overflow:hidden}
+.rule-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px}
+.rc-gold::after{background:var(--gold)}.rc-red::after{background:var(--red)}.rc-blue::after{background:var(--blue)}.rc-purple::after{background:var(--purple)}
+.rule-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.3rem}
+.rule-title{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
+.rt-gold{color:var(--gold)}.rt-red{color:#ff6b6b}.rt-blue{color:var(--blue)}.rt-purple{color:var(--purple)}
+.rule-text{font-size:.79rem;color:var(--dim);line-height:1.6;margin-bottom:.6rem}
+.rule-ex{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(255,206,0,.6);line-height:1.9}
+.rule-ex strong{color:var(--gold)}
+.conj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1rem;margin-bottom:1.5rem}
+.conj-card{background:var(--gray);border:1px solid var(--gray2);padding:1.3rem;transition:border-color .2s}
+.conj-card:hover{border-color:var(--gold)}
+.conj-head{display:flex;align-items:baseline;gap:.6rem;margin-bottom:.8rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2);flex-wrap:wrap}
+.conj-inf{font-family:'JetBrains Mono',monospace;font-size:.95rem;font-weight:700;color:var(--white)}
+.conj-mean{font-size:.75rem;color:var(--gold)}
+.conj-irreg{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#ff6b6b;background:rgba(204,0,0,.1);padding:.1rem .4rem;margin-right:auto}
+.conj-t{width:100%;border-collapse:collapse}
+.conj-t tr{border-bottom:1px solid rgba(255,255,255,.03)}
+.conj-t tr:last-child{border-bottom:none}
+.ct-p{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--dim);padding:.38rem .3rem;width:38%}
+.ct-v{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--white);font-weight:600;padding:.38rem .3rem}
+.ct-prefix{color:var(--gold);font-weight:700}
+.ct-irr{color:var(--orange)}
+.prefix-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.prefix-t th,.prefix-t td{padding:.8rem 1rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.prefix-t thead th{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.prefix-t tbody tr:hover{background:var(--gray)}
+.pt-prefix{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;color:var(--gold)}
+.pt-mean{font-size:.8rem;color:var(--dim)}
+.pt-verbs{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(245,245,240,.5)}
+.split-visual{background:var(--gray2);padding:2rem;margin-bottom:1.5rem;text-align:center}
+.sv-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1.2rem}
+.sv-row{display:flex;align-items:center;justify-content:center;gap:.4rem;flex-wrap:wrap;margin-bottom:.8rem}
+.sv-box{padding:.5rem 1rem;font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;border:2px solid}
+.sv-prefix{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sv-stem{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sv-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2);font-size:.85rem}
+.sv-arrow{color:var(--dim);font-size:1.2rem}
+.sv-together{border-color:var(--white);color:var(--white);background:rgba(255,255,255,.04);font-size:1.1rem}
+.sv-note{font-size:.75rem;color:var(--dim);margin-top:.3rem}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:160px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.time-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.tc{background:var(--gray);padding:1.2rem 1rem;text-align:center}
+.tc-icon{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.tc-label{font-size:.6rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.3rem}
+.tc-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--gold)}
+.tc-ar{font-size:.72rem;color:var(--dim);margin-top:.15rem}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-prefix{border-color:var(--orange);color:var(--orange);background:rgba(251,146,60,.06)}
+.sbox-modal{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{color:var(--gold);background:rgba(255,206,0,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-green code{color:var(--green);background:rgba(34,197,94,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-red code{color:#ff6b6b;background:rgba(204,0,0,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-blue code{color:var(--blue);background:rgba(96,165,250,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.shadow-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.4rem;margin-bottom:1rem}
+.sh-step{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.75rem}
+.sh-step:last-child{margin-bottom:0}
+.sh-num{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold);flex-shrink:0;line-height:1;min-width:22px}
+.sh-text{font-size:.8rem;color:rgba(245,245,240,.7);line-height:1.7}
+.sh-text code{font-family:'JetBrains Mono',monospace;color:var(--white);background:var(--gray3);padding:.1rem .35rem}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'\2712\FE0F';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1.1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.75rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.7rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'\2192';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'\25B6';color:var(--blue)}
+.day-tasks li.wl::before{content:'\270D';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.greet-grid,.days-grid{grid-template-columns:repeat(2,1fr)}.time-strip{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}.conj-grid{grid-template-columns:1fr}.rule-grid{grid-template-columns:1fr}.tp-row{grid-template-columns:70px 36px 1fr}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 06 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">&#9654; فيديوهات</a></li>
+    <li><a href="#routine">الروتين</a></li>
+    <li><a href="#verben">الأفعال</a></li>
+    <li><a href="#conj">تصريف</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#sequence">تسلسل</a></li>
+    <li><a href="#dialoge">حوارات</a></li>
+    <li><a href="#kultur">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-badge">&#x1F7E2; مبتدئ &middot; Unit 06 &middot; 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الروتين</span> <span style="font-size:.45em;color:rgba(245,245,240,.08)">+</span> <span class="r">Trennbare</span> <span class="b">Verben</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube &middot; الروتين اليومي كاملاً &middot; الأفعال القابلة للفصل &middot; 10 أفعال مُصرَّفة &middot; كلمات التسلسل &middot; 100+ مفردة &middot; 5 حوارات &middot; ثقافة &middot; 35 تمرين تفاعلي &middot; مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">100+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">35</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">حوارات</span></div>
+    <div class="hm-item"><span class="hm-num">10</span><span class="hm-label">فعل مُصرَّف</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">&#9654;</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — ابحث عن الفيديو واشتغل عليه</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">&#9888;&#65039; كيف تستخدم الفيديوهات</div><p>نفس طريقة Unit 01 — لكل فيديو <strong style="color:var(--white)">مهمة استماع واحدة واضحة</strong>. اكتب 3 جمل عن الروتين سمعتها في كل فيديو. الأزرار أسفل كل كارد تأخذك لنتائج البحث على يوتيوب مباشرة.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t1">&#128214; Learn German with Anja</div>
+        <div class="vs-q">Daily Routine Vocabulary — Tagesablauf auf Deutsch</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=learn+german+with+anja+daily+routine+tagesablauf" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t1">&#128214; Learn German with Anja</div>
+        <div class="video-title">Tagesablauf — مفردات الروتين اليومي</div>
+        <div class="video-desc">مفردات الروتين اليومي بوضوح تام — الأنسب لبداية الوحدة قبل أي شيء آخر. أسلوبها بسيط ومباشر.</div>
+        <div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل فعل تسمعه يصف نشاطاً يومياً — هدفك 10 أفعال على الأقل.</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t3">&#128208; Lingoni German</div>
+        <div class="vs-q">Trennbare Verben A1 — Separable Verbs German Grammar</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=lingoni+german+trennbare+verben+A1+separable" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t3">&#128208; Lingoni German · Grammar A1</div>
+        <div class="video-title">Trennbare Verben — شرح منظم ومتعمق</div>
+        <div class="video-desc">شاهده بعد دراسة قسم القواعد في هذا الملف. Lingoni ممتاز للشرح المنظم والأمثلة الكثيرة.</div>
+        <div class="video-task"><strong>مهمة الاستماع:</strong> ارسم سهماً كل مرة تسمع البادئة تنفصل — يجب أن تفهم حركة الانفصال بصرياً.</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t2">&#127916; DW · Nicos Weg</div>
+        <div class="vs-q">Nicos Weg A1 Alltag Tagesablauf Episode — DW</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=nicos+weg+alltag+tagesablauf+DW+A1" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t2">&#127916; DW · Nicos Weg · الحياة اليومية</div>
+        <div class="video-title">نيكو يصف يومه — Alltag auf Deutsch</div>
+        <div class="video-desc">ابحث عن حلقات Nicos Weg عن الروتين والحياة اليومية — نيكو يستخدم الأفعال المنفصلة بشكل طبيعي.</div>
+        <div class="video-task"><strong>مهمة الاستماع:</strong> كم مرة تسمع فعلاً قابلاً للفصل؟ اكتب الجملة كاملة مع البادئة في نهايتها.</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t4">&#128483; Easy German</div>
+        <div class="vs-q">Easy German Daily Routine Ein Tag in meinem Leben</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=easy+german+daily+routine+ein+tag+in+meinem+leben" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t4">&#128483; Easy German · Real Life</div>
+        <div class="video-title">Ein Tag in meinem Leben — يوم حقيقي</div>
+        <div class="video-desc">محادثة حقيقية عن الروتين اليومي — ستسمع الأفعال القابلة للفصل في سياق طبيعي وليس دراسة مصطنعة.</div>
+        <div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل جملة تحتوي فعلاً منفصلاً. هل البادئة في النهاية دائماً؟</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t1">&#128214; Learn German Original</div>
+        <div class="vs-q">Learn German Original separable verbs trennbare Verben A1 lesson</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=learn+german+original+trennbare+verben+separable+A1" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t1">&#128214; Learn German Original · A1 Series</div>
+        <div class="video-title">Trennbare Verben — من سلسلة A1 المنظمة</div>
+        <div class="video-desc">جزء من سلسلة 65+ درس A1 المنظمة. صرّف 3 أفعال مع الفيديو بصوت عالٍ — لا تنتظر، قل مباشرة.</div>
+        <div class="video-task"><strong>مهمة الاستماع:</strong> صرّف aufstehen و anrufen و einkaufen مع الفيديو بصوت عالٍ — كرر كل شكل فوراً.</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-search">
+        <div class="vs-play">&#9654;</div>
+        <div class="vs-ch t5">&#127775; Deutsch mit Mira</div>
+        <div class="vs-q">Deutsch mit Mira Tagesroutine Alltag Verben</div>
+        <a class="vs-btn" href="https://www.youtube.com/results?search_query=deutsch+mit+mira+tagesroutine+alltag+verben" target="_blank">ابحث على YouTube &#8594;</a>
+      </div>
+      <div class="video-info">
+        <div class="video-tag t5">&#127775; Deutsch mit Mira · Alltag</div>
+        <div class="video-title">Meine Tagesroutine — للمراجعة اليوم الرابع</div>
+        <div class="video-desc">شاهده في اليوم الرابع أو الخامس كتلخيص وتثبيت. أسلوبها ممتع ومحفز — مناسب لنهاية الوحدة.</div>
+        <div class="video-task"><strong>لليوم الرابع:</strong> حاول فهم 80% بدون ترجمة. اكتب الجمل التي فهمتها مباشرة بالعربي.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<!-- DAILY ROUTINE -->
+<section class="section" id="routine">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الروتين اليومي — Tagesablauf</div><div class="sec-d">جدول زمني لليوم كاملاً &middot; أوقات اليوم &middot; الأنشطة بالترتيب</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">&#128161; ليش الروتين اليومي مهم جداً؟</div><p>في أي امتحان ألماني أو مقابلة شغل أو محادثة عادية، أول سؤال: <code>Was machst du normalerweise?</code> (ماذا تفعل عادةً؟). هذه الوحدة تعطيك الأدوات الكاملة للإجابة بجمل حقيقية وطبيعية بدون ترجمة داخلية.</p></div>
+  <p class="vst reveal">أوقات اليوم — Tageszeiten</p>
+  <div class="time-strip reveal">
+    <div class="tc"><span class="tc-icon">&#127749;</span><div class="tc-label">morgens</div><div class="tc-de">morgens</div><div class="tc-ar">في الصباح</div></div>
+    <div class="tc"><span class="tc-icon">&#9728;</span><div class="tc-label">mittags</div><div class="tc-de">mittags</div><div class="tc-ar">في الظهر</div></div>
+    <div class="tc"><span class="tc-icon">&#127780;</span><div class="tc-label">nachmittags</div><div class="tc-de">nachmittags</div><div class="tc-ar">بعد الظهر</div></div>
+    <div class="tc"><span class="tc-icon">&#127750;</span><div class="tc-label">abends</div><div class="tc-de">abends</div><div class="tc-ar">في المساء</div></div>
+    <div class="tc"><span class="tc-icon">&#127761;</span><div class="tc-label">nachts</div><div class="tc-de">nachts</div><div class="tc-ar">في الليل</div></div>
+  </div>
+  <p class="vst reveal">Tagesplan — جدول يوم الطالب (نموذج)</p>
+  <div class="tplan reveal">
+    <div class="tp-row"><div class="tp-time">05:30</div><div class="tp-icon">&#9200;</div><div><div class="tp-de">aufwachen</div><div class="tp-ar">يصحو من النوم</div></div></div>
+    <div class="tp-row"><div class="tp-time">06:00</div><div class="tp-icon">&#128703;</div><div><div class="tp-de">aufstehen &middot; duschen</div><div class="tp-ar">ينهض &middot; يستحم</div></div></div>
+    <div class="tp-row"><div class="tp-time">06:30</div><div class="tp-icon">&#128085;</div><div><div class="tp-de">sich anziehen</div><div class="tp-ar">يرتدي ملابسه</div></div></div>
+    <div class="tp-row"><div class="tp-time">07:00</div><div class="tp-icon">&#9749;</div><div><div class="tp-de">frühstücken &middot; Kaffee trinken</div><div class="tp-ar">يتناول الإفطار &middot; يشرب القهوة</div></div></div>
+    <div class="tp-row"><div class="tp-time">08:00</div><div class="tp-icon">&#127891;</div><div><div class="tp-de">zur Uni abfahren &middot; Unterricht fängt an</div><div class="tp-ar">يغادر للجامعة &middot; يبدأ الدرس</div></div></div>
+    <div class="tp-row"><div class="tp-time">12:00</div><div class="tp-icon">&#129367;</div><div><div class="tp-de">Mittagessen &middot; Pause machen</div><div class="tp-ar">يتناول الغداء &middot; يأخذ استراحة</div></div></div>
+    <div class="tp-row"><div class="tp-time">14:00</div><div class="tp-icon">&#128218;</div><div><div class="tp-de">lernen &middot; sich vorbereiten</div><div class="tp-ar">يذاكر &middot; يستعد</div></div></div>
+    <div class="tp-row"><div class="tp-time">17:00</div><div class="tp-icon">&#128722;</div><div><div class="tp-de">einkaufen gehen</div><div class="tp-ar">يذهب للتسوق</div></div></div>
+    <div class="tp-row"><div class="tp-time">18:00</div><div class="tp-icon">&#127968;</div><div><div class="tp-de">nach Hause kommen &middot; kochen</div><div class="tp-ar">يرجع للبيت &middot; يطبخ</div></div></div>
+    <div class="tp-row"><div class="tp-time">20:00</div><div class="tp-icon">&#128248;</div><div><div class="tp-de">Freunde anrufen &middot; fernsehen</div><div class="tp-ar">يتصل بأصدقائه &middot; يشاهد التلفاز</div></div></div>
+    <div class="tp-row"><div class="tp-time">21:00</div><div class="tp-icon">&#129529;</div><div><div class="tp-de">aufräumen &middot; vorbereiten</div><div class="tp-ar">يرتب &middot; يستعد ليوم الغد</div></div></div>
+    <div class="tp-row"><div class="tp-time">23:00</div><div class="tp-icon">&#128164;</div><div><div class="tp-de">einschlafen</div><div class="tp-ar">يغفو ويدخل في النوم</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SEPARABLE VERBS CONCEPT -->
+<section class="section" id="verben">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الأفعال القابلة للفصل — Trennbare Verben</div><div class="sec-d">المفهوم &middot; القواعد الأربع &middot; البادئات الشائعة &middot; الرسم التوضيحي</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">&#128204; ما هو الفعل القابل للفصل؟</div><p>الفعل القابل للفصل = <code>بادئة prefix</code> + <code>فعل أساسي base verb</code>. في الإنهاء يكونان ملتصقَين: <code>auf·stehen</code>. في الجملة تنفصل البادئة وتذهب إلى <strong style="color:var(--gold)">نهاية الجملة</strong>. هذه القاعدة الذهبية الوحيدة لمستوى A1.</p></div>
+
+  <p class="vst reveal">كيف يعمل الانفصال — Visuelles Schema</p>
+  <div class="split-visual reveal">
+    <div class="sv-label">الإنهاء Infinitiv — ملتصق دائماً</div>
+    <div class="sv-row">
+      <span class="sv-box sv-prefix">auf</span>
+      <span style="color:var(--dim);font-family:'JetBrains Mono',monospace;font-size:1.2rem">&middot;</span>
+      <span class="sv-box sv-stem">stehen</span>
+      <span class="sv-arrow">=</span>
+      <span class="sv-box sv-together">aufstehen</span>
+    </div>
+    <div class="sv-note">&#8595; في الجملة الخبرية البادئة تنفصل وتذهب للنهاية</div>
+    <div class="sv-label" style="margin-top:1.5rem">الجملة — Hauptsatz: الفعل ثانياً، البادئة آخراً</div>
+    <div class="sv-row">
+      <span class="sv-box sv-rest">Ich</span>
+      <span class="sv-box sv-stem">stehe</span>
+      <span class="sv-box sv-rest">um 7 Uhr</span>
+      <span class="sv-box sv-prefix">auf</span>
+      <span class="sv-box sv-rest" style="border:none;background:none">.</span>
+    </div>
+    <div class="sv-note">الفعل في المكان الثاني (V2) &middot; البادئة في نهاية الجملة</div>
+  </div>
+
+  <p class="vst reveal">القواعد الأربع — Die 4 Regeln</p>
+  <div class="rule-grid reveal">
+    <div class="rule-card rc-gold">
+      <div class="rule-num">R1</div>
+      <div class="rule-title rt-gold">الإنهاء — Infinitiv</div>
+      <div class="rule-text">البادئة ملتصقة بالفعل. يُكتب كلمة واحدة. هكذا يظهر في القاموس.</div>
+      <div class="rule-ex">auf&middot;stehen<br>an&middot;rufen<br>ein&middot;kaufen<br>fern&middot;sehen</div>
+    </div>
+    <div class="rule-card rc-red">
+      <div class="rule-num">R2</div>
+      <div class="rule-title rt-red">الجملة الرئيسية — Hauptsatz</div>
+      <div class="rule-text">البادئة تنفصل وتذهب إلى نهاية الجملة. الفعل يبقى في المكان الثاني.</div>
+      <div class="rule-ex">Ich <strong>stehe</strong> früh <strong>auf</strong>.<br>Er <strong>ruft</strong> sie <strong>an</strong>.<br>Wir <strong>kaufen</strong> ein <strong>.</strong></div>
+    </div>
+    <div class="rule-card rc-blue">
+      <div class="rule-num">R3</div>
+      <div class="rule-title rt-blue">مع أفعال ناقصة — Modal</div>
+      <div class="rule-text">مع können/müssen وغيرها — الفعل القابل للفصل يبقى في النهاية كإنهاء ملتصق.</div>
+      <div class="rule-ex">Ich muss früh <strong>aufstehen</strong>.<br>Er kann sie <strong>anrufen</strong>.<br>(تفصيل كامل في Unit 09)</div>
+    </div>
+    <div class="rule-card rc-purple">
+      <div class="rule-num">R4</div>
+      <div class="rule-title rt-purple">الماضي — Perfekt</div>
+      <div class="rule-text">الـ ge يدخل بين البادئة والجذر. البادئة تبقى في البداية.</div>
+      <div class="rule-ex">auf + <strong>ge</strong> + standen<br>an + <strong>ge</strong> + rufen<br>(Unit 14 — مقدمة)</div>
+    </div>
+  </div>
+
+  <p class="vst reveal">البادئات الأكثر شيوعاً — Häufige Präfixe</p>
+  <div style="overflow-x:auto;margin-bottom:1.5rem" class="reveal">
+    <table class="prefix-t">
+      <thead><tr><th>البادئة</th><th>المعنى العام</th><th>أفعال شائعة</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-prefix">auf-</td><td class="pt-mean">فوق / فتح / نهوض</td><td class="pt-verbs">aufstehen &middot; aufwachen &middot; aufmachen &middot; aufräumen &middot; aufhören</td></tr>
+        <tr><td class="pt-prefix">an-</td><td class="pt-mean">عند / تشغيل / بدء</td><td class="pt-verbs">anrufen &middot; ankommen &middot; anziehen &middot; anfangen &middot; anmachen</td></tr>
+        <tr><td class="pt-prefix">aus-</td><td class="pt-mean">خروج / إيقاف</td><td class="pt-verbs">ausgehen &middot; ausziehen &middot; ausschlafen &middot; ausmachen</td></tr>
+        <tr><td class="pt-prefix">ein-</td><td class="pt-mean">داخل / دخول</td><td class="pt-verbs">einkaufen &middot; einladen &middot; einschlafen &middot; einmachen</td></tr>
+        <tr><td class="pt-prefix">ab-</td><td class="pt-mean">بعيد / انفصال</td><td class="pt-verbs">abfahren &middot; abholen &middot; abwaschen</td></tr>
+        <tr><td class="pt-prefix">vor-</td><td class="pt-mean">قبل / أمام</td><td class="pt-verbs">vorbereiten &middot; vorstellen &middot; vorkommen</td></tr>
+        <tr><td class="pt-prefix">mit-</td><td class="pt-mean">مع</td><td class="pt-verbs">mitkommen &middot; mitnehmen &middot; mitmachen</td></tr>
+        <tr><td class="pt-prefix">zu-</td><td class="pt-mean">إغلاق</td><td class="pt-verbs">zumachen &middot; zugehen &middot; zuhören</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CONJUGATION -->
+<section class="section" id="conj">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">التصريف الكامل — Konjugation</div><div class="sec-d">10 أفعال أساسية — البادئة الذهبية في نهاية كل صف</div></div></div>
+  <div class="note-red reveal"><div class="note-title nt-r">&#9888;&#65039; أفعال غير منتظمة — انتبه!</div><p><code>fernsehen</code> &#8594; du <strong style="color:var(--orange)">siehst</strong> fern / er <strong style="color:var(--orange)">sieht</strong> fern &middot; <code>anfangen</code> &#8594; du <strong style="color:var(--orange)">fängst</strong> an / er <strong style="color:var(--orange)">fängt</strong> an &middot; <code>einschlafen</code> &#8594; du <strong style="color:var(--orange)">schläfst</strong> ein / er <strong style="color:var(--orange)">schläft</strong> ein. الخانات البرتقالية في الجداول أسفله تعني تغيير في الجذر.</p></div>
+  <div class="conj-grid reveal">
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">aufstehen</span><span class="conj-mean">ينهض من السرير</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">stehe <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">stehst <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">steht <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">stehen <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">steht <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">stehen <span class="ct-prefix">auf</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">aufwachen</span><span class="conj-mean">يصحو من النوم</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">wache <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">wachst <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">wacht <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">wachen <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">wacht <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">wachen <span class="ct-prefix">auf</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">anrufen</span><span class="conj-mean">يتصل هاتفياً</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">rufe <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">rufst <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">ruft <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">rufen <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">ruft <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">rufen <span class="ct-prefix">an</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">einkaufen</span><span class="conj-mean">يتسوق</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">kaufe <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">kaufst <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">kauft <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">kaufen <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">kauft <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">kaufen <span class="ct-prefix">ein</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">fernsehen</span><span class="conj-mean">يشاهد التلفاز</span><span class="conj-irreg">غير منتظم!</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">sehe <span class="ct-prefix">fern</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v ct-irr">siehst <span class="ct-prefix">fern</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v ct-irr">sieht <span class="ct-prefix">fern</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">sehen <span class="ct-prefix">fern</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">seht <span class="ct-prefix">fern</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">sehen <span class="ct-prefix">fern</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">anfangen</span><span class="conj-mean">يبدأ</span><span class="conj-irreg">غير منتظم!</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">fange <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v ct-irr">fängst <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v ct-irr">fängt <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">fangen <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">fangt <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">fangen <span class="ct-prefix">an</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">aufräumen</span><span class="conj-mean">يرتب / ينظف</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">räume <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">räumst <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">räumt <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">räumen <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">räumt <span class="ct-prefix">auf</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">räumen <span class="ct-prefix">auf</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">einschlafen</span><span class="conj-mean">يغفو / ينام</span><span class="conj-irreg">غير منتظم!</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">schlafe <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v ct-irr">schläfst <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v ct-irr">schläft <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">schlafen <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">schlaft <span class="ct-prefix">ein</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">schlafen <span class="ct-prefix">ein</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">sich anziehen</span><span class="conj-mean">يرتدي ملابسه</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">ziehe mich <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">ziehst dich <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">zieht sich <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">ziehen uns <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">zieht euch <span class="ct-prefix">an</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">ziehen sich <span class="ct-prefix">an</span></td></tr></table>
+    </div>
+    <div class="conj-card">
+      <div class="conj-head"><span class="conj-inf">vorbereiten</span><span class="conj-mean">يستعد / يُحضّر</span></div>
+      <table class="conj-t"><tr><td class="ct-p">ich</td><td class="ct-v">bereite <span class="ct-prefix">vor</span></td></tr><tr><td class="ct-p">du</td><td class="ct-v">bereitest <span class="ct-prefix">vor</span></td></tr><tr><td class="ct-p">er/sie/es</td><td class="ct-v">bereitet <span class="ct-prefix">vor</span></td></tr><tr><td class="ct-p">wir</td><td class="ct-v">bereiten <span class="ct-prefix">vor</span></td></tr><tr><td class="ct-p">ihr</td><td class="ct-v">bereitet <span class="ct-prefix">vor</span></td></tr><tr><td class="ct-p">sie/Sie</td><td class="ct-v">bereiten <span class="ct-prefix">vor</span></td></tr></table>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<!-- SENTENCE STRUCTURE -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">بنية الجملة مع الفصل — Satzstruktur</div><div class="sec-d">أنواع الجمل الأربعة &middot; V2 Rule + البادئة في النهاية</div></div></div>
+  <div class="satz-box reveal"><div class="satz-title">الجملة العادية — Subjekt + Verb (2nd) + ... + PRÄFIX (Ende)</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">stehe</span><span class="sbox sbox-rest">um 7 Uhr</span><span class="sbox sbox-prefix">auf</span><span class="sbox-ar">أنا أنهض الساعة السابعة</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">ruft</span><span class="sbox sbox-rest">seine Mutter</span><span class="sbox sbox-prefix">an</span><span class="sbox-ar">هو يتصل بأمه</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">kaufen</span><span class="sbox sbox-rest">Brot und Milch</span><span class="sbox sbox-prefix">ein</span><span class="sbox-ar">نحن نتسوق خبزاً وحليباً</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">الجملة المقلوبة — ظرف زمان أولاً / الفعل لا يزال ثانياً</div>
+    <div class="satz-row"><span class="sbox sbox-rest">Morgens</span><span class="sbox sbox-verb">stehe</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">früh</span><span class="sbox sbox-prefix">auf</span><span class="sbox-ar">في الصباح أنهض مبكراً</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Um 20 Uhr</span><span class="sbox sbox-verb">fängt</span><span class="sbox sbox-rest">der Film</span><span class="sbox sbox-prefix">an</span><span class="sbox-ar">الساعة 8 يبدأ الفيلم</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">السؤال — الفعل أولاً + البادئة في النهاية</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Stehst</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">immer früh</span><span class="sbox sbox-prefix">auf</span><span class="sbox-ar">هل تنهض دائماً مبكراً؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Rufst</span><span class="sbox sbox-subj">du</span><span class="sbox sbox-rest">mich heute</span><span class="sbox sbox-prefix">an</span><span class="sbox-ar">هل ستتصل بي اليوم؟</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">مع أفعال ناقصة Modal — الفعل القابل للفصل يبقى ملتصقاً في النهاية</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-modal">muss</span><span class="sbox sbox-rest">morgen früh</span><span class="sbox sbox-verb">aufstehen</span><span class="sbox-ar">يجب أن أنهض مبكراً غداً</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-modal">kann</span><span class="sbox sbox-rest">heute nicht</span><span class="sbox sbox-verb">einkaufen</span><span class="sbox-ar">هو لا يستطيع التسوق اليوم</span></div>
+    <div class="satz-row" style="padding:.5rem 0;font-size:.75rem;color:var(--dim)">&#128161; مع Modal الفعل يبقى ملتصقاً "aufstehen" لا "steht auf" — تفصيل كامل Unit 09</div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">&#10003; ملخص القاعدة الذهبية</div><p>في الجملة الخبرية: <code>Subjekt + Verb[2] + ... + PRÄFIX[Ende]</code>. الاستثناء الوحيد الآن: مع أفعال modal يبقى الفعل القابل للفصل كاملاً في النهاية كإنهاء.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات — Vokabeln</div><div class="sec-d">100+ كلمة مقسمة بالموضوع — روتين الصباح والنهار والمساء</div></div></div>
+  <p class="vst reveal">أفعال الصباح — Morgenroutine</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">aufwachen</div><div class="vi-ar">يصحو من النوم</div><div class="vi-note">&#9888; مختلف عن aufstehen!</div></div>
+    <div class="vi"><div class="vi-de">aufstehen</div><div class="vi-ar">ينهض من السرير</div></div>
+    <div class="vi"><div class="vi-de">sich duschen</div><div class="vi-ar">يستحم (دش)</div><div class="vi-note">غير قابل للفصل</div></div>
+    <div class="vi"><div class="vi-de">sich waschen</div><div class="vi-ar">يغسل وجهه / نفسه</div></div>
+    <div class="vi"><div class="vi-de">sich anziehen</div><div class="vi-ar">يرتدي ملابسه</div><div class="vi-note">ziehe mich an</div></div>
+    <div class="vi"><div class="vi-de">frühstücken</div><div class="vi-ar">يتناول الإفطار</div><div class="vi-note">&#9888; غير قابل للفصل!</div></div>
+    <div class="vi"><div class="vi-de">die Zähne putzen</div><div class="vi-ar">يغسل أسنانه</div><div class="vi-note">مهم لك كطالب صيدلة!</div></div>
+    <div class="vi"><div class="vi-de">aufmachen</div><div class="vi-ar">يفتح</div><div class="vi-note">Fenster aufmachen</div></div>
+    <div class="vi"><div class="vi-de">sich kämmen</div><div class="vi-ar">يمشط شعره</div></div>
+    <div class="vi"><div class="vi-de">Kaffee machen</div><div class="vi-ar">يحضّر القهوة</div></div>
+  </div>
+  <p class="vst reveal">أفعال اليوم — Tagesaktivitäten</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">zur Uni fahren</div><div class="vi-ar">يذهب للجامعة</div></div>
+    <div class="vi"><div class="vi-de">ankommen</div><div class="vi-ar">يصل / يحضر</div><div class="vi-note">komme an</div></div>
+    <div class="vi"><div class="vi-de">anfangen</div><div class="vi-ar">يبدأ</div><div class="vi-note">غير منتظم: fängt an</div></div>
+    <div class="vi"><div class="vi-de">aufhören</div><div class="vi-ar">ينتهي / يتوقف</div><div class="vi-note">hört auf</div></div>
+    <div class="vi"><div class="vi-de">lernen</div><div class="vi-ar">يتعلم / يذاكر</div></div>
+    <div class="vi"><div class="vi-de">sich vorbereiten</div><div class="vi-ar">يستعد</div><div class="vi-note">bereite mich vor</div></div>
+    <div class="vi"><div class="vi-de">anrufen</div><div class="vi-ar">يتصل هاتفياً</div><div class="vi-note">rufe an</div></div>
+    <div class="vi"><div class="vi-de">abholen</div><div class="vi-ar">يستقبل / يأخذ</div><div class="vi-note">hole ab</div></div>
+    <div class="vi"><div class="vi-de">mitnehmen</div><div class="vi-ar">يأخذ معه</div><div class="vi-note">nehme mit</div></div>
+    <div class="vi"><div class="vi-de">Pause machen</div><div class="vi-ar">يأخذ استراحة</div></div>
+    <div class="vi"><div class="vi-de">arbeiten</div><div class="vi-ar">يعمل</div><div class="vi-note">غير قابل للفصل</div></div>
+    <div class="vi"><div class="vi-de">sich anmelden</div><div class="vi-ar">يُسجّل نفسه</div><div class="vi-note">مفيد للعيادات والجامعة</div></div>
+  </div>
+  <p class="vst reveal">أفعال المساء — Abendroutine</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">nach Hause kommen</div><div class="vi-ar">يرجع للبيت</div></div>
+    <div class="vi"><div class="vi-de">einkaufen</div><div class="vi-ar">يتسوق</div><div class="vi-note">kaufe ein</div></div>
+    <div class="vi"><div class="vi-de">kochen</div><div class="vi-ar">يطبخ</div><div class="vi-note">غير قابل للفصل</div></div>
+    <div class="vi"><div class="vi-de">fernsehen</div><div class="vi-ar">يشاهد التلفاز</div><div class="vi-note">sieht fern — غير منتظم!</div></div>
+    <div class="vi"><div class="vi-de">aufräumen</div><div class="vi-ar">يرتب / ينظف</div><div class="vi-note">räume auf</div></div>
+    <div class="vi"><div class="vi-de">ausgehen</div><div class="vi-ar">يخرج للترفيه</div><div class="vi-note">gehe aus</div></div>
+    <div class="vi"><div class="vi-de">sich ausziehen</div><div class="vi-ar">يخلع ملابسه</div><div class="vi-note">ziehe mich aus</div></div>
+    <div class="vi"><div class="vi-de">entspannen</div><div class="vi-ar">يسترخي</div></div>
+    <div class="vi"><div class="vi-de">lesen</div><div class="vi-ar">يقرأ</div></div>
+    <div class="vi"><div class="vi-de">schlafen gehen</div><div class="vi-ar">يذهب للنوم</div></div>
+    <div class="vi"><div class="vi-de">einschlafen</div><div class="vi-ar">يغفو / ينام</div><div class="vi-note">schläft ein — غير منتظم!</div></div>
+    <div class="vi"><div class="vi-de">zumachen</div><div class="vi-ar">يغلق</div><div class="vi-note">Fenster zumachen</div></div>
+  </div>
+  <p class="vst reveal">التكرار والوقت — Häufigkeit &amp; Zeitangaben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">immer</div><div class="vi-ar">دائماً</div></div>
+    <div class="vi"><div class="vi-de">meistens</div><div class="vi-ar">في الغالب</div></div>
+    <div class="vi"><div class="vi-de">oft</div><div class="vi-ar">كثيراً</div></div>
+    <div class="vi"><div class="vi-de">manchmal</div><div class="vi-ar">أحياناً</div></div>
+    <div class="vi"><div class="vi-de">selten</div><div class="vi-ar">نادراً</div></div>
+    <div class="vi"><div class="vi-de">nie</div><div class="vi-ar">أبداً</div></div>
+    <div class="vi"><div class="vi-de">jeden Tag</div><div class="vi-ar">كل يوم</div></div>
+    <div class="vi"><div class="vi-de">normalerweise</div><div class="vi-ar">عادةً</div></div>
+    <div class="vi"><div class="vi-de">um ... Uhr</div><div class="vi-ar">الساعة ... (وقت محدد)</div></div>
+    <div class="vi"><div class="vi-de">gegen ... Uhr</div><div class="vi-ar">حوالي الساعة ...</div></div>
+    <div class="vi"><div class="vi-de">von ... bis ...</div><div class="vi-ar">من ... حتى ...</div></div>
+    <div class="vi"><div class="vi-de">früh / spät</div><div class="vi-ar">مبكراً / متأخراً</div></div>
+    <div class="vi"><div class="vi-de">der Wecker</div><div class="vi-ar">المنبّه</div><div class="vi-note">Wecker stellen</div></div>
+    <div class="vi"><div class="vi-de">der Feierabend</div><div class="vi-ar">نهاية دوام العمل</div><div class="vi-note">Schönen Feierabend!</div></div>
+    <div class="vi"><div class="vi-de">die Pause</div><div class="vi-ar">الاستراحة</div></div>
+    <div class="vi"><div class="vi-de">das Frühstück</div><div class="vi-ar">الإفطار</div></div>
+    <div class="vi"><div class="vi-de">das Mittagessen</div><div class="vi-ar">الغداء</div></div>
+    <div class="vi"><div class="vi-de">das Abendessen</div><div class="vi-ar">العشاء</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SEQUENCE WORDS -->
+<section class="section" id="sequence">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">كلمات التسلسل — Reihenfolge</div><div class="sec-d">zuerst &middot; dann &middot; danach &middot; schließlich — الكلمات الأربع الأساسية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">&#128161; لماذا كلمات التسلسل مهمة جداً؟</div><p>بدونها كلامك قائمة جامدة. بها يصبح وصفك لليوم قصة متدفقة وطبيعية. مثال: <code>Zuerst stehe ich auf, dann dusche ich mich, danach frühstücke ich, und schließlich gehe ich zur Uni.</code> — هذه جملة واحدة تصف أربع أنشطة بشكل طبيعي تماماً.</p></div>
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">التسلسل الأساسي الأربع</div>
+      <div class="gi"><div class="gi-de">zuerst</div><div><div class="gi-ar">أولاً / في البداية</div><div class="gi-note">يأتي في بداية القائمة دائماً</div></div></div>
+      <div class="gi"><div class="gi-de">dann</div><div><div class="gi-ar">ثم / بعد ذلك</div><div class="gi-note">الأكثر شيوعاً في المحادثة</div></div></div>
+      <div class="gi"><div class="gi-de">danach</div><div><div class="gi-ar">بعد ذلك (أكثر دقة من dann)</div><div class="gi-note">يشير لوقت لاحق محدد أكثر</div></div></div>
+      <div class="gi"><div class="gi-de">schließlich</div><div><div class="gi-ar">في النهاية / أخيراً</div><div class="gi-note">آخر نشاط في التسلسل</div></div></div>
+      <div class="gi"><div class="gi-de">als Erstes</div><div><div class="gi-ar">أول شيء</div><div class="gi-note">مرادف أقوى لـ zuerst</div></div></div>
+      <div class="gi"><div class="gi-de">zuletzt / am Ende</div><div><div class="gi-ar">أخيراً / في النهاية</div><div class="gi-note">مرادف لـ schließlich</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">كلمات وقت إضافية</div>
+      <div class="gi"><div class="gi-de">vorher</div><div><div class="gi-ar">قبل ذلك</div><div class="gi-note">davor أيضاً مقبولة</div></div></div>
+      <div class="gi"><div class="gi-de">nachher</div><div><div class="gi-ar">بعدها</div><div class="gi-note">danach أيضاً</div></div></div>
+      <div class="gi"><div class="gi-de">gleichzeitig</div><div><div class="gi-ar">في نفس الوقت</div></div></div>
+      <div class="gi"><div class="gi-de">später</div><div><div class="gi-ar">لاحقاً</div></div></div>
+      <div class="gi"><div class="gi-de">früher</div><div><div class="gi-ar">سابقاً / أبكر</div></div></div>
+      <div class="gi"><div class="gi-de">normalerweise</div><div><div class="gi-ar">عادةً (في الروتين)</div></div></div>
+    </div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">&#128161; قاعدة V2 مع كلمات التسلسل</div><p>عندما تبدأ الجملة بـ <code>Zuerst</code> أو <code>Danach</code> أو <code>Dann</code> أو <code>Schließlich</code> — الفعل يأتي مباشرة بعدها في المكان الثاني: <code>Zuerst <strong>stehe</strong> ich auf</code> — zuerst أول، stehe ثاني، ich ثالث.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">يوم كامل — تسلسل منطقي نموذجي</div>
+    <div class="satz-row"><span class="sbox sbox-rest" style="border-color:var(--gold);color:var(--gold)">Zuerst</span><span class="sbox sbox-verb">stehe</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">auf.</span><span class="sbox-ar">أولاً أنهض.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest" style="border-color:var(--gold);color:var(--gold)">Dann</span><span class="sbox sbox-verb">dusche</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">mich.</span><span class="sbox-ar">ثم أستحم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest" style="border-color:var(--gold);color:var(--gold)">Danach</span><span class="sbox sbox-verb">frühstücke</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">.</span><span class="sbox-ar">بعد ذلك أتناول الإفطار.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest" style="border-color:var(--gold);color:var(--gold)">Schließlich</span><span class="sbox sbox-verb">fahre</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">zur Uni.</span><span class="sbox-ar">وأخيراً أذهب للجامعة.</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<!-- DIALOGUES -->
+<section class="section" id="dialoge">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الحوارات — Dialoge</div><div class="sec-d">5 سيناريوهات &middot; اقرأ بصوت عالٍ 3 مرات لكل حوار</div></div></div>
+  <div class="dlg reveal"><div class="dlg-hd">&#128205; سيناريو 1 — الروتين الصباحي مع زميل</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wann stehst du normalerweise auf?</div><div class="dl-ar">متى تنهض عادةً؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Unter der Woche stehe ich um 6 Uhr auf. Am Wochenende schlafe ich aus!</div><div class="dl-ar">أيام الأسبوع الساعة 6. في نهاية الأسبوع أنام بما يكفي!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und was machst du zuerst?</div><div class="dl-ar">وماذا تفعل أولاً؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Zuerst dusche ich, dann ziehe ich mich an, und danach frühstücke ich.</div><div class="dl-ar">أولاً أستحم، ثم أرتدي ملابسي، وبعد ذلك أتناول الإفطار.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Trinkst du Kaffee morgens?</div><div class="dl-ar">هل تشرب قهوة في الصباح؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Natürlich! Ohne Kaffee fange ich nicht an!</div><div class="dl-ar">طبعاً! بدون قهوة لا أبدأ!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">&#128205; سيناريو 2 — تخطيط اليوم مع صديق</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Was machst du heute Nachmittag?</div><div class="dl-ar">ماذا ستفعل بعد الظهر اليوم؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ich gehe erst einkaufen, dann räume ich mein Zimmer auf.</div><div class="dl-ar">سأذهب للتسوق أولاً، ثم أرتب غرفتي.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wann kommst du zurück?</div><div class="dl-ar">متى ستعود؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gegen 17 Uhr. Rufst du mich danach an?</div><div class="dl-ar">حوالي الساعة 5. هل ستتصل بي بعد ذلك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ja, ich rufe dich um 18 Uhr an. Bis dann!</div><div class="dl-ar">نعم، سأتصل بك الساعة 6. إلى اللقاء!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">&#128205; سيناريو 3 — في العيادة أو المستشفى (مناسب لك كطالب صيدلة)</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Tag! Wann fängt Ihre Sprechstunde an?</div><div class="dl-ar">يوم سعيد! متى تبدأ ساعة الاستشارة؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Die Sprechstunde fängt um 9 Uhr an und hört um 12 Uhr auf.</div><div class="dl-ar">ساعة الاستشارة تبدأ الساعة 9 وتنتهي الساعة 12.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Danke. Ich komme um 10 Uhr an. Geht das?</div><div class="dl-ar">شكراً. سأصل الساعة 10. هل هذا مناسب؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ja, kein Problem. Rufen Sie bitte vorher an.</div><div class="dl-ar">نعم، لا مشكلة. اتصلوا من قبل من فضلكم.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Natürlich. Auf Wiedersehen!</div><div class="dl-ar">بالطبع. مع السلامة!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">&#128205; سيناريو 4 — مساء الدراسة مع زميل</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Siehst du heute Abend fern?</div><div class="dl-ar">هل ستشاهد التلفاز الليلة؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Nein, ich bereite mich auf die Prüfung vor. Und du?</div><div class="dl-ar">لا، أستعد للامتحان. وأنت؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich räume zuerst auf, dann lerne ich auch. Bis wann lernst du?</div><div class="dl-ar">أنا أرتب أولاً، ثم أذاكر أيضاً. حتى متى ستذاكر؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Bis 23 Uhr, danach schlafe ich ein. Schönen Abend!</div><div class="dl-ar">حتى الساعة 11، بعدها أنام. مساء جميل!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Dir auch! Viel Erfolg bei der Prüfung!</div><div class="dl-ar">وأنت أيضاً! بالتوفيق في الامتحان!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">&#128205; سيناريو 5 — هاتف مع الأهل</div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Hallo! Ich rufe kurz an — morgen stehe ich früh auf.</div><div class="dl-ar">أهلاً! أتصل سريعاً — غداً سأنهض مبكراً.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wann fängt deine Vorlesung an?</div><div class="dl-ar">متى تبدأ محاضرتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Um acht Uhr. Ich muss um sechs aufstehen!</div><div class="dl-ar">الساعة الثامنة. يجب أن أنهض الساعة السادسة!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Schlaf früh ein! Gute Nacht!</div><div class="dl-ar">نام مبكراً! تصبح على خير!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Danke! Auf Wiederhören!</div><div class="dl-ar">شكراً! مع السلامة! (في الهاتف)</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE + MISTAKES -->
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">الثقافة والأخطاء — Kultur &amp; Fehler</div><div class="sec-d">6 نقاط ثقافية + 7 أخطاء شائعة</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">&#9200;</span><div class="cc-title">Pünktlichkeit — الدقة في الوقت</div><div class="cc-text">الألمان يستيقظون مبكراً ويلتزمون بالمواعيد. "Um 8 Uhr" تعني 8:00 تماماً. التأخر ولو 5 دقائق خلل اجتماعي. "Entschuldigung, ich bin spät!" ضرورة لا اختيار.</div></div>
+    <div class="culture-card"><span class="cc-icon">&#128722;</span><div class="cc-title">Einkaufen — التسوق اليومي</div><div class="cc-text">الألمان يتسوقون بشكل متكرر وبكميات أقل. المتاجر تُغلق الأحد في معظم المدن — يخططون مسبقاً. "Ich kaufe täglich ein" أمر طبيعي جداً.</div></div>
+    <div class="culture-card"><span class="cc-icon">&#127968;</span><div class="cc-title">Hausarbeit — النظافة المنزلية</div><div class="cc-text">النظافة والترتيب قيمة أساسية. "aufräumen" يومي وليس أسبوعي. في البيوت المشتركة (WG) يتقسمون المهام بدقة متفق عليها.</div></div>
+    <div class="culture-card"><span class="cc-icon">&#128248;</span><div class="cc-title">Tagesschau — نشرة الـ 8</div><div class="cc-text">نشرة أخبار ARD الساعة 20:00 جزء من روتين الملايين. "Ich sehe Tagesschau" = أشاهد نشرة الساعة 8. تقليد قديم ما زال محترماً في ألمانيا.</div></div>
+    <div class="culture-card"><span class="cc-icon">&#127745;</span><div class="cc-title">Ruhezeit — ساعات الهدوء القانونية</div><div class="cc-text">بعد 22:00 وفي الظهيرة (12-14) توجد "Ruhezeit" — وقت هدوء قانوني. الضوضاء ممنوعة. الجيران يأخذون هذا بجدية.</div></div>
+    <div class="culture-card"><span class="cc-icon">&#9749;</span><div class="cc-title">Kaffeepause — استراحة القهوة</div><div class="cc-text">ألمانيا من أعلى دول العالم استهلاكاً للقهوة. Kaffeepause = استراحة القهوة في العمل، محمية ومحترمة. "Kaffee machen" أول شيء في الصباح لمعظمهم.</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — 7 أخطاء يقع فيها المبتدئ</p>
+  <div class="reveal">
+    <div class="mistake-item"><div><div class="mi-wrong">Ich aufstehe um 7 Uhr.</div><div class="mi-explain">البادئة لا تبقى ملتصقة بالفعل في الجملة</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Ich stehe um 7 Uhr auf.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich anrufe dich später.</div><div class="mi-explain">نفس الخطأ — الفعل ثانياً والبادئة للنهاية</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Ich rufe dich später an.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Er seht fern jeden Abend.</div><div class="mi-explain">fernsehen غير منتظم: du siehst / er sieht (مش seht)</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Er sieht jeden Abend fern.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Er fangt um 8 Uhr an.</div><div class="mi-explain">anfangen غير منتظم: er fängt (بالأوملاوت ä)</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Er fängt um 8 Uhr an.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich schlafe früh ein nicht.</div><div class="mi-explain">nicht يأتي قبل البادئة: nicht früh ein</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Ich schlafe nicht früh ein.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Zuerst ich stehe auf.</div><div class="mi-explain">بعد zuerst: الفعل ثانياً لا الضمير (V2 Rule)</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Zuerst stehe ich auf.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">frühstücken = فعل قابل للفصل</div><div class="mi-explain">frühstücken غير قابل للفصل! Ich frühstücke (ملتصق دائماً)</div></div><div class="mi-arrow">&#8594;</div><div><div class="mi-right">Ich frühstücke. (ليس: Ich stücke früh)</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">التمارين — 35 سؤال تفاعلي</div><div class="sec-d">7 أجزاء &middot; كوّرة / خطأ فوري &middot; نتيجة في النهاية</div></div></div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 1/7 — صرّف الفعل القابل للفصل (7 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich <span class="blank" id="b1">___</span> um 7 Uhr auf. (aufstehen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'1','stehe')">stehe</button><button class="ex-btn" onclick="check(this,'1','stehe')">stehst</button><button class="ex-btn" onclick="check(this,'1','stehe')">steht</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Du <span class="blank" id="b2">___</span> früh auf. (aufwachen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'2','wachst')">wachst</button><button class="ex-btn" onclick="check(this,'2','wachst')">wache</button><button class="ex-btn" onclick="check(this,'2','wachst')">wacht</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er <span class="blank" id="b3">___</span> jeden Abend fern. (fernsehen — غير منتظم!)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'3','sieht')">sieht</button><button class="ex-btn" onclick="check(this,'3','sieht')">seht</button><button class="ex-btn" onclick="check(this,'3','sieht')">sehen</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir <span class="blank" id="b4">___</span> jeden Freitag ein. (einkaufen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'4','kaufen')">kaufen</button><button class="ex-btn" onclick="check(this,'4','kaufen')">kauft</button><button class="ex-btn" onclick="check(this,'4','kaufen')">kaufst</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ihr <span class="blank" id="b5">___</span> die Küche auf. (aufräumen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'5','räumt')">räumt</button><button class="ex-btn" onclick="check(this,'5','räumt')">räumen</button><button class="ex-btn" onclick="check(this,'5','räumt')">räumst</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Der Unterricht <span class="blank" id="b6">___</span> um 8 Uhr an. (anfangen — غير منتظم!)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'6','fängt')">fängt</button><button class="ex-btn" onclick="check(this,'6','fängt')">fangt</button><button class="ex-btn" onclick="check(this,'6','fängt')">fange</button></div><div class="ex-fb" id="f6"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Sie (هي) ruft ihre Mutter ___. (anrufen — أين البادئة؟)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'7','an')">an</button><button class="ex-btn" onclick="check(this,'7','an')">auf</button><button class="ex-btn" onclick="check(this,'7','an')">aus</button></div><div class="ex-fb" id="f7"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 2/7 — أين تذهب البادئة؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أي جملة صحيحة؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'8','A')">Ich stehe um 8 Uhr auf.</button><button class="ex-btn" onclick="check(this,'8','A')">Ich aufstehe um 8 Uhr.</button><button class="ex-btn" onclick="check(this,'8','A')">Ich stehe auf um 8 Uhr.</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir kaufen Lebensmittel <span class="blank" id="b9">___</span>. (einkaufen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'9','ein')">ein</button><button class="ex-btn" onclick="check(this,'9','ein')">an</button><button class="ex-btn" onclick="check(this,'9','ein')">auf</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أي جملة صحيحة؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'10','A')">Er ruft seinen Freund an.</button><button class="ex-btn" onclick="check(this,'10','A')">Er anruft seinen Freund.</button><button class="ex-btn" onclick="check(this,'10','A')">Er ruft an seinen Freund.</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Der Film fängt um 20 Uhr <span class="blank" id="b11">___</span>. (anfangen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'11','an')">an</button><button class="ex-btn" onclick="check(this,'11','an')">auf</button><button class="ex-btn" onclick="check(this,'11','an')">aus</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich räume mein Zimmer <span class="blank" id="b12">___</span>. (aufräumen)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'12','auf')">auf</button><button class="ex-btn" onclick="check(this,'12','auf')">an</button><button class="ex-btn" onclick="check(this,'12','auf')">ein</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 3/7 — كلمات الترتيب والتسلسل (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text"><span class="blank" id="b13">___</span> stehe ich auf, danach dusche ich mich. (أول شيء)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'13','Zuerst')">Zuerst</button><button class="ex-btn" onclick="check(this,'13','Zuerst')">Danach</button><button class="ex-btn" onclick="check(this,'13','Zuerst')">Schließlich</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich frühstücke. <span class="blank" id="b14">___</span> gehe ich zur Uni. (بعد ذلك)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'14','Danach')">Danach</button><button class="ex-btn" onclick="check(this,'14','Danach')">Zuerst</button><button class="ex-btn" onclick="check(this,'14','Danach')">Schließlich</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich arbeite, esse zu Mittag, mache Sport, und <span class="blank" id="b15">___</span> schlafe ich ein.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'15','schließlich')">schließlich</button><button class="ex-btn" onclick="check(this,'15','schließlich')">zuerst</button><button class="ex-btn" onclick="check(this,'15','schließlich')">dann</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich esse zu Abend. <span class="blank" id="b16">___</span> mache ich meine Hausaufgaben.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'16','Danach')">Danach</button><button class="ex-btn" onclick="check(this,'16','Danach')">Zuerst</button><button class="ex-btn" onclick="check(this,'16','Danach')">Früher</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "schließlich"؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'17','في النهاية')">في النهاية</button><button class="ex-btn" onclick="check(this,'17','في النهاية')">أولاً</button><button class="ex-btn" onclick="check(this,'17','في النهاية')">في نفس الوقت</button></div><div class="ex-fb" id="f17"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 4/7 — ترجمة وفهم (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"أنا أتسوق كل يوم" — كيف تقولها بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'18','A')">Ich kaufe jeden Tag ein.</button><button class="ex-btn" onclick="check(this,'18','A')">Ich einkaufe jeden Tag.</button><button class="ex-btn" onclick="check(this,'18','A')">Ich kaufe jeden Tag.</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "aufräumen"؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'19','يُرتّب')">يُرتّب / ينظّف</button><button class="ex-btn" onclick="check(this,'19','يُرتّب')">يستيقظ</button><button class="ex-btn" onclick="check(this,'19','يُرتّب')">يبدأ</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"هي تتصل بصديقتها كل يوم" — الترجمة الصحيحة؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'20','A')">Sie ruft ihre Freundin jeden Tag an.</button><button class="ex-btn" onclick="check(this,'20','A')">Sie anruft ihre Freundin jeden Tag.</button><button class="ex-btn" onclick="check(this,'20','A')">Sie ruft an ihre Freundin jeden Tag.</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "einschlafen"؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'21','يغفو')">يغفو / يدخل في النوم</button><button class="ex-btn" onclick="check(this,'21','يغفو')">يستيقظ</button><button class="ex-btn" onclick="check(this,'21','يغفو')">ينهض من السرير</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Ich ziehe mich an." تعني:</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'22','أرتدي')">أنا أرتدي ملابسي</button><button class="ex-btn" onclick="check(this,'22','أرتدي')">أنا أخلع ملابسي</button><button class="ex-btn" onclick="check(this,'22','أرتدي')">أنا أغسل ملابسي</button></div><div class="ex-fb" id="f22"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 5/7 — صح أم خطأ؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">البادئة في الفعل القابل للفصل تذهب إلى بداية الجملة الخبرية.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'23','خطأ')">خطأ &#8594; تذهب للنهاية</button><button class="ex-btn" onclick="check(this,'23','خطأ')">صحيح</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"fernsehen" هو فعل قابل للفصل.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'24','صحيح')">صحيح</button><button class="ex-btn" onclick="check(this,'24','صحيح')">خطأ</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ich anrufe dich."</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'25','خطأ')">خطأ &#8594; Ich rufe dich an.</button><button class="ex-btn" onclick="check(this,'25','خطأ')">صحيحة</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">في الإنهاء Infinitiv يُكتب الفعل القابل للفصل كلمة واحدة ملتصقة.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'26','صحيح')">صحيح</button><button class="ex-btn" onclick="check(this,'26','صحيح')">خطأ</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">aufwachen وaufstehen يعنيان نفس الشيء تماماً.</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'27','خطأ')">خطأ &#8594; معناهما مختلف</button><button class="ex-btn" onclick="check(this,'27','خطأ')">صحيح &#8594; نفس المعنى</button></div><div class="ex-fb" id="f27"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 6/7 — أكمل الحوار (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wann <span class="blank" id="b28">___</span> du morgens auf?" (aufstehen — du)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'28','stehst')">stehst</button><button class="ex-btn" onclick="check(this,'28','stehst')">steht</button><button class="ex-btn" onclick="check(this,'28','stehst')">stehe</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">B: "Normalerweise <span class="blank" id="b29">___</span> ich um 6:30 Uhr auf."</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'29','stehe')">stehe</button><button class="ex-btn" onclick="check(this,'29','stehe')">stehst</button><button class="ex-btn" onclick="check(this,'29','stehe')">steht</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Was machst du <span class="blank" id="b30">___</span>?" (أول شيء في الصباح)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'30','zuerst')">zuerst</button><button class="ex-btn" onclick="check(this,'30','zuerst')">schließlich</button><button class="ex-btn" onclick="check(this,'30','zuerst')">danach</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">B: "Ich dusche ___ frühstücke ich." (اختر الرابط الصحيح)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'31','und dann')">und dann</button><button class="ex-btn" onclick="check(this,'31','und dann')">oder zuerst</button><button class="ex-btn" onclick="check(this,'31','und dann')">aber schließlich</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Rufst du mich heute Abend ___?" (anrufen — البادئة)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'32','an')">an</button><button class="ex-btn" onclick="check(this,'32','an')">auf</button><button class="ex-btn" onclick="check(this,'32','an')">aus</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 7/7 — معرفة شاملة (3 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">الساعة 23:00 — ماذا تفعل عادةً؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'33','einschlafen')">einschlafen / schlafen gehen</button><button class="ex-btn" onclick="check(this,'33','einschlafen')">aufstehen</button><button class="ex-btn" onclick="check(this,'33','einschlafen')">einkaufen gehen</button></div><div class="ex-fb" id="f33"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أي فعل غير قابل للفصل؟</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'34','frühstücken')">frühstücken</button><button class="ex-btn" onclick="check(this,'34','frühstücken')">aufstehen</button><button class="ex-btn" onclick="check(this,'34','frühstücken')">anrufen</button></div><div class="ex-fb" id="f34"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أكمل: "Ich <span class="blank" id="b35">___</span> mich auf die Prüfung ___." (vorbereiten)</div><div class="ex-opts"><button class="ex-btn" onclick="check(this,'35','bereite/vor')">bereite / vor</button><button class="ex-btn" onclick="check(this,'35','bereite/vor')">vorbereite / —</button><button class="ex-btn" onclick="check(this,'35','bereite/vor')">bereite / auf</button></div><div class="ex-fb" id="f35"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 35 سؤال &#8592;</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox">
+    <div class="score-num" id="scoreNum">0</div>
+    <div class="score-sub">إجابة صحيحة من 35</div>
+    <div class="score-msg" id="scoreMsg"></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<!-- WRITING TASKS -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب روتينك اليومي بالألمانية — الهدف جمل طبيعية حقيقية</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">&#127919; هدف مهام الكتابة في هذه الوحدة</div><p>بنهاية هذه المهام تكون قادراً على كتابة فقرة كاملة تصف يومك بالألمانية مستخدماً: الأفعال القابلة للفصل في مكانها الصحيح + كلمات التسلسل + أوقات محددة (um ... Uhr) + تكرارات (jeden Tag / normalerweise). هذا المستوى يعطيك جملاً تبدو طبيعية تماماً لناطق أصلي.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">&#10002; مهمة 1 — صف يومك الدراسي (8–10 جمل)</div>
+    <div class="wt-text">اكتب وصفاً كاملاً ليوم دراسي عادي باستخدام كل ما تعلمته:</div>
+    <ul class="wt-list">
+      <li>متى تصحو وتنهض؟ (aufwachen / aufstehen)</li>
+      <li>ماذا تفعل في الصباح؟ (sich anziehen / frühstücken)</li>
+      <li>متى تبدأ المحاضرات؟ (anfangen / ankommen)</li>
+      <li>ماذا تفعل بعد الظهر؟ (lernen / sich vorbereiten)</li>
+      <li>ماذا تفعل مساءً؟ (einkaufen / aufräumen / fernsehen)</li>
+      <li>متى تغفو؟ (einschlafen)</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:170px" placeholder="Normalerweise wache ich um ... auf. Dann stehe ich um ... auf.&#10;Zuerst dusche ich mich, danach ziehe ich mich an.&#10;Um ... Uhr frühstücke ich. Schließlich fahre ich zur Uni.&#10;Der Unterricht fängt um ... an und hört um ... auf.&#10;Am Abend kaufe ich ... ein. Dann räume ich ... auf.&#10;Schließlich schlafe ich um ... ein."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">&#10002; مهمة 2 — اكتب 3 حوارات قصيرة (4–5 أسطر كل حوار)</div>
+    <div class="wt-text">لكل موقف اكتب حواراً طبيعياً مستخدماً الأفعال القابلة للفصل:</div>
+    <ul class="wt-list">
+      <li>زميل يسألك عن روتينك الصباحي</li>
+      <li>تتصل بالعيادة/الصيدلية لمعرفة أوقات الدوام (مناسب لك جداً)</li>
+      <li>تخطط مع صديق للمذاكرة مساءً</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:200px" placeholder="حوار 1 (الصباح):&#10;A: Wann stehst du normalerweise auf?&#10;B: Ich stehe um ... auf. Zuerst ...&#10;&#10;حوار 2 (الصيدلية / العيادة):&#10;A: Guten Tag! Wann fängt Ihre Öffnungszeit an?&#10;B: Wir fangen um ... an und hören um ... auf.&#10;&#10;حوار 3 (المذاكرة):&#10;A: Rufst du mich heute Abend an?&#10;B: Ja, ich rufe dich um ... an. Dann ..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">&#10002; مهمة 3 — اختبار الذاكرة: الأفعال القابلة للفصل</div>
+    <div class="wt-text">أغلق الملف واكتب 10 أفعال قابلة للفصل مع تصريف er/sie/es ومثال جملة.</div>
+    <textarea class="wt-input" style="min-height:130px" placeholder="1. aufstehen &#8594; er steht auf &#8594; Er steht um 7 Uhr auf.&#10;2. anrufen &#8594; er ruft an &#8594; ...&#10;3. einkaufen &#8594; er kauft ein &#8594; ...&#10;4. fernsehen &#8594; er ___ fern (انتبه! غير منتظم)&#10;5. anfangen &#8594; er ___ an (انتبه! غير منتظم)&#10;..."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">ممارسة خارجية للروتين والأفعال القابلة للفصل</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">&#128241;</span><div class="res-name">Anki — Trennbare Verben</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">ابحث عن "German separable verbs A1" في مكتبة Anki. أضف الأفعال العشرة من هذه الوحدة يدوياً مع الجملة الكاملة — الجملة أفضل بكثير من الكلمة المجردة.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net &#8592;</a></div>
+    <div class="res-card"><span class="res-icon">&#127760;</span><div class="res-name">DW Nicos Weg — Alltag</div><div class="res-type">موقع مجاني مع تمارين</div><div class="res-desc">حلقات Nicos Weg A1 عن الحياة اليومية — فيها تمارين استماع مع نصوص. أفضل مصدر مجاني شامل لمستوى A1.</div><a class="res-link" href="https://learngerman.dw.com/de/nicos-weg/c-36519789" target="_blank">learngerman.dw.com &#8592;</a></div>
+    <div class="res-card"><span class="res-icon">&#128208;</span><div class="res-name">Deutsche Grammatik — Trennbare Verben</div><div class="res-type">موقع مرجعي</div><div class="res-desc">قائمة شاملة بالأفعال القابلة للفصل مرتبة حسب البادئة — مرجع ممتاز من A1 إلى B1.</div><a class="res-link" href="https://www.deutschegrammatik20.de/verben/trennbare-verben/" target="_blank">deutschegrammatik20.de &#8592;</a></div>
+    <div class="res-card"><span class="res-icon">&#127911;</span><div class="res-name">Slow German — Alltag Podcast</div><div class="res-type">بودكاست مجاني</div><div class="res-desc">بعد Unit 06 تستطيع فهم حلقات Slow German عن الحياة اليومية. الحلقات الأولى مع نصوص مجانية — استماع بطيء ومريح.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com &#8592;</a></div>
+    <div class="res-card"><span class="res-icon">&#128172;</span><div class="res-name">HelloTalk / Tandem</div><div class="res-type">تطبيق تبادل لغوي</div><div class="res-desc">اكتب وصف يومك بالألمانية واطلب من ناطق أصلي تصحيحه. أفضل ممارسة للكتابة الحرة في مستوى A1 — مجاني وفعال.</div></div>
+    <div class="res-card"><span class="res-icon">&#128218;</span><div class="res-name">Menschen A1 — Kapitel 6</div><div class="res-type">كتاب مدرسي رسمي</div><div class="res-desc">الكتاب الرسمي Goethe — الفصل 6 يغطي نفس موضوع Trennbare Verben والروتين اليومي بتمارين موسعة ومتدرجة.</div></div>
+    <div class="res-card"><span class="res-icon">&#128187;</span><div class="res-name">Deutsch Üben Online</div><div class="res-type">تمارين تفاعلية</div><div class="res-desc">مواقع مثل DW Übungen و Schubert-Verlag تقدم تمارين ممتازة للأفعال القابلة للفصل — ابحث "trennbare Verben Übungen A1".</div></div>
+    <div class="res-card"><span class="res-icon">&#128101;</span><div class="res-name">italki — أول محادثة حقيقية</div><div class="res-type">مكالمة مع ناطق أصلي</div><div class="res-desc">بعد Unit 06 أنت جاهز لمحادثتك الأولى! أخبر الـ tutor أنك تريد وصف روتينك اليومي بالألمانية — هذه المحادثة ستثبت كل شيء تعلمته.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com &#8592;</a></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">5 أيام لأن المادة أعمق من Unit 01 — لا تتسرع</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">الروتين + المفردات</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 1 (Learn German with Anja)</li>
+        <li>ادرس Tagesplan الجدول الزمني</li>
+        <li>احفظ أوقات اليوم الـ 5</li>
+        <li>احفظ 20 فعل من قسم المفردات</li>
+        <li>اقرأ الحوارات 1 و2 بصوت عالٍ 3 مرات</li>
+        <li class="wl">ابدأ مهمة الكتابة 1</li>
+      </ul>
+      <div class="day-time">&#9203; 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">القواعد — Trennbare</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 2 (Lingoni German)</li>
+        <li>ادرس المفهوم والرسم التوضيحي</li>
+        <li>احفظ القواعد الأربع R1–R4</li>
+        <li>ادرس جدول البادئات الـ 8</li>
+        <li>ادرس بنية الجملة الأربعة</li>
+        <li>حل تمرين 1 وتمرين 2</li>
+      </ul>
+      <div class="day-time">&#9203; 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">التصريف + التسلسل</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديوهات 3 و4 (DW + Easy German)</li>
+        <li>احفظ تصريف 10 أفعال كاملة</li>
+        <li>انتبه للغير منتظمة: sieht/fängt/schläft</li>
+        <li>ادرس كلمات التسلسل + المثال الكامل</li>
+        <li>حل تمرين 3 وتمرين 4</li>
+        <li class="wl">أكمل مهمة الكتابة 1</li>
+      </ul>
+      <div class="day-time">&#9203; 2.5–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">الثقافة + الكتابة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 5 (Learn German Original)</li>
+        <li>ادرس الأخطاء الشائعة الـ 7</li>
+        <li>ادرس قسم الثقافة</li>
+        <li>اقرأ الحوارات 3 و4 و5 بصوت عالٍ</li>
+        <li class="wl">أكمل مهمة الكتابة 2 (الحوارات)</li>
+        <li>حل تمرين 5 وتمرين 6</li>
+      </ul>
+      <div class="day-time">&#9203; 2–2.5 ساعة</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">05</div>
+      <div class="day-title">مراجعة + اختبار</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 6 (Deutsch mit Mira)</li>
+        <li class="wl">مهمة الكتابة 3 من الذاكرة</li>
+        <li>غطّ العربي — اختبر نفسك شفهياً</li>
+        <li>صرّف 10 أفعال بصوت عالٍ بدون نظر</li>
+        <li>أعد حل كل التمارين — هدف 31+/35</li>
+        <li>&#9989; انتقل Unit 07 إذا 30+/35</li>
+      </ul>
+      <div class="day-time">&#9203; 2–3 ساعات</div>
+    </div>
+  </div>
+
+  <div class="note-green reveal" style="margin-top:2rem">
+    <div class="note-title nt-gr">&#127919; قاعدة الانتقال للوحدة التالية</div>
+    <p>انتقل لـ Unit 07 فقط إذا: &#9989; تضع البادئة في نهاية الجملة بدون تفكير &middot; &#9989; تعرف الفرق بين aufwachen و aufstehen &middot; &#9989; تصرّف fernsehen و anfangen بشكل صحيح (الغير منتظمَين) &middot; &#9989; حصلت 30+/35 في التمارين &middot; &#9989; كتبت وصف يومك كاملاً بالألمانية. الهدف: جملة واحدة عن يومك تخرج تلقائياً بدون ترجمة داخلية.</p>
+  </div>
+
+  <div class="shadow-box reveal" style="margin-top:1rem">
+    <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">اختبار الانتقال السريع — 60 ثانية</div>
+    <div class="sh-step"><div class="sh-num">1</div><div class="sh-text">قل بصوت عالٍ بدون نظر: <code>Zuerst stehe ich auf, dann dusche ich mich, danach frühstücke ich, schließlich fahre ich zur Uni.</code></div></div>
+    <div class="sh-step"><div class="sh-num">2</div><div class="sh-text">صرّف <code>fernsehen</code> مع du وer بدون نظر. إذا قلت "er seht" بدل "er sieht" — ارجع للجداول.</div></div>
+    <div class="sh-step"><div class="sh-num">3</div><div class="sh-text">ضع هذه البادئة في مكانها الصحيح: <code>Ich ___ meine Freundin ___ . (anrufen, ich)</code> — الجواب: <code>Ich rufe meine Freundin an.</code></div></div>
+    <div class="sh-step"><div class="sh-num">4</div><div class="sh-text">اذكر 3 أفعال قابلة للفصل غير منتظمة مع شكل er/sie/es. إذا عجزت — راجع الجداول يوماً آخر ثم عد للاختبار.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">ALLTAG AUF DEUTSCH</span>
+  <p>Unit 06 &middot; الروتين اليومي &middot; Trennbare Verben &middot; A1</p>
+  <p style="margin-top:.4rem;font-size:.7rem">&#8592; Unit 05: Satzstruktur &nbsp;|&nbsp; Unit 07: Modalverben &#8594;</p>
+</footer>
+<script>
+// Correct answers map — keyed by question number string
+const correct = {
+  '1':'stehe','2':'wachst','3':'sieht','4':'kaufen','5':'räumt','6':'fängt','7':'an',
+  '8':'A','9':'ein','10':'A','11':'an','12':'auf',
+  '13':'Zuerst','14':'Danach','15':'schließlich','16':'Danach','17':'في النهاية',
+  '18':'A','19':'يُرتّب','20':'A','21':'يغفو','22':'أرتدي',
+  '23':'خطأ','24':'صحيح','25':'خطأ','26':'صحيح','27':'خطأ',
+  '28':'stehst','29':'stehe','30':'zuerst','31':'und dann','32':'an',
+  '33':'einschlafen','34':'frühstücken','35':'bereite/vor'
+};
+
+// Feedback messages
+const fb = {
+  '1':['&#10003; ممتاز — ich stehe auf','&#10007; خطأ — مع ich: stehe (الفعل الأساسي بدون البادئة في الجملة)'],
+  '2':['&#10003; صحيح — du wachst auf','&#10007; خطأ — مع du: wachst (+ st)'],
+  '3':['&#10003; ممتاز! — fernsehen غير منتظم: er sieht fern','&#10007; خطأ — fernsehen غير منتظم: er sieht (مش seht!)'],
+  '4':['&#10003; صحيح — wir kaufen ein','&#10007; خطأ — مع wir: kaufen'],
+  '5':['&#10003; ممتاز — ihr räumt auf','&#10007; خطأ — مع ihr: räumt'],
+  '6':['&#10003; صحيح! — anfangen غير منتظم: er/es fängt an','&#10007; خطأ — anfangen غير منتظم: fängt (بالأوملاوت ä!)'],
+  '7':['&#10003; صحيح — anrufen: البادئة an في النهاية','&#10007; خطأ — anrufen: البادئة هي an'],
+  '8':['&#10003; ممتاز! — "Ich stehe um 8 Uhr auf" — البادئة في النهاية','&#10007; خطأ — الفعل يأتي ثانياً والبادئة في النهاية: Ich stehe ... auf'],
+  '9':['&#10003; صحيح — einkaufen: البادئة ein في النهاية','&#10007; خطأ — einkaufen: البادئة هي ein'],
+  '10':['&#10003; ممتاز! — "Er ruft seinen Freund an" — صحيح','&#10007; خطأ — الفعل ثانياً والبادئة في النهاية: Er ruft ... an'],
+  '11':['&#10003; صحيح — anfangen: البادئة an في النهاية','&#10007; خطأ — anfangen: البادئة هي an'],
+  '12':['&#10003; صحيح — aufräumen: البادئة auf في النهاية','&#10007; خطأ — aufräumen: البادئة هي auf'],
+  '13':['&#10003; صحيح — zuerst يأتي في البداية دائماً','&#10007; خطأ — أول نشاط = zuerst'],
+  '14':['&#10003; ممتاز — danach = بعد ذلك','&#10007; خطأ — بعد الإفطار مباشرة = danach'],
+  '15':['&#10003; صحيح — schließlich = في النهاية / آخر نشاط','&#10007; خطأ — آخر نشاط في التسلسل = schließlich'],
+  '16':['&#10003; صحيح — danach = بعدها','&#10007; خطأ — بعد العشاء = danach'],
+  '17':['&#10003; صحيح — schließlich = في النهاية','&#10007; خطأ — schließlich = في النهاية'],
+  '18':['&#10003; ممتاز! — "Ich kaufe jeden Tag ein" — البادئة في النهاية','&#10007; خطأ — einkaufen في الجملة: kaufe...ein (الفعل ثانياً والبادئة للنهاية)'],
+  '19':['&#10003; صحيح — aufräumen = يُرتّب / ينظف','&#10007; خطأ — aufräumen = يُرتّب / ينظف (auf = فوق + räumen = ينظف)'],
+  '20':['&#10003; ممتاز! — "Sie ruft ihre Freundin jeden Tag an" — صحيح','&#10007; خطأ — anrufen في الجملة: ruft...an'],
+  '21':['&#10003; صحيح — einschlafen = يغفو / يدخل في النوم','&#10007; خطأ — einschlafen = يغفو (مختلف عن aufwachen = يصحو)'],
+  '22':['&#10003; صحيح — sich anziehen = يرتدي ملابسه','&#10007; خطأ — sich anziehen = يرتدي (sich ausziehen = يخلع)'],
+  '23':['&#10003; صحيح! — البادئة تذهب إلى نهاية الجملة، ليس البداية','&#10007; خطأ — البادئة تذهب إلى النهاية! ليس البداية'],
+  '24':['&#10003; صحيح! — fernsehen = fern + sehen: fern هي البادئة تذهب للنهاية','&#10007; خطأ — fernsehen فعل قابل للفصل: er sieht fern'],
+  '25':['&#10003; صحيح — "Ich anrufe" خطأ! الصحيح: Ich rufe dich an.','&#10007; خطأ — الجملة غلط! الصحيح: Ich rufe dich an.'],
+  '26':['&#10003; صحيح! — في الإنهاء الفعل ملتصق: aufstehen / anrufen','&#10007; خطأ — في الإنهاء يُكتب ملتصقاً: aufstehen (ليس: auf stehen)'],
+  '27':['&#10003; صحيح! — aufwachen = يصحو من النوم / aufstehen = ينهض من السرير','&#10007; خطأ — معناهما مختلف: aufwachen = يصحو / aufstehen = ينهض من السرير'],
+  '28':['&#10003; صحيح — du stehst auf','&#10007; خطأ — مع du: stehst'],
+  '29':['&#10003; صحيح — ich stehe auf','&#10007; خطأ — مع ich: stehe'],
+  '30':['&#10003; صحيح — zuerst = أول شيء','&#10007; خطأ — أول نشاط = zuerst'],
+  '31':['&#10003; صحيح — "und dann" يربط نشاطين متتاليين','&#10007; خطأ — الرابط المنطقي بين نشاطين = und dann'],
+  '32':['&#10003; صحيح! — anrufen: البادئة an','&#10007; خطأ — anrufen: البادئة هي an'],
+  '33':['&#10003; ممتاز — einschlafen / schlafen gehen = ينام','&#10007; خطأ — الساعة 23:00 = einschlafen (ينام)'],
+  '34':['&#10003; صحيح! — frühstücken غير قابل للفصل: ich frühstücke','&#10007; خطأ — frühstücken غير قابل للفصل! (aufstehen وanrufen قابلان للفصل)'],
+  '35':['&#10003; ممتاز! — vorbereiten: bereite ... vor (البادئة vor في النهاية)','&#10007; خطأ — vorbereiten: Ich bereite mich vor (البادئة vor في النهاية)']
+};
+
+// First-button index — to identify correct answer per question
+const correctIdx = {
+  '1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,
+  '8':0,'9':0,'10':0,'11':0,'12':0,
+  '13':0,'14':0,'15':0,'16':0,'17':0,
+  '18':0,'19':0,'20':0,'21':0,'22':0,
+  '23':0,'24':0,'25':0,'26':0,'27':0,
+  '28':0,'29':0,'30':0,'31':0,'32':0,
+  '33':0,'34':0,'35':0
+};
+
+const answered = {};
+let score = 0;
+
+function check(btn, qNum, answerKey) {
+  if (answered[qNum]) return;
+  answered[qNum] = true;
+
+  const opts = btn.parentElement.querySelectorAll('.ex-btn');
+  const fb_el = document.getElementById('f' + qNum);
+  const blank = document.getElementById('b' + qNum);
+
+  // First button in each group is always the correct answer
+  const isCorrect = (btn === opts[0]);
+  if (isCorrect) score++;
+
+  opts.forEach((b, i) => {
+    b.disabled = true;
+    if (i === 0) b.classList.add('correct');
+    else b.classList.add('wrong');
+  });
+
+  if (isCorrect) {
+    if (blank) blank.textContent = opts[0].textContent.split('/')[0].trim();
+    fb_el.textContent = fb[qNum][0];
+    fb_el.className = 'ex-fb ok';
+  } else {
+    fb_el.textContent = fb[qNum][1];
+    fb_el.className = 'ex-fb no';
+    if (blank) blank.textContent = opts[0].textContent.split('/')[0].trim();
+  }
+}
+
+function showScore() {
+  const total = Object.keys(correct).length;
+  const box = document.getElementById('scoreBox');
+  const num = document.getElementById('scoreNum');
+  const msg = document.getElementById('scoreMsg');
+  box.style.display = 'block';
+  num.textContent = score + '/' + total;
+  if (score >= 32) msg.innerHTML = '<span style="color:var(--green)">&#127942; ممتاز جداً! أنت جاهز لـ Unit 07</span>';
+  else if (score >= 26) msg.innerHTML = '<span style="color:var(--gold)">&#9989; جيد! راجع الأجزاء الخاطئة ثم انتقل</span>';
+  else if (score >= 20) msg.innerHTML = '<span style="color:var(--orange)">&#9888;&#65039; مقبول — ارجع للتصريف والأخطاء الشائعة</span>';
+  else msg.innerHTML = '<span style="color:#ff6b6b">&#10007; تحتاج مراجعة أعمق — اقرأ القواعد مرة أخرى</span>';
+  box.scrollIntoView({behavior:'smooth'});
+}
+
+function resetAll() {
+  if (!confirm('إعادة جميع التمارين؟')) return;
+  Object.keys(answered).forEach(k => delete answered[k]);
+  score = 0;
+  for (let q = 1; q <= 35; q++) {
+    const fb_el = document.getElementById('f' + q);
+    const blank = document.getElementById('b' + q);
+    if (fb_el) { fb_el.textContent = ''; fb_el.className = 'ex-fb'; }
+    if (blank) blank.textContent = '___';
+    const btns = document.querySelectorAll('[onclick*="\'' + q + '\'"]');
+    btns.forEach(b => { b.disabled = false; b.classList.remove('correct','wrong'); });
+  }
+  document.getElementById('scoreBox').style.display = 'none';
+}
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, {threshold: 0.08});
+revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

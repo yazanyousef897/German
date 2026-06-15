@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 08 — FULL | التسوق · الملابس · Akkusativ · الصفات | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#fb923c;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'08';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(251,146,60,.1);border:1px solid rgba(251,146,60,.3);color:#fb923c;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:560px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+/* VIDEOS */
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:var(--orange)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+/* GRIDS */
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}.gc-orange{color:var(--orange)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:160px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+/* CLOTHES GRID */
+.clothes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.cloth-card{background:var(--black);padding:1.1rem 1.3rem;transition:background .2s;position:relative;overflow:hidden}
+.cloth-card:hover{background:var(--gray)}
+.cloth-card::before{content:'';position:absolute;top:0;right:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.cloth-card:hover::before{height:100%}
+.cl-art{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;margin-bottom:.25rem}
+.cl-m{color:var(--blue)}.cl-f{color:#f472b6}.cl-n{color:var(--green)}.cl-pl{color:var(--purple)}
+.cl-de{font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.cl-ar{font-size:.78rem;color:var(--dim);margin-bottom:.1rem}
+.cl-pl-form{font-size:.65rem;color:rgba(255,206,0,.4);font-family:'JetBrains Mono',monospace}
+/* COLORS GRID */
+.color-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.color-card{background:var(--black);padding:1.1rem 1rem;text-align:center;transition:background .2s;cursor:default}
+.color-card:hover{background:var(--gray)}
+.color-dot{width:36px;height:36px;border-radius:50%;margin:0 auto .6rem;border:2px solid rgba(255,255,255,.08)}
+.color-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.color-ar{font-size:.75rem;color:var(--dim)}
+.color-ex{font-size:.65rem;color:rgba(255,206,0,.4);margin-top:.2rem;font-family:'JetBrains Mono',monospace}
+/* AKKUSATIV TABLE */
+.akk-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.akk-table th,.akk-table td{padding:.85rem 1.1rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.akk-table thead th{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.akk-table tbody tr{transition:background .15s}
+.akk-table tbody tr:hover{background:var(--gray)}
+.at-nom{font-family:'JetBrains Mono',monospace;font-size:.88rem;color:var(--blue);font-weight:700}
+.at-akk{font-family:'JetBrains Mono',monospace;font-size:.88rem;color:var(--gold);font-weight:700}
+.at-rule{font-size:.72rem;color:var(--dim)}
+.at-change{background:rgba(255,206,0,.06);font-weight:700}
+.at-nochange{opacity:.6}
+.at-badge-change{display:inline-block;background:rgba(255,206,0,.12);color:var(--gold);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:.08rem .4rem;text-transform:uppercase;margin-right:.3rem}
+.at-badge-same{display:inline-block;background:rgba(34,197,94,.08);color:var(--green);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:.08rem .4rem;text-transform:uppercase;margin-right:.3rem}
+/* SATZ BOX */
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-nom{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-akk{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.1)}
+.sbox-akk-m{border-color:#ff6b6b;color:#ff6b6b;background:rgba(204,0,0,.08)}
+/* ADJ TABLE */
+.adj-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.adj-table th,.adj-table td{padding:.8rem 1rem;text-align:center;border:1px solid var(--gray2);font-size:.8rem}
+.adj-table thead th{background:var(--gray);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);font-weight:700}
+.adj-table .row-label{text-align:right;font-size:.7rem;color:var(--dim);background:rgba(255,255,255,.02)}
+.adj-m{color:var(--blue);font-family:'JetBrains Mono',monospace;font-weight:700}
+.adj-f{color:#f472b6;font-family:'JetBrains Mono',monospace;font-weight:700}
+.adj-n{color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700}
+.adj-change{background:rgba(255,206,0,.06)}
+/* PRONOUN GRID */
+.pronoun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pronoun-card{background:var(--black);padding:1.4rem;position:relative;overflow:hidden;transition:background .2s}
+.pronoun-card:hover{background:var(--gray)}
+.pronoun-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.pronoun-card:hover::before{height:100%}
+.pd{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);line-height:1;margin-bottom:.2rem}
+.pa{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.pt{font-size:.68rem;color:var(--dim);letter-spacing:.08em}
+.pe{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(255,206,0,.5);margin-top:.4rem}
+/* VOCAB GRID */
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+/* CULTURE */
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+/* MISTAKES */
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+/* DIALOGUES */
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}.sp-c{color:var(--green)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+/* NOTES */
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code,.note-green code,.note-red code,.note-blue code{font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-gold code{color:var(--gold);background:rgba(255,206,0,.08)}
+.note-green code{color:var(--green);background:rgba(34,197,94,.08)}
+.note-red code{color:#ff6b6b;background:rgba(204,0,0,.08)}
+.note-blue code{color:var(--blue);background:rgba(96,165,250,.08)}
+/* SHOPPING PHRASES */
+.phrase-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.phrase-col{background:var(--black);padding:1.6rem}
+.phrase-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.phi{padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.phi:last-child{border-bottom:none}
+.ph-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.12rem}
+.ph-ar{font-size:.78rem;color:var(--gold);margin-bottom:.1rem}
+.ph-note{font-size:.68rem;color:var(--dim)}
+/* EXERCISES */
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+/* WRITING */
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+/* RESOURCES */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+/* DAYS */
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1.1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.7rem;color:var(--dim);padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.63rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+/* SCORE */
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+/* BADGE */
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}.bg{background:rgba(34,197,94,.1);color:var(--green)}.bb{background:rgba(96,165,250,.1);color:var(--blue)}
+/* FOOTER */
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+/* ANIMATIONS */
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* RESPONSIVE */
+@media(max-width:768px){
+  .greet-grid,.phrase-grid{grid-template-columns:1fr}
+  .pronoun-grid,.days-grid{grid-template-columns:repeat(2,1fr)}
+  .adj-table{font-size:.7rem}
+  .adj-table th,.adj-table td{padding:.5rem .6rem}
+  .mistake-item{grid-template-columns:1fr;gap:.4rem}
+  .mi-arrow{display:none}
+  .nav-links{display:none}
+  .hero-meta{gap:1.5rem}
+  .color-grid{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 08 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#kleidung">الملابس</a></li>
+    <li><a href="#farben">الألوان</a></li>
+    <li><a href="#akkusativ">Akkusativ</a></li>
+    <li><a href="#adjektive">الصفات</a></li>
+    <li><a href="#phrasen">عبارات</a></li>
+    <li><a href="#dialoge">حوارات</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#kultur">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🟡 متوسط · Unit 08 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">التسوق</span> <span style="font-size:.5em;color:rgba(245,245,240,.08)">+</span> <span class="r">Akkusativ</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube · الملابس والألوان · الأكوزاتيف كاملاً · الصفات قبل الاسم · عبارات التسوق · حوارات في المتجر · 77+ مفردة · ثقافة ألمانية · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">77+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">الفيديوهات — YouTube Resources</div><div class="sec-d">6 فيديوهات مرتبة — شاهدها بالترتيب مع مهام الاستماع</div></div></div>
+  <div class="videos-grid reveal">
+    <!-- V1: Akkusativ - Learn German Original Lesson 26 Revised -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/p4whuXE_f94" title="Akkusativ A1 Lesson 26 Learn German Original" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📐 Grammar · Learn German Original</div><div class="video-title">A1 Lesson 26 — Akkusativ (النسخة المحدثة)</div><div class="video-desc">الدرس الرسمي للأكوزاتيف من Learn German Original. يشرح التغيير في المقالات مع أمثلة. ابدأ بهذا الفيديو.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب جدول المقالات في الأكوزاتيف من الذاكرة بعد الفيديو — ركز على المذكر.</div></div>
+    </div>
+    <!-- V2: Kleidung Vocabulary - Learn German Original -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/WCiRvSS8BHw" title="Kleidung Vocabulary Learn German Original" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📦 Vocabulary · Learn German Original</div><div class="video-title">die Kleidung — مفردات الملابس A1</div><div class="video-desc">الملابس الأساسية بمقالاتها. قناة Learn German Original موثوقة ومنظمة. شاهده مع ورقة تدوين.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل قطعة ملابس مع مقالتها (der/die/das). لا تكتفِ بالاستماع فقط.</div></div>
+    </div>
+    <!-- V3: Im Kaufhaus - Learn German Original Lesson 55 -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/trzgP5-zy84" title="Im Kaufhaus Lesson 55 Learn German Original" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">🛍️ Context · Learn German Original</div><div class="video-title">A1 Lesson 55 — Im Kaufhaus (في مركز التسوق)</div><div class="video-desc">درس التسوق وشراء الملابس. يجمع المفردات والأكوزاتيف في سياق حقيقي. شاهده بعد دراسة الأكوزاتيف.</div><div class="video-task"><strong>مهمة الاستماع:</strong> حدد كل جملة تستخدم الأكوزاتيف. كم جملة وجدت؟</div></div>
+    </div>
+    <!-- V4: Kleidung kaufen Dialoge - SuperDeutsch -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/uMZQ2_Y6o2U" title="Kleidung kaufen Dialoge A1 SuperDeutsch" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">💬 Dialogue · SuperDeutsch</div><div class="video-title">حوارات شراء الملابس — A1/A2/B1</div><div class="video-desc">حوارات حقيقية في محل الملابس بمستويات مختلفة. ركز على حوارات A1. ممتاز لتمرين الاستماع التطبيقي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب 5 عبارات لم تتعلمها من قبل. كيف تقول "هذا يليق عليك"؟</div></div>
+    </div>
+    <!-- V5: Kleidung Wortschatz comprehensive -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/Gf__7sma8t8" title="Deutsch lernen Kleidung Wortschatz" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">📚 Vocabulary + Grammar</div><div class="video-title">Kleidung — مفردات + مقالات + ضمائر</div><div class="video-desc">يغطي الملابس مع المقالات والضمائر وصياغة الجمل. يجمع مفردات Unit 08 مع قواعد Units سابقة.</div><div class="video-task"><strong>مهمة الاستماع:</strong> لاحظ كيف يتغير المقال في الأكوزاتيف — هل التغيير واضح في الكلام؟</div></div>
+    </div>
+    <!-- V6: DW Harry Im Kaufhaus -->
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/gcN9adZgGjI" title="DW Harry Im Kaufhaus einkaufen" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Harry · كونتكست حقيقي</div><div class="video-title">DW Harry — Im Kaufhaus einkaufen</div><div class="video-desc">مسلسل Harry من Deutsche Welle. موقف التسوق في مركز تجاري. ألمانية طبيعية بإيقاع بطيء نسبياً.</div><div class="video-task"><strong>لليوم الرابع:</strong> شاهد بدون ترجمة أولاً. كم جملة فهمتها من Unit 08؟ اكتبها.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 01: KLEIDUNG -->
+<section class="section" id="kleidung">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الملابس — die Kleidung</div><div class="sec-d">25 قطعة ملابس · المقالة · الجمع · أمثلة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 المقالة مع الملابس — القاعدة الذهبية</div><p>كل قطعة ملابس لها مقالة يجب حفظها معها. <strong style="color:var(--blue)">der</strong> = مذكر · <strong style="color:#f472b6">die</strong> = مؤنث · <strong style="color:var(--green)">das</strong> = محايد. لا توجد قاعدة مطلقة — احفظ كل كلمة مع مقالتها من البداية. الخبر الجيد: معظم ملابس النساء مؤنثة (die)!</p></div>
+  <p class="vst reveal">المذكر — DER (أزرق)</p>
+  <div class="clothes-grid reveal">
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Pullover</div><div class="cl-ar">البلوفر / السويتر</div><div class="cl-pl-form">Pl: die Pullover (بدون تغيير)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Mantel</div><div class="cl-ar">المعطف الشتوي</div><div class="cl-pl-form">Pl: die Mäntel (Umlaut)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Hut</div><div class="cl-ar">القبعة (رسمية)</div><div class="cl-pl-form">Pl: die Hüte (Umlaut)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Rock</div><div class="cl-ar">التنورة</div><div class="cl-pl-form">Pl: die Röcke (Umlaut)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Schuh</div><div class="cl-ar">الحذاء (واحد)</div><div class="cl-pl-form">Pl: die Schuhe</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Gürtel</div><div class="cl-ar">الحزام</div><div class="cl-pl-form">Pl: die Gürtel (بدون تغيير)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Anzug</div><div class="cl-ar">البدلة الرسمية</div><div class="cl-pl-form">Pl: die Anzüge</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Schal</div><div class="cl-ar">الوشاح</div><div class="cl-pl-form">Pl: die Schals / Schale</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Pyjama</div><div class="cl-ar">البيجامة</div><div class="cl-pl-form">Pl: die Pyjamas</div></div>
+    <div class="cloth-card"><div class="cl-art cl-m">DER · مذكر</div><div class="cl-de">der Rucksack</div><div class="cl-ar">الحقيبة الظهرية</div><div class="cl-pl-form">Pl: die Rucksäcke</div></div>
+  </div>
+  <p class="vst reveal">المؤنث — DIE (وردي) · معظم ملابس النساء!</p>
+  <div class="clothes-grid reveal">
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Jacke</div><div class="cl-ar">الجاكيت / المعطف الخفيف</div><div class="cl-pl-form">Pl: die Jacken</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Hose</div><div class="cl-ar">البنطلون</div><div class="cl-pl-form">Pl: die Hosen</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Bluse</div><div class="cl-ar">البلوزة (للمرأة)</div><div class="cl-pl-form">Pl: die Blusen</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Mütze</div><div class="cl-ar">الطاقية / القبعة الشتوية</div><div class="cl-pl-form">Pl: die Mützen</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Krawatte</div><div class="cl-ar">ربطة العنق (الكرافتة)</div><div class="cl-pl-form">Pl: die Krawatten</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Handtasche</div><div class="cl-ar">حقيبة اليد</div><div class="cl-pl-form">Pl: die Handtaschen</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Jeans</div><div class="cl-ar">الجينز</div><div class="cl-pl-form">Pl: die Jeans (بدون تغيير)</div></div>
+    <div class="cloth-card"><div class="cl-art cl-f">DIE · مؤنث</div><div class="cl-de">die Unterwäsche</div><div class="cl-ar">الملابس الداخلية</div><div class="cl-pl-form">غير معدود عادةً</div></div>
+  </div>
+  <p class="vst reveal">الجمع فقط — NUR PLURAL (بنفسجي) · أشياء تأتي دائماً زوجاً</p>
+  <div class="clothes-grid reveal">
+    <div class="cloth-card"><div class="cl-art cl-pl">NUR PLURAL</div><div class="cl-de">die Socken</div><div class="cl-ar">الجوارب</div><div class="cl-pl-form">دائماً جمع · Singular: die Socke</div></div>
+    <div class="cloth-card"><div class="cl-art cl-pl">NUR PLURAL</div><div class="cl-de">die Stiefel</div><div class="cl-ar">الجزم / البسطال</div><div class="cl-pl-form">دائماً جمع · Singular: der Stiefel</div></div>
+    <div class="cloth-card"><div class="cl-art cl-pl">NUR PLURAL</div><div class="cl-de">die Handschuhe</div><div class="cl-ar">القفازات</div><div class="cl-pl-form">دائماً جمع · Singular: der Handschuh</div></div>
+  </div>
+  <p class="vst reveal">المحايد — DAS (أخضر)</p>
+  <div class="clothes-grid reveal">
+    <div class="cloth-card"><div class="cl-art cl-n">DAS · محايد</div><div class="cl-de">das Hemd</div><div class="cl-ar">القميص (للرجال)</div><div class="cl-pl-form">Pl: die Hemden</div></div>
+    <div class="cloth-card"><div class="cl-art cl-n">DAS · محايد</div><div class="cl-de">das Kleid</div><div class="cl-ar">الفستان</div><div class="cl-pl-form">Pl: die Kleider</div></div>
+    <div class="cloth-card"><div class="cl-art cl-n">DAS · محايد</div><div class="cl-de">das T-Shirt</div><div class="cl-ar">التيشيرت</div><div class="cl-pl-form">Pl: die T-Shirts</div></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ حيلة الحفظ — الملابس</div><p>معظم ملابس المرأة مؤنثة: <code>die Jacke · die Bluse · die Hose · die Jeans · die Mütze</code>. ملابس الرجال الرسمية مذكرة: <code>der Anzug · der Gürtel · der Schal</code>. القمصان والفساتين محايدة: <code>das Hemd · das Kleid · das T-Shirt</code>.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 02: FARBEN (COLORS) -->
+<section class="section" id="farben">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الألوان — die Farben</div><div class="sec-d">12 لون أساسي · كيف تصف لون الملابس</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 الألوان كصفات — مهمة لهذه الوحدة</div><p>الألوان في الألمانية صفات تأتي <strong style="color:var(--white)">قبل الاسم</strong> وتتأثر بلواحق الجنس والحالة. مثال: <code>ein roter Pullover</code> (بلوفر أحمر مذكر · نكرة · ترفيعي) مقابل <code>eine rote Jacke</code> (جاكيت حمراء مؤنثة). هذا ما سنتعلمه في قسم الصفات!</p></div>
+  <div class="color-grid reveal">
+    <div class="color-card"><div class="color-dot" style="background:#CC0000;border-color:#aa0000"></div><div class="color-de">rot</div><div class="color-ar">أحمر</div><div class="color-ex">ein rotes Kleid</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#2563EB;border-color:#1d4ed8"></div><div class="color-de">blau</div><div class="color-ar">أزرق</div><div class="color-ex">eine blaue Jacke</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#16a34a;border-color:#15803d"></div><div class="color-de">grün</div><div class="color-ar">أخضر</div><div class="color-ex">ein grünes Hemd</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#FFCE00;border-color:#d4a800"></div><div class="color-de">gelb</div><div class="color-ar">أصفر</div><div class="color-ex">eine gelbe Mütze</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#111111;border-color:#444"></div><div class="color-de">schwarz</div><div class="color-ar">أسود</div><div class="color-ex">schwarze Schuhe</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#f0ede8;border-color:#ccc"></div><div class="color-de">weiß</div><div class="color-ar">أبيض</div><div class="color-ex">ein weißes Hemd</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#6b7280;border-color:#4b5563"></div><div class="color-de">grau</div><div class="color-ar">رمادي</div><div class="color-ex">ein grauer Mantel</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#92400e;border-color:#78350f"></div><div class="color-de">braun</div><div class="color-ar">بني</div><div class="color-ex">braune Stiefel</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#ea580c;border-color:#c2410c"></div><div class="color-de">orange</div><div class="color-ar">برتقالي</div><div class="color-ex">ein oranges T-Shirt</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#7c3aed;border-color:#6d28d9"></div><div class="color-de">lila / violett</div><div class="color-ar">بنفسجي</div><div class="color-ex">eine lila Bluse</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#f9a8d4;border-color:#ec4899"></div><div class="color-de">rosa</div><div class="color-ar">وردي / زهري</div><div class="color-ex">ein rosa Kleid</div></div>
+    <div class="color-card"><div class="color-dot" style="background:#d4b896;border-color:#b8986a"></div><div class="color-de">beige</div><div class="color-ar">بيج / كريمي</div><div class="color-ex">eine beige Hose</div></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ استثناء مهم: lila و rosa و orange</div><p><code>lila</code> و <code>rosa</code> و <code>orange</code> ألوان <strong style="color:var(--white)">لا تأخذ لواحق</strong> في الألمانية العادية! تقول: <code>eine rosa Jacke</code> (لا teine rosae Jacke!) · <code>ein lila Kleid</code> · <code>eine orange Hose</code>. قاعدة سهلة للحفظ: الألوان المستعارة من لغات أخرى لا تتصرف!</p></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💬 كيف تسأل عن اللون؟</div><p><strong style="color:var(--white)">Welche Farbe hat...?</strong> (ما لون...؟) · <code>Welche Farbe hat deine Jacke?</code> — ما لون جاكيتك؟<br><strong style="color:var(--white)">In welcher Farbe?</strong> (بأي لون؟) · <code>Haben Sie das in Rot?</code> — هل عندكم هذا باللون الأحمر؟</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 03: AKKUSATIV -->
+<section class="section" id="akkusativ">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">الأكوزاتيف — Akkusativ</div><div class="sec-d">حالة المفعول به · جدول المقالات · القاعدة الذهبية</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 ما هو الأكوزاتيف؟</div><p>في الألمانية كل اسم له <strong style="color:var(--white)">حالة إعرابية (Kasus)</strong>. الترفيعي (Nominativ) = الفاعل (من يفعل). الأكوزاتيف (Akkusativ) = المفعول به المباشر (ماذا يفعل). مثال: <code>Ich kaufe einen Pullover.</code> — أنا (فاعل · ترفيعي) أشتري (فعل) بلوفراً (مفعول به · أكوزاتيف). السؤال عنه: <code>Wen oder was?</code> (من أو ماذا؟)</p></div>
+  <div class="note-red reveal"><div class="note-title nt-r">🔑 القاعدة الذهبية — احفظها!</div><p>في الأكوزاتيف <strong style="color:var(--gold)">فقط المذكر (Maskulin) يتغير</strong>! المؤنث والمحايد والجمع تبقى كما هي. هذا يعني: إذا كانت الكلمة <code>der</code> → تصبح <code>den</code> · وإذا كانت <code>ein</code> → تصبح <code>einen</code>. المؤنث <code>die/eine</code> والمحايد <code>das/ein</code> لا يتغيران أبداً في الأكوزاتيف.</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="akk-table">
+      <thead>
+        <tr>
+          <th>الجنس</th>
+          <th>المقالة المعرّفة — Nominativ</th>
+          <th>المقالة المعرّفة — Akkusativ</th>
+          <th>المقالة النكرة — Nominativ</th>
+          <th>المقالة النكرة — Akkusativ</th>
+          <th>القاعدة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="at-change">
+          <td><span class="badge bb">Maskulin · مذكر</span></td>
+          <td><span class="at-nom">der</span> Pullover</td>
+          <td><span class="at-akk">den</span> Pullover</td>
+          <td><span class="at-nom">ein</span> Pullover</td>
+          <td><span class="at-akk">einen</span> Pullover</td>
+          <td><span class="at-badge-change">يتغير</span><div class="at-rule">der→den · ein→einen</div></td>
+        </tr>
+        <tr class="at-nochange">
+          <td><span class="badge" style="background:rgba(244,114,182,.1);color:#f472b6">Feminin · مؤنث</span></td>
+          <td><span class="at-nom">die</span> Jacke</td>
+          <td><span class="at-akk">die</span> Jacke</td>
+          <td><span class="at-nom">eine</span> Jacke</td>
+          <td><span class="at-akk">eine</span> Jacke</td>
+          <td><span class="at-badge-same">لا يتغير</span><div class="at-rule">die→die · eine→eine</div></td>
+        </tr>
+        <tr class="at-nochange">
+          <td><span class="badge bg">Neutrum · محايد</span></td>
+          <td><span class="at-nom">das</span> Hemd</td>
+          <td><span class="at-akk">das</span> Hemd</td>
+          <td><span class="at-nom">ein</span> Hemd</td>
+          <td><span class="at-akk">ein</span> Hemd</td>
+          <td><span class="at-badge-same">لا يتغير</span><div class="at-rule">das→das · ein→ein</div></td>
+        </tr>
+        <tr class="at-nochange">
+          <td><span class="badge bs">Plural · جمع</span></td>
+          <td><span class="at-nom">die</span> Schuhe</td>
+          <td><span class="at-akk">die</span> Schuhe</td>
+          <td><span class="at-nom">—</span></td>
+          <td><span class="at-akk">—</span></td>
+          <td><span class="at-badge-same">لا يتغير</span><div class="at-rule">die→die دائماً</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="vst reveal">أمثلة مرئية — جمل مع الأكوزاتيف</p>
+  <div class="satz-box reveal"><div class="satz-title">المذكر — التغيير الوحيد في الأكوزاتيف</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">kaufe</span><span class="sbox sbox-akk-m">einen Pullover.</span><span class="sbox-ar">أشتري بلوفراً. (der → einen)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">sucht</span><span class="sbox sbox-akk-m">einen Mantel.</span><span class="sbox-ar">يبحث عن معطف. (der → einen)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">brauchen</span><span class="sbox sbox-akk-m">den Gürtel.</span><span class="sbox-ar">نحتاج الحزام. (der → den)</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">المؤنث والمحايد — لا يتغيران!</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">kauft</span><span class="sbox sbox-akk">eine Jacke.</span><span class="sbox-ar">تشتري جاكيت. (die → eine، لا تغيير)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">trägt</span><span class="sbox sbox-akk">die Hose.</span><span class="sbox-ar">يرتدي البنطلون. (die → die، لا تغيير)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">möchte</span><span class="sbox sbox-akk">ein Hemd.</span><span class="sbox-ar">أريد قميصاً. (das → ein، لا تغيير)</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ السؤال عن المفعول به — Wen oder Was?</div><p>لتحديد المفعول به في الأكوزاتيف اسأل: <code>Wen?</code> (من؟) للأشخاص · <code>Was?</code> (ماذا؟) للأشياء. <br>مثال: "Ich kaufe <u>einen Pullover</u>" → Was kaufst du? — einen Pullover. ← مفعول به = أكوزاتيف ✅</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 04: ADJEKTIVE (ADJECTIVE ENDINGS) -->
+<section class="section" id="adjektive">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">الصفات قبل الاسم — Adjektivdeklination</div><div class="sec-d">لواحق الصفات · مع النكرة ومع المعرّفة · مختصر A1</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 لماذا تتغير نهاية الصفة؟</div><p>في العربية الصفة تتبع الاسم: "بلوفر أحمر". في الألمانية الصفة تأتي قبل الاسم وتحمل معلومة الجنس والحالة بنهايتها: <code>ein rot<strong style="color:var(--gold)">er</strong> Pullover</code> (مذكر · ترفيعي). الخبر الجيد لـ A1: تحتاج فقط الترفيعي والأكوزاتيف مع النكرة والمعرّفة.</p></div>
+  <p class="vst reveal">مع النكرة — UNBESTIMMTER ARTIKEL (ein/eine/ein)</p>
+  <div style="overflow-x:auto;" class="reveal">
+    <table class="adj-table">
+      <thead>
+        <tr><th>الجنس</th><th>الترفيعي (Nominativ)</th><th>الأكوزاتيف (Akkusativ)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label"><span class="badge bb">Maskulin · مذكر</span><br><small style="color:var(--dim)">der Pullover</small></td>
+          <td>ein <span class="adj-m">rot<strong>er</strong></span> Pullover<br><small style="color:var(--dim)">اللاحقة: -er</small></td>
+          <td class="adj-change">einen <span class="adj-m">rot<strong>en</strong></span> Pullover<br><small style="color:var(--gold)">اللاحقة: -en (تتغير!)</small></td>
+        </tr>
+        <tr>
+          <td class="row-label"><span class="badge" style="background:rgba(244,114,182,.1);color:#f472b6">Feminin · مؤنث</span><br><small style="color:var(--dim)">die Jacke</small></td>
+          <td>eine <span class="adj-f">rot<strong>e</strong></span> Jacke<br><small style="color:var(--dim)">اللاحقة: -e</small></td>
+          <td>eine <span class="adj-f">rot<strong>e</strong></span> Jacke<br><small style="color:var(--green)">اللاحقة: -e (لا تتغير)</small></td>
+        </tr>
+        <tr>
+          <td class="row-label"><span class="badge bg">Neutrum · محايد</span><br><small style="color:var(--dim)">das Hemd</small></td>
+          <td>ein <span class="adj-n">rot<strong>es</strong></span> Hemd<br><small style="color:var(--dim)">اللاحقة: -es</small></td>
+          <td>ein <span class="adj-n">rot<strong>es</strong></span> Hemd<br><small style="color:var(--green)">اللاحقة: -es (لا تتغير)</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="vst reveal">مع المعرّفة — BESTIMMTER ARTIKEL (der/die/das)</p>
+  <div style="overflow-x:auto;" class="reveal">
+    <table class="adj-table">
+      <thead>
+        <tr><th>الجنس</th><th>الترفيعي (Nominativ)</th><th>الأكوزاتيف (Akkusativ)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label"><span class="badge bb">Maskulin · مذكر</span></td>
+          <td>der <span class="adj-m">rot<strong>e</strong></span> Pullover<br><small style="color:var(--dim)">اللاحقة: -e</small></td>
+          <td class="adj-change">den <span class="adj-m">rot<strong>en</strong></span> Pullover<br><small style="color:var(--gold)">اللاحقة: -en (المقال + الصفة يتغيران!)</small></td>
+        </tr>
+        <tr>
+          <td class="row-label"><span class="badge" style="background:rgba(244,114,182,.1);color:#f472b6">Feminin · مؤنث</span></td>
+          <td>die <span class="adj-f">rot<strong>e</strong></span> Jacke<br><small style="color:var(--dim)">اللاحقة: -e</small></td>
+          <td>die <span class="adj-f">rot<strong>e</strong></span> Jacke<br><small style="color:var(--green)">اللاحقة: -e (لا تتغير)</small></td>
+        </tr>
+        <tr>
+          <td class="row-label"><span class="badge bg">Neutrum · محايد</span></td>
+          <td>das <span class="adj-n">rot<strong>e</strong></span> Hemd<br><small style="color:var(--dim)">اللاحقة: -e</small></td>
+          <td>das <span class="adj-n">rot<strong>e</strong></span> Hemd<br><small style="color:var(--green)">اللاحقة: -e (لا تتغير)</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">🧠 حيلة الحفظ — قاعدة المذكر الوحيد</div><p>في الأكوزاتيف مع النكرة (unbestimmt):<br>
+  <code>Maskulin</code> → اللاحقة -en (einen roten Pullover) ← الوحيد الذي يتغير!<br>
+  <code>Feminin</code> → اللاحقة -e (eine rote Jacke) ← لا تغيير<br>
+  <code>Neutrum</code> → اللاحقة -es (ein weißes Hemd) ← لا تغيير<br>
+  تذكر: فقط المذكر يتغير — المقال والصفة معاً!</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 05: SHOPPING PHRASES -->
+<section class="section" id="phrasen">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">عبارات التسوق — Einkaufsphrasen</div><div class="sec-d">ما يقوله البائع · ما تقوله أنت · الأسعار والمقاسات</div></div></div>
+  <div class="phrase-grid reveal">
+    <div class="phrase-col"><div class="phrase-col-h gc-blue">يقوله البائع — DER VERKÄUFER</div>
+      <div class="phi"><div class="ph-de">Kann ich Ihnen helfen?</div><div class="ph-ar">هل يمكنني مساعدتك؟ (رسمي)</div><div class="ph-note">الجملة الأولى في كل متجر ألماني</div></div>
+      <div class="phi"><div class="ph-de">Was darf es sein?</div><div class="ph-ar">بم يمكنني خدمتك؟</div><div class="ph-note">حرفياً: ما يُسمح أن يكون؟ — جملة رسمية</div></div>
+      <div class="phi"><div class="ph-de">Welche Größe suchen Sie?</div><div class="ph-ar">أي مقاس تبحث عن؟ (رسمي)</div><div class="ph-note">Größe = مقاس</div></div>
+      <div class="phi"><div class="ph-de">Das steht Ihnen sehr gut!</div><div class="ph-ar">يليق عليك جداً! (رسمي)</div><div class="ph-note">stehen + Dativ = يليق على شخص</div></div>
+      <div class="phi"><div class="ph-de">Das macht zusammen ... Euro.</div><div class="ph-ar">المجموع ... يورو.</div><div class="ph-note">machen = يساوي (في السعر)</div></div>
+      <div class="phi"><div class="ph-de">Wie möchten Sie bezahlen?</div><div class="ph-ar">كيف تريد الدفع؟</div><div class="ph-note">bar = نقداً · mit Karte = ببطاقة</div></div>
+      <div class="phi"><div class="ph-de">Haben Sie Kleingeld?</div><div class="ph-ar">هل معك فكة؟</div><div class="ph-note">Kleingeld = عملة معدنية / فكة</div></div>
+    </div>
+    <div class="phrase-col"><div class="phrase-col-h gc-gold">تقوله أنت — DU / SIE (أنت)</div>
+      <div class="phi"><div class="ph-de">Ja, ich suche (ein/eine/einen) ...</div><div class="ph-ar">نعم، أبحث عن ...</div><div class="ph-note">⚠️ انتبه للمقال حسب الجنس!</div></div>
+      <div class="phi"><div class="ph-de">Nein danke, ich schaue nur.</div><div class="ph-ar">لا شكراً، أنا فقط أتفرج.</div><div class="ph-note">schauen = ينظر / يتفرج</div></div>
+      <div class="phi"><div class="ph-de">Kann ich das/es anprobieren?</div><div class="ph-ar">هل يمكنني تجربة هذا؟</div><div class="ph-note">anprobieren = يجرب (ملابس) — فعل قابل للفصل!</div></div>
+      <div class="phi"><div class="ph-de">Haben Sie das in Größe M / L?</div><div class="ph-ar">هل عندكم هذا مقاس M / L؟</div><div class="ph-note">S=صغير · M=متوسط · L=كبير · XL=كبير جداً</div></div>
+      <div class="phi"><div class="ph-de">Haben Sie das auch in Blau?</div><div class="ph-ar">هل عندكم هذا باللون الأزرق أيضاً؟</div><div class="ph-note">auch = أيضاً</div></div>
+      <div class="phi"><div class="ph-de">Es passt! / Es passt nicht.</div><div class="ph-ar">يناسب! / لا يناسب.</div><div class="ph-note">passen = يناسب الحجم والشكل</div></div>
+      <div class="phi"><div class="ph-de">Ich nehme es / Ich nehme das.</div><div class="ph-ar">سآخذه. (قرار الشراء)</div><div class="ph-note">nehmen = يأخذ — الجملة الأهم!</div></div>
+    </div>
+    <div class="phrase-col"><div class="phrase-col-h gc-green">الأسعار — DER PREIS</div>
+      <div class="phi"><div class="ph-de">Was kostet das?</div><div class="ph-ar">كم سعر هذا؟</div><div class="ph-note">kosten = يكلف — السؤال الأهم!</div></div>
+      <div class="phi"><div class="ph-de">Wie viel kostet das?</div><div class="ph-ar">كم يكلف هذا؟</div><div class="ph-note">wie viel = كم (السعر)</div></div>
+      <div class="phi"><div class="ph-de">Das kostet 29,99 Euro.</div><div class="ph-ar">سعره 29,99 يورو.</div><div class="ph-note">الفاصلة , تُقرأ: neunundneunzig</div></div>
+      <div class="phi"><div class="ph-de">Das ist (zu) teuer!</div><div class="ph-ar">هذا (غالٍ جداً)!</div><div class="ph-note">zu = جداً (زيادة عن اللازم)</div></div>
+      <div class="phi"><div class="ph-de">Das ist günstig / billig.</div><div class="ph-ar">هذا رخيص.</div><div class="ph-note">günstig = رخيص بجودة · billig = رخيص رديء</div></div>
+      <div class="phi"><div class="ph-de">Gibt es einen Rabatt?</div><div class="ph-ar">هل هناك خصم؟</div><div class="ph-note">Rabatt = خصم · Angebot = عرض</div></div>
+      <div class="phi"><div class="ph-de">Mit Karte, bitte. / Bar, bitte.</div><div class="ph-ar">ببطاقة من فضلك. / نقداً.</div><div class="ph-note">طريقتا الدفع الأكثر شيوعاً</div></div>
+    </div>
+    <div class="phrase-col"><div class="phrase-col-h gc-purple">في غرفة التجربة — UMKLEIDEKABINE</div>
+      <div class="phi"><div class="ph-de">Wo ist die Umkleidekabine?</div><div class="ph-ar">أين غرفة التجربة؟</div><div class="ph-note">Umkleide = خلع الملابس · Kabine = كابينة</div></div>
+      <div class="phi"><div class="ph-de">Es passt gut. / Es passt perfekt!</div><div class="ph-ar">يناسب جيداً. / يناسب تماماً!</div><div class="ph-note">gut = جيداً · perfekt = تماماً</div></div>
+      <div class="phi"><div class="ph-de">Es ist zu eng / zu weit.</div><div class="ph-ar">إنه ضيق جداً / واسع جداً.</div><div class="ph-note">eng = ضيق · weit = واسع</div></div>
+      <div class="phi"><div class="ph-de">Es ist zu lang / zu kurz.</div><div class="ph-ar">إنه طويل جداً / قصير جداً.</div><div class="ph-note">lang = طويل · kurz = قصير</div></div>
+      <div class="phi"><div class="ph-de">Haben Sie eine Größe größer?</div><div class="ph-ar">هل عندكم مقاس أكبر؟</div><div class="ph-note">größer = أكبر (مقارنة)</div></div>
+      <div class="phi"><div class="ph-de">Ich möchte es umtauschen.</div><div class="ph-ar">أريد استبداله.</div><div class="ph-note">umtauschen = يستبدل / يرجع بضاعة</div></div>
+      <div class="phi"><div class="ph-de">Haben Sie die Quittung?</div><div class="ph-ar">هل معك الإيصال؟</div><div class="ph-note">Quittung = إيصال — ضروري للاستبدال!</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 06: DIALOGUES -->
+<section class="section" id="dialoge">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">حوارات التسوق — Dialoge</div><div class="sec-d">3 سيناريوهات حقيقية — اقرأها بصوت عالٍ!</div></div></div>
+  <div class="dlg reveal"><div class="dlg-hd">🛍️ سيناريو 1 — شراء بلوفر (عادي · du)</div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Hallo! Kann ich dir helfen?</div><div class="dl-ar">أهلاً! هل يمكنني مساعدتك؟ (عادي)</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Ja, ich suche einen Pullover. In Blau, bitte.</div><div class="dl-ar">نعم، أبحث عن بلوفر. باللون الأزرق من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Welche Größe hast du?</div><div class="dl-ar">ما مقاسك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Ich habe Größe M.</div><div class="dl-ar">مقاسي M.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Hier, dieser blaue Pullover ist sehr schön!</div><div class="dl-ar">تفضل، هذا البلوفر الأزرق جميل جداً!</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Kann ich ihn anprobieren?</div><div class="dl-ar">هل يمكنني تجربته؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Natürlich! Die Umkleidekabine ist dort.</div><div class="dl-ar">بالطبع! غرفة التجربة هناك.</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Er passt perfekt! Was kostet er?</div><div class="dl-ar">يناسب تماماً! كم سعره؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Er kostet 35 Euro.</div><div class="dl-ar">سعره 35 يورو.</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Gut, ich nehme ihn! Kann ich mit Karte zahlen?</div><div class="dl-ar">بسيطة، سآخذه! هل يمكنني الدفع ببطاقة؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Ja, natürlich! Bitte hier.</div><div class="dl-ar">نعم بالطبع! تفضل هنا.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">👔 سيناريو 2 — شراء قميص رسمي (رسمي · Sie)</div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Guten Tag! Kann ich Ihnen helfen?</div><div class="dl-ar">يوم سعيد! هل يمكنني مساعدتك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Guten Tag. Ja, ich brauche ein weißes Hemd für die Arbeit.</div><div class="dl-ar">يوم سعيد. نعم، أحتاج قميصاً أبيض للعمل.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Welche Größe haben Sie?</div><div class="dl-ar">ما مقاسك؟ (رسمي)</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Größe L, bitte. Haben Sie auch Hemden in Größe L?</div><div class="dl-ar">مقاس L من فضلك. هل عندكم قمصان مقاس L؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Ja, natürlich! Hier haben wir weiße Hemden in Größe L.</div><div class="dl-ar">نعم بالطبع! هنا عندنا قمصان بيضاء مقاس L.</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Das Hemd hier ist schön. Es passt gut. Was macht das?</div><div class="dl-ar">هذا القميص جميل. يناسب جيداً. كم المجموع؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Das Hemd kostet 49 Euro.</div><div class="dl-ar">القميص سعره 49 يورو.</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Gut. Ich nehme es. Bar, bitte.</div><div class="dl-ar">بسيطة. سآخذه. نقداً من فضلك.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Das macht 49 Euro. Hier ist Ihre Quittung. Auf Wiedersehen!</div><div class="dl-ar">المجموع 49 يورو. تفضل إيصالك. مع السلامة!</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">👟 سيناريو 3 — استبدال حذاء (مشكلة شائعة)</div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Entschuldigung, ich möchte diese Schuhe umtauschen.</div><div class="dl-ar">عفواً، أريد استبدال هذه الأحذية.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Kein Problem! Haben Sie die Quittung?</div><div class="dl-ar">لا مشكلة! هل معك الإيصال؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Ja, hier bitte. Die Schuhe sind zu eng.</div><div class="dl-ar">نعم، تفضل. الأحذية ضيقة جداً.</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Welche Größe haben Sie?</div><div class="dl-ar">ما مقاسك؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Ich habe Größe 42. Kann ich Größe 43 probieren?</div><div class="dl-ar">مقاسي 42. هل يمكنني تجربة مقاس 43؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Ja, einen Moment bitte... Hier sind die Schuhe in 43.</div><div class="dl-ar">نعم، لحظة من فضلك... تفضل الأحذية مقاس 43.</div></div></div>
+    <div class="dl"><span class="sp sp-a">K</span><div><div class="dl-de">Super! Sie passen perfekt. Danke schön!</div><div class="dl-ar">رائع! تناسب تماماً. شكراً جزيلاً!</div></div></div>
+    <div class="dl"><span class="sp sp-b">V</span><div><div class="dl-de">Bitte schön! Schönen Tag noch!</div><div class="dl-ar">عفواً! يوماً جميلاً!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 07: VOCABULARY (FULL) -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">المفردات الكاملة — Wortschatz</div><div class="sec-d">77+ مفردة مقسمة بالموضوع · أفعال التسوق · المتجر · الصفات</div></div></div>
+  <p class="vst reveal">أفعال التسوق الأساسية — مع الأكوزاتيف</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">kaufen</div><div class="vi-ar">يشتري</div><div class="vi-note">Ich kaufe einen Pullover.</div></div>
+    <div class="vi"><div class="vi-de">verkaufen</div><div class="vi-ar">يبيع</div><div class="vi-note">Er verkauft die Jacke.</div></div>
+    <div class="vi"><div class="vi-de">bezahlen</div><div class="vi-ar">يدفع</div><div class="vi-note">Ich bezahle mit Karte.</div></div>
+    <div class="vi"><div class="vi-de">kosten</div><div class="vi-ar">يكلف / سعره</div><div class="vi-note">Das kostet 20 Euro.</div></div>
+    <div class="vi"><div class="vi-de">passen</div><div class="vi-ar">يناسب / يلاءم</div><div class="vi-note">Die Jacke passt gut.</div></div>
+    <div class="vi"><div class="vi-de">tragen</div><div class="vi-ar">يرتدي / يحمل</div><div class="vi-note">Er trägt einen Anzug.</div></div>
+    <div class="vi"><div class="vi-de">anprobieren</div><div class="vi-ar">يجرب (ملابس)</div><div class="vi-note">فعل قابل للفصل! — probier an</div></div>
+    <div class="vi"><div class="vi-de">suchen</div><div class="vi-ar">يبحث عن</div><div class="vi-note">Ich suche eine Hose.</div></div>
+    <div class="vi"><div class="vi-de">finden</div><div class="vi-ar">يجد / يرى (رأياً)</div><div class="vi-note">Ich finde es schön!</div></div>
+    <div class="vi"><div class="vi-de">umtauschen</div><div class="vi-ar">يستبدل / يرجع</div><div class="vi-note">Ich möchte das umtauschen.</div></div>
+    <div class="vi"><div class="vi-de">empfehlen</div><div class="vi-ar">يوصي / يقترح</div><div class="vi-note">Können Sie mir etwas empfehlen?</div></div>
+    <div class="vi"><div class="vi-de">nehmen</div><div class="vi-ar">يأخذ (يشتري)</div><div class="vi-note">Ich nehme das! — قرار الشراء</div></div>
+  </div>
+  <p class="vst reveal">المتجر والتسوق — in und um den Laden</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">das Kaufhaus (-häuser)</div><div class="vi-ar">مركز التسوق / دبستور</div><div class="vi-note">Karstadt, KaDeWe...</div></div>
+    <div class="vi"><div class="vi-de">der Laden (Läden)</div><div class="vi-ar">المتجر الصغير</div><div class="vi-note">أصغر من Kaufhaus</div></div>
+    <div class="vi"><div class="vi-de">die Boutique (-n)</div><div class="vi-ar">البوتيك / محل الأزياء</div><div class="vi-note">متجر ملابس صغير متخصص</div></div>
+    <div class="vi"><div class="vi-de">die Kasse (-n)</div><div class="vi-ar">الكاشير / المحاسبة</div><div class="vi-note">Wo ist die Kasse?</div></div>
+    <div class="vi"><div class="vi-de">der Preis (-e)</div><div class="vi-ar">السعر</div><div class="vi-note">Was ist der Preis?</div></div>
+    <div class="vi"><div class="vi-de">die Größe (-n)</div><div class="vi-ar">المقاس / الحجم</div><div class="vi-note">Welche Größe haben Sie?</div></div>
+    <div class="vi"><div class="vi-de">die Umkleidekabine</div><div class="vi-ar">غرفة التجربة</div><div class="vi-note">Umkleide = خلع ملابس</div></div>
+    <div class="vi"><div class="vi-de">der Rabatt (-e)</div><div class="vi-ar">الخصم</div><div class="vi-note">10% Rabatt = خصم 10%</div></div>
+    <div class="vi"><div class="vi-de">das Angebot (-e)</div><div class="vi-ar">العرض / التخفيض</div><div class="vi-note">Im Angebot = بتخفيض!</div></div>
+    <div class="vi"><div class="vi-de">die Quittung (-en)</div><div class="vi-ar">الإيصال / الفاتورة</div><div class="vi-note">ضرورية للاستبدال</div></div>
+    <div class="vi"><div class="vi-de">bar (zahlen)</div><div class="vi-ar">يدفع نقداً</div><div class="vi-note">bar = نقد</div></div>
+    <div class="vi"><div class="vi-de">mit Karte (zahlen)</div><div class="vi-ar">يدفع ببطاقة</div><div class="vi-note">EC-Karte أو Kreditkarte</div></div>
+    <div class="vi"><div class="vi-de">das Wechselgeld</div><div class="vi-ar">الباقي / الفكة</div><div class="vi-note">حرفياً: المال المتبدل</div></div>
+    <div class="vi"><div class="vi-de">die Öffnungszeiten</div><div class="vi-ar">أوقات الدوام</div><div class="vi-note">دائماً جمع — Öffnungszeiten</div></div>
+    <div class="vi"><div class="vi-de">der Ausverkauf</div><div class="vi-ar">تصفية المخزون / Sale</div><div class="vi-note">aus + Verkauf = بيع كل شيء</div></div>
+  </div>
+  <p class="vst reveal">صفات وصفية مهمة — في المتجر وخارجه</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">teuer</div><div class="vi-ar">غالٍ / مكلف</div><div class="vi-note">zu teuer = غالٍ جداً</div></div>
+    <div class="vi"><div class="vi-de">günstig</div><div class="vi-ar">رخيص (بجودة)</div><div class="vi-note">أفضل من billig — لا توحي بالرداءة</div></div>
+    <div class="vi"><div class="vi-de">billig</div><div class="vi-ar">رخيص (ورديء)</div><div class="vi-note">قد يوحي برداءة الجودة</div></div>
+    <div class="vi"><div class="vi-de">schön</div><div class="vi-ar">جميل</div><div class="vi-note">Das ist schön!</div></div>
+    <div class="vi"><div class="vi-de">modisch</div><div class="vi-ar">عصري / موضة</div><div class="vi-note">Mode = الموضة</div></div>
+    <div class="vi"><div class="vi-de">altmodisch</div><div class="vi-ar">قديم الطراز</div><div class="vi-note">alt = قديم + modisch</div></div>
+    <div class="vi"><div class="vi-de">eng</div><div class="vi-ar">ضيق</div><div class="vi-note">Die Hose ist zu eng.</div></div>
+    <div class="vi"><div class="vi-de">weit</div><div class="vi-ar">واسع / فضفاض</div><div class="vi-note">Das Hemd ist zu weit.</div></div>
+    <div class="vi"><div class="vi-de">lang</div><div class="vi-ar">طويل</div><div class="vi-note">Der Rock ist zu lang.</div></div>
+    <div class="vi"><div class="vi-de">kurz</div><div class="vi-ar">قصير</div><div class="vi-note">Die Hose ist zu kurz.</div></div>
+    <div class="vi"><div class="vi-de">neu</div><div class="vi-ar">جديد</div><div class="vi-note">neue Schuhe = أحذية جديدة</div></div>
+    <div class="vi"><div class="vi-de">gebraucht</div><div class="vi-ar">مستعمل / مستخدم</div><div class="vi-note">gebrauchte Kleidung = ملابس مستعملة</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 08: CULTURE & MISTAKES -->
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">الثقافة والأخطاء — Kultur & Fehler</div><div class="sec-d">عادات التسوق الألمانية · أخطاء شائعة يجب تجنبها</div></div></div>
+  <p class="vst reveal">ثقافة التسوق في ألمانيا — was man wissen sollte</p>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🕐</span><div class="cc-title">أوقات المتاجر — محدودة!</div><div class="cc-text">المتاجر في ألمانيا عادةً مفتوحة 9:00–20:00. يوم الأحد: معظم المتاجر <strong>مغلقة تماماً</strong> (Sonntagsruhe). هذا قانون! فقط محطات الوقود والمستشفيات والمطارات مفتوحة. لا تصطدم بهذا عند الحضور!</div></div>
+    <div class="culture-card"><span class="cc-icon">🛒</span><div class="cc-title">الحقيبة الخاصة — bring your own bag</div><div class="cc-text">في ألمانيا الأكياس البلاستيكية مدفوعة (20-50 سنت). من الطبيعي جداً أن تأتي بحقيبتك (Tasche/Beutel) معك للتسوق. الإشارة بيئية وليست بخلاً — الألمان مهتمون جداً بالبيئة!</div></div>
+    <div class="culture-card"><span class="cc-icon">💶</span><div class="cc-title">النقد لا يزال ملكاً — Bargeld ist König</div><div class="cc-text">ألمانيا بلد نقدي بامتياز! كثير من المتاجر الصغيرة والمطاعم لا تقبل البطاقة أو تقبلها بحد أدنى (5-10 يورو). دائماً احمل معك نقداً كافياً. الوضع يتغير ببطء لكن النقد لا يزال الأساس.</div></div>
+    <div class="culture-card"><span class="cc-icon">👋</span><div class="cc-title">التحية عند الدخول — إلزامية!</div><div class="cc-text">في ألمانيا من <strong>الأدب الأساسي</strong> تحية صاحب المتجر عند الدخول بـ "Guten Tag!" أو "Hallo!". وعند الخروج "Auf Wiedersehen!" أو "Tschüss!". عدم التحية يُعتبر سلوكاً سيئاً وقد يزعج البائع.</div></div>
+    <div class="culture-card"><span class="cc-icon">🏷️</span><div class="cc-title">تصفيات الموسم — الوقت الأمثل!</div><div class="cc-text"><strong>Winterschlussverkauf</strong> (يناير/فبراير) و<strong>Sommerschlussverkauf</strong> (يوليو/أغسطس) — تصفيات نهاية الموسم. تخفيضات حقيقية تصل 50-70%! مشابهة لـ Black Friday لكن بشكل أكثر تنظيماً وأمانة.</div></div>
+    <div class="culture-card"><span class="cc-icon">🔄</span><div class="cc-title">الاستبدال والإرجاع — حقوقك!</div><div class="cc-text">قانون ألماني: حق الاستبدال موجود لكن ليس مضموناً دائماً. احتفظ بالإيصال (Quittung) دائماً. للمشتريات الإلكترونية عبر الإنترنت: حق الإرجاع 14 يوماً مضمون قانونياً (Widerrufsrecht).</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — Typische Fehler</p>
+  <div class="reveal">
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich kaufe ein Pullover.</div><div class="mi-explain">خطأ: Pullover مذكر → der → في الأكوزاتيف = einen</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich kaufe einen Pullover.</div><div class="mi-explain">✅ المذكر في الأكوزاتيف = einen</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Die Jacke ist blaue.</div><div class="mi-explain">خطأ: الصفة بعد sein لا تأخذ لاحقة — "prädikatives Adjektiv"</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Die Jacke ist blau.</div><div class="mi-explain">✅ بعد sein: الصفة بدون لاحقة!</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich kaufe den blaue Jacke.</div><div class="mi-explain">خطأ مزدوج: die Jacke مؤنثة (لا den) + نهاية الصفة خاطئة</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich kaufe die blaue Jacke.</div><div class="mi-explain">✅ المؤنثة لا تتغير في الأكوزاتيف</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Das kostet zu teuer.</div><div class="mi-explain">خطأ: teuer صفة، لا يأتي بعد "zu" كفعل — الجملة خاطئة هكذا</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Das ist zu teuer.</div><div class="mi-explain">✅ sein + zu + Adjektiv — الجملة الصحيحة</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Ich möchte probieren die Jacke an.</div><div class="mi-explain">خطأ: الأفعال القابلة للفصل — anprobieren: البادئة تذهب للنهاية</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Ich möchte die Jacke anprobieren.</div><div class="mi-explain">✅ مع الأفعال الناقصة: المصدر يبقى كاملاً في النهاية</div></div>
+    </div>
+    <div class="mistake-item">
+      <div><div class="mi-wrong">Die Schuhe kostet 50 Euro.</div><div class="mi-explain">خطأ: Schuhe جمع → الفعل يجب أن يكون بصيغة الجمع</div></div>
+      <div class="mi-arrow">→</div>
+      <div><div class="mi-right">Die Schuhe kosten 50 Euro.</div><div class="mi-explain">✅ الجمع → kosten (وليس kostet)</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 09: EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">التمارين — Übungen</div><div class="sec-d">32 سؤال · 6 تمارين · اختبر معرفتك الآن</div></div></div>
+
+  <!-- BLOCK 1: Akkusativ indefinite (7 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — الأكوزاتيف مع النكرة · المذكر (7 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich kaufe <span class="blank" id="b1">___</span> Pullover. (der Pullover)</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="1" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="1" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Sie kauft <span class="blank" id="b2">___</span> Jacke. (die Jacke)</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="2" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="2" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir brauchen <span class="blank" id="b3">___</span> Hemd. (das Hemd)</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="3" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="3" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er sucht <span class="blank" id="b4">___</span> Mantel. (der Mantel)</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="4" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="4" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Sie trägt <span class="blank" id="b5">___</span> Kleid. (das Kleid)</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="5" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="5" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er kauft <span class="blank" id="b6">___</span> Hut. (der Hut)</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="6" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="6" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f6"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich brauche <span class="blank" id="b7">___</span> Gürtel. (der Gürtel)</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="7" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="7" data-a="eine" onclick="check(this)">eine</button></div><div class="ex-fb" id="f7"></div></div>
+  </div>
+
+  <!-- BLOCK 2: Akkusativ definite (5 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — الأكوزاتيف مع المعرّفة (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich nehme <span class="blank" id="b8">___</span> Pullover da. (der Pullover → Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="8" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="8" data-a="die" onclick="check(this)">die</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er kauft <span class="blank" id="b9">___</span> Jacke. (die Jacke → Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="9" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="9" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir möchten <span class="blank" id="b10">___</span> Mantel anprobieren. (der Mantel → Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="10" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="10" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Sie sucht <span class="blank" id="b11">___</span> Kleid in Rot. (das Kleid → Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="das" onclick="check(this)">das</button><button class="ex-btn" data-q="11" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="11" data-a="die" onclick="check(this)">die</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich nehme <span class="blank" id="b12">___</span> Schuhe. (die Schuhe Pl. → Akkusativ)</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="12" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="12" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <!-- BLOCK 3: Vocabulary (5 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — المفردات والعبارات (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "die Hose"؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="البنطلون" onclick="check(this)">البنطلون</button><button class="ex-btn" data-q="13" data-a="القميص" onclick="check(this)">القميص</button><button class="ex-btn" data-q="13" data-a="الجاكيت" onclick="check(this)">الجاكيت</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "anprobieren"؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="يجرب (ملابس)" onclick="check(this)">يجرب (ملابس)</button><button class="ex-btn" data-q="14" data-a="يشتري" onclick="check(this)">يشتري</button><button class="ex-btn" data-q="14" data-a="يدفع" onclick="check(this)">يدفع</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف نقول "المقاس" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="die Größe" onclick="check(this)">die Größe</button><button class="ex-btn" data-q="15" data-a="der Preis" onclick="check(this)">der Preis</button><button class="ex-btn" data-q="15" data-a="die Kasse" onclick="check(this)">die Kasse</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "Es passt"؟</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="يناسب / يلاءم" onclick="check(this)">يناسب / يلاءم</button><button class="ex-btn" data-q="16" data-a="يكلف" onclick="check(this)">يكلف</button><button class="ex-btn" data-q="16" data-a="يدفع" onclick="check(this)">يدفع</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "die Umkleidekabine"؟</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="غرفة التجربة" onclick="check(this)">غرفة التجربة</button><button class="ex-btn" data-q="17" data-a="الكاشير" onclick="check(this)">الكاشير</button><button class="ex-btn" data-q="17" data-a="المتجر الكبير" onclick="check(this)">المتجر الكبير</button></div><div class="ex-fb" id="f17"></div></div>
+  </div>
+
+  <!-- BLOCK 4: Colors + Adjective endings (5 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — الألوان وصفات الملابس (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى اللون "rot"؟</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="أحمر" onclick="check(this)">أحمر</button><button class="ex-btn" data-q="18" data-a="أزرق" onclick="check(this)">أزرق</button><button class="ex-btn" data-q="18" data-a="أخضر" onclick="check(this)">أخضر</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich kaufe einen rot<span class="blank" id="b19">___</span> Pullover. (Maskulin · Akkusativ · unbestimmt)</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="roten" onclick="check(this)">roten</button><button class="ex-btn" data-q="19" data-a="rote" onclick="check(this)">rote</button><button class="ex-btn" data-q="19" data-a="rotes" onclick="check(this)">rotes</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das ist eine blau<span class="blank" id="b20">___</span> Jacke. (Feminin · Nominativ · unbestimmt)</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="blaue" onclick="check(this)">blaue</button><button class="ex-btn" data-q="20" data-a="blauen" onclick="check(this)">blauen</button><button class="ex-btn" data-q="20" data-a="blaues" onclick="check(this)">blaues</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er kauft ein weiß<span class="blank" id="b21">___</span> Hemd. (Neutrum · Akkusativ · unbestimmt)</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="weißes" onclick="check(this)">weißes</button><button class="ex-btn" data-q="21" data-a="weißen" onclick="check(this)">weißen</button><button class="ex-btn" data-q="21" data-a="weiße" onclick="check(this)">weiße</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى اللون "grau"؟</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="رمادي" onclick="check(this)">رمادي</button><button class="ex-btn" data-q="22" data-a="بني" onclick="check(this)">بني</button><button class="ex-btn" data-q="22" data-a="بنفسجي" onclick="check(this)">بنفسجي</button></div><div class="ex-fb" id="f22"></div></div>
+  </div>
+
+  <!-- BLOCK 5: Shopping dialogue phrases (5 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — عبارات التسوق والحوار (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Kann ich Ihnen helfen?" — كيف ترد إذا كنت تبحث عن قميص؟</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="Ja, ich suche ein Hemd." onclick="check(this)">Ja, ich suche ein Hemd.</button><button class="ex-btn" data-q="23" data-a="Nein danke." onclick="check(this)">Nein danke.</button><button class="ex-btn" data-q="23" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Was darf es sein?" — ما معنى هذه الجملة؟</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="بم يمكنني خدمتك؟" onclick="check(this)">بم يمكنني خدمتك؟</button><button class="ex-btn" data-q="24" data-a="كم يكلف هذا؟" onclick="check(this)">كم يكلف هذا؟</button><button class="ex-btn" data-q="24" data-a="هل تريد الدفع؟" onclick="check(this)">هل تريد الدفع؟</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Wie bezahlen Sie?" — ما الرد الأنسب؟</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="Mit Karte, bitte." onclick="check(this)">Mit Karte, bitte.</button><button class="ex-btn" data-q="25" data-a="Ich suche Größe M." onclick="check(this)">Ich suche Größe M.</button><button class="ex-btn" data-q="25" data-a="Das ist zu teuer." onclick="check(this)">Das ist zu teuer.</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Das steht Ihnen gut!" — ما معنى هذه الجملة؟</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="يليق عليك! / يبدو جميلاً عليك" onclick="check(this)">يليق عليك جيداً!</button><button class="ex-btn" data-q="26" data-a="هذا غالٍ جداً" onclick="check(this)">هذا غالٍ جداً</button><button class="ex-btn" data-q="26" data-a="ما مقاسك؟" onclick="check(this)">ما مقاسك؟</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">تريد تجربة الجاكيت — ماذا تقول؟</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="Kann ich die Jacke anprobieren?" onclick="check(this)">Kann ich die Jacke anprobieren?</button><button class="ex-btn" data-q="27" data-a="Ich kaufe die Jacke." onclick="check(this)">Ich kaufe die Jacke.</button><button class="ex-btn" data-q="27" data-a="Wo ist die Kasse?" onclick="check(this)">Wo ist die Kasse?</button></div><div class="ex-fb" id="f27"></div></div>
+  </div>
+
+  <!-- BLOCK 6: Grammar rules & culture (5 questions) -->
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — قواعد وثقافة (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"der Pullover" في الأكوزاتيف مع النكرة = "einen Pullover" — صح أم خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="28" data-a="خطأ — يبقى ein Pullover" onclick="check(this)">خطأ — يبقى ein</button><button class="ex-btn" data-q="28" data-a="خطأ — يصبح eine" onclick="check(this)">خطأ — يصبح eine</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">الجنس المؤنث (die) يتغير في الأكوزاتيف — صح أم خطأ؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="خطأ — المؤنث لا يتغير" onclick="check(this)">خطأ — المؤنث لا يتغير</button><button class="ex-btn" data-q="29" data-a="صحيح — يصبح den" onclick="check(this)">صحيح — يصبح den</button><button class="ex-btn" data-q="29" data-a="صحيح — يصبح einer" onclick="check(this)">صحيح — يصبح einer</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">في الأكوزاتيف، القاعدة الذهبية: فقط ___ يتغير!</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="الجنس المذكر (Maskulin)" onclick="check(this)">المذكر (Maskulin)</button><button class="ex-btn" data-q="30" data-a="الجنس المؤنث (Feminin)" onclick="check(this)">المؤنث (Feminin)</button><button class="ex-btn" data-q="30" data-a="الجنس المحايد (Neutrum)" onclick="check(this)">المحايد (Neutrum)</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Das kostet 30 Euro" — ما معنى "kostet"؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="يكلف / سعره" onclick="check(this)">يكلف / سعره</button><button class="ex-btn" data-q="31" data-a="يناسب" onclick="check(this)">يناسب</button><button class="ex-btn" data-q="31" data-a="يدفع" onclick="check(this)">يدفع</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">في ألمانيا من الأدب قول ___ عندما تدخل متجراً صغيراً</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="Guten Tag!" onclick="check(this)">Guten Tag!</button><button class="ex-btn" data-q="32" data-a="Danke schön!" onclick="check(this)">Danke schön!</button><button class="ex-btn" data-q="32" data-a="Auf Wiedersehen!" onclick="check(this)">Auf Wiedersehen!</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox">
+    <div class="score-num" id="scoreNum">0</div>
+    <div class="score-sub">إجابة صحيحة من 32</div>
+    <div class="score-msg" id="scoreMsg"></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 10: WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة والأكوزاتيف</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مهمة في هذه الوحدة؟</div><p>الأكوزاتيف يُنسى بسرعة إذا لم تكتبه. الكتابة تُجبر دماغك على اختيار المقال الصحيح والتفكير في الجنس. كل جملة تكتبها بـ <code>einen/eine/ein</code> تثبّت القاعدة أكثر من 10 جمل تقرأها فقط.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — صف ما ترتديه اليوم (5–8 جمل)</div>
+    <div class="wt-text">اكتب عن ملابسك اليوم. استخدم الأكوزاتيف والألوان والصفات:</div>
+    <ul class="wt-list">
+      <li>Ich trage heute... (اذكر الملبس مع الأكوزاتيف)</li>
+      <li>أضف اللون: Ich trage eine blaue Hose...</li>
+      <li>هل تناسبك ملابسك؟ — Sie passen gut / nicht gut.</li>
+      <li>ما رأيك بها؟ — Ich finde sie schön / modisch...</li>
+    </ul>
+    <textarea class="wt-input" placeholder="Ich trage heute... Ich trage auch einen/eine/ein... Die Farbe ist... Sie passen..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — اكتب 3 حوارات تسوق قصيرة</div>
+    <div class="wt-text">اكتب حواراً لكل موقف (4–6 أسطر). انتبه للأكوزاتيف في كل جملة!</div>
+    <ul class="wt-list">
+      <li>في محل ملابس — تريد شراء جاكيت بيضاء</li>
+      <li>في محل أحذية — الحذاء ضيق وتريد مقاساً أكبر</li>
+      <li>في الكاشير — تسأل عن طريقة الدفع والسعر</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:180px;" placeholder="حوار 1 — محل الملابس:&#10;K: Guten Tag! Ich suche...&#10;V: ...&#10;&#10;حوار 2 — محل الأحذية:&#10;..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — جدول الأكوزاتيف من الذاكرة</div>
+    <div class="wt-text">أغلق الملف واكتب جدول المقالات في الأكوزاتيف كاملاً. ثم افتح وتحقق.</div>
+    <textarea class="wt-input" placeholder="Nominativ → Akkusativ:&#10;der → ___ (Maskulin — BESTIMMT)&#10;die → ___ (Feminin — BESTIMMT)&#10;das → ___ (Neutrum — BESTIMMT)&#10;ein → ___ (Maskulin — UNBESTIMMT)&#10;eine → ___ (Feminin — UNBESTIMMT)&#10;ein → ___ (Neutrum — UNBESTIMMT)"></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SECTION 11: RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · تمارين إضافية</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — بطاقات الملابس</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أنشئ بطاقات خاصة بك لكل قطعة ملابس: الأمام = الصورة أو الاسم، الخلف = المقالة + الجمع. التكرار المتباعد أفضل طريقة لحفظ المقالات.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German</div><div class="res-type">موقع مجاني</div><div class="res-desc">موقع Deutsche Welle — Nicos Weg الحلقة 8-10 تتناول التسوق والملابس والأكوزاتيف مع تمارين مجانية وتفاعلية.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German Original</div><div class="res-type">قناة YouTube</div><div class="res-desc">Lessons 26-31 تغطي Akkusativ كاملاً + Lesson 55 للتسوق. مرتبة ومنظمة — الأفضل للمبتدئين.</div></div>
+    <div class="res-card"><span class="res-icon">🎮</span><div class="res-name">Lingolia — Akkusativ</div><div class="res-type">موقع تمارين</div><div class="res-desc">تمارين مجانية وتفاعلية على الأكوزاتيف مع شرح واضح وتصحيح فوري. ممتاز لتثبيت القاعدة.</div><a class="res-link" href="https://deutsch.lingolia.com/de/grammatik/kasus/akkusativ" target="_blank">lingolia.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">Unit 08 يقابل الفصل 7-8 في كتاب Menschen A1. الكتاب فيه صور للملابس وتمارين الأكوزاتيف بشكل منهجي.</div></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Extra auf Deutsch</div><div class="res-type">مسلسل تعليمي</div><div class="res-desc">مسلسل كوميدي ألماني تعليمي — بعض الحلقات عن التسوق والملابس. بألمانية بطيئة ومناسبة لـ A1/A2.</div><a class="res-link" href="https://www.youtube.com/@ExtraDeutsch" target="_blank">YouTube ←</a></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">بعد هذه الوحدة أنت قادر على محادثة تسوق كاملة! جرب مع معلم مجتمعي واطلب منه لعب دور البائع.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">فئة "Shopping" و"Clothing" في Duolingo تغطي مفردات هذه الوحدة. 10 دقائق يومياً للمراجعة السريعة.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN: 5 DAYS -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات والتمارين</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">الملابس + الألوان</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 2 (Kleidung Vocabulary)</li><li>ادرس قسم الملابس — 25 قطعة مع مقالاتها</li><li>ادرس الألوان الـ 12 مع الأمثلة</li><li>انتبه: المذكر/المؤنث/المحايد</li><li>اكتب 15 كلمة ملابس من الذاكرة مع مقالاتها</li><li class="vl">شاهد الفيديو 5 (Kleidung Wortschatz)</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">الأكوزاتيف الكامل</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Akkusativ Lesson 26)</li><li>ادرس جدول الأكوزاتيف المعرّفة والنكرة</li><li>احفظ القاعدة الذهبية: فقط المذكر يتغير!</li><li>ادرس الأمثلة المرئية (satz-box)</li><li class="wl">مهمة الكتابة 3 (جدول الأكوزاتيف من الذاكرة)</li><li>حل تمرين 1 و 2 (Akkusativ)</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">الصفات + عبارات التسوق</div><ul class="day-tasks"><li>ادرس جداول الصفات (قبل الاسم)</li><li class="vl">شاهد الفيديو 3 (Im Kaufhaus)</li><li>ادرس جميع عبارات التسوق الـ 4 أعمدة</li><li>اقرأ الحوار 1 و 2 بصوت عالٍ 3 مرات</li><li>حل تمرين 3 و 4 (مفردات وصفات)</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">الحوارات + الثقافة + كتابة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 4 (حوارات شراء الملابس)</li><li>اقرأ الحوار 3 (الاستبدال) بصوت عالٍ</li><li>ادرس قسم الثقافة والأخطاء الشائعة</li><li class="wl">مهمة الكتابة 1 (صف ملابسك)</li><li class="wl">مهمة الكتابة 2 (3 حوارات)</li><li>حل تمرين 5 (عبارات الحوار)</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">مراجعة شاملة + اختبار</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 6 (DW Harry) بدون ترجمة</li><li>غطّ أعمدة المقالات — اختبر نفسك</li><li>أعد حل كل التمارين — هدف 29+/32</li><li>صرّف الأكوزاتيف شفهياً بدون نظر</li><li>راجع الأخطاء الشائعة</li><li>✅ انتقل لـ Unit 09 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 09 — المواصلات</div><p>انتقل لـ Unit 09 فقط إذا: ✅ تعرف الفرق بين Nominativ و Akkusativ · ✅ تستطيع صرف المقالات في الأكوزاتيف (خاصةً المذكر: den/einen) · ✅ حصلت 28+/32 في التمارين · ✅ كتبت حوار تسوق كامل بنفسك · ✅ تستطيع ذكر 15+ قطعة ملابس بمقالاتها · ✅ تعرف ألوان اللغة الألمانية الـ 12. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 08</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">التسوق · الملابس · الألوان · Akkusativ · الصفات · عبارات المتجر · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · المرحلة المتوسطة · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 09 ← المواصلات والسفر · الأفعال الناقصة · können · müssen · dürfen · wollen</p>
+</footer>
+
+<script>
+const answers={
+  1:'einen',2:'eine',3:'ein',4:'einen',5:'ein',6:'einen',7:'einen',
+  8:'den',9:'die',10:'den',11:'das',12:'die',
+  13:'البنطلون',14:'يجرب (ملابس)',15:'die Größe',16:'يناسب / يلاءم',17:'غرفة التجربة',
+  18:'أحمر',19:'roten',20:'blaue',21:'weißes',22:'رمادي',
+  23:'Ja, ich suche ein Hemd.',24:'بم يمكنني خدمتك؟',25:'Mit Karte, bitte.',26:'يليق عليك! / يبدو جميلاً عليك',27:'Kann ich die Jacke anprobieren?',
+  28:'صحيح',29:'خطأ — المؤنث لا يتغير',30:'الجنس المذكر (Maskulin)',31:'يكلف / سعره',32:'Guten Tag!'
+};
+const fb={
+  1:{ok:'✅ صح! der Pullover → الأكوزاتيف مع النكرة = einen — المذكر الوحيد الذي يتغير!',no:'❌ der Pullover مذكر → في الأكوزاتيف = einen وليس ein أو eine'},
+  2:{ok:'✅ ممتاز! die Jacke مؤنث → لا يتغير في الأكوزاتيف = eine',no:'❌ die Jacke مؤنث → لا يتغير في الأكوزاتيف = eine'},
+  3:{ok:'✅ صح! das Hemd محايد → لا يتغير في الأكوزاتيف = ein',no:'❌ das Hemd محايد → لا يتغير في الأكوزاتيف = ein'},
+  4:{ok:'✅ صح! der Mantel مذكر → في الأكوزاتيف = einen',no:'❌ der Mantel مذكر → في الأكوزاتيف = einen'},
+  5:{ok:'✅ صح! das Kleid محايد → لا يتغير في الأكوزاتيف = ein',no:'❌ das Kleid محايد → لا يتغير في الأكوزاتيف = ein'},
+  6:{ok:'✅ ممتاز! der Hut مذكر → في الأكوزاتيف = einen Hut',no:'❌ der Hut مذكر → في الأكوزاتيف = einen'},
+  7:{ok:'✅ صح! der Gürtel مذكر → في الأكوزاتيف = einen Gürtel',no:'❌ der Gürtel مذكر → في الأكوزاتيف = einen'},
+  8:{ok:'✅ ممتاز! der Pullover → في الأكوزاتيف مع المعرّفة = den Pullover',no:'❌ der → في الأكوزاتيف المعرّف = den'},
+  9:{ok:'✅ صح! die Jacke → في الأكوزاتيف = die (لا تتغير أبداً!)',no:'❌ die Jacke مؤنث → في الأكوزاتيف = die بدون تغيير'},
+  10:{ok:'✅ صح! der Mantel → في الأكوزاتيف المعرّف = den Mantel',no:'❌ der Mantel مذكر معرّف → في الأكوزاتيف = den'},
+  11:{ok:'✅ صح! das Kleid → في الأكوزاتيف = das (لا يتغير)',no:'❌ das Kleid محايد → في الأكوزاتيف = das بدون تغيير'},
+  12:{ok:'✅ صح! الجمع → في الأكوزاتيف = die (دائماً)',no:'❌ الجمع → في الأكوزاتيف = die بدون تغيير'},
+  13:{ok:'✅ ممتاز! die Hose = البنطلون — مؤنثة!',no:'❌ die Hose = البنطلون — القميص = das Hemd — الجاكيت = die Jacke'},
+  14:{ok:'✅ صح! anprobieren = يجرب الملابس — فعل قابل للفصل',no:'❌ anprobieren = يجرب الملابس — kaufen = يشتري — bezahlen = يدفع'},
+  15:{ok:'✅ صح! die Größe = المقاس',no:'❌ die Größe = المقاس — der Preis = السعر — die Kasse = الكاشير'},
+  16:{ok:'✅ ممتاز! passen = يناسب — Es passt = يناسب / يلاءم',no:'❌ passen = يناسب — kosten = يكلف — bezahlen = يدفع'},
+  17:{ok:'✅ صح! die Umkleidekabine = غرفة تجربة الملابس',no:'❌ die Umkleidekabine = غرفة التجربة — die Kasse = الكاشير — das Kaufhaus = مركز التسوق'},
+  18:{ok:'✅ rot = أحمر — تذكر: rot مثل الأحمر!',no:'❌ rot = أحمر · blau = أزرق · grün = أخضر'},
+  19:{ok:'✅ ممتاز! Maskulin + Akkusativ + unbestimmt → اللاحقة -en: roten',no:'❌ في الأكوزاتيف المذكر مع النكرة: einen roten Pullover (لاحقة -en)'},
+  20:{ok:'✅ صح! Feminin + Nominativ + unbestimmt → اللاحقة -e: blaue',no:'❌ في الجنس المؤنث مع النكرة: eine blaue Jacke (لاحقة -e)'},
+  21:{ok:'✅ ممتاز! Neutrum + Akkusativ + unbestimmt → اللاحقة -es: weißes',no:'❌ في الأكوزاتيف المحايد مع النكرة: ein weißes Hemd (لاحقة -es)'},
+  22:{ok:'✅ صح! grau = رمادي',no:'❌ grau = رمادي · braun = بني · lila = بنفسجي'},
+  23:{ok:'✅ الجواب الطبيعي: Ja, ich suche ein Hemd — das Hemd محايد → ein',no:'❌ الجواب الصحيح: Ja, ich suche ein Hemd. — انتبه: das Hemd محايد → ein'},
+  24:{ok:'✅ Was darf es sein? = بم يمكنني خدمتك؟ — جملة خدمة العملاء الكلاسيكية في المتاجر',no:'❌ Was darf es sein? = بم يمكنني خدمتك؟ تُقال في المتاجر والمطاعم الألمانية'},
+  25:{ok:'✅ Mit Karte, bitte. = ببطاقة من فضلك — رد طبيعي على Wie bezahlen Sie?',no:'❌ Wie bezahlen Sie? = كيف تدفع؟ → Mit Karte = ببطاقة أو bar = نقداً'},
+  26:{ok:'✅ Das steht Ihnen gut! = يليق عليك — أجمل مجاملة في المتجر الألماني!',no:'❌ stehen + Dativ = يليق على شخص — Das steht Ihnen gut = يليق عليك جيداً'},
+  27:{ok:'✅ صح! Kann ich die Jacke anprobieren? — انتبه: الفعل القابل للفصل في نهاية الجملة',no:'❌ للتجربة: Kann ich... anprobieren? — الفعل القابل للفصل يأتي في نهاية الجملة مع الأفعال الناقصة'},
+  28:{ok:'✅ صحيح! der Pullover مذكر → في الأكوزاتيف مع النكرة = einen Pullover',no:'❌ صحيح فعلاً — der → في الأكوزاتيف النكرة = einen'},
+  29:{ok:'✅ صح! المؤنث لا يتغير في الأكوزاتيف — die → die · eine → eine دائماً',no:'❌ المؤنث لا يتغير أبداً! die → die ، eine → eine في الأكوزاتيف'},
+  30:{ok:'✅ ممتاز! القاعدة الذهبية: في الأكوزاتيف فقط المذكر يتغير — der→den · ein→einen!',no:'❌ فقط المذكر (Maskulin) يتغير في الأكوزاتيف: der→den وein→einen'},
+  31:{ok:'✅ صح! kosten = يكلف — Das kostet 30 Euro = سعره 30 يورو',no:'❌ kosten = يكلف — passen = يناسب — bezahlen = يدفع'},
+  32:{ok:'✅ صح! في ألمانيا من الأدب تحية البائع عند دخول أي متجر صغير بـ Guten Tag!',no:'❌ من الأدب الألماني قول Guten Tag عند الدخول للمتجر — وليس عند الخروج أو بعد الشراء'}
+};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز تماماً! أتقنت Unit 08 كاملاً. انتقل لـ Unit 09 (المواصلات) بثقة عالية!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل لـ Unit 09.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع الأكوزاتيف وصفات الملابس وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع جدول الأكوزاتيف والمفردات وحل مرة ثانية قبل الانتقال.';
+  else msg='🔄 راجع الوحدة من البداية — الأكوزاتيف أساسي لكل الوحدات القادمة. لا تنتقل حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>
