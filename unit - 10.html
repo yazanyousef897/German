@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 10 — FULL | الطقس والفصول · es-Ausdrücke | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'10';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:160px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.rg-card{background:var(--gray);padding:1.3rem;text-align:center}
+.rg-flag{font-size:1.6rem;margin-bottom:.4rem;display:block}
+.rg-region{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:.4rem}
+.rg-de{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;color:var(--gold);margin-bottom:.25rem}
+.rg-ar{font-size:.75rem;color:var(--dim)}
+.time-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.tc{background:var(--gray);padding:1.2rem 1rem;text-align:center}
+.tc-icon{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.tc-label{font-size:.6rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.3rem}
+.tc-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--gold)}
+.tc-ar{font-size:.72rem;color:var(--dim);margin-top:.15rem}
+.pron-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pron-card{background:var(--black);padding:1.1rem;transition:background .2s}
+.pron-card:hover{background:var(--gray)}
+.pron-de{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.pron-ipa{font-size:.75rem;color:var(--gold);margin-bottom:.2rem;font-family:'JetBrains Mono',monospace}
+.pron-ar{font-size:.75rem;color:var(--dim)}
+.pron-tip{font-size:.68rem;color:rgba(255,206,0,.5);margin-top:.3rem}
+.pronoun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pronoun-card{background:var(--black);padding:1.4rem;position:relative;overflow:hidden;transition:background .2s}
+.pronoun-card:hover{background:var(--gray)}
+.pronoun-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.pronoun-card:hover::before{height:100%}
+.pd{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1;margin-bottom:.2rem}
+.pa{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.pt{font-size:.68rem;color:var(--dim);letter-spacing:.08em}
+.pe{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(255,206,0,.5);margin-top:.4rem}
+.sein-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.sein-t th,.sein-t td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.sein-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.sein-t tbody tr{transition:background .15s}
+.sein-t tbody tr:hover{background:var(--gray)}
+.st-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.st-v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--gold)}
+.st-m{font-size:.8rem;color:var(--dim)}
+.st-e{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}
+.note-gold p,.note-green p,.note-red p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.shadow-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.4rem;margin-bottom:1rem}
+.sh-step{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.75rem}
+.sh-step:last-child{margin-bottom:0}
+.sh-num{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold);flex-shrink:0;line-height:1;min-width:22px}
+.sh-text{font-size:.8rem;color:rgba(245,245,240,.7);line-height:1.7}
+.sh-text code{font-family:'JetBrains Mono',monospace;color:var(--white);background:var(--gray3);padding:.1rem .35rem}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.greet-grid{grid-template-columns:1fr}.pronoun-grid,.days-grid{grid-template-columns:repeat(2,1fr)}.region-grid,.time-strip{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 10 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#seasons">الفصول</a></li>
+    <li><a href="#weather">الطقس</a></li>
+    <li><a href="#es">es-تعابير</a></li>
+    <li><a href="#temp">الحرارة</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-badge" style="background:rgba(255,206,0,.12);border-color:rgba(255,206,0,.3);color:var(--gold)">🟡 متوسط · Unit 10 · 4 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الطقس</span> <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span> <span class="r">الفصول</span></h1>
+  <p class="hero-sub">5 فيديوهات YouTube · الفصول الأربعة وأشهرها · مفردات الطقس الكاملة · تعابير es (es regnet · es schneit · es gibt) · درجات الحرارة و Mir ist kalt · بنية الجملة مع wenn · 90+ مفردة · ثقافة ألمانية · أخطاء شائعة · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">90+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">4</span><span class="hm-label">حوارات</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — لا تشوف بدون مهمة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ كيف تستخدم الفيديوهات بشكل صحيح</div><p>لا تشوف الفيديو وتكمل — هذا مضيعة وقت. لكل فيديو <strong style="color:var(--white)">مهمة استماع محددة</strong>: شيء تبحث عنه أثناء المشاهدة. بعد كل فيديو اكتب 3 جمل سمعتها في دفترك. هذا يضاعف الاستفادة من الفيديو.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/Eua8B97RCQ0" title="A1 Lesson 14 Monate und Jahreszeiten" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 14</div><div class="video-title">Monate und Jahreszeiten — الأشهر والفصول</div><div class="video-desc">درس مخصص للأشهر الـ12 والفصول الأربعة مع نطق واضح وأمثلة — مراجعة للأشهر من Unit 03 وربطها بالفصول.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل شهر مع الفصل الذي ينتمي إليه — قارن ترتيبك مع الفيديو.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1Vrk13YeVns" title="A1 Lesson 49 Wie ist das Wetter" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 49</div><div class="video-title">Wie ist das Wetter? — كيف هو الطقس؟</div><div class="video-desc">درس كامل عن تعابير الطقس الأساسية: es regnet, es schneit, es ist sonnig وغيرها، مع أمثلة كثيرة وجمل عملية.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل تعبير عن الطقس تسمعه — هدفك 10 تعابير على الأقل.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/b4ki5lMyd4Q" title="Nicos Weg Folge 54 Jahreszeiten" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · الحلقة 54</div><div class="video-title">Jahreszeiten — نيكو يتحدث عن الفصول</div><div class="video-desc">من سلسلة Nicos Weg من Deutsche Welle — نيكو يتحدث عن فصله المفضل ويقارن طقس إسبانيا بألمانيا في سياق طبيعي حقيقي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> ما الفصل المفضل عند نيكو؟ وكيف يصف طقس كل فصل؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/5ibXPDlpw5I" title="Easy German 526 Talking About the Weather" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">🗣️ Easy German · مقابلات في الشارع</div><div class="video-title">Talking About the Weather — التحدث عن الطقس</div><div class="video-desc">مقابلات حقيقية في الشارع مع متحدثين أصليين عن الطقس — استماع حقيقي بسرعة طبيعية، مفيد جداً بعد دراسة المفردات.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب 5 كلمات أو تعابير جديدة سمعتها لم تكن في الفيديوهات السابقة.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 Film DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · الفيلم الكامل A1</div><div class="video-title">Nicos Weg — A1 كاملاً في فيلم واحد</div><div class="video-desc">نفس الفيلم المستخدم في Unit 01 — ساعات من الألمانية الطبيعية. احفظه لليوم الرابع.</div><div class="video-task"><strong>لليوم الرابع:</strong> اختر 15 دقيقة وابحث عن أي ذكر للطقس أو الفصول — اكتب كل جملة تجدها.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SEASONS -->
+<section class="section" id="seasons">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الفصول الأربعة — Die Jahreszeiten</div><div class="sec-d">الأسماء · الأشهر · "im" + الفصل · ماذا يحدث في كل فصل</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 مراجعة سريعة + جديد</div><p>في Unit 03 تعلمت أشهر السنة مع <code>im</code> (مثل <code>im Januar</code>). الفصول الأربعة تتبع <strong style="color:var(--white)">نفس القاعدة تماماً</strong>: <code>im Frühling</code> · <code>im Sommer</code> · <code>im Herbst</code> · <code>im Winter</code> — دائماً <code>im</code> بدون استثناء، بغض النظر عن جنس الكلمة. السبب الكامل (Dativ) سنفهمه في Unit 11.</p></div>
+  <div class="time-strip reveal">
+    <div class="tc"><span class="tc-icon">🌸</span><div class="tc-label">März · April · Mai</div><div class="tc-de">der Frühling</div><div class="tc-ar">الربيع</div></div>
+    <div class="tc"><span class="tc-icon">☀️</span><div class="tc-label">Juni · Juli · August</div><div class="tc-de">der Sommer</div><div class="tc-ar">الصيف</div></div>
+    <div class="tc"><span class="tc-icon">🍂</span><div class="tc-label">September · Oktober · November</div><div class="tc-de">der Herbst</div><div class="tc-ar">الخريف</div></div>
+    <div class="tc"><span class="tc-icon">❄️</span><div class="tc-label">Dezember · Januar · Februar</div><div class="tc-de">der Winter</div><div class="tc-ar">الشتاء</div></div>
+  </div>
+  <p class="vst reveal">ماذا يحدث في كل فصل؟ — Was passiert in jeder Jahreszeit?</p>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🌸</span><div class="cc-title">Im Frühling</div><div class="cc-text">Es wird wärmer und die Tage werden länger. Die Blumen blühen und die Bäume werden grün. Viele Menschen machen Frühjahrsputz und gehen wieder spazieren.</div></div>
+    <div class="culture-card"><span class="cc-icon">☀️</span><div class="cc-title">Im Sommer</div><div class="cc-text">Es ist warm oder heiß und die Sonne scheint oft. Die Schule hat Sommerferien. Viele Deutsche fahren in den Urlaub, gehen schwimmen oder grillen im Garten.</div></div>
+    <div class="culture-card"><span class="cc-icon">🍂</span><div class="cc-title">Im Herbst</div><div class="cc-text">Es wird kühler und windiger. Die Blätter werden bunt — rot, gelb, braun — und fallen von den Bäumen. Man trägt wieder eine Jacke und sammelt Kastanien.</div></div>
+    <div class="culture-card"><span class="cc-icon">❄️</span><div class="cc-title">Im Winter</div><div class="cc-text">Es ist kalt und manchmal schneit es. Die Tage sind kurz und dunkel. Man trinkt heißen Tee, feiert Weihnachten und fährt — in den Bergen — Ski.</div></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">🧠 ترتيب الفصول — لا تنسَ!</div><p>الترتيب الطبيعي في الكلام: <code>Frühling → Sommer → Herbst → Winter</code> ثم تعود الدورة من جديد. إذا سمعت أحداً يقول <code>"im Winter und im Sommer"</code> فهو غالباً يقارن بين فصلين متضادين تماماً — هذا شائع جداً في المقارنات.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WEATHER -->
+<section class="section" id="weather">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الطقس — Das Wetter</div><div class="sec-d">السؤال الذهبي Wie ist das Wetter؟ · صفات الطقس · حوارات</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">☂️ السؤال الأهم في هذه الوحدة</div><p><code>Wie ist das Wetter?</code> = كيف هو الطقس؟ — هذا السؤال يفتح الباب لكل تعابير الوحدة. الجواب يكون دائماً بصيغة <code>Es ist ...</code> أو <code>Es gibt ...</code> أو فعل طقس مباشر مثل <code>Es regnet.</code></p></div>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">sonnig</div><div class="vi-ar">مشمس</div><div class="vi-note">Es ist sonnig.</div></div>
+    <div class="vi"><div class="vi-de">bewölkt / wolkig</div><div class="vi-ar">غائم / ملبد بالغيوم</div><div class="vi-note">Es ist bewölkt.</div></div>
+    <div class="vi"><div class="vi-de">regnerisch</div><div class="vi-ar">ممطر / يميل للمطر</div><div class="vi-note">Es ist regnerisch.</div></div>
+    <div class="vi"><div class="vi-de">windig</div><div class="vi-ar">عاصف / فيه ريح</div><div class="vi-note">Es ist windig.</div></div>
+    <div class="vi"><div class="vi-de">stürmisch</div><div class="vi-ar">عاصف بشدة</div><div class="vi-note">Es ist stürmisch.</div></div>
+    <div class="vi"><div class="vi-de">neblig</div><div class="vi-ar">فيه ضباب</div><div class="vi-note">Es ist neblig.</div></div>
+    <div class="vi"><div class="vi-de">heiter</div><div class="vi-ar">صافٍ / مشمس قليل الغيوم</div><div class="vi-note">أكثر إيجابية من sonnig</div></div>
+    <div class="vi"><div class="vi-de">trocken</div><div class="vi-ar">جاف</div></div>
+    <div class="vi"><div class="vi-de">feucht</div><div class="vi-ar">رطب</div></div>
+    <div class="vi"><div class="vi-de">schwül</div><div class="vi-ar">حار ورطب / خانق</div><div class="vi-note">صيف بلا رياح = schwül</div></div>
+  </div>
+  <p class="vst reveal">حوارات نموذجية — Beispieldialoge</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 حوار 1 — مكالمة هاتفية عن الطقس</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hallo! Wie ist das Wetter bei euch in Hamburg?</div><div class="dl-ar">أهلاً! كيف الطقس عندكم في هامبورغ؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Hier ist es leider sehr windig und regnerisch. Und bei dir in München?</div><div class="dl-ar">هنا للأسف عاصف وممطر جداً. وعندك في ميونخ؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hier ist es heiter und ziemlich warm — etwa 22 Grad.</div><div class="dl-ar">هنا صافٍ ودافئ نوعاً ما — حوالي 22 درجة.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Wow, schön! Hoffentlich bleibt das Wetter so.</div><div class="dl-ar">واو، جميل! أتمنى أن يبقى الطقس كذلك.</div></div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 حوار 2 — تخطيط ليوم السبت</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Was machen wir am Samstag? Es soll sonnig werden.</div><div class="dl-ar">شو رح نعمل السبت؟ من المفروض يصير الجو مشمس.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Super! Dann gehen wir spazieren oder fahren Rad.</div><div class="dl-ar">رائع! بهاي الحالة منمشي أو منركب دراجة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und wenn es doch regnet?</div><div class="dl-ar">وإذا مع ذلك صارت تمطر؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Dann bleiben wir zu Hause und sehen einen Film.</div><div class="dl-ar">بهاي الحالة منضل بالبيت ومنتفرج فيلم.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- ES-AUSDRÜCKE -->
+<section class="section" id="es">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">تعابير es — es regnet · es schneit · es gibt</div><div class="sec-d">الفاعل الشكلي es · أفعال الطقس · es gibt + Akkusativ</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 ما هو "es" هنا؟</div><p>في العربية نقول "تمطر" أو "في الجو شتي" بدون فاعل واضح. في الألمانية كل جملة <strong style="color:var(--white)">يجب</strong> أن يكون لها فاعل — فنستخدم <code>es</code> كفاعل شكلي (لا معنى له بذاته، فقط لضبط القواعد). هذا يسمى <strong style="color:var(--gold)">unpersönliches es</strong> (es غير الشخصي).</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>التعبير</th><th>المعنى</th><th>مثال</th><th>الترجمة</th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">es regnet</td><td class="st-m">تمطر</td><td class="st-e">Es regnet stark.</td><td class="st-m">إنها تمطر بشدة.</td></tr>
+        <tr><td class="st-p">es schneit</td><td class="st-m">تثلج</td><td class="st-e">Im Januar schneit es oft.</td><td class="st-m">في يناير تثلج كثيراً.</td></tr>
+        <tr><td class="st-p">es donnert</td><td class="st-m">يرعد</td><td class="st-e">Es donnert laut.</td><td class="st-m">الرعد عالٍ.</td></tr>
+        <tr><td class="st-p">es blitzt</td><td class="st-m">يبرق</td><td class="st-e">Es blitzt und donnert.</td><td class="st-m">برق ورعد معاً.</td></tr>
+        <tr><td class="st-p">es friert</td><td class="st-m">يتجمد / الجو متجمد</td><td class="st-e">Heute Nacht friert es.</td><td class="st-m">الليلة الجو متجمد.</td></tr>
+        <tr><td class="st-p">es taut</td><td class="st-m">يذوب الثلج</td><td class="st-e">Im März taut der Schnee.</td><td class="st-m">في مارس يذوب الثلج.</td></tr>
+        <tr><td class="st-p">die Sonne scheint</td><td class="st-m">الشمس تسطع</td><td class="st-e">Die Sonne scheint den ganzen Tag.</td><td class="st-m">الشمس مشرقة طوال اليوم.</td></tr>
+        <tr><td class="st-p">es gibt</td><td class="st-m">يوجد / هناك</td><td class="st-e">Es gibt heute viele Wolken.</td><td class="st-m">يوجد اليوم غيوم كثيرة.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">الفعل دائماً ثانياً — حتى مع es</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Es</span><span class="sbox sbox-verb">regnet</span><span class="sbox sbox-rest">heute.</span><span class="sbox-ar">إنها تمطر اليوم.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Heute</span><span class="sbox sbox-verb">regnet</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">stark.</span><span class="sbox-ar">اليوم تمطر بشدة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Im Winter</span><span class="sbox sbox-verb">schneit</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">oft.</span><span class="sbox-ar">في الشتاء تثلج كثيراً.</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ es gibt + Akkusativ — تذكير من Unit 07</div><p><code>es gibt</code> يعني "يوجد/هناك" ويتبعه دائماً <strong style="color:var(--white)">Akkusativ</strong>. تذكر: <code>der → einen</code> · <code>die → eine</code> · <code>das → ein</code>. مثال: <code>Es gibt <span style="color:var(--gold)">einen</span> Park.</code> (der Park) · <code>Es gibt <span style="color:var(--gold)">eine</span> Wolke.</code> (die Wolke) · <code>Es gibt <span style="color:var(--gold)">viele</span> Wolken.</code> (جمع — بلا مقال)</p></div>
+  <div class="satz-box reveal"><div class="satz-title">es gibt — في السؤال (الفعل أولاً)</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Gibt</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">heute Schule?</span><span class="sbox-ar">هل يوجد دوام مدرسي اليوم؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Gibt</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">hier ein Café?</span><span class="sbox-ar">هل يوجد مقهى هنا؟</span></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 حوار 3 — es gibt في المدينة</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Entschuldigung, gibt es hier einen Supermarkt?</div><div class="dl-ar">عفواً، هل يوجد سوبرماركت هنا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, es gibt einen Supermarkt links und eine Apotheke rechts.</div><div class="dl-ar">نعم، يوجد سوبرماركت على اليسار وصيدلية على اليمين.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Perfekt, danke! Und gibt es auch einen Park in der Nähe?</div><div class="dl-ar">ممتاز، شكراً! وهل يوجد حديقة بالقرب من هنا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, hinter der Kirche gibt es einen schönen Park.</div><div class="dl-ar">نعم، خلف الكنيسة يوجد حديقة جميلة.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- TEMPERATURE -->
+<section class="section" id="temp">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">درجة الحرارة — Die Temperatur</div><div class="sec-d">Es sind ... Grad · صفات الحرارة · Mir ist kalt!</div></div></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>الصفة</th><th>المدى التقريبي</th><th>مثال</th><th>المعنى</th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">eisig</td><td class="st-m">أقل من -5°</td><td class="st-e">Es ist eisig kalt.</td><td class="st-m">جليدي / متجمد جداً</td></tr>
+        <tr><td class="st-p">kalt</td><td class="st-m">-5° إلى 5°</td><td class="st-e">Es ist kalt.</td><td class="st-m">بارد</td></tr>
+        <tr><td class="st-p">kühl</td><td class="st-m">5° إلى 15°</td><td class="st-e">Es ist kühl.</td><td class="st-m">معتدل بارد / منعش</td></tr>
+        <tr><td class="st-p">mild</td><td class="st-m">15° إلى 20°</td><td class="st-e">Es ist mild.</td><td class="st-m">معتدل لطيف</td></tr>
+        <tr><td class="st-p">warm</td><td class="st-m">20° إلى 28°</td><td class="st-e">Es ist warm.</td><td class="st-m">دافئ</td></tr>
+        <tr><td class="st-p">heiß</td><td class="st-m">أكثر من 28°</td><td class="st-e">Es ist heiß.</td><td class="st-m">حار جداً</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🔢 Es sind ... Grad — لماذا sind وليس ist؟</div><p>مع درجة واحدة فقط: <code>Es ist 1 Grad.</code> لكن مع أكثر من درجة، الفعل يتفق مع العدد <code>Grad</code> وليس مع <code>es</code>: <code>Es <strong style="color:var(--white)">sind</strong> 20 Grad.</code> · <code>Es <strong style="color:var(--white)">sind</strong> minus 3 Grad.</code> — نفس مبدأ <code>Es sind drei Personen hier.</code></p></div>
+  <div class="note-red reveal"><div class="note-title nt-r">🥶 Mir ist kalt — ليس Ich bin kalt!</div><p>عندما <strong style="color:var(--white)">أنت</strong> تشعر بالبرد أو الحر (وليس الجو نفسه)، نستخدم ضمير <code>Dativ</code> + <code>ist</code> + الصفة: <code>Mir ist kalt.</code> (أشعر بالبرد) — أما <code>Ich bin kalt</code> فتعني "أنا شخص بارد المشاعر/قاسي القلب"! هذه أول لمحة عن Dativ الذي سندرسه بالتفصيل في Unit 11.</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>الضمير</th><th>صيغة Dativ</th><th>مثال</th><th>المعنى</th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">ich</td><td class="st-v">mir</td><td class="st-e">Mir ist kalt.</td><td class="st-m">أشعر بالبرد</td></tr>
+        <tr><td class="st-p">du</td><td class="st-v">dir</td><td class="st-e">Ist dir warm?</td><td class="st-m">هل تشعر بالحر؟</td></tr>
+        <tr><td class="st-p">er / es</td><td class="st-v">ihm</td><td class="st-e">Ihm ist heiß.</td><td class="st-m">هو يشعر بالحر</td></tr>
+        <tr><td class="st-p">sie</td><td class="st-v">ihr</td><td class="st-e">Ihr ist kühl.</td><td class="st-m">هي تشعر بالبرد الخفيف</td></tr>
+        <tr><td class="st-p">wir</td><td class="st-v">uns</td><td class="st-e">Uns ist kalt.</td><td class="st-m">نشعر بالبرد</td></tr>
+        <tr><td class="st-p">ihr</td><td class="st-v">euch</td><td class="st-e">Ist euch heiß?</td><td class="st-m">هل تشعرون بالحر؟</td></tr>
+        <tr><td class="st-p">sie / Sie</td><td class="st-v">ihnen</td><td class="st-e">Ihnen ist kalt.</td><td class="st-m">هم / حضرتك يشعرون بالبرد</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 حوار 4 — Mir ist kalt!</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Brrr, mir ist so kalt! Kannst du das Fenster zumachen?</div><div class="dl-ar">بررر، أنا بردان كثير! ممكن تسكر الشباك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Wirklich? Mir ist eigentlich warm.</div><div class="dl-ar">بجد؟ أنا أحس إني دافي.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Du hast ja auch eine Jacke an. Mir ist es zu kalt ohne Jacke!</div><div class="dl-ar">طبعاً، أنت لابس جاكيت. أنا بردان بدون جاكيت!</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Okay, okay, ich mach das Fenster zu. Besser?</div><div class="dl-ar">ماشي ماشي، رح أسكر الشباك. أحسن هلق؟</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SATZSTRUKTUR -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">بنية الجملة — Satzstruktur</div><div class="sec-d">مراجعة V2 مع es · نظرة أولى على wenn</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🔄 مراجعة من Unit 01 — V2</div><p>تذكر: الفعل دائماً في المكان الثاني. <code>es</code> يتصرف كأي فاعل آخر — يمكن أن يبدأ الجملة، أو ينتقل بعد الفعل إذا بدأت الجملة بكلمة أخرى.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">es في البداية</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Es</span><span class="sbox sbox-verb">gibt</span><span class="sbox sbox-rest">heute ein Gewitter.</span><span class="sbox-ar">يوجد اليوم عاصفة رعدية.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">شيء آخر في البداية — es ينتقل بعد الفعل</div>
+    <div class="satz-row"><span class="sbox sbox-rest">Heute</span><span class="sbox sbox-verb">gibt</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">ein Gewitter.</span><span class="sbox-ar">اليوم يوجد عاصفة رعدية.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Leider</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">heute kalt.</span><span class="sbox-ar">للأسف الجو بارد اليوم.</span></div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🆕 نظرة أولى — wenn (إذا / عندما)</div><p><code>wenn</code> يبدأ جملة فرعية، والفعل فيها ينتقل إلى <strong style="color:var(--white)">آخر الجملة الفرعية</strong>. الجملة الفرعية بأكملها تُحسب كـ "مكان أول"، فالفعل في الجملة الرئيسية يأتي مباشرة بعد الفاصلة — لا تزال V2!</p></div>
+  <div class="satz-box reveal"><div class="satz-title">wenn + الفعل في النهاية، ثم الجملة الرئيسية</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wenn</span><span class="sbox sbox-subj">es</span><span class="sbox sbox-rest">regnet,</span><span class="sbox sbox-verb">bleibe</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">zu Hause.</span><span class="sbox-ar">إذا تمطر، أبقى في البيت.</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wenn</span><span class="sbox sbox-subj">die Sonne</span><span class="sbox sbox-rest">scheint,</span><span class="sbox sbox-verb">gehen</span><span class="sbox sbox-subj">wir</span><span class="sbox sbox-rest">schwimmen.</span><span class="sbox-ar">إذا الشمس مشرقة، نذهب للسباحة.</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لا تقلق الآن</div><p>الجمل المركبة بـ <code>weil</code> و <code>wenn</code> بالتفصيل ستأتي في Units 13–14. الآن يكفي أن تتعرف على الشكل وتفهمه عند القراءة والاستماع — لا حاجة لإنتاجه بنفسك بشكل مثالي بعد.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">المفردات — Vokabeln</div><div class="sec-d">96 كلمة عبر 8 مجموعات — راجع كل يوم</div></div></div>
+
+  <p class="vst reveal">1 · أساسيات الطقس — Wettergrundwörter</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">das Wetter</div><div class="vi-ar">الطقس / الجو</div></div>
+    <div class="vi"><div class="vi-de">die Sonne</div><div class="vi-ar">الشمس</div></div>
+    <div class="vi"><div class="vi-de">der Regen</div><div class="vi-ar">المطر</div></div>
+    <div class="vi"><div class="vi-de">der Schnee</div><div class="vi-ar">الثلج</div></div>
+    <div class="vi"><div class="vi-de">der Wind</div><div class="vi-ar">الريح</div></div>
+    <div class="vi"><div class="vi-de">die Wolke / die Wolken</div><div class="vi-ar">الغيمة / الغيوم</div></div>
+    <div class="vi"><div class="vi-de">der Himmel</div><div class="vi-ar">السماء</div></div>
+    <div class="vi"><div class="vi-de">das Eis</div><div class="vi-ar">الجليد / الثلج المتجمد</div></div>
+    <div class="vi"><div class="vi-de">der Nebel</div><div class="vi-ar">الضباب</div></div>
+    <div class="vi"><div class="vi-de">der Sturm</div><div class="vi-ar">العاصفة</div></div>
+    <div class="vi"><div class="vi-de">der Donner</div><div class="vi-ar">الرعد</div></div>
+    <div class="vi"><div class="vi-de">der Blitz</div><div class="vi-ar">البرق</div></div>
+    <div class="vi"><div class="vi-de">die Temperatur</div><div class="vi-ar">درجة الحرارة</div></div>
+    <div class="vi"><div class="vi-de">das Grad / die Grad (pl.)</div><div class="vi-ar">الدرجة (حرارة)</div></div>
+    <div class="vi"><div class="vi-de">die Wettervorhersage</div><div class="vi-ar">نشرة / توقعات الأحوال الجوية</div></div>
+  </div>
+
+  <p class="vst reveal">2 · أفعال وتعابير الطقس — Wetterverben mit es</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">es regnet</div><div class="vi-ar">تمطر</div></div>
+    <div class="vi"><div class="vi-de">es schneit</div><div class="vi-ar">تثلج</div></div>
+    <div class="vi"><div class="vi-de">es donnert</div><div class="vi-ar">يرعد</div></div>
+    <div class="vi"><div class="vi-de">es blitzt</div><div class="vi-ar">يبرق</div></div>
+    <div class="vi"><div class="vi-de">die Sonne scheint</div><div class="vi-ar">الشمس تسطع</div></div>
+    <div class="vi"><div class="vi-de">es ist windig</div><div class="vi-ar">الجو عاصف</div></div>
+    <div class="vi"><div class="vi-de">es ist bewölkt</div><div class="vi-ar">الجو غائم</div></div>
+    <div class="vi"><div class="vi-de">es ist neblig</div><div class="vi-ar">الجو فيه ضباب</div></div>
+    <div class="vi"><div class="vi-de">es friert</div><div class="vi-ar">الجو متجمد</div></div>
+    <div class="vi"><div class="vi-de">es taut</div><div class="vi-ar">الثلج يذوب</div></div>
+    <div class="vi"><div class="vi-de">es gibt</div><div class="vi-ar">يوجد / هناك</div></div>
+    <div class="vi"><div class="vi-de">es klart auf</div><div class="vi-ar">الجو يصفو / يتحسن</div></div>
+  </div>
+
+  <p class="vst reveal">3 · صفات الطقس — Wetteradjektive</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">sonnig</div><div class="vi-ar">مشمس</div></div>
+    <div class="vi"><div class="vi-de">regnerisch</div><div class="vi-ar">ممطر</div></div>
+    <div class="vi"><div class="vi-de">bewölkt</div><div class="vi-ar">غائم</div></div>
+    <div class="vi"><div class="vi-de">wolkig</div><div class="vi-ar">ملبد بالغيوم</div></div>
+    <div class="vi"><div class="vi-de">windig</div><div class="vi-ar">عاصف / فيه ريح</div></div>
+    <div class="vi"><div class="vi-de">stürmisch</div><div class="vi-ar">عاصف بشدة</div></div>
+    <div class="vi"><div class="vi-de">neblig</div><div class="vi-ar">فيه ضباب</div></div>
+    <div class="vi"><div class="vi-de">heiter</div><div class="vi-ar">صافٍ / مشمس قليل الغيوم</div></div>
+    <div class="vi"><div class="vi-de">trocken</div><div class="vi-ar">جاف</div></div>
+    <div class="vi"><div class="vi-de">feucht</div><div class="vi-ar">رطب</div></div>
+    <div class="vi"><div class="vi-de">schwül</div><div class="vi-ar">حار رطب / خانق</div></div>
+  </div>
+
+  <p class="vst reveal">4 · درجات الحرارة — Temperatur</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">eisig</div><div class="vi-ar">جليدي / متجمد جداً</div></div>
+    <div class="vi"><div class="vi-de">kalt</div><div class="vi-ar">بارد</div></div>
+    <div class="vi"><div class="vi-de">kühl</div><div class="vi-ar">معتدل بارد / منعش</div></div>
+    <div class="vi"><div class="vi-de">mild</div><div class="vi-ar">معتدل لطيف</div></div>
+    <div class="vi"><div class="vi-de">warm</div><div class="vi-ar">دافئ</div></div>
+    <div class="vi"><div class="vi-de">heiß</div><div class="vi-ar">حار جداً</div></div>
+    <div class="vi"><div class="vi-de">das Grad Celsius</div><div class="vi-ar">درجة سيلسيوس</div></div>
+    <div class="vi"><div class="vi-de">minus / plus</div><div class="vi-ar">تحت الصفر / فوق الصفر</div></div>
+  </div>
+
+  <p class="vst reveal">5 · الفصول والأشهر — Jahreszeiten und Monate (مراجعة)</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Frühling</div><div class="vi-ar">الربيع</div></div>
+    <div class="vi"><div class="vi-de">der Sommer</div><div class="vi-ar">الصيف</div></div>
+    <div class="vi"><div class="vi-de">der Herbst</div><div class="vi-ar">الخريف</div></div>
+    <div class="vi"><div class="vi-de">der Winter</div><div class="vi-ar">الشتاء</div></div>
+    <div class="vi"><div class="vi-de">Januar</div><div class="vi-ar">يناير</div></div>
+    <div class="vi"><div class="vi-de">Februar</div><div class="vi-ar">فبراير</div></div>
+    <div class="vi"><div class="vi-de">März</div><div class="vi-ar">مارس</div></div>
+    <div class="vi"><div class="vi-de">April</div><div class="vi-ar">أبريل</div></div>
+    <div class="vi"><div class="vi-de">Mai</div><div class="vi-ar">مايو</div></div>
+    <div class="vi"><div class="vi-de">Juni</div><div class="vi-ar">يونيو</div></div>
+    <div class="vi"><div class="vi-de">Juli</div><div class="vi-ar">يوليو</div></div>
+    <div class="vi"><div class="vi-de">August</div><div class="vi-ar">أغسطس</div></div>
+    <div class="vi"><div class="vi-de">September</div><div class="vi-ar">سبتمبر</div></div>
+    <div class="vi"><div class="vi-de">Oktober</div><div class="vi-ar">أكتوبر</div></div>
+    <div class="vi"><div class="vi-de">November</div><div class="vi-ar">نوفمبر</div></div>
+    <div class="vi"><div class="vi-de">Dezember</div><div class="vi-ar">ديسمبر</div></div>
+  </div>
+
+  <p class="vst reveal">6 · أنشطة كل فصل — Aktivitäten</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">schwimmen</div><div class="vi-ar">يسبح</div></div>
+    <div class="vi"><div class="vi-de">Ski fahren</div><div class="vi-ar">يتزحلق على الجليد</div></div>
+    <div class="vi"><div class="vi-de">Rad fahren</div><div class="vi-ar">يركب الدراجة</div></div>
+    <div class="vi"><div class="vi-de">spazieren gehen</div><div class="vi-ar">يتمشى</div></div>
+    <div class="vi"><div class="vi-de">grillen</div><div class="vi-ar">يشوي / باربكيو</div></div>
+    <div class="vi"><div class="vi-de">einen Schneemann bauen</div><div class="vi-ar">يبني رجل ثلج</div></div>
+    <div class="vi"><div class="vi-de">einen Drachen steigen lassen</div><div class="vi-ar">يطيّر طائرة ورقية</div></div>
+    <div class="vi"><div class="vi-de">Blumen pflanzen</div><div class="vi-ar">يزرع الزهور</div></div>
+    <div class="vi"><div class="vi-de">Laub sammeln</div><div class="vi-ar">يجمع أوراق الشجر</div></div>
+    <div class="vi"><div class="vi-de">wandern</div><div class="vi-ar">يتنزه / مشي طويل بالطبيعة</div></div>
+    <div class="vi"><div class="vi-de">picknicken</div><div class="vi-ar">يتنزه ويتغدى في الخارج</div></div>
+    <div class="vi"><div class="vi-de">Schlittschuh laufen</div><div class="vi-ar">يتزحلق على الجليد (تزلج)</div></div>
+  </div>
+
+  <p class="vst reveal">7 · ملابس مناسبة للطقس — مراجعة Unit 08</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">die Jacke</div><div class="vi-ar">الجاكيت</div></div>
+    <div class="vi"><div class="vi-de">der Regenschirm</div><div class="vi-ar">المظلة</div></div>
+    <div class="vi"><div class="vi-de">der Regenmantel</div><div class="vi-ar">معطف المطر</div></div>
+    <div class="vi"><div class="vi-de">die Mütze</div><div class="vi-ar">القبعة الشتوية</div></div>
+    <div class="vi"><div class="vi-de">der Schal</div><div class="vi-ar">الوشاح / الشال</div></div>
+    <div class="vi"><div class="vi-de">die Handschuhe</div><div class="vi-ar">القفازات</div></div>
+    <div class="vi"><div class="vi-de">die Sonnenbrille</div><div class="vi-ar">النظارة الشمسية</div></div>
+    <div class="vi"><div class="vi-de">die Sandalen</div><div class="vi-ar">الصندل</div></div>
+    <div class="vi"><div class="vi-de">die Stiefel</div><div class="vi-ar">الجزمة / البوت</div></div>
+    <div class="vi"><div class="vi-de">die Badehose</div><div class="vi-ar">سروال السباحة</div></div>
+  </div>
+
+  <p class="vst reveal">8 · تعابير وكلمات مفيدة — Nützliche Wörter</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">draußen</div><div class="vi-ar">في الخارج</div></div>
+    <div class="vi"><div class="vi-de">drinnen</div><div class="vi-ar">في الداخل</div></div>
+    <div class="vi"><div class="vi-de">manchmal</div><div class="vi-ar">أحياناً</div></div>
+    <div class="vi"><div class="vi-de">meistens</div><div class="vi-ar">غالباً</div></div>
+    <div class="vi"><div class="vi-de">selten</div><div class="vi-ar">نادراً</div></div>
+    <div class="vi"><div class="vi-de">normalerweise</div><div class="vi-ar">عادةً</div></div>
+    <div class="vi"><div class="vi-de">hoffentlich</div><div class="vi-ar">أتمنى / يا رب</div></div>
+    <div class="vi"><div class="vi-de">zum Glück</div><div class="vi-ar">لحسن الحظ</div></div>
+    <div class="vi"><div class="vi-de">es sieht nach Regen aus</div><div class="vi-ar">يبدو أنها ستمطر</div></div>
+    <div class="vi"><div class="vi-de">das Gewitter</div><div class="vi-ar">العاصفة الرعدية</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">الثقافة والأخطاء الشائعة</div><div class="sec-d">كيف يتعامل الألمان مع الطقس · 7 أخطاء يجب تجنبها</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🌦️</span><div class="cc-title">الطقس = موضوع الحديث الأول</div><div class="cc-text">في ألمانيا (وكل أوروبا تقريباً)، الطقس هو الموضوع الأول لكسر الجمود (Smalltalk) — في المصعد، في طابور السوبرماركت، أو مع زميل جديد. تعلّم الجمل الجاهزة في هذه الوحدة سيخدمك يومياً.</div></div>
+    <div class="culture-card"><span class="cc-icon">☀️</span><div class="cc-title">"Sonnentag" — يوم الشمس</div><div class="cc-text">عندما تظهر الشمس بعد أيام غائمة، يخرج الألمان فوراً إلى الحدائق وBiergärten — حتى لو كانت درجة الحرارة 15° فقط! "Sonne tanken" (التزود بالشمس) عبارة شائعة جداً.</div></div>
+    <div class="culture-card"><span class="cc-icon">🌡️</span><div class="cc-title">Celsius وليس Fahrenheit</div><div class="cc-text">ألمانيا تستخدم درجة سيلسيوس (Celsius) دائماً. إذا كنت معتاداً على فهرنهايت: 0°C = 32°F، و 20°C ≈ 68°F (يوم معتدل ولطيف)، و 30°C ≈ 86°F (حار جداً).</div></div>
+    <div class="culture-card"><span class="cc-icon">🧥</span><div class="cc-title">Zwiebelprinzip — مبدأ البصلة</div><div class="cc-text">بسبب الطقس المتغير، يلبس الألمان طبقات متعددة (مثل البصلة) — قميص، ثم سترة خفيفة، ثم جاكيت — حتى يمكن خلع أو إضافة طبقة بسهولة حسب الطقس خلال اليوم.</div></div>
+    <div class="culture-card"><span class="cc-icon">☔</span><div class="cc-title">الـ Regenschirm دائماً معك</div><div class="cc-text">الطقس الألماني يتغير بسرعة كبيرة — قد تكون الشمس مشرقة في الصباح وتمطر بعد ساعة. لهذا يحمل كثير من الناس مظلة صغيرة في حقيبتهم دائماً، "للاحتياط".</div></div>
+    <div class="culture-card"><span class="cc-icon">❄️</span><div class="cc-title">عطلة الشتاء وكارنفال</div><div class="cc-text">في فبراير غالباً عطلة شتوية قصيرة (Winterferien) في بعض الولايات، وتتزامن أحياناً مع موسم Karneval/Fasching — احتفالات الزينة والتنكر قبل بداية الربيع.</div></div>
+  </div>
+  <p class="vst reveal">⚠️ 7 أخطاء شائعة يجب تجنبها</p>
+  <div class="reveal">
+    <div class="mistake-item"><div class="mi-wrong">Ich bin kalt.</div><div class="mi-arrow">←</div><div><div class="mi-right">Mir ist kalt.</div><div class="mi-explain">Ich bin kalt = أنا شخص بارد المشاعر! استخدم الـ Dativ للشعور بالبرد.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">Es gibt ein Park.</div><div class="mi-arrow">←</div><div><div class="mi-right">Es gibt einen Park.</div><div class="mi-explain">es gibt + Akkusativ — der Park مذكر، فيصبح einen في Akkusativ.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">Im Winter es schneit.</div><div class="mi-arrow">←</div><div><div class="mi-right">Im Winter schneit es.</div><div class="mi-explain">قاعدة V2 — الفعل في المكان الثاني دائماً، حتى لو بدأت بظرف.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">Es ist 20 Grad.</div><div class="mi-arrow">←</div><div><div class="mi-right">Es sind 20 Grad.</div><div class="mi-explain">مع أكثر من درجة واحدة، الفعل يتفق مع العدد: sind وليس ist.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">Heute ist Wetter schön.</div><div class="mi-arrow">←</div><div><div class="mi-right">Heute ist das Wetter schön.</div><div class="mi-explain">لا تنسَ المقال das قبل Wetter — الأسماء الألمانية تحتاج مقال دائماً.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">In Frühling ist es warm.</div><div class="mi-arrow">←</div><div><div class="mi-right">Im Frühling ist es warm.</div><div class="mi-explain">مع كل الفصول والأشهر نستخدم im (= in dem) — تعبير ثابت لا يتغير.</div></div></div>
+    <div class="mistake-item"><div class="mi-wrong">Wenn es regnet, ich bleibe zuhause.</div><div class="mi-arrow">←</div><div><div class="mi-right">Wenn es regnet, bleibe ich zuhause.</div><div class="mi-explain">بعد جملة wenn، الفعل يأتي مباشرة بعد الفاصلة (V2 في الجملة الرئيسية).</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين — 32 سؤال</div><div class="sec-d">6 مجموعات تمارين — لا تنظر للحل قبل المحاولة</div></div></div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">1 / 6 — أكمل بفعل أو تعبير الطقس المناسب</div>
+    <div class="ex-q">
+      <div class="ex-q-text">1. Im Winter <span class="blank">___</span> es oft. (الثلج)</div>
+      <div class="ex-opts" id="opts1">
+        <button class="ex-btn" data-a="schneit" onclick="check(1,this)">schneit</button>
+        <button class="ex-btn" data-a="regnet" onclick="check(1,this)">regnet</button>
+        <button class="ex-btn" data-a="scheint" onclick="check(1,this)">scheint</button>
+      </div>
+      <div class="ex-fb" id="fb1"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">2. Im Sommer <span class="blank">___</span> die Sonne den ganzen Tag.</div>
+      <div class="ex-opts" id="opts2">
+        <button class="ex-btn" data-a="scheint" onclick="check(2,this)">scheint</button>
+        <button class="ex-btn" data-a="regnet" onclick="check(2,this)">regnet</button>
+        <button class="ex-btn" data-a="schneit" onclick="check(2,this)">schneit</button>
+      </div>
+      <div class="ex-fb" id="fb2"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">3. Vorsicht, draußen <span class="blank">___</span> es total! Nimm den Regenschirm.</div>
+      <div class="ex-opts" id="opts3">
+        <button class="ex-btn" data-a="regnet" onclick="check(3,this)">regnet</button>
+        <button class="ex-btn" data-a="schneit" onclick="check(3,this)">schneit</button>
+        <button class="ex-btn" data-a="friert" onclick="check(3,this)">friert</button>
+      </div>
+      <div class="ex-fb" id="fb3"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">4. Im Herbst ist es oft <span class="blank">___</span> — die Blätter fliegen überall.</div>
+      <div class="ex-opts" id="opts4">
+        <button class="ex-btn" data-a="windig" onclick="check(4,this)">windig</button>
+        <button class="ex-btn" data-a="sonnig" onclick="check(4,this)">sonnig</button>
+        <button class="ex-btn" data-a="heiß" onclick="check(4,this)">heiß</button>
+      </div>
+      <div class="ex-fb" id="fb4"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">5. Heute sind es 35 Grad — es ist sehr <span class="blank">___</span>!</div>
+      <div class="ex-opts" id="opts5">
+        <button class="ex-btn" data-a="heiß" onclick="check(5,this)">heiß</button>
+        <button class="ex-btn" data-a="kalt" onclick="check(5,this)">kalt</button>
+        <button class="ex-btn" data-a="kühl" onclick="check(5,this)">kühl</button>
+      </div>
+      <div class="ex-fb" id="fb5"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">6. Im Frühling wird das Wetter langsam <span class="blank">___</span>.</div>
+      <div class="ex-opts" id="opts6">
+        <button class="ex-btn" data-a="wärmer" onclick="check(6,this)">wärmer</button>
+        <button class="ex-btn" data-a="kälter" onclick="check(6,this)">kälter</button>
+        <button class="ex-btn" data-a="dunkler" onclick="check(6,this)">dunkler</button>
+      </div>
+      <div class="ex-fb" id="fb6"></div>
+    </div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">2 / 6 — الفصول والأشهر والثقافة</div>
+    <div class="ex-q">
+      <div class="ex-q-text">7. Welcher Monat gehört zum Winter?</div>
+      <div class="ex-opts" id="opts7">
+        <button class="ex-btn" data-a="Dezember" onclick="check(7,this)">Dezember</button>
+        <button class="ex-btn" data-a="Juli" onclick="check(7,this)">Juli</button>
+        <button class="ex-btn" data-a="April" onclick="check(7,this)">April</button>
+      </div>
+      <div class="ex-fb" id="fb7"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">8. "Im Sommer fahren viele Deutsche in Urlaub." — ما معنى "im Sommer"؟</div>
+      <div class="ex-opts" id="opts8">
+        <button class="ex-btn" data-a="في الصيف" onclick="check(8,this)">في الصيف</button>
+        <button class="ex-btn" data-a="في الشتاء" onclick="check(8,this)">في الشتاء</button>
+        <button class="ex-btn" data-a="كل يوم" onclick="check(8,this)">كل يوم</button>
+      </div>
+      <div class="ex-fb" id="fb8"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">9. بعد فصل Winter يأتي مباشرة...</div>
+      <div class="ex-opts" id="opts9">
+        <button class="ex-btn" data-a="Frühling" onclick="check(9,this)">Frühling</button>
+        <button class="ex-btn" data-a="Sommer" onclick="check(9,this)">Sommer</button>
+        <button class="ex-btn" data-a="Herbst" onclick="check(9,this)">Herbst</button>
+      </div>
+      <div class="ex-fb" id="fb9"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">10. في أي فصل تتفتح الأزهار وتُزهر الأشجار (es blüht)؟</div>
+      <div class="ex-opts" id="opts10">
+        <button class="ex-btn" data-a="Frühling" onclick="check(10,this)">Frühling</button>
+        <button class="ex-btn" data-a="Winter" onclick="check(10,this)">Winter</button>
+        <button class="ex-btn" data-a="Herbst" onclick="check(10,this)">Herbst</button>
+      </div>
+      <div class="ex-fb" id="fb10"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">11. في ألمانيا، عطلة المدارس الصيفية الكبرى (Sommerferien) تكون عادة في...</div>
+      <div class="ex-opts" id="opts11">
+        <button class="ex-btn" data-a="Juli/August" onclick="check(11,this)">Juli/August</button>
+        <button class="ex-btn" data-a="Januar" onclick="check(11,this)">Januar</button>
+        <button class="ex-btn" data-a="März" onclick="check(11,this)">März</button>
+      </div>
+      <div class="ex-fb" id="fb11"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">12. "Der Herbst ist meine Lieblingsjahreszeit." — ما معنى "der Herbst"؟</div>
+      <div class="ex-opts" id="opts12">
+        <button class="ex-btn" data-a="الخريف" onclick="check(12,this)">الخريف</button>
+        <button class="ex-btn" data-a="الربيع" onclick="check(12,this)">الربيع</button>
+        <button class="ex-btn" data-a="الصيف" onclick="check(12,this)">الصيف</button>
+      </div>
+      <div class="ex-fb" id="fb12"></div>
+    </div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">3 / 6 — ترجم من العربية إلى الألمانية</div>
+    <div class="ex-q">
+      <div class="ex-q-text">13. "إنها تمطر اليوم."</div>
+      <div class="ex-opts" id="opts13">
+        <button class="ex-btn" data-a="Es regnet heute." onclick="check(13,this)">Es regnet heute.</button>
+        <button class="ex-btn" data-a="Heute es regnet." onclick="check(13,this)">Heute es regnet.</button>
+        <button class="ex-btn" data-a="Es heute regnet." onclick="check(13,this)">Es heute regnet.</button>
+      </div>
+      <div class="ex-fb" id="fb13"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">14. "هل هناك مطعم هنا؟"</div>
+      <div class="ex-opts" id="opts14">
+        <button class="ex-btn" data-a="Gibt es hier ein Restaurant?" onclick="check(14,this)">Gibt es hier ein Restaurant?</button>
+        <button class="ex-btn" data-a="Es gibt hier ein Restaurant?" onclick="check(14,this)">Es gibt hier ein Restaurant?</button>
+        <button class="ex-btn" data-a="Hier gibt ein Restaurant?" onclick="check(14,this)">Hier gibt ein Restaurant?</button>
+      </div>
+      <div class="ex-fb" id="fb14"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">15. "الجو بارد جداً اليوم."</div>
+      <div class="ex-opts" id="opts15">
+        <button class="ex-btn" data-a="Es ist heute sehr kalt." onclick="check(15,this)">Es ist heute sehr kalt.</button>
+        <button class="ex-btn" data-a="Ich bin heute sehr kalt." onclick="check(15,this)">Ich bin heute sehr kalt.</button>
+        <button class="ex-btn" data-a="Heute sehr kalt ist es." onclick="check(15,this)">Heute sehr kalt ist es.</button>
+      </div>
+      <div class="ex-fb" id="fb15"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">16. "أنا أشعر بالبرد." (يداي بردانة)</div>
+      <div class="ex-opts" id="opts16">
+        <button class="ex-btn" data-a="Mir ist kalt." onclick="check(16,this)">Mir ist kalt.</button>
+        <button class="ex-btn" data-a="Ich bin kalt." onclick="check(16,this)">Ich bin kalt.</button>
+        <button class="ex-btn" data-a="Ich habe kalt." onclick="check(16,this)">Ich habe kalt.</button>
+      </div>
+      <div class="ex-fb" id="fb16"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">17. "هل ستثلج غداً؟"</div>
+      <div class="ex-opts" id="opts17">
+        <button class="ex-btn" data-a="Schneit es morgen?" onclick="check(17,this)">Schneit es morgen?</button>
+        <button class="ex-btn" data-a="Es schneit morgen?" onclick="check(17,this)">Es schneit morgen?</button>
+        <button class="ex-btn" data-a="Morgen es schneit?" onclick="check(17,this)">Morgen es schneit?</button>
+      </div>
+      <div class="ex-fb" id="fb17"></div>
+    </div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">4 / 6 — صحيح أم خطأ؟</div>
+    <div class="ex-q">
+      <div class="ex-q-text">18. "Es gibt ein Park in der Stadt." — هل الجملة صحيحة؟</div>
+      <div class="ex-opts" id="opts18">
+        <button class="ex-btn" data-a="خطأ — يجب einen Park" onclick="check(18,this)">خطأ — يجب einen Park</button>
+        <button class="ex-btn" data-a="صحيح" onclick="check(18,this)">صحيح</button>
+      </div>
+      <div class="ex-fb" id="fb18"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">19. "Im Winter es schneit oft." — هل الجملة صحيحة؟</div>
+      <div class="ex-opts" id="opts19">
+        <button class="ex-btn" data-a="خطأ — Im Winter schneit es oft" onclick="check(19,this)">خطأ — Im Winter schneit es oft</button>
+        <button class="ex-btn" data-a="صحيح" onclick="check(19,this)">صحيح</button>
+      </div>
+      <div class="ex-fb" id="fb19"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">20. "Mir ist kalt." — هل الجملة صحيحة؟</div>
+      <div class="ex-opts" id="opts20">
+        <button class="ex-btn" data-a="صحيح" onclick="check(20,this)">صحيح</button>
+        <button class="ex-btn" data-a="خطأ" onclick="check(20,this)">خطأ</button>
+      </div>
+      <div class="ex-fb" id="fb20"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">21. "Es regnet." (كجملة كاملة بمفردها) — هل الجملة صحيحة؟</div>
+      <div class="ex-opts" id="opts21">
+        <button class="ex-btn" data-a="صحيح" onclick="check(21,this)">صحيح</button>
+        <button class="ex-btn" data-a="خطأ — تحتاج فاعل آخر" onclick="check(21,this)">خطأ — تحتاج فاعل آخر</button>
+      </div>
+      <div class="ex-fb" id="fb21"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">22. "Heute ist das Wetter schön." — هل الجملة صحيحة؟</div>
+      <div class="ex-opts" id="opts22">
+        <button class="ex-btn" data-a="صحيح" onclick="check(22,this)">صحيح</button>
+        <button class="ex-btn" data-a="خطأ" onclick="check(22,this)">خطأ</button>
+      </div>
+      <div class="ex-fb" id="fb22"></div>
+    </div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">5 / 6 — أكمل الحوار</div>
+    <div class="ex-q">
+      <div class="ex-q-text">23. A: "Wie ist das Wetter heute?" — B: ___</div>
+      <div class="ex-opts" id="opts23">
+        <button class="ex-btn" data-a="Es ist sonnig und warm." onclick="check(23,this)">Es ist sonnig und warm.</button>
+        <button class="ex-btn" data-a="Ich bin müde." onclick="check(23,this)">Ich bin müde.</button>
+        <button class="ex-btn" data-a="Ich heiße Anna." onclick="check(23,this)">Ich heiße Anna.</button>
+      </div>
+      <div class="ex-fb" id="fb23"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">24. A: "Wie viel Grad sind es?" — B: ___</div>
+      <div class="ex-opts" id="opts24">
+        <button class="ex-btn" data-a="Es sind 20 Grad." onclick="check(24,this)">Es sind 20 Grad.</button>
+        <button class="ex-btn" data-a="Es ist 20 Uhr." onclick="check(24,this)">Es ist 20 Uhr.</button>
+        <button class="ex-btn" data-a="Es ist Montag." onclick="check(24,this)">Es ist Montag.</button>
+      </div>
+      <div class="ex-fb" id="fb24"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">25. A: "Regnet es morgen?" — B: "Ja, <span class="blank">___</span> regnet morgen."</div>
+      <div class="ex-opts" id="opts25">
+        <button class="ex-btn" data-a="es" onclick="check(25,this)">es</button>
+        <button class="ex-btn" data-a="er" onclick="check(25,this)">er</button>
+        <button class="ex-btn" data-a="das" onclick="check(25,this)">das</button>
+      </div>
+      <div class="ex-fb" id="fb25"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">26. أنت ترتجف من البرد، فتقول لصديقك:</div>
+      <div class="ex-opts" id="opts26">
+        <button class="ex-btn" data-a="Mir ist kalt!" onclick="check(26,this)">Mir ist kalt!</button>
+        <button class="ex-btn" data-a="Ich bin Lehrer!" onclick="check(26,this)">Ich bin Lehrer!</button>
+        <button class="ex-btn" data-a="Es gibt Brot." onclick="check(26,this)">Es gibt Brot.</button>
+      </div>
+      <div class="ex-fb" id="fb26"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">27. "Gibt es heute Schule?" — ما معنى هذا السؤال؟</div>
+      <div class="ex-opts" id="opts27">
+        <button class="ex-btn" data-a="هل يوجد دوام مدرسي اليوم؟" onclick="check(27,this)">هل يوجد دوام مدرسي اليوم؟</button>
+        <button class="ex-btn" data-a="كيف الطقس اليوم؟" onclick="check(27,this)">كيف الطقس اليوم؟</button>
+        <button class="ex-btn" data-a="هل المدرسة كبيرة؟" onclick="check(27,this)">هل المدرسة كبيرة؟</button>
+      </div>
+      <div class="ex-fb" id="fb27"></div>
+    </div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">6 / 6 — مفردات وثقافة</div>
+    <div class="ex-q">
+      <div class="ex-q-text">28. ما عكس "warm"؟</div>
+      <div class="ex-opts" id="opts28">
+        <button class="ex-btn" data-a="kalt" onclick="check(28,this)">kalt</button>
+        <button class="ex-btn" data-a="heiß" onclick="check(28,this)">heiß</button>
+        <button class="ex-btn" data-a="windig" onclick="check(28,this)">windig</button>
+      </div>
+      <div class="ex-fb" id="fb28"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">29. "Es donnert und blitzt." — تصف أي حالة جو؟</div>
+      <div class="ex-opts" id="opts29">
+        <button class="ex-btn" data-a="عاصفة رعدية (رعد وبرق)" onclick="check(29,this)">عاصفة رعدية (رعد وبرق)</button>
+        <button class="ex-btn" data-a="طقس مشمس هادئ" onclick="check(29,this)">طقس مشمس هادئ</button>
+        <button class="ex-btn" data-a="ضباب كثيف" onclick="check(29,this)">ضباب كثيف</button>
+      </div>
+      <div class="ex-fb" id="fb29"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">30. في ألمانيا، الحديث عن الطقس (das Wetter) يُعتبر...</div>
+      <div class="ex-opts" id="opts30">
+        <button class="ex-btn" data-a="موضوع حديث آمن ومحايد بين الغرباء" onclick="check(30,this)">موضوع حديث آمن ومحايد بين الغرباء</button>
+        <button class="ex-btn" data-a="موضوع شخصي حساس" onclick="check(30,this)">موضوع شخصي حساس</button>
+        <button class="ex-btn" data-a="موضوع ممنوع في العمل" onclick="check(30,this)">موضوع ممنوع في العمل</button>
+      </div>
+      <div class="ex-fb" id="fb30"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">31. "die Wettervorhersage" تعني؟</div>
+      <div class="ex-opts" id="opts31">
+        <button class="ex-btn" data-a="نشرة/توقعات الأحوال الجوية" onclick="check(31,this)">نشرة/توقعات الأحوال الجوية</button>
+        <button class="ex-btn" data-a="حرارة الجسم" onclick="check(31,this)">حرارة الجسم</button>
+        <button class="ex-btn" data-a="موسم الأمطار" onclick="check(31,this)">موسم الأمطار</button>
+      </div>
+      <div class="ex-fb" id="fb31"></div>
+    </div>
+    <div class="ex-q">
+      <div class="ex-q-text">32. لماذا نقول "Mir ist kalt" وليس "Ich bin kalt"؟</div>
+      <div class="ex-opts" id="opts32">
+        <button class="ex-btn" data-a="لأن Ich bin kalt تصف الشخصية لا الشعور بالبرد" onclick="check(32,this)">لأن Ich bin kalt تصف الشخصية لا الشعور بالبرد</button>
+        <button class="ex-btn" data-a="لأنهما متطابقتان تماماً" onclick="check(32,this)">لأنهما متطابقتان تماماً</button>
+        <button class="ex-btn" data-a="لأن kalt صفة ممنوعة مع ich" onclick="check(32,this)">لأن kalt صفة ممنوعة مع ich</button>
+      </div>
+      <div class="ex-fb" id="fb32"></div>
+    </div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">عرض النتيجة النهائية</button>
+  <div class="score-box" id="scoreBox">
+    <div class="score-num" id="scoreNum">0/32</div>
+    <div class="score-sub">النتيجة</div>
+    <div class="score-msg" id="scoreMsg"></div>
+  </div>
+  <button class="reset-btn" onclick="resetAll()">إعادة كل التمارين من الصفر</button>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">3 مهام — اكتب بيدك، لا تكتفِ بالقراءة</div></div></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — صف طقس اليوم وكل فصل</div>
+    <div class="wt-text">اكتب 6-8 جمل: 2 جمل عن طقس اليوم الحالي (استخدم Es ist ... / Es gibt ... / es regnet/schneit/etc.)، وجملة واحدة عن كل فصل من الفصول الأربعة في بلدك (Im Frühling ... / Im Sommer ... إلخ).</div>
+    <ul class="wt-list">
+      <li>استخدم على الأقل 3 تعابير es مختلفة</li>
+      <li>استخدم كل الفصول الأربعة مع im</li>
+      <li>استخدم صفة حرارة واحدة على الأقل (kalt, warm, heiß...)</li>
+    </ul>
+    <textarea class="wt-input" placeholder="اكتب هنا..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — 3 حوارات قصيرة</div>
+    <div class="wt-text">اكتب 3 حوارات قصيرة (3-4 جمل لكل حوار) في المواضيع التالية:</div>
+    <ul class="wt-list">
+      <li>حوار 1: صديق يسألك عن الطقس عندك اليوم</li>
+      <li>حوار 2: تخطيط نشاط مع صديق حسب الطقس (وإذا/إذا لم — wenn)</li>
+      <li>حوار 3: أحدكم يشعر بالبرد أو الحر ويطلب من الآخر فعل شيء (Mir ist kalt/heiß...)</li>
+    </ul>
+    <textarea class="wt-input" placeholder="اكتب الحوارات الثلاثة هنا..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — جدول تعابير es من الذاكرة</div>
+    <div class="wt-text">بدون النظر إلى قسم 03، اكتب من ذاكرتك كل تعابير "es" التي تعلمتها (es regnet, es schneit, es gibt...) مع معناها بالعربية. بعد الانتهاء، راجع قسم 03 وأضف ما نسيته بخط مختلف.</div>
+    <textarea class="wt-input" placeholder="es regnet = ...&#10;es schneit = ...&#10;es gibt = ..."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مصادر إضافية</div><div class="sec-d">للتعميق والممارسة الإضافية بعد إنهاء الوحدة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">🗂️</span><div class="res-name">Anki</div><div class="res-type">تطبيق</div><div class="res-desc">أنشئ مجموعة بطاقات (deck) لمفردات الطقس والفصول الـ96 — راجعها يومياً 10 دقائق.</div></div>
+    <div class="res-card"><span class="res-icon">🎬</span><div class="res-name">DW Learn German</div><div class="res-type">يوتيوب</div><div class="res-desc">قناة Deutsche Welle — أكمل سلسلة Nicos Weg وابحث عن حلقات أخرى عن الطقس والمواسم.</div></div>
+    <div class="res-card"><span class="res-icon">📖</span><div class="res-name">Learn German Original</div><div class="res-type">يوتيوب</div><div class="res-desc">نفس القناة المستخدمة في فيديوهات هذه الوحدة — تصفح دروسها A1 الأخرى لمراجعة شاملة.</div></div>
+    <div class="res-card"><span class="res-icon">📕</span><div class="res-name">Menschen A1.2 / A2.1</div><div class="res-type">كتاب</div><div class="res-desc">وحدة "Wetter und Jahreszeiten" موجودة عادة في الفصول الأولى من المستوى A2 — تمارين مكتوبة إضافية.</div></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German — Podcast</div><div class="res-type">بودكاست</div><div class="res-desc">بحث عن حلقة "Das Wetter in Deutschland" — استماع بسرعة بطيئة مع نص مكتوب (Transkript).</div></div>
+    <div class="res-card"><span class="res-icon">🏛️</span><div class="res-name">Goethe-Institut</div><div class="res-type">موقع رسمي</div><div class="res-desc">تمارين ومفردات A1/A2 رسمية — بحث عن "Wetter Wortschatz Goethe A1".</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">منصة لغة</div><div class="res-desc">احجز جلسة 30 دقيقة وتحدث فقط عن الطقس والفصول مع معلم — تطبيق مباشر لكل ما تعلمته.</div></div>
+    <div class="res-card"><span class="res-icon">🦉</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق</div><div class="res-desc">وحدة "Weather" / "Seasons" — تمارين سريعة يومية لتثبيت es regnet/es schneit/es gibt.</div></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">wetter.de / DWD</div><div class="res-type">موقع حقيقي — جديد!</div><div class="res-desc">افتح موقع توقعات الطقس الألماني الحقيقي (Deutscher Wetterdienst) واقرأ نشرة اليوم — تطبيق فوري لمفردات الوحدة على واقع حقيقي.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الدراسة — 4 أيام</div><div class="sec-d">2-3 ساعات يومياً · لا تتجاوز يومين بدون مراجعة</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">الفصول والطقس الأساسي</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 1 (Monate und Jahreszeiten) + مهمة الاستماع</li>
+        <li class="vl">شاهد فيديو 2 (Wie ist das Wetter) + مهمة الاستماع</li>
+        <li>ادرس قسم 01 (الفصول الأربعة) كاملاً</li>
+        <li>ادرس قسم 02 (الطقس) واحفظ صفات الطقس (10 كلمات)</li>
+        <li>اقرأ حوار 1 و 2 بصوت عالٍ 3 مرات</li>
+      </ul>
+      <div class="day-time">⏱️ 2-3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">es-تعابير + بنية الجملة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 3 (Nicos Weg — Jahreszeiten) + مهمة الاستماع</li>
+        <li>ادرس قسم 03 (es-تعابير) كاملاً مع الجدول</li>
+        <li>احفظ جدول أفعال الطقس بـ es (8 تعابير)</li>
+        <li>ادرس قسم 05 (بنية الجملة) — V2 مع es و wenn</li>
+        <li class="wl">مهمة الكتابة 3 — جدول es من الذاكرة</li>
+        <li>حل تمرين 1 و 4</li>
+      </ul>
+      <div class="day-time">⏱️ 2-3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">الحرارة + المفردات + ثقافة + كتابة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 4 (Easy German — حوارات حقيقية) + مهمة الاستماع</li>
+        <li>ادرس قسم 04 (درجة الحرارة) — احفظ Mir ist kalt/warm/heiß</li>
+        <li>ادرس قسم 06 (المفردات 96 كلمة) وقسم 07 (الثقافة)</li>
+        <li>اقرأ حوار 3 و 4 بصوت عالٍ 3 مرات</li>
+        <li class="wl">مهمة الكتابة 1 و 2</li>
+        <li>حل تمرين 2، 3، و 5</li>
+      </ul>
+      <div class="day-time">⏱️ 2-3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">مراجعة شاملة + اختبار</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيلم Nicos Weg الكامل (فيديو 5) — 15 دقيقة + مهمة الاستماع</li>
+        <li>غطّ العمود العربي — اختبر نفسك في المفردات 96</li>
+        <li>صرّف جدول تعابير es-الطقس شفهياً بدون نظر</li>
+        <li>أعد حل كل التمارين الـ32 — هدفك 29+/32</li>
+        <li>راجع الأخطاء الشائعة السبعة جميعها</li>
+        <li>✅ إذا حصلت 28+/32 → انتقل إلى Unit 11</li>
+      </ul>
+      <div class="day-time">⏱️ 2-3 ساعات</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:1.5rem"><div class="note-title nt-gr">✅ قاعدة الانتقال للوحدة التالية</div><p>لا تنتقل إلى Unit 11 إلا إذا: (1) حصلت على 28/32 أو أكثر في التمارين، (2) تستطيع تكوين 5 جمل عن الطقس بـ es بدون مساعدة، (3) تستطيع قول "Mir ist kalt/warm" وفهم الفرق عن "Ich bin kalt". إذا لم تصل لهذا المستوى، أعد اليوم 2 و 3 فقط — لا حاجة لإعادة كل شيء.</p></div>
+</section>
+
+<footer>
+  <span class="ft-de">UNIT 10</span>
+  <p style="color:var(--gold);font-weight:700;">الطقس · الفصول · es regnet/schneit/gibt · درجات الحرارة · 32 تمرين · 5 فيديوهات</p>
+  <p style="margin-top:.5rem">A1 → A2 · المرحلة الثالثة · 4 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem">Unit 11 ← البيت والغرف · Dativ مع حروف الجر (in / an / auf) · mir, dir, ihm...</p>
+</footer>
+
+<script>
+const answers = {
+  1:"schneit", 2:"scheint", 3:"regnet", 4:"windig", 5:"heiß", 6:"wärmer",
+  7:"Dezember", 8:"في الصيف", 9:"Frühling", 10:"Frühling", 11:"Juli/August", 12:"الخريف",
+  13:"Es regnet heute.", 14:"Gibt es hier ein Restaurant?", 15:"Es ist heute sehr kalt.", 16:"Mir ist kalt.", 17:"Schneit es morgen?",
+  18:"خطأ — يجب einen Park", 19:"خطأ — Im Winter schneit es oft", 20:"صحيح", 21:"صحيح", 22:"صحيح",
+  23:"Es ist sonnig und warm.", 24:"Es sind 20 Grad.", 25:"es", 26:"Mir ist kalt!", 27:"هل يوجد دوام مدرسي اليوم؟",
+  28:"kalt", 29:"عاصفة رعدية (رعد وبرق)", 30:"موضوع حديث آمن ومحايد بين الغرباء", 31:"نشرة/توقعات الأحوال الجوية", 32:"لأن Ich bin kalt تصف الشخصية لا الشعور بالبرد"
+};
+
+const fb = {
+  1:{ok:"✅ صح! Im Winter schneit es oft — الثلج هو سيد الشتاء.", no:"❌ في الشتاء: es schneit (يتساقط الثلج)."},
+  2:{ok:"✅ ممتاز! die Sonne scheint = الشمس تشرق/تسطع.", no:"❌ مع الشمس نقول: die Sonne scheint."},
+  3:{ok:"✅ صح! es regnet = إنها تمطر.", no:"❌ مع المطر: es regnet — ولهذا نحتاج Regenschirm (المظلة)."},
+  4:{ok:"✅ صح! windig = عاصف — مناسب لطيران الأوراق في الخريف.", no:"❌ في الخريف غالباً: windig (عاصف)."},
+  5:{ok:"✅ ممتاز! 35 Grad = heiß جداً.", no:"❌ 35 درجة = heiß (حار جداً)."},
+  6:{ok:"✅ صح! في الربيع الطقس يصبح أدفأ تدريجياً — wärmer.", no:"❌ في الربيع: الطقس يصبح wärmer (أدفأ) لا kälter."},
+  7:{ok:"✅ صح! Dezember-Januar-Februar = Winter.", no:"❌ Winter = Dezember, Januar, Februar."},
+  8:{ok:"✅ صح! im Sommer = في الصيف.", no:"❌ im Sommer = في الصيف (مع حرف الجر im قبل الفصل)."},
+  9:{ok:"✅ صح! الترتيب: Winter → Frühling → Sommer → Herbst → Winter.", no:"❌ بعد Winter يأتي Frühling (الربيع)."},
+  10:{ok:"✅ صح! Frühling = موسم التفتح — blühen = يُزهر.", no:"❌ التفتح والإزهار يحدثان في Frühling (الربيع)."},
+  11:{ok:"✅ صح! Sommerferien تكون في يوليو/أغسطس — أطول عطلة في السنة الدراسية.", no:"❌ Sommerferien (العطلة الصيفية) تكون في يوليو/أغسطس."},
+  12:{ok:"✅ صح! der Herbst = الخريف.", no:"❌ der Herbst = الخريف (سبتمبر-أكتوبر-نوفمبر)."},
+  13:{ok:"✅ صح! Es regnet heute — es أولاً ثم الفعل ثانياً (V2).", no:"❌ الترتيب الصحيح: Es regnet heute (es أولاً، الفعل ثانياً)."},
+  14:{ok:"✅ ممتاز! في السؤال: الفعل أولاً → Gibt es...?", no:"❌ في الأسئلة: gibt يأتي أولاً → Gibt es hier ein Restaurant?"},
+  15:{ok:"✅ صح! Es ist + صفة = وصف الجو، لا Ich bin.", no:"❌ لوصف الجو نقول: Es ist... وليس Ich bin..."},
+  16:{ok:"✅ ممتاز! Mir ist kalt = أشعر بالبرد — Ich bin kalt تعني (أنا شخص بارد المعشر)!", no:"❌ للتعبير عن الشعور بالبرد: Mir ist kalt (ليس Ich bin kalt)."},
+  17:{ok:"✅ صح! سؤال نعم/لا → الفعل أولاً: Schneit es morgen?", no:"❌ في السؤال: الفعل أولاً → Schneit es morgen?"},
+  18:{ok:"✅ صح! es gibt + Akkusativ — der Park (مذكر) في Akkusativ = einen Park.", no:"❌ خطأ — بعد es gibt نستخدم Akkusativ: einen Park (der → einen)."},
+  19:{ok:"✅ صح! قاعدة V2 — الفعل ثانياً: Im Winter schneit es oft.", no:"❌ خطأ — الفعل يجب أن يكون ثانياً: Im Winter schneit es oft."},
+  20:{ok:"✅ صحيحة تماماً! Mir ist kalt = أشعر بالبرد.", no:"❌ هذه الجملة صحيحة! Mir ist kalt = أشعر بالبرد."},
+  21:{ok:"✅ صحيحة! es هنا هو الفاعل الشكلي الإلزامي — الجملة كاملة بذاتها.", no:"❌ هي صحيحة! es هو الفاعل الشكلي لأفعال الطقس — لا حاجة لفاعل آخر."},
+  22:{ok:"✅ صحيحة! Heute (ظرف) + ist (فعل ثانياً) + das Wetter (فاعل) + schön.", no:"❌ هي صحيحة — Heute ist das Wetter schön (V2 محفوظة)."},
+  23:{ok:"✅ صح! للرد على Wie ist das Wetter نستخدم: Es ist + صفة.", no:"❌ الرد على Wie ist das Wetter = وصف الطقس: Es ist sonnig und warm."},
+  24:{ok:"✅ ممتاز! مع درجة الحرارة: Es sind ... Grad (sind وليس ist مع الأرقام).", no:"❌ مع درجات الحرارة (أكثر من 1): Es sind ... Grad."},
+  25:{ok:"✅ صح! es يبقى الفاعل الشكلي في الجواب أيضاً.", no:"❌ الفاعل الشكلي دائماً es — Ja, es regnet morgen."},
+  26:{ok:"✅ صح! Mir ist kalt = أنا بردان/ة.", no:"❌ التعبير عن البرد: Mir ist kalt!"},
+  27:{ok:"✅ صح! es gibt = هل يوجد/هناك — Gibt es...? = هل هناك...؟", no:"❌ Gibt es heute Schule? = هل هناك دوام/مدرسة اليوم؟ (es gibt = يوجد)."},
+  28:{ok:"✅ صح! warm ⇄ kalt.", no:"❌ عكس warm هو kalt."},
+  29:{ok:"✅ صح! donnern = يرعد · blitzen = يبرق — عاصفة رعدية.", no:"❌ es donnert und blitzt = رعد وبرق (عاصفة رعدية)."},
+  30:{ok:"✅ صح! الطقس = أفضل موضوع لكسر الجمود (Smalltalk) في أي مكان.", no:"❌ الطقس في ألمانيا (وأوروبا عموماً) موضوع آمن للـ Smalltalk."},
+  31:{ok:"✅ صح! Wetter (طقس) + Vorhersage (تنبؤ) = نشرة الأحوال الجوية.", no:"❌ die Wettervorhersage = نشرة الأحوال الجوية / التوقعات."},
+  32:{ok:"✅ صح! Ich bin kalt تصف الشخصية لا الشعور — Mir ist kalt = أشعر بالبرد جسدياً.", no:"❌ Ich bin kalt تصف الشخصية لا الشعور — استخدم Mir ist kalt للشعور بالبرد."}
+};
+
+const results = {};
+
+function check(id, btn){
+  const opts = document.getElementById('opts'+id);
+  const buttons = opts.querySelectorAll('.ex-btn');
+  const correct = answers[id];
+  const chosen = btn.dataset.a;
+  buttons.forEach(b => b.disabled = true);
+  const fbEl = document.getElementById('fb'+id);
+  if(chosen === correct){
+    btn.classList.add('correct');
+    fbEl.textContent = fb[id].ok;
+    fbEl.className = 'ex-fb ok';
+    results[id] = true;
+  } else {
+    btn.classList.add('wrong');
+    buttons.forEach(b => { if(b.dataset.a === correct) b.classList.add('correct'); });
+    fbEl.textContent = fb[id].no;
+    fbEl.className = 'ex-fb no';
+    results[id] = false;
+  }
+}
+
+function showScore(){
+  const total = 32;
+  let score = 0;
+  for(let i=1;i<=total;i++){ if(results[i]) score++; }
+  const box = document.getElementById('scoreBox');
+  box.style.display = 'block';
+  document.getElementById('scoreNum').textContent = score + '/' + total;
+  let msg = '';
+  if(score >= 29){
+    msg = '🏆 ممتاز! أنت جاهز تماماً للانتقال إلى Unit 11 — Dativ والبيت.';
+  } else if(score >= 24){
+    msg = '👍 جيد جداً! راجع الأخطاء التي فاتتك ثم انتقل بثقة إلى Unit 11.';
+  } else if(score >= 17){
+    msg = '📚 لا بأس، لكن راجع قسم es-تعابير (03) ودرجة الحرارة (04) قبل المتابعة.';
+  } else {
+    msg = '🔁 يبدو أنك تحتاج وقتاً أطول مع هذه الوحدة — راجع الفيديوهات والقواعد من جديد، ثم أعد التمارين.';
+  }
+  document.getElementById('scoreMsg').textContent = msg;
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function resetAll(){
+  for(let id=1; id<=32; id++){
+    const opts = document.getElementById('opts'+id);
+    const buttons = opts.querySelectorAll('.ex-btn');
+    buttons.forEach(b => { b.disabled = false; b.classList.remove('correct','wrong'); });
+    const fbEl = document.getElementById('fb'+id);
+    fbEl.textContent = '';
+    fbEl.className = 'ex-fb';
+    delete results[id];
+  }
+  document.getElementById('scoreBox').style.display = 'none';
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.1});
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

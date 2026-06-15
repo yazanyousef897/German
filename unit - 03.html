@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 03 — FULL | الوقت · الأيام · التاريخ | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'03';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.col-block{background:var(--black);padding:1.8rem}
+.col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.ch-gold{color:var(--gold)}.ch-blue{color:var(--blue)}.ch-green{color:var(--green)}.ch-red{color:#ff6b6b}
+.row-item{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.row-item:last-child{border-bottom:none}
+.ri-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);min-width:200px;flex-shrink:0}
+.ri-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.ri-note{font-size:.7rem;color:var(--dim)}
+.clock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.clock-card{background:var(--gray);padding:1.4rem;text-align:center;transition:background .2s}
+.clock-card:hover{background:var(--gray3)}
+.clock-time-de{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold);line-height:1;margin-bottom:.3rem}
+.clock-digits{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--white);margin-bottom:.3rem;font-weight:700}
+.clock-note{font-size:.7rem;color:var(--dim);line-height:1.5}
+.days-week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.day-cell{background:var(--black);padding:1.2rem .6rem;text-align:center;transition:background .2s}
+.day-cell:hover{background:var(--gray)}
+.day-cell.weekend{background:rgba(204,0,0,.06)}
+.day-de{font-family:'JetBrains Mono',monospace;font-size:.78rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.day-ar{font-size:.68rem;color:var(--dim);margin-bottom:.3rem}
+.day-num-badge{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:rgba(255,206,0,.12);line-height:1}
+.months-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.month-card{background:var(--black);padding:1.1rem;text-align:center;transition:background .2s}
+.month-card:hover{background:var(--gray)}
+.month-num{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:rgba(255,206,0,.1);line-height:1;margin-bottom:.15rem}
+.month-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.month-ar{font-size:.7rem;color:var(--dim);margin-bottom:.25rem}
+.month-season{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase}
+.s-spring{color:#86efac}.s-summer{color:#fde047}.s-autumn{color:#fb923c}.s-winter{color:#93c5fd}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{color:var(--gold);background:rgba(255,206,0,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-green code{color:var(--green);background:rgba(34,197,94,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-red code{color:#ff6b6b;background:rgba(204,0,0,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.note-blue code{color:var(--blue);background:rgba(96,165,250,.08);font-family:'JetBrains Mono',monospace;padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-time{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.06)}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2)}
+.plan-card{background:var(--black);padding:1.7rem 1.2rem}
+.plan-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.plan-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.plan-tasks{list-style:none}
+.plan-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.plan-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.plan-tasks li.vl::before{content:'▶';color:var(--blue)}
+.plan-tasks li.wl::before{content:'✍';color:var(--purple)}
+.plan-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}.days-week-grid{grid-template-columns:repeat(4,1fr)}.months-grid{grid-template-columns:repeat(3,1fr)}.plan-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.hero-meta{gap:1.5rem}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}}
+@media(max-width:500px){.months-grid{grid-template-columns:repeat(2,1fr)}.plan-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 03 · FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#uhrzeit">الساعة</a></li>
+    <li><a href="#halb">halb/Viertel</a></li>
+    <li><a href="#tage">الأيام</a></li>
+    <li><a href="#monate">الأشهر</a></li>
+    <li><a href="#datum">التاريخ</a></li>
+    <li><a href="#adverbs">الظروف</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#kultur">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🟢 مبتدئ · Unit 03 · 4 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">الوقت</span> <span class="r">والأيام</span></h1>
+  <p class="hero-sub">الساعة الرسمية · halb وViertel · أيام الأسبوع · الأشهر · التاريخ · الظروف الزمنية</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">4</span><span class="hm-label">أيام دراسة</span></div>
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">90+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">فيديوهات الوحدة — Videos</div><div class="sec-d">6 فيديوهات مختارة — شاهدها بالترتيب حسب خطة الأيام</div></div></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/MQhR0AMNr_U" title="Learn German Original Time A1 Lesson 22" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">⏰ Learn German Original · A1 Lesson 22</div><div class="video-title">الساعة الرسمية — Die Uhrzeit (Offiziell)</div><div class="video-desc">درس متكامل عن قراءة الوقت الرسمي: neun Uhr، vierzehn Uhr dreißig. ابدأ بهذا الفيديو في اليوم الأول.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب 10 أوقات مختلفة بالألمانية الرسمية بعد الفيديو.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/wrTgVsmBfCk" title="Die Uhrzeit informell halb Viertel Test" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">⏰ Uhrzeit + Test · الوقت غير الرسمي</div><div class="video-title">halb · Viertel · nach · vor — مع اختبار</div><div class="video-desc">الجزء الأصعب في الوحدة: halb acht وViertel nach fünf. شاهده مرتين — مرة للفهم ومرة للتطبيق.</div><div class="video-task"><strong>مهمة:</strong> انتبه جيداً لـ halb — ⚠️ halb acht = 7:30 وليس 8:30!</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/dx_oH72IQHY" title="Monate Wochentage Jahreszeiten A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📅 Monate · Wochentage · Jahreszeiten A1</div><div class="video-title">الأشهر · أيام الأسبوع · الفصول</div><div class="video-desc">فيديو شامل يغطي Montag إلى Sonntag والأشهر الـ 12 والفصول الأربعة بطريقة بسيطة ومنظمة.</div><div class="video-task"><strong>مهمة:</strong> أعد الفيديو وقل كل يوم وشهر قبل أن تسمعه. مرة ثانية بدون نظر.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/44xYdQWki-M" title="Learn German with Anja Uhrzeit Lesson 59" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Learn German with Anja</div><div class="video-title">Die Uhrzeit بالتفصيل — Anja Lesson 59</div><div class="video-desc">أنجا تشرح الوقت بعمق ووضوح. ممتاز لفهم الفرق بين الصيغة الرسمية وغير الرسمية والسياق الصحيح لكل منهما.</div><div class="video-task"><strong>مهمة:</strong> اعمل جدول مقارنة: الوقت الرسمي | غير الرسمي | المثال.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1dE4B5MfhvE" title="German Adverbs Time Months Weekdays A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">📐 Grammar · Adverbs of Time A1</div><div class="video-title">الظروف الزمنية: heute · morgen · gestern</div><div class="video-desc">موضع الظروف في الجملة الألمانية + الأشهر والأيام والفصول. يشرح قاعدة V2 مع الزمن ببساطة.</div><div class="video-task"><strong>مهمة:</strong> اكتب 5 جمل عن أسبوعك باستخدام heute/morgen/gestern/am.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 DW Deutsch" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · المراجعة الختامية</div><div class="video-title">Nicos Weg — A1 الفيلم الكامل (للمراجعة)</div><div class="video-desc">استمع لاستخدام الوقت والأيام في سياق طبيعي حي. احفظه لليوم الرابع كمراجعة نهائية.</div><div class="video-task"><strong>لليوم الرابع:</strong> اكتب كل جملة تتضمن Uhrzeit أو Wochentag أو Datum من الفيلم.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- UHRZEIT OFFICIAL -->
+<section class="section" id="uhrzeit">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">الساعة الرسمية — Die offizielle Uhrzeit</div><div class="sec-d">طريقة المحطات والراديو · الساعة 24 · الأسهل للتعلم</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 طريقتان لقراءة الوقت في الألمانية</div><p>الطريقة <strong style="color:var(--white)">الرسمية</strong> (في المحطات والراديو والرسائل): <code>Es ist neun Uhr dreißig</code>. الطريقة <strong style="color:var(--white)">اليومية</strong> (في الكلام): <code>Es ist halb zehn</code>. سنبدأ بالرسمية لأنها منطقية وسهلة، ثم نتعلم اليومية مع halb وViertel في القسم التالي.</p></div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">كيف نسأل عن الوقت؟</div>
+      <div class="row-item"><div class="ri-de">Wie spät ist es?</div><div><div class="ri-ar">كم الساعة؟</div><div class="ri-note">الأكثر استخداماً يومياً</div></div></div>
+      <div class="row-item"><div class="ri-de">Wie viel Uhr ist es?</div><div><div class="ri-ar">كم الساعة؟ (رسمية أكثر)</div><div class="ri-note">في الراديو والأخبار</div></div></div>
+      <div class="row-item"><div class="ri-de">Entschuldigung, haben Sie die Uhrzeit?</div><div><div class="ri-ar">عفواً، كم الساعة عندك؟</div><div class="ri-note">مع غريب في الشارع</div></div></div>
+      <div class="row-item"><div class="ri-de">Hast du die Uhrzeit?</div><div><div class="ri-ar">كم الساعة عندك؟ (عادي)</div><div class="ri-note">مع الأصدقاء</div></div></div>
+      <div class="row-item"><div class="ri-de">Um wie viel Uhr...?</div><div><div class="ri-ar">في أي ساعة...؟</div><div class="ri-note">Um wie viel Uhr beginnt der Film?</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-blue">الصيغة الرسمية — Es ist [Zahl] Uhr [Minuten]</div>
+      <div class="row-item"><div class="ri-de">Es ist neun Uhr.</div><div><div class="ri-ar">الساعة 9:00</div><div class="ri-note">ساعة كاملة = Uhr فقط</div></div></div>
+      <div class="row-item"><div class="ri-de">Es ist neun Uhr fünfzehn.</div><div><div class="ri-ar">الساعة 9:15</div><div class="ri-note">Uhr + الدقائق بالكلمة</div></div></div>
+      <div class="row-item"><div class="ri-de">Es ist neun Uhr dreißig.</div><div><div class="ri-ar">الساعة 9:30</div><div class="ri-note">dreißig = ثلاثون</div></div></div>
+      <div class="row-item"><div class="ri-de">Es ist vierzehn Uhr.</div><div><div class="ri-ar">الساعة 14:00 — 2 مساءً</div><div class="ri-note">الساعة 24 في الرسمي</div></div></div>
+      <div class="row-item"><div class="ri-de">Es ist einundzwanzig Uhr dreißig.</div><div><div class="ri-ar">الساعة 21:30 — 9:30 مساءً</div><div class="ri-note">في القطار والتلفزيون</div></div></div>
+    </div>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">🕐 الساعة 24 — متى تُستخدم؟</div><p>ألمانيا تستخدم نظام الساعة 24 في: القطارات والطيران (<code>Abfahrt 18:45</code>)، الراديو والتلفزيون، المواعيد الطبية والرسمية. في الكلام اليومي مع الأصدقاء: الساعة 12. تعلّم الأعداد حتى 24 جيداً!</p></div>
+  <div class="clock-grid reveal">
+    <div class="clock-card"><div class="clock-time-de">Mitternacht</div><div class="clock-digits">00:00</div><div class="clock-note">منتصف الليل</div></div>
+    <div class="clock-card"><div class="clock-time-de">drei Uhr</div><div class="clock-digits">03:00</div><div class="clock-note">السادسة صباحاً</div></div>
+    <div class="clock-card"><div class="clock-time-de">sechs Uhr</div><div class="clock-digits">06:00</div><div class="clock-note">السادسة صباحاً</div></div>
+    <div class="clock-card"><div class="clock-time-de">neun Uhr</div><div class="clock-digits">09:00</div><div class="clock-note">التاسعة صباحاً</div></div>
+    <div class="clock-card"><div class="clock-time-de">Mittag</div><div class="clock-digits">12:00</div><div class="clock-note">الظهر</div></div>
+    <div class="clock-card"><div class="clock-time-de">fünfzehn Uhr</div><div class="clock-digits">15:00</div><div class="clock-note">3 بعد الظهر</div></div>
+    <div class="clock-card"><div class="clock-time-de">achtzehn Uhr</div><div class="clock-digits">18:00</div><div class="clock-note">6 مساءً</div></div>
+    <div class="clock-card"><div class="clock-time-de">einundzwanzig</div><div class="clock-digits">21:00</div><div class="clock-note">9 مساءً</div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — في محطة القطار</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Entschuldigung! Wann fährt der Zug nach Berlin?</div><div class="dl-ar">عفواً! متى يغادر القطار إلى برلين؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Der Zug fährt um vierzehn Uhr dreißig.</div><div class="dl-ar">القطار يغادر الساعة 14:30.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und wie spät ist es jetzt?</div><div class="dl-ar">وكم الساعة الآن؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Es ist dreizehn Uhr fünfzig. Sie haben noch zehn Minuten!</div><div class="dl-ar">الساعة 13:50. عندك عشر دقائق!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Danke! Auf Wiedersehen!</div><div class="dl-ar">شكراً! مع السلامة!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- HALB & VIERTEL -->
+<section class="section" id="halb">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">الوقت اليومي — halb · Viertel · nach · vor</div><div class="sec-d">⚠️ الأصعب في الوحدة — halb ≠ half past الإنجليزية!</div></div></div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ التحذير الذهبي — halb ≠ نصف بعد!</div><p>في الإنجليزية: <code>half eight</code> = 8:30. في الألمانية: <code>halb acht</code> = <strong style="color:var(--white)">7:30</strong> لأن halb تعني "نصف الطريق إلى الثامنة". القاعدة الذهبية: <strong style="color:var(--gold)">halb + رقم الساعة القادمة</strong> = 30 دقيقة قبلها. فـ halb neun = نصف الطريق إلى التاسعة = 8:30. كرر هذه الفكرة حتى تصبح تلقائية.</p></div>
+  <div class="clock-grid reveal">
+    <div class="clock-card"><div class="clock-time-de">nach</div><div class="clock-digits">بعد / past</div><div class="clock-note">zehn nach drei = 3:10</div></div>
+    <div class="clock-card"><div class="clock-time-de">vor</div><div class="clock-digits">قبل / to</div><div class="clock-note">zehn vor drei = 2:50</div></div>
+    <div class="clock-card"><div class="clock-time-de">Viertel</div><div class="clock-digits">ربع = 15 دقيقة</div><div class="clock-note">Viertel nach / Viertel vor</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb ⚠️</div><div class="clock-digits">+ الساعة القادمة!</div><div class="clock-note">halb zehn = 9:30</div></div>
+  </div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">nach — بعد (X minutes past)</div>
+      <div class="row-item"><div class="ri-de">Viertel nach fünf</div><div><div class="ri-ar">5:15 — ربع بعد الخامسة</div><div class="ri-note">= fünf Uhr fünfzehn رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">zwanzig nach drei</div><div><div class="ri-ar">3:20 — عشرين بعد الثالثة</div><div class="ri-note">= drei Uhr zwanzig رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">zehn nach acht</div><div><div class="ri-ar">8:10 — عشرة بعد الثامنة</div><div class="ri-note">= acht Uhr zehn رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">kurz nach zwei</div><div><div class="ri-ar">بُعيد الثانية (2:02–2:05)</div><div class="ri-note">kurz = لحظة قصيرة</div></div></div>
+      <div class="row-item"><div class="ri-de">fünf nach halb vier</div><div><div class="ri-ar">3:35 — خمس بعد نصف الرابعة</div><div class="ri-note">مستوى متقدم — للمعلومة فقط</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-red">vor — قبل (X minutes to)</div>
+      <div class="row-item"><div class="ri-de">Viertel vor sechs</div><div><div class="ri-ar">5:45 — ربع قبل السادسة</div><div class="ri-note">= fünf Uhr fünfundvierzig رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">zwanzig vor vier</div><div><div class="ri-ar">3:40 — عشرين قبل الرابعة</div><div class="ri-note">= drei Uhr vierzig رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">zehn vor sieben</div><div><div class="ri-ar">6:50 — عشرة قبل السابعة</div><div class="ri-note">= sechs Uhr fünfzig رسمياً</div></div></div>
+      <div class="row-item"><div class="ri-de">kurz vor neun</div><div><div class="ri-de" style="color:var(--dim);min-width:0">قُبيل التاسعة (8:55–8:58)</div><div class="ri-note">kurz = لحظة</div></div></div>
+      <div class="row-item"><div class="ri-de">fünf vor halb vier</div><div><div class="ri-ar">3:25 — خمس قبل نصف الرابعة</div><div class="ri-note">مستوى متقدم — للمعلومة فقط</div></div></div>
+    </div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 جدول halb الكامل — احفظه!</div><p><code>halb zwei</code> = 1:30 · <code>halb fünf</code> = 4:30 · <code>halb acht</code> = 7:30 ⚠️ · <code>halb elf</code> = 10:30 · <code>halb zwölf</code> = 11:30 · <code>halb eins</code> = 12:30<br>الحيلة: <strong style="color:var(--white)">فكّر في halb كـ "نصف الطريق إلى..."</strong> وليس "نصف بعد..."</p></div>
+  <div class="clock-grid reveal">
+    <div class="clock-card"><div class="clock-time-de">halb zwei</div><div class="clock-digits">1:30</div><div class="clock-note">نصف الطريق إلى الثانية</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb vier</div><div class="clock-digits">3:30</div><div class="clock-note">نصف الطريق إلى الرابعة</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb acht ⚠️</div><div class="clock-digits">7:30 وليس 8:30</div><div class="clock-note">نصف الطريق إلى الثامنة</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb elf</div><div class="clock-digits">10:30</div><div class="clock-note">نصف الطريق إلى الحادية عشرة</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb zwölf</div><div class="clock-digits">11:30</div><div class="clock-note">نصف الطريق إلى الثانية عشرة</div></div>
+    <div class="clock-card"><div class="clock-time-de">halb eins</div><div class="clock-digits">12:30 / 0:30</div><div class="clock-note">نصف الطريق إلى الواحدة</div></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — تحديد موعد قهوة</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wann treffen wir uns morgen?</div><div class="dl-ar">متى نلتقي غداً؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Um halb drei? Das ist um 14:30.</div><div class="dl-ar">الساعة halb drei؟ يعني 14:30.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Nein, zu spät! Vielleicht Viertel nach zwei?</div><div class="dl-ar">لا، متأخر! ربما Viertel nach zwei؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gut! Also Viertel nach zwei — das ist 14:15. Passt!</div><div class="dl-ar">تمام! إذاً الساعة 2:15 — يناسبني!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- TAGE DER WOCHE -->
+<section class="section" id="tage">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">أيام الأسبوع — Wochentage</div><div class="sec-d">Montag → Sonntag · am + يوم · jeden + يوم</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الأسبوع الألماني يبدأ بالاثنين</div><p>في ألمانيا التقويم يبدأ بـ <code>Montag</code> — وليس Sonntag كما في بعض الدول. لقول "في يوم كذا" استخدم <code>am + اسم اليوم</code>. لقول "كل يوم كذا" استخدم <code>jeden + اسم اليوم</code>.</p></div>
+  <div class="days-week-grid reveal">
+    <div class="day-cell"><div class="day-de">Montag</div><div class="day-ar">الاثنين</div><div class="day-num-badge">01</div></div>
+    <div class="day-cell"><div class="day-de">Dienstag</div><div class="day-ar">الثلاثاء</div><div class="day-num-badge">02</div></div>
+    <div class="day-cell"><div class="day-de">Mittwoch</div><div class="day-ar">الأربعاء</div><div class="day-num-badge">03</div></div>
+    <div class="day-cell"><div class="day-de">Donnerstag</div><div class="day-ar">الخميس</div><div class="day-num-badge">04</div></div>
+    <div class="day-cell"><div class="day-de">Freitag</div><div class="day-ar">الجمعة</div><div class="day-num-badge">05</div></div>
+    <div class="day-cell weekend"><div class="day-de">Samstag</div><div class="day-ar">السبت 🔴</div><div class="day-num-badge">06</div></div>
+    <div class="day-cell weekend"><div class="day-de">Sonntag</div><div class="day-ar">الأحد 🔴</div><div class="day-num-badge">07</div></div>
+  </div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">am + يوم — في يوم كذا</div>
+      <div class="row-item"><div class="ri-de">am Montag</div><div><div class="ri-ar">يوم الاثنين</div><div class="ri-note">am = an dem (مختصرة)</div></div></div>
+      <div class="row-item"><div class="ri-de">am Mittwoch</div><div><div class="ri-ar">يوم الأربعاء</div><div class="ri-note">Ich lerne am Mittwoch Deutsch.</div></div></div>
+      <div class="row-item"><div class="ri-de">am Wochenende</div><div><div class="ri-ar">في نهاية الأسبوع</div><div class="ri-note">السبت والأحد معاً</div></div></div>
+      <div class="row-item"><div class="ri-de">am Werktag</div><div><div class="ri-ar">في أيام العمل</div><div class="ri-note">Montag bis Freitag</div></div></div>
+      <div class="row-item"><div class="ri-de">am Abend / am Morgen</div><div><div class="ri-ar">مساءً / صباحاً</div><div class="ri-note">نفس الصيغة مع أوقات اليوم</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-blue">jeden + يوم — كل يوم كذا (تكرار)</div>
+      <div class="row-item"><div class="ri-de">jeden Montag</div><div><div class="ri-ar">كل اثنين (كل أسبوع)</div><div class="ri-note">jeden = كل (مذكر مفعول به)</div></div></div>
+      <div class="row-item"><div class="ri-de">jeden Freitag</div><div><div class="ri-ar">كل جمعة</div><div class="ri-note">Ich lerne jeden Freitag Deutsch.</div></div></div>
+      <div class="row-item"><div class="ri-de">Sonnabend</div><div><div class="ri-ar">السبت (شرق ألمانيا)</div><div class="ri-note">= Samstag — لهجة شرق ألمانيا</div></div></div>
+      <div class="row-item"><div class="ri-de">das Wochenende</div><div><div class="ri-ar">نهاية الأسبوع</div><div class="ri-note">Schönes Wochenende! = عطلة سعيدة!</div></div></div>
+      <div class="row-item"><div class="ri-de">der Werktag</div><div><div class="ri-ar">يوم العمل / يوم دراسي</div><div class="ri-note">عكس Wochenende و Feiertag</div></div></div>
+    </div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">موضع الوقت في الجملة — قاعدة V2 مع الزمن</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-time">am Montag</span><span class="sbox sbox-rest">Deutsch.</span><span class="sbox-ar">أتعلم الألمانية يوم الاثنين.</span></div>
+    <div class="satz-row"><span class="sbox sbox-time">Am Dienstag</span><span class="sbox sbox-verb">arbeite</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">nicht.</span><span class="sbox-ar">⚠️ الوقت أولاً → الفعل ثانياً دائماً!</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">schläft</span><span class="sbox sbox-time">am Wochenende</span><span class="sbox sbox-rest">lange.</span><span class="sbox-ar">ينام كثيراً في نهاية الأسبوع.</span></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — تحديد موعد دراسي</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wann hast du Zeit? Am Montag oder am Dienstag?</div><div class="dl-ar">متى عندك وقت؟ الاثنين أو الثلاثاء؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Am Montag bin ich leider beschäftigt. Aber am Dienstag um Viertel nach drei — also 15:15?</div><div class="dl-ar">الاثنين للأسف مشغول. لكن الثلاثاء الساعة 3:15؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Super! Also Dienstag, 15:15. Bis dann!</div><div class="dl-ar">ممتاز! إذاً الثلاثاء، 15:15. إلى اللقاء!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- MONATE & JAHRESZEITEN -->
+<section class="section" id="monate">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">الأشهر والفصول — Monate & Jahreszeiten</div><div class="sec-d">12 شهر · 4 فصول · im + شهر/فصل دائماً</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الأشهر سهلة للناطق بالعربية</div><p>كثير من الأشهر تشبه الإنجليزية: <code>Januar</code> = January، <code>Oktober</code> = October. الحرف الجار مع الأشهر والفصول دائماً: <code>im + شهر</code>. مثال: <code>im März</code> = في مارس. <code>Ich bin im Juli geboren.</code> = وُلدت في يوليو.</p></div>
+  <div class="months-grid reveal">
+    <div class="month-card"><div class="month-num">01</div><div class="month-de">Januar</div><div class="month-ar">يناير / كانون الثاني</div><div class="month-season s-winter">❄️ Winter</div></div>
+    <div class="month-card"><div class="month-num">02</div><div class="month-de">Februar</div><div class="month-ar">فبراير / شباط</div><div class="month-season s-winter">❄️ Winter</div></div>
+    <div class="month-card"><div class="month-num">03</div><div class="month-de">März</div><div class="month-ar">مارس / آذار</div><div class="month-season s-spring">🌸 Frühling</div></div>
+    <div class="month-card"><div class="month-num">04</div><div class="month-de">April</div><div class="month-ar">أبريل / نيسان</div><div class="month-season s-spring">🌸 Frühling</div></div>
+    <div class="month-card"><div class="month-num">05</div><div class="month-de">Mai</div><div class="month-ar">مايو / أيار</div><div class="month-season s-spring">🌸 Frühling</div></div>
+    <div class="month-card"><div class="month-num">06</div><div class="month-de">Juni</div><div class="month-ar">يونيو / حزيران</div><div class="month-season s-summer">☀️ Sommer</div></div>
+    <div class="month-card"><div class="month-num">07</div><div class="month-de">Juli</div><div class="month-ar">يوليو / تموز</div><div class="month-season s-summer">☀️ Sommer</div></div>
+    <div class="month-card"><div class="month-num">08</div><div class="month-de">August</div><div class="month-ar">أغسطس / آب</div><div class="month-season s-summer">☀️ Sommer</div></div>
+    <div class="month-card"><div class="month-num">09</div><div class="month-de">September</div><div class="month-ar">سبتمبر / أيلول</div><div class="month-season s-autumn">🍂 Herbst</div></div>
+    <div class="month-card"><div class="month-num">10</div><div class="month-de">Oktober</div><div class="month-ar">أكتوبر / تشرين الأول</div><div class="month-season s-autumn">🍂 Herbst</div></div>
+    <div class="month-card"><div class="month-num">11</div><div class="month-de">November</div><div class="month-ar">نوفمبر / تشرين الثاني</div><div class="month-season s-autumn">🍂 Herbst</div></div>
+    <div class="month-card"><div class="month-num">12</div><div class="month-de">Dezember</div><div class="month-ar">ديسمبر / كانون الأول</div><div class="month-season s-winter">❄️ Winter</div></div>
+  </div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">الفصول — Jahreszeiten</div>
+      <div class="row-item"><div class="ri-de">der Frühling 🌸</div><div><div class="ri-ar">الربيع</div><div class="ri-note">März – Mai · im Frühling</div></div></div>
+      <div class="row-item"><div class="ri-de">der Sommer ☀️</div><div><div class="ri-ar">الصيف</div><div class="ri-note">Juni – August · im Sommer</div></div></div>
+      <div class="row-item"><div class="ri-de">der Herbst 🍂</div><div><div class="ri-ar">الخريف</div><div class="ri-note">Sept. – Nov. · im Herbst</div></div></div>
+      <div class="row-item"><div class="ri-de">der Winter ❄️</div><div><div class="ri-ar">الشتاء</div><div class="ri-note">Dez. – Feb. · im Winter</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-blue">im + شهر أو فصل — أمثلة</div>
+      <div class="row-item"><div class="ri-de">im Januar</div><div><div class="ri-ar">في يناير</div><div class="ri-note">im = in dem (مختصرة)</div></div></div>
+      <div class="row-item"><div class="ri-de">im Sommer</div><div><div class="ri-ar">في الصيف</div><div class="ri-note">نفس الصيغة مع الفصول</div></div></div>
+      <div class="row-item"><div class="ri-de">im Herbst</div><div><div class="ri-ar">في الخريف</div><div class="ri-note">Ich liebe den Herbst.</div></div></div>
+      <div class="row-item"><div class="ri-de">Wann hast du Geburtstag?</div><div><div class="ri-ar">متى عيد ميلادك؟</div><div class="ri-note">Ich bin im März geboren. = وُلدت في مارس</div></div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- DAS DATUM -->
+<section class="section" id="datum">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">التاريخ — Das Datum</div><div class="sec-d">الأعداد الترتيبية · am ersten März · الكتابة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 التاريخ بالألمانية = اليوم أولاً</div><p>الألمان يكتبون: اليوم / الشهر / السنة. <code>01.03.2025</code> = الأول من مارس 2025. للتحدث: <code>am ersten März</code> = في الأول من مارس. الأعداد الترتيبية 1–19 تأخذ <code>-te</code> إلا استثناءات: erste، dritte، siebte، achte.</p></div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">الأعداد الترتيبية الأساسية</div>
+      <div class="row-item"><div class="ri-de">der erste (1.)</div><div><div class="ri-ar">الأول</div><div class="ri-note">⚠️ غير منتظم — erste وليس einte</div></div></div>
+      <div class="row-item"><div class="ri-de">der zweite (2.)</div><div><div class="ri-ar">الثاني</div><div class="ri-note">am zweiten = في الثاني</div></div></div>
+      <div class="row-item"><div class="ri-de">der dritte (3.)</div><div><div class="ri-ar">الثالث</div><div class="ri-note">⚠️ غير منتظم — dritte وليس dreite</div></div></div>
+      <div class="row-item"><div class="ri-de">der vierte — zehnte</div><div><div class="ri-ar">الرابع — العاشر</div><div class="ri-note">4–19 = عدد + te</div></div></div>
+      <div class="row-item"><div class="ri-de">der siebte (7.)</div><div><div class="ri-ar">السابع</div><div class="ri-note">⚠️ siebte وليس siebenTE</div></div></div>
+      <div class="row-item"><div class="ri-de">der achte (8.)</div><div><div class="ri-ar">الثامن</div><div class="ri-note">⚠️ achte وليس achtTE — لا تكرار</div></div></div>
+      <div class="row-item"><div class="ri-de">der zwanzigste (20.)</div><div><div class="ri-ar">العشرون</div><div class="ri-note">20+ = عدد + ste</div></div></div>
+      <div class="row-item"><div class="ri-de">der einunddreißigste (31.)</div><div><div class="ri-ar">الحادي والثلاثون</div><div class="ri-note">آخر يوم في الشهر</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-blue">السؤال والجواب عن التاريخ</div>
+      <div class="row-item"><div class="ri-de">Welches Datum haben wir heute?</div><div><div class="ri-ar">كم تاريخ اليوم؟</div><div class="ri-note">أو: Der Wievielte ist heute?</div></div></div>
+      <div class="row-item"><div class="ri-de">Heute ist der erste März.</div><div><div class="ri-ar">اليوم الأول من مارس</div><div class="ri-note">للإخبار — der + ordinal</div></div></div>
+      <div class="row-item"><div class="ri-de">Am ersten März...</div><div><div class="ri-ar">في الأول من مارس...</div><div class="ri-note">للحدث/الموعد — am + ordinal</div></div></div>
+      <div class="row-item"><div class="ri-de">Wann hast du Geburtstag?</div><div><div class="ri-ar">متى عيد ميلادك؟</div><div class="ri-note">Wann = متى</div></div></div>
+      <div class="row-item"><div class="ri-de">Mein Geburtstag ist am fünften Juli.</div><div><div class="ri-ar">عيد ميلادي في 5 يوليو</div><div class="ri-note">am + ordinal + Monat</div></div></div>
+      <div class="row-item"><div class="ri-de">Ich bin am dreizehnten Februar geboren.</div><div><div class="ri-ar">وُلدت في 13 فبراير</div><div class="ri-note">الصيغة الرسمية الكاملة</div></div></div>
+    </div>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">📅 كيف نكتب التاريخ في رسالة رسمية؟</div><p>في رسالة رسمية بالألمانية تكتب: <code>München, den 1. März 2025</code> — المدينة + den (مفعول به) + التاريخ. الكتابة المختصرة: <code>01.03.2025</code> — يوم / شهر / سنة.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- TEMPORAL ADVERBS -->
+<section class="section" id="adverbs">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">الظروف الزمنية — Temporaladverbien</div><div class="sec-d">heute · morgen · gestern · übermorgen · vorgestern + موضعها في الجملة</div></div></div>
+  <div class="clock-grid reveal">
+    <div class="clock-card"><div class="clock-time-de">vorgestern</div><div class="clock-digits">أول أمس</div><div class="clock-note">vor + gestern = قبل أمس</div></div>
+    <div class="clock-card"><div class="clock-time-de">gestern</div><div class="clock-digits">أمس</div><div class="clock-note">gestern Abend = أمس المساء</div></div>
+    <div class="clock-card"><div class="clock-time-de">heute</div><div class="clock-digits">اليوم</div><div class="clock-note">heute Morgen / heute Abend</div></div>
+    <div class="clock-card"><div class="clock-time-de">morgen</div><div class="clock-digits">غداً</div><div class="clock-note">morgen früh = بكرة الصبح</div></div>
+    <div class="clock-card"><div class="clock-time-de">übermorgen</div><div class="clock-digits">بعد غد</div><div class="clock-note">über + morgen</div></div>
+    <div class="clock-card"><div class="clock-time-de">jetzt</div><div class="clock-digits">الآن</div><div class="clock-note">Jetzt lerne ich Deutsch!</div></div>
+  </div>
+  <div class="two-col reveal">
+    <div class="col-block">
+      <div class="col-h ch-gold">تعابير heute · gestern · morgen</div>
+      <div class="row-item"><div class="ri-de">heute Morgen</div><div><div class="ri-ar">هذا الصباح</div><div class="ri-note">Ich trinke heute Morgen Kaffee.</div></div></div>
+      <div class="row-item"><div class="ri-de">heute Mittag</div><div><div class="ri-ar">ظهر اليوم</div><div class="ri-note">ظهر اليوم تحديداً</div></div></div>
+      <div class="row-item"><div class="ri-de">heute Abend</div><div><div class="ri-ar">الليلة / هذا المساء</div><div class="ri-note">الأكثر استخداماً من هذه المجموعة</div></div></div>
+      <div class="row-item"><div class="ri-de">gestern Nacht</div><div><div class="ri-ar">الليلة الماضية</div><div class="ri-note">أو: gestern Abend</div></div></div>
+      <div class="row-item"><div class="ri-de">morgen früh</div><div><div class="ri-ar">بكرة الصبح / غداً صباحاً</div><div class="ri-note">früh = مبكر / صباح</div></div></div>
+      <div class="row-item"><div class="ri-de">morgen Abend</div><div><div class="ri-ar">مساء الغد</div><div class="ri-note">غداً في المساء</div></div></div>
+    </div>
+    <div class="col-block">
+      <div class="col-h ch-blue">ظروف التكرار — Wie oft?</div>
+      <div class="row-item"><div class="ri-de">immer</div><div><div class="ri-ar">دائماً</div><div class="ri-note">Ich lerne immer am Abend.</div></div></div>
+      <div class="row-item"><div class="ri-de">oft</div><div><div class="ri-ar">كثيراً / غالباً</div><div class="ri-note">Ich gehe oft ins Kino.</div></div></div>
+      <div class="row-item"><div class="ri-de">manchmal</div><div><div class="ri-ar">أحياناً</div><div class="ri-note">manchmal = sometimes</div></div></div>
+      <div class="row-item"><div class="ri-de">selten</div><div><div class="ri-ar">نادراً</div><div class="ri-note">Ich schlafe selten lange.</div></div></div>
+      <div class="row-item"><div class="ri-de">nie</div><div><div class="ri-ar">أبداً</div><div class="ri-note">Ich komme nie zu spät!</div></div></div>
+      <div class="row-item"><div class="ri-de">täglich / wöchentlich</div><div><div class="ri-ar">يومياً / أسبوعياً</div><div class="ri-note">monatlich = شهرياً</div></div></div>
+    </div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">⚠️ قاعدة مهمة: الظرف الزمني في الجملة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lerne</span><span class="sbox sbox-time">heute</span><span class="sbox sbox-rest">Deutsch.</span><span class="sbox-ar">أتعلم الألمانية اليوم. (الزمن بعد الفعل)</span></div>
+    <div class="satz-row"><span class="sbox sbox-time">Morgen</span><span class="sbox sbox-verb">gehe</span><span class="sbox sbox-subj">ich</span><span class="sbox sbox-rest">zum Arzt.</span><span class="sbox-ar">⚠️ الزمن أولاً → الفعل يجب أن يكون ثانياً!</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">kommt</span><span class="sbox sbox-time">immer</span><span class="sbox sbox-rest">pünktlich.</span><span class="sbox-ar">هو يأتي دائماً في الوقت المحدد.</span></div>
+  </div>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 4 — حوار عن الأسبوع</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Was machst du heute Abend?</div><div class="dl-ar">ماذا ستفعل هذا المساء؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Heute Abend lerne ich Deutsch. Morgen gehe ich ins Kino.</div><div class="dl-ar">هذا المساء أتعلم الألمانية. وغداً أذهب للسينما.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Um wie viel Uhr?</div><div class="dl-ar">في أي ساعة؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Um halb acht abends — also um 19:30.</div><div class="dl-ar">الساعة halb acht مساءً — يعني 19:30.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ich komme auch! Und übermorgen haben wir keine Schule!</div><div class="dl-ar">سآتي أنا أيضاً! وبعد غد ليس عندنا مدرسة!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">المفردات — Wortschatz</div><div class="sec-d">90+ كلمة مقسمة بالموضوع — راجعها يومياً</div></div></div>
+  <p class="vst reveal">الوقت والساعة — Zeit & Uhr</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">die Uhr</div><div class="vi-ar">الساعة (الجهاز)</div><div class="vi-note">Armbanduhr = ساعة اليد</div></div>
+    <div class="vi"><div class="vi-de">die Zeit</div><div class="vi-ar">الوقت</div><div class="vi-note">Ich habe keine Zeit. = ما عندي وقت</div></div>
+    <div class="vi"><div class="vi-de">die Stunde</div><div class="vi-ar">الساعة (وحدة زمن)</div><div class="vi-note">eine Stunde = ساعة واحدة</div></div>
+    <div class="vi"><div class="vi-de">die Minute</div><div class="vi-ar">الدقيقة</div><div class="vi-note">dreißig Minuten = نصف ساعة</div></div>
+    <div class="vi"><div class="vi-de">die Sekunde</div><div class="vi-ar">الثانية</div><div class="vi-note">Einen Moment! Sekunde!</div></div>
+    <div class="vi"><div class="vi-de">pünktlich</div><div class="vi-ar">في الوقت المحدد</div><div class="vi-note">⭐ الكلمة الأهم ثقافياً في ألمانيا</div></div>
+    <div class="vi"><div class="vi-de">früh</div><div class="vi-ar">مبكر / صباحاً</div><div class="vi-note">Ich stehe früh auf.</div></div>
+    <div class="vi"><div class="vi-de">spät</div><div class="vi-ar">متأخر</div><div class="vi-note">Zu spät! = متأخر جداً!</div></div>
+    <div class="vi"><div class="vi-de">jetzt</div><div class="vi-ar">الآن</div><div class="vi-note">Was machst du jetzt?</div></div>
+    <div class="vi"><div class="vi-de">bald</div><div class="vi-ar">قريباً</div><div class="vi-note">Bis bald! = أراك قريباً</div></div>
+    <div class="vi"><div class="vi-de">später</div><div class="vi-ar">لاحقاً</div><div class="vi-note">Bis später! = أراك لاحقاً</div></div>
+    <div class="vi"><div class="vi-de">schon</div><div class="vi-ar">بالفعل / الآن</div><div class="vi-note">Es ist schon acht Uhr!</div></div>
+  </div>
+  <p class="vst reveal">أوقات اليوم — Tageszeiten</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Morgen</div><div class="vi-ar">الصباح</div><div class="vi-note">morgens = في الصباح (عادة)</div></div>
+    <div class="vi"><div class="vi-de">der Vormittag</div><div class="vi-ar">قبل الظهر</div><div class="vi-note">حتى 12:00</div></div>
+    <div class="vi"><div class="vi-de">der Mittag</div><div class="vi-ar">الظهر</div><div class="vi-note">Mittagspause = استراحة الغداء</div></div>
+    <div class="vi"><div class="vi-de">der Nachmittag</div><div class="vi-ar">بعد الظهر</div><div class="vi-note">nachmittags = في العصر (عادة)</div></div>
+    <div class="vi"><div class="vi-de">der Abend</div><div class="vi-ar">المساء</div><div class="vi-note">abends = في المساء (عادة)</div></div>
+    <div class="vi"><div class="vi-de">die Nacht</div><div class="vi-ar">الليل</div><div class="vi-note">nachts = في الليل (عادة)</div></div>
+    <div class="vi"><div class="vi-de">die Mitternacht</div><div class="vi-ar">منتصف الليل</div><div class="vi-note">um Mitternacht = عند منتصف الليل</div></div>
+    <div class="vi"><div class="vi-de">das Frühstück</div><div class="vi-ar">الفطور</div><div class="vi-note">morgens = وقت الفطور</div></div>
+  </div>
+  <p class="vst reveal">التقويم والمواعيد — Kalender & Termine</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Kalender</div><div class="vi-ar">التقويم</div><div class="vi-note">Wandkalender = تقويم الحائط</div></div>
+    <div class="vi"><div class="vi-de">das Datum</div><div class="vi-ar">التاريخ</div><div class="vi-note">Welches Datum ist heute?</div></div>
+    <div class="vi"><div class="vi-de">das Jahr</div><div class="vi-ar">السنة</div><div class="vi-note">dieses Jahr = هذه السنة</div></div>
+    <div class="vi"><div class="vi-de">der Monat</div><div class="vi-ar">الشهر</div><div class="vi-note">letzten Monat = الشهر الماضي</div></div>
+    <div class="vi"><div class="vi-de">die Woche</div><div class="vi-ar">الأسبوع</div><div class="vi-note">diese Woche = هذا الأسبوع</div></div>
+    <div class="vi"><div class="vi-de">der Tag</div><div class="vi-ar">اليوم / النهار</div><div class="vi-note">Schönen Tag! = يوم سعيد!</div></div>
+    <div class="vi"><div class="vi-de">der Termin</div><div class="vi-ar">الموعد</div><div class="vi-note">Ich habe einen Termin. = عندي موعد</div></div>
+    <div class="vi"><div class="vi-de">der Geburtstag</div><div class="vi-ar">عيد الميلاد</div><div class="vi-note">Herzlichen Glückwunsch! = مبروك!</div></div>
+    <div class="vi"><div class="vi-de">der Feiertag</div><div class="vi-ar">يوم عطلة رسمية</div><div class="vi-note">gesetzlicher Feiertag</div></div>
+    <div class="vi"><div class="vi-de">das Wochenende</div><div class="vi-ar">نهاية الأسبوع</div><div class="vi-note">Schönes Wochenende!</div></div>
+    <div class="vi"><div class="vi-de">der Urlaub</div><div class="vi-ar">الإجازة السنوية</div><div class="vi-note">im Urlaub sein = في الإجازة</div></div>
+    <div class="vi"><div class="vi-de">die Ferien (Pl.)</div><div class="vi-ar">العطلة المدرسية</div><div class="vi-note">Sommerferien = عطلة الصيف</div></div>
+  </div>
+  <p class="vst reveal">أفعال الوقت — Zeitverben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">warten</div><div class="vi-ar">ينتظر</div><div class="vi-note">Warte kurz! = انتظر لحظة!</div></div>
+    <div class="vi"><div class="vi-de">beginnen / anfangen</div><div class="vi-ar">يبدأ</div><div class="vi-note">Wann beginnt der Film?</div></div>
+    <div class="vi"><div class="vi-de">enden / aufhören</div><div class="vi-ar">ينتهي</div><div class="vi-note">Wann endet die Schule?</div></div>
+    <div class="vi"><div class="vi-de">dauern</div><div class="vi-ar">يستغرق (مدة)</div><div class="vi-note">Das dauert eine Stunde.</div></div>
+    <div class="vi"><div class="vi-de">treffen (sich)</div><div class="vi-ar">يلتقي</div><div class="vi-note">Wann treffen wir uns?</div></div>
+    <div class="vi"><div class="vi-de">aufstehen</div><div class="vi-ar">يستيقظ / يقوم</div><div class="vi-note">Ich stehe um 7 Uhr auf. ⚠️ trennbar</div></div>
+    <div class="vi"><div class="vi-de">einschlafen</div><div class="vi-ar">ينام / يغفو</div><div class="vi-note">Ich schlafe um 23 Uhr ein. ⚠️ trennbar</div></div>
+    <div class="vi"><div class="vi-de">kommen</div><div class="vi-ar">يأتي</div><div class="vi-note">Wann kommst du? = متى تأتي؟</div></div>
+  </div>
+  <p class="vst reveal">أسئلة عن الوقت — Zeit-Fragen</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">Wann?</div><div class="vi-ar">متى؟</div><div class="vi-note">Wann kommt er?</div></div>
+    <div class="vi"><div class="vi-de">Wie lange?</div><div class="vi-ar">كم مدة؟</div><div class="vi-note">Wie lange dauert das?</div></div>
+    <div class="vi"><div class="vi-de">Wie oft?</div><div class="vi-ar">كم مرة؟</div><div class="vi-note">Wie oft lernst du Deutsch?</div></div>
+    <div class="vi"><div class="vi-de">Wie spät ist es?</div><div class="vi-ar">كم الساعة؟</div><div class="vi-note">الأكثر استخداماً</div></div>
+    <div class="vi"><div class="vi-de">Um wie viel Uhr?</div><div class="vi-ar">في أي ساعة؟</div><div class="vi-note">Um wie viel Uhr beginnt das?</div></div>
+    <div class="vi"><div class="vi-de">Welches Datum?</div><div class="vi-ar">كم التاريخ؟</div><div class="vi-note">Welches Datum haben wir heute?</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- KULTUR -->
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">الثقافة والأخطاء — Kultur & Fehler</div><div class="sec-d">عادات ألمانية في الوقت + أخطاء المتعلمين الشائعة</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">⏰</span><div class="cc-title">Pünktlichkeit — الدقة التامة</div><div class="cc-text">الألمان يعتبرون الدقة فضيلة أساسية. التأخر 5 دقائق عن موعد رسمي = متأخر بشكل واضح. قبل الموعد بدقيقتين = مثالي. الوصول مبكراً جداً = غير مريح للمضيف!</div></div>
+    <div class="culture-card"><span class="cc-icon">📅</span><div class="cc-title">Montag = أول الأسبوع</div><div class="cc-text">التقويم الألماني يبدأ بالاثنين. الجداول في المدارس والمكاتب تبدأ من Montag دائماً. Sonntag = نهاية الأسبوع وليس بدايته. هذا مختلف عن التقاليد العربية والأمريكية.</div></div>
+    <div class="culture-card"><span class="cc-icon">🕐</span><div class="cc-title">الساعة 24 في الحياة اليومية</div><div class="cc-text">في ألمانيا تسمع "neunzehn Uhr dreißig" (19:30) في التلفزيون والقطارات. لا يقولون "halb acht Uhr abends" في السياق الرسمي — فقط "neunzehn Uhr dreißig". تعلّم الأعداد حتى 24!</div></div>
+    <div class="culture-card"><span class="cc-icon">🎄</span><div class="cc-title">أيام مهمة في ألمانيا</div><div class="cc-text">Weihnachten (25-26 Dez)، Silvester (31 Dez = رأس السنة)، Ostern (عيد الفصح)، Tag der Deutschen Einheit (3. Oktober = اليوم الوطني)، Maifeiertag (1. Mai = عيد العمال).</div></div>
+    <div class="culture-card"><span class="cc-icon">🗓️</span><div class="cc-title">المواعيد في ألمانيا</div><div class="cc-text">في ألمانيا تحدد مواعيد حتى مع الأصدقاء. الزيارات المفاجئة (Spontanbesuch) نادرة وأحياناً غير مرغوبة. "Ich komme am Freitag um 19 Uhr" = طبيعي جداً.</div></div>
+    <div class="culture-card"><span class="cc-icon">☀️</span><div class="cc-title">النهار في ألمانيا — ليس كالشرق!</div><div class="cc-text">في يونيو: غروب الشمس بعد الساعة 9 مساءً! في ديسمبر: غروب الساعة 4 عصراً. هذا يؤثر كثيراً على ثقافة المواعيد والنشاطات. الألمان يستغلون أيام الصيف الطويلة.</div></div>
+  </div>
+  <p class="vst reveal">الأخطاء الشائعة — Typische Fehler</p>
+  <div class="reveal">
+    <div class="mistake-item"><div><div class="mi-wrong">halb acht = 8:30</div><div class="mi-explain">الأكثر شيوعاً — ترجمة حرفية خاطئة من الإنجليزية</div></div><div class="mi-arrow">→</div><div><div class="mi-right">halb acht = 7:30 ✓</div><div class="mi-explain">halb + الساعة القادمة = 30 دقيقة قبلها</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">in Montag / auf Montag</div><div class="mi-explain">خطأ في حرف الجر مع الأيام</div></div><div class="mi-arrow">→</div><div><div class="mi-right">am Montag ✓</div><div class="mi-explain">أيام الأسبوع دائماً: am</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">in März / auf März</div><div class="mi-explain">خطأ في حرف الجر مع الأشهر</div></div><div class="mi-arrow">→</div><div><div class="mi-right">im März ✓</div><div class="mi-explain">الأشهر والفصول دائماً: im</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich habe Geburtstag am Juli.</div><div class="mi-explain">خطأ: am مع الأشهر غير صحيح</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich bin im Juli geboren. ✓</div><div class="mi-explain">أو: Mein Geburtstag ist im Juli.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Es ist acht Uhr halb.</div><div class="mi-explain">ترتيب خاطئ — halb بعد الساعة</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Es ist halb neun. ✓</div><div class="mi-explain">halb يأتي أولاً + رقم الساعة القادمة</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">overmorgen (بدون ü)</div><div class="mi-explain">خطأ إملائي — الحرف الخاص مهم</div></div><div class="mi-arrow">→</div><div><div class="mi-right">übermorgen ✓</div><div class="mi-explain">ü حرف خاص في الألمانية — وليس u</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">تمارين تفاعلية — Übungen</div><div class="sec-d">32 سؤال — اختر الإجابة الصحيحة</div></div></div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 1 / 6 — الوقت الرسمي (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Wie spät ist es?" ما معنى هذا السؤال؟</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="كم الساعة؟" onclick="check(this)">كم الساعة؟</button><button class="ex-btn" data-q="1" data-a="كيف حالك؟" onclick="check(this)">كيف حالك؟</button><button class="ex-btn" data-q="1" data-a="كم التاريخ؟" onclick="check(this)">كم التاريخ؟</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول الساعة 5:00 رسمياً بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="Es ist fünf Uhr." onclick="check(this)">Es ist fünf Uhr.</button><button class="ex-btn" data-q="2" data-a="Es ist fünf." onclick="check(this)">Es ist fünf.</button><button class="ex-btn" data-q="2" data-a="Fünf ist die Uhr." onclick="check(this)">Fünf ist die Uhr.</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">الساعة 14:00 رسمياً بالألمانية = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="Es ist vierzehn Uhr." onclick="check(this)">Es ist vierzehn Uhr.</button><button class="ex-btn" data-q="3" data-a="Es ist zwei Uhr nachmittags." onclick="check(this)">Es ist zwei Uhr nachmittags.</button><button class="ex-btn" data-q="3" data-a="Es ist zwölf Uhr." onclick="check(this)">Es ist zwölf Uhr.</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى nach في الوقت؟ مثال: "zehn nach drei"</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="بعد (past)" onclick="check(this)">بعد (past)</button><button class="ex-btn" data-q="4" data-a="قبل (to)" onclick="check(this)">قبل (to)</button><button class="ex-btn" data-q="4" data-a="ربع ساعة" onclick="check(this)">ربع ساعة</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Viertel nach drei" = كم الساعة؟</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="3:15" onclick="check(this)">3:15</button><button class="ex-btn" data-q="5" data-a="3:45" onclick="check(this)">3:45</button><button class="ex-btn" data-q="5" data-a="2:45" onclick="check(this)">2:45</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"zwanzig nach acht" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="8:20" onclick="check(this)">8:20</button><button class="ex-btn" data-q="6" data-a="8:40" onclick="check(this)">8:40</button><button class="ex-btn" data-q="6" data-a="7:40" onclick="check(this)">7:40</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 2 / 6 — halb وViertel ⚠️ انتبه جيداً! (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">⚠️ السؤال الأهم: "halb acht" = كم الساعة بالضبط؟</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="7:30 — وليس 8:30!" onclick="check(this)">7:30 ✓</button><button class="ex-btn" data-q="7" data-a="8:30" onclick="check(this)">8:30 ❌</button><button class="ex-btn" data-q="7" data-a="8:15" onclick="check(this)">8:15</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"halb elf" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="10:30" onclick="check(this)">10:30</button><button class="ex-btn" data-q="8" data-a="11:30" onclick="check(this)">11:30 ❌</button><button class="ex-btn" data-q="8" data-a="11:15" onclick="check(this)">11:15</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Viertel vor sechs" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="5:45" onclick="check(this)">5:45</button><button class="ex-btn" data-q="9" data-a="6:15" onclick="check(this)">6:15</button><button class="ex-btn" data-q="9" data-a="5:15" onclick="check(this)">5:15</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">8:30 بالألمانية غير الرسمي = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="halb neun" onclick="check(this)">halb neun</button><button class="ex-btn" data-q="10" data-a="halb acht" onclick="check(this)">halb acht ❌</button><button class="ex-btn" data-q="10" data-a="Viertel nach acht" onclick="check(this)">Viertel nach acht</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">4:45 بالألمانية غير الرسمي = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="Viertel vor fünf" onclick="check(this)">Viertel vor fünf</button><button class="ex-btn" data-q="11" data-a="Viertel nach vier" onclick="check(this)">Viertel nach vier</button><button class="ex-btn" data-q="11" data-a="halb vier" onclick="check(this)">halb vier</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"halb drei" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="2:30" onclick="check(this)">2:30</button><button class="ex-btn" data-q="12" data-a="3:30" onclick="check(this)">3:30 ❌</button><button class="ex-btn" data-q="12" data-a="3:15" onclick="check(this)">3:15</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 3 / 6 — أيام الأسبوع (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أول يوم في التقويم الألماني = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="Montag" onclick="check(this)">Montag</button><button class="ex-btn" data-q="13" data-a="Sonntag" onclick="check(this)">Sonntag</button><button class="ex-btn" data-q="13" data-a="Samstag" onclick="check(this)">Samstag</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "في يوم الاثنين" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="am Montag" onclick="check(this)">am Montag</button><button class="ex-btn" data-q="14" data-a="in Montag" onclick="check(this)">in Montag</button><button class="ex-btn" data-q="14" data-a="auf Montag" onclick="check(this)">auf Montag</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Sonnabend" = نفس يوم ؟</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="Samstag" onclick="check(this)">Samstag</button><button class="ex-btn" data-q="15" data-a="Sonntag" onclick="check(this)">Sonntag</button><button class="ex-btn" data-q="15" data-a="Freitag" onclick="check(this)">Freitag</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">اليوم الذي يأتي بعد Donnerstag = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="Freitag" onclick="check(this)">Freitag</button><button class="ex-btn" data-q="16" data-a="Mittwoch" onclick="check(this)">Mittwoch</button><button class="ex-btn" data-q="16" data-a="Samstag" onclick="check(this)">Samstag</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Werktag" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="يوم عمل (غير عطلة)" onclick="check(this)">يوم عمل</button><button class="ex-btn" data-q="17" data-a="يوم العطلة الرسمية" onclick="check(this)">يوم العطلة</button><button class="ex-btn" data-q="17" data-a="نهاية الأسبوع" onclick="check(this)">نهاية الأسبوع</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"jeden Montag" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="كل اثنين" onclick="check(this)">كل اثنين (تكرار)</button><button class="ex-btn" data-q="18" data-a="هذا الاثنين فقط" onclick="check(this)">هذا الاثنين فقط</button><button class="ex-btn" data-q="18" data-a="يوم الاثنين" onclick="check(this)">يوم الاثنين</button></div><div class="ex-fb" id="f18"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 4 / 6 — الأشهر والتاريخ (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "في مارس" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="im März" onclick="check(this)">im März</button><button class="ex-btn" data-q="19" data-a="in März" onclick="check(this)">in März</button><button class="ex-btn" data-q="19" data-a="am März" onclick="check(this)">am März</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">الشهر الثاني من السنة = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="Februar" onclick="check(this)">Februar</button><button class="ex-btn" data-q="20" data-a="Januar" onclick="check(this)">Januar</button><button class="ex-btn" data-q="20" data-a="März" onclick="check(this)">März</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">الشهر الوحيد الذي قد يكون 28 أو 29 يوماً = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="Februar" onclick="check(this)">Februar</button><button class="ex-btn" data-q="21" data-a="April" onclick="check(this)">April</button><button class="ex-btn" data-q="21" data-a="November" onclick="check(this)">November</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Welches Datum haben wir heute?" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="كم تاريخ اليوم؟" onclick="check(this)">كم تاريخ اليوم؟</button><button class="ex-btn" data-q="22" data-a="كم الساعة اليوم؟" onclick="check(this)">كم الساعة اليوم؟</button><button class="ex-btn" data-q="22" data-a="أي يوم اليوم؟" onclick="check(this)">أي يوم اليوم؟</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Am ersten März" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="في الأول من مارس" onclick="check(this)">في الأول من مارس</button><button class="ex-btn" data-q="23" data-a="في مارس بشكل عام" onclick="check(this)">في مارس بشكل عام</button><button class="ex-btn" data-q="23" data-a="في آخر مارس" onclick="check(this)">في آخر مارس</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أشهر Dezember، Januar، Februar = أي فصل؟</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="Winter" onclick="check(this)">Winter ❄️</button><button class="ex-btn" data-q="24" data-a="Frühling" onclick="check(this)">Frühling 🌸</button><button class="ex-btn" data-q="24" data-a="Herbst" onclick="check(this)">Herbst 🍂</button></div><div class="ex-fb" id="f24"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 5 / 6 — الظروف الزمنية (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"vorgestern" معناها بالعربية؟</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="أول أمس" onclick="check(this)">أول أمس</button><button class="ex-btn" data-q="25" data-a="أمس" onclick="check(this)">أمس</button><button class="ex-btn" data-q="25" data-a="بعد غد" onclick="check(this)">بعد غد</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"übermorgen" معناها بالعربية؟</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="بعد غد" onclick="check(this)">بعد غد</button><button class="ex-btn" data-q="26" data-a="غداً" onclick="check(this)">غداً</button><button class="ex-btn" data-q="26" data-a="أول أمس" onclick="check(this)">أول أمس</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"heute Abend" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="الليلة / هذا المساء" onclick="check(this)">الليلة / هذا المساء</button><button class="ex-btn" data-q="27" data-a="هذا الصباح" onclick="check(this)">هذا الصباح</button><button class="ex-btn" data-q="27" data-a="مساء الغد" onclick="check(this)">مساء الغد</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"morgen früh" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="بكرة الصبح" onclick="check(this)">بكرة الصبح</button><button class="ex-btn" data-q="28" data-a="هذا الصباح" onclick="check(this)">هذا الصباح</button><button class="ex-btn" data-q="28" data-a="مبكراً كثيراً" onclick="check(this)">مبكراً كثيراً</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"gestern Nacht" معناها؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="الليلة الماضية" onclick="check(this)">الليلة الماضية</button><button class="ex-btn" data-q="29" data-a="الليلة القادمة" onclick="check(this)">الليلة القادمة</button><button class="ex-btn" data-q="29" data-a="الليلة" onclick="check(this)">الليلة</button></div><div class="ex-fb" id="f29"></div></div>
+  </div>
+
+  <div class="ex-block reveal">
+    <div class="ex-title">تمرين 6 / 6 — ثقافة وخلاصة (3 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">الألمان معروفون في ما يخص المواعيد؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="الدقة التامة في المواعيد" onclick="check(this)">الدقة التامة — Pünktlichkeit</button><button class="ex-btn" data-q="30" data-a="التأخر عادي ومقبول" onclick="check(this)">التأخر عادي</button><button class="ex-btn" data-q="30" data-a="لا يهتمون بالوقت" onclick="check(this)">لا يهتمون بالوقت</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Es ist Viertel vor sieben" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="6:45" onclick="check(this)">6:45</button><button class="ex-btn" data-q="31" data-a="7:15" onclick="check(this)">7:15</button><button class="ex-btn" data-q="31" data-a="7:45" onclick="check(this)">7:45</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تسأل عن الوقت بأدب مع غريب في الشارع؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="Entschuldigung, wie spät ist es?" onclick="check(this)">Entschuldigung, wie spät ist es?</button><button class="ex-btn" data-q="32" data-a="Was ist die Uhrzeit?" onclick="check(this)">Was ist die Uhrzeit?</button><button class="ex-btn" data-q="32" data-a="Wann ist es jetzt?" onclick="check(this)">Wann ist es jetzt?</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت اللغة في الذاكرة</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مهمة؟</div><p>الكتابة تُجبر دماغك على استرجاع المعلومة بدل استقبالها. اكتب ببطء والهدف الصحة — ليس السرعة. إذا أخطأت، صحّح واعد الكتابة.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — جدول أسبوعك الكامل</div>
+    <div class="wt-text">اكتب ماذا تفعل كل يوم من الأسبوع مع الوقت. استخدم am، um، halb، Viertel:</div>
+    <ul class="wt-list"><li>Am Montag... (um ... Uhr)</li><li>Am Dienstag...</li><li>Am Mittwoch...</li><li>Am Donnerstag...</li><li>Am Freitag...</li><li>Am Samstag / Am Sonntag (Wochenende)...</li></ul>
+    <textarea class="wt-input" style="min-height:170px;" placeholder="Am Montag lerne ich Deutsch. Um halb neun morgens...&#10;Am Dienstag arbeite ich. Ich beginne um acht Uhr...&#10;Am Mittwoch...&#10;Am Wochenende..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — اكتب 3 حوارات لتحديد موعد</div>
+    <div class="wt-text">اكتب حوار قصير (4–5 أسطر) لكل موقف:</div>
+    <ul class="wt-list"><li>موعد مع طبيب (رسمي — استخدم Sie، Uhrzeit رسمية)</li><li>موعد مع صديق للقهوة (عادي — استخدم du، halb وViertel)</li><li>موعد دراسي مع زميل (اختر أنت)</li></ul>
+    <textarea class="wt-input" style="min-height:210px;" placeholder="حوار 1 — مع الطبيب:&#10;A: Guten Tag! Ich möchte einen Termin beim Arzt.&#10;B: Wann passt es Ihnen?&#10;A: Am Donnerstag um vierzehn Uhr dreißig?&#10;B: Ja, das geht. Bis Donnerstag!&#10;&#10;حوار 2 — مع صديق:&#10;A: Wann treffen wir uns? Um halb vier?&#10;B: ..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — روتينك اليومي بالتفصيل</div>
+    <div class="wt-text">اكتب روتينك اليومي بـ 8–10 جمل. استخدم الظروف الزمنية والساعات والأيام:</div>
+    <ul class="wt-list"><li>Ich stehe um ... Uhr auf. (أستيقظ الساعة...)</li><li>Morgens / Nachmittags / Abends... (في الصباح / العصر / المساء...)</li><li>Um ... Uhr beginne / esse / lerne / schlafe ich...</li><li>Am Abend / Heute / Manchmal / Immer...</li></ul>
+    <textarea class="wt-input" style="min-height:180px;" placeholder="Ich stehe um halb sieben auf. Das ist um 6:30 Uhr.&#10;Morgens trinke ich Kaffee und esse Frühstück.&#10;Um acht Uhr beginne ich mit der Arbeit / mit dem Studium.&#10;Mittags esse ich um zwölf Uhr dreißig.&#10;Nachmittags lerne ich manchmal Deutsch.&#10;Am Abend...&#10;Ich schlafe um..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">🆕 مهمة 4 — اكتب عن تاريخ مهم في حياتك</div>
+    <div class="wt-text">فكرة إضافية: اكتب عن يوم مهم في حياتك بالألمانية — عيد ميلادك، يوم بدأت فيه تتعلم الألمانية، أي ذكرى:</div>
+    <ul class="wt-list"><li>Mein Geburtstag ist am ... (ordinal) ... (Monat).</li><li>Ich bin im ... geboren. — وُلدت في...</li><li>Ich lerne seit ... Deutsch. — أتعلم الألمانية منذ...</li><li>Ein wichtiger Tag für mich ist der... — يوم مهم بالنسبة لي هو...</li></ul>
+    <textarea class="wt-input" style="min-height:130px;" placeholder="Mein Geburtstag ist am ... .&#10;Ich bin im ... geboren.&#10;Ich lerne seit ... Deutsch.&#10;Ein wichtiger Tag für mich ist..."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · قنوات</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German</div><div class="res-type">موقع مجاني شامل</div><div class="res-desc">Nicos Weg كاملاً مع تمارين تفاعلية. ابحث عن دروس الوقت والأيام في القسم A1 — مجاني 100%.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki</div><div class="res-type">بطاقات مفردات ذكية</div><div class="res-desc">أضف الأشهر والأيام والساعات كـ flashcards. ابحث عن "German A1 Wochentage Monate Deck" جاهز للتنزيل.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🕐</span><div class="res-name">تدريب الساعة أونلاين</div><div class="res-type">تدريب تفاعلي</div><div class="res-desc">ابحث في Google عن "Uhrzeit Deutsch üben online" — مواقع تعرض ساعة وتطلب الإجابة بالألمانية. ممتاز لـ halb وViertel.</div></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German with Anja</div><div class="res-type">قناة YouTube</div><div class="res-desc">Lesson 59 (Uhrzeit) ضمن هذه الوحدة. يوجد أيضاً دروس عن الأشهر والأيام والتاريخ بنفس الجودة.</div><a class="res-link" href="https://www.youtube.com/@learnGermanwithAnja" target="_blank">YouTube ←</a></div>
+    <div class="res-card"><span class="res-icon">🎧</span><div class="res-name">Slow German</div><div class="res-type">بودكاست بطيء للمبتدئين</div><div class="res-desc">بعد Unit 3 يمكنك فهم أجزاء من الحلقات. ستسمع الوقت والأيام في سياق طبيعي وبطيء مع نص مكتوب.</div><a class="res-link" href="https://www.slowgerman.com/" target="_blank">slowgerman.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">10 دقائق يومياً لمراجعة الأشهر والأيام والساعات. استخدمه كإضافة للدراسة الأساسية وليس بديلاً عنها.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 4 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات والتمارين والكتابة</div></div></div>
+  <div class="plan-grid reveal">
+    <div class="plan-card">
+      <div class="plan-num">01</div>
+      <div class="plan-title">الساعة الرسمية + halb وViertel</div>
+      <ul class="plan-tasks">
+        <li class="vl">شاهد الفيديو 1 (Uhrzeit رسمي) مع مهمة الكتابة</li>
+        <li class="vl">شاهد الفيديو 2 (halb وViertel) — شاهده مرتين</li>
+        <li>ادرس قسم الساعة الرسمية (01)</li>
+        <li>ادرس قسم halb وViertel (02) كاملاً</li>
+        <li>احفظ: halb + الساعة القادمة = 30 دقيقة قبلها</li>
+        <li>اكتب 15 وقتاً مختلفاً رسمياً وغير رسمياً</li>
+        <li>حل تمرين 1 و 2 (12 سؤال)</li>
+        <li>هدف: halb acht = 7:30 تلقائياً</li>
+      </ul>
+      <div class="plan-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">02</div>
+      <div class="plan-title">الأيام + الأشهر + التاريخ</div>
+      <ul class="plan-tasks">
+        <li class="vl">شاهد الفيديو 3 (Monate Wochentage Jahreszeiten)</li>
+        <li>ادرس جدول الأيام السبعة (03)</li>
+        <li>احفظ: am + يوم الأسبوع دائماً</li>
+        <li>ادرس جدول الأشهر الـ 12 بالفصول (04)</li>
+        <li>احفظ: im + شهر / im + فصل دائماً</li>
+        <li>ادرس قسم التاريخ والأعداد الترتيبية (05)</li>
+        <li>اكتب تاريخ ميلادك بالألمانية كاملاً</li>
+        <li>حل تمرين 3 و 4 (12 سؤال)</li>
+      </ul>
+      <div class="plan-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">03</div>
+      <div class="plan-title">الظروف + المفردات + الكتابة</div>
+      <ul class="plan-tasks">
+        <li class="vl">شاهد الفيديو 4 (Anja — Uhrzeit بالتفصيل)</li>
+        <li class="vl">شاهد الفيديو 5 (الظروف الزمنية)</li>
+        <li>ادرس قسم الظروف الزمنية كاملاً (06)</li>
+        <li>ادرس المفردات 90+ بالموضوع (07)</li>
+        <li>ادرس الثقافة والأخطاء (08)</li>
+        <li class="wl">مهمة الكتابة 1 (جدول الأسبوع)</li>
+        <li class="wl">مهمة الكتابة 3 (الروتين اليومي)</li>
+        <li>حل تمرين 5 و 6 (8 أسئلة)</li>
+      </ul>
+      <div class="plan-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">04</div>
+      <div class="plan-title">مراجعة شاملة + اختبار النفس</div>
+      <ul class="plan-tasks">
+        <li class="vl">شاهد الفيديو 6 (Nicos Weg) — اكتب كل جملة وقت</li>
+        <li>اختبر نفسك: قل الساعة الحالية بالألمانية</li>
+        <li>سؤال عشوائي: halb ...؟ — جاوب بدون نظر</li>
+        <li>اقرأ الحوارات الـ 4 بصوت عالٍ مرتين</li>
+        <li>أعد حل جميع التمارين الـ 32 — هدف 29+</li>
+        <li class="wl">مهمة الكتابة 2 (3 حوارات مواعيد)</li>
+        <li class="wl">مهمة الكتابة 4 (تاريخ مهم)</li>
+        <li>✅ انتقل لـ Unit 04 إذا حصلت 28+/32</li>
+      </ul>
+      <div class="plan-time">⏱️ 2.5–3 ساعات</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;">
+    <div class="note-title nt-gr">🎯 قاعدة الانتقال لـ Unit 04</div>
+    <p>انتقل لـ Unit 04 فقط إذا: ✅ تستطيع قراءة أي ساعة بالطريقتين بدون نظر · ✅ تعرف الأيام والأشهر كلها عن ظهر قلب · ✅ حصلت 28+ من 32 في التمارين · ✅ كتبت روتينك اليومي بجمل صحيحة بالكامل. ⚠️ القاعدة الذهبية: <strong style="color:var(--white)">halb acht = 7:30</strong> — اختبرها حتى تصبح تلقائية تماماً.</p>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 03</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">الوقت · الأيام · الأشهر · التاريخ · الظروف · 90+ مفردة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · الخطوة الثالثة من رحلتك · 4 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.12)">Unit 04 ← العائلة والملكية · mein / meine · dein / deine · kein / keine</p>
+</footer>
+
+<script>
+const answers={
+  1:'كم الساعة؟',
+  2:'Es ist fünf Uhr.',
+  3:'Es ist vierzehn Uhr.',
+  4:'بعد (past)',
+  5:'3:15',
+  6:'8:20',
+  7:'7:30 — وليس 8:30!',
+  8:'10:30',
+  9:'5:45',
+  10:'halb neun',
+  11:'Viertel vor fünf',
+  12:'2:30',
+  13:'Montag',
+  14:'am Montag',
+  15:'Samstag',
+  16:'Freitag',
+  17:'يوم عمل (غير عطلة)',
+  18:'كل اثنين',
+  19:'im März',
+  20:'Februar',
+  21:'Februar',
+  22:'كم تاريخ اليوم؟',
+  23:'في الأول من مارس',
+  24:'Winter',
+  25:'أول أمس',
+  26:'بعد غد',
+  27:'الليلة / هذا المساء',
+  28:'بكرة الصبح',
+  29:'الليلة الماضية',
+  30:'الدقة التامة في المواعيد',
+  31:'6:45',
+  32:'Entschuldigung, wie spät ist es?'
+};
+const fb={
+  1:{ok:'✅ صح! Wie spät ist es = كم الساعة؟ — الأكثر استخداماً يومياً',no:'❌ Wie spät ist es = كم الساعة؟ وليس كيف حالك أو كم التاريخ'},
+  2:{ok:'✅ ممتاز! الصيغة الرسمية: Es ist + رقم + Uhr — لا تنسَ Uhr',no:'❌ الصيغة الرسمية: Es ist fünf Uhr — كلمة Uhr ضرورية في الرسمي'},
+  3:{ok:'✅ صح! الساعة 24 في الرسمي — vierzehn Uhr = 14:00 = 2 مساءً',no:'❌ الساعة 14:00 رسمياً = Es ist vierzehn Uhr — ألمانيا تستخدم ساعة 24 في الرسمي'},
+  4:{ok:'✅ ممتاز! nach = بعد (past) — zehn nach drei = عشرة دقائق بعد الثالثة = 3:10',no:'❌ nach = بعد (past) · vor = قبل (to) — هما عكس بعضهما'},
+  5:{ok:'✅ صح! Viertel nach drei = ربع بعد الثالثة = 3:15',no:'❌ Viertel nach drei: nach = بعد، Viertel = ربع، drei = ثلاثة. إذاً = 3:15'},
+  6:{ok:'✅ ممتاز! zwanzig nach acht = عشرين دقيقة بعد الثامنة = 8:20',no:'❌ zwanzig nach acht = 8:20 — nach = بعد، لو كان vor لكانت 7:40'},
+  7:{ok:'✅ ممتاز! ⭐ halb acht = 7:30 وليس 8:30! halb + الساعة القادمة = 30 دقيقة قبلها',no:'❌ ⚠️ halb acht = 7:30 وليس 8:30! القاعدة: halb + الساعة القادمة. halb acht = نصف الطريق إلى الثامنة'},
+  8:{ok:'✅ صح! halb elf = نصف الطريق إلى الحادية عشرة = 10:30',no:'❌ halb elf = 10:30 وليس 11:30! دائماً: halb + الساعة التالية = 30 دقيقة قبلها'},
+  9:{ok:'✅ صح! Viertel vor sechs = ربع قبل السادسة = 5:45',no:'❌ Viertel vor sechs: vor = قبل، Viertel = ربع، sechs = ستة. إذاً = 5:45'},
+  10:{ok:'✅ ممتاز! 8:30 = halb neun — نصف الطريق إلى التاسعة',no:'❌ 8:30 = halb neun وليس halb acht! halb acht = 7:30. دائماً: halb + الساعة التالية'},
+  11:{ok:'✅ صح! 4:45 = Viertel vor fünf — ربع قبل الخامسة',no:'❌ 4:45 = Viertel vor fünf — vor = قبل، fünf = خمسة (الساعة القادمة)'},
+  12:{ok:'✅ صح! halb drei = نصف الطريق إلى الثالثة = 2:30',no:'❌ halb drei = 2:30 وليس 3:30! القاعدة: halb + الساعة القادمة دائماً'},
+  13:{ok:'✅ صح! الأسبوع الألماني يبدأ بـ Montag (الاثنين) وليس Sonntag',no:'❌ في ألمانيا الأسبوع يبدأ بـ Montag — وليس Sonntag كما في بعض الدول'},
+  14:{ok:'✅ ممتاز! am Montag = يوم الاثنين — am دائماً مع أيام الأسبوع',no:'❌ مع أيام الأسبوع: am دائماً — am Montag ✓ وليس in Montag أو auf Montag'},
+  15:{ok:'✅ صح! Sonnabend = Samstag (السبت) — تُستخدم في شرق ألمانيا',no:'❌ Sonnabend = Samstag (السبت) — وليس Sonntag (الأحد)! لهجة شرق ألمانيا'},
+  16:{ok:'✅ صح! Montag → Dienstag → Mittwoch → Donnerstag → Freitag',no:'❌ بعد Donnerstag (الخميس) مباشرة Freitag (الجمعة)'},
+  17:{ok:'✅ ممتاز! Werktag = يوم عمل — Montag إلى Freitag عادة',no:'❌ Werktag = يوم عمل (عكس Wochenende و Feiertag)'},
+  18:{ok:'✅ صح! jeden Montag = كل اثنين — تكرار أسبوعي',no:'❌ jeden Montag = كل اثنين (تكرار أسبوعي) — am Montag = في اثنين واحد محدد'},
+  19:{ok:'✅ ممتاز! im März = في مارس — im مع الأشهر والفصول دائماً',no:'❌ مع الأشهر: im دائماً — im März ✓ وليس in März أو am März'},
+  20:{ok:'✅ صح! الشهر الثاني = Februar (فبراير) — Januar هو الأول',no:'❌ الأشهر بالترتيب: Januar (1) → Februar (2) → März (3)'},
+  21:{ok:'✅ صح! Februar الوحيد بـ 28 يوماً عادة، و29 في السنة الكبيسة',no:'❌ Februar هو الشهر الوحيد الذي يتغير بين 28 و29 يوم'},
+  22:{ok:'✅ ممتاز! Welches Datum haben wir heute = كم تاريخ اليوم؟',no:'❌ Welches Datum haben wir heute = كم تاريخ اليوم؟ — Datum = التاريخ، Uhrzeit = الساعة'},
+  23:{ok:'✅ صح! Am ersten März = في الأول من مارس — ersten = الأول (ترتيبي + am)',no:'❌ Am ersten März = في الأول من مارس — am + ordinal للمواعيد والأحداث'},
+  24:{ok:'✅ ممتاز! Dezember + Januar + Februar = Winter ❄️ في ألمانيا',no:'❌ هذه الأشهر الشتوية = Winter في ألمانيا: Dez + Jan + Feb'},
+  25:{ok:'✅ صح! vorgestern = أول أمس — vor (قبل) + gestern (أمس)',no:'❌ vorgestern = أول أمس (the day before yesterday) — gestern = أمس'},
+  26:{ok:'✅ صح! übermorgen = بعد غد — über + morgen',no:'❌ übermorgen = بعد غد (the day after tomorrow) — morgen = غداً'},
+  27:{ok:'✅ ممتاز! heute Abend = الليلة / هذا المساء',no:'❌ heute Abend = الليلة/هذا المساء — heute = اليوم، Abend = مساء'},
+  28:{ok:'✅ صح! morgen früh = بكرة الصبح — غداً في الصباح',no:'❌ morgen früh = بكرة الصبح (tomorrow morning) — morgen = غداً، früh = مبكر/صباح'},
+  29:{ok:'✅ ممتاز! gestern Nacht = الليلة الماضية',no:'❌ gestern Nacht = الليلة الماضية — gestern = أمس، Nacht = ليل'},
+  30:{ok:'✅ صح! الألمان معروفون بـ Pünktlichkeit — الدقة التامة في المواعيد',no:'❌ الألمان معروفون جداً بالدقة في المواعيد — التأخر مزعج ثقافياً'},
+  31:{ok:'✅ ممتاز! Viertel vor sieben = ربع قبل السابعة = 6:45',no:'❌ Viertel vor sieben = 6:45 — vor = قبل، sieben = السابعة (الساعة القادمة)'},
+  32:{ok:'✅ صح! Entschuldigung, wie spät ist es? = الطريقة المهذبة الصحيحة مع غريب',no:'❌ الصح: Entschuldigung, wie spät ist es? — Entschuldigung للأدب مع الغرباء'}
+};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  const pct=correct/total;
+  let msg='';
+  if(pct===1) msg='🏆 مثالي! أتقنت Unit 03 كاملاً. انتقل لـ Unit 04 بثقة تامة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة — ركز على halb — ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع قسم halb وViertel وحل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع الساعة الرسمية وغير الرسمية ثم حل مجدداً.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 25+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach((r,i)=>{
+    if(r.isIntersecting){
+      setTimeout(()=>r.target.classList.add('visible'),i*60);
+      io.unobserve(r.target);
+    }
+  });
+},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>

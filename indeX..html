@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خطة تعلم الألمانية — من الصفر إلى B2</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --black: #0a0a0a;
+    --red: #CC0000;
+    --gold: #FFCE00;
+    --white: #f5f5f0;
+    --gray: #1a1a1a;
+    --gray2: #2a2a2a;
+    --gray3: #3a3a3a;
+    --dim: rgba(245,245,240,0.45);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ── FLAG STRIPES TOP ── */
+  .flag-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 6px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+  }
+  .flag-bar span:nth-child(1) { background: var(--black); border-top: 6px solid #333; }
+  .flag-bar span:nth-child(2) { background: var(--red); }
+  .flag-bar span:nth-child(3) { background: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: 'DE';
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(200px, 40vw, 500px);
+    color: rgba(255,206,0,0.04);
+    letter-spacing: -0.05em;
+    pointer-events: none;
+    user-select: none;
+    animation: pulse-bg 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-bg {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.02); }
+  }
+
+  .hero-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fade-up 0.8s 0.2s forwards;
+  }
+
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 13vw, 9.5rem);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fade-up 0.8s 0.4s forwards;
+  }
+
+  .hero-title span {
+    color: var(--gold);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: rgba(245,245,240,0.5);
+    font-weight: 300;
+    max-width: 560px;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fade-up 0.8s 0.6s forwards;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fade-up 0.8s 0.8s forwards;
+  }
+
+  .stat { text-align: center; }
+
+  .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: rgba(245,245,240,0.4);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* ── STRIPE DIVIDER ── */
+  .stripe-divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 4px;
+    margin: 0;
+  }
+  .stripe-divider div:nth-child(1) { background: #333; }
+  .stripe-divider div:nth-child(2) { background: var(--red); }
+  .stripe-divider div:nth-child(3) { background: var(--gold); }
+
+  /* ── SECTION ── */
+  .section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: rgba(255,206,0,0.12);
+    line-height: 1;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .section-desc {
+    color: var(--dim);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    max-width: 640px;
+  }
+
+  /* ── LEVELS GRID ── */
+  .levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--gray2);
+  }
+
+  .level-card {
+    background: var(--black);
+    padding: 2.4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.25s;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .level-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--gold);
+    transition: height 0.3s ease;
+  }
+
+  .level-card:hover { background: var(--gray); }
+  .level-card:hover::before { height: 100%; }
+  .level-card.locked:hover::before { background: var(--gray3); }
+  .level-card.locked:hover .level-name { color: var(--white); }
+
+  .level-letters {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    color: rgba(255,206,0,0.12);
+    line-height: 1;
+    transition: color 0.3s;
+    margin-bottom: 0.4rem;
+  }
+
+  .level-card:hover .level-letters { color: var(--gold); }
+  .level-card.locked:hover .level-letters { color: var(--gray3); }
+
+  .level-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+  }
+
+  .level-desc {
+    font-size: 0.82rem;
+    color: rgba(245,245,240,0.45);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    min-height: 3.4rem;
+  }
+
+  .level-status {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .level-status.ready { color: #00b450; }
+  .level-status.locked { color: rgba(245,245,240,0.3); }
+
+  /* ── ROADMAP TIMELINE ── */
+  .timeline {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0 2rem;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    right: calc(100px + 1rem - 1px);
+    top: 0; bottom: 0;
+    width: 1px;
+    background: var(--gray2);
+  }
+
+  .timeline-item { display: contents; }
+
+  .timeline-date {
+    text-align: left;
+    padding: 1.5rem 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  .timeline-content {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--gray2);
+  }
+
+  .timeline-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(245,245,240,0.3);
+    margin-bottom: 0.3rem;
+  }
+
+  .timeline-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .timeline-sub {
+    font-size: 0.8rem;
+    color: rgba(245,245,240,0.4);
+    margin-top: 0.2rem;
+  }
+
+  .timeline-text a { color: var(--gold); text-decoration: none; }
+  .timeline-text a:hover { text-decoration: underline; }
+
+  /* ── HOW TO USE ── */
+  .how-box {
+    background: var(--gray);
+    border-right: 3px solid var(--gold);
+    padding: 2rem 1.8rem;
+    font-size: 0.88rem;
+    line-height: 2;
+    color: rgba(245,245,240,0.75);
+  }
+  .how-box .lbl {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .how-box ol { margin: 0; padding-right: 1.2rem; }
+  .how-box li { margin-bottom: 0.5rem; }
+  .how-box strong { color: var(--white); }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--gray2);
+  }
+
+  footer .big-de {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5em;
+    background: linear-gradient(135deg, #333 0%, var(--red) 50%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: rgba(245,245,240,0.25);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 600px) {
+    .hero-stats { gap: 1.5rem; }
+    .stat-number { font-size: 2.5rem; }
+    .timeline { grid-template-columns: 70px 1fr; gap: 0 1rem; }
+    .timeline::before { right: calc(70px + 0.5rem - 1px); }
+  }
+</style>
+</head>
+<body>
+
+<!-- Flag bar -->
+<div class="flag-bar">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-tag">خطتي الشخصية لتعلم اللغة الألمانية</p>
+  <h1 class="hero-title">
+    DEUTSCH
+    <span>من الصفر إلى B2</span>
+  </h1>
+  <p class="hero-sub">رحلة منظّمة عبر 4 مستويات (A1 · A2 · B1 · B2) — كل مستوى مقسّم إلى Units فيها فيديوهات، شرح قواعد، مفردات، تمارين تفاعلية، وحوارات. اختر مستواك وابدأ.</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-number">4</span>
+      <span class="stat-label">مستويات أساسية</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">15</span>
+      <span class="stat-label">Unit في A1</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">B2</span>
+      <span class="stat-label">الهدف النهائي</span>
+    </div>
+  </div>
+</section>
+
+<div class="stripe-divider"><div></div><div></div><div></div></div>
+
+<!-- LEVELS -->
+<section class="section">
+  <div class="section-header reveal">
+    <span class="section-number">01</span>
+    <span class="section-title">اختر مستواك</span>
+  </div>
+  <p class="section-desc reveal">اضغط على أي مستوى للدخول إلى خطته الكاملة. المستوى A1 جاهز بالكامل (15 Unit)، والمستويات الأخرى قيد التحضير — تقدر تطلب من Claude يبنيها بنفس الأسلوب فور ما تخلّص A1.</p>
+
+  <div class="levels-grid reveal">
+
+    <a href="a1.html" class="level-card">
+      <div class="level-letters">A1</div>
+      <div class="level-name">المبتدئ</div>
+      <div class="level-desc">الأبجدية، التحيات، الأرقام، العائلة، الطعام، الروتين اليومي، والمزيد — 15 Unit كاملة.</div>
+      <div class="level-status ready">✅ جاهز — 15 Unit · 2 شهر</div>
+    </a>
+
+    <a href="soon.html?level=A2" class="level-card locked">
+      <div class="level-letters">A2</div>
+      <div class="level-name">ما قبل المتوسط</div>
+      <div class="level-desc">توسيع المفردات، الزمن الماضي Perfekt، الجمل المركّبة، والتعبير عن الرأي والخطط.</div>
+      <div class="level-status locked">🚧 قيد التحضير</div>
+    </a>
+
+    <a href="soon.html?level=B1" class="level-card locked">
+      <div class="level-letters">B1</div>
+      <div class="level-name">المتوسط</div>
+      <div class="level-desc">Konjunktiv II، Passiv، النصوص الطويلة، والاستعداد لامتحان Goethe B1.</div>
+      <div class="level-status locked">🚧 قيد التحضير</div>
+    </a>
+
+    <a href="soon.html?level=B2" class="level-card locked">
+      <div class="level-letters">B2</div>
+      <div class="level-name">فوق المتوسط</div>
+      <div class="level-desc">نقاشات معقّدة، الكتابة الرسمية، فهم الأخبار والبودكاست، والاستعداد لـ B2.</div>
+      <div class="level-status locked">🚧 قيد التحضير</div>
+    </a>
+
+    <a href="soon.html?level=C" class="level-card locked">
+      <div class="level-letters">C1·C2</div>
+      <div class="level-name">المتقدم (اختياري)</div>
+      <div class="level-desc">إذا حبيت تستمر بعد B2 — اللغة الأكاديمية والمهنية والطلاقة الكاملة.</div>
+      <div class="level-status locked">🔘 لاحقاً</div>
+    </a>
+
+  </div>
+</section>
+
+<div class="stripe-divider"><div></div><div></div><div></div></div>
+
+<!-- ROADMAP -->
+<section class="section">
+  <div class="section-header reveal">
+    <span class="section-number">02</span>
+    <span class="section-title">خارطة الطريق الكاملة</span>
+  </div>
+  <p class="section-desc reveal">تقدير تقريبي للوقت لكل مستوى لو خصّصت ساعة تقريباً يومياً. يمكن تتغيّر المدة حسب وقتك المتاح — المهم الاستمرارية.</p>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-date">شهر 1–2</div>
+      <div class="timeline-content">
+        <div class="timeline-label">المرحلة الأولى</div>
+        <div class="timeline-text"><a href="a1.html">A1 — المبتدئ (15 Unit)</a></div>
+        <div class="timeline-sub">الأبجدية · التحيات · الأرقام · العائلة · الطعام · المدينة · التسوق · المواصلات · البيت · الصحة · العمل + اختبار Goethe A1</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">شهر 3–4</div>
+      <div class="timeline-content">
+        <div class="timeline-label">المرحلة الثانية</div>
+        <div class="timeline-text"><a href="soon.html?level=A2">A2 — ما قبل المتوسط</a></div>
+        <div class="timeline-sub">الزمن الماضي · المقارنة · التعبير عن الرأي والخطط المستقبلية</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">شهر 5–7</div>
+      <div class="timeline-content">
+        <div class="timeline-label">المرحلة الثالثة</div>
+        <div class="timeline-text"><a href="soon.html?level=B1">B1 — المتوسط</a></div>
+        <div class="timeline-sub">Konjunktiv II · Passiv · النصوص والمحادثات الطويلة · اختبار Goethe B1</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">شهر 8–12</div>
+      <div class="timeline-content">
+        <div class="timeline-label">المرحلة الرابعة</div>
+        <div class="timeline-text"><a href="soon.html?level=B2">B2 — فوق المتوسط</a></div>
+        <div class="timeline-sub">النقاشات المعقّدة · الكتابة الرسمية · الاستعداد لاختبار Goethe B2</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">شهر 13+</div>
+      <div class="timeline-content">
+        <div class="timeline-label">اختياري</div>
+        <div class="timeline-text"><a href="soon.html?level=C">C1 / C2 — الطلاقة الكاملة</a></div>
+        <div class="timeline-sub">لو حبيت تستمر بعد تحقيق هدف B2</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripe-divider"><div></div><div></div><div></div></div>
+
+<!-- HOW TO USE -->
+<section class="section">
+  <div class="section-header reveal">
+    <span class="section-number">⚡</span>
+    <span class="section-title">كيف تستخدم هذه الخطة مع Claude</span>
+  </div>
+  <div class="how-box reveal">
+    <div class="lbl">3 خطوات بسيطة</div>
+    <ol>
+      <li><strong>اختر مستواك</strong> من الأعلى (ابدأ بـ A1 إذا كنت مبتدئ تماماً).</li>
+      <li><strong>اختر الـ Unit</strong> اللي وصلت له من شبكة الوحدات.</li>
+      <li><strong>افتح صفحة الـ Unit</strong> — فيها الفيديوهات والقواعد والتمارين. اشتغل عليها، وإذا علقت بأي شي افتح محادثة مع Claude واسأله مباشرة عن نفس موضوع الـ Unit.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="stripe-divider"><div></div><div></div><div></div></div>
+<footer>
+  <span class="big-de">DEUTSCH</span>
+  <p>من الصفر إلى B2 · مع Claude · ابدأ اليوم</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => io.observe(r));
+</script>
+</body>
+</html>

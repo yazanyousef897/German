@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 11 — FULL | البيت · Dativ · Wechselpräpositionen | A1 المتقدم</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'11';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(204,0,0,.12);border:1px solid rgba(204,0,0,.3);color:#ff6b6b;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:520px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.greet-col{background:var(--black);padding:1.8rem}
+.greet-col-h{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--gray2)}
+.gc-gold{color:var(--gold)}.gc-blue{color:var(--blue)}.gc-green{color:var(--green)}.gc-purple{color:var(--purple)}
+.gi{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.gi:last-child{border-bottom:none}
+.gi-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--white);min-width:160px;flex-shrink:0}
+.gi-ar{font-size:.82rem;color:var(--white);font-weight:600;margin-bottom:.1rem}
+.gi-note{font-size:.7rem;color:var(--dim)}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.rg-card{background:var(--gray);padding:1.3rem;text-align:center}
+.rg-flag{font-size:1.6rem;margin-bottom:.4rem;display:block}
+.rg-region{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-bottom:.4rem}
+.rg-de{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;color:var(--gold);margin-bottom:.25rem}
+.rg-ar{font-size:.75rem;color:var(--dim)}
+.time-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.tc{background:var(--gray);padding:1.2rem 1rem;text-align:center}
+.tc-icon{font-size:1.5rem;margin-bottom:.4rem;display:block}
+.tc-label{font-size:.6rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.3rem}
+.tc-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--gold)}
+.tc-ar{font-size:.72rem;color:var(--dim);margin-top:.15rem}
+.pron-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pron-card{background:var(--black);padding:1.1rem;transition:background .2s}
+.pron-card:hover{background:var(--gray)}
+.pron-de{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
+.pron-ipa{font-size:.75rem;color:var(--gold);margin-bottom:.2rem;font-family:'JetBrains Mono',monospace}
+.pron-ar{font-size:.75rem;color:var(--dim)}
+.pron-tip{font-size:.68rem;color:rgba(255,206,0,.5);margin-top:.3rem}
+.pronoun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.pronoun-card{background:var(--black);padding:1.4rem;position:relative;overflow:hidden;transition:background .2s}
+.pronoun-card:hover{background:var(--gray)}
+.pronoun-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s}
+.pronoun-card:hover::before{height:100%}
+.pd{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1;margin-bottom:.2rem}
+.pa{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.pt{font-size:.68rem;color:var(--dim);letter-spacing:.08em}
+.pe{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:rgba(255,206,0,.5);margin-top:.4rem}
+.sein-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.sein-t th,.sein-t td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.sein-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.sein-t tbody tr{transition:background .15s}
+.sein-t tbody tr:hover{background:var(--gray)}
+.st-p{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.st-v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--gold)}
+.st-m{font-size:.8rem;color:var(--dim)}
+.st-e{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic}
+.badge{display:inline-block;padding:.1rem .5rem;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bs{background:rgba(255,206,0,.1);color:var(--gold)}.bp{background:rgba(204,0,0,.1);color:#ff6b6b}
+.bm{background:rgba(96,165,250,.1);color:var(--blue)}.bf{background:rgba(167,139,250,.1);color:var(--purple)}.bn{background:rgba(34,197,94,.1);color:var(--green)}
+.bw{background:rgba(96,165,250,.1);color:var(--blue)}.bwh{background:rgba(204,0,0,.1);color:#ff6b6b}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}
+.note-gold p,.note-green p,.note-red p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.shadow-box{background:var(--gray2);border:1px solid var(--gray3);padding:1.4rem;margin-bottom:1rem}
+.sh-step{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.75rem}
+.sh-step:last-child{margin-bottom:0}
+.sh-num{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold);flex-shrink:0;line-height:1;min-width:22px}
+.sh-text{font-size:.8rem;color:rgba(245,245,240,.7);line-height:1.7}
+.sh-text code{font-family:'JetBrains Mono',monospace;color:var(--white);background:var(--gray3);padding:.1rem .35rem}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'✍️';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2)}
+.days-grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.7rem 1.2rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.72rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'→';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'▶';color:var(--blue)}
+.day-tasks li.wl::before{content:'✍';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.greet-grid{grid-template-columns:1fr}.pronoun-grid,.days-grid,.days-grid-5{grid-template-columns:repeat(2,1fr)}.region-grid,.time-strip{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 · UNIT 11 · ADVANCED</span>
+  <ul class="nav-links">
+    <li><a href="#videos">▶ فيديوهات</a></li>
+    <li><a href="#haus">البيت</a></li>
+    <li><a href="#dativ">Dativ</a></li>
+    <li><a href="#prep">Präpositionen</a></li>
+    <li><a href="#verbs">الوضع/الحركة</a></li>
+    <li><a href="#satz">الجملة</a></li>
+    <li><a href="#vocab">مفردات</a></li>
+    <li><a href="#culture">ثقافة</a></li>
+    <li><a href="#exercises">تمارين</a></li>
+    <li><a href="#writing">كتابة</a></li>
+    <li><a href="#resources">مصادر</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-badge">🔴 متقدم A1 · Unit 11 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">البيت والأثاث</span> <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span> <span class="r">Dativ</span></h1>
+  <p class="hero-sub">7 فيديوهات YouTube · غرف البيت والأثاث · حالة Dativ وأدواتها · الـ9 حروف جر ذات الاتجاهين (Wechselpräpositionen) · Wo? مقابل Wohin? · أفعال الوضع والحركة · 85+ مفردة · ثقافة السكن في ألمانيا · أخطاء شائعة · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">7</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">85+</span><span class="hm-label">مفردة</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين</span></div>
+    <div class="hm-item"><span class="hm-num">9</span><span class="hm-label">Wechselpräpositionen</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">▶</span><div><div class="sec-t">فيديوهات YouTube — شاهد بالترتيب</div><div class="sec-d">لكل فيديو مهمة استماع محددة — لا تشوف بدون مهمة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">⚠️ كيف تستخدم الفيديوهات بشكل صحيح</div><p>هذه الوحدة فيها أهم قاعدة في كل A1: <strong style="color:var(--white)">Wechselpräpositionen</strong> (حروف الجر ذات الاتجاهين). الفيديوهات 5 و 6 هي الأهم — لا تنتقل منها قبل ما تفهم الفرق بين <code>Wo?</code> و <code>Wohin?</code> تماماً. لكل فيديو <strong style="color:var(--white)">مهمة استماع محددة</strong> — اكتبها في دفترك.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/aRWnhLuNSp8" title="A1 Lesson 44 Wohnung und Haus" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 44</div><div class="video-title">Wohnung & Haus — غرف البيت والشقة</div><div class="video-desc">مفردات أساسية لغرف البيت والشقة — الأساس الذي تُبنى عليه كل الوحدة.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب كل اسم غرفة تسمعه مع أداته (der/die/das) — هدفك 10 غرف.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/zQXmPJl8oTc" title="A1 Lesson 45 Moebel und Haushaltsgeraete" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📖 Learn German Original · A1 Lesson 45</div><div class="video-title">Möbel und Haushaltsgeräte — الأثاث والأجهزة</div><div class="video-desc">أثاث كل غرفة (Sofa, Bett, Schrank...) والأجهزة المنزلية (Kühlschrank, Waschmaschine...).</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب 10 قطع أثاث/أجهزة مع جنسها (der/die/das).</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/YRWehEtSPQY" title="Nicos Weg Folge 26 Meine Wohnung" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · Folge 26</div><div class="video-title">Meine Wohnung — نيكو يبحث عن غرفة</div><div class="video-desc">نيكو يزور شقة سكن مشترك (WG) ويسأل عن الغرف والإيجار — مفردات Miete و Nebenkosten في سياق حقيقي.</div><div class="video-task"><strong>مهمة الاستماع:</strong> كم غرفة في الشقة؟ وكم الإيجار شهرياً مع Nebenkosten؟</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/s9y2sCNOzBk" title="Nicos Weg Folge 27 Sofa Sessel und Tisch" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🎬 DW · Nicos Weg · Folge 27</div><div class="video-title">Sofa, Sessel und Tisch — ترتيب الأثاث</div><div class="video-desc">نيكو ورفقاؤه يرتبون الأثاث في الشقة الجديدة — استخدام طبيعي لـ stellen/legen مع Akkusativ.</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب 3 جمل من الفيديو تستخدم "stellen" أو "legen" + مكان.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/auWRmuw_AcY" title="Wechselpraepositionen Dativ und Akkusativ" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Wechselpräpositionen</div><div class="video-title">Wechselpräpositionen — حروف الجر ذات الاتجاهين ⭐</div><div class="video-desc">أهم فيديو في الوحدة. الـ9 حروف (in, an, auf, über, unter, vor, hinter, neben, zwischen) والفرق بين Wo? (Dativ) و Wohin? (Akkusativ).</div><div class="video-task"><strong>مهمة الاستماع:</strong> اكتب الـ9 حروف، ولكل واحد مثال Wo? ومثال Wohin?.</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/wknNktOlhlo" title="Positionsverben und Richtungsverben Dativ Akkusativ" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Positions- vs. Richtungsverben</div><div class="video-title">stehen/liegen/hängen ↔ stellen/legen/hängen</div><div class="video-desc">أفعال الوضع (لا حركة → Dativ) مقابل أفعال الحركة (وضع شيء → Akkusativ) — يكمّل فيديو Wechselpräpositionen مباشرة.</div><div class="video-task"><strong>مهمة الاستماع:</strong> صرّف 4 جمل: شيء "يقف/يكمن/معلّق" مقابل "أنا أضع/أعلّق".</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/jlZjNcgItlY" title="Super Easy German Tour Through Our Apartment" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 Easy German · جولة حقيقية (Slow German)</div><div class="video-title">جولة في شقة ألمانية حقيقية</div><div class="video-desc">جولة بطيئة وواضحة في شقة حقيقية — أفضل تطبيق عملي لكل مفردات الوحدة وحروف الجر مع غرف حقيقية.</div><div class="video-task"><strong>لليوم الخامس:</strong> اكتب كل غرفة وقطعة أثاث تسمعها مع حرف الجر المستخدم معها.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- HAUS & WOHNUNG -->
+<section class="section" id="haus">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">البيت والشقة — Haus & Wohnung</div><div class="sec-d">أنواع السكن · غرف البيت · بنية Es gibt + Akkusativ</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 أين أنت الآن في الخطة؟</div><p>في الوحدات 1–10 بنيت الأساس: <code>sein</code> و <code>haben</code>، الأفعال المنتظمة، الأرقام والوقت، و <code>Akkusativ</code> مع أدوات النكرة. الآن في Unit 11 تدخل رسمياً إلى <strong style="color:var(--white)">حالة Dativ</strong> — الحالة الثالثة في الألمانية. موضوع البيت هو السياق المثالي لتعلمها، لأن وصف "أين تقع الأشياء" هو الاستخدام الأكثر شيوعاً لـ Dativ في الحياة اليومية.</p></div>
+  <div class="time-strip reveal">
+    <div class="tc"><span class="tc-icon">🏢</span><div class="tc-label">شقة في عمارة</div><div class="tc-de">die Wohnung</div><div class="tc-ar">شقة</div></div>
+    <div class="tc"><span class="tc-icon">🏠</span><div class="tc-label">بيت مستقل</div><div class="tc-de">das Haus</div><div class="tc-ar">بيت / منزل</div></div>
+    <div class="tc"><span class="tc-icon">🚪</span><div class="tc-label">غرفة واحدة تُستأجر</div><div class="tc-de">das Zimmer</div><div class="tc-ar">غرفة</div></div>
+    <div class="tc"><span class="tc-icon">👥</span><div class="tc-label">سكن مشترك مع آخرين</div><div class="tc-de">die WG</div><div class="tc-ar">Wohngemeinschaft — سكن جماعي</div></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">بنية Es gibt + Akkusativ — "يوجد / هناك"</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Es gibt</span><span class="sbox sbox-rest">drei Zimmer, eine Küche und ein Bad.</span><span class="sbox-ar">يوجد ثلاث غرف ومطبخ وحمام.</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Es gibt</span><span class="sbox sbox-rest">keinen Balkon, aber einen Garten.</span><span class="sbox-ar">لا يوجد بلكون، لكن يوجد حديقة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Gibt es</span><span class="sbox sbox-rest">einen Aufzug im Haus?</span><span class="sbox-ar">هل يوجد مصعد في العمارة؟</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ قاعدة Es gibt</div><p><code>Es gibt</code> ثابتة دائماً (لا تتغير مع العدد) وما بعدها يأخذ <strong style="color:var(--white)">Akkusativ</strong> دائماً: <code>ein Zimmer → ein Zimmer</code> · <code>eine Küche → eine Küche</code> · <code>ein Balkon → einen Balkon</code> (مذكر فقط يتغير ein→einen). هذه نفس قاعدة Akkusativ التي تعلمتها في Units 7–8.</p></div>
+  <div class="greet-grid reveal">
+    <div class="greet-col">
+      <div class="greet-col-h gc-gold">غرف السكن الأساسية — Wohnräume</div>
+      <div class="gi"><div class="gi-de">das Wohnzimmer</div><div><div class="gi-ar">غرفة المعيشة / الصالون</div><div class="gi-note">أكبر غرفة، فيها التلفاز والصوفا</div></div></div>
+      <div class="gi"><div class="gi-de">das Schlafzimmer</div><div><div class="gi-ar">غرفة النوم</div><div class="gi-note">schlafen = ينام</div></div></div>
+      <div class="gi"><div class="gi-de">die Küche</div><div><div class="gi-ar">المطبخ</div><div class="gi-note">مؤنث — die</div></div></div>
+      <div class="gi"><div class="gi-de">das Bad / Badezimmer</div><div><div class="gi-ar">الحمام</div><div class="gi-note">يحتوي الدش والمغسلة</div></div></div>
+      <div class="gi"><div class="gi-de">das Kinderzimmer</div><div><div class="gi-ar">غرفة الأطفال</div><div class="gi-note">Kinder + Zimmer</div></div></div>
+      <div class="gi"><div class="gi-de">das Arbeitszimmer / Büro</div><div><div class="gi-ar">غرفة العمل / المكتب</div><div class="gi-note">للعمل من المنزل</div></div></div>
+      <div class="gi"><div class="gi-de">das Esszimmer</div><div><div class="gi-ar">غرفة الطعام</div><div class="gi-note">essen + Zimmer</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-blue">أماكن إضافية — Weitere Räume</div>
+      <div class="gi"><div class="gi-de">der Flur</div><div><div class="gi-ar">الممر / المدخل</div><div class="gi-note">أول ما تدخل البيت</div></div></div>
+      <div class="gi"><div class="gi-de">der Balkon</div><div><div class="gi-ar">البلكون / الشرفة</div><div class="gi-note">شائع جداً في الشقق الألمانية</div></div></div>
+      <div class="gi"><div class="gi-de">die Terrasse</div><div><div class="gi-ar">التراس / الشرفة الأرضية</div><div class="gi-note">في البيوت المستقلة عادة</div></div></div>
+      <div class="gi"><div class="gi-de">der Keller</div><div><div class="gi-ar">القبو / السرداب</div><div class="gi-note">للتخزين — كل شقة لها واحد عادة</div></div></div>
+      <div class="gi"><div class="gi-de">der Dachboden</div><div><div class="gi-ar">العلية / تحت السقف</div><div class="gi-note">Dach = سقف · Boden = أرض</div></div></div>
+      <div class="gi"><div class="gi-de">der Garten</div><div><div class="gi-ar">الحديقة</div><div class="gi-note">للبيوت المستقلة بشكل أساسي</div></div></div>
+      <div class="gi"><div class="gi-de">die Garage</div><div><div class="gi-ar">الكراج</div><div class="gi-note">لتوقف السيارة</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-green">عبارات أساسية — Wichtige Sätze</div>
+      <div class="gi"><div class="gi-de">Wie viele Zimmer hat...?</div><div><div class="gi-ar">كم غرفة في...؟</div><div class="gi-note">سؤال أساسي عند البحث عن شقة</div></div></div>
+      <div class="gi"><div class="gi-de">Die Wohnung hat 3 Zimmer.</div><div><div class="gi-ar">الشقة فيها 3 غرف.</div><div class="gi-note">haben بدل es gibt — كلاهما صحيح</div></div></div>
+      <div class="gi"><div class="gi-de">im Erdgeschoss</div><div><div class="gi-ar">في الطابق الأرضي</div><div class="gi-note">Erde = أرض · Geschoss = طابق</div></div></div>
+      <div class="gi"><div class="gi-de">im ersten/zweiten Stock</div><div><div class="gi-ar">في الطابق الأول/الثاني</div><div class="gi-note">Stock = طابق (بدءاً من الأول فوق الأرضي)</div></div></div>
+      <div class="gi"><div class="gi-de">der Quadratmeter (qm/m²)</div><div><div class="gi-ar">المتر المربع</div><div class="gi-note">لقياس مساحة الغرف والشقة</div></div></div>
+      <div class="gi"><div class="gi-de">Wie groß ist die Wohnung?</div><div><div class="gi-ar">كم مساحة الشقة؟</div><div class="gi-note">groß = كبير، يُستخدم للمساحة أيضاً</div></div></div>
+      <div class="gi"><div class="gi-de">möbliert / unmöbliert</div><div><div class="gi-ar">مفروشة / غير مفروشة</div><div class="gi-note">مهم جداً عند البحث عن سكن</div></div></div>
+    </div>
+    <div class="greet-col">
+      <div class="greet-col-h gc-purple">صفات لوصف البيت — Adjektive</div>
+      <div class="gi"><div class="gi-de">hell / dunkel</div><div><div class="gi-ar">مشمس وواضح / مظلم</div><div class="gi-note">Das Zimmer ist hell.</div></div></div>
+      <div class="gi"><div class="gi-de">groß / klein</div><div><div class="gi-ar">كبير / صغير</div><div class="gi-note">تعلمتها في Unit 01</div></div></div>
+      <div class="gi"><div class="gi-de">gemütlich</div><div><div class="gi-ar">مريح ومرتب / cozy</div><div class="gi-note">كلمة ألمانية محبوبة جداً</div></div></div>
+      <div class="gi"><div class="gi-de">modern / alt</div><div><div class="gi-ar">حديث / قديم</div><div class="gi-note">alt تعلمتها في Unit 01</div></div></div>
+      <div class="gi"><div class="gi-de">ruhig / laut</div><div><div class="gi-ar">هادئ / صاخب</div><div class="gi-note">مهم جداً في الثقافة الألمانية</div></div></div>
+      <div class="gi"><div class="gi-de">renoviert</div><div><div class="gi-ar">مُجدّد / تم تجديده</div><div class="gi-note">من renovieren = يجدد</div></div></div>
+      <div class="gi"><div class="gi-de">leer / voll</div><div><div class="gi-ar">فاضي / مليء</div><div class="gi-note">die Wohnung ist leer = بدون أثاث</div></div></div>
+    </div>
+  </div>
+  <p class="vst reveal">أنواع المساكن في ألمانيا — Wohnformen</p>
+  <div class="region-grid reveal">
+    <div class="rg-card"><span class="rg-flag">🔑</span><div class="rg-region">الأكثر شيوعاً</div><div class="rg-de">die Mietwohnung</div><div class="rg-ar">شقة مستأجرة</div></div>
+    <div class="rg-card"><span class="rg-flag">🏡</span><div class="rg-region">أقل شيوعاً</div><div class="rg-de">die Eigentumswohnung</div><div class="rg-ar">شقة مملوكة</div></div>
+    <div class="rg-card"><span class="rg-flag">🏛️</span><div class="rg-region">عمارة قديمة</div><div class="rg-de">der Altbau</div><div class="rg-ar">مبنى قديم (قبل 1945 عادة)</div></div>
+    <div class="rg-card"><span class="rg-flag">🏗️</span><div class="rg-region">عمارة جديدة</div><div class="rg-de">der Neubau</div><div class="rg-ar">مبنى جديد</div></div>
+    <div class="rg-card"><span class="rg-flag">👨‍👩‍👧</span><div class="rg-region">للعائلات</div><div class="rg-de">das Einfamilienhaus</div><div class="rg-ar">بيت لعائلة واحدة</div></div>
+    <div class="rg-card"><span class="rg-flag">🎓</span><div class="rg-region">شائع بين الطلاب</div><div class="rg-de">die Wohngemeinschaft (WG)</div><div class="rg-ar">سكن جماعي مشترك</div></div>
+  </div>
+  <p class="vst reveal">حوار نموذجي — معاينة شقة</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 1 — عند معاينة شقة للإيجار</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hallo! Ich bin hier wegen der Wohnung.</div><div class="dl-ar">أهلاً! أنا هنا بخصوص الشقة.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Hallo! Kommen Sie rein. Das ist das Wohnzimmer.</div><div class="dl-ar">أهلاً! تفضل بالدخول. هذه غرفة المعيشة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Schön und hell! Wie viele Zimmer hat die Wohnung?</div><div class="dl-ar">جميلة ومشمسة! كم غرفة في الشقة؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Es gibt zwei Zimmer, eine Küche und ein Bad. Und einen kleinen Balkon.</div><div class="dl-ar">يوجد غرفتان ومطبخ وحمام. وبلكون صغير.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wie viel kostet die Miete im Monat?</div><div class="dl-ar">كم الإيجار شهرياً؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">650 Euro kalt, mit Nebenkosten 800 Euro.</div><div class="dl-ar">650 يورو بدون الخدمات، 800 يورو معها.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- DATIV -->
+<section class="section" id="dativ">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">حالة Dativ — مقدمة</div><div class="sec-d">أدوات Dativ · ضمائر Dativ · الاختصارات الشائعة</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 ما هو Dativ؟</div><p>الألمانية فيها 4 حالات: <code>Nominativ</code> (الفاعل) · <code>Akkusativ</code> (المفعول به — تعلمته في Units 7–8) · <code>Dativ</code> (الحالة الجديدة هنا) · <code>Genitiv</code> (لاحقاً). الاستخدام الأهم لـ Dativ في مستوى A1 هو <strong style="color:var(--white)">بعد حروف الجر التي تصف مكان شيء</strong> — وهذا موضوع هذه الوحدة كاملة.</p></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">🧠 أنت تستخدم Dativ من Unit 01 بدون أن تعرف!</div><p>تذكّر <code>Wie geht es Ihnen?</code> و <code>Wie geht es dir?</code> — كلمتا <code>Ihnen</code> و <code>dir</code> هما ضمائر Dativ! كنت تستخدمها بشكل صحيح من اليوم الأول. الآن ستفهم <strong style="color:var(--white)">لماذا</strong> هي بهذا الشكل.</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>النوع</th><th>Nominativ</th><th>Dativ</th><th>مثال مع حرف جر</th><th></th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">der Tisch</td><td class="st-m">der</td><td class="st-v">dem</td><td class="st-e">auf dem Tisch — على الطاولة</td><td><span class="badge bm">مذكر</span></td></tr>
+        <tr><td class="st-p">die Wand</td><td class="st-m">die</td><td class="st-v">der</td><td class="st-e">an der Wand — على الحائط</td><td><span class="badge bf">مؤنث</span></td></tr>
+        <tr><td class="st-p">das Fenster</td><td class="st-m">das</td><td class="st-v">dem</td><td class="st-e">neben dem Fenster — بجانب النافذة</td><td><span class="badge bn">محايد</span></td></tr>
+        <tr><td class="st-p">die Bücher (Pl.)</td><td class="st-m">die</td><td class="st-v">den</td><td class="st-e">zwischen den Büchern — بين الكتب</td><td><span class="badge bp">جمع</span></td></tr>
+        <tr><td class="st-p">ein Tisch</td><td class="st-m">ein</td><td class="st-v">einem</td><td class="st-e">auf einem Tisch — على طاولة (ما)</td><td><span class="badge bm">نكرة م.</span></td></tr>
+        <tr><td class="st-p">eine Wand</td><td class="st-m">eine</td><td class="st-v">einer</td><td class="st-e">an einer Wand — على حائط (ما)</td><td><span class="badge bf">نكرة ف.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الحيلة الذهبية لحفظ Dativ</div><p>كل أدوات Dativ المعرّفة تنتهي بحرف <strong style="color:var(--white)">m</strong> أو <strong style="color:var(--white)">r</strong> أو <strong style="color:var(--white)">n</strong>: <code>der/das → dem</code> (m) · <code>die → der</code> (r) · <code>die (جمع) → den</code> (n). لاحظ: <code>der</code> و <code>das</code> يتحولان لنفس الشكل <code>dem</code> — هذا يبسط الأمور!</p></div>
+  <p class="vst reveal">ضمائر Dativ الشخصية — Personalpronomen im Dativ</p>
+  <div class="pron-grid reveal">
+    <div class="pron-card"><div class="pron-de">mir</div><div class="pron-ipa">ich →</div><div class="pron-ar">لي / إليّ</div><div class="pron-tip">Das Buch gehört mir.</div></div>
+    <div class="pron-card"><div class="pron-de">dir</div><div class="pron-ipa">du →</div><div class="pron-ar">لك (عادي)</div><div class="pron-tip">Wie geht es dir? (Unit 01!)</div></div>
+    <div class="pron-card"><div class="pron-de">ihm</div><div class="pron-ipa">er / es →</div><div class="pron-ar">له</div><div class="pron-tip">Ich gebe ihm das Buch.</div></div>
+    <div class="pron-card"><div class="pron-de">ihr</div><div class="pron-ipa">sie (هي) →</div><div class="pron-ar">لها</div><div class="pron-tip">Ich helfe ihr.</div></div>
+    <div class="pron-card"><div class="pron-de">uns</div><div class="pron-ipa">wir →</div><div class="pron-ar">لنا</div><div class="pron-tip">Das gehört uns.</div></div>
+    <div class="pron-card"><div class="pron-de">euch</div><div class="pron-ipa">ihr →</div><div class="pron-ar">لكم</div><div class="pron-tip">Ich zeige euch die Wohnung.</div></div>
+    <div class="pron-card"><div class="pron-de">ihnen</div><div class="pron-ipa">sie (هم) →</div><div class="pron-ar">لهم</div><div class="pron-tip">Ich schreibe ihnen.</div></div>
+    <div class="pron-card"><div class="pron-de" style="color:var(--blue)">Ihnen</div><div class="pron-ipa">Sie (رسمي) →</div><div class="pron-ar">لك/لكم (رسمي)</div><div class="pron-tip">Wie geht es Ihnen? (Unit 01!)</div></div>
+  </div>
+  <div class="greet-grid reveal" style="grid-template-columns:1fr 1fr;margin-bottom:1.5rem;">
+    <div class="greet-col"><div class="greet-col-h gc-gold">اختصارات شائعة — Kontraktionen</div>
+      <div class="gi"><div class="gi-de">in dem → im</div><div><div class="gi-ar">im Wohnzimmer</div><div class="gi-note">الأكثر استخداماً في هذه الوحدة</div></div></div>
+      <div class="gi"><div class="gi-de">an dem → am</div><div><div class="gi-ar">am Fenster</div><div class="gi-note">وأيضاً مع الأيام: am Montag</div></div></div>
+      <div class="gi"><div class="gi-de">bei dem → beim</div><div><div class="gi-ar">beim Tisch</div><div class="gi-note">bei + dem</div></div></div>
+      <div class="gi"><div class="gi-de">von dem → vom</div><div><div class="gi-ar">vom Balkon</div><div class="gi-note">von + dem</div></div></div>
+      <div class="gi"><div class="gi-de">zu dem → zum</div><div><div class="gi-ar">zum Beispiel</div><div class="gi-note">zu + dem</div></div></div>
+      <div class="gi"><div class="gi-de">zu der → zur</div><div><div class="gi-ar">zur Küche</div><div class="gi-note">zu + der (مؤنث)</div></div></div>
+      <div class="gi"><div class="gi-de">an das → ans</div><div><div class="gi-ar">ans Fenster</div><div class="gi-note">⚠️ هذه اختصار Akkusativ — القسم القادم</div></div></div>
+    </div>
+    <div class="greet-col"><div class="greet-col-h gc-blue">حروف جر دائماً مع Dativ</div>
+      <div class="gi"><div class="gi-de">aus</div><div><div class="gi-ar">من (أصل/مصدر)</div><div class="gi-note">Ich komme aus Syrien.</div></div></div>
+      <div class="gi"><div class="gi-de">bei</div><div><div class="gi-ar">عند / لدى</div><div class="gi-note">bei meinen Eltern</div></div></div>
+      <div class="gi"><div class="gi-de">mit</div><div><div class="gi-ar">مع</div><div class="gi-note">mit meiner Familie</div></div></div>
+      <div class="gi"><div class="gi-de">nach</div><div><div class="gi-ar">إلى / بعد</div><div class="gi-note">nach Hause = إلى البيت</div></div></div>
+      <div class="gi"><div class="gi-de">von</div><div><div class="gi-ar">من</div><div class="gi-note">von der Arbeit</div></div></div>
+      <div class="gi"><div class="gi-de">zu</div><div><div class="gi-ar">إلى</div><div class="gi-note">zu Hause = في البيت (بدون حركة!)</div></div></div>
+      <div class="gi"><div class="gi-de">seit</div><div><div class="gi-ar">منذ</div><div class="gi-note">seit einem Jahr</div></div></div>
+    </div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 الفرق بين هذه الحروف والـ Wechselpräpositionen</div><p>الحروف في الجدول الأزرق أعلاه <strong style="color:var(--white)">دائماً Dativ</strong> — لا تتغير أبداً. لكن القسم القادم فيه 9 حروف جر <strong style="color:var(--gold)">تتغير</strong> بين Dativ و Akkusativ حسب السياق — هذه أهم نقطة قواعدية في الوحدة كاملة.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WECHSELPRÄPOSITIONEN -->
+<section class="section" id="prep">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">Wechselpräpositionen — حروف الجر ذات الاتجاهين</div><div class="sec-d">⭐ أهم قاعدة في الوحدة — الـ9 حروف · Wo? مقابل Wohin؟</div></div></div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ القاعدة الذهبية — اسأل نفسك أولاً</div><p>هذه الـ9 حروف (<code>in · an · auf · über · unter · vor · hinter · neben · zwischen</code>) تتغير حسب السؤال:</p><p style="margin-top:.6rem"><span class="badge bw" style="margin-left:.4rem">Wo?</span> أين — <strong style="color:var(--white)">لا حركة، الشيء ثابت</strong> → <code>Dativ</code> (dem/der/dem/den)</p><p style="margin-top:.4rem"><span class="badge bwh" style="margin-left:.4rem">Wohin?</span> إلى أين — <strong style="color:var(--white)">حركة، شيء ينتقل لمكان جديد</strong> → <code>Akkusativ</code> (den/die/das/die)</p></div>
+  <div class="pronoun-grid reveal">
+    <div class="pronoun-card"><div class="pd">in</div><div class="pa">في / داخل</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Die Kleidung ist im Schrank.</div><div class="pe">Wohin? Ich lege sie in den Schrank.</div></div>
+    <div class="pronoun-card"><div class="pd">an</div><div class="pa">على / عند (جانب)</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Das Bild hängt an der Wand.</div><div class="pe">Wohin? Ich hänge es an die Wand.</div></div>
+    <div class="pronoun-card"><div class="pd">auf</div><div class="pa">على (فوق سطح)</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Die Tasse steht auf dem Tisch.</div><div class="pe">Wohin? Ich stelle sie auf den Tisch.</div></div>
+    <div class="pronoun-card"><div class="pd">über</div><div class="pa">فوق (بدون لمس)</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Die Lampe hängt über dem Tisch.</div><div class="pe">Wohin? Ich hänge sie über den Tisch.</div></div>
+    <div class="pronoun-card"><div class="pd">unter</div><div class="pa">تحت</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Die Schuhe stehen unter dem Bett.</div><div class="pe">Wohin? Ich stelle sie unter das Bett.</div></div>
+    <div class="pronoun-card"><div class="pd">vor</div><div class="pa">أمام</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Das Auto steht vor dem Haus.</div><div class="pe">Wohin? Ich fahre vor das Haus.</div></div>
+    <div class="pronoun-card"><div class="pd">hinter</div><div class="pa">خلف</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Der Garten ist hinter dem Haus.</div><div class="pe">Wohin? Ich gehe hinter das Haus.</div></div>
+    <div class="pronoun-card"><div class="pd">neben</div><div class="pa">بجانب</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Der Stuhl steht neben dem Tisch.</div><div class="pe">Wohin? Ich stelle ihn neben den Tisch.</div></div>
+    <div class="pronoun-card"><div class="pd">zwischen</div><div class="pa">بين</div><div class="pt">Wo? + Dativ · Wohin? + Akkusativ</div><div class="pe">Wo? Das Regal steht zwischen Fenster und Tür.</div><div class="pe">Wohin? Ich stelle es zwischen Fenster und Tür.</div></div>
+  </div>
+  <p class="vst reveal">أمثلة Wo? — لا حركة → Dativ</p>
+  <div class="satz-box reveal"><div class="satz-title"><span class="badge bw" style="margin-left:.4rem">Wo?</span>الشيء ثابت في مكانه</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">ist</span><span class="sbox sbox-subj">die Lampe?</span><span class="sbox-ar">أين اللمبة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">steht</span><span class="sbox sbox-rest">auf dem Tisch.</span><span class="sbox-ar">إنها على الطاولة. (Dativ)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wo</span><span class="sbox sbox-verb">hängt</span><span class="sbox sbox-subj">das Bild?</span><span class="sbox-ar">أين تُعلّق اللوحة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Es</span><span class="sbox sbox-verb">hängt</span><span class="sbox sbox-rest">an der Wand.</span><span class="sbox-ar">إنها على الحائط. (Dativ)</span></div>
+  </div>
+  <p class="vst reveal">أمثلة Wohin? — حركة → Akkusativ</p>
+  <div class="satz-box reveal"><div class="satz-title"><span class="badge bwh" style="margin-left:.4rem">Wohin?</span>الشيء يتحرك لمكان جديد</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wohin</span><span class="sbox sbox-verb">stellst</span><span class="sbox sbox-subj">du die Lampe?</span><span class="sbox-ar">إلى أين تضع اللمبة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">stelle</span><span class="sbox sbox-rest">sie auf den Tisch.</span><span class="sbox-ar">أضعها على الطاولة. (Akkusativ)</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wohin</span><span class="sbox sbox-verb">hängst</span><span class="sbox sbox-subj">du das Bild?</span><span class="sbox-ar">إلى أين تُعلّق اللوحة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">hänge</span><span class="sbox sbox-rest">es an die Wand.</span><span class="sbox-ar">أعلّقها على الحائط. (Akkusativ)</span></div>
+  </div>
+  <div class="note-green reveal"><div class="note-title nt-gr">✅ اختصار سريع للتذكر</div><p>إذا شككت في جملة، اسأل: <strong style="color:var(--white)">"هل تغيّر مكان الشيء؟"</strong> — إذا الجواب <strong style="color:var(--green)">لا</strong> (الشيء واقف/معلّق/موجود) → <code>Dativ</code>. إذا الجواب <strong style="color:#ff6b6b">نعم</strong> (وضعت/علّقت/نقلت شيئاً) → <code>Akkusativ</code>. مع الوقت سيصبح تلقائياً.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- POSITIONS- VS RICHTUNGSVERBEN -->
+<section class="section" id="verbs">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">أفعال الوضع والحركة — Position & Richtung</div><div class="sec-d">stehen/liegen/hängen/sitzen (Dativ) ↔ stellen/legen/hängen/setzen (Akkusativ)</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 الفعل يخبرك بالحالة قبل حتى أن تنظر لحرف الجر</div><p>هناك مجموعة أفعال "وضع" تصف <strong style="color:var(--white)">أين الشيء موجود</strong> (تأخذ Dativ تلقائياً) ومجموعة موازية من أفعال "حركة" تصف <strong style="color:var(--gold)">أنت تضع شيئاً في مكان</strong> (تأخذ Akkusativ تلقائياً). إذا حفظت هذه الأزواج، ستعرف الحالة الصحيحة من الفعل نفسه دون تفكير.</p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="sein-t">
+      <thead><tr><th>وضع — Wo? + Dativ</th><th>حركة — Wohin? + Akkusativ</th><th>المعنى</th><th>مثال</th><th></th></tr></thead>
+      <tbody>
+        <tr><td class="st-p">stehen</td><td class="st-v">stellen</td><td class="st-m">يقف / يضع (شيء عمودي)</td><td class="st-e">Der Stuhl steht hier. → Ich stelle den Stuhl hier.</td><td><span class="badge bw">عمودي</span></td></tr>
+        <tr><td class="st-p">liegen</td><td class="st-v">legen</td><td class="st-m">مستلقٍ / يضع (شيء مسطّح)</td><td class="st-e">Das Buch liegt da. → Ich lege das Buch da.</td><td><span class="badge bw">مسطّح</span></td></tr>
+        <tr><td class="st-p">hängen</td><td class="st-v">hängen</td><td class="st-m">معلّق / يُعلّق</td><td class="st-e">Das Bild hängt da. → Ich hänge das Bild da.</td><td><span class="badge bw">معلّق</span></td></tr>
+        <tr><td class="st-p">sitzen</td><td class="st-v">sich setzen</td><td class="st-m">جالس / يجلس</td><td class="st-e">Die Katze sitzt da. → Ich setze mich da.</td><td><span class="badge bw">جالس</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ ملاحظة عن hängen</div><p><code>hängen</code> تُستخدم بنفس الشكل في الحالتين على مستوى A1 (الفرق الحقيقي في تصريف الماضي لاحقاً: hing/hängte) — لا تقلق بشأنها الآن، فقط ركّز على حرف الجر: <code>Dativ</code> = الشيء معلّق، <code>Akkusativ</code> = أنت تعلّق شيئاً.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">أمثلة إضافية — وضع مقابل حركة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Der Teppich</span><span class="sbox sbox-verb">liegt</span><span class="sbox sbox-rest">unter dem Tisch.</span><span class="sbox-ar">السجادة تحت الطاولة. (Dativ)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">lege</span><span class="sbox sbox-rest">den Teppich unter den Tisch.</span><span class="sbox-ar">أضع السجادة تحت الطاولة. (Akkusativ)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Die Bücher</span><span class="sbox sbox-verb">stehen</span><span class="sbox sbox-rest">im Regal.</span><span class="sbox-ar">الكتب في الرف. (Dativ — im = in dem)</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">stelle</span><span class="sbox sbox-rest">die Bücher ins Regal.</span><span class="sbox-ar">أضع الكتب في الرف. (Akkusativ — ins = in das)</span></div>
+  </div>
+  <p class="vst reveal">حوار نموذجي — ترتيب الشقة الجديدة</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 2 — مع صديق ينقل الأثاث</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wohin stellen wir das Sofa?</div><div class="dl-ar">إلى أين نضع الصوفا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Stell es an die Wand, neben das Fenster.</div><div class="dl-ar">ضعه على الحائط، بجانب النافذة.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Gut. Und wo liegt der Teppich jetzt?</div><div class="dl-ar">حسناً. وأين السجادة الآن؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Er liegt noch im Auto. Leg ihn vor das Sofa.</div><div class="dl-ar">لا تزال في السيارة. ضعها أمام الصوفا.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und das Bild? Hänge ich es über das Sofa?</div><div class="dl-ar">وماذا عن اللوحة؟ هل أعلّقها فوق الصوفا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, perfekt! Jetzt sieht das Wohnzimmer gemütlich aus.</div><div class="dl-ar">نعم، رائع! الآن غرفة المعيشة تبدو مريحة.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- SENTENCE STRUCTURE -->
+<section class="section" id="satz">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">بنية الجملة مع حروف الجر — Satzstruktur</div><div class="sec-d">تطبيق قاعدة V2 على جمل المكان + ترتيب النفي</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">📌 تذكير من Unit 01 — قاعدة V2</div><p>الفعل دائماً في <strong style="color:var(--white)">المكان الثاني</strong>. في جمل المكان، أكثر شيء يتبادل الترتيب هو <code>الفاعل</code> و <code>ظرف المكان (حرف الجر)</code> — لكن الفعل يبقى ثابتاً في المركز الثاني دائماً.</p></div>
+  <div class="satz-box reveal"><div class="satz-title">ترتيب عادي: فاعل + فعل + ظرف المكان</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Das Sofa</span><span class="sbox sbox-verb">steht</span><span class="sbox sbox-rest">im Wohnzimmer.</span><span class="sbox-ar">الصوفا في غرفة المعيشة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Die Lampe</span><span class="sbox sbox-verb">hängt</span><span class="sbox sbox-rest">über dem Tisch.</span><span class="sbox-ar">اللمبة فوق الطاولة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Mein Bett</span><span class="sbox sbox-verb">steht</span><span class="sbox sbox-rest">neben dem Fenster.</span><span class="sbox-ar">سريري بجانب النافذة.</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">ترتيب مقلوب: ظرف المكان أولاً — الفعل لا يزال ثانياً!</div>
+    <div class="satz-row"><span class="sbox sbox-rest">Im Wohnzimmer</span><span class="sbox sbox-verb">steht</span><span class="sbox sbox-subj">das Sofa.</span><span class="sbox-ar">في غرفة المعيشة، الصوفا.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Über dem Tisch</span><span class="sbox sbox-verb">hängt</span><span class="sbox sbox-subj">die Lampe.</span><span class="sbox-ar">فوق الطاولة، اللمبة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Neben dem Fenster</span><span class="sbox sbox-verb">steht</span><span class="sbox sbox-subj">mein Bett.</span><span class="sbox-ar">بجانب النافذة، سريري.</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ مكان nicht مع ظروف المكان</div><p>للنفي العام، <code>nicht</code> يذهب في النهاية: <code>Das Bild hängt an der Wand nicht.</code> ← غير طبيعي. الأفضل: <code>Das Bild hängt nicht an der Wand.</code> (nicht قبل حرف الجر مباشرة عند نفي المكان تحديداً) — هذا شائع جداً عند تصحيح معلومة: <code>Nein, das Buch liegt nicht auf dem Tisch, sondern auf dem Stuhl.</code></p></div>
+  <p class="vst reveal">حوار نموذجي — أين هو؟</p>
+  <div class="dlg reveal"><div class="dlg-hd">📍 سيناريو 3 — البحث عن شيء في البيت (Wo ist...?)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wo ist mein Handy? Hast du es gesehen?</div><div class="dl-ar">أين موبايلي؟ هل رأيته؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Es liegt auf dem Tisch, glaube ich.</div><div class="dl-ar">إنه على الطاولة، أعتقد.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Nein, da ist es nicht. Ist es vielleicht unter dem Sofa?</div><div class="dl-ar">لا، ليس هناك. هل ربما تحت الصوفا؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Warte... Ja! Es liegt unter dem Sofa, neben der Fernbedienung!</div><div class="dl-ar">انتظر... نعم! إنه تحت الصوفا، بجانب الريموت!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Danke! Ich finde nie etwas in dieser Wohnung.</div><div class="dl-ar">شكراً! لا أجد أي شيء في هذه الشقة أبداً.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Vielleicht solltest du mal aufräumen! 😄</div><div class="dl-ar">ربما عليك أن ترتب البيت! 😄</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- VOCABULARY -->
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">المفردات — Vokabeln</div><div class="sec-d">85+ كلمة: أثاث · أجهزة منزلية · السكن والإيجار · أفعال مفيدة (+ غرف البيت في القسم 01)</div></div></div>
+  <p class="vst reveal">الأثاث — Möbel (مع الجنس der/die/das)</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">das Sofa</div><div class="vi-ar">الصوفا / الكنبة</div></div>
+    <div class="vi"><div class="vi-de">der Sessel</div><div class="vi-ar">كرسي بمسند (مفرد)</div></div>
+    <div class="vi"><div class="vi-de">der Tisch</div><div class="vi-ar">الطاولة</div></div>
+    <div class="vi"><div class="vi-de">der Stuhl</div><div class="vi-ar">الكرسي</div><div class="vi-note">Plural: die Stühle</div></div>
+    <div class="vi"><div class="vi-de">das Bett</div><div class="vi-ar">السرير</div></div>
+    <div class="vi"><div class="vi-de">der Schrank</div><div class="vi-ar">الخزانة / الدولاب</div></div>
+    <div class="vi"><div class="vi-de">der Kleiderschrank</div><div class="vi-ar">خزانة الملابس</div><div class="vi-note">Kleider + Schrank</div></div>
+    <div class="vi"><div class="vi-de">das Regal</div><div class="vi-ar">الرف</div><div class="vi-note">Bücherregal = رف الكتب</div></div>
+    <div class="vi"><div class="vi-de">die Lampe</div><div class="vi-ar">اللمبة / الإضاءة</div></div>
+    <div class="vi"><div class="vi-de">der Teppich</div><div class="vi-ar">السجادة</div></div>
+    <div class="vi"><div class="vi-de">der Spiegel</div><div class="vi-ar">المرآة</div></div>
+    <div class="vi"><div class="vi-de">die Kommode</div><div class="vi-ar">خزانة بأدراج</div></div>
+    <div class="vi"><div class="vi-de">der Nachttisch</div><div class="vi-ar">طاولة جانب السرير</div></div>
+    <div class="vi"><div class="vi-de">der Schreibtisch</div><div class="vi-ar">مكتب الكتابة/العمل</div></div>
+    <div class="vi"><div class="vi-de">der Couchtisch</div><div class="vi-ar">طاولة أمام الصوفا</div></div>
+    <div class="vi"><div class="vi-de">der Vorhang</div><div class="vi-ar">الستارة</div></div>
+    <div class="vi"><div class="vi-de">das Kissen</div><div class="vi-ar">المخدة / الوسادة</div></div>
+    <div class="vi"><div class="vi-de">die Decke</div><div class="vi-ar">اللحاف — أو "السقف"!</div><div class="vi-note">كلمتان مختلفتان بنفس الشكل</div></div>
+  </div>
+  <p class="vst reveal">الأجهزة المنزلية — Haushaltsgeräte</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">der Kühlschrank</div><div class="vi-ar">الثلاجة</div><div class="vi-note">kühl = بارد + Schrank</div></div>
+    <div class="vi"><div class="vi-de">der Herd</div><div class="vi-ar">موقد الطبخ</div></div>
+    <div class="vi"><div class="vi-de">der Backofen</div><div class="vi-ar">الفرن</div><div class="vi-note">backen = يخبز</div></div>
+    <div class="vi"><div class="vi-de">die Waschmaschine</div><div class="vi-ar">غسالة الملابس</div></div>
+    <div class="vi"><div class="vi-de">die Spülmaschine</div><div class="vi-ar">غسالة الصحون</div><div class="vi-note">أو: der Geschirrspüler</div></div>
+    <div class="vi"><div class="vi-de">die Mikrowelle</div><div class="vi-ar">المايكروويف</div></div>
+    <div class="vi"><div class="vi-de">der Fernseher</div><div class="vi-ar">التلفاز</div></div>
+    <div class="vi"><div class="vi-de">die Dusche</div><div class="vi-ar">الدش</div></div>
+    <div class="vi"><div class="vi-de">die Badewanne</div><div class="vi-ar">حوض الاستحمام</div></div>
+    <div class="vi"><div class="vi-de">das Waschbecken</div><div class="vi-ar">المغسلة</div></div>
+    <div class="vi"><div class="vi-de">die Heizung</div><div class="vi-ar">التدفئة / الرادياتير</div></div>
+  </div>
+  <p class="vst reveal">السكن والإيجار — Wohnen & Mieten</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">die Miete</div><div class="vi-ar">الإيجار</div></div>
+    <div class="vi"><div class="vi-de">die Kaltmiete</div><div class="vi-ar">الإيجار الأساسي (بدون الخدمات)</div></div>
+    <div class="vi"><div class="vi-de">die Nebenkosten</div><div class="vi-ar">تكاليف إضافية (ماء/كهرباء/تدفئة)</div></div>
+    <div class="vi"><div class="vi-de">die Kaution</div><div class="vi-ar">تأمين/ضمان (يُعاد عند الخروج)</div></div>
+    <div class="vi"><div class="vi-de">der Vermieter / die Vermieterin</div><div class="vi-ar">المؤجِّر / صاحب العقار</div></div>
+    <div class="vi"><div class="vi-de">der Mieter / die Mieterin</div><div class="vi-ar">المستأجِر</div></div>
+    <div class="vi"><div class="vi-de">der Mietvertrag</div><div class="vi-ar">عقد الإيجار</div></div>
+    <div class="vi"><div class="vi-de">der Umzug</div><div class="vi-ar">الانتقال / النقلة</div></div>
+    <div class="vi"><div class="vi-de">die Anzeige</div><div class="vi-ar">إعلان (شقة للإيجار)</div></div>
+    <div class="vi"><div class="vi-de">der Aufzug</div><div class="vi-ar">المصعد</div><div class="vi-note">أو: der Lift</div></div>
+    <div class="vi"><div class="vi-de">möbliert / unmöbliert</div><div class="vi-ar">مفروشة / غير مفروشة</div><div class="vi-note">من Unit 11 §01</div></div>
+    <div class="vi"><div class="vi-de">die Heizkosten</div><div class="vi-ar">تكاليف التدفئة</div><div class="vi-note">جزء من Nebenkosten</div></div>
+    <div class="vi"><div class="vi-de">der Strom</div><div class="vi-ar">الكهرباء</div></div>
+  </div>
+  <p class="vst reveal">أفعال مفيدة — Nützliche Verben</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">wohnen</div><div class="vi-ar">يسكن</div><div class="vi-note">Ich wohne in Berlin.</div></div>
+    <div class="vi"><div class="vi-de">einziehen</div><div class="vi-ar">ينتقل للسكن (يدخل)</div><div class="vi-note">فعل قابل للفصل: zieht ein</div></div>
+    <div class="vi"><div class="vi-de">ausziehen</div><div class="vi-ar">ينتقل من السكن (يخرج)</div><div class="vi-note">عكس einziehen</div></div>
+    <div class="vi"><div class="vi-de">umziehen</div><div class="vi-ar">ينتقل (لمكان جديد)</div></div>
+    <div class="vi"><div class="vi-de">aufräumen</div><div class="vi-ar">يرتب / ينظف الفوضى</div></div>
+    <div class="vi"><div class="vi-de">putzen</div><div class="vi-ar">ينظف (بالتفصيل)</div></div>
+    <div class="vi"><div class="vi-de">renovieren</div><div class="vi-ar">يجدد / يرمم</div></div>
+    <div class="vi"><div class="vi-de">einrichten</div><div class="vi-ar">يرتب الأثاث / يفرّش</div></div>
+    <div class="vi"><div class="vi-de">suchen / finden</div><div class="vi-ar">يبحث / يجد</div><div class="vi-note">Ich suche eine Wohnung.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- CULTURE + MISTAKES -->
+<section class="section" id="culture">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">ثقافة السكن في ألمانيا + الأخطاء الشائعة</div><div class="sec-d">ما لا يعلمك إياه الكتاب</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🔑</span><div class="cc-title">أغلب الألمان يستأجرون</div><div class="cc-text">نسبة المستأجرين في ألمانيا من أعلى النسب في أوروبا. الإيجار ليس "حلاً مؤقتاً" — كثير من الناس يعيشون في شقتهم المستأجرة لعقود كاملة، وهذا طبيعي تماماً اجتماعياً.</div></div>
+    <div class="culture-card"><span class="cc-icon">💶</span><div class="cc-title">Kaution و Kaltmiete/Warmmiete</div><div class="cc-text">عند توقيع العقد تدفع Kaution (غالباً 2–3 أشهر إيجار) كضمان تُعاد لاحقاً. السعر المعلن غالباً Kaltmiete (بدون Nebenkosten) — اسأل دائماً عن Warmmiete (السعر الكامل شهرياً).</div></div>
+    <div class="culture-card"><span class="cc-icon">♻️</span><div class="cc-title">Mülltrennung — فصل القمامة</div><div class="cc-text">من أول يوم ستجد حاويات بألوان مختلفة: الأصفر (بلاستيك/معدن)، الأزرق (ورق)، البني (عضوي)، الأسود (باقي). عدم الفصل الصحيح قد يسبب مشاكل مع الجيران وصاحب العقار.</div></div>
+    <div class="culture-card"><span class="cc-icon">🤫</span><div class="cc-title">Ruhezeiten — ساعات الهدوء</div><div class="cc-text">عادة من 22:00 إلى 6:00 صباحاً، وأيام الأحد طوال اليوم (Sonntagsruhe) — لا غسالة، لا دريل، لا موسيقى عالية. هذه القاعدة مكتوبة غالباً في Hausordnung (نظام العمارة).</div></div>
+    <div class="culture-card"><span class="cc-icon">👟</span><div class="cc-title">خلع الحذاء عند الباب</div><div class="cc-text">في أغلب البيوت الألمانية يُتوقع خلع الحذاء عند المدخل (Flur) ولبس Hausschuhe (شبشب). كثير من الشقق فيها Schuhregal (رف أحذية) مخصص لهذا عند الباب.</div></div>
+    <div class="culture-card"><span class="cc-icon">📋</span><div class="cc-title">Besichtigung — معاينة الشقة</div><div class="cc-text">في المدن الكبيرة، المعاينة (Besichtigung) قد تضم عشرات المتقدمين في نفس الوقت! جهّز مسبقاً: SCHUFA (تقرير ائتماني)، إثبات راتب، و Mieterselbstauskunft (استبيان تعريف بالمستأجر).</div></div>
+  </div>
+  <p class="vst reveal">أخطاء شائعة مع Dativ و Wechselpräpositionen</p>
+  <div class="reveal">
+    <div class="mistake-item"><div><div class="mi-wrong">Ich bin in die Schule.</div><div class="mi-explain">للموقع (لا حركة) → in + Dativ، ليس Akkusativ</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich bin in der Schule.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Es gibt der Balkon.</div><div class="mi-explain">بعد Es gibt دائماً Akkusativ: der → einen</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Es gibt einen Balkon.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Das Buch ist auf der Tisch.</div><div class="mi-explain">der Tisch مذكر → Dativ يصبح dem، وليس der</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Das Buch ist auf dem Tisch.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich stelle das Buch auf den Tisch.</div><div class="mi-explain">الكتاب شيء مسطّح → legen، وليس stellen</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich lege das Buch auf den Tisch.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Die Lampe steht an der Wand.</div><div class="mi-explain">شيء معلّق على الحائط → hängen، وليس stehen</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Die Lampe hängt an der Wand.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Das Sofa steht in dem Wohnzimmer.</div><div class="mi-explain">in dem صحيحة لكن غير طبيعية — استخدم الاختصار</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Das Sofa steht im Wohnzimmer.</div></div></div>
+    <div class="mistake-item"><div><div class="mi-wrong">Ich wohne in der Wohnung schön.</div><div class="mi-explain">ترتيب الكلمات — الصفة تأتي قبل الاسم أو في جملة منفصلة</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich wohne in einer schönen Wohnung.</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- EXERCISES -->
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">التمارين — Übungen</div><div class="sec-d">32 سؤال تفاعلي في 6 أجزاء</div></div></div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 6 — أدوات Dativ بعد Wechselpräpositionen — Wo؟ (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Die Lampe steht auf <span class="blank" id="b1">___</span> Tisch. (der Tisch)</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="dem" onclick="check(this)">dem</button><button class="ex-btn" data-q="1" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="1" data-a="der" onclick="check(this)">der</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das Bild hängt an <span class="blank" id="b2">___</span> Wand. (die Wand)</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="2" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="2" data-a="dem" onclick="check(this)">dem</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Der Teppich liegt unter <span class="blank" id="b3">___</span> Sofa. (das Sofa)</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="dem" onclick="check(this)">dem</button><button class="ex-btn" data-q="3" data-a="das" onclick="check(this)">das</button><button class="ex-btn" data-q="3" data-a="den" onclick="check(this)">den</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Die Schuhe stehen vor <span class="blank" id="b4">___</span> Tür. (die Tür)</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="4" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="4" data-a="dem" onclick="check(this)">dem</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Der Spiegel hängt zwischen <span class="blank" id="b5">___</span> Fenstern. (die Fenster — Pl.)</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="5" data-a="der" onclick="check(this)">der</button><button class="ex-btn" data-q="5" data-a="dem" onclick="check(this)">dem</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Die Katze sitzt neben <span class="blank" id="b6">___</span> Schrank. (der Schrank)</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="dem" onclick="check(this)">dem</button><button class="ex-btn" data-q="6" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="6" data-a="der" onclick="check(this)">der</button></div><div class="ex-fb" id="f6"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 6 — Wo؟ مقابل Wohin؟ (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Wo ist die Fernbedienung?" — "Sie <span class="blank" id="b7">___</span> auf dem Sofa."</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="liegt" onclick="check(this)">liegt</button><button class="ex-btn" data-q="7" data-a="legt" onclick="check(this)">legt</button><button class="ex-btn" data-q="7" data-a="liegen" onclick="check(this)">liegen</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich <span class="blank" id="b8">___</span> das Buch auf den Tisch.</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="lege" onclick="check(this)">lege</button><button class="ex-btn" data-q="8" data-a="liege" onclick="check(this)">liege</button><button class="ex-btn" data-q="8" data-a="legen" onclick="check(this)">legen</button></div><div class="ex-fb" id="f8"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Wohin stellst du den Stuhl?" — "Ich stelle ihn <span class="blank" id="b9">___</span> Tisch."</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="an den" onclick="check(this)">an den</button><button class="ex-btn" data-q="9" data-a="an dem" onclick="check(this)">an dem</button><button class="ex-btn" data-q="9" data-a="an der" onclick="check(this)">an der</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Wo wohnst du?" — "Ich wohne <span class="blank" id="b10">___</span> Wohnung in Berlin."</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="in einer" onclick="check(this)">in einer</button><button class="ex-btn" data-q="10" data-a="in eine" onclick="check(this)">in eine</button><button class="ex-btn" data-q="10" data-a="in einen" onclick="check(this)">in einen</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das Poster hängt <span class="blank" id="b11">___</span> Wand. (موقع ثابت)</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="an der" onclick="check(this)">an der</button><button class="ex-btn" data-q="11" data-a="an die" onclick="check(this)">an die</button><button class="ex-btn" data-q="11" data-a="an dem" onclick="check(this)">an dem</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Häng das Poster <span class="blank" id="b12">___</span> Wand!" (أمر = حركة)</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="an die" onclick="check(this)">an die</button><button class="ex-btn" data-q="12" data-a="an der" onclick="check(this)">an der</button><button class="ex-btn" data-q="12" data-a="an dem" onclick="check(this)">an dem</button></div><div class="ex-fb" id="f12"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 6 — ترجمة من العربية للألمانية (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">اللابتوب على الطاولة.</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="Der Laptop liegt auf dem Tisch." onclick="check(this)">Der Laptop liegt auf dem Tisch.</button><button class="ex-btn" data-q="13" data-a="Der Laptop liegt auf den Tisch." onclick="check(this)">Der Laptop liegt auf den Tisch.</button><button class="ex-btn" data-q="13" data-a="Der Laptop liegt auf der Tisch." onclick="check(this)">Der Laptop liegt auf der Tisch.</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ضع الكتاب في الحقيبة. (أمر)</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="Leg das Buch in die Tasche." onclick="check(this)">Leg das Buch in die Tasche.</button><button class="ex-btn" data-q="14" data-a="Leg das Buch in der Tasche." onclick="check(this)">Leg das Buch in der Tasche.</button><button class="ex-btn" data-q="14" data-a="Liegt das Buch in die Tasche." onclick="check(this)">Liegt das Buch in die Tasche.</button></div><div class="ex-fb" id="f14"></div></div>
+    <div class="ex-q"><div class="ex-q-text">المطبخ صغير لكنه مريح.</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="Die Küche ist klein, aber gemütlich." onclick="check(this)">Die Küche ist klein, aber gemütlich.</button><button class="ex-btn" data-q="15" data-a="Die Küche ist klein, aber gemütliche." onclick="check(this)">Die Küche ist klein, aber gemütliche.</button><button class="ex-btn" data-q="15" data-a="Der Küche ist klein, aber gemütlich." onclick="check(this)">Der Küche ist klein, aber gemütlich.</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كم تكلف الإيجار شهرياً؟</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="Wie viel kostet die Miete im Monat?" onclick="check(this)">Wie viel kostet die Miete im Monat?</button><button class="ex-btn" data-q="16" data-a="Wie viel kostet die Miete am Monat?" onclick="check(this)">Wie viel kostet die Miete am Monat?</button><button class="ex-btn" data-q="16" data-a="Wie viel die Miete kostet im Monat?" onclick="check(this)">Wie viel die Miete kostet im Monat?</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">يوجد ثلاث غرف ومطبخ وحمام.</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="Es gibt drei Zimmer, eine Küche und ein Bad." onclick="check(this)">Es gibt drei Zimmer, eine Küche und ein Bad.</button><button class="ex-btn" data-q="17" data-a="Es gibt drei Zimmer, eine Küche und einen Bad." onclick="check(this)">Es gibt drei Zimmer, eine Küche und einen Bad.</button><button class="ex-btn" data-q="17" data-a="Es gibt drei Zimmer, eine Küche und ein Bad hat." onclick="check(this)">Es gibt drei Zimmer, eine Küche und ein Bad hat.</button></div><div class="ex-fb" id="f17"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 6 — صح أم خطأ؟ (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ich gehe in die Schule." (حركة)</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="18" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Ich bin in die Schule." (موقع)</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="خطأ — الموقع يحتاج Dativ: in der Schule" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="19" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Das Bild hängt an der Wand."</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="20" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f20"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Häng das Bild an der Wand!" (أمر)</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="خطأ — الأمر = حركة → an die Wand" onclick="check(this)">خطأ</button><button class="ex-btn" data-q="21" data-a="صحيح" onclick="check(this)">صحيح</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">هل الجملة صحيحة؟ — "Die Küche hat ein Fenster."</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="صحيح" onclick="check(this)">صحيح</button><button class="ex-btn" data-q="22" data-a="خطأ" onclick="check(this)">خطأ</button></div><div class="ex-fb" id="f22"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 6 — أكمل حوار معاينة الشقة (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wie viele Zimmer hat die Wohnung?" — B: "___"</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="Es gibt drei Zimmer, eine Küche und ein Bad." onclick="check(this)">Es gibt drei Zimmer, eine Küche und ein Bad.</button><button class="ex-btn" data-q="23" data-a="Ich bin drei Zimmer." onclick="check(this)">Ich bin drei Zimmer.</button><button class="ex-btn" data-q="23" data-a="Die Zimmer sind drei Wohnung." onclick="check(this)">Die Zimmer sind drei Wohnung.</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wie viel kostet die Miete?" — B: "<span class="blank" id="b24">___</span> kostet 600 Euro im Monat."</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="Die Miete" onclick="check(this)">Die Miete</button><button class="ex-btn" data-q="24" data-a="Der Miete" onclick="check(this)">Der Miete</button><button class="ex-btn" data-q="24" data-a="Das Miete" onclick="check(this)">Das Miete</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Ist die Wohnung möbliert?" — B: "Nein, aber es gibt <span class="blank" id="b25">___</span> Küche mit Herd und Kühlschrank."</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="25" data-a="ein" onclick="check(this)">ein</button><button class="ex-btn" data-q="25" data-a="einen" onclick="check(this)">einen</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wo ist der Kühlschrank?" — B: "Er steht <span class="blank" id="b26">___</span> Küche, neben dem Fenster."</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="in der" onclick="check(this)">in der</button><button class="ex-btn" data-q="26" data-a="in die" onclick="check(this)">in die</button><button class="ex-btn" data-q="26" data-a="in dem" onclick="check(this)">in dem</button></div><div class="ex-fb" id="f26"></div></div>
+    <div class="ex-q"><div class="ex-q-text">A: "Wann kann ich die Wohnung sehen?" — B: "<span class="blank" id="b27">___</span> Samstag um 10 Uhr passt das?"</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="Am" onclick="check(this)">Am</button><button class="ex-btn" data-q="27" data-a="Im" onclick="check(this)">Im</button><button class="ex-btn" data-q="27" data-a="Auf" onclick="check(this)">Auf</button></div><div class="ex-fb" id="f27"></div></div>
+  </div>
+  <div class="ex-block reveal"><div class="ex-title">تمرين 6 / 6 — مفردات وثقافة السكن (5 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Nebenkosten" تعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="تكاليف إضافية (ماء/كهرباء/تدفئة) بجانب الإيجار" onclick="check(this)">تكاليف إضافية بجانب الإيجار</button><button class="ex-btn" data-q="28" data-a="الإيجار الأساسي فقط" onclick="check(this)">الإيجار الأساسي فقط</button><button class="ex-btn" data-q="28" data-a="تأمين الشقة (Kaution)" onclick="check(this)">تأمين الشقة</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Kaution" تعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="تأمين/ضمان يُدفع عند توقيع العقد ويُعاد لاحقاً" onclick="check(this)">تأمين يُعاد لاحقاً</button><button class="ex-btn" data-q="29" data-a="فاتورة الكهرباء الشهرية" onclick="check(this)">فاتورة الكهرباء</button><button class="ex-btn" data-q="29" data-a="عقد الإيجار نفسه" onclick="check(this)">عقد الإيجار نفسه</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"WG" تعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="Wohngemeinschaft — سكن مشترك مع رفقاء سكن" onclick="check(this)">سكن مشترك (Wohngemeinschaft)</button><button class="ex-btn" data-q="30" data-a="Wohnung Groß — شقة كبيرة" onclick="check(this)">شقة كبيرة</button><button class="ex-btn" data-q="30" data-a="Wohnzimmer mit Garten" onclick="check(this)">صالون مع حديقة</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Kaltmiete" تعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="الإيجار الأساسي بدون Nebenkosten" onclick="check(this)">الإيجار الأساسي بدون Nebenkosten</button><button class="ex-btn" data-q="31" data-a="الإيجار في فصل الشتاء فقط" onclick="check(this)">الإيجار في الشتاء فقط</button><button class="ex-btn" data-q="31" data-a="إيجار شقة بدون نظام تدفئة" onclick="check(this)">إيجار بدون تدفئة</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">عند دخول بيت ألماني تقليدي، ماذا يُتوقع منك عادة؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="خلع الحذاء عند الباب ولبس Hausschuhe" onclick="check(this)">خلع الحذاء ولبس Hausschuhe</button><button class="ex-btn" data-q="32" data-a="إبقاء حذائك دائماً داخل البيت" onclick="check(this)">إبقاء الحذاء دائماً</button><button class="ex-btn" data-q="32" data-a="إحضار هدية إلزامياً في كل زيارة" onclick="check(this)">إحضار هدية إلزامياً</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الكتابة تثبّت Dativ و Wechselpräpositionen</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا الكتابة مهمة هنا بالتحديد؟</div><p>Wechselpräpositionen لا تُتعلّم بالقراءة فقط — يجب أن "تصرّفها" بنفسك مرات كثيرة حتى تصبح تلقائية. الكتابة تُجبرك على اختيار <code>Wo?</code> أو <code>Wohin?</code> في كل جملة، وهذا أفضل تدريب ممكن.</p></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 1 — صف غرفتك (5–8 جمل)</div><div class="wt-text">صف غرفة نومك أو غرفة المعيشة عندك. استخدم على الأقل 5 حروف جر مختلفة من الـ9 (Wo? + Dativ):</div><ul class="wt-list"><li>أين السرير/الصوفا؟ (steht...)</li><li>أين يوجد رف أو خزانة؟</li><li>ماذا يوجد على الطاولة؟</li><li>ماذا معلّق على الحائط؟</li><li>ماذا تحت السرير أو بجانبه؟</li></ul><textarea class="wt-input" placeholder="Mein Bett steht... Auf dem Tisch liegt... An der Wand hängt... Neben dem Schrank steht..."></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 2 — حوار معاينة شقة (8–12 سطر)</div><div class="wt-text">اكتب حواراً بين شخص يعرض شقة للإيجار (Vermieter) وشخص يريد استئجارها (Mieter). استخدم:</div><ul class="wt-list"><li>Es gibt + عدد الغرف</li><li>Wie viel kostet die Miete? + Nebenkosten</li><li>وصف غرفة واحدة باستخدام Wechselpräposition (Wo?)</li><li>سؤال عن الموعد: Wann kann ich...?</li></ul><textarea class="wt-input" style="min-height:160px;" placeholder="A (Vermieter): ...&#10;B (Mieter): ...&#10;A: Es gibt...&#10;B: Wie viel kostet...?"></textarea></div>
+  <div class="writing-task reveal"><div class="wt-title">✍️ مهمة 3 — الـ9 Wechselpräpositionen من الذاكرة</div><div class="wt-text">أغلق الملف. اكتب الـ9 حروف (in, an, auf, über, unter, vor, hinter, neben, zwischen) ولكل واحد: مثال Wo؟ (Dativ) ومثال Wohin؟ (Akkusativ). ثم افتح وتحقق.</div><textarea class="wt-input" style="min-height:200px;" placeholder="in → Wo? .../in dem... → Wohin? .../in den...&#10;an → ...&#10;auf → ...&#10;über → ...&#10;unter → ...&#10;vor → ...&#10;hinter → ...&#10;neben → ...&#10;zwischen → ..."></textarea></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · كتب · محادثة</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أنشئ مجموعة "Möbel & Wohnung" بالأثاث وغرف البيت مع der/die/das — هذا أهم تطبيق لحفظ الجنس الصحيح لكل كلمة.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Learn German — Nicos Weg</div><div class="res-type">موقع مجاني</div><div class="res-desc">A1 — Einheit 6 "Wohnen" بالكامل: نصوص، تمارين، وقواعد عن Wechselpräpositionen مجاناً.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📖</span><div class="res-name">dict.cc / PONS</div><div class="res-type">قاموس مجاني</div><div class="res-desc">لا تكتب كلمة أثاث جديدة بدون التحقق من جنسها (der/die/das) في هذه القواميس — مهم جداً لهذه الوحدة بالتحديد.</div><a class="res-link" href="https://www.dict.cc/" target="_blank">dict.cc ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German Original</div><div class="res-type">قناة YouTube</div><div class="res-desc">65+ درس A1 منظم. Lesson 44–45 مخصصان لهذه الوحدة (Wohnung & Möbel).</div></div>
+    <div class="res-card"><span class="res-icon">📚</span><div class="res-name">Menschen A1</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الكتاب الرسمي A1 — فصل "Zu Hause / Wohnen" يطابق هذه الوحدة تماماً مع تمارين إضافية.</div></div>
+    <div class="res-card"><span class="res-icon">🏫</span><div class="res-name">Goethe Institut</div><div class="res-type">موقع رسمي</div><div class="res-desc">نماذج اختبار A1 الرسمية — قسم "Wohnen" يظهر بكثرة في القراءة والاستماع.</div><a class="res-link" href="https://www.goethe.de" target="_blank">goethe.de ←</a></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki</div><div class="res-type">محادثة مع ألمان</div><div class="res-desc">اطلب من المعلم أن تصف له غرفتك أو شقتك شفهياً — أفضل تطبيق عملي للـ Wechselpräpositionen.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Duolingo</div><div class="res-type">تطبيق مساعد</div><div class="res-desc">قسم "Home" / "House" فيه تمارين سريعة على المفردات — جيد كمراجعة يومية إضافية 10 دقائق.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<!-- STUDY PLAN -->
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات</div></div></div>
+  <div class="days-grid-5 reveal">
+    <div class="day-card"><div class="day-num">01</div><div class="day-title">البيت والغرف + Es gibt</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 1 (Wohnung & Haus) مع مهمة الاستماع</li><li class="vl">شاهد الفيديو 2 (Möbel & Geräte) مع مهمة الاستماع</li><li>ادرس غرف البيت وأنواع السكن (§01)</li><li>ادرس بنية Es gibt + Akkusativ</li><li>اقرأ حوار معاينة الشقة بصوت عالٍ 3 مرات</li><li>ابدأ حفظ مفردات الغرف (28 كلمة)</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">02</div><div class="day-title">Dativ + Wechselpräpositionen ⭐</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 5 (Wechselpräpositionen) — الأهم في الوحدة</li><li>ادرس جدول أدوات Dativ (dem/der/dem/den)</li><li>ادرس ضمائر Dativ — وصِل بـ Wie geht es Ihnen/dir</li><li>ادرس الـ9 Wechselpräpositionen + Wo?/Wohin؟</li><li>كرر كل satz-box بصوت عالٍ</li><li>حل تمرين 1 و 2</li></ul><div class="day-time">⏱️ 2.5–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">03</div><div class="day-title">أفعال الوضع والحركة + بنية الجملة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 3 و4 (Nicos Weg Folge 26–27)</li><li class="vl">شاهد الفيديو 6 (Positionsverben/Richtungsverben)</li><li>ادرس stehen/liegen/hängen/sitzen ↔ stellen/legen/setzen</li><li>ادرس بنية الجملة مع ظروف المكان (§05)</li><li>اقرأ حواري §04 و§05 بصوت عالٍ</li><li>حل تمرين 3</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">04</div><div class="day-title">المفردات + الثقافة + كتابة</div><ul class="day-tasks"><li>ادرس مفردات الأثاث والأجهزة والسكن (51 كلمة)</li><li>ادرس قسم ثقافة السكن والأخطاء الشائعة</li><li class="wl">مهمة الكتابة 1 (صف غرفتك)</li><li class="wl">مهمة الكتابة 2 (حوار معاينة شقة)</li><li>حل تمرين 4 و 5</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+    <div class="day-card"><div class="day-num">05</div><div class="day-title">التطبيق الحقيقي + مراجعة شاملة</div><ul class="day-tasks"><li class="vl">شاهد الفيديو 7 (جولة شقة حقيقية — Slow German)</li><li class="wl">مهمة الكتابة 3 (الـ9 Wechselpräpositionen من الذاكرة)</li><li>أعد حل كل التمارين 32 — هدف 28+</li><li>راجع §03 و§04 — Wo? مقابل Wohin؟ شفهياً</li><li>راجع الأخطاء الشائعة</li><li>✅ انتقل لـ Unit 12 إذا حصلت 28+/32</li></ul><div class="day-time">⏱️ 2–3 ساعات</div></div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;"><div class="note-title nt-gr">🎯 قاعدة الانتقال للوحدة التالية</div><p>انتقل لـ Unit 12 فقط إذا: ✅ تستطيع تصريف أدوات Dativ (dem/der/dem/den) دون نظر · ✅ تستطيع التمييز فوراً بين Wo? (Dativ) و Wohin? (Akkusativ) · ✅ حصلت 28+/32 في التمارين · ✅ وصفت غرفتك كتابةً باستخدام 5 حروف جر مختلفة على الأقل. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+<footer>
+  <span class="ft-de">UNIT 11</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">البيت والأثاث · Dativ · Wechselpräpositionen · Wo?/Wohin؟ · أفعال الوضع والحركة · 32 تمرين · 7 فيديوهات</p>
+  <p>A1 المتقدم · 5 أيام دراسة جادة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.15)">Unit 12 ← الجسم والصحة · weh tun · Imperativ · dürfen/sollen</p>
+</footer>
+<script>
+const io=new IntersectionObserver((e)=>{e.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+const answers={1:'dem',2:'der',3:'dem',4:'der',5:'den',6:'dem',7:'liegt',8:'lege',9:'an den',10:'in einer',11:'an der',12:'an die',13:'Der Laptop liegt auf dem Tisch.',14:'Leg das Buch in die Tasche.',15:'Die Küche ist klein, aber gemütlich.',16:'Wie viel kostet die Miete im Monat?',17:'Es gibt drei Zimmer, eine Küche und ein Bad.',18:'صحيح',19:'خطأ — الموقع يحتاج Dativ: in der Schule',20:'صحيح',21:'خطأ — الأمر = حركة → an die Wand',22:'صحيح',23:'Es gibt drei Zimmer, eine Küche und ein Bad.',24:'Die Miete',25:'eine',26:'in der',27:'Am',28:'تكاليف إضافية (ماء/كهرباء/تدفئة) بجانب الإيجار',29:'تأمين/ضمان يُدفع عند توقيع العقد ويُعاد لاحقاً',30:'Wohngemeinschaft — سكن مشترك مع رفقاء سكن',31:'الإيجار الأساسي بدون Nebenkosten',32:'خلع الحذاء عند الباب ولبس Hausschuhe'};
+const fb={1:{ok:'✅ صح! der Tisch (مذكر) → auf dem Tisch',no:'❌ der Tisch مذكر → Dativ = dem'},2:{ok:'✅ ممتاز! die Wand (مؤنث) → an der Wand',no:'❌ die Wand مؤنث → Dativ = der'},3:{ok:'✅ صح! das Sofa (محايد) → unter dem Sofa',no:'❌ das Sofa محايد → Dativ = dem'},4:{ok:'✅ صح! die Tür (مؤنث) → vor der Tür',no:'❌ die Tür مؤنث → Dativ = der'},5:{ok:'✅ ممتاز! جمع Fenster في Dativ → den',no:'❌ كل الجموع في Dativ → den'},6:{ok:'✅ صح! der Schrank (مذكر) → neben dem Schrank',no:'❌ der Schrank مذكر → Dativ = dem'},7:{ok:'✅ صح! شيء مسطّح وثابت → liegt (Dativ)',no:'❌ شيء مسطّح وثابت → liegt وليس legt'},8:{ok:'✅ ممتاز! أنا أضع (حركة) → lege',no:'❌ حركة (أنا أضع) → lege وليس liege'},9:{ok:'✅ صح! Wohin = حركة → Akkusativ: an den',no:'❌ Wohin = حركة → Akkusativ: an den'},10:{ok:'✅ صح! Wo = موقع → Dativ: in einer',no:'❌ Wo = موقع → Dativ: in einer'},11:{ok:'✅ ممتاز! معلّق وثابت → an der Wand (Dativ)',no:'❌ معلّق وثابت (لا حركة) → an der Wand'},12:{ok:'✅ صح! الأمر (häng!) = حركة → an die Wand',no:'❌ الأمر (häng!) = حركة → an die Wand (Akkusativ)'},13:{ok:'✅ ممتاز! der Laptop مذكر → auf dem Tisch',no:'❌ der Tisch مذكر → Dativ = dem'},14:{ok:'✅ صح! الأمر (leg!) = حركة → in die Tasche',no:'❌ ضع (أمر) = حركة → in die Tasche (Akkusativ)'},15:{ok:'✅ صح! Die Küche... gemütlich بدون -e بعد sein',no:'❌ die Küche مؤنث، والصفة بدون نهاية بعد sein'},16:{ok:'✅ ممتاز! im Monat تعبير ثابت (in + dem)',no:'❌ التعبير الصحيح: im Monat'},17:{ok:'✅ صح! das Bad محايد → Akkusativ يبقى ein Bad',no:'❌ das Bad محايد → Es gibt ein Bad (Akkusativ)'},18:{ok:'✅ صح! gehen = حركة → in die Schule (Akkusativ) صحيحة',no:'❌ gehen = حركة → in die Schule صحيحة فعلاً'},19:{ok:'✅ صح! sein = موقع (لا حركة) → in der Schule',no:'❌ sein = موقع → يجب in der Schule (Dativ)'},20:{ok:'✅ صح! hängen + لا حركة → an der Wand (Dativ) صحيحة',no:'❌ هذه الجملة صحيحة (Dativ)'},21:{ok:'✅ صح! häng (أمر) = حركة → يجب an die Wand',no:'❌ häng (أمر) = حركة → an die Wand (Akkusativ)'},22:{ok:'✅ صح! haben + Akkusativ: ein Fenster (محايد) صحيحة',no:'❌ هذه الجملة صحيحة تماماً'},23:{ok:'✅ ممتاز! Es gibt + Akkusativ هو الرد الطبيعي',no:'❌ الرد الطبيعي: Es gibt drei Zimmer...'},24:{ok:'✅ صح! die Miete مؤنثة دائماً',no:'❌ die Miete مؤنث → die'},25:{ok:'✅ ممتاز! die Küche مؤنث → es gibt eine Küche',no:'❌ die Küche مؤنث → es gibt eine Küche'},26:{ok:'✅ صح! die Küche مؤنث → in der Küche (Dativ)',no:'❌ die Küche مؤنث → in der Küche'},27:{ok:'✅ صح! am (an+dem) يُستخدم مع أيام الأسبوع',no:'❌ مع أيام الأسبوع نقول: am Samstag'},28:{ok:'✅ صح! Nebenkosten = تكاليف إضافية مع الإيجار',no:'❌ Nebenkosten = تكاليف إضافية (ماء/كهرباء/تدفئة)'},29:{ok:'✅ صح! Kaution = تأمين يُعاد لاحقاً',no:'❌ Kaution = مبلغ ضمان يُعاد عند الخروج'},30:{ok:'✅ صح! WG = Wohngemeinschaft',no:'❌ WG = Wohngemeinschaft (سكن مشترك)'},31:{ok:'✅ صح! Kaltmiete = الإيجار الأساسي فقط',no:'❌ Kaltmiete = الإيجار بدون Nebenkosten'},32:{ok:'✅ صح! تقليد ألماني شائع جداً',no:'❌ التقليد الشائع: خلع الحذاء + Hausschuhe'}};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  let msg='';
+  const pct=correct/total;
+  if(pct===1) msg='🏆 ممتاز! أتقنت Unit 11 كاملاً — Wechselpräpositionen أصبحت تلقائية. انتقل لـ Unit 12 بثقة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع Wo?/Wohin؟ وأدوات Dativ ثم حل مرة ثانية.';
+  else if(pct>=0.6) msg='⚠️ راجع أقسام Dativ وWechselpräpositionen وحل مرة ثانية.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 24+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+</script>
+</body>
+</html>

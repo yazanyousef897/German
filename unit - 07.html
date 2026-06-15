@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 07 — FULL | المدينة · الاتجاهات · Akkusativ | A1</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0a0a0a;--red:#CC0000;--gold:#FFCE00;--white:#f5f5f0;--gray:#1a1a1a;--gray2:#2a2a2a;--gray3:#3a3a3a;--green:#22c55e;--blue:#60a5fa;--purple:#a78bfa;--orange:#fb923c;--dim:rgba(245,245,240,0.45);--dim2:rgba(245,245,240,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden;line-height:1.7}
+.flag-bar{display:grid;grid-template-columns:1fr 1fr 1fr;height:5px;position:fixed;top:0;left:0;right:0;z-index:200}
+.flag-bar span:nth-child(1){background:#333}.flag-bar span:nth-child(2){background:var(--red)}.flag-bar span:nth-child(3){background:var(--gold)}
+.nav{position:fixed;top:5px;left:0;right:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);z-index:100;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gray2)}
+.nav-unit{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'07';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,50vw,600px);color:rgba(255,206,0,0.025);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(250,204,21,.1);border:1px solid rgba(250,204,21,.3);color:#facc15;font-size:.68rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem;opacity:0;animation:fade-up .8s .1s forwards}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:.02em;margin-bottom:.8rem;opacity:0;animation:fade-up .8s .3s forwards}
+.hero-title .g{color:var(--gold)}.hero-title .r{color:var(--red)}
+.hero-sub{font-size:.9rem;color:var(--dim);font-weight:300;max-width:580px;margin:0 auto 2rem;opacity:0;animation:fade-up .8s .5s forwards}
+.hero-meta{display:flex;gap:2.5rem;opacity:0;animation:fade-up .8s .7s forwards}
+.hm-item{text-align:center}
+.hm-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;display:block}
+.hm-label{font-size:.65rem;color:var(--dim);letter-spacing:.15em;text-transform:uppercase}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:3px}
+.stripe div:nth-child(1){background:#333}.stripe div:nth-child(2){background:var(--red)}.stripe div:nth-child(3){background:var(--gold)}
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec-hd{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray2)}
+.sec-n{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:rgba(255,206,0,.09);line-height:1;flex-shrink:0}
+.sec-t{font-size:.95rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.sec-d{font-size:.78rem;color:var(--dim);margin-top:.15rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem;margin-bottom:2rem}
+.video-card{background:var(--gray);border:1px solid var(--gray2);overflow:hidden;transition:border-color .2s}
+.video-card:hover{border-color:var(--gold)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-info{padding:1rem 1.2rem}
+.video-tag{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:.3rem}
+.t1{color:var(--gold)}.t2{color:var(--blue)}.t3{color:var(--green)}.t4{color:var(--purple)}.t5{color:var(--orange)}
+.video-title{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.video-desc{font-size:.75rem;color:var(--dim);line-height:1.6}
+.video-task{background:rgba(255,206,0,.04);border-right:2px solid var(--gold);padding:.6rem .8rem;margin-top:.8rem;font-size:.75rem;color:rgba(245,245,240,.65)}
+.video-task strong{color:var(--gold)}
+.video-search{background:rgba(96,165,250,.04);border-right:2px solid var(--blue);padding:.5rem .8rem;margin-top:.5rem;font-size:.7rem;color:rgba(96,165,250,.8)}
+.video-search strong{color:var(--blue)}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.city-card{background:var(--black);padding:1.1rem 1.3rem;transition:background .2s;display:flex;gap:.9rem;align-items:flex-start}
+.city-card:hover{background:var(--gray)}
+.city-icon{font-size:1.5rem;flex-shrink:0;margin-top:.1rem}
+.city-de{font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;color:var(--white)}
+.city-art{font-size:.62rem;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.city-ar{font-size:.76rem;color:var(--dim);margin-top:.1rem}
+.city-note{font-size:.65rem;color:rgba(255,206,0,.4);margin-top:.1rem}
+.akk-t{width:100%;border-collapse:collapse;margin-bottom:1.5rem}
+.akk-t th,.akk-t td{padding:.85rem 1.1rem;text-align:right;border-bottom:1px solid var(--gray2)}
+.akk-t thead th{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:600;background:var(--gray)}
+.akk-t tbody tr{transition:background .15s}
+.akk-t tbody tr:hover{background:var(--gray)}
+.at-gen{font-size:.7rem;color:var(--dim)}
+.at-nom{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--white);font-size:.9rem}
+.at-akk{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem}
+.at-akk.changed{color:var(--red)}.at-akk.same{color:var(--green)}
+.at-ex{font-size:.75rem;color:rgba(245,245,240,.5);font-style:italic}
+.change-badge{display:inline-block;padding:.1rem .5rem;font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.cb-change{background:rgba(204,0,0,.12);color:#ff6b6b}.cb-same{background:rgba(34,197,94,.1);color:var(--green)}
+.dir-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.dc{background:var(--gray);padding:1.3rem 1rem;text-align:center}
+.dc-icon{font-size:2rem;margin-bottom:.4rem;display:block}
+.dc-de{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--gold);margin-bottom:.2rem}
+.dc-ar{font-size:.75rem;color:var(--dim)}
+.prep-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.prep-card{background:var(--black);padding:1.5rem}
+.prep-name{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1;margin-bottom:.5rem}
+.prep-ar{font-size:.85rem;color:var(--white);font-weight:700;margin-bottom:.8rem}
+.prep-ex{display:flex;flex-direction:column;gap:.4rem}
+.pe-row{display:flex;gap:.5rem;align-items:flex-start}
+.pe-de{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--white);font-weight:600;min-width:200px;flex-shrink:0}
+.pe-ar{font-size:.72rem;color:var(--dim)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.vi{background:var(--black);padding:1rem 1.3rem;transition:background .2s}
+.vi:hover{background:var(--gray)}
+.vi-de{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--white)}
+.vi-ar{font-size:.78rem;color:var(--dim);margin-top:.12rem}
+.vi-note{font-size:.68rem;color:rgba(255,206,0,.45);margin-top:.1rem}
+.vst{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray2)}
+.satz-box{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.satz-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:1rem}
+.satz-row{display:flex;gap:.5rem;align-items:center;margin-bottom:.8rem;flex-wrap:wrap}
+.satz-row:last-child{margin-bottom:0}
+.sbox{padding:.35rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;border:1px solid}
+.sbox-subj{border-color:var(--blue);color:var(--blue);background:rgba(96,165,250,.06)}
+.sbox-verb{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.06)}
+.sbox-rest{border-color:var(--dim);color:var(--dim);background:var(--dim2)}
+.sbox-ar{font-family:'Cairo',sans-serif;color:var(--dim);font-size:.78rem;border:none;background:none;padding:.35rem 0}
+.sbox-wh{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.06)}
+.sbox-akk{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.06)}
+.dlg{background:var(--gray);border:1px solid var(--gray2);padding:1.6rem;margin-bottom:1.2rem}
+.dlg-hd{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--gray2)}
+.dl{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.9rem}
+.dl:last-child{margin-bottom:0}
+.sp{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.08em;min-width:26px;flex-shrink:0;padding-top:.1rem}
+.sp-a{color:var(--gold)}.sp-b{color:var(--blue)}.sp-c{color:var(--green)}
+.dl-de{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--white);font-weight:600;margin-bottom:.12rem}
+.dl-ar{font-size:.74rem;color:var(--dim)}
+.culture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--gray2);margin-bottom:1.5rem}
+.culture-card{background:var(--gray);padding:1.4rem}
+.cc-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.cc-title{font-size:.82rem;font-weight:700;color:var(--gold);margin-bottom:.4rem}
+.cc-text{font-size:.76rem;color:var(--dim);line-height:1.7}
+.mistake-item{background:var(--black);border:1px solid var(--gray2);padding:1.1rem 1.4rem;margin-bottom:1px;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center}
+.mi-wrong{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#ff6b6b;text-decoration:line-through;text-decoration-color:rgba(204,0,0,.4)}
+.mi-arrow{color:var(--gold);font-size:1.1rem}
+.mi-right{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--green)}
+.mi-explain{font-size:.7rem;color:var(--dim);margin-top:.25rem}
+.note-gold{background:rgba(255,206,0,.04);border:1px solid rgba(255,206,0,.15);border-right:3px solid var(--gold);padding:1.3rem;margin-bottom:1.2rem}
+.note-green{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.15);border-right:3px solid var(--green);padding:1.3rem;margin-bottom:1.2rem}
+.note-red{background:rgba(204,0,0,.04);border:1px solid rgba(204,0,0,.15);border-right:3px solid var(--red);padding:1.3rem;margin-bottom:1.2rem}
+.note-blue{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.3rem;margin-bottom:1.2rem}
+.note-title{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+.nt-g{color:var(--gold)}.nt-gr{color:var(--green)}.nt-r{color:#ff6b6b}.nt-b{color:var(--blue)}
+.note-gold p,.note-green p,.note-red p,.note-blue p{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8}
+.note-gold code,.note-blue code{font-family:'JetBrains Mono',monospace;color:var(--gold);background:rgba(255,206,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-green code{font-family:'JetBrains Mono',monospace;color:var(--green);background:rgba(34,197,94,.08);padding:.08rem .35rem;font-size:.8rem}
+.note-red code{font-family:'JetBrains Mono',monospace;color:#ff6b6b;background:rgba(204,0,0,.08);padding:.08rem .35rem;font-size:.8rem}
+.ex-block{background:var(--gray);border:1px solid var(--gray2);padding:1.8rem;margin-bottom:1.5rem}
+.ex-title{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.5rem}
+.ex-q{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--gray2)}
+.ex-q:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ex-q-text{font-size:.87rem;margin-bottom:.75rem;color:var(--white)}
+.blank{display:inline-block;min-width:72px;border-bottom:2px solid var(--gray3);margin:0 .2rem;text-align:center;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ex-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.ex-btn{padding:.42rem 1rem;border:1px solid var(--gray3);background:transparent;color:var(--white);font-family:'JetBrains Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .2s;font-weight:600}
+.ex-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.ex-btn.correct{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.08)}
+.ex-btn.wrong{border-color:var(--red);color:#ff6b6b;background:rgba(204,0,0,.08)}
+.ex-fb{margin-top:.6rem;font-size:.76rem;min-height:1rem;font-weight:600}
+.ex-fb.ok{color:var(--green)}.ex-fb.no{color:#ff6b6b}
+.writing-task{background:rgba(96,165,250,.04);border:1px solid rgba(96,165,250,.15);border-right:3px solid var(--blue);padding:1.4rem;margin-bottom:1.2rem}
+.wt-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:.8rem}
+.wt-text{font-size:.84rem;color:rgba(245,245,240,.7);line-height:1.8;margin-bottom:.8rem}
+.wt-list{list-style:none;margin-bottom:.5rem}
+.wt-list li{font-size:.8rem;color:var(--dim);padding:.25rem 0;display:flex;gap:.5rem}
+.wt-list li::before{content:'\270D\FE0F';flex-shrink:0}
+textarea.wt-input{width:100%;background:var(--gray2);border:1px solid var(--gray3);color:var(--white);font-family:'Cairo',sans-serif;font-size:.84rem;padding:.8rem 1rem;resize:vertical;margin-top:.8rem;min-height:110px}
+textarea.wt-input:focus{outline:none;border-color:var(--blue)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--gray2)}
+.res-card{background:var(--black);padding:1.3rem;transition:background .2s}
+.res-card:hover{background:var(--gray)}
+.res-icon{font-size:1.4rem;margin-bottom:.5rem;display:block}
+.res-name{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.res-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
+.res-desc{font-size:.74rem;color:var(--dim);line-height:1.6}
+.res-link{display:inline-block;margin-top:.5rem;font-size:.7rem;color:var(--gold);text-decoration:none}
+.res-link:hover{text-decoration:underline}
+.days-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--gray2)}
+.day-card{background:var(--black);padding:1.5rem 1rem}
+.day-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:rgba(255,206,0,.12);line-height:1;margin-bottom:.4rem}
+.day-title{font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gray2)}
+.day-tasks{list-style:none}
+.day-tasks li{font-size:.7rem;color:var(--dim);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.02);display:flex;gap:.4rem}
+.day-tasks li::before{content:'\2192';color:var(--gold);flex-shrink:0}
+.day-tasks li.vl::before{content:'\25B6';color:var(--blue)}
+.day-tasks li.wl::before{content:'\270D';color:var(--purple)}
+.day-time{font-size:.65rem;color:var(--red);margin-top:.6rem;letter-spacing:.08em}
+.score-box{background:var(--gray);border:1px solid var(--gray2);padding:2rem;text-align:center;display:none;margin-top:1.5rem}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--gold);line-height:1}
+.score-sub{color:var(--dim);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem}
+.score-msg{margin-top:1rem;font-size:.83rem}
+.check-btn{display:block;width:100%;padding:1.1rem;background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.2em;cursor:pointer;transition:all .2s;margin-top:1.2rem}
+.check-btn:hover{background:var(--gold);color:var(--black)}
+.reset-btn{display:block;width:100%;padding:.7rem;background:transparent;border:1px solid var(--gray3);color:var(--dim);font-family:'Cairo',sans-serif;font-size:.8rem;cursor:pointer;margin-top:.6rem;transition:all .2s}
+.reset-btn:hover{border-color:var(--white);color:var(--white)}
+footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--gray2)}
+.ft-de{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,5rem);color:rgba(255,206,0,.05);letter-spacing:.1em;display:block;margin-bottom:1rem}
+footer p{color:var(--dim);font-size:.78rem}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.prep-grid,.days-grid{grid-template-columns:repeat(2,1fr)}.dir-strip{grid-template-columns:repeat(2,1fr)}.mistake-item{grid-template-columns:1fr;gap:.4rem}.mi-arrow{display:none}.nav-links{display:none}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag-bar"><span></span><span></span><span></span></div>
+<nav class="nav">
+  <span class="nav-unit">A1 \xb7 UNIT 07 \xb7 FULL</span>
+  <ul class="nav-links">
+    <li><a href="#videos">\u25b6 \u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a</a></li>
+    <li><a href="#city">\u0627\u0644\u0645\u062f\u064a\u0646\u0629</a></li>
+    <li><a href="#akkusativ">Akkusativ</a></li>
+    <li><a href="#directions">\u0627\u0644\u0627\u062a\u062c\u0627\u0647\u0627\u062a</a></li>
+    <li><a href="#prep">\u062d\u0631\u0648\u0641 \u0627\u0644\u062c\u0631</a></li>
+    <li><a href="#vocab">\u0645\u0641\u0631\u062f\u0627\u062a</a></li>
+    <li><a href="#dialoge">\u062d\u0648\u0627\u0631\u0627\u062a</a></li>
+    <li><a href="#kultur">\u062b\u0642\u0627\u0641\u0629</a></li>
+    <li><a href="#exercises">\u062a\u0645\u0627\u0631\u064a\u0646</a></li>
+    <li><a href="#writing">\u0643\u062a\u0627\u0628\u0629</a></li>
+    <li><a href="#resources">\u0645\u0635\u0627\u062f\u0631</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🟡 متوسط · Unit 07 · 5 أيام دراسة</div>
+  <h1 class="hero-title"><span class="g">المدينة</span> <span style="font-size:.5em;color:rgba(245,245,240,.1)">+</span> <span class="r">Akkusativ</span></h1>
+  <p class="hero-sub">6 فيديوهات YouTube · أماكن المدينة · Akkusativ (den/die/das) · الاتجاهات · حروف الجر in/an/auf/bei · 90+ مفردة · ثقافة ألمانية · أخطاء شائعة · 32 تمرين · مهام كتابة</p>
+  <div class="hero-meta">
+    <div class="hm-item"><span class="hm-num">5</span><span class="hm-label">أيام دراسة</span></div>
+    <div class="hm-item"><span class="hm-num">6</span><span class="hm-label">فيديوهات</span></div>
+    <div class="hm-item"><span class="hm-num">32</span><span class="hm-label">تمرين تفاعلي</span></div>
+    <div class="hm-item"><span class="hm-num">90+</span><span class="hm-label">مفردة</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="videos">
+  <div class="sec-hd reveal"><span class="sec-n">00</span><div><div class="sec-t">فيديوهات YouTube — قبل كل شيء</div><div class="sec-d">شاهد قبل أو أثناء الدراسة — كل فيديو له مهمة محددة</div></div></div>
+  <div class="note-blue reveal"><div class="note-title nt-b">📌 ملاحظة عن الفيديوهات</div><p>إذا لم يشتغل فيديو، ابحث في يوتيوب بالعبارة الموضحة في <strong style="color:var(--blue)">كلمات البحث</strong> تحت كل بطاقة. القنوات موثوقة ومحتواها مجاني.</p></div>
+  <div class="videos-grid reveal">
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/YbNmLNZHPBQ" title="Places city German A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t1">📚 Vocabulary · أماكن المدينة</div><div class="video-title">Orte in der Stadt — أماكن المدينة</div><div class="video-desc">مفردات أماكن المدينة الأساسية مع المادة النحوية (der/die/das). ابدأ هنا يوم 1.</div><div class="video-task"><strong>مهمة:</strong> اكتب 10 أماكن مع مادتها (der/die/das) بدون نظر بعد الفيديو.</div><div class="video-search"><strong>بحث يوتيوب:</strong> "Learn German Original places city A1 Orte Stadt"</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/SQaR6xIxRaM" title="Asking directions German A1" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t2">🗺️ Directions · الاتجاهات</div><div class="video-title">Wegbeschreibung — كيف تطلب الطريق وتشرحه</div><div class="video-desc">طريقة سؤال الاتجاهات وإعطائها. تعابير links/rechts/geradeaus في سياق حقيقي.</div><div class="video-task"><strong>مهمة:</strong> كرر كل جملة اتجاه 3 مرات بصوت عالٍ مع الفيديو.</div><div class="video-search"><strong>بحث يوتيوب:</strong> "German A1 asking directions Wegbeschreibung beginners"</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/vFUbH2RYXFE" title="Nicos Weg DW city" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · في المدينة</div><div class="video-title">Nicos Weg — نيكو في المدينة</div><div class="video-desc">حلقة من Nicos Weg يبحث فيها نيكو عن عنوان في برلين. ألمانية طبيعية بسرعة A1.</div><div class="video-task"><strong>مهمة:</strong> اكتب كل كلمة اتجاه تسمعها (links/rechts/geradeaus...).</div><div class="video-search"><strong>بحث يوتيوب:</strong> "Nicos Weg A1 Episode Stadtplan DW Deutsch"</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/iNdlGGDZRqQ" title="German Accusative Case Akkusativ" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t3">📐 Grammar · Akkusativ</div><div class="video-title">الأكوساتيف — حالة المفعول به كاملاً</div><div class="video-desc">شرح Akkusativ من الصفر: لماذا der يصبح den، وكيف تعرف متى تستخدمه. ضروري ليوم 2.</div><div class="video-task"><strong>مهمة:</strong> اكتب 5 جمل خاصة بك باستخدام Akkusativ بعد الفيديو.</div><div class="video-search"><strong>بحث يوتيوب:</strong> "Deutsch für Euch Akkusativ" أو "German accusative case A1"</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/p1OsyFLhGlY" title="German prepositions in an auf bei" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t5">📐 Grammar · Präpositionen</div><div class="video-title">حروف الجر المكانية — in · an · auf · bei</div><div class="video-desc">شرح الفرق بين حروف الجر المكانية مع أمثلة من الحياة اليومية في المدينة. ليوم 3–4.</div><div class="video-task"><strong>مهمة:</strong> لاحظ أي حرف جر مع أي مكان — دوّنه.</div><div class="video-search"><strong>بحث يوتيوب:</strong> "German prepositions in an auf bei location A1"</div></div>
+    </div>
+    <div class="video-card">
+      <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/4-eDoThe6qo" title="Nicos Weg Full A1 DW" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-info"><div class="video-tag t4">🎥 DW · Nicos Weg · الفيلم الكامل A1</div><div class="video-title">Nicos Weg — A1 كاملاً في فيلم واحد</div><div class="video-desc">الفيلم الكامل. لليوم الخامس — ابحث عن المشاهد التي يسأل فيها نيكو عن الاتجاهات.</div><div class="video-task"><strong>لليوم 5:</strong> شاهد وابحث عن مشاهد المدينة — اكتب كل جملة اتجاه تفهمها.</div></div>
+    </div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="city">
+  <div class="sec-hd reveal"><span class="sec-n">01</span><div><div class="sec-t">Orte in der Stadt — أماكن المدينة</div><div class="sec-d">30 مكان أساسي مع المادة النحوية — احفظ المادة مع الاسم دائماً</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🔑 القاعدة الذهبية</div><p>في الألمانية لا تحفظ الاسم وحده — احفظ المادة معه دائماً. <code>Bahnhof</code> لا تكفي — <code>der Bahnhof</code> هو الصح. في Unit 07 ستحتاج المادة لتطبيق Akkusativ: <code>der Bahnhof → den Bahnhof</code>.</p></div>
+  <p class="vst reveal">مواصلات وخدمات عامة</p>
+  <div class="city-grid reveal">
+    <div class="city-card"><div class="city-icon">🚂</div><div><div class="city-art">der</div><div class="city-de">Bahnhof</div><div class="city-ar">محطة القطار</div></div></div>
+    <div class="city-card"><div class="city-icon">🚄</div><div><div class="city-art">der</div><div class="city-de">Hauptbahnhof</div><div class="city-ar">المحطة الرئيسية (Hbf)</div></div></div>
+    <div class="city-card"><div class="city-icon">🚌</div><div><div class="city-art">die</div><div class="city-de">Bushaltestelle</div><div class="city-ar">موقف الباص</div><div class="city-note">Halte = توقف</div></div></div>
+    <div class="city-card"><div class="city-icon">✈️</div><div><div class="city-art">der</div><div class="city-de">Flughafen</div><div class="city-ar">المطار</div><div class="city-note">fliegen = يطير</div></div></div>
+    <div class="city-card"><div class="city-icon">📮</div><div><div class="city-art">die</div><div class="city-de">Post</div><div class="city-ar">مكتب البريد</div></div></div>
+    <div class="city-card"><div class="city-icon">🏛️</div><div><div class="city-art">das</div><div class="city-de">Rathaus</div><div class="city-ar">بلدية المدينة</div><div class="city-note">Rat = مجلس</div></div></div>
+  </div>
+  <p class="vst reveal">صحة وطوارئ</p>
+  <div class="city-grid reveal">
+    <div class="city-card"><div class="city-icon">🏥</div><div><div class="city-art">das</div><div class="city-de">Krankenhaus</div><div class="city-ar">المستشفى</div><div class="city-note">krank = مريض</div></div></div>
+    <div class="city-card"><div class="city-icon">💊</div><div><div class="city-art">die</div><div class="city-de">Apotheke</div><div class="city-ar">الصيدلية</div></div></div>
+    <div class="city-card"><div class="city-icon">👮</div><div><div class="city-art">das</div><div class="city-de">Polizeirevier</div><div class="city-ar">مخفر الشرطة</div></div></div>
+    <div class="city-card"><div class="city-icon">🩺</div><div><div class="city-art">der/die</div><div class="city-de">Arzt / Ärztin</div><div class="city-ar">الطبيب / الطبيبة</div></div></div>
+  </div>
+  <p class="vst reveal">تسوق وترفيه</p>
+  <div class="city-grid reveal">
+    <div class="city-card"><div class="city-icon">🏪</div><div><div class="city-art">der</div><div class="city-de">Supermarkt</div><div class="city-ar">السوبرماركت</div></div></div>
+    <div class="city-card"><div class="city-icon">🛒</div><div><div class="city-art">das</div><div class="city-de">Einkaufszentrum</div><div class="city-ar">مركز التسوق / مول</div></div></div>
+    <div class="city-card"><div class="city-icon">🥖</div><div><div class="city-art">die</div><div class="city-de">Bäckerei</div><div class="city-ar">المخبز</div><div class="city-note">backen = يخبز</div></div></div>
+    <div class="city-card"><div class="city-icon">🎬</div><div><div class="city-art">das</div><div class="city-de">Kino</div><div class="city-ar">السينما</div></div></div>
+    <div class="city-card"><div class="city-icon">🏛️</div><div><div class="city-art">das</div><div class="city-de">Museum</div><div class="city-ar">المتحف</div></div></div>
+    <div class="city-card"><div class="city-icon">📚</div><div><div class="city-art">die</div><div class="city-de">Bibliothek</div><div class="city-ar">المكتبة</div></div></div>
+    <div class="city-card"><div class="city-icon">🏨</div><div><div class="city-art">das</div><div class="city-de">Hotel</div><div class="city-ar">الفندق</div></div></div>
+    <div class="city-card"><div class="city-icon">🍽️</div><div><div class="city-art">das</div><div class="city-de">Restaurant</div><div class="city-ar">المطعم</div></div></div>
+    <div class="city-card"><div class="city-icon">🏦</div><div><div class="city-art">die</div><div class="city-de">Bank</div><div class="city-ar">البنك</div></div></div>
+    <div class="city-card"><div class="city-icon">⛽</div><div><div class="city-art">die</div><div class="city-de">Tankstelle</div><div class="city-ar">محطة البنزين</div></div></div>
+  </div>
+  <p class="vst reveal">شوارع وعناصر المدينة</p>
+  <div class="city-grid reveal">
+    <div class="city-card"><div class="city-icon">🌳</div><div><div class="city-art">der</div><div class="city-de">Park</div><div class="city-ar">الحديقة العامة</div></div></div>
+    <div class="city-card"><div class="city-icon">🛣️</div><div><div class="city-art">die</div><div class="city-de">Straße</div><div class="city-ar">الشارع</div></div></div>
+    <div class="city-card"><div class="city-icon">🔀</div><div><div class="city-art">die</div><div class="city-de">Kreuzung</div><div class="city-ar">التقاطع</div></div></div>
+    <div class="city-card"><div class="city-icon">🚦</div><div><div class="city-art">die</div><div class="city-de">Ampel</div><div class="city-ar">إشارة المرور</div></div></div>
+    <div class="city-card"><div class="city-icon">🌉</div><div><div class="city-art">die</div><div class="city-de">Brücke</div><div class="city-ar">الجسر</div></div></div>
+    <div class="city-card"><div class="city-icon">🏙️</div><div><div class="city-art">die</div><div class="city-de">Innenstadt</div><div class="city-ar">مركز / وسط المدينة</div></div></div>
+    <div class="city-card"><div class="city-icon">🅿️</div><div><div class="city-art">der</div><div class="city-de">Parkplatz</div><div class="city-ar">موقف السيارات</div></div></div>
+    <div class="city-card"><div class="city-icon">🕌</div><div><div class="city-art">die</div><div class="city-de">Moschee</div><div class="city-ar">المسجد</div></div></div>
+    <div class="city-card"><div class="city-icon">⛪</div><div><div class="city-art">die</div><div class="city-de">Kirche</div><div class="city-ar">الكنيسة</div></div></div>
+    <div class="city-card"><div class="city-icon">🗺️</div><div><div class="city-art">der</div><div class="city-de">Stadtplan</div><div class="city-ar">خريطة المدينة</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="akkusativ">
+  <div class="sec-hd reveal"><span class="sec-n">02</span><div><div class="sec-t">Akkusativ — حالة المفعول به</div><div class="sec-d">أهم قاعدة في A1 — التغيير الوحيد: der → den</div></div></div>
+  <div class="note-gold reveal"><div class="note-title nt-g">🧠 ما هو الأكوساتيف؟</div><p>في العربية نقول "رأيتُ الرجلَ" مع تغيير في حركة الكلمة. الألمانية تفعل نفس الشيء لكن في <strong style="color:var(--gold)">المادة (Artikel)</strong> لا في الكلمة نفسها. عندما يكون الاسم مفعولاً به — المادة تتغير. القاعدة الذهبية: <strong style="color:var(--white)">فقط المذكر يتغير — der → den</strong></p></div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="akk-t">
+      <thead><tr><th>الجنس</th><th>Nominativ (فاعل)</th><th>Akkusativ (مفعول به)</th><th>مثال</th><th></th></tr></thead>
+      <tbody>
+        <tr><td class="at-gen">🔵 مذكر — Maskulinum</td><td><span class="at-nom">der</span></td><td><span class="at-akk changed">den</span></td><td class="at-ex">Ich suche <span style="color:#ff6b6b;font-family:'JetBrains Mono',monospace;font-weight:700">den</span> Bahnhof.</td><td><span class="change-badge cb-change">⚠ يتغير!</span></td></tr>
+        <tr><td class="at-gen">🔴 مؤنث — Femininum</td><td><span class="at-nom">die</span></td><td><span class="at-akk same">die</span></td><td class="at-ex">Ich suche <span style="color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700">die</span> Apotheke.</td><td><span class="change-badge cb-same">✓ ثابت</span></td></tr>
+        <tr><td class="at-gen">⚪ محايد — Neutrum</td><td><span class="at-nom">das</span></td><td><span class="at-akk same">das</span></td><td class="at-ex">Ich suche <span style="color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700">das</span> Krankenhaus.</td><td><span class="change-badge cb-same">✓ ثابت</span></td></tr>
+        <tr><td class="at-gen">🟣 جمع — Plural</td><td><span class="at-nom">die</span></td><td><span class="at-akk same">die</span></td><td class="at-ex">Ich suche <span style="color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700">die</span> Restaurants.</td><td><span class="change-badge cb-same">✓ ثابت</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="overflow-x:auto;margin-bottom:1.5rem;" class="reveal">
+    <table class="akk-t">
+      <thead><tr><th>الجنس</th><th>Nominativ — ein/kein</th><th>Akkusativ — ein/kein</th><th>مثال</th></tr></thead>
+      <tbody>
+        <tr><td class="at-gen">🔵 مذكر</td><td><span class="at-nom">ein / kein</span></td><td><span class="at-akk changed">einen / keinen</span></td><td class="at-ex">Ich brauche <span style="color:#ff6b6b;font-family:'JetBrains Mono',monospace;font-weight:700">einen</span> Stadtplan.</td></tr>
+        <tr><td class="at-gen">🔴 مؤنث</td><td><span class="at-nom">eine / keine</span></td><td><span class="at-akk same">eine / keine</span></td><td class="at-ex">Ich brauche <span style="color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700">eine</span> Apotheke.</td></tr>
+        <tr><td class="at-gen">⚪ محايد</td><td><span class="at-nom">ein / kein</span></td><td><span class="at-akk same">ein / kein</span></td><td class="at-ex">Ich brauche <span style="color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700">ein</span> Taxi.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">أفعال + Akkusativ في سياق المدينة</div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">suche</span><span class="sbox sbox-akk">den Bahnhof.</span><span class="sbox-ar">أبحث عن المحطة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Wir</span><span class="sbox sbox-verb">brauchen</span><span class="sbox sbox-akk">die Apotheke.</span><span class="sbox-ar">نحتاج الصيدلية.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Er</span><span class="sbox sbox-verb">nimmt</span><span class="sbox sbox-akk">den Bus.</span><span class="sbox-ar">هو يأخذ الباص.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Sie</span><span class="sbox sbox-verb">findet</span><span class="sbox sbox-akk">das Hotel</span><span class="sbox sbox-rest">nicht.</span><span class="sbox-ar">هي لا تجد الفندق.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Ich</span><span class="sbox sbox-verb">habe</span><span class="sbox sbox-akk">einen Stadtplan.</span><span class="sbox-ar">معي خريطة مدينة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-subj">Siehst du</span><span class="sbox sbox-akk">den Park?</span><span class="sbox-ar">هل ترى الحديقة؟</span></div>
+  </div>
+  <div class="note-red reveal"><div class="note-title nt-r">⚠️ الخطأ الأشهر في A1</div><p>الطالب يكتب <code>Ich suche die Bahnhof</code> لأنه نسي أن Bahnhof مذكر (der). الصح: <code>Ich suche den Bahnhof</code>. الحل: احفظ المادة مع كل اسم من اليوم الأول.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="directions">
+  <div class="sec-hd reveal"><span class="sec-n">03</span><div><div class="sec-t">Wegbeschreibung — الاتجاهات</div><div class="sec-d">كيف تسأل وكيف تشرح الطريق — جمل جاهزة للحفظ</div></div></div>
+  <div class="dir-strip reveal">
+    <div class="dc"><span class="dc-icon">⬆️</span><div class="dc-de">geradeaus</div><div class="dc-ar">مباشرة إلى الأمام</div></div>
+    <div class="dc"><span class="dc-icon">⬅️</span><div class="dc-de">links</div><div class="dc-ar">يسار</div></div>
+    <div class="dc"><span class="dc-icon">➡️</span><div class="dc-de">rechts</div><div class="dc-ar">يمين</div></div>
+    <div class="dc"><span class="dc-icon">🔄</span><div class="dc-de">zurück</div><div class="dc-ar">ارجع / للخلف</div></div>
+  </div>
+  <div class="note-gold reveal"><div class="note-title nt-g">💡 الفرق بين "links" و "Biegen Sie links ab"</div><p><code>links</code> = يسار (وصف) · <code>abbiegen</code> = يلف (فعل). للأمر الرسمي: <code>Biegen Sie links ab</code>. للوصف: <code>Die Apotheke ist auf der linken Seite</code>. وتذكر: <code>ab</code> دائماً في النهاية — abbiegen فعل قابل للفصل!</p></div>
+  <div class="satz-box reveal"><div class="satz-title">كيف تسأل عن الطريق</div>
+    <div class="satz-row"><span class="sbox sbox-wh">Entschuldigung,</span><span class="sbox sbox-verb">wo ist</span><span class="sbox sbox-akk">der Bahnhof?</span><span class="sbox-ar">عفواً، أين المحطة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie komme ich</span><span class="sbox sbox-verb">zum</span><span class="sbox sbox-akk">Bahnhof?</span><span class="sbox-ar">كيف أصل إلى المحطة؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Gibt es hier</span><span class="sbox sbox-akk">eine Apotheke?</span><span class="sbox-ar">هل يوجد هنا صيدلية؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Wie weit ist es</span><span class="sbox sbox-verb">bis zum</span><span class="sbox sbox-akk">Zentrum?</span><span class="sbox-ar">كم المسافة إلى المركز؟</span></div>
+    <div class="satz-row"><span class="sbox sbox-wh">Können Sie mir</span><span class="sbox sbox-verb">helfen?</span><span class="sbox-ar">هل تستطيع مساعدتي؟</span></div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">كيف تشرح الطريق</div>
+    <div class="satz-row"><span class="sbox sbox-verb">Gehen Sie</span><span class="sbox sbox-rest">geradeaus.</span><span class="sbox-ar">تابع مباشرة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Biegen Sie</span><span class="sbox sbox-akk">links / rechts</span><span class="sbox sbox-rest">ab.</span><span class="sbox-ar">إلف يساراً / يميناً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">Nehmen Sie</span><span class="sbox sbox-akk">die erste / zweite</span><span class="sbox sbox-rest">Straße rechts.</span><span class="sbox-ar">خذ الشارع الأول/الثاني يميناً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Der Bahnhof ist</span><span class="sbox sbox-verb">auf der linken Seite.</span><span class="sbox-ar">المحطة على الجانب الأيسر.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Das Hotel ist</span><span class="sbox sbox-verb">gegenüber</span><span class="sbox sbox-akk">dem Park.</span><span class="sbox-ar">الفندق مقابل الحديقة.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">ungefähr</span><span class="sbox sbox-verb">10 Minuten</span><span class="sbox sbox-akk">zu Fuß.</span><span class="sbox-ar">حوالي 10 دقائق مشياً.</span></div>
+    <div class="satz-row"><span class="sbox sbox-rest">Das ist</span><span class="sbox sbox-verb">nicht weit / nah von hier.</span><span class="sbox-ar">هذا مش بعيد / قريب من هنا.</span></div>
+  </div>
+  <div class="note-blue reveal"><div class="note-title nt-b">📌 zum = zu + dem · zur = zu + der</div><p><code>zum Bahnhof</code> (مذكر/محايد) · <code>zur Apotheke</code> (مؤنث). هذان الاختصاران إلزاميان في الألمانية المحكية.</p></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="prep">
+  <div class="sec-hd reveal"><span class="sec-n">04</span><div><div class="sec-t">Präpositionen — حروف الجر المكانية</div><div class="sec-d">in · an · auf · bei + neben · gegenüber · vor · hinter</div></div></div>
+  <div class="prep-grid reveal">
+    <div class="prep-card">
+      <div class="prep-name">IN</div><div class="prep-ar">في — داخل شيء</div>
+      <div class="prep-ex">
+        <div class="pe-row"><div class="pe-de">Der Bahnhof ist in der Stadtmitte.</div><div class="pe-ar">المحطة في وسط المدينة.</div></div>
+        <div class="pe-row"><div class="pe-de">Ich bin in der Apotheke.</div><div class="pe-ar">أنا داخل الصيدلية.</div></div>
+        <div class="pe-row"><div class="pe-de">Das Museum ist in Berlin.</div><div class="pe-ar">المتحف في برلين.</div></div>
+      </div>
+    </div>
+    <div class="prep-card">
+      <div class="prep-name">AN</div><div class="prep-ar">عند — على حافة أو طرف</div>
+      <div class="prep-ex">
+        <div class="pe-row"><div class="pe-de">Die Haltestelle ist an der Ecke.</div><div class="pe-ar">الموقف عند الزاوية.</div></div>
+        <div class="pe-row"><div class="pe-de">Wir treffen uns am Bahnhof.</div><div class="pe-ar">نلتقي عند المحطة.</div></div>
+        <div class="pe-row"><div class="pe-de">Das Café ist an der Ampel.</div><div class="pe-ar">الكافيه عند الإشارة.</div></div>
+      </div>
+    </div>
+    <div class="prep-card">
+      <div class="prep-name">AUF</div><div class="prep-ar">على — على سطح أو ساحة</div>
+      <div class="prep-ex">
+        <div class="pe-row"><div class="pe-de">Das Restaurant ist auf dem Marktplatz.</div><div class="pe-ar">المطعم على ساحة السوق.</div></div>
+        <div class="pe-row"><div class="pe-de">Ich bin auf der Post.</div><div class="pe-ar">أنا في مكتب البريد.</div></div>
+        <div class="pe-row"><div class="pe-de">Das Hotel ist auf der linken Seite.</div><div class="pe-ar">الفندق على اليسار.</div></div>
+      </div>
+    </div>
+    <div class="prep-card">
+      <div class="prep-name">BEI</div><div class="prep-ar">عند / لدى — قريب من شخص/مكان</div>
+      <div class="prep-ex">
+        <div class="pe-row"><div class="pe-de">Ich bin beim Arzt.</div><div class="pe-ar">أنا عند الطبيب.</div></div>
+        <div class="pe-row"><div class="pe-de">Das Hotel ist bei der Kirche.</div><div class="pe-ar">الفندق قرب الكنيسة.</div></div>
+        <div class="pe-row"><div class="pe-de">Wir sind bei Lidl.</div><div class="pe-ar">نحن عند ليدل.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="satz-box reveal"><div class="satz-title">حروف جر موضع إضافية</div>
+    <div class="satz-row"><span class="sbox sbox-verb">neben</span><span class="sbox sbox-rest">dem Park</span><span class="sbox-ar">بجانب الحديقة</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">gegenüber</span><span class="sbox sbox-rest">dem Bahnhof</span><span class="sbox-ar">مقابل المحطة</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">vor</span><span class="sbox sbox-rest">dem Hotel</span><span class="sbox-ar">أمام الفندق</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">hinter</span><span class="sbox sbox-rest">der Kirche</span><span class="sbox-ar">خلف الكنيسة</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">zwischen</span><span class="sbox sbox-rest">der Bank und dem Café</span><span class="sbox-ar">بين البنك والكافيه</span></div>
+    <div class="satz-row"><span class="sbox sbox-verb">in der Nähe von</span><span class="sbox sbox-rest">dem Rathaus</span><span class="sbox-ar">قريب من بلدية المدينة</span></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="vocab">
+  <div class="sec-hd reveal"><span class="sec-n">05</span><div><div class="sec-t">المفردات الكاملة — 90+ كلمة</div><div class="sec-d">أفعال · صفات مكانية · تعابير الطريق</div></div></div>
+  <p class="vst reveal">أفعال أساسية في المدينة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">suchen</div><div class="vi-ar">يبحث عن</div><div class="vi-note">+ Akkusativ دائماً</div></div>
+    <div class="vi"><div class="vi-de">finden</div><div class="vi-ar">يجد</div><div class="vi-note">ich finde / er findet</div></div>
+    <div class="vi"><div class="vi-de">gehen</div><div class="vi-ar">يمشي / يذهب</div><div class="vi-note">zu Fuß gehen</div></div>
+    <div class="vi"><div class="vi-de">fahren</div><div class="vi-ar">يذهب بمركبة</div><div class="vi-note">er fährt — غير منتظم</div></div>
+    <div class="vi"><div class="vi-de">abbiegen</div><div class="vi-ar">يلف / ينعطف</div><div class="vi-note">قابل للفصل: biegt...ab</div></div>
+    <div class="vi"><div class="vi-de">überqueren</div><div class="vi-ar">يعبر شارعاً/جسراً</div></div>
+    <div class="vi"><div class="vi-de">brauchen</div><div class="vi-ar">يحتاج</div><div class="vi-note">+ Akkusativ</div></div>
+    <div class="vi"><div class="vi-de">nehmen</div><div class="vi-ar">يأخذ</div><div class="vi-note">er nimmt — غير منتظم</div></div>
+    <div class="vi"><div class="vi-de">zeigen</div><div class="vi-ar">يريك / يشير</div><div class="vi-note">Zeig mir den Weg!</div></div>
+    <div class="vi"><div class="vi-de">fragen</div><div class="vi-ar">يسأل</div></div>
+    <div class="vi"><div class="vi-de">wissen</div><div class="vi-ar">يعرف (معلومة)</div><div class="vi-note">Ich weiß — غير منتظم</div></div>
+    <div class="vi"><div class="vi-de">kennen</div><div class="vi-ar">يعرف مكاناً/شخصاً</div><div class="vi-note">Ich kenne Berlin.</div></div>
+    <div class="vi"><div class="vi-de">helfen</div><div class="vi-ar">يساعد</div><div class="vi-note">+ Dativ: hilft mir</div></div>
+    <div class="vi"><div class="vi-de">ankommen</div><div class="vi-ar">يصل</div><div class="vi-note">an·kommen — قابل للفصل</div></div>
+    <div class="vi"><div class="vi-de">aussteigen</div><div class="vi-ar">ينزل (من مركبة)</div><div class="vi-note">aus·steigen</div></div>
+    <div class="vi"><div class="vi-de">einsteigen</div><div class="vi-ar">يصعد (في مركبة)</div><div class="vi-note">ein·steigen</div></div>
+  </div>
+  <p class="vst reveal">الصفات المكانية والأرقام الترتيبية</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">links</div><div class="vi-ar">يسار</div></div>
+    <div class="vi"><div class="vi-de">rechts</div><div class="vi-ar">يمين</div></div>
+    <div class="vi"><div class="vi-de">geradeaus</div><div class="vi-ar">مباشرة إلى الأمام</div></div>
+    <div class="vi"><div class="vi-de">zurück</div><div class="vi-ar">ارجع / للخلف</div></div>
+    <div class="vi"><div class="vi-de">nah</div><div class="vi-ar">قريب</div></div>
+    <div class="vi"><div class="vi-de">weit</div><div class="vi-ar">بعيد</div></div>
+    <div class="vi"><div class="vi-de">ungefähr</div><div class="vi-ar">تقريباً</div></div>
+    <div class="vi"><div class="vi-de">zu Fuß</div><div class="vi-ar">مشياً على الأقدام</div></div>
+    <div class="vi"><div class="vi-de">gegenüber</div><div class="vi-ar">مقابل / أمام مباشرة</div></div>
+    <div class="vi"><div class="vi-de">die linke Seite</div><div class="vi-ar">الجانب الأيسر</div></div>
+    <div class="vi"><div class="vi-de">die rechte Seite</div><div class="vi-ar">الجانب الأيمن</div></div>
+    <div class="vi"><div class="vi-de">die erste Straße</div><div class="vi-ar">الشارع الأول</div></div>
+    <div class="vi"><div class="vi-de">die zweite Straße</div><div class="vi-ar">الشارع الثاني</div></div>
+    <div class="vi"><div class="vi-de">die dritte Straße</div><div class="vi-ar">الشارع الثالث</div></div>
+    <div class="vi"><div class="vi-de">die Ecke</div><div class="vi-ar">الزاوية</div><div class="vi-note">an der Ecke</div></div>
+    <div class="vi"><div class="vi-de">der Weg</div><div class="vi-ar">الطريق / المسار</div></div>
+    <div class="vi"><div class="vi-de">die Richtung</div><div class="vi-ar">الاتجاه</div></div>
+    <div class="vi"><div class="vi-de">in der Nähe</div><div class="vi-ar">في القريب</div></div>
+  </div>
+  <p class="vst reveal">تعابير وجمل جاهزة</p>
+  <div class="vocab-grid reveal">
+    <div class="vi"><div class="vi-de">Entschuldigung!</div><div class="vi-ar">عفواً!</div><div class="vi-note">للاستئذان وطلب المساعدة</div></div>
+    <div class="vi"><div class="vi-de">Tut mir leid.</div><div class="vi-ar">آسف</div><div class="vi-note">Ich weiß leider nicht.</div></div>
+    <div class="vi"><div class="vi-de">Kein Problem!</div><div class="vi-ar">لا مشكلة!</div></div>
+    <div class="vi"><div class="vi-de">Vielen Dank!</div><div class="vi-ar">شكراً جزيلاً!</div></div>
+    <div class="vi"><div class="vi-de">Gern geschehen!</div><div class="vi-ar">بكل سرور!</div></div>
+    <div class="vi"><div class="vi-de">Ich verstehe nicht.</div><div class="vi-ar">أنا لا أفهم.</div></div>
+    <div class="vi"><div class="vi-de">Noch einmal, bitte.</div><div class="vi-ar">مرة ثانية، من فضلك.</div></div>
+    <div class="vi"><div class="vi-de">Ich bin verloren.</div><div class="vi-ar">أنا ضائع.</div></div>
+    <div class="vi"><div class="vi-de">Ich bin neu hier.</div><div class="vi-ar">أنا جديد هنا.</div></div>
+    <div class="vi"><div class="vi-de">Können Sie langsamer sprechen?</div><div class="vi-ar">ببطء أكثر، من فضلك.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="dialoge">
+  <div class="sec-hd reveal"><span class="sec-n">06</span><div><div class="sec-t">Dialoge — حوارات نموذجية</div><div class="sec-d">3 سيناريوهات حقيقية — اقرأها بصوت عالٍ 3 مرات</div></div></div>
+  <div class="dlg reveal">
+    <div class="dlg-hd">📍 سيناريو 1 — في الشارع: السؤال عن المحطة (رسمي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Entschuldigung! Wo ist der Hauptbahnhof, bitte?</div><div class="dl-ar">عفواً! أين المحطة الرئيسية، من فضلك؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Guten Tag! Gehen Sie geradeaus, dann biegen Sie an der Ampel links ab.</div><div class="dl-ar">يوم سعيد! تابع مباشرة، ثم إلف عند الإشارة يساراً.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Und wie weit ist es?</div><div class="dl-ar">وكم تبعد؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ungefähr zehn Minuten zu Fuß. Der Bahnhof ist auf der linken Seite.</div><div class="dl-ar">حوالي عشر دقائق مشياً. المحطة على الجانب الأيسر.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Vielen Dank! Das ist sehr nett.</div><div class="dl-ar">شكراً جزيلاً! هذا لطيف جداً.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gern geschehen! Schönen Tag noch!</div><div class="dl-ar">بكل سرور! يوم جميل!</div></div></div>
+  </div>
+  <div class="dlg reveal">
+    <div class="dlg-hd">📍 سيناريو 2 — السؤال عن الصيدلية (عادي)</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Hey! Entschuldigung! Ich bin neu hier — gibt es hier eine Apotheke?</div><div class="dl-ar">هيي! عفواً! أنا جديد هنا — هل يوجد هنا صيدلية؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Ja, natürlich! Die Apotheke ist gleich um die Ecke, neben dem Supermarkt.</div><div class="dl-ar">نعم، طبعاً! الصيدلية مباشرة عند الزاوية، بجانب السوبرماركت.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Super! Und ich suche auch das Krankenhaus.</div><div class="dl-ar">رائع! وأبحث أيضاً عن المستشفى.</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Das Krankenhaus ist leider weit — ungefähr drei Kilometer. Nimm den Bus Nummer 12!</div><div class="dl-ar">المستشفى للأسف بعيد — حوالي ثلاثة كيلومترات. خذ الباص رقم 12!</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Danke! Wo ist die Bushaltestelle?</div><div class="dl-ar">شكراً! أين موقف الباص؟</div></div></div>
+    <div class="dl"><span class="sp sp-b">B</span><div><div class="dl-de">Gleich da drüben, gegenüber der Bank!</div><div class="dl-ar">مباشرة هناك، مقابل البنك!</div></div></div>
+  </div>
+  <div class="dlg reveal">
+    <div class="dlg-hd">📍 سيناريو 3 — في مكتب المعلومات السياحية</div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Guten Morgen! Haben Sie einen Stadtplan?</div><div class="dl-ar">صباح الخير! هل عندكم خريطة مدينة؟</div></div></div>
+    <div class="dl"><span class="sp sp-c">C</span><div><div class="dl-de">Natürlich! Bitte schön. Suchen Sie etwas Bestimmtes?</div><div class="dl-ar">طبعاً! تفضل. هل تبحث عن شيء محدد؟</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Ja, ich suche das Museum und ein gutes Restaurant in der Nähe.</div><div class="dl-ar">نعم، أبحث عن المتحف ومطعم جيد في القريب.</div></div></div>
+    <div class="dl"><span class="sp sp-c">C</span><div><div class="dl-de">Das Museum ist im Stadtzentrum. Und auf dem Marktplatz gibt es viele Restaurants.</div><div class="dl-ar">المتحف في مركز المدينة. وفي ساحة السوق يوجد كثير من المطاعم.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Wie komme ich zum Marktplatz?</div><div class="dl-ar">كيف أصل إلى ساحة السوق؟</div></div></div>
+    <div class="dl"><span class="sp sp-c">C</span><div><div class="dl-de">Gehen Sie geradeaus bis zur Kreuzung, dann nehmen Sie die zweite Straße rechts. Der Marktplatz ist dann auf der linken Seite.</div><div class="dl-ar">تابع مباشرة حتى التقاطع، ثم خذ الشارع الثاني يميناً. الساحة ستكون على اليسار.</div></div></div>
+    <div class="dl"><span class="sp sp-a">A</span><div><div class="dl-de">Perfekt! Vielen Dank!</div><div class="dl-ar">مثالي! شكراً جزيلاً!</div></div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="kultur">
+  <div class="sec-hd reveal"><span class="sec-n">07</span><div><div class="sec-t">Kultur — ثقافة المدينة الألمانية</div><div class="sec-d">اعرف السياق قبل ما تتكلم</div></div></div>
+  <div class="culture-grid reveal">
+    <div class="culture-card"><span class="cc-icon">🚶</span><div class="cc-title">ثقافة المشي</div><div class="cc-text">الألمان يمشون كثيراً — zu Fuß حل حقيقي. 10-15 دقيقة مشياً عادي جداً. كثير منهم لا يعطون اتجاهات بالسيارة للمسافات القصيرة.</div></div>
+    <div class="culture-card"><span class="cc-icon">🏛️</span><div class="cc-title">Rathaus — قلب المدينة</div><div class="cc-text">في ألمانيا Rathaus هي مركز الإدارة وغالباً في Marktplatz. إذا ضعت في مدينة ألمانية — اتجه للـ Marktplatz وستجد كل شيء.</div></div>
+    <div class="culture-card"><span class="cc-icon">🚦</span><div class="cc-title">قواعد الطريق الصارمة</div><div class="cc-text">الألمان يحترمون إشارة المرور حتى للمشاة. العبور على الأحمر أمام الأطفال ممكن أن يعرضك للانتقاد. "Warten Sie bitte!"</div></div>
+    <div class="culture-card"><span class="cc-icon">🗺️</span><div class="cc-title">Stadtplan ورقي</div><div class="cc-text">رغم الهواتف، كثير من مراكز المدن توزع خرائط ورقية مجانية في Touristinformation. مفيد وتمرين قراءة ألمانية ممتاز!</div></div>
+    <div class="culture-card"><span class="cc-icon">📍</span><div class="cc-title">Postleitzahl</div><div class="cc-text">كل منطقة في ألمانيا لها PLZ من 5 أرقام. مهم في العناوين. "Wie ist die Postleitzahl?" (ما هو الرمز البريدي؟).</div></div>
+    <div class="culture-card"><span class="cc-icon">🤝</span><div class="cc-title">عند السؤال عن الطريق</div><div class="cc-text">الألمان يساعدون عند السؤال. ابدأ بـ "Entschuldigung!". لو لم يعرفوا يقولون "Tut mir leid, das weiß ich leider nicht" بدل اتجاهات خاطئة.</div></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">08</span><div><div class="sec-t">Typische Fehler — الأخطاء الشائعة</div><div class="sec-d">خطأ → صح + سبب</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich suche die Bahnhof.</div><div class="mi-explain">❌ Bahnhof مذكر (der) → في Akkusativ يصبح den</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich suche den Bahnhof.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Gehe geradeaus!</div><div class="mi-explain">❌ للغريب يجب الصيغة الرسمية بـ Sie</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Gehen Sie geradeaus!</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Biege links!</div><div class="mi-explain">❌ abbiegen قابل للفصل — ab يجب في النهاية</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Biegen Sie links ab!</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich brauche einen Apotheke.</div><div class="mi-explain">❌ Apotheke مؤنث (die) → eine وليس einen</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich brauche eine Apotheke.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Wie komme ich zu dem Bahnhof?</div><div class="mi-explain">❌ zu + dem = zum — اختصار إلزامي في المحكي</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Wie komme ich zum Bahnhof?</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Das Hotel ist neben von dem Park.</div><div class="mi-explain">❌ neben لا تحتاج "von" — مباشرة + Dativ</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Das Hotel ist neben dem Park.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Ich bin im Bahnhof. (للذهاب إليه)</div><div class="mi-explain">⚠️ im Bahnhof = أنا داخل المحطة (موقع). للحركة: zum Bahnhof</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Ich fahre zum Bahnhof.</div></div></div>
+  <div class="mistake-item reveal"><div><div class="mi-wrong">Entschuldigung, kennen Sie wo der Bahnhof ist?</div><div class="mi-explain">❌ kennen = يعرف شخصاً/مكاناً لا معلومة. الأبسط: Wo ist...?</div></div><div class="mi-arrow">→</div><div><div class="mi-right">Entschuldigung, wo ist der Bahnhof?</div></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="exercises">
+  <div class="sec-hd reveal"><span class="sec-n">09</span><div><div class="sec-t">التمارين التفاعلية — 32 سؤال</div><div class="sec-d">Akkusativ · مفردات · اتجاهات · حروف الجر · قواعد</div></div></div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 1 / 5 — Akkusativ: الأداة الصحيحة (8 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Ich suche <span class="blank" id="b1">___</span> Bahnhof. (der Bahnhof)</div><div class="ex-opts"><button class="ex-btn" data-q="1" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="1" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="1" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f1"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich brauche <span class="blank" id="b2">___</span> Apotheke. (die Apotheke)</div><div class="ex-opts"><button class="ex-btn" data-q="2" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="2" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="2" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f2"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir finden <span class="blank" id="b3">___</span> Krankenhaus nicht. (das Krankenhaus)</div><div class="ex-opts"><button class="ex-btn" data-q="3" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="3" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="3" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f3"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Er nimmt <span class="blank" id="b4">___</span> Bus. (der Bus)</div><div class="ex-opts"><button class="ex-btn" data-q="4" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="4" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="4" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f4"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Hast du <span class="blank" id="b5">___</span> Stadtplan? (مذكر — نكرة)</div><div class="ex-opts"><button class="ex-btn" data-q="5" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="5" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="5" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f5"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich brauche <span class="blank" id="b6">___</span> Taxi. (das Taxi — نكرة)</div><div class="ex-opts"><button class="ex-btn" data-q="6" data-a="einen" onclick="check(this)">einen</button><button class="ex-btn" data-q="6" data-a="eine" onclick="check(this)">eine</button><button class="ex-btn" data-q="6" data-a="ein" onclick="check(this)">ein</button></div><div class="ex-fb" id="f6"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Siehst du <span class="blank" id="b7">___</span> Park? (der Park)</div><div class="ex-opts"><button class="ex-btn" data-q="7" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="7" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="7" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f7"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir suchen <span class="blank" id="b8">___</span> Post. (die Post)</div><div class="ex-opts"><button class="ex-btn" data-q="8" data-a="den" onclick="check(this)">den</button><button class="ex-btn" data-q="8" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="8" data-a="das" onclick="check(this)">das</button></div><div class="ex-fb" id="f8"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 2 / 5 — مفردات أماكن المدينة (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "der Bahnhof"؟</div><div class="ex-opts"><button class="ex-btn" data-q="9" data-a="محطة القطار" onclick="check(this)">محطة القطار</button><button class="ex-btn" data-q="9" data-a="المستشفى" onclick="check(this)">المستشفى</button><button class="ex-btn" data-q="9" data-a="الصيدلية" onclick="check(this)">الصيدلية</button></div><div class="ex-fb" id="f9"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "geradeaus"؟</div><div class="ex-opts"><button class="ex-btn" data-q="10" data-a="مباشرة إلى الأمام" onclick="check(this)">مباشرة إلى الأمام</button><button class="ex-btn" data-q="10" data-a="يسار" onclick="check(this)">يسار</button><button class="ex-btn" data-q="10" data-a="يمين" onclick="check(this)">يمين</button></div><div class="ex-fb" id="f10"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هي "die Kreuzung"؟</div><div class="ex-opts"><button class="ex-btn" data-q="11" data-a="التقاطع" onclick="check(this)">التقاطع</button><button class="ex-btn" data-q="11" data-a="الزاوية" onclick="check(this)">الزاوية</button><button class="ex-btn" data-q="11" data-a="الجسر" onclick="check(this)">الجسر</button></div><div class="ex-fb" id="f11"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "gegenüber"؟</div><div class="ex-opts"><button class="ex-btn" data-q="12" data-a="مقابل" onclick="check(this)">مقابل</button><button class="ex-btn" data-q="12" data-a="بجانب" onclick="check(this)">بجانب</button><button class="ex-btn" data-q="12" data-a="خلف" onclick="check(this)">خلف</button></div><div class="ex-fb" id="f12"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما هي "die Ampel"؟</div><div class="ex-opts"><button class="ex-btn" data-q="13" data-a="إشارة المرور" onclick="check(this)">إشارة المرور</button><button class="ex-btn" data-q="13" data-a="الجسر" onclick="check(this)">الجسر</button><button class="ex-btn" data-q="13" data-a="الزاوية" onclick="check(this)">الزاوية</button></div><div class="ex-fb" id="f13"></div></div>
+    <div class="ex-q"><div class="ex-q-text">ما معنى "weit"؟</div><div class="ex-opts"><button class="ex-btn" data-q="14" data-a="بعيد" onclick="check(this)">بعيد</button><button class="ex-btn" data-q="14" data-a="قريب" onclick="check(this)">قريب</button><button class="ex-btn" data-q="14" data-a="تقريباً" onclick="check(this)">تقريباً</button></div><div class="ex-fb" id="f14"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 3 / 5 — الاتجاهات والأسئلة (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">"Biegen Sie rechts ab" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="15" data-a="إلف يميناً" onclick="check(this)">إلف يميناً</button><button class="ex-btn" data-q="15" data-a="إلف يساراً" onclick="check(this)">إلف يساراً</button><button class="ex-btn" data-q="15" data-a="تابع مباشرة" onclick="check(this)">تابع مباشرة</button></div><div class="ex-fb" id="f15"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"die zweite Straße links" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="16" data-a="الشارع الثاني يساراً" onclick="check(this)">الشارع الثاني يساراً</button><button class="ex-btn" data-q="16" data-a="الشارع الأول يميناً" onclick="check(this)">الشارع الأول يميناً</button><button class="ex-btn" data-q="16" data-a="الشارع الثالث" onclick="check(this)">الشارع الثالث</button></div><div class="ex-fb" id="f16"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Wie komme ich zum Bahnhof?" يعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="17" data-a="كيف أصل إلى المحطة؟" onclick="check(this)">كيف أصل إلى المحطة؟</button><button class="ex-btn" data-q="17" data-a="أين المحطة؟" onclick="check(this)">أين المحطة؟</button><button class="ex-btn" data-q="17" data-a="كم تبعد المحطة؟" onclick="check(this)">كم تبعد المحطة؟</button></div><div class="ex-fb" id="f17"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "Turn left" بالألمانية الرسمية؟</div><div class="ex-opts"><button class="ex-btn" data-q="18" data-a="Biegen Sie links ab!" onclick="check(this)">Biegen Sie links ab!</button><button class="ex-btn" data-q="18" data-a="Gehen Sie links!" onclick="check(this)">Gehen Sie links!</button><button class="ex-btn" data-q="18" data-a="Links bitte!" onclick="check(this)">Links bitte!</button></div><div class="ex-fb" id="f18"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"ungefähr 5 Minuten zu Fuß" = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="19" data-a="حوالي 5 دقائق مشياً" onclick="check(this)">حوالي 5 دقائق مشياً</button><button class="ex-btn" data-q="19" data-a="بالسيارة 5 دقائق" onclick="check(this)">بالسيارة 5 دقائق</button><button class="ex-btn" data-q="19" data-a="5 كيلومترات" onclick="check(this)">5 كيلومترات</button></div><div class="ex-fb" id="f19"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Entschuldigung!" في سياق طلب الاتجاهات = ؟</div><div class="ex-opts"><button class="ex-btn" data-q="20" data-a="عفواً!" onclick="check(this)">عفواً!</button><button class="ex-btn" data-q="20" data-a="شكراً!" onclick="check(this)">شكراً!</button><button class="ex-btn" data-q="20" data-a="مع السلامة!" onclick="check(this)">مع السلامة!</button></div><div class="ex-fb" id="f20"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 4 / 5 — حروف الجر المكانية (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">Der Bahnhof ist ___ der Stadtmitte.</div><div class="ex-opts"><button class="ex-btn" data-q="21" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="21" data-a="an" onclick="check(this)">an</button><button class="ex-btn" data-q="21" data-a="auf" onclick="check(this)">auf</button><button class="ex-btn" data-q="21" data-a="bei" onclick="check(this)">bei</button></div><div class="ex-fb" id="f21"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Die Haltestelle ist ___ der Ecke.</div><div class="ex-opts"><button class="ex-btn" data-q="22" data-a="an" onclick="check(this)">an</button><button class="ex-btn" data-q="22" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="22" data-a="auf" onclick="check(this)">auf</button><button class="ex-btn" data-q="22" data-a="bei" onclick="check(this)">bei</button></div><div class="ex-fb" id="f22"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das Restaurant ist ___ dem Marktplatz.</div><div class="ex-opts"><button class="ex-btn" data-q="23" data-a="auf" onclick="check(this)">auf</button><button class="ex-btn" data-q="23" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="23" data-a="an" onclick="check(this)">an</button><button class="ex-btn" data-q="23" data-a="bei" onclick="check(this)">bei</button></div><div class="ex-fb" id="f23"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Ich bin ___ dem Arzt. (عند الطبيب)</div><div class="ex-opts"><button class="ex-btn" data-q="24" data-a="bei" onclick="check(this)">bei</button><button class="ex-btn" data-q="24" data-a="in" onclick="check(this)">in</button><button class="ex-btn" data-q="24" data-a="an" onclick="check(this)">an</button><button class="ex-btn" data-q="24" data-a="auf" onclick="check(this)">auf</button></div><div class="ex-fb" id="f24"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Wir treffen uns ___ Bahnhof. (am = an dem)</div><div class="ex-opts"><button class="ex-btn" data-q="25" data-a="am" onclick="check(this)">am</button><button class="ex-btn" data-q="25" data-a="im" onclick="check(this)">im</button><button class="ex-btn" data-q="25" data-a="beim" onclick="check(this)">beim</button><button class="ex-btn" data-q="25" data-a="zum" onclick="check(this)">zum</button></div><div class="ex-fb" id="f25"></div></div>
+    <div class="ex-q"><div class="ex-q-text">Das Hotel ist ___ dem Park. (بجانب)</div><div class="ex-opts"><button class="ex-btn" data-q="26" data-a="neben" onclick="check(this)">neben</button><button class="ex-btn" data-q="26" data-a="vor" onclick="check(this)">vor</button><button class="ex-btn" data-q="26" data-a="hinter" onclick="check(this)">hinter</button><button class="ex-btn" data-q="26" data-a="ohne" onclick="check(this)">ohne</button></div><div class="ex-fb" id="f26"></div></div>
+  </div>
+
+  <div class="ex-block reveal"><div class="ex-title">تمرين 5 / 5 — قواعد وفهم (6 أسئلة)</div>
+    <div class="ex-q"><div class="ex-q-text">أي أداة (Artikel) تتغير في Akkusativ؟</div><div class="ex-opts"><button class="ex-btn" data-q="27" data-a="der (→ den)" onclick="check(this)">der (→ den)</button><button class="ex-btn" data-q="27" data-a="die" onclick="check(this)">die</button><button class="ex-btn" data-q="27" data-a="das" onclick="check(this)">das</button><button class="ex-btn" data-q="27" data-a="الجميع" onclick="check(this)">الجميع</button></div><div class="ex-fb" id="f27"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Gibt es hier eine Apotheke?" يعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="28" data-a="هل يوجد هنا صيدلية؟" onclick="check(this)">هل يوجد هنا صيدلية؟</button><button class="ex-btn" data-q="28" data-a="أين الصيدلية؟" onclick="check(this)">أين الصيدلية؟</button><button class="ex-btn" data-q="28" data-a="أريد صيدلية." onclick="check(this)">أريد صيدلية.</button></div><div class="ex-fb" id="f28"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"zum" هي اختصار لـ ؟</div><div class="ex-opts"><button class="ex-btn" data-q="29" data-a="zu + dem" onclick="check(this)">zu + dem</button><button class="ex-btn" data-q="29" data-a="zu + der" onclick="check(this)">zu + der</button><button class="ex-btn" data-q="29" data-a="zu + das" onclick="check(this)">zu + das</button></div><div class="ex-fb" id="f29"></div></div>
+    <div class="ex-q"><div class="ex-q-text">"Können Sie mir helfen?" يعني؟</div><div class="ex-opts"><button class="ex-btn" data-q="30" data-a="هل تستطيع مساعدتي؟" onclick="check(this)">هل تستطيع مساعدتي؟</button><button class="ex-btn" data-q="30" data-a="ممكن تكرار؟" onclick="check(this)">ممكن تكرار؟</button><button class="ex-btn" data-q="30" data-a="أين أنت؟" onclick="check(this)">أين أنت؟</button></div><div class="ex-fb" id="f30"></div></div>
+    <div class="ex-q"><div class="ex-q-text">أيهما صحيح؟</div><div class="ex-opts"><button class="ex-btn" data-q="31" data-a="Ich suche den Bahnhof." onclick="check(this)">Ich suche den Bahnhof. ✓</button><button class="ex-btn" data-q="31" data-a="Ich suche die Bahnhof." onclick="check(this)">Ich suche die Bahnhof. ✗</button><button class="ex-btn" data-q="31" data-a="Ich suche das Bahnhof." onclick="check(this)">Ich suche das Bahnhof. ✗</button></div><div class="ex-fb" id="f31"></div></div>
+    <div class="ex-q"><div class="ex-q-text">كيف تقول "I'm new here" بالألمانية؟</div><div class="ex-opts"><button class="ex-btn" data-q="32" data-a="Ich bin neu hier." onclick="check(this)">Ich bin neu hier.</button><button class="ex-btn" data-q="32" data-a="Ich bin nicht hier." onclick="check(this)">Ich bin nicht hier.</button><button class="ex-btn" data-q="32" data-a="Ich komme neu." onclick="check(this)">Ich komme neu.</button></div><div class="ex-fb" id="f32"></div></div>
+  </div>
+
+  <button class="check-btn" onclick="showScore()">اعرف نتيجتي — 32 سؤال ←</button>
+  <button class="reset-btn" onclick="resetAll()">إعادة جميع التمارين</button>
+  <div class="score-box" id="scoreBox"><div class="score-num" id="scoreNum">0</div><div class="score-sub">إجابة صحيحة من 32</div><div class="score-msg" id="scoreMsg"></div></div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="writing">
+  <div class="sec-hd reveal"><span class="sec-n">10</span><div><div class="sec-t">مهام الكتابة — Schreibaufgaben</div><div class="sec-d">اكتب بنفسك — الاتجاهات تثبّت القواعد</div></div></div>
+  <div class="note-green reveal"><div class="note-title nt-gr">💡 لماذا تكتب الاتجاهات؟</div><p>شرح الطريق بالكتابة يجبرك على استخدام Akkusativ + حروف الجر + الأفعال في جملة واحدة. هذا التمرين يعادل 10 تمارين منفصلة.</p></div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 1 — اشرح طريقاً في مدينتك</div>
+    <div class="wt-text">اكتب تعليمات للوصول من A إلى B في أي مدينة تعرفها (5–8 جمل):</div>
+    <ul class="wt-list">
+      <li>ابدأ بـ "Gehen Sie geradeaus..."</li>
+      <li>استخدم "biegen Sie... ab" مرة على الأقل</li>
+      <li>اذكر مكاناً بالمادة الصح (den/die/das)</li>
+      <li>أنهِ بـ "Das ist ungefähr... Minuten zu Fuß."</li>
+    </ul>
+    <textarea class="wt-input" placeholder="Gehen Sie geradeaus bis zur...&#10;Dann biegen Sie...&#10;Der/Die/Das... ist auf der...&#10;Das ist ungefähr... Minuten zu Fuß."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 2 — اكتب حوار طلب الاتجاهات</div>
+    <div class="wt-text">اكتب حوار بين شخصين (A و B) — 6 إلى 8 أسطر:</div>
+    <ul class="wt-list">
+      <li>A يسأل عن مكان بالألمانية (رسمي)</li>
+      <li>B يشرح الطريق خطوة بخطوة</li>
+      <li>A يسأل عن المسافة</li>
+      <li>B يجيب ويودّع بشكل ألماني طبيعي</li>
+    </ul>
+    <textarea class="wt-input" style="min-height:160px;" placeholder="A: Entschuldigung! Wo ist...&#10;B: Gehen Sie...&#10;A: Und wie weit ist es?&#10;B: Ungefähr..."></textarea>
+  </div>
+  <div class="writing-task reveal">
+    <div class="wt-title">✍️ مهمة 3 — Akkusativ من الذاكرة</div>
+    <div class="wt-text">أغلق الملف. اكتب 8 جمل باستخدام Akkusativ — فعل + مكان بمادته الصحيحة. ثم افتح وتحقق.</div>
+    <textarea class="wt-input" placeholder="1. Ich suche ___ Bahnhof.&#10;2. Ich brauche ___ Apotheke.&#10;3. Er nimmt ___ Bus.&#10;4. Wir finden ___ Krankenhaus nicht.&#10;5. Sie sieht ___ Park.&#10;6. Ich habe ___ Stadtplan.&#10;7. Nimmst du ___ Zug?&#10;8. Ich suche ___ Post."></textarea>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section" id="resources">
+  <div class="sec-hd reveal"><span class="sec-n">11</span><div><div class="sec-t">مصادر إضافية — Ressourcen</div><div class="sec-d">تطبيقات · مواقع · يوتيوب · تدريب إضافي</div></div></div>
+  <div class="res-grid reveal">
+    <div class="res-card"><span class="res-icon">📱</span><div class="res-name">Anki — بطاقات Unit 07</div><div class="res-type">تطبيق مجاني</div><div class="res-desc">أنشئ Deck خاص بـ Unit 07: مادة + كلمة في الوجه، معنى + Akkusativ في الخلف. 15 دقيقة يومياً تكفي.</div><a class="res-link" href="https://apps.ankiweb.net/" target="_blank">apps.ankiweb.net ←</a></div>
+    <div class="res-card"><span class="res-icon">🌐</span><div class="res-name">DW Nicos Weg</div><div class="res-type">موقع + يوتيوب</div><div class="res-desc">حلقات Nicos Weg عن المدينة مع تمارين تفاعلية مجانية. ابحث عن الحلقات 10-15 من A1.</div><a class="res-link" href="https://learngerman.dw.com" target="_blank">learngerman.dw.com ←</a></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Easy German</div><div class="res-type">قناة YouTube</div><div class="res-desc">مقابلات حقيقية في الشوارع الألمانية. ابحث "Easy German Asking for Directions" لتسمع الألمانية الطبيعية.</div></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Deutsch für Euch (Katja)</div><div class="res-type">قناة YouTube</div><div class="res-desc">أفضل شرح لـ Akkusativ بالإنجليزية. ابحث "Deutsch für Euch Akkusativ" وشاهده مرتين.</div></div>
+    <div class="res-card"><span class="res-icon">🗺️</span><div class="res-name">Google Maps (Deutsche Städte)</div><div class="res-type">تدريب عملي مجاني</div><div class="res-desc">افتح خريطة برلين أو ميونخ واقرأ أسماء الشوارع والأماكن بالألمانية. يربط المفردات بالواقع.</div></div>
+    <div class="res-card"><span class="res-icon">📺</span><div class="res-name">Learn German with Anja</div><div class="res-type">قناة YouTube</div><div class="res-desc">قناة منهجية لـ A1. ابحث "Learn German with Anja places city" لدروس مفردات المدينة.</div></div>
+    <div class="res-card"><span class="res-icon">🏫</span><div class="res-name">Menschen A1 — Kapitel 7</div><div class="res-type">كتاب مدرسي</div><div class="res-desc">الفصل 7 يغطي نفس موضوع Unit 07. تمارين إضافية ونصوص استماع للتعمق أكثر.</div></div>
+    <div class="res-card"><span class="res-icon">💬</span><div class="res-name">italki — محادثة تدريبية</div><div class="res-type">محادثة مع ناطق أصلي</div><div class="res-desc">بعد Unit 07 أنت جاهز لمحادثة قصيرة عن الاتجاهات. اطلب من المدرب أن "يضيع" ويسألك.</div><a class="res-link" href="https://www.italki.com/" target="_blank">italki.com ←</a></div>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<section class="section">
+  <div class="sec-hd reveal"><span class="sec-n">12</span><div><div class="sec-t">خطة الـ 5 أيام المفصّلة</div><div class="sec-d">ماذا تفعل كل يوم — بما فيه الفيديوهات</div></div></div>
+  <div class="days-grid reveal">
+    <div class="day-card">
+      <div class="day-num">01</div>
+      <div class="day-title">المدينة + المفردات</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 1 (أماكن المدينة) + اكتب 10 أماكن</li>
+        <li class="vl">شاهد فيديو 2 (الاتجاهات) + كرر الجمل</li>
+        <li>ادرس 30 مكان في المدينة مع مادتها</li>
+        <li>احفظ كل اسم مع der/die/das</li>
+        <li>اقرأ الحوار 1 بصوت عالٍ 3 مرات</li>
+      </ul>
+      <div class="day-time">⏱️ 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">02</div>
+      <div class="day-title">Akkusativ</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 4 (Akkusativ) مرتين</li>
+        <li>ادرس جدول Nominativ → Akkusativ</li>
+        <li>احفظ: فقط der → den يتغير</li>
+        <li>ادرس الأفعال + Akkusativ</li>
+        <li>حل تمرين 1 (8 أسئلة Akkusativ)</li>
+        <li class="wl">مهمة كتابة 3 (8 جمل من الذاكرة)</li>
+      </ul>
+      <div class="day-time">⏱️ 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">03</div>
+      <div class="day-title">الاتجاهات + الحوارات</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 3 (Nicos Weg مدينة)</li>
+        <li>ادرس جمل طلب الاتجاهات كاملاً</li>
+        <li>ادرس جمل إعطاء الاتجاهات</li>
+        <li>اقرأ الحوارات 2 و 3 بصوت عالٍ</li>
+        <li class="wl">مهمة كتابة 2 (حوار اتجاهات)</li>
+        <li>حل تمرين 3 (اتجاهات)</li>
+      </ul>
+      <div class="day-time">⏱️ 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">04</div>
+      <div class="day-title">حروف الجر + ثقافة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد فيديو 5 (حروف الجر)</li>
+        <li>ادرس in · an · auf · bei مع أمثلة</li>
+        <li>ادرس الثقافة والأخطاء الشائعة</li>
+        <li>احفظ zum/zur والفرق بينهما</li>
+        <li>حل تمرين 4 (حروف الجر)</li>
+        <li class="wl">مهمة كتابة 1 (وصف طريق)</li>
+      </ul>
+      <div class="day-time">⏱️ 2–3 ساعات</div>
+    </div>
+    <div class="day-card">
+      <div class="day-num">05</div>
+      <div class="day-title">مراجعة شاملة</div>
+      <ul class="day-tasks">
+        <li class="vl">شاهد أول 20 دقيقة من فيديو 6</li>
+        <li>أعد حل كل التمارين هدف 29+</li>
+        <li>صرّف Akkusativ شفهياً بلا نظر</li>
+        <li>اقرأ الحوار 3 بصوت عالٍ</li>
+        <li>راجع الأخطاء الشائعة الـ 8</li>
+        <li>✅ انتقل لـ Unit 08 إذا 28+/32</li>
+      </ul>
+      <div class="day-time">⏱️ 2–3 ساعات</div>
+    </div>
+  </div>
+  <div class="note-green reveal" style="margin-top:2rem;">
+    <div class="note-title nt-gr">🎯 قاعدة الانتقال إلى Unit 08</div>
+    <p>انتقل لـ Unit 08 فقط إذا: ✅ تستطيع صياغة Akkusativ بدون نظر (der→den) · ✅ حصلت 28+/32 في التمارين · ✅ كتبت حوار اتجاهات بنفسك · ✅ تستطيع أن تسأل وتجيب عن الطريق بجمل كاملة. إذا لم تحقق هذا — يوم سادس للمراجعة وليس للاستسلام.</p>
+  </div>
+</section>
+<div class="stripe"><div></div><div></div><div></div></div>
+
+<footer>
+  <span class="ft-de">UNIT 07</span>
+  <p style="color:var(--gold);font-weight:700;margin-bottom:.5rem;">المدينة · الاتجاهات · Akkusativ · حروف الجر · 90+ مفردة · 32 تمرين · 6 فيديوهات</p>
+  <p>A1 · المرحلة الثالثة 🟡 · 5 أيام دراسة</p>
+  <p style="margin-top:.5rem;font-size:.7rem;color:rgba(245,245,240,.12)">Unit 08 ← التسوق والملابس · Akkusativ مع النكرة · الصفات قبل الاسم</p>
+</footer>
+
+<script>
+const answers={
+  1:'den',2:'die',3:'das',4:'den',5:'einen',6:'ein',7:'den',8:'die',
+  9:'محطة القطار',10:'مباشرة إلى الأمام',11:'التقاطع',12:'مقابل',13:'إشارة المرور',14:'بعيد',
+  15:'إلف يميناً',16:'الشارع الثاني يساراً',17:'كيف أصل إلى المحطة؟',18:'Biegen Sie links ab!',19:'حوالي 5 دقائق مشياً',20:'عفواً!',
+  21:'in',22:'an',23:'auf',24:'bei',25:'am',26:'neben',
+  27:'der (→ den)',28:'هل يوجد هنا صيدلية؟',29:'zu + dem',30:'هل تستطيع مساعدتي؟',31:'Ich suche den Bahnhof.',32:'Ich bin neu hier.'
+};
+const fb={
+  1:{ok:'✅ صح! der Bahnhof → den Bahnhof في Akkusativ. المذكر الوحيد الذي يتغير!',no:'❌ Bahnhof مذكر (der) → في Akkusativ يصبح den'},
+  2:{ok:'✅ ممتاز! die Apotheke تبقى die في Akkusativ. المؤنث لا يتغير أبداً.',no:'❌ Apotheke مؤنث (die) → تبقى die في Akkusativ'},
+  3:{ok:'✅ صح! das Krankenhaus يبقى das. المحايد لا يتغير.',no:'❌ Krankenhaus محايد (das) → يبقى das في Akkusativ'},
+  4:{ok:'✅ ممتاز! der Bus → den Bus. مذكر → يتغير دائماً!',no:'❌ Bus مذكر (der) → في Akkusativ: den Bus'},
+  5:{ok:'✅ صح! ein Stadtplan مذكر → einen في Akkusativ. الـ n تُضاف.',no:'❌ Stadtplan مذكر → Akkusativ: einen (نكرة مذكر)'},
+  6:{ok:'✅ ممتاز! ein Taxi محايد → يبقى ein في Akkusativ. لا يتغير!',no:'❌ Taxi محايد (das) → Akkusativ: ein (يبقى كما هو)'},
+  7:{ok:'✅ صح! der Park → den Park. مذكر يتغير دائماً.',no:'❌ Park مذكر (der) → في Akkusativ: den Park'},
+  8:{ok:'✅ ممتاز! die Post → تبقى die. مؤنث ثابت في Akkusativ.',no:'❌ Post مؤنث (die) → تبقى die في Akkusativ'},
+  9:{ok:'✅ صح! der Bahnhof = محطة القطار. Bahn = قطار، Hof = ساحة.',no:'❌ der Bahnhof = محطة القطار وليس المستشفى أو الصيدلية'},
+  10:{ok:'✅ ممتاز! geradeaus = مباشرة إلى الأمام. gerade = مستقيم.',no:'❌ geradeaus = مباشرة إلى الأمام'},
+  11:{ok:'✅ صح! die Kreuzung = التقاطع. kreuzen = يتقاطع.',no:'❌ die Kreuzung = التقاطع وليس الزاوية (Ecke) أو الجسر (Brücke)'},
+  12:{ok:'✅ ممتاز! gegenüber = مقابل / أمام مباشرة.',no:'❌ gegenüber = مقابل. neben = بجانب، hinter = خلف'},
+  13:{ok:'✅ صح! die Ampel = إشارة المرور. كلمة يجب حفظها!',no:'❌ die Ampel = إشارة المرور'},
+  14:{ok:'✅ ممتاز! weit = بعيد. الضد: nah = قريب.',no:'❌ weit = بعيد وليس قريب (nah) أو تقريباً (ungefähr)'},
+  15:{ok:'✅ صح! rechts ab biegen = إلف يميناً. rechts = يمين.',no:'❌ rechts = يمين → Biegen Sie rechts ab = إلف يميناً'},
+  16:{ok:'✅ ممتاز! die zweite Straße links = الشارع الثاني يساراً.',no:'❌ zweite = ثاني، links = يسار → الشارع الثاني يساراً'},
+  17:{ok:'✅ صح! Wie komme ich zu...? = كيف أصل إلى...؟ أفضل سؤال للاتجاهات!',no:'❌ Wie komme ich zum Bahnhof? = كيف أصل إلى المحطة؟'},
+  18:{ok:'✅ ممتاز! Biegen Sie links ab = إلف يساراً (رسمي). ab في النهاية دائماً!',no:'❌ abbiegen فعل قابل للفصل: Biegen Sie links ab (ab في النهاية)'},
+  19:{ok:'✅ صح! zu Fuß = مشياً · ungefähr = تقريباً.',no:'❌ zu Fuß = مشياً على الأقدام، ungefähr = تقريباً'},
+  20:{ok:'✅ ممتاز! Entschuldigung = عفواً — أول كلمة عند طلب المساعدة.',no:'❌ Entschuldigung = عفواً (للاستئذان وطلب المساعدة)'},
+  21:{ok:'✅ صح! in = في (داخل شيء). in der Stadtmitte = في وسط المدينة.',no:'❌ in + الموقع الداخلي: in der Stadtmitte هو الصواب'},
+  22:{ok:'✅ ممتاز! an = عند / على حافة أو طرف. an der Ecke = عند الزاوية.',no:'❌ an = عند (حافة/طرف): an der Ecke هو الصواب'},
+  23:{ok:'✅ صح! auf = على (سطح أو ساحة). auf dem Marktplatz = على ساحة السوق.',no:'❌ auf = على (سطح/ساحة). auf dem Marktplatz هو الصواب'},
+  24:{ok:'✅ ممتاز! bei = عند (شخص أو مكان محدد). beim Arzt = عند الطبيب.',no:'❌ bei = عند شخص أو مكان: beim Arzt هو الصواب'},
+  25:{ok:'✅ صح! an + dem = am (اختصار إلزامي). am Bahnhof هو الصواب.',no:'❌ an + dem = am (اختصار إلزامي) → am Bahnhof'},
+  26:{ok:'✅ ممتاز! neben = بجانب. neben dem Park = بجانب الحديقة.',no:'❌ neben = بجانب. vor = أمام، hinter = خلف'},
+  27:{ok:'✅ صح! فقط der يتغير إلى den. die وdas يبقيان كما هما. هذا سر Akkusativ!',no:'❌ فقط der يتغير → den. المؤنث (die) والمحايد (das) لا يتغيران'},
+  28:{ok:'✅ ممتاز! Gibt es hier...? = هل يوجد هنا...؟ — سؤال مفيد جداً!',no:'❌ Gibt es hier...? = هل يوجد هنا...؟'},
+  29:{ok:'✅ صح! zum = zu + dem (مذكر/محايد). zur = zu + der (مؤنث).',no:'❌ zum = zu + dem (مذكر ومحايد). zur = zu + der (مؤنث)'},
+  30:{ok:'✅ ممتاز! Können Sie mir helfen? = هل تستطيع مساعدتي؟',no:'❌ Können Sie mir helfen? = هل تستطيع مساعدتي؟'},
+  31:{ok:'✅ صح! Bahnhof مذكر → den Bahnhof في Akkusativ.',no:'❌ الصواب: Ich suche den Bahnhof. (Bahnhof مذكر → der → den)'},
+  32:{ok:'✅ ممتاز! Ich bin neu hier. = أنا جديد هنا. جملة مفيدة عند الضياع!',no:'❌ الصواب: Ich bin neu hier. (ich bin + صفة)'}
+};
+const answered={};
+function check(btn){
+  const q=parseInt(btn.dataset.q);
+  if(answered[q]) return;
+  const ua=btn.dataset.a;
+  const correct=answers[q];
+  const ok=ua===correct;
+  answered[q]=ok;
+  document.querySelectorAll('[data-q="'+q+'"]').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.a===correct) b.classList.add('correct');
+    else if(b===btn&&!ok) b.classList.add('wrong');
+  });
+  const blank=document.getElementById('b'+q);
+  if(blank){blank.textContent=correct;blank.style.borderBottomColor=ok?'var(--green)':'var(--red)';}
+  const f=document.getElementById('f'+q);
+  if(f){f.textContent=fb[q][ok?'ok':'no'];f.className='ex-fb '+(ok?'ok':'no');}
+}
+function showScore(){
+  const total=Object.keys(answers).length;
+  const correct=Object.values(answered).filter(Boolean).length;
+  const sb=document.getElementById('scoreBox');
+  sb.style.display='block';
+  document.getElementById('scoreNum').textContent=correct+'/'+total;
+  const pct=correct/total;
+  let msg='';
+  if(pct===1) msg='🏆 ممتاز مطلق! أتقنت Unit 07 كاملاً. انتقل لـ Unit 08 بثقة!';
+  else if(pct>=0.9) msg='✅ ممتاز! راجع الأسئلة الخاطئة ثم انتقل.';
+  else if(pct>=0.75) msg='👍 جيد جداً! راجع Akkusativ وحروف الجر وأعد المحاولة.';
+  else if(pct>=0.6) msg='⚠️ راجع جدول Akkusativ والاتجاهات وحل مرة ثانية.';
+  else msg='🔄 راجع الوحدة من البداية — لا تنتقل حتى تحصل 25+/32.';
+  document.getElementById('scoreMsg').textContent=msg;
+  sb.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetAll(){
+  Object.keys(answered).forEach(k=>delete answered[k]);
+  document.querySelectorAll('.ex-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  document.querySelectorAll('.ex-fb').forEach(f=>{f.textContent='';f.className='ex-fb';});
+  document.querySelectorAll('.blank').forEach(b=>{b.textContent='___';b.style.borderBottomColor='';});
+  document.getElementById('scoreBox').style.display='none';
+}
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach((r,i)=>{if(r.isIntersecting){setTimeout(()=>r.target.classList.add('visible'),i*50);io.unobserve(r.target);}});
+},{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+</script>
+</body>
+</html>
